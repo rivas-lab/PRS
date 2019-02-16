@@ -15,6 +15,9 @@ phe_type=$3
 if [ $# -gt 3 ] ; then individuals_keep=$4 ; fi
 
 shuf_random_source="$(readlink -f $(dirname $0))/shuf.seed.txt"
+missing_value="-9"
+split_types=("test" "val"  "train")
+# split_types=("test" "val"  "train" "train_and_val")
 
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) 
@@ -22,18 +25,9 @@ echo "temp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
 trap handler_exit EXIT
 
-
-if [ $# -gt 3 ] ; then
-    in_phe_file=${tmp_dir}/$(basename ${phe_file})
-    cat ${individuals_keep} | awk '{print $1}' | sort -k1b,1 \
-	| join -1 1 -2 1 /dev/stdin <( cat ${phe_file} | sort -k1b,1 ) > ${in_phe_file}
-else
-	in_phe_file=$phe_file
-fi
-
 get_seeded_random () {
   seed="$1"
-
+  # generate random file using openssl with a given seed
   openssl enc -aes-256-ctr -pass pass:"$seed" -nosalt </dev/zero 2>/dev/null
 }
 
@@ -52,32 +46,45 @@ apply_shuf () {
 	idx_start=${n_test} ;          idx_end=${n_test_plus_val} 
     elif [ $split_type == "train" ] ; then
 	idx_start=${n_test_plus_val} ; idx_end=${n_indiv} 
+    elif [ $split_type == "train_and_val" ] || [ $split_type == "val_and_train" ] ; then
+	idx_start=${n_test} ;          idx_end=${n_indiv} 
     fi
+
     cat ${phe_f} \
 	| shuf --random-source=<(get_seeded_random $(cat ${shuf_random_source})) \
 	| awk -v idx_s=$idx_start -v idx_e=$idx_end '( idx_s < NR && NR <= idx_e ){print $1}' 
 }
 
-split_types=("test" "val"  "train")
-
+# configure
+tmp_in_phe_file=${tmp_dir}/$(basename ${phe_file})
 tmp_out_prefix=${tmp_dir}/$(basename ${out_prefix})
 
+
+# keep individuals with non-missing phenotype values and apply --keep file
+if [ $# -gt 3 ] ; then
+    cat ${individuals_keep} | awk '{print $1}' | sort -k1b,1 \
+	| join -1 1 -2 1 /dev/stdin <( cat ${phe_file} | sort -k1b,1 ) 
+else
+    cat $phe_file 
+fi | awk -v missing_value=${missing_value} '$3 != missing_value' > ${tmp_in_phe_file}
+
+# split the phe file
 if [ $phe_type == 'linear' ] || [ $phe_type == 'qt' ] ; then 
 
     for split_type in ${split_types[@]} ; do
-	apply_shuf ${in_phe_file} ${split_type} > ${tmp_out_prefix}.${split_type}
+	apply_shuf ${tmp_in_phe_file} ${split_type} > ${tmp_out_prefix}.${split_type}
     done
 
 elif [ $phe_type == 'logistic' ] || [ $phe_type == 'bin' ] ; then
 
     in_phe_file_controls=${tmp_dir}/$(basename ${phe_file} .phe).controls.phe
     in_phe_file_cases=${tmp_dir}/$(basename ${phe_file} .phe).cases.phe
-    cat ${in_phe_file} | awk '$3 == 1' > ${in_phe_file_controls}
-    cat ${in_phe_file} | awk '$3 == 2' > ${in_phe_file_cases}
+    cat ${tmp_in_phe_file} | awk '$3 == 1' > ${tmp_in_phe_file_controls}
+    cat ${tmp_in_phe_file} | awk '$3 == 2' > ${tmp_in_phe_file_cases}
 
     for split_type in ${split_types[@]} ; do
-	apply_shuf ${in_phe_file_controls} ${split_type} > ${tmp_out_prefix}.${split_type}
-	apply_shuf ${in_phe_file_cases} ${split_type}   >> ${tmp_out_prefix}.${split_type}	
+	apply_shuf ${tmp_in_phe_file_controls} ${split_type} > ${tmp_out_prefix}.${split_type}
+	apply_shuf ${tmp_in_phe_file_cases} ${split_type}   >> ${tmp_out_prefix}.${split_type}	
     done
 
 fi

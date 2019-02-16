@@ -1,0 +1,1 @@
+../../ukbb24983wiki/scripts/ukb-cal_gwas-v5.sh
