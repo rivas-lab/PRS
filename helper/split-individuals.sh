@@ -52,7 +52,7 @@ apply_shuf () {
 
     cat ${phe_f} \
 	| shuf --random-source=<(get_seeded_random $(cat ${shuf_random_source})) \
-	| awk -v idx_s=$idx_start -v idx_e=$idx_end '( idx_s < NR && NR <= idx_e ){print $1}' 
+	| awk -v idx_s=$idx_start -v idx_e=$idx_end '( idx_s < NR && NR <= idx_e ){print $1, $1}' 
 }
 
 # configure
@@ -66,7 +66,7 @@ if [ $# -gt 3 ] ; then
 	| join -1 1 -2 1 /dev/stdin <( cat ${phe_file} | sort -k1b,1 ) 
 else
     cat $phe_file 
-fi | awk -v missing_value=${missing_value} '$3 != missing_value' > ${tmp_in_phe_file}
+fi | awk -v missing_value=${missing_value} '$1 >= 0 && $3 != missing_value' > ${tmp_in_phe_file}
 
 # split the phe file
 if [ $phe_type == 'linear' ] || [ $phe_type == 'qt' ] ; then 
