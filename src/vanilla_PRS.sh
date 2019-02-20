@@ -72,7 +72,7 @@ phe_name="$(basename ${in_phe} .phe)"
 in_phe_copy="${dir0input}/${phe_name}.phe"
 keep_copy="${dir0input}/${phe_name}.$(basename ${keep})"
 file1split="${dir1split}/${phe_name}"
-file2GWAS="${dir2GWAS}/train/$( get_GWAS_filename $phe_name $phe_type $app_id )"
+file2GWAS="${dir2GWAS}/$( get_GWAS_filename $phe_name $phe_type $app_id )"
 tmp1keep=${tmp_dir}/${phe_name}.keep
 
 echo ${phe_name}
