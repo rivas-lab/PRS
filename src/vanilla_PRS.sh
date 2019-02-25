@@ -5,6 +5,12 @@ usage () {
     echo "usage: $0 in_phe phe_type keep out_dir_root [memory] [threads] [app_id] [nPCs]" >&2
 }
 
+software_versions () {
+    which plink
+    which plink2
+    which bgzip
+}
+
 get_GWAS_filename () {
 	phe_name=$1
 	phe_type=$2
@@ -15,9 +21,9 @@ get_GWAS_filename () {
 	bin_suffix="logistic.hybrid"
 	prefix="ukb${app_id}_v2.${phe_name}.PHENO1.glm"
 	if   [ ${phe_type} == "qt" ] ; then
-	    res_file="${prefix}.${qt_suffix}"
+	    res_file="${prefix}.${qt_suffix}.gz"
 	elif [ ${phe_type} == "bin" ] ; then
-	    res_file="${prefix}.${bin_suffix}"
+	    res_file="${prefix}.${bin_suffix}.gz"
 	fi
 	echo ${res_file}
 }
@@ -41,7 +47,11 @@ src4clumped_GWAS="${helper_dir}/filter-sumstats-to-clumped.sh"
 src5score="${helper_dir}/plink-score.sh"
 
 # configure parameters
-clump_p1_list=("1e-3" "1e-4" "1e-5")
+clump_p1_list=("1e-5" "1e-4" "1e-3")
+#clump_p1_list=("1e-4" "1e-3")
+
+# dump software versions
+software_versions
 
 # parse command line args
 if [ $# -lt 4 ] ; then usage ; exit 1 ; fi
@@ -57,7 +67,7 @@ if [ $# -gt 7 ] ; then nPCs=$8 ;    else nPCs=4 ; fi
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
-trap handler_exit EXIT
+#trap handler_exit EXIT
 
 # file names
 dir0input="${out_dir_root}/0_input"
@@ -75,7 +85,6 @@ file1split="${dir1split}/${phe_name}"
 file2GWAS="${dir2GWAS}/$( get_GWAS_filename $phe_name $phe_type $app_id )"
 tmp1keep=${tmp_dir}/${phe_name}.keep
 
-echo ${phe_name}
 # step 0: copy input files
 copy_with_check ${in_phe} ${in_phe_copy}
 copy_with_check ${keep}   ${keep_copy}
@@ -92,22 +101,26 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
     for d in ${dir3clump} ${dir4clumped_GWAS} ${dir5score} ${dir6eval} ; do
 	if [ ! -d ${d}/${clump_p1} ] ; then mkdir -p ${d}/${clump_p1} ; fi
     done
-    file3clump="${dir3clump}/${clump_p1}/$( basename ${file2GWAS} )"
+    file3clump="${dir3clump}/${clump_p1}/$( basename ${file2GWAS%.gz}.clumped.gz )"
     file4clumped_GWAS="${dir4clumped_GWAS}/${clump_p1}/$( basename ${file2GWAS} )"
-    file5score="${dir5score}/${clump_p1}/$( basename ${file2GWAS} ).score"
-    file6eval="${dir6eval}/${clump_p1}/$( basename ${file2GWAS} ).score.eval"
+    file5score="${dir5score}/${clump_p1}/$( basename ${file2GWAS%.gz} ).sscore"
+    file6eval="${dir6eval}/${clump_p1}/$( basename ${file2GWAS%.gz} ).sscore.eval"
 
     # step 3: LD clumping
+    echo bash ${src3clump}        ${file2GWAS} ${tmp1keep} ${file3clump} ${clump_p1} ${memory} ${threads} ${app_id}
     bash ${src3clump}        ${file2GWAS} ${tmp1keep} ${file3clump} ${clump_p1} ${memory} ${threads} ${app_id}
 
     # step 4 : subset GWAS hits to LD clumped markers
-    bash ${src4clumped_GWAS} ${file3clump} ${file4clumped_GWAS}
+    echo bash ${src4clumped_GWAS} ${file2GWAS} ${file3clump} ${file4clumped_GWAS}
+    bash ${src4clumped_GWAS} ${file2GWAS} ${file3clump} ${file4clumped_GWAS}
 
     # step 5 : the vanilla PRS
+    echo bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score}
     bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score}
 
     # step 6 : evaluation
-    echo "[eval] ${file5score} ${file6eval}"
+    echo "[eval] ${file5score} ${file6eval} ${file1split}.test"
 	# ToDo
+    echo ""
 done
 

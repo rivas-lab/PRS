@@ -20,8 +20,7 @@ split_types=("test" "val"  "train")
 # split_types=("test" "val"  "train" "train_and_val")
 
 # create a temp directory
-tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) 
-echo "temp_dir = $tmp_dir"
+tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
 trap handler_exit EXIT
 

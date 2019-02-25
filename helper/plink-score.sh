@@ -10,7 +10,7 @@ if [ $# -lt 3 ] ; then usage ; exit 1 ; fi
 
 in_sumstats=$1
 individuals_keep=$2
-out_sumstats=$3
+out_score=$3
 
 if [ $# -gt 3 ] ; then memory=$4 ; else memory=32000 ; fi
 if [ $# -gt 4 ] ; then threads=$5 ; else threads=4 ; fi
@@ -24,14 +24,19 @@ plink_score () {
     # wrapper function of plink2 --score
 
     UKBB_data_dir="$OAK/private_data/ukbb/${app_id}"
+    bed=${UKBB_data_dir}/cal/pgen/ukb${app_id}_cal_cALL_v2_pgen.pgen
+    bim=${bed%.pgen}.bim
+    fam=${bed%.pgen}.fam
 
-    echo plink2 \
-	--bfile ${UKBB_data_dir}/cal/pgen/ukb${app_id}_cal_cALL_v2 \
+    plink2 \
+	--pgen $bed --bim $bim --fam $fam \
 	--keep ${individuals_keep} \
 	--threads ${threads} --memory ${memory} \
-	--out ${out_score} \
+	--out ${out_score%.sscore} \
 	--score ${in_sumstats} 3 5 8 header
 }
 
-plink_score ${in_sumstats} ${individuals_keep} ${out_score}
+if [ ! -f ${out_score} ] ; then
+	plink_score ${in_sumstats} ${individuals_keep} ${out_score}
+fi
 
