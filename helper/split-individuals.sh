@@ -14,7 +14,7 @@ out_prefix=$2
 phe_type=$3
 if [ $# -gt 3 ] ; then individuals_keep=$4 ; fi
 
-shuf_random_source="$(readlink -f $(dirname $0))/shuf.seed.txt"
+shuf_random_source="$(readlink -f $(dirname $0))/rand.seed.txt"
 missing_value="-9"
 split_types=("test" "val"  "train")
 # split_types=("test" "val"  "train" "train_and_val")
@@ -76,8 +76,8 @@ if [ $phe_type == 'linear' ] || [ $phe_type == 'qt' ] ; then
 
 elif [ $phe_type == 'logistic' ] || [ $phe_type == 'bin' ] ; then
 
-    in_phe_file_controls=${tmp_dir}/$(basename ${phe_file} .phe).controls.phe
-    in_phe_file_cases=${tmp_dir}/$(basename ${phe_file} .phe).cases.phe
+    tmp_in_phe_file_controls=${tmp_dir}/$(basename ${phe_file} .phe).controls.phe
+    tmp_in_phe_file_cases=${tmp_dir}/$(basename ${phe_file} .phe).cases.phe
     cat ${tmp_in_phe_file} | awk '$3 == 1' > ${tmp_in_phe_file_controls}
     cat ${tmp_in_phe_file} | awk '$3 == 2' > ${tmp_in_phe_file_cases}
 

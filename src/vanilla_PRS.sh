@@ -9,6 +9,7 @@ software_versions () {
     which plink
     which plink2
     which bgzip
+    which python
 }
 
 get_GWAS_filename () {
@@ -45,6 +46,7 @@ src2GWAS="${helper_dir}/ukb-cal_gwas-v5.sh"
 src3clump="${helper_dir}/plink-clump.sh"
 src4clumped_GWAS="${helper_dir}/filter-sumstats-to-clumped.sh"
 src5score="${helper_dir}/plink-score.sh"
+src6eval="${helper_dir}/compute_r_or_auc.py"
 
 # configure parameters
 clump_p1_list=("1e-5" "1e-4" "1e-3")
@@ -119,8 +121,8 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
     bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score}
 
     # step 6 : evaluation
-    echo "[eval] ${file5score} ${file6eval} ${file1split}.test"
-	# ToDo
+    echo python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type}
+    python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type}
     echo ""
 done
 
