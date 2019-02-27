@@ -11,15 +11,23 @@ if [ $# -lt 3 ] ; then usage ; exit 1 ; fi
 in_sumstats=$1
 individuals_keep=$2
 out_score=$3
+phe_type=$4
 
-if [ $# -gt 3 ] ; then memory=$4 ; else memory=32000 ; fi
-if [ $# -gt 4 ] ; then threads=$5 ; else threads=4 ; fi
-if [ $# -gt 5 ] ; then app_id=$6 ; else app_id="24983" ; fi
+if [ $# -gt 4 ] ; then memory=$5  ; else memory=32000 ; fi
+if [ $# -gt 5 ] ; then threads=$6 ; else threads=4 ; fi
+if [ $# -gt 6 ] ; then app_id=$7  ; else app_id="24983" ; fi
+
+if [ $phe_type == "bin" ] || [ $phe_type == "logistic" ] ; then 
+	score_col="10"
+elif [ $phe_type == "qt" ] || [ $phe_type == "linear" ] ; then
+	score_col="9"
+fi 
 
 plink_score () {
     in_sumstats=$1
     individuals_keep=$2
     out_score=$3
+    score_col=$4
 
     # wrapper function of plink2 --score
 
@@ -33,10 +41,10 @@ plink_score () {
 	--keep ${individuals_keep} \
 	--threads ${threads} --memory ${memory} \
 	--out ${out_score%.sscore} \
-	--score ${in_sumstats} 3 5 8 header
+	--score ${in_sumstats} 3 5 ${score_col} header
 }
 
 if [ ! -f ${out_score} ] ; then
-	plink_score ${in_sumstats} ${individuals_keep} ${out_score}
+	plink_score ${in_sumstats} ${individuals_keep} ${out_score} ${score_col}
 fi
 

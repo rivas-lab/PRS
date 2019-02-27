@@ -20,7 +20,7 @@ if [ $# -gt 6 ] ; then app_id=$7 ;    else app_id="24983" ; fi
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
-#trap handler_exit EXIT
+trap handler_exit EXIT
 
 copy_with_check () {
         src=$(readlink -f $1)

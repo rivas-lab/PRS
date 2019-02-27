@@ -9,7 +9,10 @@ Date: 2019/02/25
 -------------------------------------------------------------------------
 '''
 
-import argparse, os
+
+import argparse, os, collections
+
+
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression, LogisticRegression
@@ -42,7 +45,7 @@ def read_data(in_score, phe, covar_phe, keep=None):
     else:
         return df_non_missing.merge(
             pd.read_csv(
-                keep, sep=' ', usecols=[0], names=['IID']
+                keep, sep='\t', usecols=[0], names=['IID']
             ),
             on='IID',
             how='inner'
@@ -75,6 +78,7 @@ def compute_r_or_auc_main(in_score, phe, phe_type, covar_phe, keep, out_file, se
         eval2 = compute_r(X2, Y)
         
     elif phe_type in set(['binary', 'bin']):
+        print(collections.Counter(Y))        
         if seed_file is None:
             seed = None
         else: 
@@ -101,7 +105,7 @@ def main():
         '/oak/stanford/groups/mrivas',
         'private_data/ukbb/24983/sqc/ukb24983_GWAS_covar.phe'
     )
-    default_seed_file=os.path.abspath('rand.seed.txt')
+    default_seed_file=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rand.seed.txt')
 
     parser.add_argument('-i', metavar='i', required=True,
                         help='in_score')    

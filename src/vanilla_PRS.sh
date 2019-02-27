@@ -69,7 +69,7 @@ if [ $# -gt 7 ] ; then nPCs=$8 ;    else nPCs=4 ; fi
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
-#trap handler_exit EXIT
+trap handler_exit EXIT
 
 # file names
 dir0input="${out_dir_root}/0_input"
@@ -85,11 +85,17 @@ in_phe_copy="${dir0input}/${phe_name}.phe"
 keep_copy="${dir0input}/${phe_name}.$(basename ${keep})"
 file1split="${dir1split}/${phe_name}"
 file2GWAS="${dir2GWAS}/$( get_GWAS_filename $phe_name $phe_type $app_id )"
-tmp1keep=${tmp_dir}/${phe_name}.keep
+tmp1keep="${tmp_dir}/${phe_name}.keep"
+file_covar="${OAK}/private_data/ukbb/${app_id}/sqc/ukb${app_id}_GWAS_covar.phe"
+
+# create directories
+for d in ${out_dir_root} ${dir0input} ${dir1split} ${dir2GWAS} ${dir3clump} ${dir4clumped_GWAS} ${dir5score} ${dir6eval} ; do
+	if [ ! -d ${d} ] ; then mkdir -p ${d} ; fi
+done
 
 # step 0: copy input files
-copy_with_check ${in_phe} ${in_phe_copy}
-copy_with_check ${keep}   ${keep_copy}
+cat ${in_phe} | awk -v OFS='\t' '{print $1, $2, $3}' > ${in_phe_copy}
+cat ${keep}   | awk -v OFS='\t' '{print $1, $2}'     > ${keep_copy}
 
 # step 1: split cohorts into training ( 80 % = 60 % + 20 % ) and test ( 20 % ) sets
 bash ${src1split}        ${in_phe_copy} ${file1split} ${phe_type} ${keep_copy}
@@ -117,12 +123,12 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
     bash ${src4clumped_GWAS} ${file2GWAS} ${file3clump} ${file4clumped_GWAS}
 
     # step 5 : the vanilla PRS
-    echo bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score}
-    bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score}
+    echo bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score} ${phe_type} ${memory} ${threads} ${app_id}
+    bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score} ${phe_type} ${memory} ${threads} ${app_id}
 
     # step 6 : evaluation
-    echo python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type}
-    python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type}
+    echo python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
+    python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
     echo ""
 done
 

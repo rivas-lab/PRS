@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#SBATCH --job-name=PRS_cancer
-#SBATCH   --output=PRS_cancer.%A_%a.out
-#SBATCH    --error=PRS_cancer.%A_%a.err
-#SBATCH --time=8:00:00
+#SBATCH --job-name=PRS_HC
+#SBATCH   --output=PRS_HC.%A_%a.out
+#SBATCH    --error=PRS_HC.%A_%a.err
+#SBATCH --time=1-0:00:00
 #SBATCH --qos=normal
 #SBATCH -p owners,normal,mrivas
 #SBATCH --nodes=1

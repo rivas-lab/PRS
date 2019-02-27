@@ -51,7 +51,7 @@ apply_shuf () {
 
     cat ${phe_f} \
 	| shuf --random-source=<(get_seeded_random $(cat ${shuf_random_source})) \
-	| awk -v idx_s=$idx_start -v idx_e=$idx_end '( idx_s < NR && NR <= idx_e ){print $1, $1}' 
+	| awk -v OFS='\t' -v idx_s=$idx_start -v idx_e=$idx_end '( idx_s < NR && NR <= idx_e ){print $1, $1}' 
 }
 
 # configure

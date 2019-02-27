@@ -20,7 +20,6 @@ script="$OAK/users/$USER/repos/rivas-lab/PRS/src/vanilla_PRS.sh"
 dataset_name=$(basename $(dirname $(readlink -f $0)))
 output_dir="$OAK/projects/PRS/private_output/vanilla_PRS/${dataset_name}"
 keep="/oak/stanford/groups/mrivas/private_data/ukbb/${app_id}/sqc/population_stratification/ukb${app_id}_white_british.phe"
-out="/oak/stanford/groups/mrivas/projects/PRS/private_output/vanilla_PRS"
 nPCs=4
 phe_type="bin"
 
