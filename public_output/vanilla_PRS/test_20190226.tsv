@@ -1,0 +1,10 @@
+GBE_ID	pval	phe_type	AUC_PRS	AUC_covar_PRS	phe_name	n
+INI30150	1e-3	qt	1.697409e-01	1.922013e-01	Eosinophill_count	327479
+INI30150	1e-4	qt	1.409189e-01	1.673608e-01	Eosinophill_count	327479
+INI30150	1e-5	qt	1.272877e-01	1.561429e-01	Eosinophill_count	327479
+INI50	1e-3	qt	2.774962e-01	7.785341e-01	Standing_height	336500
+INI50	1e-4	qt	2.426374e-01	7.671856e-01	Standing_height	336500
+INI50	1e-5	qt	2.200575e-01	7.604142e-01	Standing_height	336500
+INI5255	1e-3	qt	1.046234e-01	1.328246e-01	Intra-ocular_pressure,_Goldmann-correlated_(right)	81534
+INI5255	1e-4	qt	9.639927e-02	1.264374e-01	Intra-ocular_pressure,_Goldmann-correlated_(right)	81534
+INI5255	1e-5	qt	7.925617e-02	1.141509e-01	Intra-ocular_pressure,_Goldmann-correlated_(right)	81534
