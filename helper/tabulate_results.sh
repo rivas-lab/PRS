@@ -4,7 +4,6 @@ set -beEuo pipefail
 results_dir=$(readlink -f $1)
 
 find ${results_dir} -type f -name "*.eval" \
-| grep -v INI | grep -v HC \
 | while read f ; do cat $f ; done \
 | sed -e "s%${results_dir}%%" \
 | sed -e 's%/%\t%g' \
