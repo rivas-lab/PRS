@@ -3,6 +3,7 @@ set -beEuo pipefail
 usage () {
     echo "$0: snpnet PRS" >&2
     echo "usage: $0 in_phe phe_type keep out_dir_root [memory] [threads] [app_id] [nPCs]" >&2
+    echo "in_phe: phe file or GBE ID (the script automatically extracts phe file from the most recent master phe file)"
 }
 
 software_versions () {
@@ -10,23 +11,6 @@ software_versions () {
     which plink2
     which bgzip
     which python
-}
-
-get_GWAS_filename () {
-	phe_name=$1
-	phe_type=$2
-	app_id=$3
-
-	# configure file names
-	qt_suffix="linear"
-	bin_suffix="logistic.hybrid"
-	prefix="ukb${app_id}_v2.${phe_name}.PHENO1.glm"
-	if   [ ${phe_type} == "qt" ] ; then
-	    res_file="${prefix}.${qt_suffix}.gz"
-	elif [ ${phe_type} == "bin" ] ; then
-	    res_file="${prefix}.${bin_suffix}.gz"
-	fi
-	echo ${res_file}
 }
 
 copy_with_check () {
@@ -56,7 +40,7 @@ software_versions
 
 # parse command line args
 if [ $# -lt 4 ] ; then usage ; exit 1 ; fi
-in_phe="$(readlink -f $1)"
+in_phe_arg="$1"
 phe_type="$2"
 keep="$(readlink -f $3)"
 out_dir_root="$(readlink -f $4)"
@@ -78,12 +62,18 @@ dir3snpnet="${out_dir_root}/3_snpnet"
 #dir5score="${out_dir_root}/5_score"
 #dir6eval="${out_dir_root}/6_eval"
 
-phe_name="$(basename ${in_phe} .phe)"
+if [ -f ${in_phe_arg} ] ; then
+    in_phe=$(readlink -f ${in_phe_arg})
+    phe_name="$(basename ${in_phe_arg} .phe)"
+else
+    phe_name=${in_phe_arg}
+    in_phe="${tmp_dir}/${phe_name}.phe"
+    bash ${src2phe_extract} ${phe_name} > ${in_phe}
+fi
 in_phe_copy="${dir0input}/${phe_name}.phe"
 keep_copy="${dir0input}/${phe_name}.$(basename ${keep})"
 file1split="${dir1split}/${phe_name}"
-tmp2phe="${tmp_dir}/${phe_name}.phe"
-#file2GWAS="${dir2GWAS}/$( get_GWAS_filename $phe_name $phe_type $app_id )"
+tmp2phe="${tmp_dir}/${phe_name}.snpnet.phe"
 
 # create directories
 for d in ${out_dir_root} ${dir0input} ${dir1split} ${dir2bfile} ${dir3snpnet} ; do
@@ -94,21 +84,27 @@ done
 cat ${in_phe} | awk -v OFS='\t' '{print $1, $2, $3}' > ${in_phe_copy}
 cat ${keep}   | awk -v OFS='\t' '{print $1, $2}'     > ${keep_copy}
 
-# step 1: split cohorts into training ( 80 % = 60 % + 20 % ) and test ( 20 % ) sets
+# step 1: split cohorts into training ( 60 % ), validation ( 20 % ), and test ( 20 % ) sets
 bash ${src1split}        ${in_phe_copy} ${file1split} ${phe_type} ${keep_copy}
-#cat  ${file1split}.val ${file1split}.train > ${tmp1keep} # combine validation and training sets
 
 if [ ! -d ${dir2bfile}/${phe_name} ] ; then mkdir -p ${dir2bfile}/${phe_name} ; fi
 for split in ${split_names[@]} ; do
-    bash ${src2bfile}        ${file1split}.${split} ${dir2bfile}/${phe_name}/${split}
+    bash ${src2bfile}        ${file1split}.${split} ${dir2bfile}/${phe_name}/${split} ${memory} ${threads} ${app_id}
 done
 bash ${src2phe_extract} ${phe_name} covar \
 | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp2phe}
 
 # step 3: fit Lasso
-if [ ! -d ${dir3snpnet} ] ; then mkdir -p ${dir3snpnet} ; fi
-echo "Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory}"
-Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory}
+if [ ! -d ${dir3snpnet}/${phe_name} ] ; then mkdir -p ${dir3snpnet}/${phe_name} ; fi
+prevIter=$( find ${dir3snpnet}/${phe_name}/ -name "output_iter_*.rda" | sort -V | wc -l )
+if [ ${phe_type} == 'linear' ] || [ ${phe_type} == 'qt' ] ; then
+    glm_family='gaussian'
+elif [ ${phe_type} == 'logistic' ] || [ ${phe_type} == 'bin' ] ; then
+    glm_family='binomial'
+fi
+
+echo "Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}"
+Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}
 
 exit 0
 

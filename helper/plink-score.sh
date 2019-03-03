@@ -18,10 +18,22 @@ if [ $# -gt 5 ] ; then threads=$6 ; else threads=4 ; fi
 if [ $# -gt 6 ] ; then app_id=$7  ; else app_id="24983" ; fi
 
 if [ $phe_type == "bin" ] || [ $phe_type == "logistic" ] ; then 
-	score_col="10"
+	score_col="OR"
 elif [ $phe_type == "qt" ] || [ $phe_type == "linear" ] ; then
-	score_col="9"
+	score_col="BETA"
 fi 
+
+get_col_idx () {
+    in_file=$(readlink -f $1)
+    col_key=$2
+
+    if [ ${in_file%.gz}.gz == ${in_file} ] ; then 
+	zcat $in_file 
+    else 
+	cat $in_file 
+    fi | awk 'NR==1' | tr "\t" "\n" \
+    | awk -v key=${col_key} '($0 == key){print NR}'
+}
 
 plink_score () {
     in_sumstats=$1
@@ -41,7 +53,7 @@ plink_score () {
 	--keep ${individuals_keep} \
 	--threads ${threads} --memory ${memory} \
 	--out ${out_score%.sscore} \
-	--score ${in_sumstats} 3 5 ${score_col} header
+	--score ${in_sumstats} $( get_col_idx ${in_sumstats} ID ) $( get_col_idx ${in_sumstats} A1 ) $( get_col_idx ${in_sumstats} ${score_col} ) header
 }
 
 if [ ! -f ${out_score} ] ; then

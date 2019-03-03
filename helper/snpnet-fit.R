@@ -15,6 +15,7 @@ snpnet_fit_parser <- function() {
     parser$add_argument('--cpu', metavar='t', type="integer", help='CPU cores')
     parser$add_argument('--mem', metavar='m', type="integer", help='Memory (MB)')
     parser$add_argument('--nPCs', metavar='c', type="integer", default=10, help='The number of PCs (covariates)')
+    parser$add_argument('--prevIter', metavar='i', type="integer", default=0, help='Resume from the previous iteration')
 
     return(parser)
 }
@@ -26,8 +27,11 @@ args <- parser$parse_args(cmdargs)
 
 print(args)
 
-bufferSize<-as.integer((args$mem) / 5)
+mem2bufferSizeDivisionFactor<-4
+bufferSize<-as.integer((args$mem) / mem2bufferSizeDivisionFactor)
 print(paste0("buffer size: ", bufferSize))
+chunkSize <- as.integer(bufferSize / args$cpu)
+print(paste0("chunk size: ", chunkSize))
 
 # config
 configs <- list(
@@ -35,6 +39,7 @@ configs <- list(
    MAF.thresh = 0.001,
    nCores = args$cpu,
    bufferSize = bufferSize,
+   chunkSize = chunkSize,
    meta.dir = "meta/",
    nlams.init = 10,
    nlams.delta = 5
@@ -54,7 +59,8 @@ out <- snpnet(
    use.glmnetPlus = TRUE,
    verbose = TRUE,
    save = TRUE,
+   prevIter = args$prevIter,
    covariates = c("age", "sex", paste0("PC", 1:(args$nPCs))),
-   glmnet.thresh = 1e-12
+   glmnet.thresh = 1e-7
 )
 

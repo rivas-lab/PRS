@@ -70,12 +70,14 @@ def compute_r_or_auc_main(in_score, phe, phe_type, covar_phe, keep, out_file, se
     
     covars=['age', 'sex']+['PC{}'.format(x+1) for x in range(4)]
     X1 = df[['SCORE1_AVG']].values
-    X2 = df[covars + ['SCORE1_AVG']].values
+    X2 = df[covars].values
+    X3 = df[covars + ['SCORE1_AVG']].values
     Y  = np.array(df['phe'])
     
     if phe_type in set(['linear', 'qt']):
         eval1 = compute_r(X1, Y)
         eval2 = compute_r(X2, Y)
+        eval3 = compute_r(X3, Y)
         
     elif phe_type in set(['binary', 'bin']):
         print(collections.Counter(Y))        
@@ -86,9 +88,13 @@ def compute_r_or_auc_main(in_score, phe, phe_type, covar_phe, keep, out_file, se
             
         eval1 = compute_auc(X1, Y, seed)
         eval2 = compute_auc(X2, Y, seed)
+        eval3 = compute_auc(X3, Y, seed)
 
-    results_str='{}\t{}\t{:.6e}\t{:.6e}\n'.format(
-        in_score, phe_type, eval1, eval2
+    results_str='\n'.join(
+        ['\t'.join(
+	    [in_score, phe_type, features, '{:.6e}'.format(score)]
+	) for features, score 
+	in zip(['PRS', 'covars', 'PRS_and_covars'], [eval1, eval2, eval3] ) ]
     )
     with open(out_file, 'w') as fw:        
         fw.write(results_str)        
