@@ -1,0 +1,7 @@
+#GBE_ID	PRS_model	phe_type	features	R_or_AUC	phe_name	N
+INI5255	snpnet_PRS	qt	covars	8.329626e-02	Intra-ocular_pressure,_Goldmann-correlated_(right)	81534
+INI5255	snpnet_PRS	qt	PRS	1.842157e-01	Intra-ocular_pressure,_Goldmann-correlated_(right)	81534
+INI5255	snpnet_PRS	qt	PRS_and_covars	2.022961e-01	Intra-ocular_pressure,_Goldmann-correlated_(right)	81534
+INI30150	snpnet_PRS	qt	covars	8.993062e-02	Eosinophill_count	327479
+INI30150	snpnet_PRS	qt	PRS	2.841750e-01	Eosinophill_count	327479
+INI30150	snpnet_PRS	qt	PRS_and_covars	2.980539e-01	Eosinophill_count	327479
