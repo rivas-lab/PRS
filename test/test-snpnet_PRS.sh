@@ -13,7 +13,6 @@ bash $script \
 	24983 \
 	10
 
-exit 0
 bash $script \
 	/oak/stanford/groups/mrivas/dev-ukbb-tools/phenotypes/10136/INI5255.phe \
 	qt \
@@ -23,7 +22,6 @@ bash $script \
 	10 \
 	24983 \
 	10
-
 
 exit 0
 bash $script \

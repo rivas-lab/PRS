@@ -29,8 +29,9 @@ src1split="${helper_dir}/split-individuals.sh"
 src2bfile="${helper_dir}/plink-subset-bfile.sh"
 src2phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
 src3snpnet="${helper_dir}/snpnet-fit.R"
-#src5score="${helper_dir}/plink-score.sh"
-#src6eval="${helper_dir}/compute_r_or_auc.py"
+src3snpnet_convert="${helper_dir}/snpnet-rds2table.R"
+src4score="${helper_dir}/plink-score.sh"
+src5eval="${helper_dir}/compute_r_or_auc.py"
 
 # configure parameters
 split_names=("train" "val" "test")
@@ -59,8 +60,10 @@ dir0input="${out_dir_root}/0_input"
 dir1split="${out_dir_root}/1_split"
 dir2bfile="${out_dir_root}/2_bfile"
 dir3snpnet="${out_dir_root}/3_snpnet"
-#dir5score="${out_dir_root}/5_score"
-#dir6eval="${out_dir_root}/6_eval"
+dir4score="${out_dir_root}/4_score"
+dir5eval="${out_dir_root}/5_eval"
+
+file_covar="${OAK}/private_data/ukbb/${app_id}/sqc/ukb${app_id}_GWAS_covar.phe"
 
 if [ -f ${in_phe_arg} ] ; then
     in_phe=$(readlink -f ${in_phe_arg})
@@ -74,9 +77,14 @@ in_phe_copy="${dir0input}/${phe_name}.phe"
 keep_copy="${dir0input}/${phe_name}.$(basename ${keep})"
 file1split="${dir1split}/${phe_name}"
 tmp2phe="${tmp_dir}/${phe_name}.snpnet.phe"
+file3snpnet="${dir3snpnet}/${phe_name}.tsv.gz"
+tmp3snpnet1="${tmp_dir}/${phe_name}.snpnet.coeff.1.tsv"
+tmp3snpnet2="${tmp_dir}/${phe_name}.snpnet.coeff.2.tsv"
+file4score="${dir4score}/${phe_name}.sscore"
+file5eval="${dir5eval}/${phe_name}.sscore.eval"
 
 # create directories
-for d in ${out_dir_root} ${dir0input} ${dir1split} ${dir2bfile} ${dir3snpnet} ; do
+for d in ${out_dir_root} ${dir0input} ${dir1split} ${dir2bfile} ${dir3snpnet} ${dir4score} ${dir5eval}; do
 	if [ ! -d ${d} ] ; then mkdir -p ${d} ; fi
 done
 
@@ -103,38 +111,27 @@ elif [ ${phe_type} == 'logistic' ] || [ ${phe_type} == 'bin' ] ; then
     glm_family='binomial'
 fi
 
+if [ ! -f ${file3snpnet} ] ; then
 echo "Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}"
-Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}
+#Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}
 
-exit 0
+rda_file=${dir3snpnet}/${phe_name}/results/output_iter_${prevIter}.rda
+if [ ! -f ${rda_file} ] ; then 
+    echo "rda file does not exist $rda_file" >&2 ; exit 1
+else
+    Rscript ${src3snpnet_convert} -i ${rda_file} -o ${tmp3snpnet1} 
+    cat ${tmp3snpnet1} | awk '(NR == 1){print "#" $0} ; (NR > 1){print $0}' > ${tmp3snpnet2}
+    bgzip ${tmp3snpnet2}
+    cp -a ${tmp3snpnet2}.gz ${file3snpnet}
+fi
+fi
 
-# step 2: GWAS on training set
-bash ${src2GWAS}        ${dir2GWAS} ${in_phe_copy} ${phe_name} ${phe_type} ${tmp1keep} ${memory} ${threads} ${nPCs} ${app_id}
+# step 4 : the vanilla PRS
+echo bash ${src4score}        ${file3snpnet} ${keep_copy} ${file4score} ${phe_type} ${memory} ${threads} ${app_id}
+bash ${src4score}        ${file3snpnet} ${keep_copy} ${file4score} ${phe_type} ${memory} ${threads} ${app_id}
 
-for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping parameters
-    for d in ${dir3clump} ${dir4clumped_GWAS} ${dir5score} ${dir6eval} ; do
-	if [ ! -d ${d}/${clump_p1} ] ; then mkdir -p ${d}/${clump_p1} ; fi
-    done
-    file3clump="${dir3clump}/${clump_p1}/$( basename ${file2GWAS%.gz}.clumped.gz )"
-    file4clumped_GWAS="${dir4clumped_GWAS}/${clump_p1}/$( basename ${file2GWAS} )"
-    file5score="${dir5score}/${clump_p1}/$( basename ${file2GWAS%.gz} ).sscore"
-    file6eval="${dir6eval}/${clump_p1}/$( basename ${file2GWAS%.gz} ).sscore.eval"
-
-    # step 3: LD clumping
-    echo bash ${src3clump}        ${file2GWAS} ${tmp1keep} ${file3clump} ${clump_p1} ${memory} ${threads} ${app_id}
-    bash ${src3clump}        ${file2GWAS} ${tmp1keep} ${file3clump} ${clump_p1} ${memory} ${threads} ${app_id}
-
-    # step 4 : subset GWAS hits to LD clumped markers
-    echo bash ${src4clumped_GWAS} ${file2GWAS} ${file3clump} ${file4clumped_GWAS}
-    bash ${src4clumped_GWAS} ${file2GWAS} ${file3clump} ${file4clumped_GWAS}
-
-    # step 5 : the vanilla PRS
-    echo bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score} ${phe_type} ${memory} ${threads} ${app_id}
-    bash ${src5score}        ${file4clumped_GWAS} ${keep_copy} ${file5score} ${phe_type} ${memory} ${threads} ${app_id}
-
-    # step 6 : evaluation
-    echo python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
-    python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
-    echo ""
-done
+# step 5 : evaluatio
+echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
+python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
+echo ""
 

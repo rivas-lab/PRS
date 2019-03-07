@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --job-name=snpnet_HC
-#SBATCH   --output=snpnet_HC.%A_%a.out
-#SBATCH    --error=snpnet_HC.%A_%a.err
+#SBATCH --job-name=snpnet_cancer
+#SBATCH   --output=snpnet_cancer.%A_%a.out
+#SBATCH    --error=snpnet_cancer.%A_%a.err
 #SBATCH --time=1-0:00:00
 #SBATCH --qos=normal
 #SBATCH -p owners,normal,mrivas
