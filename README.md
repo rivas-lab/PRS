@@ -39,6 +39,7 @@ We store the output from this repo into two places:
 0. Install packages
 
 ```
+$ ml load curl
 $ ml load R gcc/8.1.0
 $ R
 > # If you don't have devtools on R, please install it.
