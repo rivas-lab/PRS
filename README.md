@@ -49,6 +49,9 @@ $ R
 > # This package is in Junyang's private repo.
 > # You may use a copy on $OAK
 > install_local('/oak/stanford/groups/mrivas/software/glmnetPlus')
+> # Plase make sure you can load the new packages
+> library(glmnetPlus)
+> library(snpnet)
 ```
 
 1. Clone the repo and create a symbolic link to `private_output`
