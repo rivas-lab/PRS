@@ -35,6 +35,22 @@ We store the output from this repo into two places:
   - For example, IOP score is in: `$OAK/projects/PRS/private_output/snpnet_PRS/test/4_score/INI5255.sscore`
 
 ## Getting started
+
+0. Install packages
+
+```
+$ ml load R gcc/8.1.0
+$ R
+> # If you don't have devtools on R, please install it.
+> # install.packages("devtools") 
+> library(devtools)
+> install_github("junyangq/snpnet")
+> # snpnet depends on glmnetPlus package. 
+> # This package is in Junyang's private repo.
+> # You may use a copy on $OAK
+> install_local('/oak/stanford/groups/mrivas/software/glmnetPlus')
+```
+
 1. Clone the repo and create a symbolic link to `private_output`
 
 ```
