@@ -11,6 +11,7 @@ software_versions () {
     which plink2
     which bgzip
     which python
+    which R
 }
 
 copy_with_check () {
@@ -30,6 +31,7 @@ src2bfile="${helper_dir}/plink-subset-bfile.sh"
 src2phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
 src3snpnet="${helper_dir}/snpnet-fit.R"
 src3snpnet_convert="${helper_dir}/snpnet-rds2table.R"
+src3covar_Z="${helper_dir}/compute_covar_Z_transform_statistics.py"
 src4score="${helper_dir}/plink-score.sh"
 src5eval="${helper_dir}/compute_r_or_auc.py"
 
@@ -78,8 +80,11 @@ keep_copy="${dir0input}/${phe_name}.$(basename ${keep})"
 file1split="${dir1split}/${phe_name}"
 tmp2phe="${tmp_dir}/${phe_name}.snpnet.phe"
 file3snpnet="${dir3snpnet}/${phe_name}.tsv.gz"
+file3snpnet_covars="${dir3snpnet}/${phe_name}.covars.tsv.gz"
 tmp3snpnet1="${tmp_dir}/${phe_name}.snpnet.coeff.1.tsv"
 tmp3snpnet2="${tmp_dir}/${phe_name}.snpnet.coeff.2.tsv"
+tmp3snpnet_covars1="${tmp_dir}/${phe_name}.snpnet.coeff.1.covars.tsv"
+tmp3snpnet_covars2="${tmp_dir}/${phe_name}.snpnet.coeff.2.covars.tsv.gz"
 file4score="${dir4score}/${phe_name}.sscore"
 file5eval="${dir5eval}/${phe_name}.sscore.eval"
 
@@ -111,7 +116,7 @@ elif [ ${phe_type} == 'logistic' ] || [ ${phe_type} == 'bin' ] ; then
     glm_family='binomial'
 fi
 
-if [ ! -f ${file3snpnet} ] ; then
+if [ ! -f ${file3snpnet} ] || [ ! -f ${file3snpnet_covars} ]; then
 echo "Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}"
 #Rscript ${src3snpnet} -p ${tmp2phe} -n ${phe_name} -g ${dir2bfile}/${phe_name}/ -o ${dir3snpnet}/${phe_name}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family}
 
@@ -119,19 +124,24 @@ rda_file=${dir3snpnet}/${phe_name}/results/output_iter_${prevIter}.rda
 if [ ! -f ${rda_file} ] ; then 
     echo "rda file does not exist $rda_file" >&2 ; exit 1
 else
-    Rscript ${src3snpnet_convert} -i ${rda_file} -o ${tmp3snpnet1} 
+    echo Rscript ${src3snpnet_convert} -i ${rda_file} -o ${tmp3snpnet1%.tsv} 
+    Rscript ${src3snpnet_convert} -i ${rda_file} -o ${tmp3snpnet1%.tsv} 
+    # beta for SNPs
     cat ${tmp3snpnet1} | awk '(NR == 1){print "#" $0} ; (NR > 1){print $0}' > ${tmp3snpnet2}
     bgzip ${tmp3snpnet2}
+    # beta for covariates
+    python ${src3covar_Z} -o ${tmp3snpnet_covars2%.gz} -i ${tmp3snpnet_covars1} -k ${file1split}.train -c ${file_covar}
+    bgzip ${tmp3snpnet_covars2%.gz}
     cp -a ${tmp3snpnet2}.gz ${file3snpnet}
+    cp -a  ${tmp3snpnet_covars2} ${file3snpnet_covars}
 fi
 fi
 
-# step 4 : the vanilla PRS
+# step 4 : PLINK --score
 echo bash ${src4score}        ${file3snpnet} ${keep_copy} ${file4score} ${phe_type} ${memory} ${threads} ${app_id}
 bash ${src4score}        ${file3snpnet} ${keep_copy} ${file4score} ${phe_type} ${memory} ${threads} ${app_id}
 
-# step 5 : evaluatio
-echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
-python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
+# step 5 : evaluation
+echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
+python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
 echo ""
-
