@@ -16,3 +16,9 @@
 
 cat $0 | egrep '^#SBATCH --mem=' | awk -v FS='=' '{print $NF}'
 
+
+    prevIter=5
+    for iter in $( seq 0 ${prevIter} | grep -v 0 | sort -nr | awk 'NR>1' ) ; do
+        echo $iter
+    done
+

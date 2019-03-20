@@ -39,8 +39,7 @@ We store the output from this repo into two places:
 0. Install packages
 
 ```
-$ ml load curl
-$ ml load R gcc/8.1.0
+$ ml load curl R gcc/8.1.0
 $ R
 > # If you don't have devtools on R, please install it.
 > # install.packages("devtools") 
@@ -60,9 +59,12 @@ $ R
 ```
 $ cd $OAK/users/$USER/repos/rivas-lab
 $ git clone git@github.com:rivas-lab/PRS.git
+$ # There is a dependency to some scripts in ukbb-tools
+$ git clone git@github.com:rivas-lab/ukbb-tools.git
 $ cd PRS
 $ ln -s $OAK/projects/PRS/private_output .
 ```
+
 
 2. load the relevant modules
 

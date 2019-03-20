@@ -13,7 +13,6 @@ bash $script \
 	24983 \
 	10
 
-
 exit 0
 bash $script \
 	/oak/stanford/groups/mrivas/dev-ukbb-tools/phenotypes/9796/INI30150.phe \

@@ -18,9 +18,7 @@ snpnet_rds2table_parser <- function() {
     return(parser)
 }
 
-snpnet_rds2table <- function(rda.file) {
-# read snpnet results file
-    fit <- readRDS(rda.file)
+snpnet_fit2table <- function(fit) {
     df <- fit$beta[which.max(fit$metric.val)] %>% data.frame()
     colnames(df) <- 'BETA'
 
@@ -54,6 +52,12 @@ snpnet_extract_covars <- function(df) {
     select(ID, BETA)
 # return
     return(df_slice)
+}
+
+snpnet_rds2table <- function(rda.file) {
+# read snpnet results file
+    fit <- readRDS(rda.file)
+    return(snpnet_fit2table(fit))
 }
 
 # parse

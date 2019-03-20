@@ -59,4 +59,3 @@ plink_score () {
 #if [ ! -f ${out_score} ] ; then
 	plink_score ${in_sumstats} ${individuals_keep} ${out_score} ${score_col}
 #fi
-
