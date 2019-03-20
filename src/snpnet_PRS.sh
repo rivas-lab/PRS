@@ -24,6 +24,16 @@ copy_with_check () {
 	if [ -d $src ] && [ ! -d $dst ] ; then cp -ar $src $dst ; fi
 }
 
+find_prevIter () {
+    dir=$1
+    find ${dir} -name "output_iter_*.rda" \
+    | sort -Vr \
+    | awk 'NR==1' \
+    | awk -v FS='/' '{print $NF}' \
+    | sed -e 's/^output_iter_//g' \
+    | sed -s 's/.rda$//g'
+}
+
 # helper scripts
 helper_dir="$(dirname $(dirname $(readlink -f $0)))/helper"
 src1split="${helper_dir}/split-individuals.sh"
@@ -109,7 +119,7 @@ bash ${src2phe_extract} ${phe_name} covar \
 
 # step 3: fit Lasso
 if [ ! -d ${dir3snpnet}/${phe_name} ] ; then mkdir -p ${dir3snpnet}/${phe_name} ; fi
-prevIter=$( find ${dir3snpnet}/${phe_name}/ -name "output_iter_*.rda" | sort -V | wc -l )
+prevIter=$( find_prevIter ${dir3snpnet}/${phe_name}/ )
 if [ ${phe_type} == 'linear' ] || [ ${phe_type} == 'qt' ] ; then
     glm_family='gaussian'
 elif [ ${phe_type} == 'logistic' ] || [ ${phe_type} == 'bin' ] ; then

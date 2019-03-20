@@ -4,7 +4,7 @@ set -beEuo pipefail
 default_icdinfo=$OAK/users/$USER/repos/rivas-lab/wiki/ukbb/icdinfo/icdinfo.txt
 
 usage () {
-    echo "usage: $0 results_dir [PRS_type (snpnet | vanilla ) default: vanilla] [icdinfo.txt default: default_icdinfo ]" >&2
+    echo "usage: $0 results_dir [PRS_type (snpnet | vanilla ) default: vanilla] [icdinfo.txt default: $default_icdinfo ]" >&2
 }
 
 # parse command line args

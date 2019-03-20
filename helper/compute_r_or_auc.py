@@ -5,7 +5,7 @@ compute_r_or_auc.py
 Evaluation script for PRS score by computing r or AUC
 
 Author: Yosuke Tanigawa (ytanigaw@stanford.edu)
-Date: 2019/02/25
+Date: 2019/02/25 (updated on 2019/3/19)
 -------------------------------------------------------------------------
 '''
 
@@ -23,9 +23,8 @@ from rivaslab_PRS_misc import pd_read_csv_usecols_by_key
 class PRS_eval:
     '''
     This class computes R or AUC for multiple PRS models
-    
-    
     '''
+    
     ######################################################
     # Constructor
     ######################################################
@@ -61,7 +60,7 @@ class PRS_eval:
             
     def _read_seed(self):
         if self._is_bin() and self.seed_file is not None:
-            return int(np.loadtxt(seed_file))
+            return int(np.loadtxt(self.seed_file))
         else: 
             return None
             
@@ -85,8 +84,8 @@ class PRS_eval:
             self.metrics[model_name] = self._compute_r(x, y)
 
         elif self._is_bin():
-            print(collections.Counter(Y))        
-            self.metrics[model_name] = self._compute_auc(x, y, seed)
+            print(collections.Counter(y))        
+            self.metrics[model_name] = self._compute_auc(x, y, self.seed)
         
     def get_metrics_str(self):
         return ['{}\t{:.6e}'.format(x[0], x[1]) for x in self.metrics.items()]
@@ -148,11 +147,11 @@ def compute_r_or_auc_main(in_score, phe, phe_type, covar_phe, betas, keep, out_f
     
     PRS['Genotype_only'] = df[['SCORE1_SUM']].values
     PRS['Covariates_only'] = compute_score_for_covariates(df, betas)
-    PRS['Covariates_only_center'] = compute_score_for_covariates(df, betas, center=True)
-    PRS['Covariates_only_Z'] = compute_score_for_covariates(df, betas, Z=True)
+#    PRS['Covariates_only_center'] = compute_score_for_covariates(df, betas, center=True)
+#    PRS['Covariates_only_Z'] = compute_score_for_covariates(df, betas, Z=True)
     PRS['Genotype_and_covariates'] = PRS['Genotype_only'] + PRS['Covariates_only']
-    PRS['Genotype_and_covariates_center'] = PRS['Genotype_only'] + PRS['Covariates_only_center']
-    PRS['Genotype_and_covariates_Z'] = PRS['Genotype_only'] + PRS['Covariates_only_Z']
+#    PRS['Genotype_and_covariates_center'] = PRS['Genotype_only'] + PRS['Covariates_only_center']
+#    PRS['Genotype_and_covariates_Z'] = PRS['Genotype_only'] + PRS['Covariates_only_Z']
 
     Y  = np.array(df['phe'])
     prs_eval = PRS_eval(phe_type, seed_file)

@@ -28,9 +28,9 @@ get_col_idx () {
     col_key=$2
 
     if [ ${in_file%.gz}.gz == ${in_file} ] ; then 
-	zcat $in_file 
+        zcat $in_file 
     else 
-	cat $in_file 
+        cat $in_file 
     fi | awk 'NR==1' | tr "\t" "\n" \
     | awk -v key=${col_key} '($0 == key){print NR}'
 }
