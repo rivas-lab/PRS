@@ -74,6 +74,7 @@ else
     in_phe="${tmp_dir}/${phe_name}.phe"
     bash ${src2phe_extract} ${phe_name} | awk 'NR>1' > ${in_phe}
 fi
+
 in_phe_copy="${dir0input}/${phe_name}.phe"
 keep_copy="${dir0input}/${phe_name}.$(basename ${keep})"
 file1split="${dir1split}/${phe_name}"
