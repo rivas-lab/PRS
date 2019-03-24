@@ -70,6 +70,7 @@ if [ $# -gt 5 ] ; then threads=$6 ; else threads=4 ; fi
 if [ $# -gt 6 ] ; then app_id=$7 ;  else app_id="24983" ; fi
 if [ $# -gt 7 ] ; then nPCs=$8 ;    else nPCs=4 ; fi
 
+echo $LOCAL_SCRATCH
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
@@ -132,7 +133,7 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
     file3clump="${dir3clump}/${clump_p1}/$( basename ${file2GWAS%.gz}.clumped.gz )"
     tmp4clumped_var_list=${tmp_dir}/${phe_name}.${clump_p1}.vars
     tmp4bfile_all_variants=${tmp_dir}/${phe_name}.all_variants
-    file4bfile=${dir4bfile}/${clump_p1}/${phe_name}/${split} 
+    file4bfile=${dir4bfile}/${clump_p1}/${phe_name}
     file5snpnet="${dir5snpnet}/${clump_p1}/${phe_name}"
     file5snpnet_geno="${file5snpnet}.tsv.gz"
     file5snpnet_covars="${file5snpnet}.covars.tsv.gz"
@@ -149,7 +150,7 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
         # split PLINK file into train/val/test
         bash ${src4bfile} ${file1split}.${split} ${tmp4bfile_all_variants}.${split} ${memory} ${threads} ${app_id}                
         # extract LD clumped variants
-        bash ${src4extract} ${tmp4bfile_all_variants}.${split} ${tmp4clumped_var_list} ${file4bfile}.${split} ${memory} ${threads} ${app_id}
+        bash ${src4extract} ${tmp4bfile_all_variants}.${split} ${tmp4clumped_var_list} ${file4bfile}/${split} ${memory} ${threads} ${app_id}
     done
 
     # step 5: fit Lasso (snpnet)

@@ -11,8 +11,9 @@ population_keep="${OAK}/private_data/ukbb/24983/sqc/population_stratification/uk
 
 repo_dir="$(dirname $(dirname $(readlink -f $0)))"
 script="${repo_dir}/src/$(basename $0 | cut -c6-)"
-method="$(basename $script | cut -c6- | awk -v FS='.' '{print $1}')"
+method="$(basename ${script%.sh} )"
 output_dir="${repo_dir}/private_output/${method}/${dataset}"
+if [ ! -d ${output_dir} ] ; then mkdir -p ${output_dir} ; fi
 
 bash $script \
 	INI5255 \
