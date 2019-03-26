@@ -145,7 +145,7 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
     zcat ${file3clump} | awk 'NR>1 {print $3}' > ${tmp4clumped_var_list}
     
     # step 4: prepare files
-    if [ ! -d $(dirname ${file4bfile}) ] ; then mkdir -p $(dirname ${file4bfile}) ; fi
+    if [ ! -d ${file4bfile} ] ; then mkdir -p ${file4bfile} ; fi
     for split in ${split_names[@]} ; do
         # split PLINK file into train/val/test
         bash ${src4bfile} ${file1split}.${split} ${tmp4bfile_all_variants}.${split} ${memory} ${threads} ${app_id}                

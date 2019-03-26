@@ -30,12 +30,16 @@ get_glm_family () {
 
 find_prevIter () {
     dir=$1
-    find ${dir} -name "output_iter_*.rda" \
-    | sort -Vr \
-    | awk 'NR==1' \
-    | awk -v FS='/' '{print $NF}' \
-    | sed -e 's/^output_iter_//g' \
-    | sed -s 's/.rda$//g'
+    if [ $(find ${dir} -name "output_iter_*.rda") -gt 0 ] ; then
+	find ${dir} -name "output_iter_*.rda" \
+        | sort -Vr \
+        | awk 'NR==1' \
+        | awk -v FS='/' '{print $NF}' \
+        | sed -e 's/^output_iter_//g' \
+        | sed -s 's/.rda$//g'
+    else
+	echo 0
+    fi
 }
 
 clean_up_intermediate_rda_files () {

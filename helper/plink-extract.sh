@@ -37,6 +37,6 @@ plink_extract () {
 }
 
 if [ ! -f ${out_bfile}.bed ] && [ ! -f ${out_bfile}.bim ] && [ ! -f ${out_bfile}.fam ] ; then
-	plink_extract ${in_bfile} ${individuals_keep} ${out_bfile}
+	plink_extract ${in_bfile} ${variants_extract} ${out_bfile}
 fi
 
