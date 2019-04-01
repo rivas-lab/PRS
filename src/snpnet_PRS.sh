@@ -29,7 +29,8 @@ copy_with_check () {
 helper_dir="$(dirname $(dirname $(readlink -f $0)))/helper"
 src1split="${helper_dir}/split-individuals.sh"
 src2bfile="${helper_dir}/plink-subset-bfile.sh"
-src2phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
+src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
+src_combine_phe_and_covar="${helper_dir}/combine_phe_and_covar.sh"
 src3snpnet="${helper_dir}/snpnet_wrapper.sh"
 src4score="${helper_dir}/plink-score.sh"
 src5eval="${helper_dir}/compute_r_or_auc.py"
@@ -72,7 +73,7 @@ if [ -f ${in_phe_arg} ] ; then
 else
     phe_name=${in_phe_arg}
     in_phe="${tmp_dir}/${phe_name}.phe"
-    bash ${src2phe_extract} ${phe_name} | awk 'NR>1' > ${in_phe}
+    bash ${src_phe_extract} ${phe_name} | awk 'NR>1' > ${in_phe}
 fi
 
 in_phe_copy="${dir0input}/${phe_name}.phe"
@@ -103,8 +104,11 @@ if [ ! -d ${dir2bfile}/${phe_name} ] ; then mkdir -p ${dir2bfile}/${phe_name} ; 
 for split in ${split_names[@]} ; do
     bash ${src2bfile}        ${file1split}.${split} ${dir2bfile}/${phe_name}/${split} ${memory} ${threads} ${app_id}
 done
-bash ${src2phe_extract} ${phe_name} covar \
-| cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp2phe}
+if [ -f ${in_phe_arg} ] ; then
+    bash ${src_combine_phe_and_covar} ${phe_name} ${in_phe_copy} 
+else
+    bash ${src_phe_extract} --covar ${phe_name} 
+fi | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp2phe}
 
 # step 3: fit Lasso (snpnet)
 echo bash ${src3snpnet} ${dir2bfile}/${phe_name} ${tmp2phe} ${phe_name} ${phe_type} ${file_covar} ${file1split}.train ${file3snpnet} ${memory} ${threads} ${nPCs}

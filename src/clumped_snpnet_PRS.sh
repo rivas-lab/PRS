@@ -50,6 +50,7 @@ src4extract="${helper_dir}/plink-extract.sh"
 src5snpnet="${helper_dir}/snpnet_wrapper.sh"
 src6score="${helper_dir}/plink-score.sh"
 src7eval="${helper_dir}/compute_r_or_auc.py"
+src_combine_phe_and_covar="${helper_dir}/combine_phe_and_covar.sh"
 src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
 
 # configure parameters
@@ -70,11 +71,10 @@ if [ $# -gt 5 ] ; then threads=$6 ; else threads=4 ; fi
 if [ $# -gt 6 ] ; then app_id=$7 ;  else app_id="24983" ; fi
 if [ $# -gt 7 ] ; then nPCs=$8 ;    else nPCs=4 ; fi
 
-echo $LOCAL_SCRATCH
 # create a temp directory
-tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
+tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir" >&2
 handler_exit () { rm -rf $tmp_dir ; }
-#trap handler_exit EXIT
+trap handler_exit EXIT
 
 # file names
 dir0input="${out_dir_root}/0_input"
@@ -119,8 +119,11 @@ bash ${src1split} ${in_phe_copy} ${file1split} ${phe_type} ${keep_copy}
 # combine validation and training sets for GWAS
 cat  ${file1split}.val ${file1split}.train > ${tmp_keep} 
 # prepare phe file for snpnet
-bash ${src_phe_extract} ${phe_name} covar \
-| cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp_phe}
+if [ -f ${in_phe_arg} ] ; then
+    bash ${src_combine_phe_and_covar} ${phe_name} ${in_phe_copy}    
+else
+    bash ${src_phe_extract} --covar ${phe_name}
+fi | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp_phe}
 
 # step 2: GWAS on training set
 if [ ! -d ${dir2GWAS} ] ; then mkdir -p ${dir2GWAS} ; fi
