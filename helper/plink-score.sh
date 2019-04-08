@@ -56,6 +56,6 @@ plink_score () {
 	--score ${in_sumstats} $( get_col_idx ${in_sumstats} ID ) $( get_col_idx ${in_sumstats} A1 ) $( get_col_idx ${in_sumstats} ${score_col} ) header cols=maybefid,maybesid,phenos,nmissallele,dosagesum,scoreavgs,denom,scoresums
 }
 
-#if [ ! -f ${out_score} ] ; then
+if [ ! -f ${out_score} ] ; then
 	plink_score ${in_sumstats} ${individuals_keep} ${out_score} ${score_col}
-#fi
+fi

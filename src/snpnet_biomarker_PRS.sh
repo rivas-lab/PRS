@@ -82,7 +82,7 @@ if [ -f ${in_phe_arg} ] ; then
 else
     phe_name=${in_phe_arg}
     in_phe="${tmp_dir}/${phe_name}.phe"
-    bash ${src_phe_extract} ${phe_name} | awk 'NR>1' > ${in_phe}
+    bash ${src_phe_extract} ${phe_name} > ${in_phe}
 fi
 
 in_phe_copy="${dir0input}/${phe_name}.phe"
@@ -102,8 +102,9 @@ for d in ${out_dir_root} ${dir0input} ${dir1split} ${dir2bfile} ${dir3snpnet} ${
 done
 
 # step 0: copy input files
-cat ${in_phe} | awk -v OFS='\t' '{print $1, $2, $3}' > ${in_phe_copy}
-cat ${keep}   | awk -v OFS='\t' '{print $1, $2}'     > ${keep_copy}
+cat ${in_phe} | awk -v OFS='\t' '{print $1, $2, $3}' | sed -e 's/NA$/-9/g' \
+| awk '(NR==1){print "#" $0} (NR>1){print $0}' | sed -e 's/^##/#/g' > ${in_phe_copy}
+cat ${keep}   | awk -v OFS='\t' '{print $1, $2}' > ${keep_copy}
 
 # step 1: split cohorts into training ( 60 % ), validation ( 20 % ), and test ( 20 % ) sets
 bash ${src1split}        ${in_phe_copy} ${file1split} ${phe_type} ${keep_copy}
@@ -122,7 +123,6 @@ else
     echo "$0 phe_does_not_exists file_covar=${file_covar}" >&2
     bash ${src_phe_extract} --covar ${phe_name} 
 fi > ${tmp2phe}    
-#fi | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp2phe}
 
 # step 3: fit Lasso (snpnet)
 echo bash ${src3snpnet} ${dir2bfile}/${phe_name} ${tmp2phe} ${phe_name} ${phe_type} ${file_covar} ${file1split}.train ${file3snpnet} ${memory} ${threads} ${nPCs} ${covar_list_f}

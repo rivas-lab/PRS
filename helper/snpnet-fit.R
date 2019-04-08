@@ -5,6 +5,7 @@ suppressMessages(library(glmnetPlus))
 #suppressMessages(library(snpnet))
 library(devtools)
 load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/snpnet')
+# load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/junyangq/snpnet')
 
 snpnet_fit_parser <- function() {
     parser <- ArgumentParser(description='snpnet fit wrapper')
@@ -47,15 +48,11 @@ read_file_as_list <- function(file){
 snpnet_fit2table <- function(fit) {
     df <- fit$beta[which.max(fit$metric.val)] %>% data.frame()
     colnames(df) <- 'BETA'
-
-    df_separated <- df %>%
-    rownames_to_column("feature") %>%
-    separate(feature, into=c('ID', 'A1'), sep='_')
-
-    return(df_separated)
+    df %>%
+    rownames_to_column("ID") 
 }
 
-snpnet_join_with_bim <- function(df, bim.file) {
+snpnet_join_with_bim <- function(df, covariates, bim.file) {
 # Define constants
     bim.cols <- c('CHROM', 'ID', 'CM', 'POS', 'ALT', 'REF')
     out.cols <- c('CHROM', 'POS', 'ID', 'REF', 'ALT', 'A1', 'BETA')
@@ -64,25 +61,19 @@ snpnet_join_with_bim <- function(df, bim.file) {
     colnames(bim.df) <- bim.cols
 # process the given data frame (join w/ bim)
     df_joined <- df %>%
+    filter(
+        ! ID %in% covariates
+    ) %>% filter(
+        BETA != 0
+    ) %>% separate(
+        ID, into=c('ID', 'A1'), sep='_'
+    ) %>%
     drop_na() %>%
     left_join(bim.df, on='ID') %>%
-    filter(BETA != 0) %>%
     select(out.cols) %>%
     arrange(CHROM, POS)
 # return
     return(df_joined)
-}
-
-snpnet_extract_covars <- function(df, covariates) {
-    df_slice <- df %>% 
-#    filter(is.na(A1)) %>% 
-    right_join(
-        data.frame(ID = covariates),
-        on='ID'
-    ) %>% 
-    select(ID, BETA)
-# return
-    return(df_slice)
 }
 
 snpnet_fit_main <- function(args){
@@ -142,13 +133,18 @@ snpnet_fit_main <- function(args){
     # extract beta values and write them to files
     df <- snpnet_fit2table(fit)
     # beta for genotypes
-    df_genotypes <- snpnet_join_with_bim(df, args$bim)
+    df_genotypes <- df %>% 
+    snpnet_join_with_bim(covariates, args$bim)
     df_genotypes %>% write.table(
         paste0(args$b, '.tsv'), 
         quote=FALSE, row.names=FALSE, sep='\t'
     )
     # beta for covariates
-    df_covars <- snpnet_extract_covars(df, covariates)    
+    df_covars <- df %>% filter(
+        ID %in% covariates
+    ) %>% select(
+        ID, BETA
+    )
     df_covars %>% write.table(
         paste0(args$b, '.covars.tsv'), 
         quote=FALSE, row.names=FALSE, sep='\t'

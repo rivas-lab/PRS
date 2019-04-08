@@ -104,7 +104,7 @@ def read_data_for_eval(in_score, phe, covar_phe, keep=None):
         in_score, cols=['IID', 'SCORE1_SUM'], sep='\t'
     ).merge(
         pd.read_csv(
-            phe, sep='\t', usecols=[1,2], names=['IID', 'phe']
+            phe, sep='\t', usecols=[1,2], names=['IID', 'phe'], comment='#'
         ),
         on='IID'
     ).merge(

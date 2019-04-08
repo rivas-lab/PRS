@@ -20,8 +20,8 @@ method="snpnet_biomarker_PRS"
 script="$OAK/users/$USER/repos/rivas-lab/PRS/src/${method}.sh"
 dataset_name=$(basename $(dirname $(readlink -f $0)))
 output_dir="$OAK/projects/PRS/private_output/${method}/${dataset_name}"
-#keep="/oak/stanford/groups/mrivas/private_data/ukbb/${app_id}/sqc/population_stratification/ukb${app_id}_white_british.phe"
-keep="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/jobs/snpnet_biomarker_PRS/biomarkers_20190406/test.keep.phe"
+keep="/oak/stanford/groups/mrivas/private_data/ukbb/${app_id}/sqc/population_stratification/ukb${app_id}_white_british.phe"
+#keep="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/jobs/snpnet_biomarker_PRS/biomarkers_20190406/test.keep.phe"
 nPCs=10
 
 
