@@ -1,4 +1,4 @@
-#GBE_ID PRS_model phe_type features R_or_AUC phe_name
+#GBE_ID	PRS_model	phe_type	features	R_or_AUC
 Alanine_aminotransferase	snpnet	qt	Covariates_only	3.030210e-01
 Alanine_aminotransferase	snpnet	qt	Genotype_and_covariates	3.436042e-01
 Alanine_aminotransferase	snpnet	qt	Genotype_only	1.614437e-01
