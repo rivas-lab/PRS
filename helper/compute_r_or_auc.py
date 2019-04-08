@@ -10,7 +10,7 @@ Date: 2019/02/25 (updated on 2019/3/19)
 '''
 
 
-import argparse, os, collections
+import argparse, os, collections, re
 
 
 import numpy as np
@@ -100,16 +100,17 @@ class PRS_eval:
 
 def read_data_for_eval(in_score, phe, covar_phe, keep=None):
     print(in_score, phe, covar_phe, keep)
-    df = pd_read_csv_usecols_by_key(
+    score_df = pd_read_csv_usecols_by_key(
         in_score, cols=['IID', 'SCORE1_SUM'], sep='\t'
+    )    
+    phe_df = pd.read_csv(
+        phe, sep='\t', usecols=[1,2], names=['IID', 'phe'], comment='#'
+    )    
+    covar_df = pd.read_csv(covar_phe, sep='\t')    
+    df = score_df.merge(
+        phe_df, on='IID'
     ).merge(
-        pd.read_csv(
-            phe, sep='\t', usecols=[1,2], names=['IID', 'phe'], comment='#'
-        ),
-        on='IID'
-    ).merge(
-        pd.read_csv(covar_phe, sep='\t'),
-        on='IID'
+        covar_df, on='IID'
     )
     df_non_missing=df[df['phe'] != 9]
     if keep is None:
@@ -124,7 +125,9 @@ def read_data_for_eval(in_score, phe, covar_phe, keep=None):
         )
     
 def compute_score_for_covariates(df, betas, center=False, Z=False):
-    betas_df=pd.read_csv(betas, compression='gzip', sep='\t')
+    betas_df=pd.read_csv(betas, sep='\t', compression='gzip', nrows=0)
+    betas_df_names=[re.sub('#', '', x) for x in betas_df.columns]
+    betas_df=pd.read_csv(betas, compression='gzip', sep='\t', names=betas_df_names, comment='#')
     covar_mat = df[list(betas_df['ID'])].values
     
     betas_vec = np.array(betas_df['BETA'])[:,np.newaxis]

@@ -63,7 +63,12 @@ out=$7
 if [ $# -gt 7 ] ; then memory=$8 ;  else memory=120000 ; fi
 if [ $# -gt 8 ] ; then threads=$9 ; else threads=10 ; fi
 if [ $# -gt 9 ] ; then nPCs=${10} ;   else nPCs=10 ; fi
-if [ $# -gt 10 ] ; then covar_list=${11} ; else covar_list="" ; fi
+if [ $# -gt 10 ] ; then
+    covar_list=${11}
+    covar_list_opt="--covarsList ${covar_list}"
+else
+    covar_list_opt=""
+fi
 
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
@@ -90,11 +95,6 @@ out_file_covars="${out}.covars.tsv.gz"
 # create output directory
 if [ ! -d ${out} ] ; then mkdir -p ${out} ; fi
 
-if [ ${covar_list} == "" ] ; then
-    covar_list_opt=""
-else
-    covar_list_opt="--covarsList ${covar_list}"
-fi
 
 # check whether the output files exist
 if [ ! -f ${out_file_geno} ] || [ ! -f ${out_file_covars} ]; then

@@ -54,3 +54,10 @@ RheumatoidFactorNormal	bin	Y
 OestradiolNormal	bin	Y
 RheumatoidFactorNormal_adjstatins	bin	N
 OestradiolNormal_adjstatins	bin	N
+Microalbumin_in_urine   qt  Y
+Creatinine_in_urine qt  Y
+Potassium_in_urine  qt  Y
+Sodium_in_urine qt  Y
+Fasting_glucose qt  Y
+eGFR    qt  Y
+Non_albumin_protein qt  Y
