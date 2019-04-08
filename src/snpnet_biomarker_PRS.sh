@@ -3,7 +3,7 @@ set -beEuo pipefail
 usage () {
     echo "$0: snpnet PRS" >&2
     echo "usage: $0 in_phe phe_type keep out_dir_root [memory] [threads] [app_id] [nPCs]" >&2
-    echo "in_phe: phe file or GBE ID (the script automatically extracts phe file from the most recent master phe file)"
+    echo "in_phe: phe file or GBE ID (the script automatically extracts phe file from the most recent master phe file)" >&2
 }
 
 software_versions () {
@@ -24,9 +24,9 @@ copy_with_check () {
     if [ -d $src ] && [ ! -d $dst ] ; then cp -ar $src $dst ; fi
 }
 
-
 # helper scripts
 helper_dir="$(dirname $(dirname $(readlink -f $0)))/helper"
+echo ${helper_dir}
 src1split="${helper_dir}/split-individuals.sh"
 src2bfile="${helper_dir}/plink-subset-bfile.sh"
 src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/06_phewas/extract_phe.sh"
@@ -47,13 +47,24 @@ in_phe_arg="$1"
 phe_type="$2"
 keep="$(readlink -f $3)"
 out_dir_root="$(readlink -f $4)"
+
 if [ $# -gt 4 ] ; then memory=$5 ;  else memory=32000 ; fi
 if [ $# -gt 5 ] ; then threads=$6 ; else threads=4 ; fi
 if [ $# -gt 6 ] ; then app_id=$7 ;  else app_id="24983" ; fi
 if [ $# -gt 7 ] ; then nPCs=$8 ;    else nPCs=4 ; fi
+if [ $# -gt 8 ] ; then file_covar=$9 ; else file_covar="${OAK}/private_data/ukbb/${app_id}/sqc/ukb${app_id}_GWAS_covar.phe" ; fi
+if [ $# -gt 9 ] ; then covar_list_f=${10} ; else covar_list_f="" ; fi
+
+echo $@ | tr " " "\n" | awk '{print NR, $0}' >&2
+echo "" >&2
+echo "$0 file_covar=${file_covar}" >&2
+
+# file_covar="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/notebook/20190406_biomarker_covar/biomarker_covar.tsv"
+# covar_list_f="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/notebook/20190406_biomarker_covar/biomarker_covar.colnames"
 
 # create a temp directory
-tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
+tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) 
+echo "tmp_dir = $tmp_dir" >&2
 handler_exit () { rm -rf $tmp_dir ; }
 #trap handler_exit EXIT
 
@@ -64,8 +75,6 @@ dir2bfile="${out_dir_root}/2_bfile"
 dir3snpnet="${out_dir_root}/3_snpnet"
 dir4score="${out_dir_root}/4_score"
 dir5eval="${out_dir_root}/5_eval"
-
-file_covar="${OAK}/private_data/ukbb/${app_id}/sqc/ukb${app_id}_GWAS_covar.phe"
 
 if [ -f ${in_phe_arg} ] ; then
     in_phe=$(readlink -f ${in_phe_arg})
@@ -105,14 +114,19 @@ for split in ${split_names[@]} ; do
     bash ${src2bfile}        ${file1split}.${split} ${dir2bfile}/${phe_name}/${split} ${memory} ${threads} ${app_id}
 done
 if [ -f ${in_phe_arg} ] ; then
-    bash ${src_combine_phe_and_covar} ${phe_name} ${in_phe_copy} 
+    echo "$0 phe_exists file_covar=${file_covar}" >&2
+    echo bash ${src_combine_phe_and_covar} ${phe_name} ${in_phe_copy} ${file_covar} >&2
+#    bash ${src_combine_phe_and_covar} --covarfile ${file_covar} ${phe_name} ${in_phe_copy} 
+    bash ${src_combine_phe_and_covar} ${phe_name} ${in_phe_copy} ${file_covar}
 else
+    echo "$0 phe_does_not_exists file_covar=${file_covar}" >&2
     bash ${src_phe_extract} --covar ${phe_name} 
-fi | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp2phe}
+fi > ${tmp2phe}    
+#fi | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp2phe}
 
 # step 3: fit Lasso (snpnet)
-echo bash ${src3snpnet} ${dir2bfile}/${phe_name} ${tmp2phe} ${phe_name} ${phe_type} ${file_covar} ${file1split}.train ${file3snpnet} ${memory} ${threads} ${nPCs}
-bash      ${src3snpnet} ${dir2bfile}/${phe_name} ${tmp2phe} ${phe_name} ${phe_type} ${file_covar} ${file1split}.train ${file3snpnet} ${memory} ${threads} ${nPCs}
+echo bash ${src3snpnet} ${dir2bfile}/${phe_name} ${tmp2phe} ${phe_name} ${phe_type} ${file_covar} ${file1split}.train ${file3snpnet} ${memory} ${threads} ${nPCs} ${covar_list_f}
+bash      ${src3snpnet} ${dir2bfile}/${phe_name} ${tmp2phe} ${phe_name} ${phe_type} ${file_covar} ${file1split}.train ${file3snpnet} ${memory} ${threads} ${nPCs} ${covar_list_f}
 
 # step 4 : PLINK --score
 echo bash ${src4score}        ${file3snpnet_geno} ${keep_copy} ${file4score} ${phe_type} ${memory} ${threads} ${app_id}

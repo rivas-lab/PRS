@@ -30,7 +30,7 @@ get_glm_family () {
 
 find_prevIter () {
     dir=$1
-    if [ $(find ${dir} -name "output_iter_*.rda") -gt 0 ] ; then
+    if [ $(find ${dir} -name "output_iter_*.rda" | wc -l) -gt 0 ] ; then
 	find ${dir} -name "output_iter_*.rda" \
         | sort -Vr \
         | awk 'NR==1' \
@@ -63,6 +63,7 @@ out=$7
 if [ $# -gt 7 ] ; then memory=$8 ;  else memory=120000 ; fi
 if [ $# -gt 8 ] ; then threads=$9 ; else threads=10 ; fi
 if [ $# -gt 9 ] ; then nPCs=${10} ;   else nPCs=10 ; fi
+if [ $# -gt 10 ] ; then covar_list=${11} ; else covar_list="" ; fi
 
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
@@ -88,13 +89,19 @@ out_file_covars="${out}.covars.tsv.gz"
 # create output directory
 if [ ! -d ${out} ] ; then mkdir -p ${out} ; fi
 
+if [ ${covar_list} == "" ] ; then
+    covar_list_opt=""
+else
+    covar_list_opt="--covarsList ${covar_list}"
+fi
+
 # check whether the output files exist
 if [ ! -f ${out_file_geno} ] || [ ! -f ${out_file_covars} ]; then
 
     glm_family=$( get_glm_family ${phe_type} )
     prevIter=$( find_prevIter ${out} )
 
-    Rscript ${snpnet_fit_R} \
+    echo Rscript ${snpnet_fit_R} \
         -p ${pheno} \
         -n ${phe_name} \
         -g ${geno}/ \
@@ -104,9 +111,13 @@ if [ ! -f ${out_file_geno} ] || [ ! -f ${out_file_covars} ]; then
         --mem ${memory} \
         --prevIter ${prevIter} \
         -f ${glm_family} \
-        -b ${tmp_geno_1%.tsv} 
+        -b ${tmp_geno_1%.tsv} \
+        ${covar_list_opt}
 #        --rds ${out}/results/output_iter_${prevIter}.rda
 
+#        --rds ${out}/results/output_iter_${prevIter}.rda
+    Rscript ${snpnet_fit_R} -p ${pheno} -n ${phe_name} -g ${geno}/ -o ${out}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} ${covar_list_opt} --prevIter ${prevIter} -f ${glm_family} -b ${tmp_geno_1%.tsv} ${covar_list_opt}
+#    Rscript ${snpnet_fit_R} -p ${pheno} -n ${phe_name} -g ${geno}/ -o ${out}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family} -b ${tmp_geno_1%.tsv} "${covar_list_opt}"
 # beta for SNPs
     cat ${tmp_geno_1} | awk '(NR == 1){print "#" $0} ; (NR > 1){print $0}' > ${tmp_geno_2}
     

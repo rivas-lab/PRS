@@ -1,9 +1,10 @@
-library(argparse)
-library(tidyverse)
-library(data.table)
-library(glmnetPlus)
-library(snpnet)
-
+suppressMessages(library(argparse))
+suppressMessages(library(tidyverse))
+suppressMessages(library(data.table))
+suppressMessages(library(glmnetPlus))
+#suppressMessages(library(snpnet))
+library(devtools)
+load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/snpnet')
 
 snpnet_fit_parser <- function() {
     parser <- ArgumentParser(description='snpnet fit wrapper')
@@ -15,6 +16,10 @@ snpnet_fit_parser <- function() {
     parser$add_argument('-o', metavar='O', required=TRUE, help='Results dir')
     parser$add_argument('-b', metavar='b', help='Output beta file head [b].tsv [b].covars.tsv')    
     parser$add_argument('-f', metavar='f', default='gaussian', help='family')
+    
+    parser$add_argument('--covarsList', metavar='C', 
+        default='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/helper/snpnet-covars.default', 
+        help='Covariates list file')
 
     parser$add_argument('--cpu', metavar='t', type="integer", help='CPU cores')
     parser$add_argument('--mem', metavar='m', type="integer", help='Memory (MB)')
@@ -28,6 +33,15 @@ snpnet_fit_parser <- function() {
     parser$add_argument('--rds', metavar='r', default=NULL, help='RDS file')
     
     return(parser)
+}
+
+read_file_as_list <- function(file){
+    fread(
+        file, head=FALSE
+    ) %>% 
+    dplyr::pull(V1) %>% 
+    unlist() %>% 
+    as.vector()
 }
 
 snpnet_fit2table <- function(fit) {
@@ -52,15 +66,20 @@ snpnet_join_with_bim <- function(df, bim.file) {
     df_joined <- df %>%
     drop_na() %>%
     left_join(bim.df, on='ID') %>%
+    filter(BETA != 0) %>%
     select(out.cols) %>%
     arrange(CHROM, POS)
 # return
     return(df_joined)
 }
 
-snpnet_extract_covars <- function(df) {
+snpnet_extract_covars <- function(df, covariates) {
     df_slice <- df %>% 
-    filter(is.na(A1)) %>% 
+#    filter(is.na(A1)) %>% 
+    right_join(
+        data.frame(ID = covariates),
+        on='ID'
+    ) %>% 
     select(ID, BETA)
 # return
     return(df_slice)
@@ -79,6 +98,13 @@ snpnet_fit_main <- function(args){
         print(paste0("buffer size: ", bufferSize))
         chunkSize <- as.integer(bufferSize / args$cpu)
         print(paste0("chunk size: ", chunkSize))
+        
+        covariates <- read_file_as_list(args$covarsList)
+#         if ( str_length( args$covarsList > 0) ){
+#             covariates <- read_file_as_list(args$covarsList)
+#         } else {
+#             covariates <- c("age", "sex", paste0("PC", 1:(args$nPCs)))
+#         }
 
         # config
         configs <- list(
@@ -92,11 +118,12 @@ snpnet_fit_main <- function(args){
            nlams.delta = 5
          )
 
+        print(covariates)
         # run snpnet
         fit <- snpnet(
            genotype.dir = args$g,
            phenotype.file = args$p,
-           phenotype = args$n,
+           phenotype = as.character(args$n),
            results.dir = args$o,
            family = args$f,
            standardize.variant = FALSE,
@@ -107,10 +134,9 @@ snpnet_fit_main <- function(args){
            verbose = TRUE,
            save = TRUE,
            prevIter = args$prevIter,
-           covariates = c("age", "sex", paste0("PC", 1:(args$nPCs))),
+           covariates = covariates,
            glmnet.thresh = 1e-7
         )
-        
     }
     
     # extract beta values and write them to files
@@ -122,7 +148,7 @@ snpnet_fit_main <- function(args){
         quote=FALSE, row.names=FALSE, sep='\t'
     )
     # beta for covariates
-    df_covars <- snpnet_extract_covars(df)    
+    df_covars <- snpnet_extract_covars(df, covariates)    
     df_covars %>% write.table(
         paste0(args$b, '.covars.tsv'), 
         quote=FALSE, row.names=FALSE, sep='\t'

@@ -51,7 +51,7 @@ src5snpnet="${helper_dir}/snpnet_wrapper.sh"
 src6score="${helper_dir}/plink-score.sh"
 src7eval="${helper_dir}/compute_r_or_auc.py"
 src_combine_phe_and_covar="${helper_dir}/combine_phe_and_covar.sh"
-src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
+src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/06_phewas/extract_phe.sh"
 
 # configure parameters
 clump_p1_list=("1e-5" "1e-4" "1e-3")

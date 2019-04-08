@@ -15,7 +15,7 @@ if [ ${PRS_type} != 'clumped_snpnet' ] && [ ${PRS_type} != 'snpnet' ] && [ ${PRS
 if [ $# -gt 2 ] ; then icdinfo=$3 ;  else icdinfo=${default_icdinfo} ; fi
 
 {
-echo "#GBE_ID PRS_model phe_type features R_or_AUC phe_name N"
+echo "#GBE_ID PRS_model phe_type features R_or_AUC phe_name"
 find ${results_dir} -type f -name "*.eval" \
 | while read f ; do cat $f ; echo "" ; done \
 | awk 'length($0)>0' \
@@ -32,6 +32,7 @@ find ${results_dir} -type f -name "*.eval" \
     awk -v FS='\t' -v OFS='\t' -v PRS_type=${PRS_type} '{split($1, a, "/*"); print a[length(a)], PRS_type "_PRS_" a[length(a) - 1], $2, $3, $4}'
   fi
 } \
+| sed -e  's/.adjusted//g' \
 | sort -k1b,1 \
 | join -1 1 -2 1 /dev/stdin <( cat ${icdinfo} | awk -v FS='\t' '{print $1, $3, $2}' | sort -k1b,1 ) \
 | sort -k1V,1 -k2V,2 -k4,4 

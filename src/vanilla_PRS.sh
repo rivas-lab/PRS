@@ -47,7 +47,7 @@ src3clump="${helper_dir}/plink-clump.sh"
 src4clumped_GWAS="${helper_dir}/filter-sumstats-to-clumped.sh"
 src5score="${helper_dir}/plink-score.sh"
 src6eval="${helper_dir}/compute_r_or_auc.py"
-src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/05_phewas/extract_phe.sh"
+src_phe_extract="$OAK/users/$USER/repos/rivas-lab/ukbb-tools/06_phewas/extract_phe.sh"
 
 # configure parameters
 clump_p1_list=("1e-5" "1e-4" "1e-3")
@@ -139,7 +139,7 @@ for clump_p1 in ${clump_p1_list[@]} ; do # loop over different LD clumping param
 
     # step 6 : evaluation
     echo python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
-    python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
+    # python ${src6eval} -i ${file5score} -o ${file6eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar}
     echo ""
 done
 
