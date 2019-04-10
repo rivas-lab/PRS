@@ -8,7 +8,7 @@
 #SBATCH -p owners,normal,mrivas
 #SBATCH --nodes=1
 #SBATCH --cores=10
-#SBATCH --mem=120000
+#SBATCH --mem=100000
 #SBATCH --constraint="CPU_GEN:HSW|CPU_GEN:BDW|CPU_GEN:SKX"
 #SBATCH --mail-type=END,FAIL
 #################

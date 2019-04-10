@@ -43,7 +43,7 @@ find ${results_dir} -type f -name "*.eval" \
 else
 
 {
-echo "#GBE_ID PRS_model phe_type features R_or_AUC phe_name"
+echo "#GBE_ID PRS_model phe_type features R_or_AUC" | tr " " "\t"
 find ${results_dir} -type f -name "*.eval" \
 | while read f ; do cat $f ; echo "" ; done \
 | awk 'length($0)>0' \

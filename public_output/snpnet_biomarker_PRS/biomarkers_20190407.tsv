@@ -11,6 +11,9 @@ Albumin	snpnet	qt	Genotype_only	2.459161e-01
 Albumin_adjstatins	snpnet	qt	Covariates_only	2.740213e-01
 Albumin_adjstatins	snpnet	qt	Genotype_and_covariates	3.646129e-01
 Albumin_adjstatins	snpnet	qt	Genotype_only	2.412284e-01
+Alkaline_phosphatase	snpnet	qt	Covariates_only	2.209971e-01
+Alkaline_phosphatase	snpnet	qt	Genotype_and_covariates	4.227471e-01
+Alkaline_phosphatase	snpnet	qt	Genotype_only	3.612226e-01
 Apolipoprotein_A	snpnet	qt	Covariates_only	4.082648e-01
 Apolipoprotein_A	snpnet	qt	Genotype_and_covariates	5.398975e-01
 Apolipoprotein_A	snpnet	qt	Genotype_only	3.520570e-01
@@ -38,6 +41,9 @@ Creatinine	snpnet	qt	Genotype_only	1.822797e-01
 Creatinine_adjstatins	snpnet	qt	Covariates_only	5.058280e-01
 Creatinine_adjstatins	snpnet	qt	Genotype_and_covariates	5.390810e-01
 Creatinine_adjstatins	snpnet	qt	Genotype_only	1.888385e-01
+Cystatin_C	snpnet	qt	Covariates_only	3.835347e-01
+Cystatin_C	snpnet	qt	Genotype_and_covariates	4.742988e-01
+Cystatin_C	snpnet	qt	Genotype_only	2.826001e-01
 Cystatin_C_adjstatins	snpnet	qt	Covariates_only	3.687483e-01
 Cystatin_C_adjstatins	snpnet	qt	Genotype_and_covariates	4.647899e-01
 Cystatin_C_adjstatins	snpnet	qt	Genotype_only	2.866388e-01
