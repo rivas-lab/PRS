@@ -134,5 +134,7 @@ bash ${src4score}        ${file3snpnet_geno} ${keep_copy} ${file4score} ${phe_ty
 
 # step 5 : evaluation
 echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
-python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p ${in_phe_copy} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
+if [ ! -f ${file5eval} ]; then
+    cat ${in_phe_copy} | awk '(NR==1){print "#" $0}(NR>1){print $0}' | python ${src5eval} -i ${file4score} -o ${file5eval} -k ${file1split}.test -p /dev/stdin -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
+fi
 echo ""

@@ -3,7 +3,7 @@ set -beEuo pipefail
 
 usage () {
     echo "$0: apply PLINK 2 --score" >&2
-    echo "usage: $0 in_sumstats individuals_keep out_score" >&2
+    echo "usage: $0 in_sumstats individuals_keep out_score phe_type" >&2
 }
 
 if [ $# -lt 3 ] ; then usage ; exit 1 ; fi

@@ -58,9 +58,9 @@ plink_clump () {
 echo ${out_sumstats}
 
 if [ ! -f ${out_sumstats} ]  ; then
-	tmp_out_sumstats=${tmp_dir}/$(basename $out_sumstats)
+	tmp_out_sumstats=${tmp_dir}/$(basename ${out_sumstats%.clumped.gz}).clumped.gz
 	echo ${tmp_out_sumstats} ${out_sumstats}
 	plink_clump ${in_sumstats} ${individuals_keep} ${tmp_out_sumstats} ${clump_p1}
-	copy_with_check ${tmp_out_sumstats} ${out_sumstats}
+	cp ${tmp_out_sumstats} ${out_sumstats}
 fi
 

@@ -65,3 +65,6 @@ MicroalbuminNormal  bin Y
 UACRNormal  bin Y
 MicroalbuminNormal  bin N
 UACRNormal  bin N
+eGFR_adjstatins qt  Y
+Non_albumin_protein_adjstatins  qt  Y
+

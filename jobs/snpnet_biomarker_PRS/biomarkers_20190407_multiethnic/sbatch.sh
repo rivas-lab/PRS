@@ -3,12 +3,12 @@
 #SBATCH --job-name=lab_snpnet
 #SBATCH   --output=lab_snpnet.%A_%a.out
 #SBATCH    --error=lab_snpnet.%A_%a.err
-#SBATCH --time=1-0:00:00
+#SBATCH --time=2:00:00
 #SBATCH --qos=normal
-#SBATCH -p owners,normal,mrivas,bigmem
+#SBATCH -p owners,normal,mrivas
 #SBATCH --nodes=1
-#SBATCH --cores=15
-#SBATCH --mem=150000
+#SBATCH --cores=6
+#SBATCH --mem=16000
 #SBATCH --constraint="CPU_GEN:HSW|CPU_GEN:BDW|CPU_GEN:SKX"
 #SBATCH --mail-type=END,FAIL
 #################

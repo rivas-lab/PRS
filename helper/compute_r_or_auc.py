@@ -114,7 +114,7 @@ def read_data_for_eval(in_score, phe, covar_phe, keep=None):
     )
     df_non_missing=df[df['phe'] != 9]
     if keep is None:
-        return df_non_missing
+        return df_non_missing.dropna()
     else:
         return df_non_missing.merge(
             pd.read_csv(
@@ -122,7 +122,7 @@ def read_data_for_eval(in_score, phe, covar_phe, keep=None):
             ),
             on='IID',
             how='inner'
-        )
+        ).dropna()
     
 def compute_score_for_covariates(df, betas, center=False, Z=False):
     betas_df=pd.read_csv(betas, sep='\t', compression='gzip', nrows=0)
