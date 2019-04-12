@@ -92,6 +92,6 @@ out_dir=$(dirname ${out_prefix})
 if [ ! -d $out_dir ] ; then mkdir -p ${out_dir} ; fi
 
 for split_type in ${split_types[@]} ; do
-    cp -a ${tmp_out_prefix}.${split_type} ${out_dir} 
+    cp ${tmp_out_prefix}.${split_type} ${out_dir} 
 done
 

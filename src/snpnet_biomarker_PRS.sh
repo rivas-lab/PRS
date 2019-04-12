@@ -20,8 +20,8 @@ copy_with_check () {
     if [ -f $src ] || [ -d $src ] ; then
         if [ ! -d $(dirname $dst) ] ; then mkdir -p $(dirname $dst) ; fi
     fi
-    if [ -f $src ] && [ ! -f $dst ] ; then cp -a  $src $dst ; fi
-    if [ -d $src ] && [ ! -d $dst ] ; then cp -ar $src $dst ; fi
+    if [ -f $src ] && [ ! -f $dst ] ; then cp    $src $dst ; fi
+    if [ -d $src ] && [ ! -d $dst ] ; then cp -r $src $dst ; fi
 }
 
 # helper scripts
