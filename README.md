@@ -39,7 +39,7 @@ We store the output from this repo into two places:
 0. Install packages
 
 ```
-$ ml load curl R gcc/8.1.0
+$ ml load snpnet # the module (/home/groups/mrivas/.modules/snpnet.lua) loads dependencies
 $ R
 > # If you don't have devtools on R, please install it.
 > # install.packages("devtools") 
