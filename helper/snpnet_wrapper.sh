@@ -141,11 +141,11 @@ if [ ! -f ${out_file_geno} ] || [ ! -f ${out_file_covars} ]; then
     bgzip ${tmp_geno_2}
     bgzip ${tmp_covar_3}
     
-    echo     cp -a ${tmp_geno_2}.gz  ${out_file_geno}    
-    echo     cp -a ${tmp_covar_3}.gz ${out_file_covars}
+    echo     cp ${tmp_geno_2}.gz  ${out_file_geno}    
+    echo     cp ${tmp_covar_3}.gz ${out_file_covars}
 # copy
-    cp -a ${tmp_geno_2}.gz  ${out_file_geno}    
-    cp -a ${tmp_covar_3}.gz ${out_file_covars}
+    cp ${tmp_geno_2}.gz  ${out_file_geno}    
+    cp ${tmp_covar_3}.gz ${out_file_covars}
 
 # clean up intermediate rda files
     clean_up_intermediate_rda_files ${out}
