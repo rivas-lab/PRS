@@ -69,7 +69,7 @@ $ ln -s $OAK/projects/PRS/private_output .
 2. load the relevant modules
 
 ```
-$ ml load plink plink2 htslib R gcc/8.1.0 anaconda
+$ ml load snpnet
 ```
 
 3. run snpnet_PRS or vanilla_PRS
