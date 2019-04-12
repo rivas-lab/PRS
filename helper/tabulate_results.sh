@@ -43,7 +43,7 @@ find ${results_dir} -type f -name "*.eval" \
 else
 
 {
-echo "#GBE_ID PRS_model phe_type features R_or_AUC" | tr " " "\t"
+echo "#Population GBE_ID PRS_model phe_type features R_or_AUC" | tr " " "\t"
 find ${results_dir} -type f -name "*.eval" \
 | while read f ; do cat $f ; echo "" ; done \
 | awk 'length($0)>0' \
@@ -53,7 +53,8 @@ find ${results_dir} -type f -name "*.eval" \
 | sed -e 's/.sscore//g' \
 | sed -e 's/.PHENO1.glm.linear//g' \
 | sed -e 's/.PHENO1.glm.logistic.hybrid//g' \
-| awk -v FS='\t' -v OFS='\t' -v PRS_type=${PRS_type%_biomarker} '{split($1, a, "/*"); print a[length(a)], PRS_type, $2, $3, $4}' \
+| awk -v FS='\t' -v OFS='\t' -v PRS_type=${PRS_type%_biomarker} '{split($1, a, "/*"); print a[length(a) - 1], a[length(a)], PRS_type, $2, $3, $4}' \
+| sed -e 's/4_score/white_british/g' \
 | sort -k1V,1 -k2V,2 -k4,4
 }
 

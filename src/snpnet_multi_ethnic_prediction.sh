@@ -64,9 +64,15 @@ pop="$(basename $keep .phe | sed -e 's/ukb24983_//g')"
 
 # file names
 dir0input="${out_dir_root}/0_input"
+dir1split="${out_dir_root}/1_split"
 dir3snpnet="${out_dir_root}/3_snpnet"
-dir4score="${out_dir_root}/6_score_multi_ethnic/${pop}"
-dir5eval="${out_dir_root}/7_eval_multi_ethnic/${pop}"
+if [ ${pop} == "white_british" ] ; then
+    dir4score="${out_dir_root}/4_score"
+    dir5eval="${out_dir_root}/5_eval"
+else
+    dir4score="${out_dir_root}/6_score_multi_ethnic/${pop}"
+    dir5eval="${out_dir_root}/7_eval_multi_ethnic/${pop}"
+fi
 
 if [ -f ${in_phe_arg} ] ; then
     phe_name="$(basename ${in_phe_arg} .phe)"
@@ -75,6 +81,7 @@ else
 fi
 
 in_phe="${dir0input}/${phe_name}.phe"
+file1split="${dir1split}/${phe_name}"
 file3snpnet="${dir3snpnet}/${phe_name}"
 file3snpnet_geno="${file3snpnet}.tsv.gz"
 file3snpnet_covars="${file3snpnet}.covars.tsv.gz"
@@ -92,8 +99,13 @@ echo bash ${src4score} ${file3snpnet_geno} ${keep} ${file4score} ${phe_type} ${m
 bash ${src4score}      ${file3snpnet_geno} ${keep} ${file4score} ${phe_type} ${memory} ${threads} ${app_id}
 
 # step 5 : evaluation
-echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep} -p ${in_phe} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
+if [ ${pop} == "white_british" ] ; then
+    keep_eval=${file1split}.test
+else
+    keep_eval=$keep
+fi
+echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep_eval} -p ${in_phe} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
 if [ ! -f ${file5eval} ]; then
-    cat ${in_phe} | awk '(NR==1){print "#" $0}(NR>1){print $0}' | python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep} -p /dev/stdin -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
+    cat ${in_phe} | awk '(NR==1){print "#" $0}(NR>1){print $0}' | python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep_eval} -p /dev/stdin -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
 fi
 echo ""

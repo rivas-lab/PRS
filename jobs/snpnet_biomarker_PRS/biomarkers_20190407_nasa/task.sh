@@ -9,21 +9,29 @@ threads=$3
 job_tsv_file="jobs.tsv"
 
 get_line_from_job_tsv () {
-	job_tsv=$1
-	task_id=$2
+	local job_tsv=$1
+	local task_id=$2
 	
 	cat $job_tsv | egrep -v '^#' | awk -v row=$task_id 'NR == row'
 }
 
+OAK="/oak/stanford/groups/mrivas"
 app_id=24983 # use master phe file 
 method="snpnet_biomarker_PRS"
-script="$OAK/users/$USER/repos/rivas-lab/PRS/src/snpnet_multi_ethnic_prediction.sh"
+script="$OAK/users/$USER/repos/rivas-lab/PRS/src/${method}.sh"
+#dataset_name=$(basename $(dirname $(readlink -f $0)))
 dataset_name="biomarkers_20190407"
 output_dir="$OAK/projects/PRS/private_output/${method}/${dataset_name}"
+#keep="/oak/stanford/groups/mrivas/private_data/ukbb/${app_id}/sqc/population_stratification/ukb${app_id}_white_british.phe"
+#keep="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/jobs/snpnet_biomarker_PRS/biomarkers_20190406/test.keep.phe"
+keep="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/jobs/snpnet_biomarker_PRS/input_phe/ukb24983_white_british.and.full_table.phe"
 nPCs=10
 
+
 GBE_ID=$( get_line_from_job_tsv  $job_tsv_file $task_id | awk '{print $1}' )
-phe_file="$(dirname $(dirname $(readlink -f $0)))/input_phe/${GBE_ID}.phe"
+input_phe_dir="/oak/stanford/groups/mrivas/projects/PRS/private_data/snpnet_biomarker_PRS_input_phe"
+#phe_file="$(dirname $(dirname $(readlink -f $0)))/input_phe/${GBE_ID}.phe"
+phe_file="${input_phe_dir}/${GBE_ID}.phe"
 phe_type=$( get_line_from_job_tsv  $job_tsv_file $task_id | awk '{print $2}' )
 use_full_covars=$( get_line_from_job_tsv  $job_tsv_file $task_id | awk '{print $3}' )
 
@@ -35,13 +43,7 @@ else
     covar_str=""
 fi
 
-subpop=( "e_asian" "s_asian" "african" "non_british_white" "white_british")
-
-for pop in ${subpop[@]} ; do 
-    keep="/oak/stanford/groups/mrivas/private_data/ukbb/${app_id}/sqc/population_stratification/ukb${app_id}_${pop}.phe"
-
-    bash $script \
-    	${phe_file} ${phe_type} ${keep} ${output_dir} \
-         ${memory} ${threads} ${app_id} ${nPCs} ${covar_str}
-done
+bash $script \
+	${phe_file} ${phe_type} ${keep} ${output_dir} \
+    ${memory} ${threads} ${app_id} ${nPCs} ${covar_str}
 
