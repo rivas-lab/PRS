@@ -39,7 +39,7 @@ We store the output from this repo into two places:
 0. Install packages
 
 ```
-$ ml load curl R gcc/8.1.0
+$ ml load snpnet # the module (/home/groups/mrivas/.modules/snpnet.lua) loads dependencies
 $ R
 > # If you don't have devtools on R, please install it.
 > # install.packages("devtools") 
@@ -69,7 +69,7 @@ $ ln -s $OAK/projects/PRS/private_output .
 2. load the relevant modules
 
 ```
-$ ml load plink plink2 htslib R gcc/8.1.0 anaconda
+$ ml load snpnet
 ```
 
 3. run snpnet_PRS or vanilla_PRS
