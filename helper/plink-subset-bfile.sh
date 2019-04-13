@@ -15,6 +15,11 @@ if [ $# -gt 2 ] ; then memory=$3  ; else memory=32000 ; fi
 if [ $# -gt 3 ] ; then threads=$4 ; else threads=4 ; fi
 if [ $# -gt 4 ] ; then app_id=$5  ; else app_id="24983" ; fi
 
+# create a temp directory
+tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) 
+echo "tmp_dir = $tmp_dir" >&2
+handler_exit () { rm -rf $tmp_dir ; }
+trap handler_exit EXIT
 
 plink_bed_subset () {
     keep=$1
@@ -34,7 +39,12 @@ plink_bed_subset () {
 	--make-bed
 }
 
+
 if [ ! -f ${out_bfile}.bed ] && [ ! -f ${out_bfile}.bim ] && [ ! -f ${out_bfile}.fam ] ; then
-	plink_bed_subset ${individuals_keep} ${out_bfile}
+    tmp_out_bfile=${tmp_dir}/$(basename ${out_bfile})
+	plink_bed_subset ${individuals_keep} ${tmp_out_bfile}
+    for ext in "log" "bim" "fam" "bed" ; do
+        cp ${tmp_out_bfile}.${ext} ${out_bfile}.${ext}
+    done
 fi
 
