@@ -749,6 +749,9 @@ white_british	RheumatoidFactorNormal	snpnet	bin	Genotype_only	5.852192e-01
 white_british	SHBG	snpnet	qt	Covariates_only	4.292604e-01
 white_british	SHBG	snpnet	qt	Genotype_and_covariates	5.322758e-01
 white_british	SHBG	snpnet	qt	Genotype_only	3.132661e-01
+white_british	SHBG_adjstatins	snpnet	qt	Covariates_only	4.313819e-01
+white_british	SHBG_adjstatins	snpnet	qt	Genotype_and_covariates	5.260040e-01
+white_british	SHBG_adjstatins	snpnet	qt	Genotype_only	3.020109e-01
 white_british	Sodium_in_urine	snpnet	qt	Covariates_only	3.125116e-01
 white_british	Sodium_in_urine	snpnet	qt	Genotype_and_covariates	3.198744e-01
 white_british	Sodium_in_urine	snpnet	qt	Genotype_only	6.942470e-02
