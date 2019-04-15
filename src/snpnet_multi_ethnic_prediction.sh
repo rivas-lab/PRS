@@ -105,7 +105,7 @@ else
     keep_eval=$keep
 fi
 echo python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep_eval} -p ${in_phe} -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
-if [ ! -f ${file5eval} ]; then
-    cat ${in_phe} | awk '(NR==1){print "#" $0}(NR>1){print $0}' | python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep_eval} -p /dev/stdin -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
-fi
+#if [ ! -f ${file5eval} ]; then
+    cat ${in_phe} | sed -e 's/-9$/NA/g' | awk -v NA=='NA' '$3 != NA' | awk '(NR==1){print "#" $0}(NR>1){print $0}' | python ${src5eval} -i ${file4score} -o ${file5eval} -k ${keep_eval} -p /dev/stdin -t ${phe_type} -c ${file_covar} -b ${file3snpnet_covars}
+#fi
 echo ""
