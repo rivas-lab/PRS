@@ -32,3 +32,7 @@ Microalbumin_in_urine
 Potassium_in_urine
 Sodium_in_urine
 Non_albumin_protein_adjstatins
+RheumatoidFactorNormal
+OestradiolNormal
+MicroalbuminNormal
+UACRNormal
