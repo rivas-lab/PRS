@@ -173,6 +173,9 @@ african	Vitamin_D	snpnet	qt	Genotype_only	3.263573e-02
 african	Vitamin_D_adjstatins	snpnet	qt	Covariates_only	1.920164e-01
 african	Vitamin_D_adjstatins	snpnet	qt	Genotype_and_covariates	1.893993e-01
 african	Vitamin_D_adjstatins	snpnet	qt	Genotype_only	3.704608e-02
+african	eGFR_adjstatins	snpnet	qt	Covariates_only	3.626603e-01
+african	eGFR_adjstatins	snpnet	qt	Genotype_and_covariates	3.800550e-01
+african	eGFR_adjstatins	snpnet	qt	Genotype_only	1.185392e-01
 e_asian	Alanine_aminotransferase	snpnet	qt	Covariates_only	3.098339e-01
 e_asian	Alanine_aminotransferase	snpnet	qt	Genotype_and_covariates	3.341276e-01
 e_asian	Alanine_aminotransferase	snpnet	qt	Genotype_only	1.335704e-01
@@ -347,6 +350,9 @@ e_asian	Vitamin_D	snpnet	qt	Genotype_only	1.001615e-01
 e_asian	Vitamin_D_adjstatins	snpnet	qt	Covariates_only	2.446343e-01
 e_asian	Vitamin_D_adjstatins	snpnet	qt	Genotype_and_covariates	2.701504e-01
 e_asian	Vitamin_D_adjstatins	snpnet	qt	Genotype_only	1.049036e-01
+e_asian	eGFR_adjstatins	snpnet	qt	Covariates_only	5.206034e-01
+e_asian	eGFR_adjstatins	snpnet	qt	Genotype_and_covariates	5.326602e-01
+e_asian	eGFR_adjstatins	snpnet	qt	Genotype_only	1.796408e-01
 non_british_white	Alanine_aminotransferase	snpnet	qt	Covariates_only	3.013000e-01
 non_british_white	Alanine_aminotransferase	snpnet	qt	Genotype_and_covariates	3.372037e-01
 non_british_white	Alanine_aminotransferase	snpnet	qt	Genotype_only	1.488828e-01
@@ -521,6 +527,9 @@ non_british_white	Vitamin_D	snpnet	qt	Genotype_only	1.969428e-01
 non_british_white	Vitamin_D_adjstatins	snpnet	qt	Covariates_only	3.857338e-01
 non_british_white	Vitamin_D_adjstatins	snpnet	qt	Genotype_and_covariates	4.412535e-01
 non_british_white	Vitamin_D_adjstatins	snpnet	qt	Genotype_only	2.209282e-01
+non_british_white	eGFR_adjstatins	snpnet	qt	Covariates_only	4.872881e-01
+non_british_white	eGFR_adjstatins	snpnet	qt	Genotype_and_covariates	5.457805e-01
+non_british_white	eGFR_adjstatins	snpnet	qt	Genotype_only	2.479620e-01
 s_asian	Alanine_aminotransferase	snpnet	qt	Covariates_only	2.921517e-01
 s_asian	Alanine_aminotransferase	snpnet	qt	Genotype_and_covariates	3.309775e-01
 s_asian	Alanine_aminotransferase	snpnet	qt	Genotype_only	1.591835e-01
@@ -695,6 +704,9 @@ s_asian	Vitamin_D	snpnet	qt	Genotype_only	1.301817e-01
 s_asian	Vitamin_D_adjstatins	snpnet	qt	Covariates_only	2.159111e-01
 s_asian	Vitamin_D_adjstatins	snpnet	qt	Genotype_and_covariates	2.515137e-01
 s_asian	Vitamin_D_adjstatins	snpnet	qt	Genotype_only	1.367207e-01
+s_asian	eGFR_adjstatins	snpnet	qt	Covariates_only	4.761323e-01
+s_asian	eGFR_adjstatins	snpnet	qt	Genotype_and_covariates	5.171057e-01
+s_asian	eGFR_adjstatins	snpnet	qt	Genotype_only	2.223406e-01
 white_british	Alanine_aminotransferase	snpnet	qt	Covariates_only	3.030210e-01
 white_british	Alanine_aminotransferase	snpnet	qt	Genotype_and_covariates	3.436042e-01
 white_british	Alanine_aminotransferase	snpnet	qt	Genotype_only	1.614437e-01
