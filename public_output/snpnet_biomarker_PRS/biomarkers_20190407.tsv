@@ -104,6 +104,9 @@ african	LDL_direct	snpnet	qt	Genotype_only	2.248861e-01
 african	LDL_direct_adjstatins	snpnet	qt	Covariates_only	1.618256e-01
 african	LDL_direct_adjstatins	snpnet	qt	Genotype_and_covariates	2.785683e-01
 african	LDL_direct_adjstatins	snpnet	qt	Genotype_only	2.336891e-01
+african	Lipoprotein_A_adjstatins	snpnet	qt	Covariates_only	4.512470e-02
+african	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_and_covariates	1.113656e-01
+african	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_only	1.047918e-01
 african	MicroalbuminNormal	snpnet	bin	Covariates_only	5.581286e-01
 african	MicroalbuminNormal	snpnet	bin	Genotype_and_covariates	5.641124e-01
 african	MicroalbuminNormal	snpnet	bin	Genotype_only	5.295069e-01
@@ -281,6 +284,9 @@ e_asian	LDL_direct	snpnet	qt	Genotype_only	2.432942e-01
 e_asian	LDL_direct_adjstatins	snpnet	qt	Covariates_only	1.943506e-01
 e_asian	LDL_direct_adjstatins	snpnet	qt	Genotype_and_covariates	3.437826e-01
 e_asian	LDL_direct_adjstatins	snpnet	qt	Genotype_only	2.751267e-01
+e_asian	Lipoprotein_A_adjstatins	snpnet	qt	Covariates_only	4.402429e-02
+e_asian	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_and_covariates	2.000412e-01
+e_asian	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_only	1.963303e-01
 e_asian	MicroalbuminNormal	snpnet	bin	Covariates_only	5.696349e-01
 e_asian	MicroalbuminNormal	snpnet	bin	Genotype_and_covariates	5.772776e-01
 e_asian	MicroalbuminNormal	snpnet	bin	Genotype_only	5.351348e-01
@@ -458,6 +464,9 @@ non_british_white	LDL_direct	snpnet	qt	Genotype_only	3.171528e-01
 non_british_white	LDL_direct_adjstatins	snpnet	qt	Covariates_only	2.605621e-01
 non_british_white	LDL_direct_adjstatins	snpnet	qt	Genotype_and_covariates	4.897898e-01
 non_british_white	LDL_direct_adjstatins	snpnet	qt	Genotype_only	4.124374e-01
+non_british_white	Lipoprotein_A_adjstatins	snpnet	qt	Covariates_only	1.556145e-02
+non_british_white	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_and_covariates	7.235626e-01
+non_british_white	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_only	7.222418e-01
 non_british_white	MicroalbuminNormal	snpnet	bin	Covariates_only	6.121317e-01
 non_british_white	MicroalbuminNormal	snpnet	bin	Genotype_and_covariates	6.217928e-01
 non_british_white	MicroalbuminNormal	snpnet	bin	Genotype_only	5.436657e-01
@@ -635,6 +644,9 @@ s_asian	LDL_direct	snpnet	qt	Genotype_only	2.061892e-01
 s_asian	LDL_direct_adjstatins	snpnet	qt	Covariates_only	1.853285e-01
 s_asian	LDL_direct_adjstatins	snpnet	qt	Genotype_and_covariates	3.451665e-01
 s_asian	LDL_direct_adjstatins	snpnet	qt	Genotype_only	2.930208e-01
+s_asian	Lipoprotein_A_adjstatins	snpnet	qt	Covariates_only	7.196519e-02
+s_asian	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_and_covariates	3.721481e-01
+s_asian	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_only	3.660917e-01
 s_asian	MicroalbuminNormal	snpnet	bin	Covariates_only	5.742380e-01
 s_asian	MicroalbuminNormal	snpnet	bin	Genotype_and_covariates	5.861960e-01
 s_asian	MicroalbuminNormal	snpnet	bin	Genotype_only	5.554725e-01
@@ -812,6 +824,9 @@ white_british	LDL_direct	snpnet	qt	Genotype_only	3.122965e-01
 white_british	LDL_direct_adjstatins	snpnet	qt	Covariates_only	2.493095e-01
 white_british	LDL_direct_adjstatins	snpnet	qt	Genotype_and_covariates	4.940179e-01
 white_british	LDL_direct_adjstatins	snpnet	qt	Genotype_only	4.277083e-01
+white_british	Lipoprotein_A_adjstatins	snpnet	qt	Covariates_only	1.886255e-02
+white_british	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_and_covariates	7.504717e-01
+white_british	Lipoprotein_A_adjstatins	snpnet	qt	Genotype_only	7.486800e-01
 white_british	MicroalbuminNormal	snpnet	bin	Covariates_only	6.133687e-01
 white_british	MicroalbuminNormal	snpnet	bin	Genotype_and_covariates	6.231840e-01
 white_british	MicroalbuminNormal	snpnet	bin	Genotype_only	5.407145e-01
