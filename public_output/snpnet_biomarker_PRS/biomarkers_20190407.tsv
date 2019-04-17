@@ -146,6 +146,9 @@ african	Testosterone	snpnet	qt	Genotype_only	6.749019e-02
 african	Testosterone_adjstatins	snpnet	qt	Covariates_only	8.999333e-01
 african	Testosterone_adjstatins	snpnet	qt	Genotype_and_covariates	9.014621e-01
 african	Testosterone_adjstatins	snpnet	qt	Genotype_only	6.635169e-02
+african	Total_bilirubin	snpnet	qt	Covariates_only	2.485450e-01
+african	Total_bilirubin	snpnet	qt	Genotype_and_covariates	5.321295e-01
+african	Total_bilirubin	snpnet	qt	Genotype_only	4.674689e-01
 african	Total_protein	snpnet	qt	Covariates_only	8.199209e-02
 african	Total_protein	snpnet	qt	Genotype_and_covariates	1.464034e-01
 african	Total_protein	snpnet	qt	Genotype_only	1.224842e-01
@@ -326,6 +329,9 @@ e_asian	Testosterone	snpnet	qt	Genotype_only	3.380538e-02
 e_asian	Testosterone_adjstatins	snpnet	qt	Covariates_only	8.519356e-01
 e_asian	Testosterone_adjstatins	snpnet	qt	Genotype_and_covariates	8.520001e-01
 e_asian	Testosterone_adjstatins	snpnet	qt	Genotype_only	3.565374e-02
+e_asian	Total_bilirubin	snpnet	qt	Covariates_only	3.081177e-01
+e_asian	Total_bilirubin	snpnet	qt	Genotype_and_covariates	4.982415e-01
+e_asian	Total_bilirubin	snpnet	qt	Genotype_only	3.933398e-01
 e_asian	Total_protein	snpnet	qt	Covariates_only	3.398602e-01
 e_asian	Total_protein	snpnet	qt	Genotype_and_covariates	2.632771e-01
 e_asian	Total_protein	snpnet	qt	Genotype_only	5.829375e-02
@@ -506,6 +512,9 @@ non_british_white	Testosterone	snpnet	qt	Genotype_only	8.464960e-02
 non_british_white	Testosterone_adjstatins	snpnet	qt	Covariates_only	9.055863e-01
 non_british_white	Testosterone_adjstatins	snpnet	qt	Genotype_and_covariates	9.102155e-01
 non_british_white	Testosterone_adjstatins	snpnet	qt	Genotype_only	8.457688e-02
+non_british_white	Total_bilirubin	snpnet	qt	Covariates_only	2.814509e-01
+non_british_white	Total_bilirubin	snpnet	qt	Genotype_and_covariates	6.174533e-01
+non_british_white	Total_bilirubin	snpnet	qt	Genotype_only	5.513990e-01
 non_british_white	Total_protein	snpnet	qt	Covariates_only	1.453885e-01
 non_british_white	Total_protein	snpnet	qt	Genotype_and_covariates	3.041949e-01
 non_british_white	Total_protein	snpnet	qt	Genotype_only	2.708866e-01
@@ -686,6 +695,9 @@ s_asian	Testosterone	snpnet	qt	Genotype_only	1.017135e-01
 s_asian	Testosterone_adjstatins	snpnet	qt	Covariates_only	8.830081e-01
 s_asian	Testosterone_adjstatins	snpnet	qt	Genotype_and_covariates	8.887436e-01
 s_asian	Testosterone_adjstatins	snpnet	qt	Genotype_only	9.982931e-02
+s_asian	Total_bilirubin	snpnet	qt	Covariates_only	2.994627e-01
+s_asian	Total_bilirubin	snpnet	qt	Genotype_and_covariates	5.905473e-01
+s_asian	Total_bilirubin	snpnet	qt	Genotype_only	5.100487e-01
 s_asian	Total_protein	snpnet	qt	Covariates_only	1.502434e-01
 s_asian	Total_protein	snpnet	qt	Genotype_and_covariates	2.810021e-01
 s_asian	Total_protein	snpnet	qt	Genotype_only	2.400366e-01
@@ -866,6 +878,9 @@ white_british	Testosterone	snpnet	qt	Genotype_only	9.791925e-02
 white_british	Testosterone_adjstatins	snpnet	qt	Covariates_only	8.996739e-01
 white_british	Testosterone_adjstatins	snpnet	qt	Genotype_and_covariates	9.051403e-01
 white_british	Testosterone_adjstatins	snpnet	qt	Genotype_only	9.745023e-02
+white_british	Total_bilirubin	snpnet	qt	Covariates_only	2.904792e-01
+white_british	Total_bilirubin	snpnet	qt	Genotype_and_covariates	6.250237e-01
+white_british	Total_bilirubin	snpnet	qt	Genotype_only	5.553028e-01
 white_british	Total_protein	snpnet	qt	Covariates_only	1.667288e-01
 white_british	Total_protein	snpnet	qt	Genotype_and_covariates	3.282520e-01
 white_british	Total_protein	snpnet	qt	Genotype_only	2.843862e-01
