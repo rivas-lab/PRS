@@ -149,10 +149,11 @@ def compute_r_or_auc_main(in_score, phe, phe_type, covar_phe, betas, keep, out_f
     PRS = collections.OrderedDict()
     
     PRS['Genotype_only'] = df[['SCORE1_SUM']].values
-    PRS['Covariates_only'] = compute_score_for_covariates(df, betas)
+    if betas is not None and os.path.isfile(betas):
+        PRS['Covariates_only'] = compute_score_for_covariates(df, betas)
 #    PRS['Covariates_only_center'] = compute_score_for_covariates(df, betas, center=True)
 #    PRS['Covariates_only_Z'] = compute_score_for_covariates(df, betas, Z=True)
-    PRS['Genotype_and_covariates'] = PRS['Genotype_only'] + PRS['Covariates_only']
+        PRS['Genotype_and_covariates'] = PRS['Genotype_only'] + PRS['Covariates_only']
 #    PRS['Genotype_and_covariates_center'] = PRS['Genotype_only'] + PRS['Covariates_only_center']
 #    PRS['Genotype_and_covariates_Z'] = PRS['Genotype_only'] + PRS['Covariates_only_Z']
 
@@ -186,7 +187,7 @@ def main():
                         help='phenotype')        
     parser.add_argument('-o', metavar='o', required=True,
                         help='out_file')
-    parser.add_argument('-b', metavar='b', 
+    parser.add_argument('-b', metavar='b', default=None,
                         help='BETA file for covariates')
     parser.add_argument('-c', metavar='c', default=default_covar,
                         help='covariate_file (default: {})'.format(default_covar))

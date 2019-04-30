@@ -73,7 +73,7 @@ fi
 # create a temp directory
 tmp_dir=$(mktemp -d -p $LOCAL_SCRATCH tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX) ; echo "tmp_dir = $tmp_dir"
 handler_exit () { rm -rf $tmp_dir ; }
-#trap handler_exit EXIT
+trap handler_exit EXIT
 
 # scripts
 helper_dir="$(dirname $(readlink -f $0))"
@@ -87,6 +87,7 @@ tmp_geno_2="${tmp_head}.2.tsv"
 tmp_covar_1="${tmp_head}.1.covars.tsv"
 tmp_covar_2="${tmp_head}.2.covars.tsv"
 tmp_covar_3="${tmp_head}.3.covars.tsv"
+snpnet_phe="${geno}/phe.tsv"
 
 # output file
 out_file_geno="${out}.tsv.gz"
@@ -95,9 +96,16 @@ out_file_covars="${out}.covars.tsv.gz"
 # create output directory
 if [ ! -d ${out} ] ; then mkdir -p ${out} ; fi
 
+if [ ! -f ${snpnet_phe} ] ; then 
+    cp ${pheno} ${snpnet_phe}
+fi
+
+if [ ! -f ${snpnet_phe%.tsv}.csv ] ; then 
+    cat ${pheno} | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${snpnet_phe%.tsv}.csv
+fi
 
 # check whether the output files exist
-if [ ! -f ${out_file_geno} ] || [ ! -f ${out_file_covars} ]; then
+if [ ! -f ${out_file_geno} ] || [ ${covar_list} != "None" -a ! -f ${out_file_covars} ]  ; then
 
     glm_family=$( get_glm_family ${phe_type} )
     prevIter=$( find_prevIter ${out} )
@@ -111,43 +119,36 @@ if [ ! -f ${out_file_geno} ] || [ ! -f ${out_file_covars} ]; then
     done
     tmp_pheno=${tmp_dir}/$(basename ${pheno})
 
-    cat ${pheno} | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp_pheno}
+    cp ${snpnet_phe%.tsv}.csv ${tmp_pheno}
+#    cat ${pheno} | cut -f2- | tr "\t" "," | sed -e 's/^IID/ID/g' > ${tmp_pheno}
 
-    echo Rscript ${snpnet_fit_R} \
-        -p ${tmp_pheno} \
-        -n ${phe_name} \
-        -g ${tmp_geno}/ \
-        -o ${out}/ \
-        --nPCs ${nPCs} \
-        --cpu ${threads} \
-        --mem ${memory} \
-        --prevIter ${prevIter} \
-        -f ${glm_family} \
-        -b ${tmp_geno_1%.tsv} \
-        ${covar_list_opt}
+    echo Rscript ${snpnet_fit_R} -p ${pheno}     -n ${phe_name} -g ${geno}     -o ${out} --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family} -b ${tmp_geno_1%.tsv} ${covar_list_opt}
+    echo Rscript ${snpnet_fit_R} -p ${tmp_pheno} -n ${phe_name} -g ${tmp_geno} -o ${out} --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family} -b ${tmp_geno_1%.tsv} ${covar_list_opt}
+    Rscript      ${snpnet_fit_R} -p ${tmp_pheno} -n ${phe_name} -g ${tmp_geno} -o ${out} --nPCs ${nPCs} --cpu ${threads} --mem ${memory} --prevIter ${prevIter} -f ${glm_family} -b ${tmp_geno_1%.tsv} ${covar_list_opt}
 #        --rds ${out}/results/output_iter_${prevIter}.rda
-
-#        --rds ${out}/results/output_iter_${prevIter}.rda
-    Rscript ${snpnet_fit_R} -p ${tmp_pheno} -n ${phe_name} -g ${tmp_geno}/ -o ${out}/ --nPCs ${nPCs} --cpu ${threads} --mem ${memory} ${covar_list_opt} --prevIter ${prevIter} -f ${glm_family} -b ${tmp_geno_1%.tsv} ${covar_list_opt}
     
 # beta for SNPs
     cat ${tmp_geno_1} | awk '(NR == 1){print "#" $0} ; (NR > 1){print $0}' > ${tmp_geno_2}
-    
+
+if [ -f ${tmp_covar_1} ] ; then     
 # beta for covariates
     python ${covar_py} -i ${tmp_covar_1} -k ${keep_train} -c ${file_covar} -o ${tmp_covar_2}
     cat ${tmp_covar_2} | awk '(NR == 1){print "#" $0} ; (NR > 1){print $0}' > ${tmp_covar_3}
+fi
 
-# compress
+# compress and copy
     bgzip ${tmp_geno_2}
-    bgzip ${tmp_covar_3}
-    
-    echo     cp ${tmp_geno_2}.gz  ${out_file_geno}    
-    echo     cp ${tmp_covar_3}.gz ${out_file_covars}
-# copy
+    echo cp ${tmp_geno_2}.gz  ${out_file_geno}    
     cp ${tmp_geno_2}.gz  ${out_file_geno}    
-    cp ${tmp_covar_3}.gz ${out_file_covars}
+
+    if [ -f ${tmp_covar_3} ] ; then 
+        bgzip ${tmp_covar_3} 
+        echo cp ${tmp_covar_3}.gz ${out_file_covars}
+        cp ${tmp_covar_3}.gz ${out_file_covars}
+    fi
 
 # clean up intermediate rda files
     clean_up_intermediate_rda_files ${out}
     
 fi
+
