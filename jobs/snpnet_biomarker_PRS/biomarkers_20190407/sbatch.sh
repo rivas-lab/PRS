@@ -5,10 +5,10 @@
 #SBATCH    --error=lab_snpnet.%A_%a.err
 #SBATCH --time=1-0:00:00
 #SBATCH --qos=normal
-#SBATCH -p owners,normal,mrivas,bigmem
+#SBATCH -p owners,normal,mrivas
 #SBATCH --nodes=1
-#SBATCH --cores=15
-#SBATCH --mem=150000
+#SBATCH --cores=8
+#SBATCH --mem=64000
 #SBATCH --constraint="CPU_GEN:HSW|CPU_GEN:BDW|CPU_GEN:SKX"
 #SBATCH --mail-type=END,FAIL
 #################
