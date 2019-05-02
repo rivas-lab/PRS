@@ -1,6 +1,7 @@
 suppressMessages(require(tidyverse))
 suppressMessages(require(data.table))
 suppressMessages(require(gridExtra))
+suppressMessages(require(hexbin))
 
 read_data <- function(phe_f, score_f, keep_f = NULL){
     phe_df <- fread(phe_f)    
@@ -28,16 +29,24 @@ read_data <- function(phe_f, score_f, keep_f = NULL){
     res
 }
 
-plot_scatter <- function(df){
+plot_scatter <- function(df, n_geom_hex_bins = 500, val_range_quantile=.01){
     lm1 <- df %>% lm(Predicted ~ Observed, data = .)
-    max <- df %>% select(-IID) %>% abs() %>% max() %>% ceiling()
+
+    max_val <- df %>% select(Predicted, Observed) %>% pull() %>% 
+    quantile(1 - val_range_quantile) %>% first() %>% ceiling()
+    min_val <- df %>% select(Predicted, Observed) %>% pull() %>% 
+    quantile(val_range_quantile)     %>% first() %>% ceiling()    
     
-    df %>% ggplot(aes(x=Predicted, y=Observed))+ 
+    df %>% ggplot(aes(x=Predicted, y=Observed))+     
+#     geom_point(stat = 'identity', alpha=.01) +        
+    geom_hex(bins = n_geom_hex_bins) +
+    scale_fill_gradientn("", colours = rev(rainbow(10, end = 4/6))) +
+    
     geom_abline(intercept=0, slope=1, color='red') + 
     geom_abline(intercept=lm1$coefficients[1], slope=lm1$coefficients[2], 
                 color='gray', size=.5, linetype = "dashed") + 
-    geom_point(stat = 'identity', alpha=.01) +
-    theme_bw() + xlim(-max, max) + ylim(-max, max)+ 
+    
+    theme_bw() + xlim(min_val, max_val) + ylim(min_val, max_val)+ 
     labs(x = 'Predicted phenotype', y = 'Observed phenotype')     
 }
 
@@ -105,7 +114,7 @@ get_file_names <- function(task_name, phe_name, rda_iter=0, repo_dir='/oak/stanf
 
 scatter_and_residual_plots <- function(
     task, phe_name, task_INR, phe_name_INT, out_f, covar_df, 
-    rda_iter = 0, plot_width=12, plot_height=12
+    rda_iter = 0, n_geom_hex_bins = 250, plot_width=12, plot_height=12
 ){
     file_names <- get_file_names(task, phe_name, rda_iter = rda_iter)
     file_names_INT <- get_file_names(task_INT, phe_name_INT)
@@ -124,9 +133,9 @@ scatter_and_residual_plots <- function(
     
     options(repr.plot.width=plot_width , repr.plot.height=plot_height)
     p_combined <- grid.arrange(
-        data %>% plot_scatter()   + labs(title='A.  Predicted phenotype vs. Observed phenotype') , 
+        data %>% plot_scatter(n_geom_hex_bins)   + labs(title='A.  Predicted phenotype vs. Observed phenotype') , 
         data %>% plot_residuals() + labs(title='B.  Residuals from the polygenic prediction'),     
-        data_INT %>% plot_scatter()   + labs(title='C.  Predicted phenotype vs. Observed phenotype (w/ inverse-normal transformation)') , 
+        data_INT %>% plot_scatter(n_geom_hex_bins)   + labs(title='C.  Predicted phenotype vs. Observed phenotype (w/ inverse-normal transformation)') , 
         data_INT %>% plot_residuals() + labs(title='D.  Residuals from the polygenic prediction (w/ inverse-normal transformation)'), 
         widths = c(1, 1), nrow = 2
     )

@@ -139,7 +139,7 @@ plot_bar_performance <- function(df){
     coord_flip()+ geom_bar(stat = 'identity') +
     labs(
         x = 'Phenotype',
-        y = expression("Increments in predictive performance with genotype ("*Delta*"R or "*Delta*"AUC)")
+        y = expression("Increments in predictive performance ("*Delta*"R or "*Delta*"AUC)")
     )    
 }
 
