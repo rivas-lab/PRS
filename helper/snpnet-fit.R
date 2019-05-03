@@ -4,8 +4,9 @@ suppressMessages(library(data.table))
 suppressMessages(library(glmnetPlus))
 #suppressMessages(library(snpnet))
 library(devtools)
-load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/snpnet')
-# load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/junyangq/snpnet')
+load_all('/oak/stanford/groups/mrivas/software/snpnet')
+#load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/snpnet')
+#load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/junyangq/snpnet')
 
 snpnet_fit_parser <- function() {
     parser <- ArgumentParser(description='snpnet fit wrapper')
@@ -60,15 +61,13 @@ snpnet_join_with_bim <- function(df, covariates, bim.file) {
     bim.df <- fread(bim.file, data.table = FALSE)
     colnames(bim.df) <- bim.cols
 # process the given data frame (join w/ bim)
-    df_joined <- df %>%
-    filter(
-        ! ID %in% covariates
-    ) %>% filter(
-        BETA != 0
-    ) %>% separate(
-        ID, into=c('ID', 'A1'), sep='_'
-    ) %>%
-    drop_na() %>%
+    if(is.null(covariates)){ 
+        df_filtered <- df
+    }else{
+        df_filtered <- df %>% filter( ! ID %in% covariates ) 
+    }
+    df_joined <- df_filtered %>% filter( BETA != 0 ) %>% 
+    separate( ID, into=c('ID', 'A1'), sep='_' ) %>% drop_na() %>%
     left_join(bim.df, on='ID') %>%
     select(out.cols) %>%
     arrange(CHROM, POS)
@@ -89,14 +88,7 @@ snpnet_fit_main <- function(args){
         print(paste0("buffer size: ", bufferSize))
         chunkSize <- as.integer(bufferSize / args$cpu)
         print(paste0("chunk size: ", chunkSize))
-        
-        covariates <- read_file_as_list(args$covarsList)
-#         if ( str_length( args$covarsList > 0) ){
-#             covariates <- read_file_as_list(args$covarsList)
-#         } else {
-#             covariates <- c("age", "sex", paste0("PC", 1:(args$nPCs)))
-#         }
-
+ 
         # config
         configs <- list(
            missing.rate = 0.1,
@@ -109,6 +101,12 @@ snpnet_fit_main <- function(args){
            nlams.delta = 5
          )
 
+        if(args$covarsList == 'None'){
+            covariates <- c()
+        }else{
+            covariates <- read_file_as_list(args$covarsList)
+#             covariates <- c("age", "sex", paste0("PC", 1:(args$nPCs)))
+        }
         print(covariates)
         # run snpnet
         fit <- snpnet(
@@ -139,6 +137,7 @@ snpnet_fit_main <- function(args){
         paste0(args$b, '.tsv'), 
         quote=FALSE, row.names=FALSE, sep='\t'
     )
+    if(!is.null(covariates)){
     # beta for covariates
     df_covars <- df %>% filter(
         ID %in% covariates
@@ -149,6 +148,7 @@ snpnet_fit_main <- function(args){
         paste0(args$b, '.covars.tsv'), 
         quote=FALSE, row.names=FALSE, sep='\t'
     )    
+    }
 }
 
 # parse

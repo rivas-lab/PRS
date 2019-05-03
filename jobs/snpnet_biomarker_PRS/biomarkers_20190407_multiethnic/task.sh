@@ -36,6 +36,7 @@ else
 fi
 
 subpop=( "e_asian" "s_asian" "african" "non_british_white" "white_british")
+#subpop=( "e_asian" "s_asian" "african" "non_british_white")
 
 for pop in ${subpop[@]} ; do 
     keep="/oak/stanford/groups/mrivas/private_data/ukbb/${app_id}/sqc/population_stratification/ukb${app_id}_${pop}.phe"

@@ -5,7 +5,7 @@
 #SBATCH    --error=lab_snpnet.%A_%a.err
 #SBATCH --time=0:30:00
 #SBATCH --qos=normal
-#SBATCH -p owners,normal,mrivas,dev
+#SBATCH -p owners,normal,mrivas
 #SBATCH --nodes=1
 #SBATCH --cores=1
 #SBATCH --mem=6000
