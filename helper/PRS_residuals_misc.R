@@ -29,7 +29,7 @@ read_data <- function(phe_f, score_f, keep_f = NULL){
     res
 }
 
-plot_scatter <- function(df, n_geom_hex_bins = 500, val_range_quantile=.01){
+plot_scatter <- function(df, n_geom_hex_bins = 500, color_limits = c(0, 30), val_range_quantile=.01){
     lm1 <- df %>% lm(Predicted ~ Observed, data = .)
 
     max_val <- df %>% select(Predicted, Observed) %>% pull() %>% 
@@ -40,7 +40,7 @@ plot_scatter <- function(df, n_geom_hex_bins = 500, val_range_quantile=.01){
     df %>% ggplot(aes(x=Predicted, y=Observed))+     
 #     geom_point(stat = 'identity', alpha=.01) +        
     geom_hex(bins = n_geom_hex_bins) +
-    scale_fill_gradientn("", colours = rev(rainbow(10, end = 4/6))) +
+    scale_fill_gradientn("", colors = rev(rainbow(10, end = 4/6)), limits=color_limits) +
     
     geom_abline(intercept=0, slope=1, color='red') + 
     geom_abline(intercept=lm1$coefficients[1], slope=lm1$coefficients[2], 
