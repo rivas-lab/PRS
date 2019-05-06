@@ -27,7 +27,7 @@ plink_bed_subset () {
 
     # wrapper function of plink2 --score
     UKBB_data_dir="$OAK/private_data/ukbb/${app_id}"
-    bed=${UKBB_data_dir}/cal/pgen/ukb${app_id}_cal_cALL_v2_pgen.pgen
+    bed=${UKBB_data_dir}/cal/pgen/ukb${app_id}_cal_cALL_v2_unpatched_ukbb.pgen
     bim=${bed%.pgen}.bim
     fam=${bed%.pgen}.fam
 
