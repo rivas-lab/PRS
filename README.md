@@ -43,6 +43,7 @@ $ ml load snpnet # the module (/home/groups/mrivas/.modules/snpnet.lua) loads de
 $ R
 > # If you don't have devtools on R, please install it.
 > # install.packages("devtools") 
+> install.packages("BGData", dependencies=TRUE)
 > library(devtools)
 > install_github("junyangq/snpnet")
 > # snpnet depends on glmnetPlus package. 
@@ -53,6 +54,10 @@ $ R
 > library(glmnetPlus)
 > library(snpnet)
 ```
+
+You may want to install libssh and/or libssh2 from Anaconda.
+- https://anaconda.org/conda-forge/libssh
+- https://anaconda.org/conda-forge/libssh2
 
 1. Clone the repo and create a symbolic link to `private_output`
 
