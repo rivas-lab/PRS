@@ -1,2 +1,4 @@
 *.tsv.gz
+*.tsv
+biomarkers.phe.gz
 
