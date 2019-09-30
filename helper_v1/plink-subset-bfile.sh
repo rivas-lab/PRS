@@ -34,6 +34,7 @@ plink_bed_subset () {
     plink2 \
 	--pgen $bed --bim $bim --fam $fam \
 	--keep ${keep} \
+    --autosome \
 	--threads ${threads} --memory ${memory} \
 	--out ${out} \
 	--make-bed

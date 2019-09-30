@@ -44,13 +44,15 @@ plink_score () {
     # wrapper function of plink2 --score
 
     UKBB_data_dir="$OAK/private_data/ukbb/${app_id}"
-    bed=${UKBB_data_dir}/cal/pgen/ukb${app_id}_cal_cALL_v2_pgen.pgen
+    bed=${UKBB_data_dir}/cal/pgen/ukb${app_id}_cal_cALL_v2_unpatched_ukbb.pgen
     bim=${bed%.pgen}.bim
     fam=${bed%.pgen}.fam
 
+    if [ ! -d $(dirname $out_score) ] ; then mkdir -p $(dirname $out_score) ; fi
+
+#	--keep ${individuals_keep} \
     plink2 \
 	--pgen $bed --bim $bim --fam $fam \
-	--keep ${individuals_keep} \
 	--threads ${threads} --memory ${memory} \
 	--out ${out_score%.sscore} \
 	--score ${in_sumstats} $( get_col_idx ${in_sumstats} ID ) $( get_col_idx ${in_sumstats} A1 ) $( get_col_idx ${in_sumstats} ${score_col} ) header cols=maybefid,maybesid,phenos,nmissallele,dosagesum,scoreavgs,denom,scoresums
@@ -59,3 +61,4 @@ plink_score () {
 if [ ! -f ${out_score} ] ; then
 	plink_score ${in_sumstats} ${individuals_keep} ${out_score} ${score_col}
 fi
+
