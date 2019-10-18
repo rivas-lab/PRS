@@ -29,7 +29,8 @@ lambda_idx <- which.max(metric.val)
 
 print(sprintf('The selected lambda idx: %d', lambda_idx))
 
-df_all<-snpnet_fit_to_df(beta, lambda_idx, covariates)
+df_all<-snpnet_fit_to_df(beta, lambda_idx, covariates) %>% filter(BETA != 0)
+df_all$BETA <- format(df_all$BETA, scientific = T)
 
 df_all %>% filter(! ID %in% covariates) %>%
 separate( ID, into=c('ID', 'A1'), sep='_') %>% 
@@ -38,3 +39,4 @@ fwrite(str_replace(rdata_f, '.RData$', '.tsv'), sep='\t')
 
 df_all %>% filter(ID %in% covariates) %>%
 fwrite(str_replace(rdata_f, '.RData$', '.covars.tsv'), sep='\t')
+

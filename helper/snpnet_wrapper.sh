@@ -1,6 +1,8 @@
 #!/bin/bash
 set -beEuo pipefail
 
+src_dir="$(dirname $(readlink -f $0))"
+
 ############################################################
 # tmp dir
 ############################################################
@@ -18,7 +20,7 @@ snpnet_dir=$1
 phenotype_name=$2
 family=$3
 geno_dir=$4
-data_dir_root=$5
+out_dir_root=$5
 phe_file=$6
 covariates=$7
 # "None" or "age,sex,PC1,PC2,PC3,PC4,PC5,PC6,PC7,PC8,PC9,PC10"
@@ -28,7 +30,7 @@ mem=$9
 ############################################################
 # functions
 ############################################################
-source snpnet_misc.sh
+source "${src_dir}/snpnet_misc.sh"
 
 ############################################################
 
@@ -39,19 +41,19 @@ tmp_geno_dir="${geno_dir}"
 #tmp_geno_dir=${tmp_dir}/snpnet-geno
 #copy_geno_to_tmp ${geno_dir} ${tmp_geno_dir}
 
-prevIter="$(find_prevIter ${data_dir_root} ${phenotype_name})"
+prevIter="$(find_prevIter ${out_dir_root} ${phenotype_name})"
 
 # configure and run
 config_file=${tmp_dir}/config.tsv
 {
 echo "#key val"
 echo "snpnet_dir ${snpnet_dir}"
-echo "mem2bufferSizeDivisionFactor 4"
+echo "mem2bufferSizeDivisionFactor 5"
 echo "cpu ${cores}"
 echo "mem ${mem}"
 echo "niter 100"
 echo "genotype_dir ${tmp_geno_dir}"
-echo "data_dir_root ${data_dir_root}"
+echo "out_dir_root ${out_dir_root}"
 echo "phenotype_file ${phe_file}"
 echo "phenotype_name ${phenotype_name}"
 echo "family ${family}"
@@ -63,4 +65,5 @@ echo "===================config_file===================" >&2
 cat ${config_file} >&2
 echo "===================config_file===================" >&2
 
-Rscript snpnet_wrapper.R ${config_file}
+Rscript "${src_dir}/snpnet_wrapper.R" "${config_file}"
+

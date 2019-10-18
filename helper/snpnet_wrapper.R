@@ -22,10 +22,10 @@ devtools::load_all(config[['snpnet_dir']])
 print(packageVersion("glmnet"))
 
 # configue parameters
-data_dir_root  <- config[['data_dir_root']]
+out_dir_root   <- config[['out_dir_root']]
 phenotype.name <- config[['phenotype_name']]
-phenotype.file <- file.path(data_dir_root, config[['phenotype_file']])
-results.dir    <- file.path(data_dir_root, phenotype.name, 'results')
+phenotype.file <- config[['phenotype_file']]
+results.dir    <- file.path(out_dir_root, phenotype.name, 'results')
 covariates     <- parse_covariates(config[['covariates']])
 
 print(phenotype.name)
@@ -51,3 +51,4 @@ fit <- snpnet(
     verbose = T, validation = T, save = T,
     prevIter = as.integer(config[['prevIter']])
 )
+
