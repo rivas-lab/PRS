@@ -1,8 +1,8 @@
 
 lab_snpnet.*.out
 lab_snpnet.*.err
-
-debug
 *.out
 *.err
+
+debug
 
