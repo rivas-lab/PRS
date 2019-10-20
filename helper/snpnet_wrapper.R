@@ -38,7 +38,7 @@ fit <- snpnet(
     covariates = covariates,
     family = config[['family']],
     results.dir = results.dir,
-    niter = config[['niter']], 
+    niter = as.integer(config[['niter']]), 
     configs = list(
         missing.rate = 0.1,
         MAF.thresh = 0.001,
