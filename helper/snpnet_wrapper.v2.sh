@@ -67,5 +67,5 @@ echo "===================config_file===================" >&2
 
 if [ ! -d ${out_dir_root} ] ; then mkdir -p ${out_dir_root} ; fi
 
-Rscript "${src_dir}/snpnet_wrapper.R" "${config_file}"
+Rscript "${src_dir}/snpnet_wrapper.v2.R" "${config_file}"
 

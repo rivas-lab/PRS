@@ -28,9 +28,15 @@ if [ ! -f ${res_dir}/score/${phenotype_name}.sscore.log ] && [ -f ${betas} ] ; t
 
     plink_opts="--threads 6 --memory 60000"
 
+    if [ -f ${pfile}.pvar.zst ] ; then
+        pfile_str="--pfile ${pfile} vzs" # pvar file is zstd compressed
+    else
+        pfile_str="--pfile ${pfile}"
+    fi
+
     cat $betas | awk '(NR>1){print $1}' \
         | plink2 ${plink_opts} \
-        --pfile ${pfile} \
+        ${pfile_str} \
         --extract /dev/stdin \
         --out ${res_dir}/score/${phenotype_name} \
         --score $(readlink -f ${betas}) 1 2 3 header cols=maybefid,maybesid,phenos,nmissallele,dosagesum,scoreavgs,denom,scoresums

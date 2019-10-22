@@ -27,9 +27,9 @@ RData_file="${res_dir}/results/output_iter_${prevIter}.RData"
 
 src="$(dirname $(readlink -f $0))/export_betas.R"
 
-#if [ ! -f ${RData_file%.RData}.tsv ] && [ ! -f ${RData_file%.RData}.covars.tsv ] ; then
+if [ ! -f ${RData_file%.RData}.tsv ] && [ ! -f ${RData_file%.RData}.covars.tsv ] ; then
     Rscript ${src} ${RData_file} ${covariates}
-#fi
+fi
 echo ${RData_file%.RData}.tsv
 echo ${RData_file%.RData}.covars.tsv
 
