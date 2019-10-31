@@ -53,7 +53,7 @@ fit <- snpnet(
         nlams.init = 10,
         nlams.delta = 5
     ),
-    verbose = T, validation = T, save = T,
+    verbose = T, validation = T, save = F,
     prevIter = as.integer(config[['prevIter']])
 )
 
