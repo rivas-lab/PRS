@@ -52,7 +52,8 @@ fit <- snpnet(
         bufferSize = as.integer(as.integer(config[['mem']]) / as.integer(config[['mem2bufferSizeDivisionFactor']])),
         save = F,
         prevIter = as.integer(config[['prevIter']]),
-        verbose = T
+        verbose = T,
+        KKT.verbose = T
     ),
     validation = T
 )
