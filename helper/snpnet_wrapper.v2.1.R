@@ -53,7 +53,8 @@ fit <- snpnet(
         save = F,
         prevIter = as.integer(config[['prevIter']]),
         verbose = T,
-        KKT.verbose = T
+        KKT.verbose = T,
+        mem = as.integer(config[['mem']])
     ),
     validation = T
 )
