@@ -1,23 +1,69 @@
 require(tidyverse)
 require(data.table)
 
-read_config_from_file <- function(config_file){
-    config_df <- config_file %>% fread(header=T, sep='\t') %>%
-    setnames(c('key', 'val'))
-    
-    config_l        <- config_df %>% select(val) %>% pull()
-    names(config_l) <- config_df %>% select(key) %>% pull()
-    
-    return(config_l)
+config_params_data_type <- function(){
+    list(
+        double = c(
+            'missing.rate',
+            'MAF.thresh',
+            'glmnet.thresh',
+            'lambda.min.ratio'
+        ),
+        integer = c(
+            'nCores', 
+            'prevIter', 
+            'mem',
+            'nlambda',
+            'nlams.init',
+            'nlams.delta',
+            'num.snps.batch',
+            'increase.size',
+            'stopping.lag'
+        ),
+        logical = c(
+            'use.glmnetPlus',
+            'standardize.variant',
+            'validation',
+            'early.stopping',
+            'vzs',
+            'save', 
+            'verbose', 
+            'KKT.verbose',
+            'KKT.check.aggressive.experimental'
+        )
+    )
 }
 
 parse_covariates <- function(covariates_str){
-    if(covariates_str == 'None'){
+    if(is.null(covariates_str) || covariates_str == 'None'){
         covariates=c()
     }else{
         covariates=strsplit(covariates_str, ',')[[1]]
     }
     covariates
+}
+
+read_config_from_file <- function(config_file){
+    config_df <- config_file %>% fread(header=T, sep='\t') %>%
+    setnames(c('key', 'val'))
+    
+    config <- as.list(setNames(config_df$val, config_df$key))        
+    config_dt <- config_params_data_type()    
+    for(k in intersect(config_dt[['double']], names(config))){
+        config[[k]] <- as.double(config[[k]])
+    }
+    for(k in intersect(config_dt[['integer']], names(config))){
+        config[[k]] <- as.integer(config[[k]])
+    }
+    for(k in intersect(config_dt[['logical']], names(config))){
+        config[[k]] <- as.logical(config[[k]])
+    }
+    if(!'status' %in% names(config)) config[['status']] <- NULL
+    if(!'covariates' %in% names(config)) config[['covariates']] <- NULL
+    if(!'split.col' %in% names(config)) config[['split.col']] <- NULL
+    if(!'validation' %in% names(config)) config[['validation']] <- FALSE
+    config[['covariates']] = parse_covariates(config[['covariates']])
+    config
 }
 
 ## perhaps remove from here..

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -beEuo pipefail
 
-test_id=19
+test_id=20
 
 #cores=$( cat $0 | egrep '^#SBATCH --cores='  | awk -v FS='=' '{print $NF}' )
 #mem=$(   cat $0 | egrep '^#SBATCH --mem='    | awk -v FS='=' '{print $NF}' )

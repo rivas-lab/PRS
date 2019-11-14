@@ -1,0 +1,12 @@
+PLINK v2.00a2LM AVX2 Intel (12 Nov 2019)
+Options in effect:
+  --variant-score
+
+Hostname: sh-109-55.int
+Working directory: /oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/notebook/20191021_snpnet/plink2-variant-score
+Start time: Tue Nov 12 15:15:39 2019
+
+Error: Missing --vscore parameter.
+For more info, try "plink2 --help <flag name>" or "plink2 --help | more".
+
+End time: Tue Nov 12 15:15:39 2019

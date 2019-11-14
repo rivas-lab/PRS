@@ -1,0 +1,24 @@
+PLINK v2.00a2LM AVX2 Intel (12 Nov 2019)
+Options in effect:
+  --out dev
+  --pfile /oak/stanford/groups/mrivas/projects/snpnet/sample_data/all vzs
+  --variant-score residuals_iter_5.tsv
+
+Hostname: sh-109-55.int
+Working directory: /oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/notebook/20191021_snpnet/plink2-variant-score
+Start time: Tue Nov 12 15:16:39 2019
+
+Random number seed: 1573600599
+385192 MiB RAM detected; reserving 192596 MiB for main workspace.
+Using up to 24 threads (change this with --threads).
+2000 samples (2000 females, 0 males; 2000 founders) loaded from
+/oak/stanford/groups/mrivas/projects/snpnet/sample_data/all.psam.
+8000 variants loaded from
+/oak/stanford/groups/mrivas/projects/snpnet/sample_data/all.pvar.zst.
+1 quantitative phenotype loaded (2000 values).
+Calculating allele frequencies... done.
+--variant-score: 5 score-vectors loaded for 1600 samples.
+Warning: 1 line skipped in --variant-score file.
+--variant-score: Results written to dev.vscore .
+
+End time: Tue Nov 12 15:16:39 2019
