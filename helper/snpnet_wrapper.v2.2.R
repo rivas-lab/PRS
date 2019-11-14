@@ -30,7 +30,7 @@ fit <- snpnet(
     genotype.pfile = config[['genotype.pfile']],
     phenotype.file = config[['phenotype.file']],
     phenotype      = config[['phenotype.name']],
-    status         = config[['status']],
+    status.col     = config[['status.col']],
     covariates     = config[['covariates']],
     split.col      = config[['split.col']],
     validation     = config[['validation']],
