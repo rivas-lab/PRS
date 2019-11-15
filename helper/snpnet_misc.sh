@@ -13,18 +13,8 @@ copy_geno_to_tmp () {
     done ; done
 }
 
-get_results_dir () {
-    local data_dir_root=$(readlink -f $1)
-    local phenotype_name=$2
-
-    echo "${data_dir_root}/${phenotype_name}/results"
-}
-
 find_prevIter () {
-    local data_dir_root=$1
-    local phenotype_name=$2
-    
-    local results_dir=$(get_results_dir "${data_dir_root}" "${phenotype_name}")
+    local results_dir=$(readlink -f $1)
     
     { 
     if [ -d ${results_dir}/results ] ; then
@@ -33,4 +23,27 @@ find_prevIter () {
     fi 
     echo "output_iter_0" 
     } | awk 'NR==1' | sed -e "s/output_iter_//g"
+}
+
+plink_score () {
+    local results_dir=$1
+    local phenotype_name=$2
+    local pfile=$3
+    local threads=$4
+    local memory=$5
+    
+    if [ -f ${pfile}.pvar.zst ] ; then
+        pfile_str="--pfile ${pfile} vzs" # pvar file is zstd compressed
+    else
+        pfile_str="--pfile ${pfile}"
+    fi
+        
+    cat ${results_dir}/snpnet.tsv \
+    | awk -v FS='\t' '(NR>1){print $3}' \
+    | plink2 --threads ${threads} --memory ${memory} \
+        ${pfile_str} \
+        --extract /dev/stdin \
+        --out ${results_dir}/${phenotype_name} \
+        --score ${results_dir}/snpnet.tsv 3 5 6 header zs \
+        cols=maybefid,maybesid,phenos,nmissallele,dosagesum,scoreavgs,denom,scoresums
 }

@@ -1,5 +1,5 @@
-require(tidyverse)
-require(data.table)
+suppressPackageStartupMessages(require(tidyverse))
+suppressPackageStartupMessages(require(data.table))
 
 config_params_data_type <- function(){
     list(
@@ -12,6 +12,7 @@ config_params_data_type <- function(){
         integer = c(
             'nCores', 
             'prevIter', 
+            'niter',
             'mem',
             'nlambda',
             'nlams.init',
@@ -26,7 +27,8 @@ config_params_data_type <- function(){
             'validation',
             'early.stopping',
             'vzs',
-            'save', 
+            'save',
+            'save.computeProduct',
             'verbose', 
             'KKT.verbose',
             'KKT.check.aggressive.experimental'
@@ -62,29 +64,56 @@ read_config_from_file <- function(config_file){
     if(!'covariates' %in% names(config)) config[['covariates']] <- NULL
     if(!'split.col' %in% names(config)) config[['split.col']] <- NULL
     if(!'validation' %in% names(config)) config[['validation']] <- FALSE
+    if(!config[['validation']]) config[['split.col']] <- NULL
     config[['covariates']] = parse_covariates(config[['covariates']])
     config
 }
 
-## perhaps remove from here..
-get_rdata_path <- function(GBE_ID, iter_idx){
-    file.path(
-        '/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/jobs/hearing_2247',
-        GBE_ID,
-        'results/results',
-        paste0('output_iter_', iter_idx, '.RData')
-    )
-}
-
-
-snpnet_fit_to_df <- function(beta, lambda_idx, covariates = NULL){
+snpnet_fit_to_df <- function(beta, lambda_idx, covariates = NULL, verbose=FALSE){
+    if(verbose) snpnet::snpnetLogger(sprintf('Extracting the BETAs (lambda idx: %d)..', lambda_idx), funcname='snpnetWrapper')
     # extract BETAs from snpnet(glmnet) fit as a data frame
     df <- beta[lambda_idx] %>% data.frame()
     colnames(df) <- 'BETA'
-    df %>%
-    rownames_to_column("ID") %>% 
-    filter(ID %in% covariates || BETA != 0)
+    df <- df %>% rownames_to_column("ID")
+    
+    df$BETA <- format(df$BETA, scientific = T)
+    
+    non.zero.BETAs <- union(
+        covariates, 
+        df %>% filter(as.numeric(BETA) != 0) %>% select(ID) %>% pull()
+    )
+    if(verbose) snpnet::snpnetLogger(sprintf(
+        'The BETAs are extracted for %d variables (%d covariates and %d genetic variants).', 
+        length(non.zero.BETAs), length(intersect(non.zero.BETAs, covariates)), length(setdiff(non.zero.BETAs, covariates))
+    ), indent=1, funcname='snpnetWrapper')
+    df %>% filter(ID %in% non.zero.BETAs)
 }
+
+save_BETA <- function(df, out.file.head, pvar, vzs = TRUE, covariates = NULL, verbose=FALSE){
+    file.geno   <- paste0(out.file.head, ".tsv")
+    file.covars <- paste0(out.file.head, ".covars.tsv")
+
+    if(! is.null(covariates)){
+        if(verbose) snpnet::snpnetLogger(sprintf('Saving results to %s', file.covars), funcname='snpnetWrapper')
+        df %>% filter(ID %in% covariates) %>%
+        fwrite(file.covars, sep='\t')        
+    }
+    
+    catcmd <- ifelse(vzs, 'zstdcat', 'cat')
+
+    pvar_df <- fread(cmd=paste(catcmd, pvar, '| sed -e "s/^#//g"', sep=' ')) %>%
+    mutate(varID = paste(ID, ALT, sep='_'))
+    
+    if(verbose) snpnet::snpnetLogger(sprintf('Saving results to %s', file.geno), funcname='snpnetWrapper')
+        
+    df %>% filter(! ID %in% covariates) %>%
+    rename('varID' = 'ID') %>%
+    left_join(pvar_df, by='varID') %>%
+    arrange(CHROM, POS) %>%
+    select(c(colnames(pvar_df %>% select(-varID)), 'BETA')) %>%
+    fwrite(file.geno, sep='\t')
+}
+
 
 compute_covar_score <- function(phe_df, covar_df){
     phe_df %>% 
