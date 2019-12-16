@@ -103,8 +103,8 @@ for OPT in "$@" ; do
         '-t' | '--nCores' )
             nCores=$2 ; shift 2 ;
             ;;
-        '-m' | '--memory' )
-            memory=$2 ; shift 2 ;
+        '-m' | '--mem' | '--memory' )
+            mem=$2 ; shift 2 ;
             ;;
         '-n' | '--niter' )
             niter=$2 ; shift 2 ;
