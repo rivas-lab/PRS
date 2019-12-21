@@ -21,7 +21,7 @@ _SLURM_ARRAY_TASK_ID=${SLURM_ARRAY_TASK_ID:=1}
 mem=$( cat $0 | egrep '^#SBATCH --mem='  | awk -v FS='=' '{print $NF}' )
 cores=$( cat $0 | egrep '^#SBATCH --cores='  | awk -v FS='=' '{print $NF}' )
 
-script="/oak/stanford/groups/mrivas/users/${USER}/repos/rivas-lab/PRS/src/201912_batch/snpnet_batch.sh"
+script="/oak/stanford/groups/mrivas/users/${USER}/repos/rivas-lab/PRS/src/201912_batch/snpnet_batch.INI.sh"
 
 if [ $# -gt 0 ] ; then offset=$1 ; else offset=0 ; fi
 # if [ $# -gt 1 ] ; then pop=$2 ; else pop="white_british" ; fi

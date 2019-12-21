@@ -45,9 +45,9 @@ EOF
 ############################################################
 tmp_dir_root="$LOCAL_SCRATCH"
 if [ ! -d ${tmp_dir_root} ] ; then mkdir -p $tmp_dir_root ; fi
-tmp_dir="$(mktemp -p ${tmp_dir_root} -d tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX)"
+local_tmp_dir="$(mktemp -p ${tmp_dir_root} -d tmp-$(basename $0)-$(date +%Y%m%d-%H%M%S)-XXXXXXXXXX)"
 # echo "tmp_dir = $tmp_dir" >&2
-handler_exit () { rm -rf $tmp_dir ; }
+handler_exit () { rm -rf $local_tmp_dir ; }
 trap handler_exit EXIT
 
 ############################################################
@@ -57,7 +57,7 @@ trap handler_exit EXIT
 nCores=4
 mem=30000
 offset=0
-master_phe_file="/scratch/groups/mrivas/projects/PRS/private_data/phe_file/master.20191219.snpnet.phe"
+master_phe_file="/scratch/groups/mrivas/projects/PRS/private_data/phe_file/master.20191219.phe"
 master_phe_info_file="/scratch/groups/mrivas/projects/PRS/private_data/phe_file/master.20191219.phe.info.tsv"
 genotype_pfile="/scratch/groups/mrivas/ukbb/24983/array_combined/pgen/ukb24983_cal_hla_cnv.p"
 covars="age,sex,Array,$(get_PCs_str 40)"
@@ -106,14 +106,14 @@ batch_idx="${params[0]}"
 
 ml load snpnet_yt
 
-
+batch_run_version="201912"
 geno_dataset=$(basename $(dirname $(dirname $genotype_pfile)))
 # gbe_id=INI5254
 # phe_file="/oak/stanford/groups/mrivas/ukbb24983/phenotypedata/10136/21731/phe/INI5254.phe"
 gbe_id=$(   get_phe_info_line_INI ${master_phe_info_file} ${batch_idx} | awk '{print $1}' )
 phe_file=$( get_phe_info_line_INI ${master_phe_info_file} ${batch_idx} | awk '{print $2}' )
 family=$(gbe_id_to_family ${gbe_id})
-tmp_dir=$(get_snpnet_tmp_dir ${gbe_id} ${geno_dataset})
+tmp_dir=$(get_snpnet_tmp_dir ${gbe_id} ${batch_run_version} ${geno_dataset})
 
 ############################################################
 # body
@@ -125,4 +125,4 @@ ${snpnet_wrapper} --nCores ${nCores} --memory ${mem} \
 --verbose \
  ${genotype_pfile} ${master_phe_file} ${gbe_id} ${family} ${tmp_dir}
 
-copy_results_from_tmp ${tmp_dir} $(phe_file_to_snpnet_res ${gbe_id} ${master_phe_file} ${geno_dataset} ${pop})
+copy_results_from_tmp ${tmp_dir} $(phe_file_to_snpnet_res ${gbe_id} ${phe_file} ${geno_dataset} ${pop})

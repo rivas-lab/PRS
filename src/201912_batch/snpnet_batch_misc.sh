@@ -25,8 +25,9 @@ gbe_id_to_family () {
 
 get_snpnet_tmp_dir () {
     local gbe_id=$1
-    local geno_dataset=$2
-    echo /scratch/users/ytanigaw/tmp/snpnet/jobs/$geno_dataset/$gbe_id
+    local version=$2
+    local geno_dataset=$3
+    echo /scratch/users/ytanigaw/tmp/snpnet/jobs/${version}/${geno_dataset}/${gbe_id}
 }
 
 get_phe_info_line_INI () {
