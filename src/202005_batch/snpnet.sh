@@ -111,7 +111,7 @@ genotype_pfile="/scratch/groups/mrivas/ukbb24983/array_combined/pgen/ukb24983_ca
 phe_file="/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200522.phe.zst"
 keep="/oak/stanford/groups/mrivas/ukbb24983/sqc/population_stratification_w24983_20200522/ukb24983_white_british.phe"
 if [ "${weighted}" == "T" ] ; then
-    p_factor_file="/oak/stanford/groups/mrivas/ukbb24983/array_combined/snpnet/penalty.rds"
+    p_factor_file="/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.rds"
 else
     p_factor_file="None"
 fi
