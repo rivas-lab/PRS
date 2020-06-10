@@ -27,3 +27,9 @@
 cat 2_list_unfinished.lst.20200602-233121.txt | awk 'NR>1' | while read GBE_ID ; do bash 3_export_intermediate.sh $GBE_ID ; done
 ```
 
+compute AUC
+
+```{bash}
+bash 5_run_eval.sh 4_list_GBE_IDs_with_sscore.20200608-223851.txt
+```
+
