@@ -33,3 +33,6 @@ compute AUC
 bash 5_run_eval.sh 4_list_GBE_IDs_with_sscore.20200608-223851.txt
 ```
 
+```
+cat snpnet.gwasP.tsv  | awk -v OFS='\t' '($7 == "Others"){print $1, $2, $2+1, $3}' | sed -e "s/^XY/X/g" > snpnet.gwasP.Others.bed
+```
