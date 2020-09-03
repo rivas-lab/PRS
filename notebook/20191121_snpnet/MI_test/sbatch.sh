@@ -32,6 +32,8 @@ results_dir="/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/note
 
 echo "[$0 $(date +%Y%m%d-%H%M%S)] [start] hostname = $(hostname) SLURM_JOBID = ${SLURM_JOBID:=0}; phenotype = ${phenotype_name}" >&2
 
+if [ ! -d ${results_dir} ] ; then mkdir -p ${results_dir} ; fi
+
 bash ${snpnet_wrapper} \
     --snpnet_dir ${snpnet_dir} \
     --nCores ${cores} \

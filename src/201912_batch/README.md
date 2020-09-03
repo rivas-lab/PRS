@@ -23,3 +23,6 @@ Submitted batch job 56765285
 [ytanigaw@sh-109-56 ~/repos/rivas-lab/PRS/src/201912_batch]$ sbatch --array=1-404 snpnet_batch.INI.sbatch.sh 1000
 Submitted batch job 56767929
 ```
+
+The current pipe may not be working well.
+`/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/src/201912_batch/logs/snpnet.56767929_213.out`
