@@ -1,3 +1,9 @@
+# PRS map 202005 version
+
+## summary
+
+- We applied `snpnet` for HC phenotypes.
+- Master phe file version `20200522` --> meaning that the local PCs used in this batch was of low quality.
 
 ## origin of the HC phenotype list
 
@@ -7,6 +13,7 @@
 ## data location
 
 - output: `/oak/stanford/groups/mrivas/projects/PRS/private_output/20200528-batch`
+- [Google Spreadsheet](https://docs.google.com/spreadsheets/d/12rtIrNFQUJFYlfgLqNLbgKxM6PAOl7b8C34vXiqHsU8/edit?usp=sharing)
 
 # penalty factors in `snpnet`
 
@@ -15,7 +22,6 @@
 1. PTVs get .5
 2. Protein altering variants is .75
 3. Others 1
-
 
 ## scripts
 
