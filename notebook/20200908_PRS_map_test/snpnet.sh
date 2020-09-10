@@ -4,15 +4,15 @@ set -beEuo pipefail
 SRCNAME=$(readlink -f $0)
 SRCDIR=$(dirname ${SRCNAME})
 PROGNAME=$(basename $SRCNAME)
-VERSION="0.0.1"
-NUM_POS_ARGS="2"
+VERSION="0.3.0"
+NUM_POS_ARGS="1"
 
 ############################################################
 # functions
 ############################################################
 
 show_default_helper () {
-    cat ${SRCNAME} | grep -n Default | tail -n+3 | awk -v FS=':' '{print $1}' | tr "\n" "\t" 
+    cat ${SRCNAME} | grep -n Default | tail -n+3 | awk -v FS=':' '{print $1}' | tr "\n" "\t"
 }
 
 show_default () {
@@ -24,18 +24,30 @@ show_default () {
 usage () {
 cat <<- EOF
 	$PROGNAME (version $VERSION)
-	Run snpnet
-	
+	Run snpnet (now supports refit)
+
 	Usage: $PROGNAME [options] input_file
 	  input_file      The input file
-	
+
 	Options:
 	  --cpus     (-t)  Number of CPU cores
 	  --mem      (-m)  The memory amount
-	
+
 	Default configurations:
 EOF
     show_default | awk -v spacer="  " '{print spacer $0}'
+}
+
+get_family_from_GBE_ID () {
+    local GBE_ID=$1
+
+    GBE_CAT=$(echo $GBE_ID | sed -e "s/[0-9]//g")
+
+    if [ "${GBE_CAT}" == "QT_FC" ] || [ "${GBE_CAT}" == "INI" ] ; then
+        echo "gaussian"
+    else
+        echo "binomial"
+    fi
 }
 
 ############################################################
@@ -55,13 +67,16 @@ trap handler_exit EXIT
 cpus=6
 mem=30000
 weighted=T
+refit=F
+run_name=dev
+family=AUTO
 ## == Default parameters (end) == ##
 
 declare -a params=()
 for OPT in "$@" ; do
-    case "$OPT" in 
+    case "$OPT" in
         '-h' | '--help' )
-            usage >&2 ; exit 0 ; 
+            usage >&2 ; exit 0 ;
             ;;
         '-v' | '--version' )
             echo $VERSION ; exit 0 ;
@@ -72,11 +87,20 @@ for OPT in "$@" ; do
         '-m' | '--mem' )
             mem=$2 ; shift 2 ;
             ;;
+        '--family' )
+            family=$2 ; shift 2 ;
+            ;;
         '--no-weight' )
             weighted="F" ; shift 1 ;
             ;;
         '-w' | '--weighted' )
             weighted="T" ; shift 1 ;
+            ;;
+        '--refit' )
+            refit="T" ; shift 1 ;
+            ;;
+        '--run_name' )
+            run_name=$2 ; shift 2 ;
             ;;
         '--'|'-' )
             shift 1 ; params+=( "$@" ) ; break
@@ -94,11 +118,10 @@ done
 
 if [ ${#params[@]} -lt ${NUM_POS_ARGS} ]; then
     echo "${PROGNAME}: ${NUM_POS_ARGS} positional arguments are required" >&2
-    usage >&2 ; exit 1 ; 
+    usage >&2 ; exit 1 ;
 fi
 
 phenotype_name=${params[0]}
-family=${params[1]}
 ############################################################
 
 echo "[job] cpus:${cpus} mem:${mem}"
@@ -110,24 +133,38 @@ echo ${params[@]}
 genotype_pfile="/scratch/groups/mrivas/ukbb24983/array_combined/pgen/ukb24983_cal_hla_cnv"
 phe_file="/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200828.phe.zst"
 project_dir="/oak/stanford/groups/mrivas/projects/PRS/private_output/$(basename ${SRCDIR})"
-results_dir="${project_dir}/${phenotype_name}"
+results_dir="${project_dir}/${run_name}/${phenotype_name}"
+
+if [ "${family}" == "AUTO" ] ; then
+    family=$( get_family_from_GBE_ID ${phenotype_name} )
+fi
 
 ############################################################
 # Additional optional arguments for ${snpnet_wrapper} script
 ############################################################
 covariates="age,sex,PC1,PC2,PC3,PC4,PC5,PC6,PC7,PC8,PC9,PC10"
-keep="/oak/stanford/groups/mrivas/ukbb24983/sqc/population_stratification_w24983_20200828/ukb24983_white_british.phe"
 if [ "${weighted}" == "T" ] ; then
-    p_factor_file="/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.rds"
+    p_factor_file="/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v2.rds"
 else
     p_factor_file="None"
+fi
+
+if [ "${refit}" == "T" ] ; then
+    results_sub_dir="2_refit"
+    # ad-hock keep file generation for refit
+    keep=${results_dir}/2_refit/meta/keep.phe
+    if [ ! -d $(dirname ${keep}) ] ; then mkdir -p $(dirname ${keep}) ; fi
+    zstdcat ${phe_file} | awk -v OFS='\t' '((NR>1) && ($4 == "train" || $4  == "val")){print $1, $2}' > ${keep}
+else
+    results_sub_dir="1_fit_w_val"
+    keep="/oak/stanford/groups/mrivas/ukbb24983/sqc/population_stratification_w24983_20200828/ukb24983_white_british.phe"
 fi
 
 ############################################################
 # Configure other parameters
 ############################################################
-# ml load snpnet_yt/dev R/3.6 gcc
-ml load snpnet_yt/0.3.13 R/3.6 gcc
+ml load snpnet_yt/dev R/3.6 gcc zstd
+#ml load snpnet_yt/0.3.13 R/3.6 gcc zstd
 
 ############################################################
 
@@ -139,13 +176,14 @@ bash ${snpnet_wrapper} \
 --verbose --save_computeProduct --glmnetPlus \
 --keep ${keep} \
 --p_factor_file ${p_factor_file} \
+$([ "${refit}" == "T" ] && echo "--refit_from_RData ${results_dir}/1_fit_w_val/snpnet.RData" || echo "") \
+$([ "${refit}" == "T" ] && echo "--split_col NULL" || echo "") \
 ${genotype_pfile} \
 ${phe_file} \
 ${phenotype_name} \
 ${family} \
-${results_dir}/1_fit_w_val
+${results_dir}/${results_sub_dir}
 
-Rscript ${SRCDIR}/snpnet.eval.R ${phenotype_name} ${results_dir}/1_fit_w_val
+Rscript ${SRCDIR}/snpnet.eval.R ${phenotype_name} ${results_dir}/${results_sub_dir} $([ "${refit}" == "T" ] && echo "refit" || echo "")
 
 echo "[$0 $(date +%Y%m%d-%H%M%S)] [end] hostname = $(hostname) SLURM_JOBID = ${SLURM_JOBID:=0}; phenotype = ${phenotype_name}" >&2
-
