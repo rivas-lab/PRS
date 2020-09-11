@@ -31,7 +31,7 @@ fi | while read GBE_ID ; do
 if [ "${refit}" == "T" ] ; then
 
     echo "${GBE_ID} (refit)"
-    resbatch.sh --job_cmd 'sbatch -p mrivas --qos=high_p --job-name=snpnet.refit --output=logs/snpnet.refit.%A.out --error=logs/snpnet.refit.%A.err --time=2-0:00:00' --mem 120000 -c 10 --mem_mult 2 --try_n 1 --log logs/snpnet.${GBE_ID}.log --src snpnet.sh - --refit --run_name ${run_name} ${GBE_ID}
+    resbatch.sh --job_cmd 'sbatch -p mrivas --qos=high_p --job-name=snpnet.refit --output=logs/snpnet.refit.%A.out --error=logs/snpnet.refit.%A.err --time=2-0:00:00' --mem 120000 -c 10 --mem_mult 2 --try_n 1 --log logs/snpnet.refit.${GBE_ID}.log --src snpnet.sh - --refit --run_name ${run_name} ${GBE_ID}
 
 else
 

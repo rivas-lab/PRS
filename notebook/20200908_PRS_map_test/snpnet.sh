@@ -128,6 +128,12 @@ echo "[job] cpus:${cpus} mem:${mem}"
 echo ${params[@]}
 
 ############################################################
+# Configure other parameters
+############################################################
+ml load snpnet_yt/dev R/3.6 gcc zstd
+#ml load snpnet_yt/0.3.13 R/3.6 gcc zstd
+
+############################################################
 # Required arguments for ${snpnet_wrapper} script
 ############################################################
 genotype_pfile="/scratch/groups/mrivas/ukbb24983/array_combined/pgen/ukb24983_cal_hla_cnv"
@@ -159,12 +165,6 @@ else
     results_sub_dir="1_fit_w_val"
     keep="/oak/stanford/groups/mrivas/ukbb24983/sqc/population_stratification_w24983_20200828/ukb24983_white_british.phe"
 fi
-
-############################################################
-# Configure other parameters
-############################################################
-ml load snpnet_yt/dev R/3.6 gcc zstd
-#ml load snpnet_yt/0.3.13 R/3.6 gcc zstd
 
 ############################################################
 
