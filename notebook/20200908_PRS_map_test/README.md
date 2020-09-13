@@ -1,5 +1,23 @@
 # PRS map test run version `20200908`
 
+## `3_p_factor_v3`
+
+- 2020/9/13
+- We have again updated the penalty factor file (v3).
+- We applied VEP version 101.
+- For we applied weights of .9 to varinats on coding sequence
+
+```{bash}
+# the initial fit with validation set
+
+bash 1_submit.3_pfactor_v3.sh test.phes.lst
+
+# refit
+
+bash 1_submit.3_pfactor_v3.sh test.phes.lst refit
+```
+
+
 ## `2_p_factor_v2`
 
 - 2020/9/10

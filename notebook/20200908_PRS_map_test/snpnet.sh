@@ -4,7 +4,7 @@ set -beEuo pipefail
 SRCNAME=$(readlink -f $0)
 SRCDIR=$(dirname ${SRCNAME})
 PROGNAME=$(basename $SRCNAME)
-VERSION="0.3.0"
+VERSION="0.4.0"
 NUM_POS_ARGS="1"
 
 ############################################################
@@ -70,6 +70,7 @@ weighted=T
 refit=F
 run_name=dev
 family=AUTO
+p_factor_file=/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v3.rds
 ## == Default parameters (end) == ##
 
 declare -a params=()
@@ -95,6 +96,9 @@ for OPT in "$@" ; do
             ;;
         '-w' | '--weighted' )
             weighted="T" ; shift 1 ;
+            ;;
+        '--p_factor_file' )
+            p_factor_file=$2 ; shift 2 ;
             ;;
         '--refit' )
             refit="T" ; shift 1 ;
@@ -130,8 +134,8 @@ echo ${params[@]}
 ############################################################
 # Configure other parameters
 ############################################################
-ml load snpnet_yt/dev R/3.6 gcc zstd
-#ml load snpnet_yt/0.3.13 R/3.6 gcc zstd
+#ml load snpnet_yt/dev R/3.6 gcc zstd
+ml load snpnet_yt/0.3.15 R/3.6 gcc zstd
 
 ############################################################
 # Required arguments for ${snpnet_wrapper} script
@@ -149,11 +153,7 @@ fi
 # Additional optional arguments for ${snpnet_wrapper} script
 ############################################################
 covariates="age,sex,PC1,PC2,PC3,PC4,PC5,PC6,PC7,PC8,PC9,PC10"
-if [ "${weighted}" == "T" ] ; then
-    p_factor_file="/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v2.rds"
-else
-    p_factor_file="None"
-fi
+if [ "${weighted}" == "F" ] ; then p_factor_file="None" ; fi
 
 if [ "${refit}" == "T" ] ; then
     results_sub_dir="2_refit"
