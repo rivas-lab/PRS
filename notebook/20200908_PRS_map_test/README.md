@@ -2,6 +2,22 @@
 
 ## `3_p_factor_v3`
 
+- 2020/9/14
+- We incorporate the Mendelian gene annotation in Human Phenotype Ontology
+
+```{bash}
+# the initial fit with validation set
+
+bash 1_submit.4_regDoms_pfactor.sh test.HC_phes.lst
+
+# refit
+
+bash 1_submit.4_regDoms_pfactor.sh test.HC_phes.lst refit
+```
+
+
+## `3_p_factor_v3`
+
 - 2020/9/13
 - We have again updated the penalty factor file (v3).
 - We applied VEP version 101.
