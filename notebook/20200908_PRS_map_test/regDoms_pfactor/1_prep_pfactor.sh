@@ -45,16 +45,16 @@ trap handler_exit EXIT
 
 ml load R/3.6 gcc
 
-rds_in_f="/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v3.rds"
+rds_in_f="/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v4.rds"
 regDom_repo_d="/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/regDoms-stat-gen"
 cal_pvar="/oak/stanford/groups/mrivas/ukbb24983/cal/pgen/ukb24983_cal_cALL_v2_hg19.pvar"
 project_dir="/oak/stanford/groups/mrivas/projects/PRS/private_output/20200908_PRS_map_test"
-out_d="${project_dir}/4_regDoms_pfactor/"
+out_d="${project_dir}/5_regDoms_pfactor_v4/"
 
 HPO=$(GBE_ID_to_HPO ${GBE_ID})
 HPO_str=$(echo ${HPO} | tr ':' '_')
 HPO_pvar=${tmp_dir}/HPO.pvar
-rds_out_f=${out_d}/penalty.v3.${GBE_ID}.rds
+rds_out_f=${out_d}/$(basename ${rds_in_f} .rds).${GBE_ID}.rds
 
 if [ ! -d ${out_d} ] ; then mkdir -p ${out_d} ; fi
 

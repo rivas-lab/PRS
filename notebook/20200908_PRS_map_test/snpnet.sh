@@ -70,7 +70,7 @@ weighted=T
 refit=F
 run_name=dev
 family=AUTO
-p_factor_file=/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v3.rds
+p_factor_file=/oak/stanford/groups/mrivas/ukbb24983/array-combined/snpnet/penalty.v4.rds
 ## == Default parameters (end) == ##
 
 declare -a params=()

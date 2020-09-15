@@ -1,9 +1,35 @@
 # PRS map test run version `20200908`
 
-## `3_p_factor_v3`
+We have explored several parameters.
+
+- Penalty factor based on variant annotation
+  - Please see [`ukbb-tools`](https://github.com/rivas-lab/ukbb-tools/tree/master/03_filtering/array-combined#penalty-factor-for-snpnet) repo for the penalty factor.
+  - We also consider incorporating the annotations from Human Phenotype Ontology (HPO).
+- We have also examined the early stopping criteria.
+  - Please see [`AUC_diff_p_analysis`](AUC_diff_p_analysis) for more details.
+
+## `5_p_factor_v3`
+
+- 2020/9/14
+- We have updated penalty factor to v4 (0.5, 0.75, and 1.0 only with VEP v101).
+- We incorporate the Mendelian gene annotation in Human Phenotype Ontology
+
+```{bash}
+# the initial fit with validation set
+
+bash 1_submit.5_regDoms_pfactor_v4.sh test.HC_phes.lst
+
+# refit
+
+bash 1_submit.5_regDoms_pfactor_v4.sh test.HC_phes.lst refit
+```
+
+
+## `4_regDoms_pfactor`
 
 - 2020/9/14
 - We incorporate the Mendelian gene annotation in Human Phenotype Ontology
+- The base penalty factor is v3.
 
 ```{bash}
 # the initial fit with validation set
@@ -14,7 +40,6 @@ bash 1_submit.4_regDoms_pfactor.sh test.HC_phes.lst
 
 bash 1_submit.4_regDoms_pfactor.sh test.HC_phes.lst refit
 ```
-
 
 ## `3_p_factor_v3`
 
@@ -32,7 +57,6 @@ bash 1_submit.3_pfactor_v3.sh test.phes.lst
 
 bash 1_submit.3_pfactor_v3.sh test.phes.lst refit
 ```
-
 
 ## `2_p_factor_v2`
 
