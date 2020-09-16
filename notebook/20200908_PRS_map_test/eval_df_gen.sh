@@ -14,7 +14,7 @@ suppressWarnings(suppressPackageStartupMessages({
 
 data_d <- '/oak/stanford/groups/mrivas/projects/PRS/private_output/20200908_PRS_map_test'
 
-run_name <- c('1_p_factor_v1', '2_p_factor_v2', '3_p_factor_v3', '4_regDoms_pfactor')
+run_name <- c('1_p_factor_v1', '2_p_factor_v2', '3_p_factor_v3', '4_regDoms_pfactor', '5_regDoms_pfactor_v4', '6_pfactor_v4')
 GBE_IDs <- c('HC269', 'HC382', 'INI50', 'INI21001')
 fit_or_refit <- c('1_fit_w_val', '2_refit')
 
