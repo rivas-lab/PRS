@@ -8,6 +8,21 @@ We have explored several parameters.
 - We have also examined the early stopping criteria.
   - Please see [`AUC_diff_p_analysis`](AUC_diff_p_analysis) for more details.
 
+## How to update the GBE snpnet page?
+
+The snpnet page is defined in `snpnet_page` function in `gbe.py`.
+
+We have example pages:
+
+- https://gbe.stanford.edu/RIVAS_HG19/snpnet/HC269
+- https://gbe.stanford.edu/RIVAS_HG19/snpnet/HC382
+- https://gbe.stanford.edu/RIVAS_HG19/snpnet/INI50
+- https://gbe.stanford.edu/RIVAS_HG19/snpnet/INI21001
+
+```{bash}
+scp snpnet.html gbe:/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
+```
+
 ## `5_p_factor_v3`
 
 - 2020/9/14
