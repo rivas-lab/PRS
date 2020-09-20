@@ -184,6 +184,6 @@ ${phenotype_name} \
 ${family} \
 ${results_dir}/${results_sub_dir}
 
-Rscript ${SRCDIR}/snpnet.eval.R ${phenotype_name} ${results_dir}/${results_sub_dir} $([ "${refit}" == "T" ] && echo "refit" || echo "")
+run-simg.sh Rscript ${SRCDIR}/snpnet.eval.R ${phenotype_name} ${results_dir}/${results_sub_dir} $([ "${refit}" == "T" ] && echo "refit" || echo "")
 
 echo "[$0 $(date +%Y%m%d-%H%M%S)] [end] hostname = $(hostname) SLURM_JOBID = ${SLURM_JOBID:=0}; phenotype = ${phenotype_name}" >&2
