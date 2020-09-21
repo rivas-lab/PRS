@@ -39,7 +39,7 @@ fi | while read GBE_ID ; do
     --job_cmd_output logs_${run_name}/${jobname}.%A.out \
     --job_cmd_error  logs_${run_name}/${jobname}.%A.err \
     --job_cmd_time   2-0:00:00 \
-    --mem 60000 -c 10 --mem_mult 2 --try_n 1 \
+    --mem 480000 -c 10 --mem_mult 2 --try_n 1 \
     --log logs_${run_name}/${jobname}.log \
     --src snpnet.sh - $([ "${refit}" == "T" ] && echo "--refit" || echo "") --run_name ${run_name} ${GBE_ID}
 
