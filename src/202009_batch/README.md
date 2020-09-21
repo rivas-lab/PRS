@@ -15,3 +15,9 @@ We submit jobs using the wrapper script.
 bash 2_submit.sh GBE_IDs/FH.lst
 bash 2_submit.sh GBE_IDs/cancer.lst
 ```
+
+## snpnet version
+
+We used `snpnet_v.0.3.15` and `snpnet_v.0.3.16`.
+
+
