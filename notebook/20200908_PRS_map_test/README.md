@@ -23,6 +23,10 @@ We have example pages:
 scp snpnet.html gbe:/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
 ```
 
+The files are in our usual place: `/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser`
+`templates/snpnet.html` is the Flask template. It's called from `snpnet_page` function in `gbe.py`.
+The image data is in `static/PRS_map/`
+
 ## `5_p_factor_v3`
 
 - 2020/9/14
