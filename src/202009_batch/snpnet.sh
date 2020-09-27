@@ -135,7 +135,7 @@ echo ${params[@]}
 # Configure other parameters
 ############################################################
 #ml load snpnet_yt/dev R/3.6 gcc zstd
-ml load snpnet_yt/0.3.16 R/3.6 gcc zstd
+ml load snpnet_yt/0.3.17 R/3.6 gcc zstd
 
 ############################################################
 # Required arguments for ${snpnet_wrapper} script

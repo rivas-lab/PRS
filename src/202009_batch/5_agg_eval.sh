@@ -6,24 +6,35 @@ SRCDIR=$(dirname ${SRCNAME})
 PROGNAME=$(basename $SRCNAME)
 
 project_dir="/scratch/groups/mrivas/projects/PRS/private_output/$(basename ${SRCDIR})"
+test_run_f="/oak/stanford/groups/mrivas/projects/PRS/private_output/20200908_PRS_map_test/7_pfactor_v5/__GBE_ID__/1_fit_w_val/snpnet.eval.tsv"
 
 header_common="#phenotype_name:split:geno:covar:geno_covar:geno_delta:n_variables"
 header_binomial="${header_common}:case_n:control_n"
 header_gaussian="${header_common}:n"
 
-ml load R/3.6 gcc
+ml load R/3.6 gcc rclone
 
 {
     echo ${header_gaussian} | tr ':' '\t'
 
-    ! find ${project_dir} -name "snpnet.eval.tsv" | egrep -v BIN_FC | egrep    "${project_dir}/INI|${project_dir}/QT" | parallel -k 'cat {}' | egrep -v '#' | awk -v FS='\t' 'NF==8'
+    for GBE_ID in INI50 INI21001 ; do
+        cat $(echo ${test_run_f} | sed -e "s/__GBE_ID__/${GBE_ID}/g") | egrep -v '^#' | awk -v FS='\t' 'NF==8'
+    done
+
+    ! find ${project_dir} -mindepth 4 -maxdepth 4 -type f -name "snpnet.eval.tsv" | egrep    "${project_dir}/INI|${project_dir}/QT" | parallel -k 'cat {}' | egrep -v '^#' | awk -v FS='\t' 'NF==8'
+
 } > ${project_dir}/snpnet.eval.gaussian.tsv
 
 echo ${project_dir}/snpnet.eval.gaussian.tsv
 
 {
     echo ${header_binomial} | tr ':' '\t'
-    ! find ${project_dir} -name "snpnet.eval.tsv" | egrep -v BIN_FC | egrep -v "${project_dir}/INI|${project_dir}/QT" | parallel -k 'cat {}' | egrep -v '#' | awk -v FS='\t' 'NF==9'
+
+    for GBE_ID in HC269 HC382 ; do
+        cat $(echo ${test_run_f} | sed -e "s/__GBE_ID__/${GBE_ID}/g") | egrep -v '^#' | awk -v FS='\t' 'NF==9'
+    done
+
+    ! find ${project_dir} -mindepth 4 -maxdepth 4 -type f -name "snpnet.eval.tsv" | egrep -v "${project_dir}/INI|${project_dir}/QT" | parallel -k 'cat {}' | egrep -v '^#' | awk -v FS='\t' 'NF==9'
 } > ${project_dir}/snpnet.eval.binomial.tsv
 
 echo ${project_dir}/snpnet.eval.binomial.tsv
@@ -93,3 +104,4 @@ echo rclone copy \
 rclone copy \
   ${project_dir}/snpnet.eval.tsv \
   gdrive://rivas-lab$(echo ${project_dir} | sed -e 's%/scratch%%g' | sed -e 's%/oak/stanford%%g' | sed -e 's%/groups/mrivas%%g' | sed -e 's%private_output/%%g')/
+

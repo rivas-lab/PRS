@@ -16,8 +16,14 @@ bash 2_submit.sh GBE_IDs/FH.lst
 bash 2_submit.sh GBE_IDs/cancer.lst
 ```
 
+For resubmission, we have a similar but more sophisicated script that focuses on the set of phenotypes that are actually making some progress.
+
+```{bash}
+bash 2b_submit.sh GBE_IDs_20200926/GBE_IDs.tsv
+```
+
+
 ## snpnet version
 
-We used `snpnet_v.0.3.15` and `snpnet_v.0.3.16`.
-
+We used `snpnet` versions from `snpnet_v.0.3.15` to `snpnet_v.0.3.17`.
 

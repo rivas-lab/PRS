@@ -32,7 +32,7 @@ percentile_f <- file.path(data_d, 'snpnet.percentile.tsv')
 
 ####################################################################
 
-source('/oak/stanford/groups/mrivas/software/snpnet/snpnet_v.0.3.16/helpers/snpnet_misc.R')
+source('/oak/stanford/groups/mrivas/software/snpnet/snpnet_v.0.3.17/helpers/snpnet_misc.R')
 
 # read the raw phenotype file
 fread(
