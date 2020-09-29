@@ -36,8 +36,8 @@ cat ${GBE_list_f} | egrep -v '^#' | awk 'length($0)>0' | while read GBE_ID ; do
     --job_cmd_output logs_${run_name}/${jobname}.%A.out \
     --job_cmd_error  logs_${run_name}/${jobname}.%A.err \
     --job_cmd_time   1-0:00:00 \
-    --mem 30000 -c 4 --mem_mult 2 --try_n 1 \
-    --try_total 3 \
+    --mem 150000 -c 4 --mem_mult 2 --try_n 1 \
+    --try_total 5 \
     --log logs_${run_name}/${jobname}.log \
     --src snpnet.sh - $([ "${refit}" == "T" ] && echo "--refit" || echo "") --run_name ${run_name} ${GBE_ID}
 
