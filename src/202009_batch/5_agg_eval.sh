@@ -67,6 +67,9 @@ suppressWarnings(suppressMessages({
     ) -> GBE_names_df    
 }))
 
+'/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/05_gbe/extras/20200812_GBE_category/GBE_category.20200812.tsv' %>%
+fread() %>% rename('GBE_category'='#GBE_category') -> category_df
+
 ####################################################################
 out_eval_f <- args[1]
 
@@ -76,8 +79,10 @@ lapply(function(f){
     rename('GBE_ID'='#phenotype_name') %>% mutate(family = f)    
 }) %>% bind_rows() %>% left_join(
     GBE_names_df %>% select(-GBE_short_name_len), by='GBE_ID'
+) %>% rename('GBE_ID_prefix'='GBE_category') %>% left_join(
+    category_df %>% select(GBE_category, GBE_ID), by='GBE_ID'
 ) %>% select(
-    GBE_ID, GBE_category, split, geno, covar, geno_covar, geno_delta,
+    GBE_ID, GBE_category, GBE_ID_prefix, split, geno, covar, geno_covar, geno_delta,
     n_variables, family, n, case_n, control_n, GBE_N,
     GBE_NAME, GBE_short_name, Units_of_measurement
 ) -> eval_unsorted_df
