@@ -3,7 +3,7 @@
 We compare the BETA/P-value of the rare-variant GWAS scan.
 
 
-58304 Rare variants.
+21,466 Rare variants (1e-4 <= MAF <= 1e-3).
 
 ![HC382](HC382.png)
 
