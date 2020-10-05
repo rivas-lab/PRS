@@ -9,16 +9,17 @@ We have finalized the running parameters based on [the results from the test run
 - [Google spreadsheet summarizing the performance of the models](https://docs.google.com/spreadsheets/d/1n-Lk2ooPJPG7Zbk8Vu43h_n9dzZWvV7elqQyclWvGI8/edit?usp=sharing)
   - We have two spreadsheets each corresponds to the initial fit with validation set or the refit with the combined (70 + 10) % (training + validation) set.
 
-
 ## performance evaluation
+
+### Comparison of predictive performance in test set w/ and wo/ refit
 
 ![comparison of test set performance](8_plot_eval.png)
 
 We plotted the test set performance on the combined model consists of covariates and genetic variants.
 When we run `lm(y ~ 0 + x)`, we get the following number as the relative performance improvements.
 
-- Gaussian: `1.006169` (SE: `0.0004981424`)
-- Binomial: `1.001834` (SE: `0.0004566792`)
+- Gaussian: `1.006895` (SE: `0.0004027447`)
+- Binomial: `1.002266` (SE: `0.0003903395`)
 
 
 ## job submission
