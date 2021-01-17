@@ -22,7 +22,8 @@ nCores      <- as.integer(args[4]) # 16
 ####################################################################
 
 library(glmnetPlus)
-devtools::load_all('/oak/stanford/groups/mrivas/software/snpnet/snpnet_v.0.3.17')
+devtools::load_all('/oak/stanford/groups/mrivas/software/snpnet/snpnet_v.0.3.18')
+# devtools::load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/snpnet')
 devtools::load_all('/oak/stanford/groups/mrivas/users/ytanigaw/repos/junyangq/multiSnpnet')
 
 compute_lambda_min_ratio <- function(nlambda.new, nlambda = 100, ratio = 0.01) {
@@ -34,8 +35,9 @@ compute_lambda_min_ratio <- function(nlambda.new, nlambda = 100, ratio = 0.01) {
 ####################################################################
 
 genotype_file    <- '/scratch/groups/mrivas/ukbb24983/array-combined/pgen/ukb24983_cal_hla_cnv'     # ukb genotype data 
-phenotype_file   <- '/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200828.phe' # ukb master phe data 
-phe_list_in      <- '/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200828.phe.info.tsv'
+phenotype_file   <- '/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200828.patch20201223.phe' # ukb master phe data 
+# phe_list_in      <- '/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200828.phe.info.tsv'
+phe_list_in      <- '/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/PRS/notebook/20201020_SRRR/SRRR.GBE_ID.lst'
 results_root_dir <- '/scratch/groups/mrivas/projects/PRS/private_output/20201020_SRRR' # parent results directory to save intermediate results
 batch_size       <- 2000
 
@@ -44,7 +46,8 @@ weight <- NULL
 
 # other computational configurations
 
-phenotype_names      <- fread(phe_list_in) %>% rename('GBE_ID'='#GBE_ID') %>% pull(GBE_ID)
+# phenotype_names      <- fread(phe_list_in) %>% rename('GBE_ID'='#GBE_ID') %>% pull(GBE_ID)
+phenotype_names      <- phe_list_in %>% fread(header = F) %>% pull()
 results_dir          <- file.path(results_root_dir, paste0("results_rank_", rank, "/")) # subdirectory for each rank
 covariate_names      <- c("age", "sex", paste0("PC", 1:10))
 standardize_response <- TRUE  # should we standardize response beforehand (rescale when prediction for sure)
