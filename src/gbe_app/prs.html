@@ -114,65 +114,84 @@
 
     <div class="row">
         <div class="col col-md-12">
-            <h2 align="center">Browseable phenotypes</h2>
-            <br>
-            <div id="container_prs_summary" style="font-size:100%;">
-              <!-- https://mottie.github.io/tablesorter/docs/index.html -->
-              <table id="table_prs_trait_list"> <!-- bootstrap classes added by the uitheme widget -->
-                <thead>
-                  <tr>
-                    <th class="filter-select filter-exact" data-placeholder="Select">Trait group</th>
-                    <th>Trait</th>
-                    <th class="filter-select filter-exact" data-placeholder="Select">Family</th>
-                    <th>Geno</th>
-                    <th>Covars</th>
-                    <th>Full</th>
-                    <th>delta</th>
-                    <th># variants</th>
-                  </tr>
-                </thead>
-                <tfoot>
-                  <tr>
-                    <th>Trait group</th>
-                    <th>Trait</th>
-                    <th>Family</th>
-                    <th>Geno</th>
-                    <th>Covars</th>
-                    <th>Full</th>
-                    <th>delta</th>
-                    <th># variants</th>
-                  </tr>
-                  <tr>
-                    <th colspan="8" class="ts-pager form-inline">
-                      <div class="btn-group btn-group-sm" role="group">
-                        <button type="button" class="btn btn-default first"><< First</button>
-                        <button type="button" class="btn btn-default prev">< Prev.</button>
-                      </div>
-                      <span class="pagedisplay"></span>
-                      <div class="btn-group btn-group-sm" role="group">
-                        <button type="button" class="btn btn-default next">Next ></button>
-                        <button type="button" class="btn btn-default last">Last >></button>
-                      </div>
-                      <select class="form-control input-sm pagesize" title="Select page size">
-                        <option selected="selected" value="10">10</option>
-                        <option value="30">30</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="all">All Rows</option>
-                      </select>
-                      <select class="form-control input-sm pagenum" title="Select page number"></select>
-                    </th>
-                  </tr>
-                </tfoot>
-                <tbody>
-                  {{ table_prs_trait_list_tbody_str|safe }}
-                </tbody>
-              </table>
-            </div>
-            <br>
-            <hr/>
+          <h2 align="center">Browseable phenotypes</h2>
+          <p>
+            Here, we display available sparse PRS models in UK Biobank.
+            One can use sort and/or filter function. For example, you may enter ">1000" in the '# variants' column to select PRS models with more than 1,000 genetic variants.
+          </p>
+          <br>
+          <div id="container_prs_summary" style="font-size:100%;">
+            <!-- https://mottie.github.io/tablesorter/docs/index.html -->
+            <table id="table_prs_trait_list"> <!-- bootstrap classes added by the uitheme widget -->
+              <thead>
+                <tr>
+                    {% for table_col in table_prs_trait_list_cols %}
+                    {% if table_col in table_prs_trait_list_cols_select %}
+                    <th class="filter-select filter-exact" data-placeholder="Select">{{ table_col }}</th>
+                    {% else %}
+                    <th>{{ table_col }}</th>
+                    {% endif %}
+                    {% endfor %}
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                    {% for table_col in table_prs_trait_list_cols %}
+                    <th>{{ table_col }}</th>
+                    {% endfor %}
+                </tr>
+                <tr>
+                  <th colspan="8" class="ts-pager form-inline">
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button type="button" class="btn btn-default first"><< First</button>
+                      <button type="button" class="btn btn-default prev">< Prev.</button>
+                    </div>
+                    <span class="pagedisplay"></span>
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button type="button" class="btn btn-default next">Next ></button>
+                      <button type="button" class="btn btn-default last">Last >></button>
+                    </div>
+                    <select class="form-control input-sm pagesize" title="Select page size">
+                      <option selected="selected" value="10">10</option>
+                      <option value="30">30</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="all">All Rows</option>
+                    </select>
+                    <select class="form-control input-sm pagenum" title="Select page number"></select>
+                  </th>
+                </tr>
+              </tfoot>
+              <tbody>
+                {{ table_prs_trait_list_tbody_str|safe }}
+              </tbody>
+            </table>
+          </div>
+          <br>
+          <h3>Description of the columns</h3>
+          <ul>
+              <li>Trait group: trait categories used in the Global Biobank Engine. Its <a href="https://gbe.stanford.edu/faq#group" target="_blank">FAQ page</a> has more information.</li>
+              <li>Trait: a trait in UK Biobank.</li>
+              <li>Family: it represents whether the PRS model is fit with gaussian model (for continuous response, such as standing height) or binomial model (for binary outcomes, such as disease). We use r2 and AUC as the evaluation metric for gaussian and binomial models, respectively. In this table, we display those evaluation metric computed on the hold-out test set consits of individuals of whiter British ancestry in UK Biobank cohort.</li>
+              <li>Geno: the predictive performence (r2 or AUC) of the predictive model with genotype features alone.</li>
+              <li>Covar: the predictive performence (r2 or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.</li>
+              <li>Full: the predictive performence (r2 or AUC) of the full model that have both genotypes and covariates alone.</li>
+              <li>delta: the incremental predictive performence (r2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.</li>
+              <li># variants: the number of genetic variants included in the model</li>
+          </ul>
+          <br>
+          <hr/>
         </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col col-md-12">
+        <!-- <h2>Methods summary</h2>
+        <h3>Construction of the sparse PRS models</h3>
+        <h3>Evaluation of the PRS models</h3> -->
+  </div>
+  </div>
+
 </div>
 {% endblock %}
 
