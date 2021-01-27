@@ -8,6 +8,7 @@ Our data location is: `/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/st
 # as a regular user
 cp prs.html /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
 cp snpnet.html /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
+# cp /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/gbe.py gbe.$(date +%Y%m%d-%H%M%S).py
 # cp gbe.py /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/
 ```
 
