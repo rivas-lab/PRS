@@ -6,3 +6,12 @@ To compare the results with single-trait models (e.g. snpnet), we focused on 177
 
 We fixed several issues and submitted SLURM jobs on 2020/12/23 and the results will be written to `/scratch/groups/mrivas/projects/PRS/private_output/20201020_SRRR`.
 
+example job submission command:
+
+```{bash}
+ncores=16
+last_iter=0
+rank=50
+sbatch --cores=${ncores} srrr_fit.nCoresArgs.sh ${rank} ${last_iter} ${ncores}
+```
+
