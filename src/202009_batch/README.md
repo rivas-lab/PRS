@@ -48,3 +48,26 @@ bash 5_agg_eval.sh refit
 
 We used `snpnet` versions from `snpnet_v.0.3.15` to `snpnet_v.0.3.17`.
 
+
+## Additional information for each script
+
+### `13_compute_PRS_p_val.{sh,R,lst}`
+
+We evaluate the significance of the PRS model by fitting a glm model on the test set (in WB).
+
+phe ~ 1 + age + sex + PCs + PRS
+
+[`13_compute_PRS_p_val.R`](13_compute_PRS_p_val.R) implements such glm fit and [`13_compute_PRS_p_val.sh`](13_compute_PRS_p_val.sh) is the wrapper script.
+
+We used the following commands for job submission.
+
+```
+# generate the list of GBE_IDs for the SLURM jobs
+cat ../../data/trait_info.tsv | awk -v FS=',' '(NR>1){print $2}' > 13_compute_PRS_p_val.lst
+
+# update the Git ignore file
+echo 13_compute_PRS_p_val.lst >> .gitignore
+
+# run the job
+sbatch -p mrivas --time=1:0:00 --mem=6000 --nodes=1 --cores=1 --job-name=PRS_p_val --output=logs/PRS_p_val.%A_%a.out --error=logs/PRS_p_val.%A_%a.err --array=1-355%100 ${parallel_sbatch_sh} 13_compute_PRS_p_val.sh 13_compute_PRS_p_val.lst 5
+```
