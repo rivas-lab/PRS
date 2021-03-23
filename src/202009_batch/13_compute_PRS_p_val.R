@@ -57,6 +57,11 @@ rename(!!'PRS' := all_of(paste0('PRS_', GBE_ID))) %>%
 drop_na(phe, PRS) %>%
 mutate(phe = phe - ifelse(family=='binomial', 1, 0)) -> test_df
 
+if(family == 'binomial'){
+    # sometimes, missing values are coded as -9 in the master phe file
+    test_df %>% filter(phe %in% c(0,1)) -> test_df
+}
+
 # fit a GLM, phe ~ 1 + covariates + PRS
 stats::as.formula(sprintf('phe ~ 1 + %s + PRS', paste(covariates, collapse =' + '))) %>%
 glm(family=family, data=test_df) -> glmfit

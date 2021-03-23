@@ -63,11 +63,17 @@ We used the following commands for job submission.
 
 ```
 # generate the list of GBE_IDs for the SLURM jobs
-cat ../../data/trait_info.tsv | awk -v FS=',' '(NR>1){print $2}' > 13_compute_PRS_p_val.lst
+cat ../../data/trait_info.tsv | awk -v FS='\t' '(NR>1){print $2}' > 13_compute_PRS_p_val.lst
 
 # update the Git ignore file
 echo 13_compute_PRS_p_val.lst >> .gitignore
 
 # run the job
 sbatch -p mrivas --time=1:0:00 --mem=6000 --nodes=1 --cores=1 --job-name=PRS_p_val --output=logs/PRS_p_val.%A_%a.out --error=logs/PRS_p_val.%A_%a.err --array=1-355%100 ${parallel_sbatch_sh} 13_compute_PRS_p_val.sh 13_compute_PRS_p_val.lst 5
+
+find /scratch/groups/mrivas/projects/PRS/private_output/202009_batch/tmp_glmfit -type f | awk -v FS='/' '{print $NF}' | sed -e 's/.tsv//g' | sort | comm -23 <(cat 13_compute_PRS_p_val.lst | sort) /dev/stdin > 13_compute_PRS_p_val.redo.lst
+
+sbatch -p mrivas --time=1:0:00 --mem=6000 --nodes=1 --cores=1 --job-name=PRS_p_val --output=logs/PRS_p_val.%A_%a.out --error=logs/PRS_p_val.%A_%a.err --array=1-89 ${parallel_sbatch_sh} 13_compute_PRS_p_val.sh 13_compute_PRS_p_val.redo.lst 3
 ```
+
+
