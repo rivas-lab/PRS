@@ -20,3 +20,6 @@ covariates_str='age,sex,PC1,PC2,PC3,PC4,PC5,PC6,PC7,PC8,PC9,PC10'
 
 # helper functions in the R snpnet package
 snpnet_misc_R='/oak/stanford/groups/mrivas/software/snpnet/snpnet_v.0.3.18/helpers/snpnet_misc.R'
+
+# PRS p-value file
+PRS_pval_f='PRS_p_val_WBtest.tsv.gz'
