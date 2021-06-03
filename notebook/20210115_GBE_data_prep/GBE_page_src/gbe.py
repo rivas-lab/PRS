@@ -955,7 +955,7 @@ def prs_page():
 
 	# read trait  list table
 	trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
-	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants']
+	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)']
         table_cols_select=['Trait group', 'Family']
 
 	df = pandas.read_csv(trait_list_f, sep='\t')
@@ -965,7 +965,9 @@ def prs_page():
 	    df[col] = df[col].map(lambda x: x.replace('_', ' '))
 	for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
 	    df[col] = df[col].map(lambda x: str(round(x, 2)))
-        # df['WB_p'] = 0 # dummy p-value for the development
+        df['WB_p'] = 0 # dummy p-value for the development
+
+	# generate HTML string
 	table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
     	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
 	) for row in range(df.shape[0])])
@@ -974,6 +976,7 @@ def prs_page():
 		'prs.html',
 		namespace = namespace, 
             	table_prs_trait_list_cols        = table_cols,
+		table_prs_trait_list_col_len     = len(table_cols),
 		table_prs_trait_list_cols_select = table_cols_select,
 		table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
 	)
