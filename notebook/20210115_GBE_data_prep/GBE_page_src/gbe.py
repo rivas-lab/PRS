@@ -778,7 +778,7 @@ def snpnet_page(namespace, icd_str):
             pvalthr = max(5e-7, pvalthr)
             cuttoff = pvalthr
         icd = [{'Case': casecnt, 'Name': shortname, 'icd': icd_str}]
-            
+
 	return render_template(
             'snpnet.html',
             namespace=namespace,
@@ -955,6 +955,9 @@ def prs_page():
 
 	# read trait  list table
 	trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
+	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants']
+        table_cols_select=['Trait group', 'Family']
+
 	df = pandas.read_csv(trait_list_f, sep='\t')
 	df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
 	df = df.drop('trait_name',axis=1)
@@ -962,12 +965,10 @@ def prs_page():
 	    df[col] = df[col].map(lambda x: x.replace('_', ' '))
 	for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
 	    df[col] = df[col].map(lambda x: str(round(x, 2)))
+        # df['WB_p'] = 0 # dummy p-value for the development
 	table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
     	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
 	) for row in range(df.shape[0])])
-
-	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants']
-        table_cols_select=['Trait group', 'Family']
 
         return render_template(
 		'prs.html',

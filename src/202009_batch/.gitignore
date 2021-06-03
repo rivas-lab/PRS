@@ -2,4 +2,5 @@ logs*
 Rplots.pdf
 *.lst
 *.log
-
+squeuel.*.txt
+13_compute_PRS_p_val.lst

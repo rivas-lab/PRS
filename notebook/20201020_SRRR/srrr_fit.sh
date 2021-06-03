@@ -4,7 +4,7 @@
 #SBATCH  --error=logs/srrr.%A.err
 #SBATCH --nodes=1
 #SBATCH --mem=800000
-#SBATCH --cores=20
+#SBATCH --cores=16
 #SBATCH --time=7-0:00:00
 #SBATCH -p mrivas
 #SBATCH --qos=high_p
