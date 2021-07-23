@@ -965,7 +965,11 @@ def prs_page():
 	    df[col] = df[col].map(lambda x: x.replace('_', ' '))
 	for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
 	    df[col] = df[col].map(lambda x: str(round(x, 2)))
-        df['WB_p'] = 0 # dummy p-value for the development
+	#df = df.drop('WB_test_P', axis=1)
+	df['WB_test_P'] = 0 # dummy p-value for the development
+	#df['WB_test_P'] = df['geno'].map(lambda x: '{:0.2e}'.format(x))
+	#for col in ['WB_test_P']:
+	#    df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
 
 	# generate HTML string
 	table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
