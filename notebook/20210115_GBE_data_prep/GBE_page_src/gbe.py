@@ -946,8 +946,11 @@ def hla_assoc_page():
         print('Unknown Error=', traceback.format_exc())
         abort(404)
 
+
 @app.route('/prs')
 def prs_page():
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     try:
         namespace = 'RIVAS_HG19'
         if request.method == 'POST':
@@ -978,8 +981,8 @@ def prs_page():
 
         return render_template(
 		'prs.html',
-		namespace = namespace, 
-            	table_prs_trait_list_cols        = table_cols,
+		namespace = namespace,
+        table_prs_trait_list_cols        = table_cols,
 		table_prs_trait_list_col_len     = len(table_cols),
 		table_prs_trait_list_cols_select = table_cols_select,
 		table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
@@ -988,8 +991,6 @@ def prs_page():
     except Exception as e:
         print('Unknown Error=', traceback.format_exc())
         abort(404)
-
-
 
 
 @app.route('/<namespace>/mrpgene/<freq>')
@@ -1015,8 +1016,8 @@ def mrp_page(namespace,freq):
         if namespace == "RIVAS_HG38":
             return render_template(
                 'mrp200k.html',
-		namespace = namespace, 
-            	table_mrp_trait_list_cols        = table_cols,
+		namespace = namespace,
+        table_mrp_trait_list_cols        = table_cols,
 		table_mrp_trait_list_col_len     = len(table_cols),
 #		table_mrp_trait_list_cols_select = table_cols_select,
 		table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
@@ -1024,13 +1025,13 @@ def mrp_page(namespace,freq):
         else:
             return render_template(
                 'mrparray.html',
-		namespace = namespace, 
-            	table_mrp_trait_list_cols        = table_cols,
+		namespace = namespace,
+        table_mrp_trait_list_cols        = table_cols,
 		table_mrp_trait_list_col_len     = len(table_cols),
 #		table_mrp_trait_list_cols_select = table_cols_select,
 		table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
 	    )
-            
+
 
     except Exception as e:
         print('Unknown Error=', traceback.format_exc())
