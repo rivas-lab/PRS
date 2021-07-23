@@ -956,37 +956,37 @@ def prs_page():
         if request.method == 'POST':
             namespace = request.form['functionassocset']
 
-	# read trait  list table
-	trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
-	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)']
-        table_cols_select=['Trait group', 'Family']
+        # read trait  list table
+        trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
+        table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
+        table_cols_select=['Trait group', 'Family', 'significant?']
 
-	df = pandas.read_csv(trait_list_f, sep='\t')
-	df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
-	df = df.drop('trait_name',axis=1)
-	for col in ['#trait_category']:
-            # format string
-	    df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
-	for col in ['WB_test_P']:
-            # format to scientific notation
-	    df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
-	for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
-            # format digits
-	    df[col] = df[col].map(lambda x: str(round(x, 2)))
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
+        df = df.drop('trait_name',axis=1)
+        for col in ['#trait_category']:
+                # format string
+            df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
+        for col in ['WB_test_P']:
+                # format to scientific notation
+            df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
+        for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
+                # format digits
+            df[col] = df[col].map(lambda x: str(round(x, 2)))
 
-	# generate HTML string
-	table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
-    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
-	) for row in range(df.shape[0])])
+        # generate HTML string
+        table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+                ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+        ) for row in range(df.shape[0])])
 
         return render_template(
-		'prs.html',
-		namespace = namespace,
-        table_prs_trait_list_cols        = table_cols,
-		table_prs_trait_list_col_len     = len(table_cols),
-		table_prs_trait_list_cols_select = table_cols_select,
-		table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
-	)
+            'prs.html',
+            namespace = namespace,
+            table_prs_trait_list_cols        = table_cols,
+            table_prs_trait_list_col_len     = len(table_cols),
+            table_prs_trait_list_cols_select = table_cols_select,
+            table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
+	    )
 
     except Exception as e:
         print('Unknown Error=', traceback.format_exc())
