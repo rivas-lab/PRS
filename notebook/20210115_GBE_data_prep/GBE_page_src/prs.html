@@ -105,7 +105,7 @@
         <div class="col col-md-12">
             <h1>Sparse Polygenic Risk Scores (PRSs) with BASIL / snpnet</h1>
             <hr/>
-            <h5>Version 1.1, 01.16.2021</h5>
+            <h5>Version 1.2, 2021.017.23</h5>
             <p>Yosuke Tanigawa and Manuel A. Rivas</p>
             <p>Note: this page is under active development.</p>
         </div>
@@ -167,7 +167,7 @@
             </table>
           </div>
           <br>
-          <h3>Description of the columns</h3>
+          <h3 align="center">Description of the columns</h3>
           <ul>
               <li>Trait group: trait categories used in the Global Biobank Engine. Its <a href="https://gbe.stanford.edu/faq#group" target="_blank">FAQ page</a> has more information.</li>
               <li>Trait: a trait in UK Biobank.</li>
@@ -177,20 +177,40 @@
               <li>Full: the predictive performence (r2 or AUC) of the full model that have both genotypes and covariates alone.</li>
               <li>delta: the incremental predictive performence (r2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.</li>
               <li># variants: the number of genetic variants included in the model</li>
+              <li>P (WB): P-value of the incremental predictive performance of the PRS model evaluated on the test set individuals of white British ancestry in UK Biobank. The p-value is before the multiple hypothesis correction.</li>
+              <li>significant?: this indicator variable shows whether the PRS model has a significant (P < 0.05/2000) incremental predictive performance.</li>
           </ul>
           <br>
           <hr/>
         </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-md-12">
+        <h2 align="center">References</h2>
+        <p>
+          We are preparing a manuscript describing this resource. In the meanwhile, please look and cite our paper describing the BASIL algorithm and R snpnet package that was used to construct the sparse PRS across UK Biobank traits.
+        </p>
+        <p>
+          J. Qian, Y. Tanigawa, W. Du, M. Aguirre, C. Chang, R. Tibshirani, M. A. Rivas, T. Hastie, A fast and scalable framework for large-scale and ultrahigh-dimensional sparse regression with application to the UK Biobank. PLOS Genetics. 16, e1009141 (2020). <a href="https://doi.org/10.1371/journal.pgen.1009141" target="_blank">doi:10.1371/journal.pgen.1009141</a>
+        </p>
+        <h3 align="center">Version info</h3>
+        <ul>
+          <li>2021.07.23. Version 1.2: we add the p-value of the PRS model as well as an indicator variable of the significance of PRS. We also removed some of the duplicated traits.</li>
+          <li>2021.01.16. Version 1.1: initial public release of the results</li>
+        </ul>
+        <br>
+        <hr/>
       </div>
     </div>
+
     <div class="row">
       <div class="col col-md-12">
         <!-- <h2>Methods summary</h2>
         <h3>Construction of the sparse PRS models</h3>
         <h3>Evaluation of the PRS models</h3> -->
-  </div>
-  </div>
-
+      </div>
+    </div>
 </div>
 {% endblock %}
 

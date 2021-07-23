@@ -73,13 +73,16 @@
         <div class="col col-md-12">
             <h1>Sparse polygenic risk scores (PRS) with BASIL / snpnet</h1>
             <hr/>
-	    <p>Note: this page is under active development.</p>
+            <h5>Version 1.1, 01.16.2021</h5>
+            <p>Yosuke Tanigawa and Manuel A. Rivas</p>
+	        <p>Note: this page is under active development.</p>
         </div>
     </div>
 
     <div class="row">
         <div class="col col-md-12">
             <h1>Phenotype: {{icd[0].Name}}</h1>
+            <p><a href="/prs">Go back to the PRS top page</a></p>
             <hr/>
         </div>
     </div>
@@ -96,7 +99,7 @@
             </dl>
         </div>
         <div class="col col-md-6">
-            <a href="/static/prs/{{ icd[0].icd}}.tsv" class="btn btn-block btn-primary">
+            <a href="/static/PRS_map/{{ icd[0].icd}}.tsv" class="btn btn-block btn-primary">
                 <span class="glyphicon glyphicon-cloud-download"></span> {{icd[0].Name}} PRS weights
             </a>
         </div>
@@ -135,6 +138,20 @@
             <div id="containerprseval" style="font-size:120%;"></div>
             <br>
             <hr/>
+
+            <h3>Description of the columns</h3>
+            <ul>
+                <li>Trait: a trait in UK Biobank.</li>
+                <li>Genotype-only: the predictive performence (r2 or AUC) of the predictive model with genotype features alone.</li>
+                <li>Covariate-only: the predictive performence (r2 or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.</li>
+                <li>Full model: the predictive performence (r2 or AUC) of the full model that have both genotypes and covariates alone.</li>
+                <li>diff (Full - Covars): the incremental predictive performence (r2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.</li>
+                <li># variants: the number of genetic variants included in the model</li>
+            </ul>
+            <br>
+            <hr/>
+
+
         </div>
     </div>
 

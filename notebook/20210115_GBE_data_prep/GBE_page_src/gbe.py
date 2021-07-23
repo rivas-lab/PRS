@@ -946,40 +946,92 @@ def hla_assoc_page():
         print('Unknown Error=', traceback.format_exc())
         abort(404)
 
+
 @app.route('/prs')
 def prs_page():
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     try:
         namespace = 'RIVAS_HG19'
         if request.method == 'POST':
             namespace = request.form['functionassocset']
 
-	# read trait  list table
-	trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
-	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)']
-        table_cols_select=['Trait group', 'Family']
+        # read trait  list table
+        trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
+        table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
+        table_cols_select=['Trait group', 'Family', 'significant?']
 
-	df = pandas.read_csv(trait_list_f, sep='\t')
-	df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
-	df = df.drop('trait_name',axis=1)
-	for col in ['#trait_category']:
-	    df[col] = df[col].map(lambda x: x.replace('_', ' '))
-	for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
-	    df[col] = df[col].map(lambda x: str(round(x, 2)))
-        df['WB_p'] = 0 # dummy p-value for the development
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
+        df = df.drop('trait_name',axis=1)
+        for col in ['#trait_category']:
+                # format string
+            df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
+        for col in ['WB_test_P']:
+                # format to scientific notation
+            df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
+        for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
+                # format digits
+            df[col] = df[col].map(lambda x: str(round(x, 2)))
 
-	# generate HTML string
-	table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
-    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
-	) for row in range(df.shape[0])])
+        # generate HTML string
+        table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+                ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+        ) for row in range(df.shape[0])])
 
         return render_template(
-		'prs.html',
-		namespace = namespace, 
-            	table_prs_trait_list_cols        = table_cols,
-		table_prs_trait_list_col_len     = len(table_cols),
-		table_prs_trait_list_cols_select = table_cols_select,
-		table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
-	)
+            'prs.html',
+            namespace = namespace,
+            table_prs_trait_list_cols        = table_cols,
+            table_prs_trait_list_col_len     = len(table_cols),
+            table_prs_trait_list_cols_select = table_cols_select,
+            table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
+	    )
+
+    except Exception as e:
+        print('Unknown Error=', traceback.format_exc())
+        abort(404)
+
+
+@app.route('/<namespace>/mrpgene/<freq>')
+def mrp_page(namespace,freq):
+    try:
+	# read trait  list table
+        if freq == "rare":
+	    trait_list_f='/biobankengine/app/static/mrpgene/' + namespace + '/' + namespace + '_ultrarare_gene_results.tsv'
+        else:
+            trait_list_f='/biobankengine/app/static/mrpgene/' + namespace + '/' + namespace + '_gene_results.tsv'
+	table_cols=['GBE_ID','GBE_short_name','pops','num_pops','gene','n_pav','n_ptv','l10BF_IEM_pav','l10BF_SEM_pav','l10BF_SEM_ptv','GBE_link','MRPMM_pav','MRPMM_ptv']
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['gene2'] = df['gene']
+        df['gene'] = ['<a href="/' + namespace + '/gene/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['gene2'], df['gene2'])]
+	df['trait'] = ['<a href="/' + namespace + '/coding/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['GBE_ID'], df['GBE_short_name'])]
+        df['mrpmm_pav'] = ['<a href="/' + namespace + '/mrpmm_pav/{}/{}">{}</a>'.format(x[0],x[1], x[2]) for x in zip(df['gene2'], df['GBE_ID'], df['GBE_short_name'])]
+        df['mrpmm_ptv'] = ['<a href="/' + namespace + '/mrpmm_ptv/{}/{}">{}</a>'.format(x[0],x[1], x[2]) for x in zip(df['gene2'], df['GBE_ID'], df['GBE_short_name'])]
+        del df['gene2']
+	# generate HTML string
+	table_mrp_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+	) for row in range(df.shape[0])])
+        if namespace == "RIVAS_HG38":
+            return render_template(
+                'mrp200k.html',
+		namespace = namespace,
+        table_mrp_trait_list_cols        = table_cols,
+		table_mrp_trait_list_col_len     = len(table_cols),
+#		table_mrp_trait_list_cols_select = table_cols_select,
+		table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
+	    )
+        else:
+            return render_template(
+                'mrparray.html',
+		namespace = namespace,
+        table_mrp_trait_list_cols        = table_cols,
+		table_mrp_trait_list_col_len     = len(table_cols),
+#		table_mrp_trait_list_cols_select = table_cols_select,
+		table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
+	    )
+
 
     except Exception as e:
         print('Unknown Error=', traceback.format_exc())
@@ -1102,10 +1154,10 @@ def gene_page(namespace, gene_id):
 
 
 
-@app.route('/<namespace>/mrpmm/<gene_id>/<icd_str>')
-def mrpmm(namespace, gene_id, icd_str):
+@app.route('/<namespace>/mrpmm_pav/<gene_id>/<icd_str>')
+def mrpmm_pav(namespace, gene_id, icd_str):
     l10bfarr = []
-    with open("/biobankengine/app/static/mrpmm/" + gene_id + "_" + icd_str + ".mcmc.bic.aic","r") as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/" + gene_id + "_" + icd_str + "*pav*.mcmc.bic.aic")[0],"r") as inFile:
         finr = inFile.readlines()
        # l10bf = {}
         for line in finr[1:]:
@@ -1115,9 +1167,18 @@ def mrpmm(namespace, gene_id, icd_str):
             l10bf = "{0:.3g}".format(float(line[len(line) - 1]))
             l10bfarr.append(float(l10bf))
     print(l10bfarr)
-    idxmax = l10bfarr.index(max(l10bfarr)) + 1
-    l10bf = max(l10bfarr)
-    with open("/biobankengine/app/static/mrpmm/"+ gene_id + "_" + icd_str + "_" + str(idxmax) + ".mcmc.posteriors", "r") as inFile:
+    idxmax = 1
+    l10bfarrtmp = 0
+    for i in range(0, len(l10bfarr)):
+        if l10bfarr[i] >= 2.5 and l10bfarr[i] > l10bfarrtmp + 2:
+            idxmax = i + 1
+            l10bfarrtmp = l10bfarr[i]
+        else:
+            pass
+#    idxmax = l10bfarr.index(max(l10bfarr)) + 1
+    #l10bf = max(l10bfarr)
+    l10bf = l10bfarrtmp
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/"+ gene_id + "_" + icd_str + "_*pav*" + str(idxmax) + ".mcmc.posteriors")[0], "r") as inFile:
         probabilities = []
         admixture_data = []
         variants = []
@@ -1142,7 +1203,7 @@ def mrpmm(namespace, gene_id, icd_str):
         idxnewarr = [b[0] for b in sorted(enumerate(nullmembership),key=lambda i:i[1], reverse = True)]
         variants = [variants[idxnewarr[i]] for i in range(0,len(idxnewarr))]
         admixture_data.append(variants)
-    with open("/biobankengine/app/static/mrpmm/"+ gene_id + "_"  + icd_str + "_" + str(idxmax) + ".mcmc.gene.posteriors", "r") as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_"  + icd_str + "_*pav*" + str(idxmax) + ".mcmc.gene.posteriors")[0], "r") as inFile:
         admixture_datagene = []
         genes = []
         finr = inFile.readlines()
@@ -1158,7 +1219,7 @@ def mrpmm(namespace, gene_id, icd_str):
         admixture_datagene.append(genes)
     scalefactor = 1
     scales = []
-    with open("/biobankengine/app/static/mrpmm/" + gene_id + "_" + icd_str + "_" + str(idxmax) + ".mcmc.scale", 'r') as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/" + gene_id + "_" + icd_str + "_*pav*" + str(idxmax) + ".mcmc.scale")[0], 'r') as inFile:
         finr = inFile.readlines()
         for line in finr[1:]:
             line = line.rstrip()
@@ -1166,7 +1227,7 @@ def mrpmm(namespace, gene_id, icd_str):
             scaled = float(line[2])
             scales.append(scaled)
     scalefactor = numpy.median(scales)
-    with open("/biobankengine/app/static/mrpmm/"+ gene_id + "_" + icd_str + "_" + str(idxmax) + ".mcmc.bc", "r") as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/"+ gene_id + "_" + icd_str + "_*pav*" + str(idxmax) + ".mcmc.bc")[0], "r") as inFile:
         cluster_data = []
         headerarr = []
         inFiler = inFile.readlines()
@@ -1197,7 +1258,128 @@ def mrpmm(namespace, gene_id, icd_str):
                     tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
                     cluster.append(tmp)
             cluster_data.append([cluster_num, cluster])
-    fdrf = open("/biobankengine/app/static/mrpmm/"+ gene_id + "_" + icd_str +"_" + str(idxmax) + ".fdr", "r").readlines()
+    fdrf = open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/"+ gene_id + "_" + icd_str +"_*pav*" + str(idxmax) + ".fdr")[0], "r").readlines()
+    fdrnum = fdrf[0].rstrip().split()[0]
+    fdr_data2 = []
+    for line in fdrf[1:]:
+        line = line.rstrip()
+        line = line.split()
+        fdr_data2.append(line[0])
+    try:
+        t = render_template(
+            'mrp.html',
+            namespace=namespace,
+            plot_data=admixture_data,
+            gene_data=admixture_datagene,
+            num_figs=cluster_data,
+            log10_bf=l10bf,
+            cluster_num=str(int(cluster_num)+1),
+            fdr=fdrnum,
+            fdr_data=fdr_data2
+   #         phenid_arr=headerarr
+            )
+        return t
+    except Exception as e:
+        print('Failed: %s' % e)
+        abort(404)
+
+
+@app.route('/<namespace>/mrpmm_ptv/<gene_id>/<icd_str>')
+def mrpmm_ptv(namespace, gene_id, icd_str):
+    l10bfarr = []
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/" + gene_id + "_" + icd_str + "*ptv*.mcmc.bic.aic")[0],"r") as inFile:
+        finr = inFile.readlines()
+       # l10bf = {}
+        for line in finr[1:]:
+            line = line.rstrip()
+            line = line.split()
+            #            l10bf[line[0]] = "{0:.3g}".format(float(line[1]))
+            l10bf = "{0:.3g}".format(float(line[len(line) - 1]))
+            l10bfarr.append(float(l10bf))
+    print(l10bfarr)
+    idxmax = l10bfarr.index(max(l10bfarr)) + 1
+    l10bf = max(l10bfarr)
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_" + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.posteriors")[0], "r") as inFile:
+        probabilities = []
+        admixture_data = []
+        variants = []
+        nullmembership = []
+        finr = inFile.readlines()
+        for line in finr[1:]:
+            line = line.rstrip()
+            var_info = line.split("\t")
+            varid = var_info[0]
+            var = var_info[4]
+            variant = {}
+            varids = varid.split(':')
+            varidpage = varids[0] + ":" + varids[1] + "-" + varids[2] + "-" + varids[3]
+            variant["variant"] = varidpage
+            variant["varid"] = var
+            for j in range(5, len(var_info)):
+                variant["%s" % (j-4)] = var_info[j]
+            if float(var_info[5]) >= .2:
+                        continue
+            nullmembership.append(float(var_info[5]))
+            variants.append(variant)
+        idxnewarr = [b[0] for b in sorted(enumerate(nullmembership),key=lambda i:i[1], reverse = True)]
+        variants = [variants[idxnewarr[i]] for i in range(0,len(idxnewarr))]
+        admixture_data.append(variants)
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_"  + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.gene.posteriors")[0], "r") as inFile:
+        admixture_datagene = []
+        genes = []
+        finr = inFile.readlines()
+        for line in finr[1:]:
+            line = line.rstrip()
+            gene_info = line.split("\t")
+            geneid = gene_info[0]
+            gene = {}
+            gene["gene"] = geneid
+            for j in range(1, int((len(gene_info)-1)/3)+1):
+                gene["%s" % (j-1)] = gene_info[j]
+            genes.append(gene)
+        admixture_datagene.append(genes)
+    scalefactor = 1
+    scales = []
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/" + gene_id + "_" + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.scale")[0], 'r') as inFile:
+        finr = inFile.readlines()
+        for line in finr[1:]:
+            line = line.rstrip()
+            line = line.split()
+            scaled = float(line[2])
+            scales.append(scaled)
+    scalefactor = numpy.median(scales)
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_" + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.bc")[0], "r") as inFile:
+        cluster_data = []
+        headerarr = []
+        inFiler = inFile.readlines()
+        header = inFiler[0]
+        header = header.split('\t')
+        for j in range(1,len(header)):
+            if j % 3 == 1:
+                headeritem = header[j].decode('utf8').replace(" ","")
+                headeritem = headeritem.rstrip(header[j][-3:])
+                headerarr.append(headeritem)
+        for line in inFiler[1:]:
+            line = line.rstrip()
+            cluster = []
+            clusterl95 = []
+            clusteru95 = []
+            clust_info = line.split("\t")
+            cluster_num = clust_info[0]
+            for j in range(1, len(clust_info)):
+                if j % 3 == 1:
+                    tmp = []
+                    headeritem = header[j].decode('utf8').replace(" ","")
+                    headeritem = headeritem.rstrip(header[j][-3:])
+                    tmp.append(headeritem.encode("ascii"))
+                    tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
+                if j % 3 == 2:
+                    tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
+                if j % 3 == 0:
+                    tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
+                    cluster.append(tmp)
+            cluster_data.append([cluster_num, cluster])
+    fdrf = open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_" + icd_str +"_*ptv*" + str(idxmax) + ".fdr")[0], "r").readlines()
     fdrnum = fdrf[0].rstrip().split()[0]
     fdr_data2 = []
     for line in fdrf[1:]:
@@ -1250,7 +1432,7 @@ def get_gene_page_content_all(namespace, gene_id, phens):
            #     transcript['xstart'] - EXON_PADDING,
            #     transcript['xstop'] + EXON_PADDING)
             if 'ALL' in phens:
-                df = db.get_association_data(association_set=assocset, gene_name=gene_id, pad=500, pvalue_max=.0000005)
+                df = db.get_association_data(association_set=assocset, gene_name=gene_id, pad=500, pvalue_max=.00005)
                 sefilter = .2
                 columns = ['pvalue','title','beta','all_filters','se']
                 ndf = dfv.apply(lambda row: pandas.Series([1,"NA",0,0,"NA"], index = columns) if df[df['variant_identity'] == row['variant_identity']]['pvalue'].empty else (pandas.Series([numpy.log(x) if i == 2 else x for i, x in enumerate(df.iloc[df[df['variant_identity'] == row['variant_identity']]['pvalue'].idxmin(),:][['pvalue','title','odds_ratio', 'all_filters','se']])], index = columns) if numpy.isnan(df.iloc[df[df['variant_identity'] == row['variant_identity']]['pvalue'].idxmin(),:]['beta']) and df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].empty else (df.iloc[df[df['variant_identity'] == row['variant_identity']]['pvalue'].idxmin(),:][['pvalue','title','beta', 'all_filters','se']] if df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].empty else (pandas.Series([numpy.log(x) if i == 2 else x for i, x in enumerate(df.iloc[df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].idxmin(),:][['pvalue','title','odds_ratio', 'all_filters','se']])], index = columns) if numpy.isnan(df.iloc[df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].idxmin(),:]['beta']) else ( df.iloc[df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].idxmin(),:][['pvalue','title','beta', 'all_filters','se']])))), axis = 1)

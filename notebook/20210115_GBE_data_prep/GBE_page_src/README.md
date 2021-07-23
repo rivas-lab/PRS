@@ -11,8 +11,9 @@ To update the app, please copy the current version of `gbe.py` in the GBE repo, 
 ```{bash}
 # on GBE VM
 cd /home/ytanigaw/repos/rivas-lab/PRS/notebook/20210115_GBE_data_prep/GBE_page_src
-cp gbe.py /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/
+# cp gbe.py /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/
 cp prs.html /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
+cp snpnet.html /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
 ```
 
 Once you made an update, you'll start the GBE docker
@@ -24,6 +25,6 @@ Restarting biobankengine_gbbe_1 ... done
 
 ## the summary table
 
-- [`3_summary_table.ipynb`](3_summary_table.ipynb): the list of 1772 traits.
+- [`3_summary_table.ipynb`](../3_summary_table.ipynb): the list of 1617 traits.
 
 scp /oak/stanford/groups/mrivas/projects/PRS/GBE_data/traits.tsv gbe:/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/static/PRS_map/traits.tsv
