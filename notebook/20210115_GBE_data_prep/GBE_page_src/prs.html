@@ -105,7 +105,7 @@
         <div class="col col-md-12">
             <h1>Sparse Polygenic Risk Scores (PRSs) with BASIL / snpnet</h1>
             <hr/>
-            <h5>Version 1.2, 2021.017.23</h5>
+            <h5>Version 1.3, 2021.08.23</h5>
             <p>Yosuke Tanigawa and Manuel A. Rivas</p>
             <p>Note: this page is under active development.</p>
         </div>
@@ -187,6 +187,22 @@
 
     <div class="row">
       <div class="col col-md-12">
+        <h2>Comparison of the effect size and the model size of the significant sparse PRS</h2>
+      </div>
+      <div class="col col-md-6">
+	<a href="http://web.stanford.edu/~ytanigaw/PRSmap/delta_vs_size_binomial.html" target="_blank">
+	  <img class="img-fluid" width="100%" src="/static/PRS_map/test_set_performance_vs_size_binomial.png" alt="binary traits"></img>
+	</a>
+      </div>
+      <div class="col col-md-6">
+	<a href="http://web.stanford.edu/~ytanigaw/PRSmap/delta_vs_size_gaussian.html" target="_blank">
+	  <img class="img-fluid" width="100%" src="/static/PRS_map/test_set_performance_vs_size_gaussian.png" alt="quantitative traits"></img>
+	</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-md-12">
         <h2 align="center">References</h2>
         <p>
           We are preparing a manuscript describing this resource. In the meanwhile, please look and cite our paper describing the BASIL algorithm and R snpnet package that was used to construct the sparse PRS across UK Biobank traits.
@@ -196,6 +212,7 @@
         </p>
         <h3 align="center">Version info</h3>
         <ul>
+	  <li>2021.08.23. Version 1.3: we add plots that compares the number of active variables in the PRS model vs the incremental predictive performance of the PRS model.</li>
           <li>2021.07.23. Version 1.2: we add the p-value of the PRS model as well as an indicator variable of the significance of PRS. We also removed some of the duplicated traits.</li>
           <li>2021.01.16. Version 1.1: initial public release of the results</li>
         </ul>
