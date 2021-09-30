@@ -141,7 +141,7 @@
             <ul>
                 <li>GBE_ID: the trait ID in UK Biobank.</li>
 		<li>Split / ancestry: the set of individuals used for the evaluation in UK Biobank. The "train_val" refers to the training set individuals of white British ancestry; "test" refers to the hold-out test set individuals of white British ancestry; "non_british_white" refers to the additional test set individuals of non-British European ancestry; "african" refers to the individuals of African ancestry; "s_asian" refers to the individuals of South Asian ancestry; and "e_asian" refers to the individuals of East Asian ancestry. We used the population stratification criteria used in our previous publication (<a href="https://rdcu.be/cdMmM" target="_blank">Sinnott-Armstrong*, Tanigawa*, et al. 2021</a>) to define those sets.</li>
-                <li>Genotype-only: the predictive performence (r2 or AUC) of the predictive model with genotype features alone.</li>
+                <li>Genotype-only: the predictive performence (r2 or AUC) of the predictive model with genotype features alone. Note that this model does not include genotype PCs.</li>
                 <li>Covariate-only: the predictive performence (r2 or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.</li>
                 <li>Full model: the predictive performence (r2 or AUC) of the full model that have both genotypes and covariates alone.</li>
                 <li>diff (Full - Covars): the incremental predictive performence (r2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.</li>
