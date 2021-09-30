@@ -1,0 +1,429 @@
+#trait	trait_name	URL	n_variables
+GBE_INI50	Standing height	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI50	51209
+GBE_INI20015	Sitting height	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20015	36345
+GBE_INI23102	Whole body water mass	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23102	35046
+GBE_INI23129	Trunk fat-free mass	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23129	34749
+GBE_INI23101	Whole body fat-free mass	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23101	34486
+GBE_INI23130	Trunk pred. mass	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23130	32685
+GBE_INI23106	Impedance of whole body	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23106	32218
+GBE_INI23105	Basal metabolic rate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23105	32154
+GBE_INI23114	Leg pred. mass (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23114	32103
+GBE_INI23113	Leg fat-free mass (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23113	32046
+GBE_INI21002	Weight	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21002	31222
+GBE_INI23118	Leg pred. mass (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23118	30421
+GBE_INI23117	Leg fat-free mass (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23117	30340
+GBE_INI23107	Impedance of leg (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23107	30300
+GBE_INI23109	Impedance of arm (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23109	30140
+GBE_INI23128	Trunk fat mass	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23128	29233
+GBE_INI23108	Impedance of leg (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23108	28999
+GBE_INI23111	Leg fat % (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23111	28163
+GBE_INI23115	Leg fat % (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23115	28134
+GBE_INI23100	Whole body fat mass	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23100	27550
+GBE_INI23099	Body fat %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23099	27396
+GBE_INI21001	BMI	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21001	27126
+GBE_INI23110	Impedance of arm (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23110	26740
+GBE_INI23127	Trunk fat %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23127	25651
+GBE_INI48	Waist circumference	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI48	25538
+GBE_INI23123	Arm fat % (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23123	25266
+GBE_INI30080	Platelet count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30080	24893
+GBE_INI49	Hip circumference	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI49	24605
+GBE_QT_FC1001697	Comparative height size at age 10	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001697	24144
+GBE_INI30100	Mean platelet volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30100	24114
+GBE_INI23119	Arm fat % (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23119	23943
+GBE_INI23112	Leg fat mass (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23112	23565
+GBE_INI30770	IGF-1	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30770	22659
+GBE_INI30880	Urate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30880	18135
+GBE_BIN_FC4006150	Vascular/heart problems diagnosed by doctor High BP	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC4006150	14076
+GBE_HC215	Hypertension	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC215	13791
+GBE_INI46	Hand grip strength (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI46	13767
+GBE_INI30200	Neutrophill %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30200	13703
+GBE_INI47	Hand grip strength (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI47	12644
+GBE_BIN_FC10020116	Never Smoker	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10020116	12310
+GBE_INI30830	SHBG	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30830	11879
+GBE_INI30700	Creatinine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30700	11780
+GBE_INI30610	Alkaline phosphatase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30610	11319
+GBE_HC932	TTE essential (primary hypertension)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC932	11276
+GBE_HC273	Essential hypertension	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC273	9400
+GBE_INI30190	Monocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30190	8762
+GBE_HC700	TTE disorders of lipoprotein metabolism and other lipidaemias	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC700	7845
+GBE_INI30620	Alanine aminotransferase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30620	7477
+GBE_BIN_FC5006152	Hayfever rhinitis or eczema diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC5006152	7313
+GBE_BIN_FC1001747	Hair colour (natural, before greying) blonde	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1001747	6970
+GBE_BIN_FC10006152	Hayfever allergic rhinitis or eczema	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10006152	6755
+GBE_INI30890	Vitamin D	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30890	6421
+GBE_BIN_FC4006152	Asthma diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC4006152	6139
+GBE_HC269	High cholesterol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC269	5987
+GBE_INI30730	Gamma glutamyltransferase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30730	5701
+GBE_BIN_FC4001747	Hair colour (natural, before greying) dark brown	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC4001747	5662
+GBE_HC643	TTE other hypothyroidism	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC643	4739
+GBE_HC219	Hypothyroidism/myxoedema	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC219	4535
+GBE_BIN_FC10001727	Ease of skin tanning (Get very tanned)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10001727	4130
+GBE_BIN_FC7001747	Hair colour (natural, before greying) brown	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC7001747	4024
+GBE_BIN_FC40001727	Ease of skin tanning (Never tan, only burn)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC40001727	3159
+GBE_INI30790	Lipoprotein A	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30790	2861
+GBE_BIN_FC20001727	Ease of skin tanning (Get moderately tanned)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001727	2693
+GBE_BIN_FC3001747	Hair colour (natural, before greying) light brown	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC3001747	2127
+GBE_INI30660	Direct bilirubin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30660	1737
+GBE_BIN_FC5001747	Hair colour (natural, before greying) black	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC5001747	1649
+GBE_BIN_FC2001747	Hair colour (natural, before greying) red	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC2001747	1621
+GBE_INI10030660	Direct bilirubin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030660	1227
+GBE_BIN_FC30001727	Ease of skin tanning (Get mildly or occasionally tanned)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30001727	958
+GBE_INI30840	Total bilirubin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30840	458
+GBE_FH1065	High BP (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1065	13862
+GBE_HC382	Asthma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC382	6430
+GBE_HC1581	AD asthma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1581	6425
+GBE_HC1036	TTE asthma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1036	8508
+GBE_INI30750	Glycated haemoglobin (HbA1c)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30750	10448
+GBE_BIN_FC9006152	Asthma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC9006152	5528
+GBE_INI30710	C-reactive protein	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30710	4441
+GBE_INI102	Pulse rate (AR)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI102	14455
+GBE_INI30870	Triglycerides	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30870	12058
+GBE_QT_FC1001558	Alcohol intake frequency.	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001558	8353
+GBE_INI137	# of medications taken	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI137	8085
+GBE_QT_FC1001190	Nap during day	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001190	10264
+GBE_QT_FC10001478	Salt added to food	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC10001478	6651
+GBE_INI30850	Testosterone	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30850	6647
+GBE_INI30650	Aspartate aminotransferase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30650	5729
+GBE_INI23124	Arm fat mass (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23124	23676
+GBE_cancer1060	Non-melanoma skin cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1060	1610
+GBE_INI3064	PEF	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3064	9523
+GBE_cancer1003	Skin cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1003	1298
+GBE_INI30260	Mean reticulocyte volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30260	13277
+GBE_HC221	Diabetes	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC221	4053
+GBE_BIN_FC10001757	Facial ageing (Younger than you are)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10001757	7676
+GBE_INI30210	Eosinophill %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30210	12563
+GBE_HC1159	TTE psoriasis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1159	578
+GBE_QT_FC1002178	Overall health rating	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002178	10464
+GBE_HC649	TTE non-insulin-dependent diabetes mellitus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC649	3496
+GBE_INI23120	Arm fat mass (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23120	23528
+GBE_INI30000	White blood cell count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30000	13785
+GBE_FH1220	Diabetes (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1220	2515
+GBE_INI30050	Mean corpuscular haemoglobin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30050	13003
+GBE_INI135	# of self-reported non-cancer illnesses	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI135	5212
+GBE_BIN1980	Worrier / anxious feelings	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN1980	9747
+GBE_HC303	Malabsorption/coeliac disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC303	428
+GBE_INI30140	Neutrophill count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30140	15578
+GBE_HC1215	TTE gout	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1215	1796
+GBE_INI4080	Systolic BP (AR)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4080	15481
+GBE_INI30030	Haematocrit %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30030	15721
+GBE_BIN_FC40001249	Past tobacco smoking (Smoked at least once)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC40001249	6169
+GBE_INI10030840	Total bilirubin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030840	544
+GBE_INI30690	Cholesterol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30690	7517
+GBE_HC38	Psoriasis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC38	204
+GBE_INI30040	Mean corpuscular volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30040	17311
+GBE_QT_FC1001170	Getting up in morning	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001170	7743
+GBE_INI2237	Freq. of playing computer games	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2237	5774
+GBE_HC1125	TTE cholelithiasis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1125	970
+GBE_QT_FC1001687	Comparative body size at age 10	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001687	13034
+GBE_INI23125	Arm fat-free mass (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23125	30360
+GBE_HC652	TTE unspecified diabetes mellitus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC652	2270
+GBE_HC964	TTE atrial fibrillation and flutter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC964	2142
+GBE_BIN_FC30001757	Facial ageing (About your age)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30001757	6782
+GBE_HC188	Gallstones	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC188	876
+GBE_INI23126	Arm pred. mass (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23126	30666
+GBE_INI10030730	Gamma glutamyltransferase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030730	16280
+GBE_INI30780	LDL direct	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30780	7318
+GBE_HC1132	TTE intestinal malabsorption	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1132	443
+GBE_HC942	TTE chronic ischaemic heart disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC942	2168
+GBE_BIN_FC1006149	Mouth ulcers	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1006149	1648
+GBE_BIN2000	Worry too long after embarrassment	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2000	7714
+GBE_HC328	Gout	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC328	880
+GBE_INI23121	Arm fat-free mass (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23121	29063
+GBE_INI4079	Diastolic BP (AR)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4079	14103
+GBE_HC281	Atrial fibrillation	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC281	2955
+GBE_HC1106	TTE diverticular disease of intestine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1106	5757
+GBE_HC440	Atrial flutter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC440	2087
+GBE_FH1263	Alzheimer's/dementia (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1263	139
+GBE_BIN1210	Snoring	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN1210	7407
+GBE_INI30670	Urea	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30670	9808
+GBE_INI3147	Heel quantitative ultrasound index (QUI), direct entry	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3147	14311
+GBE_INI23122	Arm pred. mass (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23122	28988
+GBE_INI3144	Heel Broadband ultrasound attenuation, direct entry	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3144	13735
+GBE_BIN_FC30001508	Coffee type: Ground coffee (include espresso, filter etc)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30001508	9694
+GBE_BIN_FC6006149	Dentures	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC6006149	6042
+GBE_BIN_FC20020116	Previous Smoker	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20020116	4348
+GBE_BIN1950	Sensitivity / hurt feelings	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN1950	7922
+GBE_HC1242	TTE ankylosing spondylitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1242	10
+GBE_BIN_FC40002267	Use of sun/uv protection (Always)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC40002267	2594
+GBE_INI1528	Water intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1528	4994
+GBE_HC990	TTE varicose veins of lower extremities	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC990	2563
+GBE_HC422	Ankylosing spondylitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC422	10
+GBE_INI10030850	Testosterone	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030850	6250
+GBE_cancer1044	Prostate cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1044	948
+GBE_BIN_FC9006154	Paracetamol use self-reported	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC9006154	4673
+GBE_INI1458	Cereal intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1458	4882
+GBE_HC1021	TTE vasomotor and allergic rhinitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1021	1910
+GBE_INI1498	Coffee intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1498	3154
+GBE_INI924	Usual walking pace	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI924	7535
+GBE_HC702	TTE disorders of porphyrin and bilirubin metabolism	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC702	5
+GBE_QT_FC1001329	Oily fish intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001329	3925
+GBE_INI1488	Tea intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1488	3119
+GBE_HC225	Cholecystitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC225	391
+GBE_INI30070	Red blood cell distribution width	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30070	10179
+GBE_HC882	TTE glaucoma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC882	2066
+GBE_HC987	TTE phlebitis and thrombophlebitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC987	1143
+GBE_HC401	Varicose veins	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC401	2603
+GBE_INI3062	FVC	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3062	20921
+GBE_HC1094	TTE inguinal hernia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1094	3085
+GBE_BIN10030820	Rheumatoid factor > 16 IU/mL	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN10030820	456
+GBE_cancer1002	Breast cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1002	555
+GBE_BIN_FC10002267	Use of sun/uv protection (Never/rarely)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10002267	1141
+GBE_INI30240	Reticulocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30240	6251
+GBE_BIN_FC3002247	Hearing difficulty and Deafness	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC3002247	3731
+GBE_INI1309	Fresh fruit intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1309	4257
+GBE_HC937	TTE angina pectoris	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC937	2524
+GBE_HC689	TTE obesity	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC689	9227
+GBE_BIN_FC1002247	Hearing difficulty	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1002247	3098
+GBE_HC624	TTE other coagulation defects	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC624	1
+GBE_INI10030870	Triglycerides	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030870	13593
+GBE_INI30510	Creatinine (enzymatic) in urine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30510	3164
+GBE_HC132	Angina	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC132	2562
+GBE_BIN_FC20006160	Leisure/social activities (attend sports club or gym in once a week or more often)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20006160	11361
+GBE_HC868	TTE iridocyclitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC868	1
+GBE_HC243	Inguinal hernia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC243	1899
+GBE_BIN2040	Risk taking	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2040	4299
+GBE_BIN_FC11006152	Blood clot or DVT diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC11006152	534
+GBE_BIN_FC12006152	Blood clot in the leg (DVT) or lung	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC12006152	551
+GBE_INI30010	Red blood cell count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30010	20480
+GBE_HC1574	AD myocardial infarction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1574	1831
+GBE_HC1261	TTE fibroblastic disorders	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1261	252
+GBE_HC326	Heart attack (MI)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC326	1788
+GBE_BIN2010	Suffer from 'nerves'	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2010	3348
+GBE_INI3063	FEV1	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3063	17732
+GBE_BIN_FC10002492	Taking other prescription medications	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10002492	1846
+GBE_INI1160	Sleep duration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1160	4106
+GBE_INI78	Heel bone mineral density (BMD) T-score, automated	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI78	14310
+GBE_BIN_FC4006144	Never eat sugar	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC4006144	2816
+GBE_HC703	TTE disorders of mineral metabolism	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC703	2
+GBE_HC645	TTE thyrotoxicosis [hyperthyroidism]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC645	226
+GBE_BIN_FC1006150	Vascular/heart problems diagnosed by doctor Heart attack	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1006150	1030
+GBE_INI10030790	Lipoprotein A	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030790	7148
+GBE_INI1438	Bread intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1438	3483
+GBE_BIN_FC2006150	Vascular/heart problems diagnosed by doctor Angina	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC2006150	1852
+GBE_BIN_FC1006152	DVT diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1006152	1773
+GBE_BIN_FC6006152	Blood clot in the leg (DVT)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC6006152	1530
+GBE_INI10030610	Alkaline phosphatase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030610	16603
+GBE_HC166	DVT	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC166	839
+GBE_HC938	TTE acute myocardial infarction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC938	1108
+GBE_HC310	Hiatus hernia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC310	2553
+GBE_QT_FC1001408	Cheese intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001408	6678
+GBE_HC49	Hayfever/allergic rhinitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC49	349
+GBE_HC1102	TTE ulcerative colitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1102	809
+GBE_HC55	Hyperthyroidism/thyrotoxicosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC55	69
+GBE_HC25	Cataract	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC25	1214
+GBE_HC1212	TTE other rheumatoid arthritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1212	323
+GBE_HC1024	TTE nasal polyp	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1024	433
+GBE_BIN_FC10002986	Started insulin within one year diagnosis of diabetes	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10002986	68
+GBE_HC430	Rheumatoid arthritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC430	175
+GBE_HC1190	TTE seborrhoeic keratosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1190	1368
+GBE_BIN_FC1002306	Weight change compared with 1 year ago	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1002306	2638
+GBE_HC1222	TTE gonarthrosis [arthrosis of knee]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1222	4525
+GBE_HC276	Glaucoma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC276	655
+GBE_INI4120	Heel broadband ultrasound attenuation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4120	7069
+GBE_FH1044	Prostate cancer (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1044	602
+GBE_QT_FC1001349	Processed meat intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001349	2346
+GBE_INI20030640	Apolipoprotein B	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20030640	17504
+GBE_INI5084	Spherical power (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5084	7350
+GBE_INI5085	Spherical power (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5085	6639
+GBE_INI1110	Length of mobile phone use	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1110	4582
+GBE_INI10030890	Vitamin D	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030890	6982
+GBE_HC1322	TTE hyperplasia of prostate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1322	1223
+GBE_BIN_FC20001249	Past tobacco smoking (Smoked occasionally)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001249	2245
+GBE_HC1158	TTE other dermatitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1158	242
+GBE_INI4123	Heel quantitative ultrasound index (QUI), direct entry (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4123	9756
+GBE_BIN22126	Doctor diagnosed hayfever or allergic rhinitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN22126	466
+GBE_INI4101	Heel broadband ultrasound attenuation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4101	7688
+GBE_HC648	TTE insulin-dependent diabetes mellitus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC648	356
+GBE_INI1588	Ave. weekly beer plus cider intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1588	2842
+GBE_HC1268	TTE osteoporosis without pathological fracture	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1268	1270
+GBE_INI4104	Heel quantitative ultrasound index (QUI), direct entry (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4104	9272
+GBE_INI30110	Platelet distribution width	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30110	18814
+GBE_HC1184	TTE follicular cysts of skin and subcutaneous tissue	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1184	264
+GBE_HC201	Ulcerative colitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC201	179
+GBE_BIN10030500	Microalbumin > 40 mg/L	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN10030500	1097
+GBE_HC943	TTE PE	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC943	88
+GBE_INI3761	Age hay fever, rhinitis or eczema diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3761	993
+GBE_BIN22127	Doctor diagnosed asthma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN22127	435
+GBE_BIN_FC2006148	Eye problems/disorders Glaucoma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC2006148	1103
+GBE_HC203	PE +/- DVT	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC203	96
+GBE_BIN21068	Diagnosed with coeliac disease or gluten sensitivity	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN21068	9
+GBE_HC1171	TTE skin changes due to chronic exposure to nonionising radiation	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1171	169
+GBE_INI10030620	Alanine aminotransferase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030620	9665
+GBE_INI1100	Drive faster than motorway speed limit	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1100	5673
+GBE_HC708	TTE other metabolic disorders	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC708	2
+GBE_HC807	TTE alzheimer's disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC807	6
+GBE_HC1221	TTE coxarthrosis [arthrosis of hip]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1221	634
+GBE_INI2139	Age first had sexual intercourse	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2139	9997
+GBE_HC1584	AD alzheimer's disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1584	15
+GBE_INI1060	Outdoor time, winter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1060	2323
+GBE_HC1098	TTE diaphragmatic hernia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1098	1857
+GBE_BIN_FC30006164	Types of physical activity in last 4 weeks (other exercises)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30006164	3846
+GBE_INI30640	Apolipoprotein B	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30640	8134
+GBE_HC22	Osteoporosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC22	316
+GBE_INI30030650	AST to ALT ratio	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30030650	13625
+GBE_BIN_FC10006160	Leisure/social activities (attend any of the followings in once a week or more often: sports club, gym, pub, social club, religious group, adult edication class, or other group activity)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10006160	2912
+GBE_HC1583	AD all cause dementia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1583	6
+GBE_QT_FC1001220	Daytime dozing / sleeping (narcolepsy)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001220	4194
+GBE_BIN_FC6001747	Hair colour (natural, before greying) other	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC6001747	21
+GBE_HC95	Inflammatory bowel disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC95	195
+GBE_HC151	Multiple sclerosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC151	41
+GBE_HC26	Iritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC26	1
+GBE_HC872	TTE other cataract	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC872	480
+GBE_HC810	TTE multiple sclerosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC810	36
+GBE_INI30120	Lymphocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30120	4212
+GBE_BIN_FC20001757	Facial ageing (Older than you are)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001757	39
+GBE_BIN_FC3006144	Never eat wheat	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC3006144	5
+GBE_HC261	Eczema/dermatitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC261	598
+GBE_FH1002	Breast cancer (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1002	195
+GBE_BIN_FC50001468	Cereal type: Other (e.g. Cornflakes, Frosties)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC50001468	1286
+GBE_INI30600	Albumin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30600	10625
+GBE_HC156	Nasal polyps	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC156	129
+GBE_HC1211	TTE seropositive rheumatoid arthritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1211	3
+GBE_INI1737	Childhood sunburn	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1737	519
+GBE_INI30860	Total protein	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30860	14660
+GBE_HC710	TTE dementia in alzheimer's disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC710	26
+GBE_BIN_FC40020489	Often felt loved as a child	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC40020489	7555
+GBE_INI30130	Monocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30130	9323
+GBE_BIN_FC10001538	Major dietary changes in the last 5 years becuase of illness	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10001538	730
+GBE_INI30290	High light scatter reticulocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30290	7184
+GBE_INI30760	HDL cholesterol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30760	20546
+GBE_BIN_FC3006152	Blood clot diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC3006152	118
+GBE_HC644	TTE other non-toxic goitre	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC644	170
+GBE_INI4125	Heel bone mineral density (BMD) T-score, automated (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4125	9753
+GBE_INI10030770	IGF-1	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030770	20525
+GBE_QT_FC1001180	Morning/evening person (chronotype)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001180	11428
+GBE_INI1548	Variation in diet	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1548	1353
+GBE_HC713	TTE unspecified dementia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC713	9
+GBE_BIN_FC8006152	Blood clot in the lung	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC8006152	94
+GBE_HC413	Genetic haematological disorder	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC413	30
+GBE_HC815	TTE migraine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC815	329
+GBE_HC1236	TTE other systemic involvement of connective tissue	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1236	79
+GBE_BIN30030510	UACR > 30 mg/g	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN30030510	1040
+GBE_HC91	Psoriatic arthropathy	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC91	36
+GBE_INI4106	Heel bone mineral density (BMD) T-score, automated (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4106	9275
+GBE_BIN_FC7006154	Aspirin use self-reported	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC7006154	790
+GBE_INI3143	Ankle spacing width	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3143	21694
+GBE_INI20191	Fluid intelligence score	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20191	3284
+GBE_cancer1059	Malignant melanoma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1059	116
+GBE_BIN2020	Loneliness, isolation	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2020	660
+GBE_QT_FC1001369	Beef intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001369	991
+GBE_cancer1038	Male genital tract cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1038	313
+GBE_INI2887	# of cigarettes previously smoked daily	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2887	725
+GBE_BIN_FC8006154	Ibuprofen use self-reported	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC8006154	419
+GBE_INI3077	Seating box height (for the sitting height measurement)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3077	2927
+GBE_HC96	Polymyalgia rheumatica	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC96	69
+GBE_BIN_FC1006154	Aspirin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1006154	499
+GBE_HC1304	TTE calculus of kidney and ureter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1304	341
+GBE_BIN10030800	Oestradiol > 212 pmol/L	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN10030800	351
+GBE_HC337	Type 1 diabetes	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC337	69
+GBE_INI134	# of self-reported cancers	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI134	526
+GBE_HC639	TTE sarcoidosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC639	22
+GBE_INI10030650	Aspartate aminotransferase	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030650	10612
+GBE_BIN23066	JCV seropositivity for Human Polyomavirus JCV	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN23066	16
+GBE_INI30150	Eosinophill count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30150	12579
+GBE_HC530	TTE zoster [herpes zoster]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC530	82
+GBE_QT_FC1001359	Poultry intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001359	1609
+GBE_INI20022	Birth weight	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20022	6278
+GBE_HC1052	TTE other interstitial pulmonary diseases	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1052	57
+GBE_HC1035	TTE other chronic obstructive pulmonary disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1035	498
+GBE_HC1123	TTE other diseases of liver	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1123	92
+GBE_HC1248	TTE other intervertebral disk disorders	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1248	111
+GBE_HC86	Migraine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC86	25
+GBE_INI1120	Weekly usage of mobile phone in last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1120	1122
+GBE_BIN_FC30022506	Tobacco smoking ever vs no	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30022506	974
+GBE_QT_FC1002296	Falls in the last year	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002296	2103
+GBE_INI20030690	Cholesterol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20030690	14403
+GBE_FH1113	Chronic bronchitis/emphysema (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1113	1530
+GBE_INI1578	Ave. weekly champagne plus white wine intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1578	213
+GBE_INI23004	EBNA-1 antigen for Epstein-Barr Virus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23004	38
+GBE_BIN_FC30001418	Milk type: Skimmed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30001418	116
+GBE_INI10030700	Creatinine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030700	20452
+GBE_HC170	Sarcoidosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC170	12
+GBE_INI10030760	HDL cholesterol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030760	22304
+GBE_HC1582	AD chronic obstructive pulmonary disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1582	569
+GBE_INI10030720	Cystatin C	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030720	23460
+GBE_INI2966	Age high BP diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2966	370
+GBE_HC165	Type 2 diabetes	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC165	385
+GBE_INI10030830	SHBG	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030830	18225
+GBE_BIN_FC1006148	Eye problems/disorders Diabetic eye disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC1006148	123
+GBE_HC866	TTE other disorders of cornea	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC866	22
+GBE_QT_FC1002080	Freq. of tiredness / lethargy in last 2 weeks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002080	5594
+GBE_HC1302	TTE chronic renal failure	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1302	158
+GBE_HC57	Fracture radius	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC57	365
+GBE_INI10030670	Urea	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030670	10852
+GBE_HC881	TTE retinal disorders in diseases classified elsewhere	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC881	185
+GBE_BIN_FC10001628	Alcohol intake versus 10 years previously (More nowadays)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10001628	214
+GBE_HC608	TTE vitamin b12 deficiency anaemia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC608	121
+GBE_HC177	Dupuytren's contracture	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC177	11
+GBE_HC78	Arthritis (nos)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC78	1028
+GBE_INI1289	Cooked vegetable intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1289	1085
+GBE_INI30520	Potassium in urine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30520	213
+GBE_HC376	Osteoarthritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC376	579
+GBE_HC61	Haemorrhoids / piles	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC61	786
+GBE_HC442	Chronic obstructive airways disease/copd	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC442	482
+GBE_QT_FC1001339	Non-oily fish intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001339	309
+GBE_INI4100	Ankle spacing width (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4100	13416
+GBE_HC83	Fracture forearm / wrist	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC83	45
+GBE_INI30060	Mean corpuscular haemoglobin concentration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30060	2359
+GBE_HC262	Diverticular disease/diverticulitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC262	368
+GBE_INI20030780	LDL cholesterol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20030780	14936
+GBE_HC1101	TTE crohn's disease [regional enteritis]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1101	220
+GBE_INI10030880	Urate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030880	17598
+GBE_BIN100240	Coffee consumed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN100240	48
+GBE_INI23028	MC VP1 antigen for Merkel Cell Polyomavirus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23028	143
+GBE_INI23027	JC VP1 antigen for Human Polyomavirus JCV	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23027	9
+GBE_BIN_FC20001508	Coffee type: Instant coffee	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001508	432
+GBE_INI20016	Fluid intelligence score	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20016	10055
+GBE_BIN_FC2006154	Ibuprofen (e.g. Nurofen)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC2006154	174
+GBE_INI10030500	Microalbumin in urine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030500	51
+GBE_HC534	TTE viral warts	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC534	5
+GBE_HC914	TTE otosclerosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC914	213
+GBE_BIN_FC10001835	Mother still alive	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10001835	152
+GBE_BIN_FC5006148	Eye problems/disorders Macular degeneration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC5006148	53
+GBE_INI10030510	Creatinine in urine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030510	4291
+GBE_cancer1045	Testicular cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1045	280
+GBE_HC322	Crohns disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC322	257
+GBE_HC302	Retinal detachment	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC302	321
+GBE_HC880	TTE other retinal disorders	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC880	6
+GBE_INI30030700	EGFR	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30030700	17436
+GBE_HC431	Emphysema	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC431	42
+GBE_INI30720	Cystatin C	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30720	18218
+GBE_BIN100580	Alcohol consumed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN100580	1028
+GBE_BIN_FC50006160	Leisure/social activities (attend adult edication class in once a week or more often)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC50006160	220
+GBE_INI1050	Time spend outdoors in summer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1050	5661
+GBE_HC176	Prolapsed disc/slipped disc	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC176	47
+GBE_BIN_FC6006155	Vitamin B9 vs no supplement	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC6006155	5
+GBE_HC31	Uterine fibroids	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC31	161
+GBE_HC1228	TTE internal derangement of knee	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1228	118
+GBE_INI4119	Ankle spacing width (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4119	15134
+GBE_BIN_FC20001468	Cereal type: Biscuit cereal (e.g. Weetabix)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001468	146
+GBE_HC321	Sjogren's syndrome/sicca syndrome	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC321	7
+GBE_HC85	Enlarged prostate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC85	449
+GBE_HC136	Connective tissue disorder	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC136	16
+GBE_INI10030530	Sodium in urine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI10030530	5217
+GBE_INI25829	Vol. of grey matter in Intracalcarine Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25829	2215
+GBE_BIN_FC18006155	Folic acid or folate (Vitamin B9)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC18006155	5
+GBE_HC1576	AD NSTEMI	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1576	687
+GBE_BIN23067	MCV seropositivity for Merkel Cell Polyomavirus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN23067	3
+GBE_BIN_FC10002644	Light smokers, at least 100 smokes in lifetime	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10002644	11
+GBE_INI874	Duration of walks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI874	1323
+GBE_HC654	TTE other disorders of pancreatic internal secretion	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC654	69
+GBE_BIN_FC30002267	Use of sun/uv protection (Most of the time)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30002267	110
+GBE_HC1209	TTE reactive arthropathies	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1209	6
+GBE_HC84	Pulmonary fibrosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC84	51
+GBE_INI5255	Intra-ocular pressure, Goldmann-correlated (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5255	3584
+GBE_BIN_FC2006179	Glucosamine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC2006179	324
+GBE_cancer1065	Thyroid cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1065	11
+GBE_INI1003064	PEF pred. ratio	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1003064	15135
+GBE_INI1003063	FEV FVC ratio	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1003063	15141
+GBE_INI30740	Glucose	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30740	2223
+GBE_BIN_FC10001150	Usual side of head for mobile phone use (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC10001150	599
+GBE_HC1126	TTE cholecystitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1126	5
+GBE_HC1020	TTE unspecified acute lower respiratory infection	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1020	402
+GBE_INI25867	Vol. of grey matter in Parietal Operculum Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25867	699
+GBE_INI25003	Vol. of ventricular cerebrospinal fluid (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25003	880
+GBE_BIN_FC40001448	Bread type: Other type of bread	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC40001448	71
+GBE_HC711	TTE vascular dementia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC711	7
+GBE_cancer1041	Cervical cancer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/cancer1041	24
+GBE_HC878	TTE retinal detachments and breaks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC878	237
+GBE_HC951	TTE nonrheumatic aortic valve disorders	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC951	36
