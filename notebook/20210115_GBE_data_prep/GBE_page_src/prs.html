@@ -105,7 +105,7 @@
         <div class="col col-md-12">
             <h1>Sparse Polygenic Risk Scores (PRSs) with BASIL / snpnet</h1>
             <hr/>
-            <h5>Version 1.3, 2021.08.23</h5>
+            <h5>Version 1.3.1, 2021.09.23</h5>
             <p>Yosuke Tanigawa and Manuel A. Rivas</p>
         </div>
     </div>
@@ -122,15 +122,23 @@
             <!-- https://mottie.github.io/tablesorter/docs/index.html -->
             <table id="table_prs_trait_list"> <!-- bootstrap classes added by the uitheme widget -->
               <thead>
-                <tr>
-                    {% for table_col in table_prs_trait_list_cols %}
-                    {% if table_col in table_prs_trait_list_cols_select %}
-                    <th class="filter-select filter-exact" data-placeholder="Select">{{ table_col }}</th>
-                    {% else %}
-                    <th>{{ table_col }}</th>
-                    {% endif %}
-                    {% endfor %}
-                </tr>
+		<tr>
+		    <th colspan="2">Trait</th>
+		    <th rowspan="2" class="filter-select filter-exact" data-placeholder="Select">Family</th>
+		    <th colspan="4">Predictive performance</th>
+		    <th rowspan="2"># variants</th>
+		    <th colspan="2">Significance</th>
+		</tr>
+		<tr>
+                    <th class="filter-select filter-exact" data-placeholder="Select">Trait group</th>
+                    <th>Trait name</th>
+                    <th>Geno</th>
+                    <th>Covars</th>
+                    <th>Full</th>
+                    <th>delta</th>
+                    <th>p (WB)</th>
+                    <th class="filter-select filter-exact" data-placeholder="Select">significant?</th>
+		</tr>
               </thead>
               <tfoot>
                 <tr>
@@ -203,17 +211,18 @@
     <div class="row">
       <div class="col col-md-12">
         <h2 align="center">References</h2>
-        <p>
-          We are preparing a manuscript describing this resource. In the meanwhile, please look and cite our paper describing the BASIL algorithm and R snpnet package that was used to construct the sparse PRS across UK Biobank traits.
-        </p>
+	<p>
+	  Y. Tanigawa, J. Qian, G. R. Venkataraman, J. M. Justesen, R. Li, R. Tibshirani, T. Hastie, M. A. Rivas, Significant Sparse Polygenic Risk Scores across 428 traits in UK Biobank. medRxiv 2021.09.02.21262942 (2021). <a href="https://doi.org/10.1101/2021.09.02.21262942" target="_blank">doi:10.1101/2021.09.02.21262942</a>
+	</p>
         <p>
           J. Qian, Y. Tanigawa, W. Du, M. Aguirre, C. Chang, R. Tibshirani, M. A. Rivas, T. Hastie, A fast and scalable framework for large-scale and ultrahigh-dimensional sparse regression with application to the UK Biobank. PLOS Genetics. 16, e1009141 (2020). <a href="https://doi.org/10.1371/journal.pgen.1009141" target="_blank">doi:10.1371/journal.pgen.1009141</a>
         </p>
         <h3 align="center">Version info</h3>
         <ul>
-	  <li>2021.08.23. Version 1.3: we add plots that compares the number of active variables in the PRS model vs the incremental predictive performance of the PRS model.</li>
-          <li>2021.07.23. Version 1.2: we add the p-value of the PRS model as well as an indicator variable of the significance of PRS. We also removed some of the duplicated traits.</li>
-          <li>2021.01.16. Version 1.1: initial public release of the results</li>
+	  <li>2021.09.23. Version 1.3.1: We improved the clarity of the table and Website. We added a link to our manuscript.</li>
+	  <li>2021.08.23. Version 1.3: We add plots that compares the number of active variables in the PRS model vs the incremental predictive performance of the PRS model.</li>
+          <li>2021.07.23. Version 1.2: We add the p-value of the PRS model as Well as an indicator variable of the significance of PRS. We also removed some of the duplicated traits.</li>
+          <li>2021.01.16. Version 1.1: Initial public release of the results</li>
         </ul>
         <br>
         <hr/>
