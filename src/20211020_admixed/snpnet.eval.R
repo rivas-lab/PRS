@@ -17,9 +17,8 @@ if((length(args)>2) && (! is.null(args[3])) && (args[3] == 'refit')){
 # input and parameters
 
 #data_d <- '/oak/stanford/groups/mrivas/projects/PRS/private_output/20200908_PRS_map_test'
-phe_f <- '/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20200828.phe.zst'
-covariates       <- c('age', 'sex', paste0('PC', 1:10))
-refit_split_strs <- c('non_british_white', 'african', 's_asian', 'e_asian')
+phe_f <- '/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20211020.phe.zst'
+covariates       <- c('age', 'sex', paste0('Global_PC', 1:18))
 sscore_f             <- file.path(data_d, '__PHENOTYPE__.sscore.zst')
 snpnet_BETAs_f       <- file.path(data_d, 'snpnet.tsv')
 snpnet_covar_BETAs_f <- file.path(data_d, 'snpnet.covars.tsv')
@@ -37,10 +36,12 @@ source('/oak/stanford/groups/mrivas/software/snpnet/snpnet_v.0.3.17/helpers/snpn
 # read the raw phenotype file
 fread(
     cmd=paste(cat_or_zcat(phe_f), phe_f,  '|', 'sed -e "s/^#//g"'),
-    select=c('FID', 'IID', 'split', covariates, phenotype),
+    select=c('FID', 'IID', 'population', 'split_nonWB', covariates, phenotype),
     colClasses = c('FID'='character', 'IID'='character'),
     data.table=F
-) -> phe_df
+) %>%
+rename('split' = 'split_nonWB') %>%
+filter(population == 'others') -> phe_df
 
 if(refit){
     phe_df %>%
@@ -55,7 +56,7 @@ compute_phe_score_df(
     phenotype,
     str_replace_all(sscore_f, '__PHENOTYPE__', phenotype),
     str_replace_all(snpnet_covar_BETAs_f, '__PHENOTYPE__', phenotype),
-    covariates, family, refit_split_strs
+    covariates, family, NULL
 ) -> phe_score_df
 
 # evaluate the predictive performance

@@ -153,7 +153,7 @@ if [ ! -d ${results_dir} ] ; then mkdir -p ${results_dir} ; fi
 ############################################################
 # Additional optional arguments for ${snpnet_wrapper} script
 ############################################################
-covariates="age,sex,Global_PC1,Global_PC2,Global_PC3,Global_PC4,Global_PC5,Global_PC6,Global_PC7,Global_PC8,Global_PC9,Global_PC10"
+covariates="age,sex,Global_PC1,Global_PC2,Global_PC3,Global_PC4,Global_PC5,Global_PC6,Global_PC7,Global_PC8,Global_PC9,Global_PC10,Global_PC11,Global_PC12,Global_PC13,Global_PC14,Global_PC15,Global_PC16,Global_PC17,Global_PC18"
 if [ "${weighted}" == "F" ] ; then p_factor_file="None" ; fi
 
 if [ "${refit}" == "T" ] ; then
@@ -171,7 +171,7 @@ fi
 
 echo "[$0 $(date +%Y%m%d-%H%M%S)] [start] hostname = $(hostname) SLURM_JOBID = ${SLURM_JOBID:=0}; phenotype = ${phenotype_name}" >&2
 
-bash ${snpnet_wrapper} \
+echo bash ${snpnet_wrapper} \
 --nCores ${cpus} --memory ${mem} \
 --covariates ${covariates} \
 --verbose --save_computeProduct --glmnetPlus \

@@ -10,4 +10,11 @@ HC269 (refit: F)
 HC382 (refit: F)
 INI21001 (refit: F)
 INI50 (refit: F)
+
+[ytanigaw@sh03-12n24 ~/repos/rivas-lab/PRS/src/20211022_400k] (job 36268905) $ bash 2a_submit.sh GBE_ID_list.txt refit
+HC269 (refit: T)
+HC382 (refit: T)
+INI21001 (refit: T)
+INI50 (refit: T)
 ```
+

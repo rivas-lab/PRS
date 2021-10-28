@@ -4,25 +4,22 @@ We fit snpnet using the individuals in `others`. The training, validation, and t
 
 ## data location
 
+- `/oak/stanford/groups/mrivas/projects/PRS/private_output/20211020_admixed`
+
+For the PRS fitting, we used the following location:
+
 - `/scratch/groups/mrivas/projects/PRS/private_output/20211020_admixed/snpnet.admixed`
 
-We should move the results to `$OAK` once the computation is done
+## job submission commands
 
-## submission commands
-
-### submission for the initial fit (without refit)
-
-```
-[ytanigaw@sh03-12n24 ~/repos/rivas-lab/PRS/src/20211020_admixed] (job 35756724) $ bash 2a_submit.sh GBE_ID_list.txt
-HC269 (refit: F)
-HC382 (refit: F)
-INI21001 (refit: F)
-INI50 (refit: F)
-```
-
-### submission for the refit
+- submission for the initial fit (without refit)
+  - `$ bash 2a_submit.sh GBE_ID_list.txt`
+- submission for the refit
+  - `$ bash 2a_submit.sh GBE_ID_list.txt refit`
+- copy the results to `/oak`
 
 ```
-$ bash 2a_submit.sh GBE_ID_list.txt refit
+cd /scratch/groups/mrivas/projects/PRS/private_output/20211020_admixed/snpnet.admixed
+find . -maxdepth 3 -type f -print0 | rsync -av --files-from=- --from0 ./ $(dirname $(pwdo))/
 ```
 
