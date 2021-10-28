@@ -6,10 +6,10 @@ To that end, we implemented extract/exclude options in snpnet software (version 
 
 ## job submission
 
-```
-[ytanigaw@sh03-12n24 ~/repos/rivas-lab/PRS/src/20211024_nonWB_refit] (job 36268905) $ bash 2a_submit.sh GBE_ID_list.txt
-HC269 (refit: F)
-HC382 (refit: F)
-INI21001 (refit: F)
-INI50 (refit: F)
-```
+- fit the models
+  - `bash 2a_submit.sh GBE_ID_list.txt`
+  - `bash 2a_submit.sh GBE_ID_list.txt refit`
+- copy the results to `oak`
+  - `cd /scratch/groups/mrivas/projects/PRS/private_output/20211024_nonWB_refit/snpnet.nonWBrefit`
+  - `find . -maxdepth 4 -type f -print0 | rsync -av --files-from=- --from0 ./ $(dirname $(pwdo))/`
+
