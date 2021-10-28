@@ -12,3 +12,5 @@ mrp_blacklist_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb
 
 # PRS p-value file
 PRS_pval_f='PRS_p_val_WBtest.tsv.gz'
+
+GWAS_qc_f='/oak/stanford/groups/mrivas/ukbb24983/array-combined/gwas/current/gwas.qc.20201023-215035.tsv'
