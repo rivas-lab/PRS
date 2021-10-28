@@ -37,7 +37,7 @@ cat ${GBE_list_f} | egrep -v '^#' | awk 'length($0)>0' | while read GBE_ID ; do
     --job_cmd_name   ${jobname} \
     --job_cmd_output logs_${run_name}/${jobname}.%A.out \
     --job_cmd_error  logs_${run_name}/${jobname}.%A.err \
-    --job_cmd_time   1-0:00:00 \
+    --job_cmd_time   7-0:00:00 \
     --mem 150000 -c 8 --mem_mult 2 --try_n 1 \
     --try_total 5 \
     --log logs_${run_name}/${jobname}.log \

@@ -31,3 +31,13 @@ INI50 (refit: F)
 $ bash 2a_submit.sh GBE_ID_list.txt refit
 ```
 
+```
+[ytanigaw@sh03-12n24 ~/repos/rivas-lab/PRS/src/20211019_array_imp_combined] (job 35756724) $ bash 2a_submit.sh GBE_ID_list.HC.txt refit
+HC269 (refit: T)
+HC382 (refit: T)
+
+[ytanigaw@sh03-12n24 ~/repos/rivas-lab/PRS/src/20211019_array_imp_combined] (job 36268905) $ bash 2a_submit.sh GBE_ID_list.INI.txt refit
+INI21001 (refit: T)
+INI50 (refit: T)
+```
+
