@@ -36,7 +36,8 @@ fread(
 ) %>%
 rename_with(
     function(x){str_replace(x, '#', '')}, starts_with("#")
-) -> phe_df
+) %>% 
+na_if(list(GBE_ID = -9)) -> phe_df
 
 # PRS
 fread(

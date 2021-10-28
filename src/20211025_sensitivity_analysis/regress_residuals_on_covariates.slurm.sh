@@ -8,9 +8,9 @@ slurm_log_d=${SRCDIR}/logs
 slurm_job_name=$(basename ${SRCNAME%.slurm.sh})
 job_list_sh=${slurm_log_d}/${slurm_job_name}.jobs.sh
 batch_size=1 # the number of jobs executed in an array task in SLURM.
-memory=8000
+memory=16000
 cpus=1
-sbatch_resources_str='-p mrivas --qos=high_p --nodes=1 --mem=8000 --cores=1 --time=30:00'
+sbatch_resources_str='-p mrivas --qos=high_p --nodes=1 --mem=16000 --cores=1 --time=6-00:00'
 
 #############################
 # generate a list of jobs
@@ -43,8 +43,9 @@ echo "## submission of ${n_jobs} jobs in ${n_array_tasks} tasks (each has up to 
         --job-name="${slurm_job_name}" \
         --output="${slurm_log_d}/${slurm_job_name}.%A.%a.out" \
         --error="${slurm_log_d}/${slurm_job_name}.%A.%a.err" \
-        --array="1-${n_array_tasks}" \
+        --array="1-${n_array_tasks}%10" \
         "${parasol_sbatch_sh}" \
         "${job_list_sh}" \
         "${batch_size}"
 )
+
