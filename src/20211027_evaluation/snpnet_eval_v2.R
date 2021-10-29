@@ -80,6 +80,26 @@ read_phenotype_file(c(covariates, phes_binary, phes_quantitative)) %>%
 recode_pheno_values(phes_binary, phes_quantitative) %>%
 update_split_column_for_refit() -> pheno_df
 
+# count the number of individuals
+pheno_df %>%
+filter(split %in% names(population_splits)) %>%
+count_n_per_split(pheno_col, family) -> split_cnt_df
+
+# focus on the population/split where we have non-zero cases
+if (family == 'binomial') {
+    population_splits <- population_splits[
+        split_cnt_df %>%
+        filter(case_n > 0, control_n > 0) %>%
+        pull(split)
+    ]
+} else {
+    population_splits <- population_splits[
+        split_cnt_df %>%
+        filter(n > 0) %>%
+        pull(split)
+    ]
+}
+
 # we fit the specified regression model for each split independently
 # and aggregate the results into one data frame
 population_splits %>% unique() %>%
@@ -104,7 +124,7 @@ population_splits %>% names() %>%
 lapply(function(s){
     # use the BETAs on a split specified in named list, PRS_model_covar_BETAs_split
     covar_score_split <- (population_splits[[s]])
-    
+
     # get BETAs
     covar_model_BETAs_df %>%
     filter(split == covar_score_split) %>%
@@ -160,25 +180,11 @@ covarPRS_model_BETAs_df %>%
 rename('#split' = 'split') %>%
 fwrite(sprintf('%s.PRS_pval.tsv', performance_eval_prefix), sep='\t', na = "NA", quote=F)
 
-# count the number of individuals
-full_df %>% count_n_per_split(pheno_col, family) -> split_cnt_df
-if (family == 'binomial') {
-    # run evaluation
-    split_cnt_df %>%
-    filter(case_n > 0, control_n > 0) %>%
-    pull(split) -> non_zero_splits
-} else {
-    split_cnt_df %>%
-    filter(n > 0) %>%
-    pull(split) -> non_zero_splits    
-}
-
 # list of "scores" we will use in the evaluation
 c(score_geno, score_covar, score_full) -> risk_score_list
 
 # run evaluation
-names(population_splits) %>% 
-intersect(non_zero_splits) %>%
+names(population_splits) %>%
 lapply(function(split_str){
     risk_score_list %>% lapply(function(predictor){
         message(sprintf('--%s %s', split_str, predictor))
