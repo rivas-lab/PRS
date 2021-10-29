@@ -154,7 +154,7 @@ pheno_df %>%
 filter(split %in% names(population_splits)) %>%
 left_join(sscore_df, by=c("FID", "IID")) %>%
 left_join(covar_score_df, by=c("FID", "IID")) %>%
-mutate(!!score_full := rowSums(across(all_of(c(score_covar))))) -> full_df
+mutate(!!score_full := rowSums(across(all_of(c(score_geno, score_covar))))) -> full_df
 
 # regression formula to evaluate the significance of PRS models
 covarPRS_formula_str <- sprintf(
