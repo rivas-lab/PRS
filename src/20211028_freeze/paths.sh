@@ -21,6 +21,9 @@ icdinfo_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools
 
 # master PRS file from the 2020/09 freeze
 PRS202009_f='/scratch/groups/mrivas/projects/PRS/private_output/202009_batch/ukb24983_GWAS_covar.20200828.PRSs.phe.gz'
+# snpnet PRS coefficients (BETAs)
+# __TRAIT__ needs to be replaced
+PRS202009_BETA_f='/oak/stanford/groups/mrivas/projects/PRS/GBE_data/__TRAIT__.tsv'
 
 # master PRS file from the 2021/10 freeze
 PRS202110_f='/scratch/groups/mrivas/projects/PRS/20211028_freeze/ukb24983_PRSmap.20211029.phe.gz'
