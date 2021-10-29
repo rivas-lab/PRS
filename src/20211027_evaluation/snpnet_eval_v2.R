@@ -160,11 +160,26 @@ covarPRS_model_BETAs_df %>%
 rename('#split' = 'split') %>%
 fwrite(sprintf('%s.PRS_pval.tsv', performance_eval_prefix), sep='\t', na = "NA", quote=F)
 
+# count the number of individuals
+full_df %>% count_n_per_split(pheno_col, family) -> split_cnt_df
+if (family == 'binomial') {
+    # run evaluation
+    split_cnt_df %>%
+    filter(case_n > 0, control_n > 0) %>%
+    pull(split) -> non_zero_splits
+} else {
+    split_cnt_df %>%
+    filter(n > 0) %>%
+    pull(split) -> non_zero_splits    
+}
+
 # list of "scores" we will use in the evaluation
 c(score_geno, score_covar, score_full) -> risk_score_list
 
 # run evaluation
-names(population_splits) %>% lapply(function(split_str){
+names(population_splits) %>% 
+intersect(non_zero_splits) %>%
+lapply(function(split_str){
     risk_score_list %>% lapply(function(predictor){
         message(sprintf('--%s %s', split_str, predictor))
         tryCatch({
@@ -181,7 +196,7 @@ names(population_splits) %>% lapply(function(split_str){
 }) %>%
 bind_rows() %>%
 left_join(
-    full_df %>% count_n_per_split(pheno_col, family),
+    split_cnt_df,
     by = "split"
 ) -> PRS_eval_df
 
