@@ -1,0 +1,36 @@
+#trait	trait_name	Biomarkers_covariate_adjusted_GBE_ID	annotation
+INI30030650	AST to ALT ratio	INI30030650	AST_ALT_ratio
+INI30030700	eGFR	INI30030700	eGFR
+INI30030860	Non-albumin protein	INI30030860	Non_albumin_protein
+INI30500	Microalbumin in urine	INI10030500	Microalbumin_in_urine
+INI30510	Creatinine (enzymatic) in urine	INI10030510	Creatinine_in_urine
+INI30520	Potassium in urine	INI10030520	Potassium_in_urine
+INI30530	Sodium in urine	INI10030530	Sodium_in_urine
+INI30600	Albumin	INI10030600	Albumin
+INI30610	Alkaline phosphatase	INI10030610	Alkaline_phosphatase
+INI30620	Alanine aminotransferase	INI10030620	Alanine_aminotransferase
+INI30630	Apolipoprotein A	INI10030630	Apolipoprotein_A
+INI30640	Apolipoprotein B	INI20030640	Apolipoprotein_B_adjstatins
+INI30650	Aspartate aminotransferase	INI10030650	Aspartate_aminotransferase
+INI30660	Direct bilirubin	INI10030660	Direct_bilirubin
+INI30670	Urea	INI10030670	Urea
+INI30680	Calcium	INI10030680	Calcium
+INI30690	Cholesterol	INI20030690	Cholesterol_adjstatins
+INI30700	Creatinine	INI10030700	Creatinine
+INI30710	C-reactive protein	INI10030710	C_reactive_protein
+INI30720	Cystatin C	INI10030720	Cystatin_C
+INI30730	Gamma glutamyltransferase	INI10030730	Gamma_glutamyltransferase
+INI30740	Glucose	INI10030740	Glucose
+INI30750	Glycated haemoglobin (HbA1c)	INI10030750	Glycated_haemoglobin_HbA1c
+INI30760	HDL cholesterol	INI10030760	HDL_cholesterol
+INI30770	IGF-1	INI10030770	IGF_1
+INI30780	LDL cholesterol	INI20030780	LDL_direct_adjstatins
+INI30790	Lipoprotein A	INI10030790	Lipoprotein_A
+INI30810	Phosphate	INI10030810	Phosphate
+INI30830	SHBG	INI10030830	SHBG
+INI30840	Total bilirubin	INI10030840	Total_bilirubin
+INI30850	Testosterone	INI10030850	Testosterone
+INI30860	Total protein	INI10030860	Total_protein
+INI30870	Triglycerides	INI10030870	Triglycerides
+INI30880	Urate	INI10030880	Urate
+INI30890	Vitamin D	INI10030890	Vitamin_D

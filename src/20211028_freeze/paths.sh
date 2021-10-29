@@ -1,0 +1,36 @@
+
+# local files
+
+trait_list_f='traits.tsv'
+biomarkers_mapping_f='traits.biomarkers.tsv'
+
+# list of GBE traits and category
+GBE_category_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/05_gbe/extras/20200812_GBE_category/GBE_category.20201024.tsv'
+
+# icdinfo file
+icdinfo_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/05_gbe/array-combined/icdinfo.white_british.txt'
+
+# master PRS file from the 2020/09 freeze
+PRS202009_f='/scratch/groups/mrivas/projects/PRS/private_output/202009_batch/ukb24983_GWAS_covar.20200828.PRSs.phe.gz'
+
+# master PRS file from the 2021/10 freeze
+PRS202110_f='/scratch/groups/mrivas/projects/PRS/20211028_freeze/ukb24983_PRSmap.20211029.phe.gz'
+PRS202110_d='/scratch/groups/mrivas/projects/PRS/20211028_freeze'
+
+# sqc file (covariates etc.)
+sample_qc_f='/oak/stanford/groups/mrivas/ukbb24983/sqc/population_stratification_w24983_20211020/ukb24983_GWAS_covar.20211020.phe'
+
+# MRP blacklist
+mrp_blacklist_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/13_mrp/gbe_blacklist.tsv'
+
+# biomarkers
+biomarkers_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/biomarkers/common/canonical_trait_names.txt'
+
+# biomarkers snpnet PRS score
+# __TRAIT__ needs to be replaced
+biomarkers_snpnet_f='/oak/stanford/groups/mrivas/projects/biomarkers/snpnet/biomarkers/__TRAIT__/results/score/__TRAIT__.sscore.zst'
+
+# biomarkers snpnet PRS coefficients (BETAs)
+# __TRAIT__ needs to be replaced
+biomarkers_BETA_f='/oak/stanford/groups/mrivas/projects/biomarkers/snpnet/figshare/snpnet.BETAs.__TRAIT__.tsv.gz'
+

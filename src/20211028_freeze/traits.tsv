@@ -1,0 +1,1566 @@
+#trait	trait_name	trait_category	trait_category_plot	family
+cancer1001	Lung cancer	Cancer	Cancer	binomial
+cancer1002	Breast cancer	Cancer	Cancer	binomial
+cancer1003	Skin cancer	Cancer	Cancer	binomial
+cancer1005	Salivary gland cancer	Cancer	Cancer	binomial
+cancer1018	Stomach cancer	Cancer	Cancer	binomial
+cancer1024	Liver/hepatocellular cancer	Cancer	Cancer	binomial
+cancer1025	Gallbladder/bile duct cancer	Cancer	Cancer	binomial
+cancer1035	Bladder cancer	Cancer	Cancer	binomial
+cancer1037	Female genital tract cancer	Cancer	Cancer	binomial
+cancer1038	Male genital tract cancer	Cancer	Cancer	binomial
+cancer1041	Cervical cancer	Cancer	Cancer	binomial
+cancer1043	Vulval cancer	Cancer	Cancer	binomial
+cancer1044	Prostate cancer	Cancer	Cancer	binomial
+cancer1045	Testicular cancer	Cancer	Cancer	binomial
+cancer1059	Malignant melanoma	Cancer	Cancer	binomial
+cancer1060	Non-melanoma skin cancer	Cancer	Cancer	binomial
+cancer1065	Thyroid cancer	Cancer	Cancer	binomial
+cancer1068	Sarcoma/fibrosarcoma	Cancer	Cancer	binomial
+cancer1074	Acute myeloid leukaemia	Cancer	Cancer	binomial
+HC1001	TTE acute nasopharyngitis [common cold]	Disease_outcome	Disease outcome	binomial
+HC1005	TTE acute laryngitis and tracheitis	Disease_outcome	Disease outcome	binomial
+HC1007	TTE acute upper respiratory infections of multiple and unspecified sites	Disease_outcome	Disease outcome	binomial
+HC1012	TTE pneumonia due to streptococcus pneumoniae	Disease_outcome	Disease outcome	binomial
+HC1013	TTE pneumonia due to haemophilus influenzae	Disease_outcome	Disease outcome	binomial
+HC1014	TTE bacterial pneumonia, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC1017	TTE pneumonia, organism unspecified	Disease_outcome	Disease outcome	binomial
+HC102	Vertigo	Disease_outcome	Disease outcome	binomial
+HC1020	TTE unspecified acute lower respiratory infection	Disease_outcome	Disease outcome	binomial
+HC1021	TTE vasomotor and allergic rhinitis	Disease_outcome	Disease outcome	binomial
+HC1023	TTE chronic sinusitis	Disease_outcome	Disease outcome	binomial
+HC1024	TTE nasal polyp	Disease_outcome	Disease outcome	binomial
+HC1027	TTE peritonsillar abscess	Disease_outcome	Disease outcome	binomial
+HC1028	TTE chronic laryngitis and laryngotracheitis	Disease_outcome	Disease outcome	binomial
+HC1029	TTE diseases of vocal cords and larynx, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC103	Thyroid goitre	Disease_outcome	Disease outcome	binomial
+HC1031	TTE bronchitis, not specified as acute or chronic	Disease_outcome	Disease outcome	binomial
+HC1033	TTE unspecified chronic bronchitis	Disease_outcome	Disease outcome	binomial
+HC1034	TTE emphysema	Disease_outcome	Disease outcome	binomial
+HC1035	TTE other chronic obstructive pulmonary disease	Disease_outcome	Disease outcome	binomial
+HC1036	TTE asthma	Disease_outcome	Disease outcome	binomial
+HC1038	TTE bronchiectasis	Disease_outcome	Disease outcome	binomial
+HC1040	TTE pneumoconiosis due to asbestos and other mineral fibres	Disease_outcome	Disease outcome	binomial
+HC1047	TTE pneumonitis due to solids and liquids	Disease_outcome	Disease outcome	binomial
+HC1049	TTE adult respiratory distress syndrome	Disease_outcome	Disease outcome	binomial
+HC1050	TTE pulmonary oedema	Disease_outcome	Disease outcome	binomial
+HC1052	TTE other interstitial pulmonary diseases	Disease_outcome	Disease outcome	binomial
+HC1054	TTE pyothorax	Disease_outcome	Disease outcome	binomial
+HC1056	TTE pleural effusion in conditions classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC106	Emphysema/chronic bronchitis	Disease_outcome	Disease outcome	binomial
+HC1063	TTE respiratory disorders in diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC1064	TTE disorders of tooth development and eruption	Disease_outcome	Disease outcome	binomial
+HC1069	TTE gingivitis and periodontal diseases	Disease_outcome	Disease outcome	binomial
+HC1070	TTE other disorders of gingiva and edentulous alveolar ridge	Disease_outcome	Disease outcome	binomial
+HC1071	TTE dentofacial anomalies [including malocclusion]	Disease_outcome	Disease outcome	binomial
+HC1072	TTE other disorders of teeth and supporting structures	Disease_outcome	Disease outcome	binomial
+HC1073	TTE cysts of oral region, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC1084	TTE duodenal ulcer	Disease_outcome	Disease outcome	binomial
+HC1090	TTE acute appendicitis	Disease_outcome	Disease outcome	binomial
+HC1094	TTE inguinal hernia	Disease_outcome	Disease outcome	binomial
+HC1095	TTE femoral hernia	Disease_outcome	Disease outcome	binomial
+HC1096	TTE umbilical hernia	Disease_outcome	Disease outcome	binomial
+HC1098	TTE diaphragmatic hernia	Disease_outcome	Disease outcome	binomial
+HC110	Stroke	Disease_outcome	Disease outcome	binomial
+HC1101	TTE crohn's disease [regional enteritis]	Disease_outcome	Disease outcome	binomial
+HC1102	TTE ulcerative colitis	Disease_outcome	Disease outcome	binomial
+HC1103	TTE other non-infective gastro-enteritis and colitis	Disease_outcome	Disease outcome	binomial
+HC1104	TTE vascular disorders of intestine	Disease_outcome	Disease outcome	binomial
+HC1106	TTE diverticular disease of intestine	Disease_outcome	Disease outcome	binomial
+HC1111	TTE other diseases of anus and rectum	Disease_outcome	Disease outcome	binomial
+HC1112	TTE other diseases of intestine	Disease_outcome	Disease outcome	binomial
+HC1117	TTE alcoholic liver disease	Disease_outcome	Disease outcome	binomial
+HC1119	TTE hepatic failure, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC1120	TTE chronic hepatitis, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC1121	TTE fibrosis and cirrhosis of liver	Disease_outcome	Disease outcome	binomial
+HC1122	TTE other inflammatory liver diseases	Disease_outcome	Disease outcome	binomial
+HC1123	TTE other diseases of liver	Disease_outcome	Disease outcome	binomial
+HC1125	TTE cholelithiasis	Disease_outcome	Disease outcome	binomial
+HC1126	TTE cholecystitis	Disease_outcome	Disease outcome	binomial
+HC113	Irregular heart beat	Disease_outcome	Disease outcome	binomial
+HC1132	TTE intestinal malabsorption	Disease_outcome	Disease outcome	binomial
+HC1139	TTE cellulitis	Disease_outcome	Disease outcome	binomial
+HC1141	TTE pilonidal cyst	Disease_outcome	Disease outcome	binomial
+HC1142	TTE other local infections of skin and subcutaneous tissue	Disease_outcome	Disease outcome	binomial
+HC1148	TTE atopic dermatitis	Disease_outcome	Disease outcome	binomial
+HC1149	TTE seborrhoeic dermatitis	Disease_outcome	Disease outcome	binomial
+HC1152	TTE irritant contact dermatitis	Disease_outcome	Disease outcome	binomial
+HC1157	TTE pruritus	Disease_outcome	Disease outcome	binomial
+HC1158	TTE other dermatitis	Disease_outcome	Disease outcome	binomial
+HC1159	TTE psoriasis	Disease_outcome	Disease outcome	binomial
+HC1161	TTE pityriasis rosea	Disease_outcome	Disease outcome	binomial
+HC1162	TTE lichen planus	Disease_outcome	Disease outcome	binomial
+HC1167	TTE other erythematous conditions	Disease_outcome	Disease outcome	binomial
+HC1169	TTE sunburn	Disease_outcome	Disease outcome	binomial
+HC117	Abdominal hernia	Disease_outcome	Disease outcome	binomial
+HC1171	TTE skin changes due to chronic exposure to nonionising radiation	Disease_outcome	Disease outcome	binomial
+HC1176	TTE alopecia areata	Disease_outcome	Disease outcome	binomial
+HC1184	TTE follicular cysts of skin and subcutaneous tissue	Disease_outcome	Disease outcome	binomial
+HC1185	TTE other follicular disorders	Disease_outcome	Disease outcome	binomial
+HC1188	TTE vitiligo	Disease_outcome	Disease outcome	binomial
+HC1190	TTE seborrhoeic keratosis	Disease_outcome	Disease outcome	binomial
+HC1197	TTE decubitus ulcer	Disease_outcome	Disease outcome	binomial
+HC12	Testicular problems (not cancer)	Disease_outcome	Disease outcome	binomial
+HC1200	TTE granulomatous disorders of skin and subcutaneous tissue	Disease_outcome	Disease outcome	binomial
+HC1207	TTE pyogenic arthritis	Disease_outcome	Disease outcome	binomial
+HC1209	TTE reactive arthropathies	Disease_outcome	Disease outcome	binomial
+HC121	Peritonitis	Disease_outcome	Disease outcome	binomial
+HC1211	TTE seropositive rheumatoid arthritis	Disease_outcome	Disease outcome	binomial
+HC1212	TTE other rheumatoid arthritis	Disease_outcome	Disease outcome	binomial
+HC1213	TTE psoriatic and enteropathic arthropathies	Disease_outcome	Disease outcome	binomial
+HC1215	TTE gout	Disease_outcome	Disease outcome	binomial
+HC1218	TTE other arthritis	Disease_outcome	Disease outcome	binomial
+HC122	Disorder or pituitary gland	Disease_outcome	Disease outcome	binomial
+HC1220	TTE polyarthrosis	Disease_outcome	Disease outcome	binomial
+HC1221	TTE coxarthrosis [arthrosis of hip]	Disease_outcome	Disease outcome	binomial
+HC1222	TTE gonarthrosis [arthrosis of knee]	Disease_outcome	Disease outcome	binomial
+HC1228	TTE internal derangement of knee	Disease_outcome	Disease outcome	binomial
+HC123	Muscle/soft tissue problem	Disease_outcome	Disease outcome	binomial
+HC1235	TTE systemic sclerosis	Disease_outcome	Disease outcome	binomial
+HC1236	TTE other systemic involvement of connective tissue	Disease_outcome	Disease outcome	binomial
+HC124	Undescended testicle	Disease_outcome	Disease outcome	binomial
+HC1240	TTE spinal osteochondrosis	Disease_outcome	Disease outcome	binomial
+HC1242	TTE ankylosing spondylitis	Disease_outcome	Disease outcome	binomial
+HC1248	TTE other intervertebral disk disorders	Disease_outcome	Disease outcome	binomial
+HC125	Anaemia	Disease_outcome	Disease outcome	binomial
+HC1253	TTE other disorders of muscle	Disease_outcome	Disease outcome	binomial
+HC1257	TTE other disorders of synovium and tendon	Disease_outcome	Disease outcome	binomial
+HC1261	TTE fibroblastic disorders	Disease_outcome	Disease outcome	binomial
+HC1268	TTE osteoporosis without pathological fracture	Disease_outcome	Disease outcome	binomial
+HC1271	TTE disorders of continuity of bone	Disease_outcome	Disease outcome	binomial
+HC1278	TTE juvenile osteochondrosis of hip and pelvis	Disease_outcome	Disease outcome	binomial
+HC128	Peripheral nerve disorder	Disease_outcome	Disease outcome	binomial
+HC1282	TTE other acquired deformities of musculoskeletal system and connective tissue	Disease_outcome	Disease outcome	binomial
+HC1289	TTE nephrotic syndrome	Disease_outcome	Disease outcome	binomial
+HC129	Muscle or soft tissue injuries	Disease_outcome	Disease outcome	binomial
+HC1295	TTE chronic tubulo-interstitial nephritis	Disease_outcome	Disease outcome	binomial
+HC1297	TTE obstructive and reflux uropathy	Disease_outcome	Disease outcome	binomial
+HC13	Lichen sclerosis	Disease_outcome	Disease outcome	binomial
+HC130	Housemaid's knee (prepatellar bursitis)	Disease_outcome	Disease outcome	binomial
+HC1302	TTE chronic renal failure	Disease_outcome	Disease outcome	binomial
+HC1304	TTE calculus of kidney and ureter	Disease_outcome	Disease outcome	binomial
+HC1305	TTE calculus of lower urinary tract	Disease_outcome	Disease outcome	binomial
+HC1307	TTE unspecified renal colic	Disease_outcome	Disease outcome	binomial
+HC1313	TTE cystitis	Disease_outcome	Disease outcome	binomial
+HC132	Angina	Disease_outcome	Disease outcome	binomial
+HC1322	TTE hyperplasia of prostate	Disease_outcome	Disease outcome	binomial
+HC1324	TTE other disorders of prostate	Disease_outcome	Disease outcome	binomial
+HC1329	TTE redundant prepuce, phimosis and paraphimosis	Disease_outcome	Disease outcome	binomial
+HC133	Anal fissure	Disease_outcome	Disease outcome	binomial
+HC1334	TTE benign mammary dysplasia	Disease_outcome	Disease outcome	binomial
+HC134	Bone disorder	Disease_outcome	Disease outcome	binomial
+HC1341	TTE inflammatory disease of cervix uteri	Disease_outcome	Disease outcome	binomial
+HC1346	TTE vulvovaginal ulceration and inflammation in diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC135	Anxiety/panic attacks	Disease_outcome	Disease outcome	binomial
+HC1350	TTE noninflammatory disorders of ovary, fallopian tube and broad ligament	Disease_outcome	Disease outcome	binomial
+HC136	Connective tissue disorder	Disease_outcome	Disease outcome	binomial
+HC1389	TTE maternal care for other conditions predominantly related to pregnancy	Disease_outcome	Disease outcome	binomial
+HC1398	TTE maternal care for other known or suspected foetal problems	Disease_outcome	Disease outcome	binomial
+HC1406	TTE false labour	Disease_outcome	Disease outcome	binomial
+HC1407	TTE prolonged pregnancy	Disease_outcome	Disease outcome	binomial
+HC1408	TTE preterm delivery	Disease_outcome	Disease outcome	binomial
+HC1410	TTE abnormalities of forces of labour	Disease_outcome	Disease outcome	binomial
+HC1417	TTE labour and delivery complicated by umbilical cord complications	Disease_outcome	Disease outcome	binomial
+HC142	Synovitis	Disease_outcome	Disease outcome	binomial
+HC143	Retinal problem	Disease_outcome	Disease outcome	binomial
+HC144	Chickenpox	Disease_outcome	Disease outcome	binomial
+HC146	Pleural effusion	Disease_outcome	Disease outcome	binomial
+HC151	Multiple sclerosis	Disease_outcome	Disease outcome	binomial
+HC1521	TTE other congenital malformations of tongue, mouth and pharynx	Disease_outcome	Disease outcome	binomial
+HC1522	TTE congenital malformations of oesophagus	Disease_outcome	Disease outcome	binomial
+HC153	Joint pain	Disease_outcome	Disease outcome	binomial
+HC1532	TTE undescended testicle	Disease_outcome	Disease outcome	binomial
+HC1540	TTE other congenital malformations of urinary system	Disease_outcome	Disease outcome	binomial
+HC1541	TTE congenital deformities of hip	Disease_outcome	Disease outcome	binomial
+HC155	Joint disorder	Disease_outcome	Disease outcome	binomial
+HC1550	TTE other congenital malformations of limb(s)	Disease_outcome	Disease outcome	binomial
+HC1552	TTE congenital malformations of spine and bony thorax	Disease_outcome	Disease outcome	binomial
+HC1558	TTE other congenital malformations of skin	Disease_outcome	Disease outcome	binomial
+HC156	Nasal polyps	Disease_outcome	Disease outcome	binomial
+HC1563	TTE other specified congenital malformation syndromes affecting multiple systems	Disease_outcome	Disease outcome	binomial
+HC157	Jaundice (unknown cause)	Disease_outcome	Disease outcome	binomial
+HC1574	AD myocardial infarction	Disease_outcome	Disease outcome	binomial
+HC1575	AD STEMI	Disease_outcome	Disease outcome	binomial
+HC1576	AD NSTEMI	Disease_outcome	Disease outcome	binomial
+HC158	Spine arthritis/spondylitis	Disease_outcome	Disease outcome	binomial
+HC1581	AD asthma	Disease_outcome	Disease outcome	binomial
+HC1582	AD chronic obstructive pulmonary disease	Disease_outcome	Disease outcome	binomial
+HC1583	AD all cause dementia	Disease_outcome	Disease outcome	binomial
+HC1584	AD alzheimer's disease	Disease_outcome	Disease outcome	binomial
+HC1585	AD vascular dementia	Disease_outcome	Disease outcome	binomial
+HC16	Rectal or colon adenoma/polyps	Disease_outcome	Disease outcome	binomial
+HC161	Prostatitis	Disease_outcome	Disease outcome	binomial
+HC163	Scleroderma/systemic sclerosis	Disease_outcome	Disease outcome	binomial
+HC165	Type 2 diabetes	Disease_outcome	Disease outcome	binomial
+HC166	DVT	Disease_outcome	Disease outcome	binomial
+HC167	Raynaud's phenomenon/disease	Disease_outcome	Disease outcome	binomial
+HC169	Pernicious anaemia	Disease_outcome	Disease outcome	binomial
+HC17	Diabetic eye disease	Disease_outcome	Disease outcome	binomial
+HC170	Sarcoidosis	Disease_outcome	Disease outcome	binomial
+HC176	Prolapsed disc/slipped disc	Disease_outcome	Disease outcome	binomial
+HC177	Dupuytren's contracture	Disease_outcome	Disease outcome	binomial
+HC178	Stress	Disease_outcome	Disease outcome	binomial
+HC182	Osteopenia	Disease_outcome	Disease outcome	binomial
+HC184	Aortic aneurysm rupture	Disease_outcome	Disease outcome	binomial
+HC188	Gallstones	Disease_outcome	Disease outcome	binomial
+HC195	Ureteric obstruction/hydronephrosis	Disease_outcome	Disease outcome	binomial
+HC197	Clotting disorder/excessive bleeding	Disease_outcome	Disease outcome	binomial
+HC198	Hyperparathyroidism	Disease_outcome	Disease outcome	binomial
+HC201	Ulcerative colitis	Disease_outcome	Disease outcome	binomial
+HC203	PE +/- DVT	Disease_outcome	Disease outcome	binomial
+HC205	Endometriosis	Disease_outcome	Disease outcome	binomial
+HC207	Soft tissue inflammation	Disease_outcome	Disease outcome	binomial
+HC210	Non-infective hepatitis	Disease_outcome	Disease outcome	binomial
+HC212	Oesophageal disorder	Disease_outcome	Disease outcome	binomial
+HC215	Hypertension	Disease_outcome	Disease outcome	binomial
+HC218	Motor neurone disease	Disease_outcome	Disease outcome	binomial
+HC219	Hypothyroidism/myxoedema	Disease_outcome	Disease outcome	binomial
+HC22	Osteoporosis	Disease_outcome	Disease outcome	binomial
+HC221	Diabetes	Disease_outcome	Disease outcome	binomial
+HC222	Arterial embolism	Disease_outcome	Disease outcome	binomial
+HC223	Fracture pelvis	Disease_outcome	Disease outcome	binomial
+HC225	Cholecystitis	Disease_outcome	Disease outcome	binomial
+HC231	Heart valve problem/heart murmur	Disease_outcome	Disease outcome	binomial
+HC232	Abnormal smear (cervix)	Disease_outcome	Disease outcome	binomial
+HC233	Mania/bipolar disorder/manic depression	Disease_outcome	Disease outcome	binomial
+HC237	Back problem	Disease_outcome	Disease outcome	binomial
+HC243	Inguinal hernia	Disease_outcome	Disease outcome	binomial
+HC248	Allergy to house dust mite	Disease_outcome	Disease outcome	binomial
+HC25	Cataract	Disease_outcome	Disease outcome	binomial
+HC250	Acute infective polyneuritis/guillain-barre syndrome	Disease_outcome	Disease outcome	binomial
+HC254	Uterine polyps	Disease_outcome	Disease outcome	binomial
+HC255	Subarachnoid haemorrhage	Disease_outcome	Disease outcome	binomial
+HC256	Fracture toe	Disease_outcome	Disease outcome	binomial
+HC257	Femoral hernia	Disease_outcome	Disease outcome	binomial
+HC259	Aortic stenosis	Disease_outcome	Disease outcome	binomial
+HC26	Iritis	Disease_outcome	Disease outcome	binomial
+HC261	Eczema/dermatitis	Disease_outcome	Disease outcome	binomial
+HC262	Diverticular disease/diverticulitis	Disease_outcome	Disease outcome	binomial
+HC267	Tennis elbow / lateral epicondylitis	Disease_outcome	Disease outcome	binomial
+HC268	Varicose ulcer	Disease_outcome	Disease outcome	binomial
+HC269	High cholesterol	Disease_outcome	Disease outcome	binomial
+HC270	Encephalitis	Disease_outcome	Disease outcome	binomial
+HC271	Epicondylitis	Disease_outcome	Disease outcome	binomial
+HC273	Essential hypertension	Disease_outcome	Disease outcome	binomial
+HC274	Umbilical hernia	Disease_outcome	Disease outcome	binomial
+HC276	Glaucoma	Disease_outcome	Disease outcome	binomial
+HC277	Menopausal symptoms / menopause	Disease_outcome	Disease outcome	binomial
+HC28	Bronchiectasis	Disease_outcome	Disease outcome	binomial
+HC281	Atrial fibrillation	Disease_outcome	Disease outcome	binomial
+HC284	Fracture nose	Disease_outcome	Disease outcome	binomial
+HC285	Other joint disorder	Disease_outcome	Disease outcome	binomial
+HC286	Plantar fascitis	Disease_outcome	Disease outcome	binomial
+HC288	Alopecia / hair loss	Disease_outcome	Disease outcome	binomial
+HC290	Fracture upper arm / humerus / elbow	Disease_outcome	Disease outcome	binomial
+HC294	Renal/kidney failure	Disease_outcome	Disease outcome	binomial
+HC298	Chronic sinusitis	Disease_outcome	Disease outcome	binomial
+HC299	Heart failure/pulmonary odema	Disease_outcome	Disease outcome	binomial
+HC3	Ectopic pregnancy	Disease_outcome	Disease outcome	binomial
+HC302	Retinal detachment	Disease_outcome	Disease outcome	binomial
+HC303	Malabsorption/coeliac disease	Disease_outcome	Disease outcome	binomial
+HC307	Colitis/not crohns or ulcerative colitis	Disease_outcome	Disease outcome	binomial
+HC31	Uterine fibroids	Disease_outcome	Disease outcome	binomial
+HC310	Hiatus hernia	Disease_outcome	Disease outcome	binomial
+HC312	Wegners granulmatosis	Disease_outcome	Disease outcome	binomial
+HC314	Fracture hand	Disease_outcome	Disease outcome	binomial
+HC316	Dyspepsia / indigestion	Disease_outcome	Disease outcome	binomial
+HC321	Sjogren's syndrome/sicca syndrome	Disease_outcome	Disease outcome	binomial
+HC322	Crohns disease	Disease_outcome	Disease outcome	binomial
+HC323	Head injury	Disease_outcome	Disease outcome	binomial
+HC324	Obsessive compulsive disorder (ocd)	Disease_outcome	Disease outcome	binomial
+HC326	Heart attack (MI)	Disease_outcome	Disease outcome	binomial
+HC328	Gout	Disease_outcome	Disease outcome	binomial
+HC33	Spinal cord disorder	Disease_outcome	Disease outcome	binomial
+HC332	Post-traumatic stress disorder	Disease_outcome	Disease outcome	binomial
+HC337	Type 1 diabetes	Disease_outcome	Disease outcome	binomial
+HC338	Giant cell/temporal arteritis	Disease_outcome	Disease outcome	binomial
+HC340	Menorrhagia (unknown cause)	Disease_outcome	Disease outcome	binomial
+HC341	Fracture face / orbit / eye socket	Disease_outcome	Disease outcome	binomial
+HC346	Fibromyalgia	Disease_outcome	Disease outcome	binomial
+HC347	Blistering/desquamating skin disorder	Disease_outcome	Disease outcome	binomial
+HC348	Bell's palsy/facial nerve palsy	Disease_outcome	Disease outcome	binomial
+HC35	Sick sinus syndrome	Disease_outcome	Disease outcome	binomial
+HC352	Systemic lupus erythematosis/sle	Disease_outcome	Disease outcome	binomial
+HC355	Rectal prolapse	Disease_outcome	Disease outcome	binomial
+HC357	Duodenal ulcer	Disease_outcome	Disease outcome	binomial
+HC358	Optic neuritis	Disease_outcome	Disease outcome	binomial
+HC359	Adrenocortical insufficiency/addison's disease	Disease_outcome	Disease outcome	binomial
+HC36	Pneumonia	Disease_outcome	Disease outcome	binomial
+HC361	Anorexia/bulimia/other eating disorder	Disease_outcome	Disease outcome	binomial
+HC362	Respiratory infection	Disease_outcome	Disease outcome	binomial
+HC364	Sleep apnoea	Disease_outcome	Disease outcome	binomial
+HC366	Allergy/hypersensitivity/anaphylaxis	Disease_outcome	Disease outcome	binomial
+HC369	Gestational diabetes	Disease_outcome	Disease outcome	binomial
+HC371	Bronchitis	Disease_outcome	Disease outcome	binomial
+HC376	Osteoarthritis	Disease_outcome	Disease outcome	binomial
+HC38	Psoriasis	Disease_outcome	Disease outcome	binomial
+HC380	Fracture ulna	Disease_outcome	Disease outcome	binomial
+HC382	Asthma	Disease_outcome	Disease outcome	binomial
+HC384	Throat or larynx disorder	Disease_outcome	Disease outcome	binomial
+HC385	Peripheral vascular disease	Disease_outcome	Disease outcome	binomial
+HC388	Diabetic neuropathy/ulcers	Disease_outcome	Disease outcome	binomial
+HC39	Lichen planus	Disease_outcome	Disease outcome	binomial
+HC390	Trigemminal neuralgia	Disease_outcome	Disease outcome	binomial
+HC392	Pancreatitis	Disease_outcome	Disease outcome	binomial
+HC395	Bladder problem (not cancer)	Disease_outcome	Disease outcome	binomial
+HC396	Fracture shoulder / scapula	Disease_outcome	Disease outcome	binomial
+HC40	Nervous breakdown	Disease_outcome	Disease outcome	binomial
+HC400	Transient ischaemic attack (tia)	Disease_outcome	Disease outcome	binomial
+HC401	Varicose veins	Disease_outcome	Disease outcome	binomial
+HC402	Spinal stenosis	Disease_outcome	Disease outcome	binomial
+HC405	Vaginal prolapse/uterine prolapse	Disease_outcome	Disease outcome	binomial
+HC406	Fracture neck of femur / hip	Disease_outcome	Disease outcome	binomial
+HC408	Polio / poliomyelitis	Disease_outcome	Disease outcome	binomial
+HC410	Cervical intra-epithelial neoplasia (cin) / precancerous cells cervix	Disease_outcome	Disease outcome	binomial
+HC413	Genetic haematological disorder	Disease_outcome	Disease outcome	binomial
+HC417	Sclerosing cholangitis	Disease_outcome	Disease outcome	binomial
+HC418	Cervical spondylosis	Disease_outcome	Disease outcome	binomial
+HC419	Otosclerosis	Disease_outcome	Disease outcome	binomial
+HC420	Psychological/psychiatric problem	Disease_outcome	Disease outcome	binomial
+HC421	Other abdominal problem	Disease_outcome	Disease outcome	binomial
+HC422	Ankylosing spondylitis	Disease_outcome	Disease outcome	binomial
+HC423	Respiratory failure	Disease_outcome	Disease outcome	binomial
+HC427	Ovarian cyst or cysts	Disease_outcome	Disease outcome	binomial
+HC430	Rheumatoid arthritis	Disease_outcome	Disease outcome	binomial
+HC431	Emphysema	Disease_outcome	Disease outcome	binomial
+HC432	Mitral valve prolapse	Disease_outcome	Disease outcome	binomial
+HC433	Lymphoedema	Disease_outcome	Disease outcome	binomial
+HC434	Macular degeneration	Disease_outcome	Disease outcome	binomial
+HC436	Acne/acne vulgaris	Disease_outcome	Disease outcome	binomial
+HC44	Bile duct obstruction/ascending cholangitis	Disease_outcome	Disease outcome	binomial
+HC440	Atrial flutter	Disease_outcome	Disease outcome	binomial
+HC441	Hypopituitarism	Disease_outcome	Disease outcome	binomial
+HC442	Chronic obstructive airways disease/copd	Disease_outcome	Disease outcome	binomial
+HC445	Oesophageal varicies	Disease_outcome	Disease outcome	binomial
+HC449	TTE other salmonella infections	Disease_outcome	Disease outcome	binomial
+HC45	Mumps / epidemic parotitis	Disease_outcome	Disease outcome	binomial
+HC451	TTE other bacterial intestinal infections	Disease_outcome	Disease outcome	binomial
+HC452	TTE other bacterial foodborne intoxications	Disease_outcome	Disease outcome	binomial
+HC457	TTE respiratory tuberculosis, bacteriologically and histologically confirmed	Disease_outcome	Disease outcome	binomial
+HC481	TTE actinomycosis	Disease_outcome	Disease outcome	binomial
+HC49	Hayfever/allergic rhinitis	Disease_outcome	Disease outcome	binomial
+HC496	TTE anogenital herpesviral [herpes simplex] infections	Disease_outcome	Disease outcome	binomial
+HC497	TTE other predominantly sexually transmitted diseases, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC5	Myositis/myopathy	Disease_outcome	Disease outcome	binomial
+HC502	TTE other spirochaetal infections	Disease_outcome	Disease outcome	binomial
+HC517	TTE viral meningitis	Disease_outcome	Disease outcome	binomial
+HC528	TTE herpesviral [herpes simplex] infections	Disease_outcome	Disease outcome	binomial
+HC529	TTE varicella [chickenpox]	Disease_outcome	Disease outcome	binomial
+HC530	TTE zoster [herpes zoster]	Disease_outcome	Disease outcome	binomial
+HC534	TTE viral warts	Disease_outcome	Disease outcome	binomial
+HC537	TTE acute hepatitis a	Disease_outcome	Disease outcome	binomial
+HC540	TTE chronic viral hepatitis	Disease_outcome	Disease outcome	binomial
+HC547	TTE cytomegaloviral disease	Disease_outcome	Disease outcome	binomial
+HC548	TTE mumps	Disease_outcome	Disease outcome	binomial
+HC55	Hyperthyroidism/thyrotoxicosis	Disease_outcome	Disease outcome	binomial
+HC550	TTE viral conjunctivitis	Disease_outcome	Disease outcome	binomial
+HC553	TTE dermatophytosis	Disease_outcome	Disease outcome	binomial
+HC561	TTE aspergillosis	Disease_outcome	Disease outcome	binomial
+HC57	Fracture radius	Disease_outcome	Disease outcome	binomial
+HC571	TTE unspecified malaria	Disease_outcome	Disease outcome	binomial
+HC59	Thyroiditis	Disease_outcome	Disease outcome	binomial
+HC590	TTE enterobiasis	Disease_outcome	Disease outcome	binomial
+HC594	TTE pediculosis and phthiriasis	Disease_outcome	Disease outcome	binomial
+HC595	TTE scabies	Disease_outcome	Disease outcome	binomial
+HC6	Eye/eyelid problem	Disease_outcome	Disease outcome	binomial
+HC60	Oesophagitis/barretts oesophagus	Disease_outcome	Disease outcome	binomial
+HC604	TTE viral agents as the cause of diseases classified to other chapters	Disease_outcome	Disease outcome	binomial
+HC606	TTE other and unspecified infectious diseases	Disease_outcome	Disease outcome	binomial
+HC608	TTE vitamin b12 deficiency anaemia	Disease_outcome	Disease outcome	binomial
+HC61	Haemorrhoids / piles	Disease_outcome	Disease outcome	binomial
+HC615	TTE acquired haemolytic anaemia	Disease_outcome	Disease outcome	binomial
+HC617	TTE other aplastic anaemias	Disease_outcome	Disease outcome	binomial
+HC619	TTE anaemia in chronic diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC62	Tuberculosis (tb)	Disease_outcome	Disease outcome	binomial
+HC620	TTE other anaemias	Disease_outcome	Disease outcome	binomial
+HC624	TTE other coagulation defects	Disease_outcome	Disease outcome	binomial
+HC63	Pituitary adenoma/tumour	Disease_outcome	Disease outcome	binomial
+HC639	TTE sarcoidosis	Disease_outcome	Disease outcome	binomial
+HC643	TTE other hypothyroidism	Disease_outcome	Disease outcome	binomial
+HC644	TTE other non-toxic goitre	Disease_outcome	Disease outcome	binomial
+HC645	TTE thyrotoxicosis [hyperthyroidism]	Disease_outcome	Disease outcome	binomial
+HC646	TTE thyroiditis	Disease_outcome	Disease outcome	binomial
+HC648	TTE insulin-dependent diabetes mellitus	Disease_outcome	Disease outcome	binomial
+HC649	TTE non-insulin-dependent diabetes mellitus	Disease_outcome	Disease outcome	binomial
+HC652	TTE unspecified diabetes mellitus	Disease_outcome	Disease outcome	binomial
+HC654	TTE other disorders of pancreatic internal secretion	Disease_outcome	Disease outcome	binomial
+HC656	TTE hyperparathyroidism and other disorders of parathyroid gland	Disease_outcome	Disease outcome	binomial
+HC68	Disorder of adrenal gland	Disease_outcome	Disease outcome	binomial
+HC685	TTE deficiency of other nutrient elements	Disease_outcome	Disease outcome	binomial
+HC689	TTE obesity	Disease_outcome	Disease outcome	binomial
+HC700	TTE disorders of lipoprotein metabolism and other lipidaemias	Disease_outcome	Disease outcome	binomial
+HC702	TTE disorders of porphyrin and bilirubin metabolism	Disease_outcome	Disease outcome	binomial
+HC703	TTE disorders of mineral metabolism	Disease_outcome	Disease outcome	binomial
+HC707	TTE other disorders of fluid, electrolyte and acid-base balance	Disease_outcome	Disease outcome	binomial
+HC708	TTE other metabolic disorders	Disease_outcome	Disease outcome	binomial
+HC709	TTE postprocedural endocrine and metabolic disorders, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC710	TTE dementia in alzheimer's disease	Disease_outcome	Disease outcome	binomial
+HC711	TTE vascular dementia	Disease_outcome	Disease outcome	binomial
+HC712	TTE dementia in other diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC713	TTE unspecified dementia	Disease_outcome	Disease outcome	binomial
+HC715	TTE delirium, not induced by alcohol and other psychoactive substances	Disease_outcome	Disease outcome	binomial
+HC720	TTE mental and behavioural disorders due to use of opioids	Disease_outcome	Disease outcome	binomial
+HC734	TTE schizoaffective disorders	Disease_outcome	Disease outcome	binomial
+HC74	Female infertility	Disease_outcome	Disease outcome	binomial
+HC746	TTE obsessive-compulsive disorder	Disease_outcome	Disease outcome	binomial
+HC747	TTE reaction to severe stress, and adjustment disorders	Disease_outcome	Disease outcome	binomial
+HC78	Arthritis (nos)	Disease_outcome	Disease outcome	binomial
+HC784	TTE other behavioural and emotional disorders with onset usually occurring in childhood an	Disease_outcome	Disease outcome	binomial
+HC792	TTE intracranial and intraspinal abscess and granuloma	Disease_outcome	Disease outcome	binomial
+HC8	Gall bladder disease	Disease_outcome	Disease outcome	binomial
+HC807	TTE alzheimer's disease	Disease_outcome	Disease outcome	binomial
+HC808	TTE other degenerative diseases of nervous system, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC810	TTE multiple sclerosis	Disease_outcome	Disease outcome	binomial
+HC812	TTE other demyelinating diseases of central nervous system	Disease_outcome	Disease outcome	binomial
+HC815	TTE migraine	Disease_outcome	Disease outcome	binomial
+HC818	TTE vascular syndromes of brain in cerebrovascular diseases	Disease_outcome	Disease outcome	binomial
+HC824	TTE nerve root and plexus disorders	Disease_outcome	Disease outcome	binomial
+HC83	Fracture forearm / wrist	Disease_outcome	Disease outcome	binomial
+HC830	TTE hereditary and idiopathic neuropathy	Disease_outcome	Disease outcome	binomial
+HC831	TTE inflammatory polyneuropathy	Disease_outcome	Disease outcome	binomial
+HC84	Pulmonary fibrosis	Disease_outcome	Disease outcome	binomial
+HC840	TTE hemiplegia	Disease_outcome	Disease outcome	binomial
+HC842	TTE other paralytic syndromes	Disease_outcome	Disease outcome	binomial
+HC846	TTE other disorders of brain	Disease_outcome	Disease outcome	binomial
+HC85	Enlarged prostate	Disease_outcome	Disease outcome	binomial
+HC857	TTE disorders of lachrymal system	Disease_outcome	Disease outcome	binomial
+HC859	TTE disorders of lachrymal system and orbit in diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC86	Migraine	Disease_outcome	Disease outcome	binomial
+HC861	TTE other disorders of conjunctiva	Disease_outcome	Disease outcome	binomial
+HC865	TTE corneal scars and opacities	Disease_outcome	Disease outcome	binomial
+HC866	TTE other disorders of cornea	Disease_outcome	Disease outcome	binomial
+HC868	TTE iridocyclitis	Disease_outcome	Disease outcome	binomial
+HC87	Spina bifida	Disease_outcome	Disease outcome	binomial
+HC872	TTE other cataract	Disease_outcome	Disease outcome	binomial
+HC878	TTE retinal detachments and breaks	Disease_outcome	Disease outcome	binomial
+HC88	Heart/cardiac problem	Disease_outcome	Disease outcome	binomial
+HC880	TTE other retinal disorders	Disease_outcome	Disease outcome	binomial
+HC881	TTE retinal disorders in diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+HC882	TTE glaucoma	Disease_outcome	Disease outcome	binomial
+HC885	TTE disorders of globe	Disease_outcome	Disease outcome	binomial
+HC887	TTE optic neuritis	Disease_outcome	Disease outcome	binomial
+HC895	TTE blindness and low vision	Disease_outcome	Disease outcome	binomial
+HC9	Renal failure not requiring dialysis	Disease_outcome	Disease outcome	binomial
+HC900	TTE otitis externa	Disease_outcome	Disease outcome	binomial
+HC906	TTE eustachian salpingitis and obstruction	Disease_outcome	Disease outcome	binomial
+HC909	TTE cholesteatoma of middle ear	Disease_outcome	Disease outcome	binomial
+HC91	Psoriatic arthropathy	Disease_outcome	Disease outcome	binomial
+HC911	TTE other disorders of tympanic membrane	Disease_outcome	Disease outcome	binomial
+HC914	TTE otosclerosis	Disease_outcome	Disease outcome	binomial
+HC915	TTE disorders of vestibular function	Disease_outcome	Disease outcome	binomial
+HC918	TTE conductive and sensorineural hearing loss	Disease_outcome	Disease outcome	binomial
+HC92	Allergy to elastoplast	Disease_outcome	Disease outcome	binomial
+HC93	Dry eyes	Disease_outcome	Disease outcome	binomial
+HC932	TTE essential (primary hypertension)	Disease_outcome	Disease outcome	binomial
+HC937	TTE angina pectoris	Disease_outcome	Disease outcome	binomial
+HC938	TTE acute myocardial infarction	Disease_outcome	Disease outcome	binomial
+HC941	TTE other acute ischaemic heart diseases	Disease_outcome	Disease outcome	binomial
+HC942	TTE chronic ischaemic heart disease	Disease_outcome	Disease outcome	binomial
+HC943	TTE PE	Disease_outcome	Disease outcome	binomial
+HC95	Inflammatory bowel disease	Disease_outcome	Disease outcome	binomial
+HC951	TTE nonrheumatic aortic valve disorders	Disease_outcome	Disease outcome	binomial
+HC96	Polymyalgia rheumatica	Disease_outcome	Disease outcome	binomial
+HC964	TTE atrial fibrillation and flutter	Disease_outcome	Disease outcome	binomial
+HC965	TTE other cardiac arrhythmias	Disease_outcome	Disease outcome	binomial
+HC966	TTE heart failure	Disease_outcome	Disease outcome	binomial
+HC967	TTE complications and ill-defined descriptions of heart disease	Disease_outcome	Disease outcome	binomial
+HC972	TTE cerebral infarction	Disease_outcome	Disease outcome	binomial
+HC980	TTE aortic aneurysm and dissection	Disease_outcome	Disease outcome	binomial
+HC981	TTE other aneurysm	Disease_outcome	Disease outcome	binomial
+HC982	TTE other peripheral vascular diseases	Disease_outcome	Disease outcome	binomial
+HC983	TTE arterial embolism and thrombosis	Disease_outcome	Disease outcome	binomial
+HC984	TTE other disorders of arteries and arterioles	Disease_outcome	Disease outcome	binomial
+HC987	TTE phlebitis and thrombophlebitis	Disease_outcome	Disease outcome	binomial
+HC990	TTE varicose veins of lower extremities	Disease_outcome	Disease outcome	binomial
+HC992	TTE oesophageal varices	Disease_outcome	Disease outcome	binomial
+HC998	TTE postprocedural disorders of circulatory system, not elsewhere classified	Disease_outcome	Disease outcome	binomial
+HC999	TTE other disorders of circulatory system in diseases classified elsewhere	Disease_outcome	Disease outcome	binomial
+BIN_FC10001797	Father still alive	Family_history	Family history	binomial
+BIN_FC10001835	Mother still alive	Family_history	Family history	binomial
+FH1001	Lung cancer (FH)	Family_history	Family history	binomial
+FH1002	Breast cancer (FH)	Family_history	Family history	binomial
+FH1019	Bowel cancer (FH)	Family_history	Family history	binomial
+FH1044	Prostate cancer (FH)	Family_history	Family history	binomial
+FH1065	High BP (FH)	Family_history	Family history	binomial
+FH1113	Chronic bronchitis/emphysema (FH)	Family_history	Family history	binomial
+FH1220	Diabetes (FH)	Family_history	Family history	binomial
+FH1263	Alzheimer's/dementia (FH)	Family_history	Family history	binomial
+FH1286	Severe depression (FH)	Family_history	Family history	binomial
+BIN_FC10002492	Taking other prescription medications	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10002986	Started insulin within one year diagnosis of diabetes	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10005518	Leg pain on walking : effect of standing still (Pain usually continues for more than 10 minutes)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10005855	Which eye(s) affected by astigmatism (Right eye)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10005934	Which eye(s) affected by other serious eye condition (Right eye)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10006151	Fractured bone site(s) (Ankle)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10006152	Hayfever allergic rhinitis or eczema	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10006179	Zinc supplements	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1002247	Hearing difficulty	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1002306	Weight change compared with 1 year ago	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1006148	Eye problems/disorders Diabetic eye disease	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1006149	Mouth ulcers	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1006150	Vascular/heart problems diagnosed by doctor Heart attack	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1006152	DVT diagnosed by doctor	Health_and_medical_history	Health and medical history	binomial
+BIN_FC1006154	Aspirin	Health_and_medical_history	Health and medical history	binomial
+BIN_FC11006152	Blood clot or DVT diagnosed by doctor	Health_and_medical_history	Health and medical history	binomial
+BIN_FC11006179	Iron supplements	Health_and_medical_history	Health and medical history	binomial
+BIN_FC12006152	Blood clot in the leg (DVT) or lung	Health_and_medical_history	Health and medical history	binomial
+BIN_FC12006155	Vitamin B9 vs multivitamin	Health_and_medical_history	Health and medical history	binomial
+BIN_FC15006155	Vitamin C	Health_and_medical_history	Health and medical history	binomial
+BIN_FC18006155	Folic acid or folate (Vitamin B9)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC20005441	Which eye(s) are affected by cataract (Left eye)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC20005507	Leg pain on walking : action taken (Slow down)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC20005518	Leg pain on walking : effect of standing still (Pain usually disappears in less than 10 minutes)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC20005843	Which eye(s) affected by myopia (short sight) (Left eye)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC20006119	Which eye(s) affected by glaucoma (Left eye)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC2006148	Eye problems/disorders Glaucoma	Health_and_medical_history	Health and medical history	binomial
+BIN_FC2006150	Vascular/heart problems diagnosed by doctor Angina	Health_and_medical_history	Health and medical history	binomial
+BIN_FC2006154	Ibuprofen (e.g. Nurofen)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC2006155	Vitamin B vs no supplement	Health_and_medical_history	Health and medical history	binomial
+BIN_FC2006179	Glucosamine	Health_and_medical_history	Health and medical history	binomial
+BIN_FC30005507	Leg pain on walking : action taken (Continue at same pace)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC3002247	Hearing difficulty and Deafness	Health_and_medical_history	Health and medical history	binomial
+BIN_FC3006152	Blood clot diagnosed by doctor	Health_and_medical_history	Health and medical history	binomial
+BIN_FC3006155	Vitamin C vs no supplement	Health_and_medical_history	Health and medical history	binomial
+BIN_FC40006151	Fractured bone site(s) (Spine)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC4006148	Eye problems/disorders Cataract	Health_and_medical_history	Health and medical history	binomial
+BIN_FC4006149	Loose teeth	Health_and_medical_history	Health and medical history	binomial
+BIN_FC4006150	Vascular/heart problems diagnosed by doctor High BP	Health_and_medical_history	Health and medical history	binomial
+BIN_FC4006152	Asthma diagnosed by doctor	Health_and_medical_history	Health and medical history	binomial
+BIN_FC5006148	Eye problems/disorders Macular degeneration	Health_and_medical_history	Health and medical history	binomial
+BIN_FC5006149	Toothache	Health_and_medical_history	Health and medical history	binomial
+BIN_FC5006152	Hayfever rhinitis or eczema diagnosed by doctor	Health_and_medical_history	Health and medical history	binomial
+BIN_FC6006149	Dentures	Health_and_medical_history	Health and medical history	binomial
+BIN_FC6006152	Blood clot in the leg (DVT)	Health_and_medical_history	Health and medical history	binomial
+BIN_FC6006155	Vitamin B9 vs no supplement	Health_and_medical_history	Health and medical history	binomial
+BIN_FC7006152	Emphysema or chronic bronchitis	Health_and_medical_history	Health and medical history	binomial
+BIN_FC7006154	Aspirin use self-reported	Health_and_medical_history	Health and medical history	binomial
+BIN_FC7006155	Vitamin A vs multivitamin	Health_and_medical_history	Health and medical history	binomial
+BIN_FC8006152	Blood clot in the lung	Health_and_medical_history	Health and medical history	binomial
+BIN_FC8006154	Ibuprofen use self-reported	Health_and_medical_history	Health and medical history	binomial
+BIN_FC8006179	Glucosamine supplements	Health_and_medical_history	Health and medical history	binomial
+BIN_FC9006154	Paracetamol use self-reported	Health_and_medical_history	Health and medical history	binomial
+BIN_FC9006179	Calcium supplements	Health_and_medical_history	Health and medical history	binomial
+BIN3606	Chest pain or discomfort walking normally	Health_and_medical_history	Health and medical history	binomial
+BIN3616	Chest pain due to walking ceases when standing still	Health_and_medical_history	Health and medical history	binomial
+BIN3751	Chest pain or discomfort when walking uphill or hurrying	Health_and_medical_history	Health and medical history	binomial
+BIN5452	Leg pain when standing still or sitting	Health_and_medical_history	Health and medical history	binomial
+BIN5474	Leg pain when walking uphill or hurrying	Health_and_medical_history	Health and medical history	binomial
+BIN5485	Leg pain when walking normally	Health_and_medical_history	Health and medical history	binomial
+BIN_FC10001538	Major dietary changes in the last 5 years becuase of illness	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC10001628	Alcohol intake versus 10 years previously (More nowadays)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC10001727	Ease of skin tanning (Get very tanned)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC10001757	Facial ageing (Younger than you are)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC10002267	Use of sun/uv protection (Never/rarely)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC10002644	Light smokers, at least 100 smokes in lifetime	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC1001747	Hair colour (natural, before greying) blonde	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC10020116	Never Smoker	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC1006144	Never eat eggs	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001249	Past tobacco smoking (Smoked occasionally)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001428	Spread type: Butter/spreadable butter	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001448	Bread type: Brown	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001468	Cereal type: Biscuit cereal (e.g. Weetabix)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001508	Coffee type: Instant coffee	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001727	Ease of skin tanning (Get moderately tanned)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20001757	Facial ageing (Older than you are)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20002267	Use of sun/uv protection (Sometimes)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20006157	Why stopped smoking doctor advice	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC2001747	Hair colour (natural, before greying) red	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC20020116	Previous Smoker	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30001418	Milk type: Skimmed	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30001508	Coffee type: Ground coffee (include espresso, filter etc)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30001727	Ease of skin tanning (Get mildly or occasionally tanned)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30001757	Facial ageing (About your age)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30002267	Use of sun/uv protection (Most of the time)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30002654	Non-butter spread type: Olive oil based spread (eg: Bertolli)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30003446	Type of tobacco currently smoked (cigars or pipes)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30003486	Ever tried to stop smoking succeeded vs no	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC30006164	Types of physical activity in last 4 weeks (other exercises)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC3001747	Hair colour (natural, before greying) light brown	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC3006144	Never eat wheat	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40001249	Past tobacco smoking (Smoked at least once)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40001448	Bread type: Other type of bread	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40001468	Cereal type: Muesli	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40001508	Coffee type: Other type of coffee	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40001727	Ease of skin tanning (Never tan, only burn)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40002267	Use of sun/uv protection (Always)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC40002654	Non-butter spread type: Polyunsaturated/sunflower oil based spread (eg: Flora)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC4001747	Hair colour (natural, before greying) dark brown	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC4006144	Never eat sugar	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC50001468	Cereal type: Other (e.g. Cornflakes, Frosties)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC50002267	Use of sun/uv protection (Do not go out in sunshine)	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC5001747	Hair colour (natural, before greying) black	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC6001747	Hair colour (natural, before greying) other	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN_FC7001747	Hair colour (natural, before greying) brown	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN1210	Snoring	Lifestyle_and_environment	Lifestyle and environment	binomial
+BIN23051	HSV-2 seropositivity for Herpes Simplex virus-2	Blood_assays	Others	binomial
+BIN23054	CMV seropositivity for Human Cytomegalovirus	Blood_assays	Others	binomial
+BIN23055	HHV-6 overall seropositivity for Human Herpesvirus-6	Blood_assays	Others	binomial
+BIN23056	HHV-6A seropositivity for Human Herpesvirus-6	Blood_assays	Others	binomial
+BIN23059	KSHV seropositivity for Kaposi's Sarcoma-Associated Herpesvirus	Blood_assays	Others	binomial
+BIN23063	HTLV-1 seropositivity for Human T-Lymphotropic Virus 1	Blood_assays	Others	binomial
+BIN23065	BKV seropositivity for Human Polyomavirus BKV	Blood_assays	Others	binomial
+BIN23066	JCV seropositivity for Human Polyomavirus JCV	Blood_assays	Others	binomial
+BIN23067	MCV seropositivity for Merkel Cell Polyomavirus	Blood_assays	Others	binomial
+BIN23068	HPV 16 Definition I seropositivity for Human Papillomavirus type-16	Blood_assays	Others	binomial
+BIN23069	HPV 18 seropositivity for Human Papillomavirus type-18	Blood_assays	Others	binomial
+BIN23070	C. trachomatis Definition I seropositivity for Chlamydia trachomatis	Blood_assays	Others	binomial
+BIN23073	H. pylori Definition I seropositivity for Helicobacter pylori	Blood_assays	Others	binomial
+BIN23075	HPV 16 Definition II seropositivity for Human Papillomavirus type-16	Blood_assays	Others	binomial
+BIN4093	Fractured heel (L)	Bone-densitometry_of_heel	Others	binomial
+BIN12139	Believed safe to perform brain MRI scan	Brain_MRI	Others	binomial
+BIN12188	Brain MRI measurement completed	Brain_MRI	Others	binomial
+BIN100240	Coffee consumed	Diet_by_24-hour_recall	Others	binomial
+BIN100580	Alcohol consumed	Diet_by_24-hour_recall	Others	binomial
+BIN102080	Yogurt/ice-cream consumers	Diet_by_24-hour_recall	Others	binomial
+BIN102800	Cheese consumers	Diet_by_24-hour_recall	Others	binomial
+BIN102930	Egg consumers	Diet_by_24-hour_recall	Others	binomial
+BIN104400	Fruit consumers	Diet_by_24-hour_recall	Others	binomial
+BIN21027	Abdominal discomfort/pain for 6 months or longer	Digestive_health	Others	binomial
+BIN21035	Currently (in last 3 months) suffer from abdominal pain	Digestive_health	Others	binomial
+BIN21038	Currently suffer from abdominal distension	Digestive_health	Others	binomial
+BIN21068	Diagnosed with coeliac disease or gluten sensitivity	Digestive_health	Others	binomial
+BIN21071	Infectious illness diagnosis status when IBS symptoms first began	Digestive_health	Others	binomial
+BIN21073	Fever when IBS symptoms first began	Digestive_health	Others	binomial
+BIN21075	Bloody diarrhoea when IBS symptoms first began	Digestive_health	Others	binomial
+BIN_FC10001707	Handedness (chirality/laterality) (Right-handed)	Early_life_factors	Others	binomial
+BIN_FC1005164	3mm regularity index for irregular astigmatism level (R)	Eye_measures	Others	binomial
+BIN_FC20006074	Glasses worn elsewhere (right eye) besides during visual acuity test	Eye_measures	Others	binomial
+BIN5181	Ever had eye surgery	Eye_measures	Others	binomial
+BIN5324	Ever had cataract surgery	Eye_measures	Others	binomial
+BIN5326	Ever had surgery for glaucoma or high eye pressure	Eye_measures	Others	binomial
+BIN5328	Ever had corneal graft surgery	Eye_measures	Others	binomial
+BIN41215	Detention categories	Hospital_inpatient	Others	binomial
+BIN_FC100020544	Bulimia nervosa diagnosed by  a professional	Mental_health	Others	binomial
+BIN_FC10020487	Never felt hated by family member as a child	Mental_health	Others	binomial
+BIN_FC10020488	Never Physically abused by family as a child	Mental_health	Others	binomial
+BIN_FC10020490	Never Sexually molested as a child	Mental_health	Others	binomial
+BIN_FC10020523	Never Physical violence by partner or ex-partner as an adult	Mental_health	Others	binomial
+BIN_FC10020536	Weight changed during worst episode of depression	Mental_health	Others	binomial
+BIN_FC10020552	Other non-behavioral addiction	Mental_health	Others	binomial
+BIN_FC20020487	Rarely Felt hated by family member as a child	Mental_health	Others	binomial
+BIN_FC20020492	Longest period of mania or irritability at least a day but less than a week	Mental_health	Others	binomial
+BIN_FC20020522	Rarely Been in a confiding relationship as an adult	Mental_health	Others	binomial
+BIN_FC20020526	Been in a serious accident believed to be life-threatening not within the last 12 months	Mental_health	Others	binomial
+BIN_FC20020537	Sometimes has difficulty controlling worry during worst period of anxiety	Mental_health	Others	binomial
+BIN_FC20020548	Manifestations of mania or irritability More restless vs any	Mental_health	Others	binomial
+BIN_FC30020487	Sometimes Felt hated by family member as a child	Mental_health	Others	binomial
+BIN_FC30020492	Longest period of mania or irritability a week or more	Mental_health	Others	binomial
+BIN_FC30020523	Sometimes Physical violence by partner or ex-partner as an adult	Mental_health	Others	binomial
+BIN_FC30020537	Often has difficulty controlling worry during worst period of anxiety	Mental_health	Others	binomial
+BIN_FC30020539	Often has inability to stop worry during worst period of anxiety	Mental_health	Others	binomial
+BIN_FC40020489	Often felt loved as a child	Mental_health	Others	binomial
+BIN_FC40020525	Often Able to pay rent/mortgage as an adult	Mental_health	Others	binomial
+BIN_FC40020537	Never has difficulty controlling worry during worst period of anxiety	Mental_health	Others	binomial
+BIN_FC40020539	Never has inability to stop worry during worst period of anxiety	Mental_health	Others	binomial
+BIN_FC40020544	Other personality disorder diagnosed by  a professional	Mental_health	Others	binomial
+BIN_FC50020488	Very Often Physically abused by family as a child	Mental_health	Others	binomial
+BIN_FC50020544	Phobia diagnosed by  a professional	Mental_health	Others	binomial
+BIN_FC80020548	Manifestations of mania or irritability More active vs any	Mental_health	Others	binomial
+BIN1020483	Ever attempted suicide missing is control	Mental_health	Others	binomial
+BIN20406	Ever addicted to alcohol	Mental_health	Others	binomial
+BIN20417	Tense, sore, or aching muscles during worst period of anxiety	Mental_health	Others	binomial
+BIN20419	Difficulty concentrating during worst period of anxiety	Mental_health	Others	binomial
+BIN20428	Professional informed about anxiety	Mental_health	Others	binomial
+BIN20431	Ever addicted to a behaviour or miscellanous	Mental_health	Others	binomial
+BIN20437	Thoughts of death during worst depression	Mental_health	Others	binomial
+BIN20496	Mania needed treatment or caused problems with work, relationships, finances, the law, or other aspects of life	Mental_health	Others	binomial
+BIN20500	Ever suffered mental distress preventing usual activities	Mental_health	Others	binomial
+BIN20532	Did your sleep change?	Mental_health	Others	binomial
+BIN20534	Sleeping too much	Mental_health	Others	binomial
+BIN20538	Worried most days during period of worst anxiety	Mental_health	Others	binomial
+BIN20540	Multiple worries during worst period of anxiety	Mental_health	Others	binomial
+BIN10030500	Microalbumin > 40 mg/L	Others	Others	binomial
+BIN10030800	Oestradiol > 212 pmol/L	Others	Others	binomial
+BIN10030820	Rheumatoid factor > 16 IU/mL	Others	Others	binomial
+BIN30030510	UACR > 30 mg/g	Others	Others	binomial
+BIN_FC10022506	Tobacco smoking current vs non	Work_environment	Others	binomial
+BIN_FC20022506	Tobacco smoking current vs past	Work_environment	Others	binomial
+BIN_FC30022506	Tobacco smoking ever vs no	Work_environment	Others	binomial
+BIN22126	Doctor diagnosed hayfever or allergic rhinitis	Work_environment	Others	binomial
+BIN22127	Doctor diagnosed asthma	Work_environment	Others	binomial
+BIN22133	Doctor diagnosed sarcoidosis	Work_environment	Others	binomial
+BIN22502	Cough on most days	Work_environment	Others	binomial
+BIN22504	Bring up phlegm/sputum/mucus on most days	Work_environment	Others	binomial
+BIN_FC10006160	Leisure/social activities (attend any of the followings in once a week or more often: sports club, gym, pub, social club, religious group, adult edication class, or other group activity)	Psychosocial_factors	Psychosocial factors	binomial
+BIN_FC20006156	Manic/hyper symptoms (I was more talkative than usual)	Psychosocial_factors	Psychosocial factors	binomial
+BIN_FC20006160	Leisure/social activities (attend sports club or gym in once a week or more often)	Psychosocial_factors	Psychosocial factors	binomial
+BIN_FC30006156	Manic/hyper symptoms (I needed less sleep than usual)	Psychosocial_factors	Psychosocial factors	binomial
+BIN_FC50006160	Leisure/social activities (attend adult edication class in once a week or more often)	Psychosocial_factors	Psychosocial factors	binomial
+BIN_FC50020126	Bipolar and major depression status probable depression (moderate)	Psychosocial_factors	Psychosocial factors	binomial
+BIN1950	Sensitivity / hurt feelings	Psychosocial_factors	Psychosocial factors	binomial
+BIN1980	Worrier / anxious feelings	Psychosocial_factors	Psychosocial factors	binomial
+BIN2000	Worry too long after embarrassment	Psychosocial_factors	Psychosocial factors	binomial
+BIN2010	Suffer from 'nerves'	Psychosocial_factors	Psychosocial factors	binomial
+BIN2020	Loneliness, isolation	Psychosocial_factors	Psychosocial factors	binomial
+BIN2040	Risk taking	Psychosocial_factors	Psychosocial factors	binomial
+INI12144	Height	Anthropometry	Anthropometry	gaussian
+INI20015	Sitting height	Anthropometry	Anthropometry	gaussian
+INI21001	BMI	Anthropometry	Anthropometry	gaussian
+INI21002	Weight	Anthropometry	Anthropometry	gaussian
+INI23099	Body fat %	Anthropometry	Anthropometry	gaussian
+INI23100	Whole body fat mass	Anthropometry	Anthropometry	gaussian
+INI23101	Whole body fat-free mass	Anthropometry	Anthropometry	gaussian
+INI23102	Whole body water mass	Anthropometry	Anthropometry	gaussian
+INI23105	Basal metabolic rate	Anthropometry	Anthropometry	gaussian
+INI23106	Impedance of whole body	Anthropometry	Anthropometry	gaussian
+INI23107	Impedance of leg (R)	Anthropometry	Anthropometry	gaussian
+INI23108	Impedance of leg (L)	Anthropometry	Anthropometry	gaussian
+INI23109	Impedance of arm (R)	Anthropometry	Anthropometry	gaussian
+INI23110	Impedance of arm (L)	Anthropometry	Anthropometry	gaussian
+INI23111	Leg fat % (R)	Anthropometry	Anthropometry	gaussian
+INI23112	Leg fat mass (R)	Anthropometry	Anthropometry	gaussian
+INI23113	Leg fat-free mass (R)	Anthropometry	Anthropometry	gaussian
+INI23114	Leg pred. mass (R)	Anthropometry	Anthropometry	gaussian
+INI23115	Leg fat % (L)	Anthropometry	Anthropometry	gaussian
+INI23117	Leg fat-free mass (L)	Anthropometry	Anthropometry	gaussian
+INI23118	Leg pred. mass (L)	Anthropometry	Anthropometry	gaussian
+INI23119	Arm fat % (R)	Anthropometry	Anthropometry	gaussian
+INI23120	Arm fat mass (R)	Anthropometry	Anthropometry	gaussian
+INI23121	Arm fat-free mass (R)	Anthropometry	Anthropometry	gaussian
+INI23122	Arm pred. mass (R)	Anthropometry	Anthropometry	gaussian
+INI23123	Arm fat % (L)	Anthropometry	Anthropometry	gaussian
+INI23124	Arm fat mass (L)	Anthropometry	Anthropometry	gaussian
+INI23125	Arm fat-free mass (L)	Anthropometry	Anthropometry	gaussian
+INI23126	Arm pred. mass (L)	Anthropometry	Anthropometry	gaussian
+INI23127	Trunk fat %	Anthropometry	Anthropometry	gaussian
+INI23128	Trunk fat mass	Anthropometry	Anthropometry	gaussian
+INI23129	Trunk fat-free mass	Anthropometry	Anthropometry	gaussian
+INI23130	Trunk pred. mass	Anthropometry	Anthropometry	gaussian
+INI48	Waist circumference	Anthropometry	Anthropometry	gaussian
+INI49	Hip circumference	Anthropometry	Anthropometry	gaussian
+INI50	Standing height	Anthropometry	Anthropometry	gaussian
+INI30030650	AST to ALT ratio	Biomarkers	Biomarkers	gaussian
+INI30030700	eGFR	Biomarkers	Biomarkers	gaussian
+INI30030860	Non-albumin protein	Biomarkers	Biomarkers	gaussian
+INI30500	Microalbumin in urine	Biomarkers	Biomarkers	gaussian
+INI30510	Creatinine (enzymatic) in urine	Biomarkers	Biomarkers	gaussian
+INI30520	Potassium in urine	Biomarkers	Biomarkers	gaussian
+INI30530	Sodium in urine	Biomarkers	Biomarkers	gaussian
+INI30600	Albumin	Biomarkers	Biomarkers	gaussian
+INI30610	Alkaline phosphatase	Biomarkers	Biomarkers	gaussian
+INI30620	Alanine aminotransferase	Biomarkers	Biomarkers	gaussian
+INI30630	Apolipoprotein A	Biomarkers	Biomarkers	gaussian
+INI30640	Apolipoprotein B	Biomarkers	Biomarkers	gaussian
+INI30650	Aspartate aminotransferase	Biomarkers	Biomarkers	gaussian
+INI30660	Direct bilirubin	Biomarkers	Biomarkers	gaussian
+INI30670	Urea	Biomarkers	Biomarkers	gaussian
+INI30680	Calcium	Biomarkers	Biomarkers	gaussian
+INI30690	Cholesterol	Biomarkers	Biomarkers	gaussian
+INI30700	Creatinine	Biomarkers	Biomarkers	gaussian
+INI30710	C-reactive protein	Biomarkers	Biomarkers	gaussian
+INI30720	Cystatin C	Biomarkers	Biomarkers	gaussian
+INI30730	Gamma glutamyltransferase	Biomarkers	Biomarkers	gaussian
+INI30740	Glucose	Biomarkers	Biomarkers	gaussian
+INI30750	Glycated haemoglobin (HbA1c)	Biomarkers	Biomarkers	gaussian
+INI30760	HDL cholesterol	Biomarkers	Biomarkers	gaussian
+INI30770	IGF-1	Biomarkers	Biomarkers	gaussian
+INI30780	LDL cholesterol	Biomarkers	Biomarkers	gaussian
+INI30790	Lipoprotein A	Biomarkers	Biomarkers	gaussian
+INI30810	Phosphate	Biomarkers	Biomarkers	gaussian
+INI30830	SHBG	Biomarkers	Biomarkers	gaussian
+INI30840	Total bilirubin	Biomarkers	Biomarkers	gaussian
+INI30850	Testosterone	Biomarkers	Biomarkers	gaussian
+INI30860	Total protein	Biomarkers	Biomarkers	gaussian
+INI30870	Triglycerides	Biomarkers	Biomarkers	gaussian
+INI30880	Urate	Biomarkers	Biomarkers	gaussian
+INI30890	Vitamin D	Biomarkers	Biomarkers	gaussian
+INI23002	GE / gI antigen for Varicella Zoster Virus	Blood_assays	Blood assays	gaussian
+INI23003	VCA p18 antigen for Epstein-Barr Virus	Blood_assays	Blood assays	gaussian
+INI23004	EBNA-1 antigen for Epstein-Barr Virus	Blood_assays	Blood assays	gaussian
+INI23005	ZEBRA antigen for Epstein-Barr Virus	Blood_assays	Blood assays	gaussian
+INI23006	EA-D antigen for Epstein-Barr Virus	Blood_assays	Blood assays	gaussian
+INI23008	Pp 52 antigen for Human Cytomegalovirus	Blood_assays	Blood assays	gaussian
+INI23009	Pp 28 antigen for Human Cytomegalovirus	Blood_assays	Blood assays	gaussian
+INI23010	IE1A antigen for Human Herpesvirus-6	Blood_assays	Blood assays	gaussian
+INI23011	IE1B antigen for Human Herpesvirus-6	Blood_assays	Blood assays	gaussian
+INI23013	U14 antigen for Human Herpesvirus-7	Blood_assays	Blood assays	gaussian
+INI23019	NS3 antigen for Hepatitis C Virus	Blood_assays	Blood assays	gaussian
+INI23020	P22 antigen for Toxoplasma gondii	Blood_assays	Blood assays	gaussian
+INI23022	HTLV-1 gag antigen for Human T-Lymphotropic Virus 1	Blood_assays	Blood assays	gaussian
+INI23023	HTLV-1 env antigen for Human T-Lymphotropic Virus 1	Blood_assays	Blood assays	gaussian
+INI23025	HIV-1 env antigen for Human Immunodeficiency Virus	Blood_assays	Blood assays	gaussian
+INI23026	BK VP1 antigen for Human Polyomavirus BKV	Blood_assays	Blood assays	gaussian
+INI23027	JC VP1 antigen for Human Polyomavirus JCV	Blood_assays	Blood assays	gaussian
+INI23028	MC VP1 antigen for Merkel Cell Polyomavirus	Blood_assays	Blood assays	gaussian
+INI23030	E6 antigen for Human Papillomavirus type-16	Blood_assays	Blood assays	gaussian
+INI23032	L1 antigen for Human Papillomavirus type-18	Blood_assays	Blood assays	gaussian
+INI23034	Momp A antigen for Chlamydia trachomatis	Blood_assays	Blood assays	gaussian
+INI23035	Tarp-D F1 antigen for Chlamydia trachomatis	Blood_assays	Blood assays	gaussian
+INI23036	Tarp-D F2 antigen for Chlamydia trachomatis	Blood_assays	Blood assays	gaussian
+INI23037	PorB antigen for Chlamydia trachomatis	Blood_assays	Blood assays	gaussian
+INI23040	VacA antigen for Helicobacter pylori	Blood_assays	Blood assays	gaussian
+INI23041	OMP antigen for Helicobacter pylori	Blood_assays	Blood assays	gaussian
+INI30000	White blood cell count	Blood_assays	Blood assays	gaussian
+INI30010	Red blood cell count	Blood_assays	Blood assays	gaussian
+INI30020	Haemoglobin concentration	Blood_assays	Blood assays	gaussian
+INI30030	Haematocrit %	Blood_assays	Blood assays	gaussian
+INI30040	Mean corpuscular volume	Blood_assays	Blood assays	gaussian
+INI30050	Mean corpuscular haemoglobin	Blood_assays	Blood assays	gaussian
+INI30060	Mean corpuscular haemoglobin concentration	Blood_assays	Blood assays	gaussian
+INI30070	Red blood cell distribution width	Blood_assays	Blood assays	gaussian
+INI30080	Platelet count	Blood_assays	Blood assays	gaussian
+INI30090	Platelet crit	Blood_assays	Blood assays	gaussian
+INI30100	Mean platelet volume	Blood_assays	Blood assays	gaussian
+INI30110	Platelet distribution width	Blood_assays	Blood assays	gaussian
+INI30120	Lymphocyte count	Blood_assays	Blood assays	gaussian
+INI30130	Monocyte count	Blood_assays	Blood assays	gaussian
+INI30140	Neutrophill count	Blood_assays	Blood assays	gaussian
+INI30150	Eosinophill count	Blood_assays	Blood assays	gaussian
+INI30160	Basophill count	Blood_assays	Blood assays	gaussian
+INI30180	Lymphocyte %	Blood_assays	Blood assays	gaussian
+INI30190	Monocyte %	Blood_assays	Blood assays	gaussian
+INI30200	Neutrophill %	Blood_assays	Blood assays	gaussian
+INI30210	Eosinophill %	Blood_assays	Blood assays	gaussian
+INI30220	Basophill %	Blood_assays	Blood assays	gaussian
+INI30240	Reticulocyte %	Blood_assays	Blood assays	gaussian
+INI30250	Reticulocyte count	Blood_assays	Blood assays	gaussian
+INI30260	Mean reticulocyte volume	Blood_assays	Blood assays	gaussian
+INI30280	Immature reticulocyte fraction	Blood_assays	Blood assays	gaussian
+INI30290	High light scatter reticulocyte %	Blood_assays	Blood assays	gaussian
+INI30300	High light scatter reticulocyte count	Blood_assays	Blood assays	gaussian
+INI30820	Rheumatoid factor	Blood_assays	Blood assays	gaussian
+INI3143	Ankle spacing width	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI3144	Heel Broadband ultrasound attenuation, direct entry	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI3146	Speed of sound through heel	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI3147	Heel quantitative ultrasound index (QUI), direct entry	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI3148	Heel bone mineral density (BMD)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4100	Ankle spacing width (L)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4101	Heel broadband ultrasound attenuation (L)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4103	Speed of sound through heel (L)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4104	Heel quantitative ultrasound index (QUI), direct entry (L)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4105	Heel bone mineral density (BMD) (L)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4106	Heel bone mineral density (BMD) T-score, automated (L)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4119	Ankle spacing width (R)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4120	Heel broadband ultrasound attenuation (R)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4122	Speed of sound through heel (R)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4123	Heel quantitative ultrasound index (QUI), direct entry (R)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4124	Heel bone mineral density (BMD) (R)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI4125	Heel bone mineral density (BMD) T-score, automated (R)	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI78	Heel bone mineral density (BMD) T-score, automated	Bone-densitometry_of_heel	Bone-densitometry of heel	gaussian
+INI1050	Time spend outdoors in summer	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1060	Outdoor time, winter	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1160	Sleep duration	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1289	Cooked vegetable intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1299	Salad / raw vegetable intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1309	Fresh fruit intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1319	Dried fruit intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1438	Bread intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1458	Cereal intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1488	Tea intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1498	Coffee intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1528	Water intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1548	Variation in diet	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1578	Ave. weekly champagne plus white wine intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1588	Ave. weekly beer plus cider intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1598	Ave. weekly spirits intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1608	Ave. weekly fortified wine intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI1737	Childhood sunburn	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2139	Age first had sexual intercourse	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2149	Lifetime # of sexual partners	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2237	Freq. of playing computer games	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2624	Freq. of heavy DIY in last 4 weeks	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2867	Age started smoking in former smokers	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2887	# of cigarettes previously smoked daily	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2897	Age stopped smoking	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI2926	# of unsuccessful stop-smoking attempts	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI3436	Age started smoking in current smokers	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI3456	# of cigarettes currently smoked daily (current cigarette smokers)	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI3637	Freq. of other exercises in last 4 weeks	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI3680	Age when last ate meat	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI4440	Ave. monthly spirits intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI4451	Ave. monthly fortified wine intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI874	Duration of walks	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI924	Usual walking pace	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI971	Freq. of walking for pleasure in last 4 weeks	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI981	Duration walking for pleasure	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI991	Freq. of strenuous sports in last 4 weeks	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC10001478	Salt added to food	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC10003466	Time from waking to first cigarette	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC10003476	Difficulty not smoking for 1 day	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC10003506	Smoking compared to 10 years previous	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001170	Getting up in morning	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001180	Morning/evening person (chronotype)	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001190	Nap during day	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001220	Daytime dozing / sleeping (narcolepsy)	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001329	Oily fish intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001349	Processed meat intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001359	Poultry intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001369	Beef intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001408	Cheese intake	Lifestyle_and_environment	Lifestyle and environment	gaussian
+QT_FC1001558	Alcohol intake frequency.	Lifestyle_and_environment	Lifestyle and environment	gaussian
+INI22405	Anterior thigh lean muscle volume (L)	Abdominal_MRI	Others	gaussian
+INI22407	Visceral adipose tissue volume (VAT)	Abdominal_MRI	Others	gaussian
+INI4194	Pulse rate	Arterial_stiffness	Others	gaussian
+INI4198	Position of the pulse wave peak	Arterial_stiffness	Others	gaussian
+INI4199	Position of pulse wave notch	Arterial_stiffness	Others	gaussian
+INI102	Pulse rate (AR)	Blood_pressure	Others	gaussian
+INI4079	Diastolic BP (AR)	Blood_pressure	Others	gaussian
+INI4080	Systolic BP (AR)	Blood_pressure	Others	gaussian
+INI95	Pulse rate (during blood-pressure measurement)	Blood_pressure	Others	gaussian
+INI40008	Age at cancer diagnosis	Cancer_register	Others	gaussian
+INI22670	Minimum carotid IMT (intima-medial thickness) at 120 degrees	Carotid_ultrasound	Others	gaussian
+INI22671	Mean carotid IMT (intima-medial thickness) at 120 degrees	Carotid_ultrasound	Others	gaussian
+INI22672	Maximum carotid IMT (intima-medial thickness) at 120 degrees	Carotid_ultrasound	Others	gaussian
+INI22673	Minimum carotid IMT (intima-medial thickness) at 150 degrees	Carotid_ultrasound	Others	gaussian
+INI22674	Mean carotid IMT (intima-medial thickness) at 150 degrees	Carotid_ultrasound	Others	gaussian
+INI20016	Fluid intelligence score	Cognitive_function	Others	gaussian
+INI40007	Age at death	Death_register	Others	gaussian
+INI100010	Portion size	Diet_by_24-hour_recall	Others	gaussian
+INI104900	Time spent doing vigorous physical activity	Diet_by_24-hour_recall	Others	gaussian
+INI104920	Time spent doing light physical activity	Diet_by_24-hour_recall	Others	gaussian
+INI25056	Mean FA in middle cerebellar peduncle on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25057	Mean FA in pontine crossing tract on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25058	Mean FA in genu of corpus callosum on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25059	Mean FA in body of corpus callosum on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25060	Mean FA in splenium of corpus callosum on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25061	Mean FA in fornix on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25062	Mean FA in corticospinal tract on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25063	Mean FA in corticospinal tract on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25064	Mean FA in medial lemniscus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25066	Mean FA in inferior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25067	Mean FA in inferior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25068	Mean FA in superior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25069	Mean FA in superior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25071	Mean FA in cerebral peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25072	Mean FA in anterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25073	Mean FA in anterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25074	Mean FA in posterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25075	Mean FA in posterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25076	Mean FA in retrolenticular part of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25077	Mean FA in retrolenticular part of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25078	Mean FA in anterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25079	Mean FA in anterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25080	Mean FA in superior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25081	Mean FA in superior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25083	Mean FA in posterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25084	Mean FA in posterior thalamic radiation on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25085	Mean FA in posterior thalamic radiation on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25086	Mean FA in sagittal stratum on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25087	Mean FA in sagittal stratum on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25088	Mean FA in external capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25089	Mean FA in external capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25090	Mean FA in cingulum cingulate gyrus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25091	Mean FA in cingulum cingulate gyrus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25092	Mean FA in cingulum hippocampus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25093	Mean FA in cingulum hippocampus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25094	Mean FA in fornix cres+stria terminalis on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25096	Mean FA in superior longitudinal fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25097	Mean FA in superior longitudinal fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25098	Mean FA in superior fronto-occipital fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25099	Mean FA in superior fronto-occipital fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25100	Mean FA in uncinate fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25101	Mean FA in uncinate fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25102	Mean FA in tapetum on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25103	Mean FA in tapetum on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25344	Mean ICVF in middle cerebellar peduncle on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25345	Mean ICVF in pontine crossing tract on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25346	Mean ICVF in genu of corpus callosum on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25347	Mean ICVF in body of corpus callosum on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25349	Mean ICVF in fornix on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25350	Mean ICVF in corticospinal tract on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25351	Mean ICVF in corticospinal tract on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25352	Mean ICVF in medial lemniscus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25353	Mean ICVF in medial lemniscus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25354	Mean ICVF in inferior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25355	Mean ICVF in inferior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25356	Mean ICVF in superior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25357	Mean ICVF in superior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25358	Mean ICVF in cerebral peduncle on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25359	Mean ICVF in cerebral peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25360	Mean ICVF in anterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25361	Mean ICVF in anterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25362	Mean ICVF in posterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25363	Mean ICVF in posterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25364	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25365	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25366	Mean ICVF in anterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25367	Mean ICVF in anterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25368	Mean ICVF in superior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25369	Mean ICVF in superior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25370	Mean ICVF in posterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25371	Mean ICVF in posterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25372	Mean ICVF in posterior thalamic radiation on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25373	Mean ICVF in posterior thalamic radiation on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25374	Mean ICVF in sagittal stratum on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25375	Mean ICVF in sagittal stratum on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25376	Mean ICVF in external capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25377	Mean ICVF in external capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25378	Mean ICVF in cingulum cingulate gyrus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25379	Mean ICVF in cingulum cingulate gyrus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25380	Mean ICVF in cingulum hippocampus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25381	Mean ICVF in cingulum hippocampus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25382	Mean ICVF in fornix cres+stria terminalis on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25383	Mean ICVF in fornix cres+stria terminalis on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25384	Mean ICVF in superior longitudinal fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25385	Mean ICVF in superior longitudinal fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25386	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25387	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25388	Mean ICVF in uncinate fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25389	Mean ICVF in uncinate fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25391	Mean ICVF in tapetum on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25440	Mean ISOVF in middle cerebellar peduncle on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25441	Mean ISOVF in pontine crossing tract on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25443	Mean ISOVF in body of corpus callosum on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25445	Mean ISOVF in fornix on FA skeleton	Diffusion_brain_MRI	Others	gaussian
+INI25446	Mean ISOVF in corticospinal tract on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25447	Mean ISOVF in corticospinal tract on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25451	Mean ISOVF in inferior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25452	Mean ISOVF in superior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25453	Mean ISOVF in superior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25457	Mean ISOVF in anterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25458	Mean ISOVF in posterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25460	Mean ISOVF in retrolenticular part of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25461	Mean ISOVF in retrolenticular part of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25462	Mean ISOVF in anterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25463	Mean ISOVF in anterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25464	Mean ISOVF in superior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25465	Mean ISOVF in superior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25467	Mean ISOVF in posterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25469	Mean ISOVF in posterior thalamic radiation on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25470	Mean ISOVF in sagittal stratum on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25471	Mean ISOVF in sagittal stratum on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25473	Mean ISOVF in external capsule on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25474	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25475	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25482	Mean ISOVF in superior fronto-occipital fasciculus on FA skeleton (R)	Diffusion_brain_MRI	Others	gaussian
+INI25483	Mean ISOVF in superior fronto-occipital fasciculus on FA skeleton (L)	Diffusion_brain_MRI	Others	gaussian
+INI25488	WA FA in tract acoustic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25489	WA FA in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25490	WA FA in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25491	WA FA in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25492	WA FA in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25493	WA FA in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25495	WA FA in tract parahippocampal part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25497	WA FA in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25498	WA FA in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25499	WA FA in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25500	WA FA in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25501	WA FA in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25502	WA FA in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25503	WA FA in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25506	WA FA in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25507	WA FA in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25508	WA FA in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25509	WA FA in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25511	WA FA in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25512	WA FA in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25513	WA FA in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25514	WA FA in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25515	WA MD in tract acoustic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25516	WA MD in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25517	WA MD in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25519	WA MD in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25520	WA MD in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25521	WA MD in tract parahippocampal part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25523	WA MD in tract corticospinal tract (L)	Diffusion_brain_MRI	Others	gaussian
+INI25524	WA MD in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25525	WA MD in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25526	WA MD in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25527	WA MD in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25528	WA MD in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25529	WA MD in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25530	WA MD in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25531	WA MD in tract middle cerebellar peduncle	Diffusion_brain_MRI	Others	gaussian
+INI25533	WA MD in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25536	WA MD in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25538	WA MD in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25539	WA MD in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25540	WA MD in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25541	WA MD in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25542	WA MO in tract acoustic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25543	WA MO in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25544	WA MO in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25545	WA MO in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25548	WA MO in tract parahippocampal part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25549	WA MO in tract parahippocampal part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25551	WA MO in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25553	WA MO in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25555	WA MO in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25558	WA MO in tract middle cerebellar peduncle	Diffusion_brain_MRI	Others	gaussian
+INI25560	WA MO in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25561	WA MO in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25562	WA MO in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25563	WA MO in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25564	WA MO in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25566	WA MO in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25570	WA L1 in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25571	WA L1 in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25572	WA L1 in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25578	WA L1 in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25579	WA L1 in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25580	WA L1 in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25581	WA L1 in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25582	WA L1 in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25583	WA L1 in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25584	WA L1 in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25585	WA L1 in tract middle cerebellar peduncle	Diffusion_brain_MRI	Others	gaussian
+INI25589	WA L1 in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25590	WA L1 in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25591	WA L1 in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25592	WA L1 in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25593	WA L1 in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25594	WA L1 in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25597	WA L2 in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25598	WA L2 in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25599	WA L2 in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25600	WA L2 in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25601	WA L2 in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25602	WA L2 in tract parahippocampal part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25604	WA L2 in tract corticospinal tract (L)	Diffusion_brain_MRI	Others	gaussian
+INI25605	WA L2 in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25606	WA L2 in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25607	WA L2 in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25608	WA L2 in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25609	WA L2 in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25610	WA L2 in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25611	WA L2 in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25614	WA L2 in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25615	WA L2 in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25617	WA L2 in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25618	WA L2 in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25619	WA L2 in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25621	WA L2 in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25622	WA L2 in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25624	WA L3 in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25625	WA L3 in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25626	WA L3 in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25627	WA L3 in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25628	WA L3 in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25633	WA L3 in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25634	WA L3 in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25635	WA L3 in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25636	WA L3 in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25637	WA L3 in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25638	WA L3 in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25639	WA L3 in tract middle cerebellar peduncle	Diffusion_brain_MRI	Others	gaussian
+INI25640	WA L3 in tract medial lemniscus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25641	WA L3 in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25642	WA L3 in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25644	WA L3 in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25646	WA L3 in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25647	WA L3 in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25648	WA L3 in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25649	WA L3 in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25650	WA ICVF in tract acoustic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25651	WA ICVF in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25652	WA ICVF in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25653	WA ICVF in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25654	WA ICVF in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25655	WA ICVF in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25656	WA ICVF in tract parahippocampal part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25657	WA ICVF in tract parahippocampal part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25658	WA ICVF in tract corticospinal tract (L)	Diffusion_brain_MRI	Others	gaussian
+INI25659	WA ICVF in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25660	WA ICVF in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25661	WA ICVF in tract forceps minor	Diffusion_brain_MRI	Others	gaussian
+INI25662	WA ICVF in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25663	WA ICVF in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25664	WA ICVF in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25665	WA ICVF in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25666	WA ICVF in tract middle cerebellar peduncle	Diffusion_brain_MRI	Others	gaussian
+INI25667	WA ICVF in tract medial lemniscus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25668	WA ICVF in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25669	WA ICVF in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25670	WA ICVF in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25671	WA ICVF in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25672	WA ICVF in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25673	WA ICVF in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25674	WA ICVF in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25675	WA ICVF in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25676	WA ICVF in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25679	WA OD in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25680	WA OD in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25681	WA OD in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25682	WA OD in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25684	WA OD in tract parahippocampal part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25685	WA OD in tract corticospinal tract (L)	Diffusion_brain_MRI	Others	gaussian
+INI25687	WA OD in tract forceps major	Diffusion_brain_MRI	Others	gaussian
+INI25689	WA OD in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25690	WA OD in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25691	WA OD in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25692	WA OD in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25694	WA OD in tract medial lemniscus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25695	WA OD in tract medial lemniscus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25696	WA OD in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25697	WA OD in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25698	WA OD in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25699	WA OD in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25700	WA OD in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25701	WA OD in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25702	WA OD in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25703	WA OD in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25704	WA ISOVF in tract acoustic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25705	WA ISOVF in tract acoustic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25707	WA ISOVF in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25708	WA ISOVF in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	Others	gaussian
+INI25709	WA ISOVF in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	Others	gaussian
+INI25712	WA ISOVF in tract corticospinal tract (L)	Diffusion_brain_MRI	Others	gaussian
+INI25713	WA ISOVF in tract corticospinal tract (R)	Diffusion_brain_MRI	Others	gaussian
+INI25716	WA ISOVF in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25717	WA ISOVF in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25718	WA ISOVF in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25719	WA ISOVF in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25723	WA ISOVF in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25724	WA ISOVF in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25725	WA ISOVF in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25726	WA ISOVF in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI25727	WA ISOVF in tract superior thalamic radiation (L)	Diffusion_brain_MRI	Others	gaussian
+INI25728	WA ISOVF in tract superior thalamic radiation (R)	Diffusion_brain_MRI	Others	gaussian
+INI25729	WA ISOVF in tract uncinate fasciculus (L)	Diffusion_brain_MRI	Others	gaussian
+INI25730	WA ISOVF in tract uncinate fasciculus (R)	Diffusion_brain_MRI	Others	gaussian
+INI21025	Freq. of discomfort/pain in abdomen in last 3 months	Digestive_health	Others	gaussian
+INI21028	Freq. of discomfort/pain getting better or stopping after a bowel movement	Digestive_health	Others	gaussian
+INI21029	More frequent bowel movements when abdominal discomfort/pain started	Digestive_health	Others	gaussian
+INI21033	Freq. of hard/lumpy stools in the last 3 months	Digestive_health	Others	gaussian
+INI21034	Freq. of loose/mushy/watery stools in the last 3 months	Digestive_health	Others	gaussian
+INI21039	Severity of current abdominal distension/tightness	Digestive_health	Others	gaussian
+INI21040	Satisfaction with bowel habits	Digestive_health	Others	gaussian
+INI21042	Greatest # of times bowels opened per day	Digestive_health	Others	gaussian
+INI21043	Least # of times bowels opened per week	Digestive_health	Others	gaussian
+INI21044	Ave. # of times bowels opened per day	Digestive_health	Others	gaussian
+INI21045	# of weeks absent from work due to IBS, in the last year	Digestive_health	Others	gaussian
+INI21047	# of weeks (in the last year) at work suffering because of IBS	Digestive_health	Others	gaussian
+INI21049	Degree bothered by pain in arms/legs/joints in the past 3 months	Digestive_health	Others	gaussian
+INI21051	Degree bothered by headaches in the last 3 months	Digestive_health	Others	gaussian
+INI21052	Degree bothered by chest pain in the last 3 months	Digestive_health	Others	gaussian
+INI21053	Degree bothered by dizziness in the last 3 months	Digestive_health	Others	gaussian
+INI21058	Degree bothered by urinary frequency/bladder irritability in the last 3 months	Digestive_health	Others	gaussian
+INI21059	Degree bothered by nausea in the last 3 months	Digestive_health	Others	gaussian
+INI21060	Degree bothered by feeling tired all the time in the last 3 months	Digestive_health	Others	gaussian
+INI21061	Degree bothered by trouble sleeping in the last 3 months	Digestive_health	Others	gaussian
+INI23201	L1-L4 ave. height	DXA_assessment	Others	gaussian
+INI23209	Femur neck BMD (bone mineral density) T-score (R)	DXA_assessment	Others	gaussian
+INI23210	Femur shaft BMD (bone mineral density) (R)	DXA_assessment	Others	gaussian
+INI23212	Femur total BMD (bone mineral density) (R)	DXA_assessment	Others	gaussian
+INI23213	Femur total BMD (bone mineral density) T-score (R)	DXA_assessment	Others	gaussian
+INI23220	Arm BMC (bone mineral content) (L)	DXA_assessment	Others	gaussian
+INI23222	Arm BMC (bone mineral content) (R)	DXA_assessment	Others	gaussian
+INI23223	Arm BMD (bone mineral density) (R)	DXA_assessment	Others	gaussian
+INI23224	Arms BMC (bone mineral content)	DXA_assessment	Others	gaussian
+INI23244	Android bone mass	DXA_assessment	Others	gaussian
+INI23252	Arm total mass (L)	DXA_assessment	Others	gaussian
+INI23254	Arm lean mass (R)	DXA_assessment	Others	gaussian
+INI23255	Arm tissue fat % (R)	DXA_assessment	Others	gaussian
+INI23256	Arm total mass (R)	DXA_assessment	Others	gaussian
+INI23257	Arms fat mass	DXA_assessment	Others	gaussian
+INI23260	Arms total mass	DXA_assessment	Others	gaussian
+INI23262	Gynoid fat mass	DXA_assessment	Others	gaussian
+INI23263	Gynoid lean mass	DXA_assessment	Others	gaussian
+INI23265	Gynoid total mass	DXA_assessment	Others	gaussian
+INI23267	Leg lean mass (L)	DXA_assessment	Others	gaussian
+INI23269	Leg total mass (L)	DXA_assessment	Others	gaussian
+INI23271	Leg lean mass (R)	DXA_assessment	Others	gaussian
+INI23272	Leg tissue fat % (R)	DXA_assessment	Others	gaussian
+INI23273	Leg total mass (R)	DXA_assessment	Others	gaussian
+INI23275	Legs lean mass	DXA_assessment	Others	gaussian
+INI23277	Legs total mass	DXA_assessment	Others	gaussian
+INI23279	Total fat-free mass	DXA_assessment	Others	gaussian
+INI23280	Total lean mass	DXA_assessment	Others	gaussian
+INI23285	Trunk lean mass	DXA_assessment	Others	gaussian
+INI23290	Femur shaft BMD (bone mineral density) (L)	DXA_assessment	Others	gaussian
+INI23298	Femur troch BMD (bone mineral density) T-score (L)	DXA_assessment	Others	gaussian
+INI23299	Femur neck BMD (bone mineral density) (L)	DXA_assessment	Others	gaussian
+INI23305	Head bone area	DXA_assessment	Others	gaussian
+INI23307	Pelvis bone area	DXA_assessment	Others	gaussian
+INI23311	Spine bone area	DXA_assessment	Others	gaussian
+INI23313	Arm bone area (L)	DXA_assessment	Others	gaussian
+INI23314	Arm bone area (R)	DXA_assessment	Others	gaussian
+INI23315	Leg bone area (L)	DXA_assessment	Others	gaussian
+INI23316	Leg bone area (R)	DXA_assessment	Others	gaussian
+INI23317	Arms combined bone area	DXA_assessment	Others	gaussian
+INI23318	Legs combined bone area	DXA_assessment	Others	gaussian
+INI20022	Birth weight	Early_life_factors	Others	gaussian
+QT_FC1001687	Comparative body size at age 10	Early_life_factors	Others	gaussian
+QT_FC1001697	Comparative height size at age 10	Early_life_factors	Others	gaussian
+INI12336	Ventricular rate	ECG_at_rest,_12-lead	Others	gaussian
+INI12338	P duration	ECG_at_rest,_12-lead	Others	gaussian
+INI12340	QRS duration	ECG_at_rest,_12-lead	Others	gaussian
+INI22330	PQ interval	ECG_at_rest,_12-lead	Others	gaussian
+INI22331	QT interval	ECG_at_rest,_12-lead	Others	gaussian
+INI22332	QTC interval	ECG_at_rest,_12-lead	Others	gaussian
+INI22333	RR interval	ECG_at_rest,_12-lead	Others	gaussian
+INI22334	PP interval	ECG_at_rest,_12-lead	Others	gaussian
+INI22335	P axis	ECG_at_rest,_12-lead	Others	gaussian
+INI22337	T axis	ECG_at_rest,_12-lead	Others	gaussian
+INI22338	QRS num	ECG_at_rest,_12-lead	Others	gaussian
+INI20121	Cascot confidence score	Employment	Others	gaussian
+INI5078	LogMAR in round (L)	Eye_measures	Others	gaussian
+INI5079	LogMAR in round (R)	Eye_measures	Others	gaussian
+INI5084	Spherical power (R)	Eye_measures	Others	gaussian
+INI5085	Spherical power (L)	Eye_measures	Others	gaussian
+INI5089	Astigmatism angle (L)	Eye_measures	Others	gaussian
+INI5096	3mm weak meridian (L)	Eye_measures	Others	gaussian
+INI5097	6mm weak meridian (L)	Eye_measures	Others	gaussian
+INI5098	6mm weak meridian (R)	Eye_measures	Others	gaussian
+INI5099	3mm weak meridian (R)	Eye_measures	Others	gaussian
+INI5101	6mm weak meridian angle (R)	Eye_measures	Others	gaussian
+INI5103	3mm weak meridian angle (L)	Eye_measures	Others	gaussian
+INI5104	3mm strong meridian angle (L)	Eye_measures	Others	gaussian
+INI5105	6mm strong meridian angle (L)	Eye_measures	Others	gaussian
+INI5107	3mm strong meridian angle (R)	Eye_measures	Others	gaussian
+INI5109	6mm asymmetry angle (R)	Eye_measures	Others	gaussian
+INI5111	3mm asymmetry angle (L)	Eye_measures	Others	gaussian
+INI5112	3mm cylindrical power angle (L)	Eye_measures	Others	gaussian
+INI5113	6mm cylindrical power angle (L)	Eye_measures	Others	gaussian
+INI5114	6mm cylindrical power angle (R)	Eye_measures	Others	gaussian
+INI5116	3mm cylindrical power (R)	Eye_measures	Others	gaussian
+INI5117	6mm cylindrical power (R)	Eye_measures	Others	gaussian
+INI5118	6mm cylindrical power (L)	Eye_measures	Others	gaussian
+INI5119	3mm cylindrical power (L)	Eye_measures	Others	gaussian
+INI5132	3mm strong meridian (R)	Eye_measures	Others	gaussian
+INI5133	6mm strong meridian (R)	Eye_measures	Others	gaussian
+INI5134	6mm strong meridian (L)	Eye_measures	Others	gaussian
+INI5135	3mm strong meridian (L)	Eye_measures	Others	gaussian
+INI5157	6mm asymmetry index (L)	Eye_measures	Others	gaussian
+INI5158	6mm asymmetry index (R)	Eye_measures	Others	gaussian
+INI5160	3mm regularity index (R)	Eye_measures	Others	gaussian
+INI5199	LogMAR, initial (R)	Eye_measures	Others	gaussian
+INI5201	LogMAR, final (R)	Eye_measures	Others	gaussian
+INI5206	LogMAR, initial (L)	Eye_measures	Others	gaussian
+INI5208	LogMAR, final (L)	Eye_measures	Others	gaussian
+INI5237	3mm index of best keratometry results (R)	Eye_measures	Others	gaussian
+INI5254	Intra-ocular pressure, corneal-compensated (R)	Eye_measures	Others	gaussian
+INI5255	Intra-ocular pressure, Goldmann-correlated (R)	Eye_measures	Others	gaussian
+INI5256	Corneal hysteresis (R)	Eye_measures	Others	gaussian
+INI5257	Corneal resistance factor (R)	Eye_measures	Others	gaussian
+INI5262	Intra-ocular pressure, corneal-compensated (L)	Eye_measures	Others	gaussian
+INI5263	Intra-ocular pressure, Goldmann-correlated (L)	Eye_measures	Others	gaussian
+INI5264	Corneal hysteresis (L)	Eye_measures	Others	gaussian
+INI5265	Corneal resistance factor (L)	Eye_measures	Others	gaussian
+INI5292	3mm index of best keratometry results (L)	Eye_measures	Others	gaussian
+INI1807	Father's age at death	Family_history	Others	gaussian
+INI1845	Mother's age	Family_history	Others	gaussian
+INI3982	# of adopted sisters	Family_history	Others	gaussian
+INI5057	# of older siblings	Family_history	Others	gaussian
+INI46	Hand grip strength (L)	Hand_grip_strength	Others	gaussian
+INI47	Hand grip strength (R)	Hand_grip_strength	Others	gaussian
+INI2217	Age started wearing glasses or contact lenses	Health_and_medical_history	Others	gaussian
+INI2966	Age high BP diagnosed	Health_and_medical_history	Others	gaussian
+INI2976	Age diabetes diagnosed	Health_and_medical_history	Others	gaussian
+INI3627	Age angina diagnosed	Health_and_medical_history	Others	gaussian
+INI3761	Age hay fever, rhinitis or eczema diagnosed	Health_and_medical_history	Others	gaussian
+INI3786	Age asthma diagnosed	Health_and_medical_history	Others	gaussian
+INI4700	Age cataract diagnosed	Health_and_medical_history	Others	gaussian
+INI4814	Tinnitus severity/nuisance	Health_and_medical_history	Others	gaussian
+QT_FC1002178	Overall health rating	Health_and_medical_history	Others	gaussian
+QT_FC1002296	Falls in the last year	Health_and_medical_history	Others	gaussian
+QT_FC1004803	Tinnitus severity	Health_and_medical_history	Others	gaussian
+INI20021	Speech-reception-threshold (SRT) estimate (R)	Hearing_test	Others	gaussian
+INI4233	Mean signal-to-noise ratio (SNR), (L)	Hearing_test	Others	gaussian
+INI4244	Mean signal-to-noise ratio (SNR), (R)	Hearing_test	Others	gaussian
+INI4277	Volume level set by participant (R)	Hearing_test	Others	gaussian
+INI22420	LV ejection fraction	Heart_MRI	Others	gaussian
+INI22422	LV end systolic volume	Heart_MRI	Others	gaussian
+INI22423	LV stroke volume	Heart_MRI	Others	gaussian
+INI22425	Cardiac index	Heart_MRI	Others	gaussian
+INI22426	Ave. heart rate	Heart_MRI	Others	gaussian
+INI22427	Body surface area	Heart_MRI	Others	gaussian
+INI134	# of self-reported cancers	Medical_conditions	Others	gaussian
+INI135	# of self-reported non-cancer illnesses	Medical_conditions	Others	gaussian
+INI87	Non-cancer illness year/age first occurred	Medical_conditions	Others	gaussian
+INI137	# of medications taken	Medications	Others	gaussian
+INI20405	Ever had known person concerned about, or recommend reduction of, alcohol consumption	Mental_health	Others	gaussian
+INI20413	Freq. of inability to cease drinking in last year	Mental_health	Others	gaussian
+INI20414	Freq. of drinking alcohol	Mental_health	Others	gaussian
+INI20416	Freq. of consuming six or more units of alcohol	Mental_health	Others	gaussian
+INI20434	Age at last episode of depression	Mental_health	Others	gaussian
+INI20440	Impact on normal roles during worst period of depression	Mental_health	Others	gaussian
+INI20442	Lifetime # of depressed periods	Mental_health	Others	gaussian
+INI20453	Ever taken cannabis	Mental_health	Others	gaussian
+INI20454	Maximum frequency of taking cannabis	Mental_health	Others	gaussian
+INI20460	Belief that own life is meaningful	Mental_health	Others	gaussian
+INI20479	Ever thought that life not worth living	Mental_health	Others	gaussian
+INI20495	Avoided activities or situations because of previous stressful experience in past month	Mental_health	Others	gaussian
+INI20496	Felt distant from other people in past month	Mental_health	Others	gaussian
+INI20498	Felt very upset when reminded of stressful experience in past month	Mental_health	Others	gaussian
+INI20506	Recent feelings or nervousness or anxiety	Mental_health	Others	gaussian
+INI20509	Recent inability to stop or control worrying	Mental_health	Others	gaussian
+INI20510	Recent feelings of depression	Mental_health	Others	gaussian
+INI20514	Recent lack of interest or pleasure in doing things	Mental_health	Others	gaussian
+INI20515	Recent trouble relaxing	Mental_health	Others	gaussian
+INI20517	Trouble falling or staying asleep, or sleeping too much	Mental_health	Others	gaussian
+INI20519	Recent feelings of tiredness or low energy	Mental_health	Others	gaussian
+INI20520	Recent worrying too much about different things	Mental_health	Others	gaussian
+QT_FC10020458	General happiness	Mental_health	Others	gaussian
+QT_FC10020536	Weight gain during worst episode of depression	Mental_health	Others	gaussian
+INI1003063	FEV FVC ratio	Others	Others	gaussian
+INI1003064	PEF pred. ratio	Others	Others	gaussian
+INI26421	Education score (Wales)	Population_characteristics	Others	gaussian
+INI26424	Physical environment score (Wales)	Population_characteristics	Others	gaussian
+INI26426	Index of Multiple Deprivation (Wales)	Population_characteristics	Others	gaussian
+INI26428	Income score (Scotland)	Population_characteristics	Others	gaussian
+INI5386	# of unenthusiastic/disinterested episodes	Psychosocial_factors	Others	gaussian
+QT_FC1002060	Freq. of unenthusiasm / disinterest in last 2 weeks	Psychosocial_factors	Others	gaussian
+QT_FC1002080	Freq. of tiredness / lethargy in last 2 weeks	Psychosocial_factors	Others	gaussian
+QT_FC1004548	Health satisfaction	Psychosocial_factors	Others	gaussian
+QT_FC1004570	Friendships satisfaction	Psychosocial_factors	Others	gaussian
+QT_FC1004581	Financial situation satisfaction	Psychosocial_factors	Others	gaussian
+INI25741	Mean rfMRI head motion, ave.d across space and time points	Resting_functional_brain_MRI	Others	gaussian
+INI25744	Inverted temporal signal-to-noise ratio in artefact-cleaned pre-processed rfMRI	Resting_functional_brain_MRI	Others	gaussian
+INI3062	FVC	Spirometry	Others	gaussian
+INI3063	FEV1	Spirometry	Others	gaussian
+INI3064	PEF	Spirometry	Others	gaussian
+INI25026	Median T2star in thalamus (L)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25027	Median T2star in thalamus (R)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25028	Median T2star in caudate (L)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25029	Median T2star in caudate (R)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25030	Median T2star in putamen (L)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25031	Median T2star in putamen (R)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25032	Median T2star in pallidum (L)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25033	Median T2star in pallidum (R)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25034	Median T2star in hippocampus (L)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25036	Median T2star in amygdala (L)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25037	Median T2star in amygdala (R)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25039	Median T2star in accumbens (R)	Susceptibility_weighted_brain_MRI	Others	gaussian
+INI25000	Volumetric scaling from T1 head image to standard space	T1_structural_brain_MRI	Others	gaussian
+INI25001	Vol. of peripheral cortical grey matter (normalised for head size)	T1_structural_brain_MRI	Others	gaussian
+INI25002	Vol. of peripheral cortical grey matter	T1_structural_brain_MRI	Others	gaussian
+INI25003	Vol. of ventricular cerebrospinal fluid (normalised for head size)	T1_structural_brain_MRI	Others	gaussian
+INI25004	Vol. of ventricular cerebrospinal fluid	T1_structural_brain_MRI	Others	gaussian
+INI25005	Vol. of grey matter (normalised for head size)	T1_structural_brain_MRI	Others	gaussian
+INI25006	Vol. of grey matter	T1_structural_brain_MRI	Others	gaussian
+INI25007	Vol. of white matter (normalised for head size)	T1_structural_brain_MRI	Others	gaussian
+INI25008	Vol. of white matter	T1_structural_brain_MRI	Others	gaussian
+INI25009	Vol. of brain, grey+white matter (normalised for head size)	T1_structural_brain_MRI	Others	gaussian
+INI25010	Vol. of brain, grey+white matter	T1_structural_brain_MRI	Others	gaussian
+INI25011	Vol. of thalamus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25012	Vol. of thalamus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25013	Vol. of caudate (L)	T1_structural_brain_MRI	Others	gaussian
+INI25014	Vol. of caudate (R)	T1_structural_brain_MRI	Others	gaussian
+INI25015	Vol. of putamen (L)	T1_structural_brain_MRI	Others	gaussian
+INI25016	Vol. of putamen (R)	T1_structural_brain_MRI	Others	gaussian
+INI25017	Vol. of pallidum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25018	Vol. of pallidum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25019	Vol. of hippocampus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25021	Vol. of amygdala (L)	T1_structural_brain_MRI	Others	gaussian
+INI25022	Vol. of amygdala (R)	T1_structural_brain_MRI	Others	gaussian
+INI25023	Vol. of accumbens (L)	T1_structural_brain_MRI	Others	gaussian
+INI25024	Vol. of accumbens (R)	T1_structural_brain_MRI	Others	gaussian
+INI25025	Vol. of brain stem + 4th ventricle	T1_structural_brain_MRI	Others	gaussian
+INI25734	Inverted signal-to-noise ratio in T1	T1_structural_brain_MRI	Others	gaussian
+INI25782	Vol. of grey matter in Frontal Pole (L)	T1_structural_brain_MRI	Others	gaussian
+INI25784	Vol. of grey matter in Insular Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25785	Vol. of grey matter in Insular Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25786	Vol. of grey matter in Superior Frontal Gyrus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25787	Vol. of grey matter in Superior Frontal Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25788	Vol. of grey matter in Middle Frontal Gyrus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25789	Vol. of grey matter in Middle Frontal Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25791	Vol. of grey matter in Inferior Frontal Gyrus, pars triangularis (R)	T1_structural_brain_MRI	Others	gaussian
+INI25793	Vol. of grey matter in Inferior Frontal Gyrus, pars opercularis (R)	T1_structural_brain_MRI	Others	gaussian
+INI25794	Vol. of grey matter in Precentral Gyrus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25795	Vol. of grey matter in Precentral Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25796	Vol. of grey matter in Temporal Pole (L)	T1_structural_brain_MRI	Others	gaussian
+INI25797	Vol. of grey matter in Temporal Pole (R)	T1_structural_brain_MRI	Others	gaussian
+INI25798	Vol. of grey matter in Superior Temporal Gyrus, anterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25799	Vol. of grey matter in Superior Temporal Gyrus, anterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25800	Vol. of grey matter in Superior Temporal Gyrus, posterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25801	Vol. of grey matter in Superior Temporal Gyrus, posterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25803	Vol. of grey matter in Middle Temporal Gyrus, anterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25805	Vol. of grey matter in Middle Temporal Gyrus, posterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25806	Vol. of grey matter in Middle Temporal Gyrus, temporooccipital part (L)	T1_structural_brain_MRI	Others	gaussian
+INI25807	Vol. of grey matter in Middle Temporal Gyrus, temporooccipital part (R)	T1_structural_brain_MRI	Others	gaussian
+INI25808	Vol. of grey matter in Inferior Temporal Gyrus, anterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25809	Vol. of grey matter in Inferior Temporal Gyrus, anterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25810	Vol. of grey matter in Inferior Temporal Gyrus, posterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25812	Vol. of grey matter in Inferior Temporal Gyrus, temporooccipital part (L)	T1_structural_brain_MRI	Others	gaussian
+INI25813	Vol. of grey matter in Inferior Temporal Gyrus, temporooccipital part (R)	T1_structural_brain_MRI	Others	gaussian
+INI25815	Vol. of grey matter in Postcentral Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25817	Vol. of grey matter in Superior Parietal Lobule (R)	T1_structural_brain_MRI	Others	gaussian
+INI25818	Vol. of grey matter in Supramarginal Gyrus, anterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25820	Vol. of grey matter in Supramarginal Gyrus, posterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25822	Vol. of grey matter in Angular Gyrus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25825	Vol. of grey matter in Lateral Occipital Cortex, superior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25827	Vol. of grey matter in Lateral Occipital Cortex, inferior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25828	Vol. of grey matter in Intracalcarine Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25829	Vol. of grey matter in Intracalcarine Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25830	Vol. of grey matter in Frontal Medial Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25833	Vol. of grey matter in Juxtapositional Lobule Cortex (formerly Supplementary Motor Cortex) (R)	T1_structural_brain_MRI	Others	gaussian
+INI25834	Vol. of grey matter in Subcallosal Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25835	Vol. of grey matter in Subcallosal Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25837	Vol. of grey matter in Paracingulate Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25838	Vol. of grey matter in Cingulate Gyrus, anterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25839	Vol. of grey matter in Cingulate Gyrus, anterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25840	Vol. of grey matter in Cingulate Gyrus, posterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25841	Vol. of grey matter in Cingulate Gyrus, posterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25842	Vol. of grey matter in Precuneous Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25845	Vol. of grey matter in Cuneal Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25846	Vol. of grey matter in Frontal Orbital Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25847	Vol. of grey matter in Frontal Orbital Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25848	Vol. of grey matter in Parahippocampal Gyrus, anterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25849	Vol. of grey matter in Parahippocampal Gyrus, anterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25850	Vol. of grey matter in Parahippocampal Gyrus, posterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25851	Vol. of grey matter in Parahippocampal Gyrus, posterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25853	Vol. of grey matter in Lingual Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25854	Vol. of grey matter in Temporal Fusiform Cortex, anterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25856	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (L)	T1_structural_brain_MRI	Others	gaussian
+INI25857	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (R)	T1_structural_brain_MRI	Others	gaussian
+INI25859	Vol. of grey matter in Temporal Occipital Fusiform Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25860	Vol. of grey matter in Occipital Fusiform Gyrus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25861	Vol. of grey matter in Occipital Fusiform Gyrus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25862	Vol. of grey matter in Frontal Operculum Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25864	Vol. of grey matter in Central Opercular Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25865	Vol. of grey matter in Central Opercular Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25866	Vol. of grey matter in Parietal Operculum Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25867	Vol. of grey matter in Parietal Operculum Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25868	Vol. of grey matter in Planum Polare (L)	T1_structural_brain_MRI	Others	gaussian
+INI25869	Vol. of grey matter in Planum Polare (R)	T1_structural_brain_MRI	Others	gaussian
+INI25870	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (L)	T1_structural_brain_MRI	Others	gaussian
+INI25871	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (R)	T1_structural_brain_MRI	Others	gaussian
+INI25872	Vol. of grey matter in Planum Temporale (L)	T1_structural_brain_MRI	Others	gaussian
+INI25873	Vol. of grey matter in Planum Temporale (R)	T1_structural_brain_MRI	Others	gaussian
+INI25874	Vol. of grey matter in Supracalcarine Cortex (L)	T1_structural_brain_MRI	Others	gaussian
+INI25875	Vol. of grey matter in Supracalcarine Cortex (R)	T1_structural_brain_MRI	Others	gaussian
+INI25877	Vol. of grey matter in Occipital Pole (R)	T1_structural_brain_MRI	Others	gaussian
+INI25878	Vol. of grey matter in Thalamus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25879	Vol. of grey matter in Thalamus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25880	Vol. of grey matter in Caudate (L)	T1_structural_brain_MRI	Others	gaussian
+INI25881	Vol. of grey matter in Caudate (R)	T1_structural_brain_MRI	Others	gaussian
+INI25882	Vol. of grey matter in Putamen (L)	T1_structural_brain_MRI	Others	gaussian
+INI25883	Vol. of grey matter in Putamen (R)	T1_structural_brain_MRI	Others	gaussian
+INI25886	Vol. of grey matter in Hippocampus (L)	T1_structural_brain_MRI	Others	gaussian
+INI25887	Vol. of grey matter in Hippocampus (R)	T1_structural_brain_MRI	Others	gaussian
+INI25888	Vol. of grey matter in Amygdala (L)	T1_structural_brain_MRI	Others	gaussian
+INI25890	Vol. of grey matter in Ventral Striatum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25891	Vol. of grey matter in Ventral Striatum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25892	Vol. of grey matter in Brain-Stem	T1_structural_brain_MRI	Others	gaussian
+INI25893	Vol. of grey matter in I-IV Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25894	Vol. of grey matter in I-IV Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25895	Vol. of grey matter in V Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25896	Vol. of grey matter in V Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25897	Vol. of grey matter in VI Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25898	Vol. of grey matter in Vermis VI Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25899	Vol. of grey matter in VI Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25902	Vol. of grey matter in Crus I Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25903	Vol. of grey matter in Crus II Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25904	Vol. of grey matter in Vermis Crus II Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25905	Vol. of grey matter in Crus II Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25906	Vol. of grey matter in VIIb Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25907	Vol. of grey matter in Vermis VIIb Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25908	Vol. of grey matter in VIIb Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25909	Vol. of grey matter in VIIIa Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25910	Vol. of grey matter in Vermis VIIIa Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25911	Vol. of grey matter in VIIIa Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25912	Vol. of grey matter in VIIIb Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25913	Vol. of grey matter in Vermis VIIIb Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25914	Vol. of grey matter in VIIIb Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25915	Vol. of grey matter in IX Cerebellum (L)	T1_structural_brain_MRI	Others	gaussian
+INI25916	Vol. of grey matter in Vermis IX Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25917	Vol. of grey matter in IX Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25919	Vol. of grey matter in Vermis X Cerebellum	T1_structural_brain_MRI	Others	gaussian
+INI25920	Vol. of grey matter in X Cerebellum (R)	T1_structural_brain_MRI	Others	gaussian
+INI25781	Total vol. of white matter hyperintensities (from T1 and T2 FLAIR images)	T2-weighted_brain_MRI	Others	gaussian
+INI25040	Median BOLD effect (in group-defined mask) for shapes activation	Task_functional_brain_MRI	Others	gaussian
+INI25042	Median z-stat. (in group-defined mask) for shapes activation	Task_functional_brain_MRI	Others	gaussian
+INI25046	Median z-stat. (in group-defined mask) for faces activation	Task_functional_brain_MRI	Others	gaussian
+INI25048	Median BOLD effect (in group-defined mask) for faces-shapes contrast	Task_functional_brain_MRI	Others	gaussian
+INI25050	Median z-stat. (in group-defined mask) for faces-shapes contrast	Task_functional_brain_MRI	Others	gaussian
+INI25054	Median z-stat. (in group-defined amygdala activation mask) for faces-shapes contrast	Task_functional_brain_MRI	Others	gaussian
+INI25742	Mean tfMRI head motion, ave.d across space and time points	Task_functional_brain_MRI	Others	gaussian
+INI25761	90%ile of BOLD effect (in group-defined mask) for shapes activation	Task_functional_brain_MRI	Others	gaussian
+INI25763	90%ile of BOLD effect (in group-defined mask) for faces activation	Task_functional_brain_MRI	Others	gaussian
+INI25765	90%ile of BOLD effect (in group-defined mask) for faces-shapes contrast	Task_functional_brain_MRI	Others	gaussian
+INI25766	90%ile of z-stat. (in group-defined mask) for faces-shapes contrast	Task_functional_brain_MRI	Others	gaussian
+INI25767	90%ile of BOLD effect (in group-defined amygdala activation mask) for faces-shapes contrast	Task_functional_brain_MRI	Others	gaussian
+INI22146	Age hayfever or allergic rhinitis diagnosed by doctor	Work_environment	Others	gaussian
+INI22147	Age asthma diagnosed by doctor	Work_environment	Others	gaussian
+INI22503	Years of cough on most days	Work_environment	Others	gaussian
