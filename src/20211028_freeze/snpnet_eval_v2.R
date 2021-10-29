@@ -57,7 +57,7 @@ score_covar <- paste0('covar_', pheno_col)
 score_full  <- paste0('full_', pheno_col)
 
 # get the GBE_ID to trait name mapping
-GBE_name_f %>%
+GBE_category_f %>%
 fread() %>%
 rename_with(
     function(x){str_replace(x, '#', '')}, starts_with("#")
@@ -116,7 +116,7 @@ bind_rows() -> covar_model_BETAs_df
 # save coefficients of covariate-only model
 covar_model_BETAs_df %>%
 rename('#split' = 'split') %>%
-fwrite(sprintf('%s.covarBETAs.tsv', performance_eval_prefix), sep='\t', na = "NA", quote=F)
+fwrite(sprintf('%s.covarBETAs.tsv.gz', performance_eval_prefix), sep='\t', na = "NA", quote=F)
 
 # we fit the specified regression model for each split independently
 # and aggregate the results into one data frame
@@ -178,7 +178,7 @@ bind_rows() -> covarPRS_model_BETAs_df
 # save the significance of PRS model
 covarPRS_model_BETAs_df %>%
 rename('#split' = 'split') %>%
-fwrite(sprintf('%s.PRS_pval.tsv', performance_eval_prefix), sep='\t', na = "NA", quote=F)
+fwrite(sprintf('%s.PRS_pval.tsv.gz', performance_eval_prefix), sep='\t', na = "NA", quote=F)
 
 # list of "scores" we will use in the evaluation
 c(score_geno, score_covar, score_full) -> risk_score_list
@@ -209,7 +209,7 @@ left_join(
 # write the performance metric to a file
 PRS_eval_df %>%
 rename('#response' = 'response') %>%
-fwrite(sprintf('%s.eval.tsv', performance_eval_prefix), sep='\t', na = "NA", quote=F)
+fwrite(sprintf('%s.eval.tsv.gz', performance_eval_prefix), sep='\t', na = "NA", quote=F)
 
 # prepare data frames for the plots
 full_df %>%
@@ -228,7 +228,7 @@ compute_summary_df('geno_score_percentile', 'phe', family=family)
 # save a data frame used for the summary plot
 summary_plot_df %>%
 rename('#l_bin' = 'l_bin') %>%
-fwrite(sprintf('%s.percentile.tsv', performance_eval_prefix), sep='\t', na = "NA", quote=F)
+fwrite(sprintf('%s.percentile.tsv.gz', performance_eval_prefix), sep='\t', na = "NA", quote=F)
 
 # generate plots
 if(family == 'gaussian'){

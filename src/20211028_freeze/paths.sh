@@ -4,6 +4,15 @@
 trait_list_f='traits.tsv'
 biomarkers_mapping_f='traits.biomarkers.tsv'
 
+
+# helper functions
+fPRS_helper='/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/fPRS/helpers/functions.R'
+snpnet_helper='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/snpnet/helpers/snpnet_misc.R'
+
+# project dir
+# project_d='/oak/stanford/groups/mrivas/projects/PRS'
+project_d='/scratch/groups/mrivas/projects/PRS'
+
 # list of GBE traits and category
 GBE_category_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/05_gbe/extras/20200812_GBE_category/GBE_category.20201024.tsv'
 
@@ -20,6 +29,9 @@ PRS202110_d='/scratch/groups/mrivas/projects/PRS/20211028_freeze'
 # sqc file (covariates etc.)
 sample_qc_f='/oak/stanford/groups/mrivas/ukbb24983/sqc/population_stratification_w24983_20211020/ukb24983_GWAS_covar.20211020.phe'
 
+# master phenotype file
+phe_f='/scratch/groups/mrivas/ukbb24983/phenotypedata/master_phe/master.20211020.phe.zst'
+
 # MRP blacklist
 mrp_blacklist_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/13_mrp/gbe_blacklist.tsv'
 
@@ -33,4 +45,3 @@ biomarkers_snpnet_f='/oak/stanford/groups/mrivas/projects/biomarkers/snpnet/biom
 # biomarkers snpnet PRS coefficients (BETAs)
 # __TRAIT__ needs to be replaced
 biomarkers_BETA_f='/oak/stanford/groups/mrivas/projects/biomarkers/snpnet/figshare/snpnet.BETAs.__TRAIT__.tsv.gz'
-

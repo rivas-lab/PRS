@@ -7,7 +7,7 @@ SRCDIR=$(dirname ${SRCNAME})
 slurm_log_d=${SRCDIR}/slurm_logs
 slurm_job_name=$(basename ${SRCNAME%.slurm.sh})
 job_list_sh=${slurm_log_d}/${slurm_job_name}.jobs.sh
-batch_size=1 # the number of jobs executed in an array task in SLURM.
+batch_size=2 # the number of jobs executed in an array task in SLURM.
 sbatch_resources_str='-p mrivas --qos=high_p --nodes=1 --mem=12000 --cores=1 --time=2:00:00'
 
 if [ $# -ge 1 ] && [ "$1" == "dry-run" ] ; then dry_run="TRUE" ; else dry_run="FALSE" ; fi
@@ -31,23 +31,21 @@ cat_or_zcat () {
 
 if [ ! -d "${slurm_log_d}" ] ; then mkdir -p "${slurm_log_d}" ; fi
 
-out_dir="${project_d}/private_output/$(basename ${SRCDIR})/output"
+out_dir="${PRS202110_d}/per_trait"
 
 if [ ! -d "${out_dir}" ] ; then mkdir -p "${out_dir}" ; fi
 
-find "${out_dir}"  -type f | sort > "${slurm_log_d}/output_files.txt"
+find "${out_dir}" -type f | sort > "${slurm_log_d}/output_files.txt"
 
-# cat_or_zcat ${project_d}/${PRS_f} | awk 'NR==1' | tr '\t' '\n' | awk 'NR>94' \
-! cat_or_zcat "${project_d}/${PRS_f}" | head -n1 | tr '\t' '\n' \
-| awk 'NR>94' | sed -e 's/^PRS_//' \
+cat ${trait_list_f} | awk '(NR>1){print $1}' \
 | while read -r GBE_ID ; do
 
     out_prefix="${out_dir}/${GBE_ID}"
 
     # we will check the resulting files
-    grep_pattern="${out_prefix}.log|${out_prefix}.covarBETAs.tsv|${out_prefix}.eval.tsv|${out_prefix}.percentile.tsv|${out_prefix}.plot.pdf|${out_prefix}.plot.png|${out_prefix}.PRS_pval.tsv"
+    grep_pattern="${out_prefix}.eval.log.gz|${out_prefix}.covarBETAs.tsv.gz|${out_prefix}.eval.tsv.gz|${out_prefix}.percentile.tsv.gz|${out_prefix}.plot.pdf|${out_prefix}.plot.png|${out_prefix}.PRS_pval.tsv.gz"
 
-    grep_wc_l=$(grep -E "${grep_pattern}" "${slurm_log_d}/output_files.txt" | wc -l)
+    ! grep_wc_l=$(grep -E "${grep_pattern}" "${slurm_log_d}/output_files.txt" | wc -l)
 
     if [ "${grep_wc_l}" -ne 7 ] ; then
         echo "bash ${SRCNAME%.slurm.sh}.sh ${GBE_ID}"
