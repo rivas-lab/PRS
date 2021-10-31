@@ -3,7 +3,8 @@
 
 trait_list_f='traits.tsv'
 biomarkers_mapping_f='traits.biomarkers.tsv'
-
+eval_full_f='PRSmap.eval.tsv.gz'
+traits_w_metrics_f='traits_w_metrics.tsv'
 
 # helper functions
 fPRS_helper='/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/fPRS/helpers/functions.R'
