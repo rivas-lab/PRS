@@ -9,6 +9,7 @@ traits_w_metrics_f='traits_w_metrics.tsv'
 # helper functions
 fPRS_helper='/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/fPRS/helpers/functions.R'
 snpnet_helper='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/snpnet/helpers/snpnet_misc.R'
+cud4_d='/oak/stanford/groups/mrivas/users/ytanigaw/repos/yk-tanigawa/cud4'
 
 # project dir
 # project_d='/oak/stanford/groups/mrivas/projects/PRS'
@@ -19,6 +20,9 @@ GBE_category_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-
 
 # icdinfo file
 icdinfo_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/05_gbe/array-combined/icdinfo.white_british.txt'
+
+# GWAS h2 file (heritability)
+GWAS_h2_f='/oak/stanford/groups/mrivas/ukbb24983/array-combined/ldsc/h2.white_british.20211101.tsv'
 
 # master PRS file from the 2020/09 freeze
 PRS202009_f='/scratch/groups/mrivas/projects/PRS/private_output/202009_batch/ukb24983_GWAS_covar.20200828.PRSs.phe.gz'
