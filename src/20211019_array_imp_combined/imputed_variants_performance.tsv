@@ -1,0 +1,5 @@
+#trait	trait_name	family	metric_with imputed variants	metric_without imputed variants	n_variables_with imputed variants	n_variables_without imputed variants
+HC269	High cholesterol	binomial	0.622566450757182	0.619717260771799	5890	5987
+HC382	Asthma	binomial	0.617443292875976	0.616637645423548	6408	6430
+INI21001	BMI	gaussian	0.116181233634156	0.110524970255154	28633	27126
+INI50	Standing height	gaussian	0.165180947270719	0.177568623875511	19490	51209
