@@ -1,31 +1,31 @@
-#GBE_ID	GBE_short_name	Genotype_or_allelotype	Consequence_group	ClinVar	without_penalty_factor	with_penalty_factor	enrichment
-HC269	High cholesterol	Genotyped variants	PTVs	Pathogenic	0	3	Inf
-HC269	High cholesterol	Genotyped variants	PTVs		11	119	10.8181818181818
-HC269	High cholesterol	Genotyped variants	PAVs	Pathogenic	0	3	Inf
-HC269	High cholesterol	Genotyped variants	PAVs		204	839	4.11274509803922
-HC269	High cholesterol	Genotyped variants	PCVs/Intronic/UTRs/Others	Pathogenic	0	2	Inf
-HC269	High cholesterol	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	0	1	Inf
-HC269	High cholesterol	Genotyped variants	PCVs/Intronic/UTRs/Others		5291	5018	0.948402948402948
-HC269	High cholesterol	HLA allelotype			0	2	Inf
-HC382	Asthma	Genotyped variants	PTVs	Pathogenic	0	1	Inf
-HC382	Asthma	Genotyped variants	PTVs		8	134	16.75
-HC382	Asthma	Genotyped variants	PAVs	Pathogenic	0	2	Inf
-HC382	Asthma	Genotyped variants	PAVs		240	880	3.66666666666667
-HC382	Asthma	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	0	1	Inf
-HC382	Asthma	Genotyped variants	PCVs/Intronic/UTRs/Others		6569	5408	0.82326077028467
-HC382	Asthma	HLA allelotype			2	4	2
-INI21001	BMI	Genotyped variants	PTVs	Pathogenic	1	1	1
-INI21001	BMI	Genotyped variants	PTVs		25	204	8.16
-INI21001	BMI	Genotyped variants	PAVs		950	2334	2.45684210526316
-INI21001	BMI	Genotyped variants	PCVs/Intronic/UTRs/Others	Pathogenic	1	1	1
-INI21001	BMI	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	0	2	Inf
-INI21001	BMI	Genotyped variants	PCVs/Intronic/UTRs/Others		27690	24583	0.887793427230047
-INI21001	BMI	HLA allelotype			0	1	Inf
-INI50	Standing height	Genotyped variants	PTVs	Pathogenic	2	5	2.5
-INI50	Standing height	Genotyped variants	PTVs		62	281	4.53225806451613
-INI50	Standing height	Genotyped variants	PAVs	Pathogenic	2	5	2.5
-INI50	Standing height	Genotyped variants	PAVs		2061	3888	1.88646288209607
-INI50	Standing height	Genotyped variants	PCVs/Intronic/UTRs/Others	Pathogenic	0	2	Inf
-INI50	Standing height	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	1	2	2
-INI50	Standing height	Genotyped variants	PCVs/Intronic/UTRs/Others		53808	47022	0.873884924174844
-INI50	Standing height	HLA allelotype			1	4	4
+#GBE_ID	Genotype_or_allelotype	Consequence_group	ClinVar	without_penalty_factor	with_penalty_factor	enrichment	penalty_factor
+HC269	Genotyped variants	PAVs	Pathogenic	0	3	Inf	0.5
+HC269	Genotyped variants	PCVs/Intronic/UTRs/Others	Pathogenic	0	2	Inf	0.5
+HC269	Genotyped variants	PTVs		11	119	10.8181818181818	0.5
+HC269	Genotyped variants	PTVs	Pathogenic	0	3	Inf	0.5
+HC269	Genotyped variants	PAVs		204	839	4.11274509803922	0.75
+HC269	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	0	1	Inf	0.75
+HC269	HLA allelotype			0	2	Inf	0.75
+HC269	Genotyped variants	PCVs/Intronic/UTRs/Others		5291	5018	0.948402948402948	1
+HC382	Genotyped variants	PAVs	Pathogenic	0	2	Inf	0.5
+HC382	Genotyped variants	PTVs		8	134	16.75	0.5
+HC382	Genotyped variants	PTVs	Pathogenic	0	1	Inf	0.5
+HC382	Genotyped variants	PAVs		240	880	3.66666666666667	0.75
+HC382	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	0	1	Inf	0.75
+HC382	HLA allelotype			2	4	2	0.75
+HC382	Genotyped variants	PCVs/Intronic/UTRs/Others		6569	5408	0.82326077028467	1
+INI21001	Genotyped variants	PCVs/Intronic/UTRs/Others	Pathogenic	1	1	1	0.5
+INI21001	Genotyped variants	PTVs		25	204	8.16	0.5
+INI21001	Genotyped variants	PTVs	Pathogenic	1	1	1	0.5
+INI21001	Genotyped variants	PAVs		950	2334	2.45684210526316	0.75
+INI21001	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	0	2	Inf	0.75
+INI21001	HLA allelotype			0	1	Inf	0.75
+INI21001	Genotyped variants	PCVs/Intronic/UTRs/Others		27690	24583	0.887793427230047	1
+INI50	Genotyped variants	PAVs	Pathogenic	2	5	2.5	0.5
+INI50	Genotyped variants	PCVs/Intronic/UTRs/Others	Pathogenic	0	2	Inf	0.5
+INI50	Genotyped variants	PTVs		62	281	4.53225806451613	0.5
+INI50	Genotyped variants	PTVs	Pathogenic	2	5	2.5	0.5
+INI50	Genotyped variants	PAVs		2061	3888	1.88646288209607	0.75
+INI50	Genotyped variants	PCVs/Intronic/UTRs/Others	Likely_pathogenic	1	2	2	0.75
+INI50	HLA allelotype			1	4	4	0.75
+INI50	Genotyped variants	PCVs/Intronic/UTRs/Others		53808	47022	0.873884924174844	1

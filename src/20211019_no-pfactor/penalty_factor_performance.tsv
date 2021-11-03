@@ -1,0 +1,5 @@
+#trait	trait_name	family	metric_with penalty factors	metric_without penalty factors	n_variables_with penalty factors	n_variables_without penalty factors
+HC269	High cholesterol	binomial	0.619717260771799	0.618741429018915	5987	5506
+HC382	Asthma	binomial	0.616637645423548	0.616977325991504	6430	6819
+INI21001	BMI	gaussian	0.110524970255154	0.110855599456895	27126	28667
+INI50	Standing height	gaussian	0.177568623875511	0.176052450461472	51209	55937
