@@ -84,7 +84,7 @@ EXON_PADDING = 50
 app.config.update(dict(
     ## Set SCIDB_URL='http://localhost:8080' environment variable
     # SCIDB_URL='http://localhost:8080',
-    DEBUG=True,
+    DEBUG=False,
     SECRET_KEY='development key',
     LOAD_DB_PARALLEL_PROCESSES = 8,  # contigs assigned to threads, so good to make this a factor of 24 (eg. 2,3,4,6,8)
     SITES_VCFS=glob.glob(os.path.join(os.path.dirname(__file__), GBE_FILES_DIRECTORY, 'icd10ukbb.ukbiobank.combined.vcf.gz')),
@@ -2208,4 +2208,4 @@ def apply_caching(response):
 
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = 6000, debug=True, use_debugger=True, use_reloader=True, threaded=True)
+    app.run(host = "0.0.0.0", port = 6000, debug=False, use_debugger=False, use_reloader=True, threaded=True)
