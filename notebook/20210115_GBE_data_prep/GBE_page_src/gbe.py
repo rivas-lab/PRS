@@ -1114,15 +1114,22 @@ def prs_page_v2():
 
         df['trait_name'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
 
-        for col in ['trait_category']:
+        for col in ['family']:
+            if col in df.columns:
                 # format string
-            df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
+                df[col] = df[col].map(lambda x: str(x).title())
+        for col in ['trait_category']:
+            if col in df.columns:
+                # format string
+                df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
         for col in ['WBtest_P']:
+            if col in df.columns:
                 # format to scientific notation
-            df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
+                df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
         for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
+            if col in df.columns:
                 # format digits
-            df[col] = df[col].map(lambda x: str(round(x, 2)))
+                df[col] = df[col].map(lambda x: str(round(x, 2)))
 
         df = df[[
             'trait_category', 'trait_name', 'family',
