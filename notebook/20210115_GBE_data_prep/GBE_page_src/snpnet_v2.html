@@ -258,6 +258,16 @@
         data.forEach(function(d) {
     // Fill two seperate arrays, one with points greater than the -log10(pvalue) threshold, and another
     // with points lower than the threshold defined in cutoff
+
+            if ( d["CHROM"] == "X" ) {
+                d["CHROM"] = 23 ;
+            }
+            if ( d["CHROM"] == "XY" ) {
+                d["CHROM"] = 23 ;
+            }
+            if ( d["CHROM"] == "Y" ) {
+                d["CHROM"] = 24 ;
+            }
             d.chrom = +d["CHROM"];
             d.pos = +d["POS"];
             d.beta = +d["BETA"];
