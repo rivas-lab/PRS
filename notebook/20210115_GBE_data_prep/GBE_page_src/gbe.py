@@ -784,8 +784,8 @@ def snpnet_page(namespace, icd_str):
             namespace=namespace,
             icd=icd,
             icd_str=icd_str,
-            snpnet_plot='/static/PRS_map/{}.plot.png'.format(icd_str),
-            snpnet_eval='/static/PRS_map/{}.eval.tsv'.format(icd_str)
+            snpnet_plot='/static/PRSmap/PRSmap_v1/{}.plot.png'.format(icd_str),
+            snpnet_eval='/static/PRSmap/PRSmap_v1/{}.eval.tsv'.format(icd_str)
         )
     except Exception as e:
         print('Failed on snpnet.html  Error=', traceback.format_exc())
@@ -957,7 +957,7 @@ def prs_page():
             namespace = request.form['functionassocset']
 
         # read trait  list table
-        trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
+        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v1/traits.tsv'
         table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
         table_cols_select=['Trait group', 'Family', 'significant?']
 
