@@ -761,8 +761,9 @@ def biomarkers_page():
         print('Failed on cgauge Error=', traceback.format_exc())
         abort(404)
 
-@app.route('/<namespace>/snpnet/<icd_str>')
-def snpnet_page(namespace, icd_str):
+
+@app.route('/<namespace>/snpnet_v2/<icd_str>')
+def snpnet_page_v2(namespace, icd_str):
     # Please look at the documentation at PRS the repository
     # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     namespace = 'RIVAS_HG19'
@@ -782,7 +783,7 @@ def snpnet_page(namespace, icd_str):
         icd = [{'Case': casecnt, 'Name': shortname, 'icd': icd_str}]
 
 	return render_template(
-            'snpnet.html',
+            'snpnet_v2.html',
             namespace=namespace,
             icd=icd,
             icd_str=icd_str,
@@ -794,6 +795,7 @@ def snpnet_page(namespace, icd_str):
         abort(404)
 
 
+@app.route('/<namespace>/snpnet/<icd_str>')
 @app.route('/<namespace>/snpnet_v1/<icd_str>')
 def snpnet_page_v1(namespace, icd_str):
     # Please look at the documentation at PRS the repository
@@ -983,8 +985,8 @@ def hla_assoc_page():
         abort(404)
 
 
-@app.route('/prs')
-def prs_page():
+@app.route('/prs_v2')
+def prs_page_v2():
     # Please look at the documentation at PRS the repository
     # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     try:
@@ -993,22 +995,34 @@ def prs_page():
             namespace = request.form['functionassocset']
 
         # read trait  list table
-        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v1/traits.tsv'
-        table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
-        table_cols_select=['Trait group', 'Family', 'significant?']
+        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v2/traits_w_metrics.tsv'
+        table_cols=['Trait category', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
+        table_cols_select=['Trait group', 'Family', 'Significant?']
 
-        df = pandas.read_csv(trait_list_f, sep='\t')
-        df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
-        df = df.drop('trait_name',axis=1)
-        for col in ['#trait_category']:
+        df = pandas.read_csv(trait_list_f, sep='\t').rename(
+            columns={'#trait':'trait'}
+        ).sort_values(
+            by=['family', 'WBtest_P', 'n_variables'],
+            ascending=[False, True, False]
+        )
+
+        df['trait_name'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
+
+        for col in ['trait_category']:
                 # format string
             df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
-        for col in ['WB_test_P']:
+        for col in ['WBtest_P']:
                 # format to scientific notation
             df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
-        for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
+        for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
                 # format digits
             df[col] = df[col].map(lambda x: str(round(x, 2)))
+
+        df = df[[
+            'trait_category', 'trait_name', 'family',
+            'pred_geno', 'pred_covar', 'pred_full', 'pred_delta',
+            'n_variables', 'WBtest_P', 'WBtest_is_significant'
+        ]]
 
         # generate HTML string
         table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
@@ -1016,7 +1030,7 @@ def prs_page():
         ) for row in range(df.shape[0])])
 
         return render_template(
-            'prs.html',
+            'prs_v2.html',
             namespace = namespace,
             table_prs_trait_list_cols        = table_cols,
             table_prs_trait_list_col_len     = len(table_cols),
@@ -1029,6 +1043,7 @@ def prs_page():
         abort(404)
 
 
+@app.route('/prs')
 @app.route('/prs_v1')
 def prs_page_v1():
     # Please look at the documentation at PRS the repository
