@@ -762,6 +762,7 @@ def biomarkers_page():
         abort(404)
 
 
+@app.route('/<namespace>/snpnet/<icd_str>')
 @app.route('/<namespace>/snpnet_v2/<icd_str>')
 def snpnet_page_v2(namespace, icd_str):
     # Please look at the documentation at PRS the repository
@@ -782,20 +783,124 @@ def snpnet_page_v2(namespace, icd_str):
             cuttoff = pvalthr
         icd = [{'Case': casecnt, 'Name': shortname, 'icd': icd_str}]
 
-	return render_template(
+        # read the evaluation metric
+        eval_f = '/biobankengine/app/static/PRSmap/PRSmap_v2/PRSmap.eval.tsv.gz'
+
+        df = pandas.read_csv(eval_f, sep='\t').rename(
+            columns={'#trait':'trait'}
+        )
+        # filter to the specified traits
+        df = df[df['trait'] == icd_str]
+
+        # order of the ancestry groups
+        split_order_df = pandas.DataFrame({
+            'split': [
+                'train_val', 'test',
+                'non_british_white', 's_asian', 'e_asian', 'african'
+            ],
+            'split_plot': [
+                'white British (model development)',
+                'white British (hold-out test set)',
+                'Non-British white', 'South Asian', 'East Asian', 'African'
+            ],
+            'split_order': range(6)
+        })
+
+        # order of the predictive performance metric
+        metric_order_df = pandas.DataFrame({
+            'metric': [
+                'r2', 'auc', 'TjurR2', 'NagelkerkeR2'
+            ],
+            'metric_plot': [
+                'R2',
+                'ROC-AUC',
+                "Tjur's pseudo-R2",
+                "Nagelkerke's pseudo-R2"
+            ],
+            'metric_order': range(4)
+        })
+
+        # decide whether it's a binary or quantitative traits
+        icd_prefix = re.sub(r'[0-9]+', '', icd_str)
+        if (icd_prefix == 'INI' or icd_prefix == 'QT_FC'):
+            n_cols = ['n']
+        else:
+            n_cols = ['n', 'case_n', 'control_n']
+
+        wide_df = df.pivot_table(
+            values='eval',
+            index=['metric', 'split'],
+            columns='model',
+            aggfunc=numpy.sum
+        ).reset_index(
+        ).rename(
+            columns={
+                'PRS':   'pred_geno',
+                'covar': 'pred_covar',
+                'full':  'pred_full'
+            }
+        ).merge(
+            split_order_df
+        ).merge(
+            metric_order_df
+        ).merge(
+            df[['split'] + n_cols].drop_duplicates()
+        ).sort_values(by=['metric_order', 'split_order'])
+
+        wide_df['pred_delta'] = wide_df['pred_full'] - wide_df['pred_covar']
+
+        for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
+            # format digits
+            if col in wide_df.columns:
+                wide_df[col] = wide_df[col].map(lambda x: '{:0.3f}'.format(x))
+
+        for col in ['case_n', 'control_n']:
+            if col in wide_df.columns:
+                wide_df[col] = wide_df[col].map(lambda x: int(x))
+
+
+        wide_df = wide_df[
+            [
+                'metric_plot', 'split_plot',
+                'pred_geno', 'pred_covar', 'pred_full', 'pred_delta'
+            ] + n_cols
+        ].rename(
+            columns={
+                'metric_plot': 'Metric',
+                'split_plot' : 'Ancestry group',
+                'pred_geno'  : 'Geno',
+                'pred_covar' : 'Covars',
+                'pred_full'  : 'Full',
+                'pred_delta' : 'delta'
+            }
+        )
+
+        # generate HTML string
+        table_eval_tbody_str=''.join(
+            ['<tr>{}</tr>'.format(
+                ''.join([
+                    '<td>{}</td>'.format(x)
+                    for x in wide_df.iloc[row]
+                ]
+            )
+        ) for row in range(wide_df.shape[0])])
+
+        return render_template(
             'snpnet_v2.html',
             namespace=namespace,
             icd=icd,
             icd_str=icd_str,
-            snpnet_plot='/static/PRSmap/PRSmap_v1/{}.plot.png'.format(icd_str),
-            snpnet_eval='/static/PRSmap/PRSmap_v1/{}.eval.tsv'.format(icd_str)
+            snpnet_BETAs_tsv='/static/PRSmap/PRSmap_v2/per_trait/{}.snpnetBETAs.tsv'.format(icd_str),
+            snpnet_plot_png='/static/PRSmap/PRSmap_v2/per_trait/{}.plot.png'.format(icd_str),
+            snpnet_plot_pdf='/static/PRSmap/PRSmap_v2/per_trait/{}.plot.pdf'.format(icd_str),
+            table_eval_n_cols = n_cols,
+            table_eval_tbody_str = table_eval_tbody_str
         )
     except Exception as e:
         print('Failed on snpnet.html  Error=', traceback.format_exc())
         abort(404)
 
 
-@app.route('/<namespace>/snpnet/<icd_str>')
 @app.route('/<namespace>/snpnet_v1/<icd_str>')
 def snpnet_page_v1(namespace, icd_str):
     # Please look at the documentation at PRS the repository
@@ -985,6 +1090,7 @@ def hla_assoc_page():
         abort(404)
 
 
+@app.route('/prs')
 @app.route('/prs_v2')
 def prs_page_v2():
     # Please look at the documentation at PRS the repository
@@ -1043,7 +1149,6 @@ def prs_page_v2():
         abort(404)
 
 
-@app.route('/prs')
 @app.route('/prs_v1')
 def prs_page_v1():
     # Please look at the documentation at PRS the repository

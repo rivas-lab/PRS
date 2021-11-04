@@ -205,16 +205,16 @@
             Family: it represents whether the PRS model is fit with gaussian model (for continuous response, such as standing height) or binomial model (for binary outcomes, such as disease). We use r2 and AUC as the evaluation metric for gaussian and binomial models, respectively. In this table, we display those evaluation metric computed on the hold-out test set consits of individuals of whiter British ancestry in UK Biobank cohort.
           </li>
           <li>
-            Geno: the predictive performence (r2 or AUC) of the predictive model with genotype features alone. Note that this model does not include genotype PCs.
+            Geno: the predictive performence (R2 or AUC) of the predictive model with genotype features alone. Note that this model does not include genotype PCs.
           </li>
           <li>
-            Covar: the predictive performence (r2 or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.
+            Covar: the predictive performence (R2 or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.
           </li>
           <li>
-            Full: the predictive performence (r2 or AUC) of the full model that have both genotypes and covariates alone.
+            Full: the predictive performence (R2 or AUC) of the full model that have both genotypes and covariates alone.
           </li>
           <li>
-            delta: the incremental predictive performence (r2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.
+            delta: the incremental predictive performence (R2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.
           </li>
           <li>
             # variants: the number of genetic variants included in the model
