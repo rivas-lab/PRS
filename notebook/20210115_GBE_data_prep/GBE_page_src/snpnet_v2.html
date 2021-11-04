@@ -129,7 +129,7 @@
         <div class="col col-md-12">
             <h2 align="center">Coefficients of the PRS model</h2>
             <br>
-            <div id="containergenome2"></div>
+            <div id="containerPRScoefficients"></div>
             <br>
             Note: only <p id="number_of_active_variants" style="display:inline"></p> variants in active path for Lasso are included in the coefficient plot.
             <br>
@@ -228,7 +228,7 @@
     var activeset = 0;
     var activenum = 1;
     // manhattan plot code obtained/edited/adapted from : https://github.com/chengsoonong/rede/tree/master/Rede/manhattanplot
-    d3.select("#containergenome2")
+    d3.select("#containerPRScoefficients")
             .style("height", "100%")
             .style("overflow", "auto");
 
@@ -300,10 +300,10 @@
         y2 = iy_2;
 
         var margin = {
-            top: 30,
-            right: 50,
-            bottom: 20,
-            left: 60
+            top: 60,
+            right: 40,
+            bottom: 30,
+            left: 80
         };
 
         var colorScale = d3.scale.log()
@@ -315,8 +315,8 @@
             .interpolate(d3.interpolateHsl)
             .range(["#B3995D", "#8C1515"]);
 
-        var w = 1100 - margin.left - margin.right; //900;
-        var h = 500 - margin.top - margin.bottom; //600;
+        var w = 1100 - margin.left - margin.right; //980;
+        var h = 500 - margin.top - margin.bottom;  //410;
 
         //Create scale functions
         var xScale = d3.scale.linear()
@@ -332,7 +332,13 @@
 
         for (var i = 0; i < chrom_acum_length.length; i++) {
             var num = i + 1;
-            array_test1.push("chr" + num);
+            if ( num == 23 ) {
+                array_test1.push("chrX");
+            } else if ( num == 24 ) {
+                array_test1.push("chrY");
+            } else {
+                array_test1.push("chr" + num);
+            }
             array_test2.push(xScale(chrom_acum_length[i]));
         }
         //  console.log(x1,x2,y1,y2);
@@ -360,7 +366,7 @@
             .ticks(5);
 
         // Define tooltip
-        var tooltip = d3.select("#containergenome2")
+        var tooltip = d3.select("#containerPRScoefficients")
             .append("div")
             .style("position", "fixed")
             .style("z-index", "0")
@@ -368,7 +374,7 @@
             .text("a simple tooltip");
 
         //Create SVG element
-        var svg = d3.select("#containergenome2")
+        var svg = d3.select("#containerPRScoefficients")
             .append("svg")
             .attr("width", w + margin.left + margin.right)
             .attr("height", h + margin.top + margin.bottom)
@@ -424,7 +430,10 @@
             .attr("r", function(d){
                 return d3.max([2,1.5*parseFloat(d[1])]);
                 })
-            .on("mouseover", function(d){return tooltip.style("top", (event.pageY ) + "px").style("left", (event.pageX) + "px").style("visibility", "visible").text("variant id: " + d[2] + "; " + "Lasso coefficient: " + Number((d[1]).toFixed(4)));})
+            .on("mouseover", function(d){return tooltip.style("top", (event.pageY ) + "px")
+            .style("left", (event.pageX) + "px")
+            .style("visibility", "visible")
+            .text("variant id: " + d[2] + "; " + "Lasso coefficient: " + Number((d[1]).toFixed(4)));})
             .on("mousemove", function(){return tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX)+"px");})
             .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
             .on("click", function(d){
@@ -436,17 +445,20 @@
 
         //Create X axis
         svg.append("g")
-            .attr("class", "manaxis").attr("font-size", "10px")
+            .attr("class", "manaxis")
+            .style("font-size", "14px")
             .attr("transform", "translate(0," + (h) + ")")
             .call(xAxis);
 
-        svg.append("g").attr("transform", "translate(0," + 0 + ")")
+        svg.append("g")
             .attr("class", "xt axis")
+            .attr("transform", "translate(0," + 0 + ")")
             .call(xAxis_top);
 
         svg.selectAll(".xt text") // select all the text elements for the xaxis
+            .style("font-size", "22px")
             .attr("transform", function(d) {
-                return "translate(" + this.getBBox().height + "," + this.getBBox().height * -0.5 + ")rotate(-45)";
+                return "translate(" + this.getBBox().height + "," + this.getBBox().height * -0.5 + ")" + "rotate(-45)";
             });
 
         //Create Y axis
@@ -457,9 +469,10 @@
             .attr("class", "manlabel")
             .attr("transform", "rotate(-90)")
             .attr("x", -10)
-            .attr("y", -50)
+            .attr("y", -70)
             .attr("dy", ".71em")
-            .style("text-anchor", "end").attr("font-size", "17px")
+            .style("text-anchor", "end")
+            .style("font-size", "22px")
             .text("Lasso coefficient");
         document.getElementById("number_of_active_variants").innerHTML = activeset.toString();
     });
