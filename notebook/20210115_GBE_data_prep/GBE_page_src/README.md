@@ -3,8 +3,8 @@
 The PRS page in GBE is implemented with Flask template.
 
 We have the data in `$OAK` (`/oak/stanford/groups/mrivas/projects/PRS/GBE_data/`).
-Please copy it to `/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/static/PRS_map/traits.tsv`
-so that it's accessible as `/biobankengine/app/static/PRS_map/traits.tsv` from the GBE VM.
+Please copy it to `/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/static/PRSmap/PRSmap_v1/traits.tsv`
+so that it's accessible as `/biobankengine/app/static/PRSmap/PRSmap_v1/traits.tsv` from the GBE VM.
 
 To update the app, please copy the current version of `gbe.py` in the GBE repo, make an edit, and copy to the repo.
 
@@ -27,4 +27,4 @@ Restarting biobankengine_gbbe_1 ... done
 
 - [`3_summary_table.ipynb`](../3_summary_table.ipynb): the list of 1617 traits.
 
-scp /oak/stanford/groups/mrivas/projects/PRS/GBE_data/traits.tsv gbe:/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/static/PRS_map/traits.tsv
+scp /oak/stanford/groups/mrivas/projects/PRS/GBE_data/traits.tsv gbe:/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/static/PRSmap/PRSmap_v1/traits.tsv

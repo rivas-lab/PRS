@@ -84,7 +84,7 @@ EXON_PADDING = 50
 app.config.update(dict(
     ## Set SCIDB_URL='http://localhost:8080' environment variable
     # SCIDB_URL='http://localhost:8080',
-    DEBUG=True,
+    DEBUG=False,
     SECRET_KEY='development key',
     LOAD_DB_PARALLEL_PROCESSES = 8,  # contigs assigned to threads, so good to make this a factor of 24 (eg. 2,3,4,6,8)
     SITES_VCFS=glob.glob(os.path.join(os.path.dirname(__file__), GBE_FILES_DIRECTORY, 'icd10ukbb.ukbiobank.combined.vcf.gz')),
@@ -784,8 +784,8 @@ def snpnet_page(namespace, icd_str):
             namespace=namespace,
             icd=icd,
             icd_str=icd_str,
-            snpnet_plot='/static/PRS_map/{}.plot.png'.format(icd_str),
-            snpnet_eval='/static/PRS_map/{}.eval.tsv'.format(icd_str)
+            snpnet_plot='/static/PRSmap/PRSmap_v1/{}.plot.png'.format(icd_str),
+            snpnet_eval='/static/PRSmap/PRSmap_v1/{}.eval.tsv'.format(icd_str)
         )
     except Exception as e:
         print('Failed on snpnet.html  Error=', traceback.format_exc())
@@ -957,7 +957,7 @@ def prs_page():
             namespace = request.form['functionassocset']
 
         # read trait  list table
-        trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
+        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v1/traits.tsv'
         table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
         table_cols_select=['Trait group', 'Family', 'significant?']
 
@@ -2208,4 +2208,4 @@ def apply_caching(response):
 
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = 6000, debug=True, use_debugger=True, use_reloader=True, threaded=True)
+    app.run(host = "0.0.0.0", port = 6000, debug=False, use_debugger=False, use_reloader=True, threaded=True)

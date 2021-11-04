@@ -98,7 +98,7 @@
             </dl>
         </div>
         <div class="col col-md-6">
-            <a href="/static/PRS_map/{{ icd[0].icd}}.tsv" class="btn btn-block btn-primary">
+            <a href="/static/PRSmap/PRSmap_v1/{{ icd[0].icd}}.tsv" class="btn btn-block btn-primary">
                 <span class="glyphicon glyphicon-cloud-download"></span> {{icd[0].Name}} PRS weights
             </a>
         </div>
@@ -230,7 +230,7 @@
     pvalarr = new Array();
     idarr = new Array();
     data_weight_pvalue = [];
-    d3.tsv("/static/PRS_map/" + icd[0].icd + ".tsv",function(error,data){
+    d3.tsv("/static/PRSmap/PRSmap_v1/" + icd[0].icd + ".tsv",function(error,data){
         data.forEach(function(d) {
     // Fill two seperate arrays, one with points greater than the -log10(pvalue) threshold, and another
     // with points lower than the threshold defined in cutoff
