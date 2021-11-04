@@ -763,6 +763,8 @@ def biomarkers_page():
 
 @app.route('/<namespace>/snpnet/<icd_str>')
 def snpnet_page(namespace, icd_str):
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     namespace = 'RIVAS_HG19'
     db = get_db(namespace)
     try:
@@ -790,6 +792,40 @@ def snpnet_page(namespace, icd_str):
     except Exception as e:
         print('Failed on snpnet.html  Error=', traceback.format_exc())
         abort(404)
+
+
+@app.route('/<namespace>/snpnet_v1/<icd_str>')
+def snpnet_page_v1(namespace, icd_str):
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
+    namespace = 'RIVAS_HG19'
+    db = get_db(namespace)
+    try:
+        cutoff = None
+        icd = None
+        for p in [.001]:
+            assocset = str(db.list_association_sets()['name'][0])
+            df = db.get_phenotype_fields(association_set=assocset, include_pvalue_threshold=True)
+            field_identifier = int(df[df['title'] == icd_str]['field_id'])
+            pvalthr = float(df[df['title'] == icd_str]['pvalue_threshold'])
+            shortname = str(df[df['title'] == icd_str]['notes'].squeeze().split(';')[1].split('=')[1])
+            casecnt = str(df[df['title'] == icd_str]['notes'].squeeze().split(';')[0].split('=')[1])
+            pvalthr = max(5e-7, pvalthr)
+            cuttoff = pvalthr
+        icd = [{'Case': casecnt, 'Name': shortname, 'icd': icd_str}]
+
+	return render_template(
+            'snpnet_v1.html',
+            namespace=namespace,
+            icd=icd,
+            icd_str=icd_str,
+            snpnet_plot='/static/PRSmap/PRSmap_v1/{}.plot.png'.format(icd_str),
+            snpnet_eval='/static/PRSmap/PRSmap_v1/{}.eval.tsv'.format(icd_str)
+        )
+    except Exception as e:
+        print('Failed on snpnet.html  Error=', traceback.format_exc())
+        abort(404)
+
 
 @app.route('/<namespace>/coding_breakdown/<icd_str>')
 def coding_breakdown_page(namespace, icd_str):
@@ -981,6 +1017,52 @@ def prs_page():
 
         return render_template(
             'prs.html',
+            namespace = namespace,
+            table_prs_trait_list_cols        = table_cols,
+            table_prs_trait_list_col_len     = len(table_cols),
+            table_prs_trait_list_cols_select = table_cols_select,
+            table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
+	    )
+
+    except Exception as e:
+        print('Unknown Error=', traceback.format_exc())
+        abort(404)
+
+
+@app.route('/prs_v1')
+def prs_page_v1():
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
+    try:
+        namespace = 'RIVAS_HG19'
+        if request.method == 'POST':
+            namespace = request.form['functionassocset']
+
+        # read trait  list table
+        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v1/traits.tsv'
+        table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
+        table_cols_select=['Trait group', 'Family', 'significant?']
+
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['trait'] = ['<a href="/RIVAS_HG19/snpnet_v1/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
+        df = df.drop('trait_name',axis=1)
+        for col in ['#trait_category']:
+                # format string
+            df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
+        for col in ['WB_test_P']:
+                # format to scientific notation
+            df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
+        for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
+                # format digits
+            df[col] = df[col].map(lambda x: str(round(x, 2)))
+
+        # generate HTML string
+        table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+                ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+        ) for row in range(df.shape[0])])
+
+        return render_template(
+            'prs_v1.html',
             namespace = namespace,
             table_prs_trait_list_cols        = table_cols,
             table_prs_trait_list_col_len     = len(table_cols),
