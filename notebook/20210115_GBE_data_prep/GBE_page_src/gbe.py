@@ -1246,6 +1246,31 @@ def mrp_page(namespace,freq):
         print('Unknown Error=', traceback.format_exc())
         abort(404)
 
+
+
+@app.route('/<namespace>/hla-allelotypes')
+def hla_page(namespace):
+    try:
+        trait_list_f='/biobankengine/app/static/hla_gbe.tsv'
+        table_cols=['allelotype','locus','GBE_ID','GBE_NAME','N_GBE','plink_OR','plink_LOG(OR)_SE','plink_BY_ADJ_P','BMA_posterior_mean','BMA_posterior_sd','BMA_posterior_prob','gen_1_BY_ADJ_P','gen_2_BY_ADJ_P','add_BY_ADJ_P','AIC_genotype','AIC_additive','delta_AIC']
+        df = pandas.read_csv(trait_list_f, sep='\t')
+	# generate HTML string
+	table_mrp_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+	) for row in range(df.shape[0])])
+        return render_template(
+            'hla2021.html',
+	    namespace = namespace,
+            table_mrp_trait_list_cols        = table_cols,
+	    table_mrp_trait_list_col_len     = len(table_cols),
+            #		table_mrp_trait_list_cols_select = table_cols_select,
+	    table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
+	)
+
+    except Exception as e:
+        print('Unknown Error=', traceback.format_exc())
+        abort(404)
+
 @app.route('/dprs')
 def dprs_page():
     try:
