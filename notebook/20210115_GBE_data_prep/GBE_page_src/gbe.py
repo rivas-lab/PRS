@@ -1125,11 +1125,11 @@ def prs_page_v2():
         for col in ['WBtest_P']:
             if col in df.columns:
                 # format to scientific notation
-                df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
+                df[col] = df[col].map(lambda x: '{:0.1e}'.format(x))
         for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
             if col in df.columns:
                 # format digits
-                df[col] = df[col].map(lambda x: str(round(x, 2)))
+                df[col] = df[col].map(lambda x: '{:0.3f}'.format(x))
 
         df = df[[
             'trait_category', 'trait_name', 'family',
