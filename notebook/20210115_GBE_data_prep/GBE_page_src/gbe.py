@@ -812,10 +812,10 @@ def snpnet_page_v2(namespace, icd_str):
                 'r2', 'auc', 'TjurR2', 'NagelkerkeR2'
             ],
             'metric_plot': [
-                'R2',
+                '<i>R</i><sup>2</sup>',
                 'ROC-AUC',
-                "Tjur's pseudo-R2",
-                "Nagelkerke's pseudo-R2"
+                "Tjur's pseudo-<i>R</i><sup>2</sup>",
+                "Cragg and Uhler's pseudo-<i>R</i><sup>2</sup>"
             ],
             'metric_order': range(4)
         })
