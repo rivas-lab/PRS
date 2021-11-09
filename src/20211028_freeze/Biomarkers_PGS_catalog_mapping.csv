@@ -1,0 +1,36 @@
+Trait Category,GBE ID,Trait Name,PGS catalog score ID,Mapped trait(s) (EFO ID),Mapped trait(s) (EFO label)
+Biomarkers,INI30030650,AST to ALT ratio,PGS000674,EFO_0010934,aspartate aminotransferase to alanine aminotransferase ratio
+Biomarkers,INI30030700,eGFR,PGS000682,EFO_0005208,glomerular filtration rate
+Biomarkers,INI30030860,Non-albumin protein,PGS000691,EFO_0004568,serum non-albumin protein measurement
+Biomarkers,INI30500,Microalbumin in urine,PGS000690,EFO_0010967,urinary microalbumin measurement
+Biomarkers,INI30510,Creatinine (enzymatic) in urine,PGS000679,EFO_0007934,creatinine clearance measurement
+Biomarkers,INI30520,Potassium in urine,PGS000693,EFO_0010952,urinary potassium measurement
+Biomarkers,INI30530,Sodium in urine,PGS000695,EFO_0005116|EFO_0009282,urinary metabolite measurement|sodium measurement
+Biomarkers,INI30600,Albumin,PGS000669,EFO_0004535,serum albumin measurement
+Biomarkers,INI30610,Alkaline phosphatase,PGS000670,EFO_0004533,alkaline phosphatase measurement
+Biomarkers,INI30620,Alanine aminotransferase,PGS000668,EFO_0004735,serum alanine aminotransferase measurement
+Biomarkers,INI30630,Apolipoprotein A,PGS000671,EFO_0004614,apolipoprotein A 1 measurement
+Biomarkers,INI30640,Apolipoprotein B,PGS000672,EFO_0004615,apolipoprotein B measurement
+Biomarkers,INI30650,Aspartate aminotransferase,PGS000673,EFO_0004736,aspartate aminotransferase measurement
+Biomarkers,INI30660,Direct bilirubin,PGS000681,EFO_0004570,bilirubin measurement
+Biomarkers,INI30670,Urea,PGS000701,EFO_0011005,urea measurement
+Biomarkers,INI30680,Calcium,PGS000676,EFO_0004838,calcium measurement
+Biomarkers,INI30690,Cholesterol,PGS000677,EFO_0004574,total cholesterol measurement
+Biomarkers,INI30700,Creatinine,PGS000678,EFO_0004518,creatinine measurement
+Biomarkers,INI30710,C-reactive protein,PGS000675,EFO_0004458,C-reactive protein measurement
+Biomarkers,INI30720,Cystatin C,PGS000680,EFO_0004617,cystatin C measurement
+Biomarkers,INI30730,Gamma glutamyltransferase,PGS000683,EFO_0004532,serum gamma-glutamyl transferase measurement
+Biomarkers,INI30740,Glucose,PGS000684,EFO_0004468,glucose measurement
+Biomarkers,INI30750,Glycated haemoglobin (HbA1c),PGS000685,EFO_0004541,HbA1c measurement
+Biomarkers,INI30760,HDL cholesterol,PGS000686,EFO_0004612,high density lipoprotein cholesterol measurement
+Biomarkers,INI30770,IGF-1,PGS000687,EFO_0004627,IGF-1 measurement
+Biomarkers,INI30780,LDL cholesterol,PGS000688,EFO_0004611,low density lipoprotein cholesterol measurement
+Biomarkers,INI30790,Lipoprotein A,PGS000689,EFO_0006925,lipoprotein A measurement
+Biomarkers,INI30810,Phosphate,PGS000692,EFO_0010968,phosphate measurement
+Biomarkers,INI30830,SHBG,PGS000694,EFO_0004696,sex hormone-binding globulin measurement
+Biomarkers,INI30840,Total bilirubin,PGS000697,EFO_0004570,bilirubin measurement
+Biomarkers,INI30850,Testosterone,PGS000696,EFO_0004908,testosterone measurement
+Biomarkers,INI30860,Total protein,PGS000698,EFO_0004536,total blood protein measurement
+Biomarkers,INI30870,Triglycerides,PGS000699,EFO_0004530,triglyceride measurement
+Biomarkers,INI30880,Urate,PGS000700,EFO_0004531,urate measurement
+Biomarkers,INI30890,Vitamin D,PGS000702,EFO_0004631,vitamin D measurement
