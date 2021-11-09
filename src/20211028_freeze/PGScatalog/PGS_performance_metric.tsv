@@ -55,10 +55,6 @@ GBE_cancer1045	cancer1045_non_british_white	Testicular cancer	0.62484 [0.53760, 
 GBE_cancer1045	cancer1045_non_british_white	Testicular cancer	0.89735 [0.86792, 0.92679]	NA	Incremental AUROC (full-covars) = 0.01226, Nagelkerke's R2 = 0.17040, Tjur's R2 = 0.00509	age, sex, UKB array type, Genotype PCs
 GBE_cancer1045	cancer1045_s_asian	Testicular cancer	0.38600 [0.09980, 0.67219]	NA	Nagelkerke's R2 = 0.00616, Tjur's R2 = 0.00006	
 GBE_cancer1045	cancer1045_s_asian	Testicular cancer	0.98160 [0.96678, 0.99641]	NA	Incremental AUROC (full-covars) = 0.00299, Nagelkerke's R2 = 0.29699, Tjur's R2 = 0.01064	age, sex, UKB array type, Genotype PCs
-GBE_cancer1045	cancer1045_e_asian	Testicular cancer	NA [NA, NA]	NA	Nagelkerke's R2 = 0.04537, Tjur's R2 = 0.00027	
-GBE_cancer1045	cancer1045_e_asian	Testicular cancer	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.40858, Tjur's R2 = 0.01771	age, sex, UKB array type, Genotype PCs
-GBE_cancer1045	cancer1045_african	Testicular cancer	NA [NA, NA]	NA	Nagelkerke's R2 = 0.05143, Tjur's R2 = 0.00010	
-GBE_cancer1045	cancer1045_african	Testicular cancer	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 1.00000, Tjur's R2 = 1.00000	age, sex, UKB array type, Genotype PCs
 GBE_cancer1059	cancer1059_test	Malignant melanoma	0.57206 [0.55302, 0.59110]	NA	Nagelkerke's R2 = 0.00707, Tjur's R2 = 0.00104	
 GBE_cancer1059	cancer1059_test	Malignant melanoma	0.60362 [0.58554, 0.62170]	NA	Incremental AUROC (full-covars) = 0.02790, Nagelkerke's R2 = 0.01348, Tjur's R2 = 0.00184	age, sex, UKB array type, Genotype PCs
 GBE_cancer1059	cancer1059_non_british_white	Malignant melanoma	0.59090 [0.56008, 0.62173]	NA	Nagelkerke's R2 = 0.01149, Tjur's R2 = 0.00174	
@@ -333,8 +329,6 @@ GBE_HC1209	HC1209_non_british_white	TTE reactive arthropathies	0.65137 [0.47674,
 GBE_HC1209	HC1209_non_british_white	TTE reactive arthropathies	0.77096 [0.63921, 0.90271]	NA	Incremental AUROC (full-covars) = 0.03274, Nagelkerke's R2 = 0.09743, Tjur's R2 = 0.00877	age, sex, UKB array type, Genotype PCs
 GBE_HC1209	HC1209_s_asian	TTE reactive arthropathies	0.67786 [0.66768, 0.68805]	NA	Nagelkerke's R2 = 0.00071, Tjur's R2 = 0.00000	
 GBE_HC1209	HC1209_s_asian	TTE reactive arthropathies	0.94552 [0.83969, 1.00000]	NA	Incremental AUROC (full-covars) = 0.00045, Nagelkerke's R2 = 0.25627, Tjur's R2 = 0.00954	age, sex, UKB array type, Genotype PCs
-GBE_HC1209	HC1209_e_asian	TTE reactive arthropathies	NA [NA, NA]	NA	Nagelkerke's R2 = 0.00444, Tjur's R2 = 0.00002	
-GBE_HC1209	HC1209_e_asian	TTE reactive arthropathies	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.55453, Tjur's R2 = 0.06391	age, sex, UKB array type, Genotype PCs
 GBE_HC1209	HC1209_african	TTE reactive arthropathies	0.72061 [0.49213, 0.94910]	NA	Nagelkerke's R2 = 0.00991, Tjur's R2 = 0.00004	
 GBE_HC1209	HC1209_african	TTE reactive arthropathies	0.95940 [0.92062, 0.99818]	NA	Incremental AUROC (full-covars) = 0.00395, Nagelkerke's R2 = 0.17918, Tjur's R2 = 0.00186	age, sex, UKB array type, Genotype PCs
 GBE_HC1211	HC1211_test	TTE seropositive rheumatoid arthritis	0.70720 [0.65945, 0.75495]	NA	Nagelkerke's R2 = 0.04612, Tjur's R2 = 0.00184	
@@ -343,8 +337,6 @@ GBE_HC1211	HC1211_non_british_white	TTE seropositive rheumatoid arthritis	0.7316
 GBE_HC1211	HC1211_non_british_white	TTE seropositive rheumatoid arthritis	0.76787 [0.68390, 0.85184]	NA	Incremental AUROC (full-covars) = 0.04180, Nagelkerke's R2 = 0.08412, Tjur's R2 = 0.00362	age, sex, UKB array type, Genotype PCs
 GBE_HC1211	HC1211_s_asian	TTE seropositive rheumatoid arthritis	0.50626 [0.35145, 0.66107]	NA	Nagelkerke's R2 = 0.00567, Tjur's R2 = 0.00020	
 GBE_HC1211	HC1211_s_asian	TTE seropositive rheumatoid arthritis	0.76865 [0.66080, 0.87651]	NA	Incremental AUROC (full-covars) = -0.00731, Nagelkerke's R2 = 0.08089, Tjur's R2 = 0.00426	age, sex, UKB array type, Genotype PCs
-GBE_HC1211	HC1211_e_asian	TTE seropositive rheumatoid arthritis	NA [NA, NA]	NA	Nagelkerke's R2 = 0.00000, Tjur's R2 = 0.00000	
-GBE_HC1211	HC1211_e_asian	TTE seropositive rheumatoid arthritis	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.20092, Tjur's R2 = 0.00259	age, sex, UKB array type, Genotype PCs
 GBE_HC1211	HC1211_african	TTE seropositive rheumatoid arthritis	0.39273 [0.11505, 0.67041]	NA	Nagelkerke's R2 = 0.01613, Tjur's R2 = 0.00018	
 GBE_HC1211	HC1211_african	TTE seropositive rheumatoid arthritis	0.90345 [0.82233, 0.98457]	NA	Incremental AUROC (full-covars) = -0.00669, Nagelkerke's R2 = 0.16794, Tjur's R2 = 0.00394	age, sex, UKB array type, Genotype PCs
 GBE_HC1212	HC1212_test	TTE other rheumatoid arthritis	0.59784 [0.58200, 0.61368]	NA	Nagelkerke's R2 = 0.01495, Tjur's R2 = 0.00307	
@@ -581,8 +573,6 @@ GBE_HC1584	HC1584_non_british_white	AD alzheimer's disease	0.66389 [0.57085, 0.7
 GBE_HC1584	HC1584_non_british_white	AD alzheimer's disease	0.86260 [0.81314, 0.91206]	NA	Incremental AUROC (full-covars) = 0.03113, Nagelkerke's R2 = 0.15552, Tjur's R2 = 0.00953	age, sex, UKB array type, Genotype PCs
 GBE_HC1584	HC1584_s_asian	AD alzheimer's disease	0.59348 [0.39906, 0.78790]	NA	Nagelkerke's R2 = 0.01731, Tjur's R2 = 0.00069	
 GBE_HC1584	HC1584_s_asian	AD alzheimer's disease	0.91522 [0.82612, 1.00000]	NA	Incremental AUROC (full-covars) = 0.00910, Nagelkerke's R2 = 0.23563, Tjur's R2 = 0.02167	age, sex, UKB array type, Genotype PCs
-GBE_HC1584	HC1584_e_asian	AD alzheimer's disease	NA [NA, NA]	NA	Nagelkerke's R2 = 0.13131, Tjur's R2 = 0.00119	
-GBE_HC1584	HC1584_e_asian	AD alzheimer's disease	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.45153, Tjur's R2 = 0.02561	age, sex, UKB array type, Genotype PCs
 GBE_HC1584	HC1584_african	AD alzheimer's disease	0.69389 [0.49462, 0.89316]	NA	Nagelkerke's R2 = 0.04322, Tjur's R2 = 0.00158	
 GBE_HC1584	HC1584_african	AD alzheimer's disease	0.96694 [0.94819, 0.98568]	NA	Incremental AUROC (full-covars) = 0.01598, Nagelkerke's R2 = 0.31464, Tjur's R2 = 0.02302	age, sex, UKB array type, Genotype PCs
 GBE_HC165	HC165_test	Type 2 diabetes	0.57592 [0.55208, 0.59975]	NA	Nagelkerke's R2 = 0.00633, Tjur's R2 = 0.00064	
@@ -627,8 +617,6 @@ GBE_HC177	HC177_test	Dupuytren's contracture	0.66457 [0.60823, 0.72091]	NA	Nagel
 GBE_HC177	HC177_test	Dupuytren's contracture	0.74126 [0.69429, 0.78823]	NA	Incremental AUROC (full-covars) = 0.04471, Nagelkerke's R2 = 0.05438, Tjur's R2 = 0.00153	age, sex, UKB array type, Genotype PCs
 GBE_HC177	HC177_non_british_white	Dupuytren's contracture	0.65251 [0.53357, 0.77144]	NA	Nagelkerke's R2 = 0.02488, Tjur's R2 = 0.00041	
 GBE_HC177	HC177_non_british_white	Dupuytren's contracture	0.78857 [0.69837, 0.87877]	NA	Incremental AUROC (full-covars) = 0.03925, Nagelkerke's R2 = 0.07412, Tjur's R2 = 0.00144	age, sex, UKB array type, Genotype PCs
-GBE_HC177	HC177_african	Dupuytren's contracture	NA [NA, NA]	NA	Nagelkerke's R2 = 0.14756, Tjur's R2 = 0.00050	
-GBE_HC177	HC177_african	Dupuytren's contracture	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.08384, Tjur's R2 = 0.00020	age, sex, UKB array type, Genotype PCs
 GBE_HC188	HC188_test	Gallstones	0.61710 [0.60730, 0.62690]	NA	Nagelkerke's R2 = 0.02494, Tjur's R2 = 0.00910	
 GBE_HC188	HC188_test	Gallstones	0.67227 [0.66315, 0.68138]	NA	Incremental AUROC (full-covars) = 0.04156, Nagelkerke's R2 = 0.05484, Tjur's R2 = 0.01995	age, sex, UKB array type, Genotype PCs
 GBE_HC188	HC188_non_british_white	Gallstones	0.62496 [0.60759, 0.64234]	NA	Nagelkerke's R2 = 0.02750, Tjur's R2 = 0.00947	
@@ -851,8 +839,6 @@ GBE_HC322	HC322_non_british_white	Crohns disease	0.57919 [0.52051, 0.63786]	NA	N
 GBE_HC322	HC322_non_british_white	Crohns disease	0.61269 [0.55802, 0.66736]	NA	Incremental AUROC (full-covars) = 0.02705, Nagelkerke's R2 = 0.01161, Tjur's R2 = 0.00065	age, sex, UKB array type, Genotype PCs
 GBE_HC322	HC322_s_asian	Crohns disease	0.56349 [0.47905, 0.64793]	NA	Nagelkerke's R2 = 0.00366, Tjur's R2 = 0.00023	
 GBE_HC322	HC322_s_asian	Crohns disease	0.71000 [0.64649, 0.77350]	NA	Incremental AUROC (full-covars) = 0.01378, Nagelkerke's R2 = 0.03928, Tjur's R2 = 0.00205	age, sex, UKB array type, Genotype PCs
-GBE_HC322	HC322_e_asian	Crohns disease	NA [NA, NA]	NA	Nagelkerke's R2 = 0.21747, Tjur's R2 = 0.00307	
-GBE_HC322	HC322_e_asian	Crohns disease	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.03211, Tjur's R2 = 0.00018	age, sex, UKB array type, Genotype PCs
 GBE_HC322	HC322_african	Crohns disease	0.49152 [0.37858, 0.60446]	NA	Nagelkerke's R2 = 0.00004, Tjur's R2 = 0.00000	
 GBE_HC322	HC322_african	Crohns disease	0.65892 [0.54485, 0.77299]	NA	Incremental AUROC (full-covars) = -0.02526, Nagelkerke's R2 = 0.05502, Tjur's R2 = 0.01818	age, sex, UKB array type, Genotype PCs
 GBE_HC326	HC326_test	Heart attack (MI)	0.58432 [0.57339, 0.59525]	NA	Nagelkerke's R2 = 0.01220, Tjur's R2 = 0.00383	
@@ -929,8 +915,6 @@ GBE_HC413	HC413_non_british_white	Genetic haematological disorder	0.61010 [0.480
 GBE_HC413	HC413_non_british_white	Genetic haematological disorder	0.74771 [0.64556, 0.84987]	NA	Incremental AUROC (full-covars) = 0.05010, Nagelkerke's R2 = 0.04759, Tjur's R2 = 0.00068	age, sex, UKB array type, Genotype PCs
 GBE_HC413	HC413_s_asian	Genetic haematological disorder	0.45357 [0.00000, 1.00000]	NA	Nagelkerke's R2 = 0.03430, Tjur's R2 = 0.00079	
 GBE_HC413	HC413_s_asian	Genetic haematological disorder	0.86122 [0.58992, 1.00000]	NA	Incremental AUROC (full-covars) = -0.03046, Nagelkerke's R2 = 0.17517, Tjur's R2 = 0.00651	age, sex, UKB array type, Genotype PCs
-GBE_HC413	HC413_e_asian	Genetic haematological disorder	NA [NA, NA]	NA	Nagelkerke's R2 = 0.13858, Tjur's R2 = 0.00130	
-GBE_HC413	HC413_e_asian	Genetic haematological disorder	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.14417, Tjur's R2 = 0.00139	age, sex, UKB array type, Genotype PCs
 GBE_HC413	HC413_african	Genetic haematological disorder	0.33706 [0.08609, 0.58803]	NA	Nagelkerke's R2 = 0.01794, Tjur's R2 = 0.00020	
 GBE_HC413	HC413_african	Genetic haematological disorder	0.70006 [0.42128, 0.97885]	NA	Incremental AUROC (full-covars) = -0.02126, Nagelkerke's R2 = 0.03928, Tjur's R2 = 0.00058	age, sex, UKB array type, Genotype PCs
 GBE_HC422	HC422_test	Ankylosing spondylitis	0.72651 [0.68965, 0.76337]	NA	Nagelkerke's R2 = 0.09877, Tjur's R2 = 0.00922	
@@ -1039,8 +1023,6 @@ GBE_HC608	HC608_non_british_white	TTE vitamin b12 deficiency anaemia	0.59612 [0.
 GBE_HC608	HC608_non_british_white	TTE vitamin b12 deficiency anaemia	0.65118 [0.60827, 0.69409]	NA	Incremental AUROC (full-covars) = 0.02555, Nagelkerke's R2 = 0.02729, Tjur's R2 = 0.00235	age, sex, UKB array type, Genotype PCs
 GBE_HC608	HC608_s_asian	TTE vitamin b12 deficiency anaemia	0.57469 [0.52685, 0.62252]	NA	Nagelkerke's R2 = 0.00966, Tjur's R2 = 0.00166	
 GBE_HC608	HC608_s_asian	TTE vitamin b12 deficiency anaemia	0.72387 [0.68340, 0.76434]	NA	Incremental AUROC (full-covars) = 0.01252, Nagelkerke's R2 = 0.06747, Tjur's R2 = 0.01252	age, sex, UKB array type, Genotype PCs
-GBE_HC608	HC608_e_asian	TTE vitamin b12 deficiency anaemia	NA [NA, NA]	NA	Nagelkerke's R2 = 0.14149, Tjur's R2 = 0.00134	
-GBE_HC608	HC608_e_asian	TTE vitamin b12 deficiency anaemia	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.54331, Tjur's R2 = 0.05591	age, sex, UKB array type, Genotype PCs
 GBE_HC608	HC608_african	TTE vitamin b12 deficiency anaemia	0.58390 [0.43974, 0.72805]	NA	Nagelkerke's R2 = 0.00536, Tjur's R2 = 0.00023	
 GBE_HC608	HC608_african	TTE vitamin b12 deficiency anaemia	0.66063 [0.54547, 0.77579]	NA	Incremental AUROC (full-covars) = 0.01762, Nagelkerke's R2 = 0.02699, Tjur's R2 = 0.00112	age, sex, UKB array type, Genotype PCs
 GBE_HC61	HC61_test	Haemorrhoids / piles	0.52230 [0.51348, 0.53112]	NA	Nagelkerke's R2 = 0.00132, Tjur's R2 = 0.00052	
@@ -1167,8 +1149,6 @@ GBE_HC702	HC702_non_british_white	TTE disorders of porphyrin and bilirubin metab
 GBE_HC702	HC702_non_british_white	TTE disorders of porphyrin and bilirubin metabolism	0.89799 [0.85782, 0.93815]	NA	Incremental AUROC (full-covars) = 0.18304, Nagelkerke's R2 = 0.23107, Tjur's R2 = 0.02691	age, sex, UKB array type, Genotype PCs
 GBE_HC702	HC702_s_asian	TTE disorders of porphyrin and bilirubin metabolism	0.81401 [0.72659, 0.90144]	NA	Nagelkerke's R2 = 0.11194, Tjur's R2 = 0.00614	
 GBE_HC702	HC702_s_asian	TTE disorders of porphyrin and bilirubin metabolism	0.85394 [0.77864, 0.92924]	NA	Incremental AUROC (full-covars) = 0.14922, Nagelkerke's R2 = 0.15917, Tjur's R2 = 0.01388	age, sex, UKB array type, Genotype PCs
-GBE_HC702	HC702_e_asian	TTE disorders of porphyrin and bilirubin metabolism	NA [NA, NA]	NA	Nagelkerke's R2 = 0.11351, Tjur's R2 = 0.00094	
-GBE_HC702	HC702_e_asian	TTE disorders of porphyrin and bilirubin metabolism	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.03197, Tjur's R2 = 0.00018	age, sex, UKB array type, Genotype PCs
 GBE_HC702	HC702_african	TTE disorders of porphyrin and bilirubin metabolism	0.66722 [0.47474, 0.85969]	NA	Nagelkerke's R2 = 0.01768, Tjur's R2 = 0.00015	
 GBE_HC702	HC702_african	TTE disorders of porphyrin and bilirubin metabolism	0.87825 [0.76546, 0.99105]	NA	Incremental AUROC (full-covars) = -0.00608, Nagelkerke's R2 = 0.13644, Tjur's R2 = 0.00271	age, sex, UKB array type, Genotype PCs
 GBE_HC703	HC703_test	TTE disorders of mineral metabolism	0.57843 [0.55918, 0.59767]	NA	Nagelkerke's R2 = 0.02793, Tjur's R2 = 0.00596	
@@ -1211,8 +1191,6 @@ GBE_HC713	HC713_non_british_white	TTE unspecified dementia	0.57672 [0.50856, 0.6
 GBE_HC713	HC713_non_british_white	TTE unspecified dementia	0.82275 [0.77979, 0.86571]	NA	Incremental AUROC (full-covars) = 0.00342, Nagelkerke's R2 = 0.12092, Tjur's R2 = 0.00885	age, sex, UKB array type, Genotype PCs
 GBE_HC713	HC713_s_asian	TTE unspecified dementia	0.56115 [0.41165, 0.71066]	NA	Nagelkerke's R2 = 0.01510, Tjur's R2 = 0.00093	
 GBE_HC713	HC713_s_asian	TTE unspecified dementia	0.90804 [0.86257, 0.95350]	NA	Incremental AUROC (full-covars) = 0.00610, Nagelkerke's R2 = 0.20027, Tjur's R2 = 0.01474	age, sex, UKB array type, Genotype PCs
-GBE_HC713	HC713_e_asian	TTE unspecified dementia	NA [NA, NA]	NA	Nagelkerke's R2 = 0.02176, Tjur's R2 = 0.00012	
-GBE_HC713	HC713_e_asian	TTE unspecified dementia	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.09993, Tjur's R2 = 0.00077	age, sex, UKB array type, Genotype PCs
 GBE_HC713	HC713_african	TTE unspecified dementia	0.57071 [0.42666, 0.71476]	NA	Nagelkerke's R2 = 0.01431, Tjur's R2 = 0.00090	
 GBE_HC713	HC713_african	TTE unspecified dementia	0.82014 [0.73087, 0.90941]	NA	Incremental AUROC (full-covars) = 0.02407, Nagelkerke's R2 = 0.13536, Tjur's R2 = 0.01756	age, sex, UKB array type, Genotype PCs
 GBE_HC78	HC78_test	Arthritis (nos)	0.52671 [0.51771, 0.53571]	NA	Nagelkerke's R2 = 0.00147, Tjur's R2 = 0.00053	
@@ -1231,8 +1209,6 @@ GBE_HC807	HC807_non_british_white	TTE alzheimer's disease	0.67961 [0.58969, 0.76
 GBE_HC807	HC807_non_british_white	TTE alzheimer's disease	0.86841 [0.82079, 0.91602]	NA	Incremental AUROC (full-covars) = 0.03323, Nagelkerke's R2 = 0.16057, Tjur's R2 = 0.00982	age, sex, UKB array type, Genotype PCs
 GBE_HC807	HC807_s_asian	TTE alzheimer's disease	0.53145 [0.34417, 0.71873]	NA	Nagelkerke's R2 = 0.01019, Tjur's R2 = 0.00045	
 GBE_HC807	HC807_s_asian	TTE alzheimer's disease	0.91360 [0.83640, 0.99080]	NA	Incremental AUROC (full-covars) = 0.00891, Nagelkerke's R2 = 0.24293, Tjur's R2 = 0.03086	age, sex, UKB array type, Genotype PCs
-GBE_HC807	HC807_e_asian	TTE alzheimer's disease	NA [NA, NA]	NA	Nagelkerke's R2 = 0.12969, Tjur's R2 = 0.00116	
-GBE_HC807	HC807_e_asian	TTE alzheimer's disease	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.45201, Tjur's R2 = 0.02571	age, sex, UKB array type, Genotype PCs
 GBE_HC807	HC807_african	TTE alzheimer's disease	0.63583 [0.42385, 0.84781]	NA	Nagelkerke's R2 = 0.03204, Tjur's R2 = 0.00119	
 GBE_HC807	HC807_african	TTE alzheimer's disease	0.96248 [0.93046, 0.99450]	NA	Incremental AUROC (full-covars) = 0.00757, Nagelkerke's R2 = 0.31063, Tjur's R2 = 0.02501	age, sex, UKB array type, Genotype PCs
 GBE_HC810	HC810_test	TTE multiple sclerosis	0.64688 [0.61364, 0.68013]	NA	Nagelkerke's R2 = 0.02562, Tjur's R2 = 0.00193	
@@ -1241,8 +1217,6 @@ GBE_HC810	HC810_non_british_white	TTE multiple sclerosis	0.61601 [0.56326, 0.668
 GBE_HC810	HC810_non_british_white	TTE multiple sclerosis	0.65561 [0.60622, 0.70500]	NA	Incremental AUROC (full-covars) = 0.05454, Nagelkerke's R2 = 0.02347, Tjur's R2 = 0.00145	age, sex, UKB array type, Genotype PCs
 GBE_HC810	HC810_s_asian	TTE multiple sclerosis	0.55629 [0.19512, 0.91745]	NA	Nagelkerke's R2 = 0.01091, Tjur's R2 = 0.00019	
 GBE_HC810	HC810_s_asian	TTE multiple sclerosis	0.97595 [0.94159, 1.00000]	NA	Incremental AUROC (full-covars) = 0.01648, Nagelkerke's R2 = 0.33555, Tjur's R2 = 0.02494	age, sex, UKB array type, Genotype PCs
-GBE_HC810	HC810_e_asian	TTE multiple sclerosis	NA [NA, NA]	NA	Nagelkerke's R2 = 0.03855, Tjur's R2 = 0.00022	
-GBE_HC810	HC810_e_asian	TTE multiple sclerosis	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.04066, Tjur's R2 = 0.00024	age, sex, UKB array type, Genotype PCs
 GBE_HC810	HC810_african	TTE multiple sclerosis	0.39974 [0.23738, 0.56211]	NA	Nagelkerke's R2 = 0.01095, Tjur's R2 = 0.00029	
 GBE_HC810	HC810_african	TTE multiple sclerosis	0.80330 [0.69350, 0.91311]	NA	Incremental AUROC (full-covars) = -0.03509, Nagelkerke's R2 = 0.10788, Tjur's R2 = 0.01104	age, sex, UKB array type, Genotype PCs
 GBE_HC815	HC815_test	TTE migraine	0.54080 [0.53085, 0.55076]	NA	Nagelkerke's R2 = 0.00310, Tjur's R2 = 0.00103	
@@ -1929,8 +1903,6 @@ GBE_BIN_FC1001747	BIN_FC1001747_non_british_white	Hair colour (natural, before g
 GBE_BIN_FC1001747	BIN_FC1001747_non_british_white	Hair colour (natural, before greying) blonde	0.86290 [0.85606, 0.86974]	NA	Incremental AUROC (full-covars) = 0.14577, Nagelkerke's R2 = 0.35705, Tjur's R2 = 0.24678	age, sex, UKB array type, Genotype PCs
 GBE_BIN_FC1001747	BIN_FC1001747_s_asian	Hair colour (natural, before greying) blonde	0.60036 [0.44104, 0.75968]	NA	Nagelkerke's R2 = 0.01842, Tjur's R2 = 0.00068	
 GBE_BIN_FC1001747	BIN_FC1001747_s_asian	Hair colour (natural, before greying) blonde	0.72231 [0.56379, 0.88083]	NA	Incremental AUROC (full-covars) = -0.06225, Nagelkerke's R2 = 0.07035, Tjur's R2 = 0.00372	age, sex, UKB array type, Genotype PCs
-GBE_BIN_FC1001747	BIN_FC1001747_african	Hair colour (natural, before greying) blonde	NA [NA, NA]	NA	Nagelkerke's R2 = 0.04338, Tjur's R2 = 0.00008	
-GBE_BIN_FC1001747	BIN_FC1001747_african	Hair colour (natural, before greying) blonde	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 0.31046, Tjur's R2 = 0.00309	age, sex, UKB array type, Genotype PCs
 GBE_BIN_FC10020116	BIN_FC10020116_test	Never Smoker	0.58693 [0.58262, 0.59123]	NA	Nagelkerke's R2 = 0.03106, Tjur's R2 = 0.02323	
 GBE_BIN_FC10020116	BIN_FC10020116_test	Never Smoker	0.62158 [0.61735, 0.62581]	NA	Incremental AUROC (full-covars) = 0.03481, Nagelkerke's R2 = 0.06047, Tjur's R2 = 0.04534	age, sex, UKB array type, Genotype PCs
 GBE_BIN_FC10020116	BIN_FC10020116_non_british_white	Never Smoker	0.57608 [0.56899, 0.58317]	NA	Nagelkerke's R2 = 0.02383, Tjur's R2 = 0.01786	
@@ -2005,8 +1977,6 @@ GBE_BIN_FC2001747	BIN_FC2001747_test	Hair colour (natural, before greying) red	0
 GBE_BIN_FC2001747	BIN_FC2001747_test	Hair colour (natural, before greying) red	0.96093 [0.95755, 0.96431]	NA	Incremental AUROC (full-covars) = 0.39030, Nagelkerke's R2 = 0.60335, Tjur's R2 = 0.48278	age, sex, UKB array type, Genotype PCs
 GBE_BIN_FC2001747	BIN_FC2001747_non_british_white	Hair colour (natural, before greying) red	0.95332 [0.94681, 0.95982]	NA	Nagelkerke's R2 = 0.58427, Tjur's R2 = 0.47350	
 GBE_BIN_FC2001747	BIN_FC2001747_non_british_white	Hair colour (natural, before greying) red	0.95374 [0.94735, 0.96013]	NA	Incremental AUROC (full-covars) = 0.27252, Nagelkerke's R2 = 0.57916, Tjur's R2 = 0.46271	age, sex, UKB array type, Genotype PCs
-GBE_BIN_FC2001747	BIN_FC2001747_s_asian	Hair colour (natural, before greying) red	NA [NA, NA]	NA	Nagelkerke's R2 = 0.01039, Tjur's R2 = 0.00001	
-GBE_BIN_FC2001747	BIN_FC2001747_s_asian	Hair colour (natural, before greying) red	NA [NA, NA]	NA	Incremental AUROC (full-covars) = NA, Nagelkerke's R2 = 1.00000, Tjur's R2 = 1.00000	age, sex, UKB array type, Genotype PCs
 GBE_BIN_FC2001747	BIN_FC2001747_african	Hair colour (natural, before greying) red	0.33718 [0.05268, 0.62169]	NA	Nagelkerke's R2 = 0.01304, Tjur's R2 = 0.00016	
 GBE_BIN_FC2001747	BIN_FC2001747_african	Hair colour (natural, before greying) red	0.66297 [0.41942, 0.90653]	NA	Incremental AUROC (full-covars) = -0.14372, Nagelkerke's R2 = 0.03161, Tjur's R2 = 0.00053	age, sex, UKB array type, Genotype PCs
 GBE_BIN_FC20020116	BIN_FC20020116_test	Previous Smoker	0.54770 [0.54318, 0.55223]	NA	Nagelkerke's R2 = 0.00910, Tjur's R2 = 0.00661	
