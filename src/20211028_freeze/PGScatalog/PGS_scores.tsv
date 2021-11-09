@@ -14,14 +14,14 @@ PGS000933	GBE_HC1024	TTE nasal polyp	https://biobankengine.stanford.edu/RIVAS_HG
 PGS001334	GBE_HC1035	TTE other chronic obstructive pulmonary disease	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1035	EFO_0000341	snpnet		GRCh37	498	0
 PGS001346	GBE_HC1036	TTE asthma	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1036	EFO_0000270	snpnet		GRCh37	8508	0
 PGS001251	GBE_HC1052	TTE other interstitial pulmonary diseases	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1052	EFO_0004244	snpnet		GRCh37	57	0
-NA	GBE_HC1084	TTE duodenal ulcer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1084	NA	snpnet		GRCh37	220	0
-NA	GBE_HC1090	TTE acute appendicitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1090	NA	snpnet		GRCh37	4	0
+	GBE_HC1084	TTE duodenal ulcer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1084		snpnet		GRCh37	220	0
+	GBE_HC1090	TTE acute appendicitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1090		snpnet		GRCh37	4	0
 PGS000949	GBE_HC1094	TTE inguinal hernia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1094	HP_0000023	snpnet		GRCh37	3085	0
 PGS001050	GBE_HC1098	TTE diaphragmatic hernia	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1098	EFO_0008561	snpnet		GRCh37	1857	0
 PGS001330	GBE_HC1101	TTE crohn's disease [regional enteritis]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1101	EFO_0000384	snpnet		GRCh37	220	0
 PGS001307	GBE_HC1102	TTE ulcerative colitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1102	EFO_0000729	snpnet		GRCh37	809	0
 PGS000997	GBE_HC1106	TTE diverticular disease of intestine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1106	EFO_0009959	snpnet		GRCh37	5757	0
-NA	GBE_HC1112	TTE other diseases of intestine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1112	NA	snpnet		GRCh37	90	0
+	GBE_HC1112	TTE other diseases of intestine	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1112		snpnet		GRCh37	90	0
 PGS001293	GBE_HC1123	TTE other diseases of liver	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1123	EFO_0001421	snpnet		GRCh37	92	0
 PGS001174	GBE_HC1125	TTE cholelithiasis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1125	EFO_0004799	snpnet		GRCh37	970	0
 PGS000943	GBE_HC1126	TTE cholecystitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1126	HP_0001082	snpnet		GRCh37	5	0
@@ -30,12 +30,12 @@ PGS000927	GBE_HC1158	TTE other dermatitis	https://biobankengine.stanford.edu/RIV
 PGS001313	GBE_HC1159	TTE psoriasis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1159	EFO_0000676	snpnet		GRCh37	578	0
 PGS000950	GBE_HC1171	TTE skin changes due to chronic exposure to nonionising radiation	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1171	GO_0009314	snpnet		GRCh37	169	0
 PGS000963	GBE_HC1184	TTE follicular cysts of skin and subcutaneous tissue	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1184	EFO_1001329	snpnet		GRCh37	264	0
-NA	GBE_HC1188	TTE vitiligo	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1188	NA	snpnet		GRCh37	77	0
+	GBE_HC1188	TTE vitiligo	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1188		snpnet		GRCh37	77	0
 PGS001140	GBE_HC1190	TTE seborrhoeic keratosis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1190	EFO_0005584	snpnet		GRCh37	1368	0
 PGS001110	GBE_HC1209	TTE reactive arthropathies	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1209	EFO_0007460	snpnet		GRCh37	6	0
 PGS001311	GBE_HC1211	TTE seropositive rheumatoid arthritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1211	EFO_0000685	snpnet		GRCh37	3	0
 PGS001309	GBE_HC1212	TTE other rheumatoid arthritis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1212	EFO_0000685	snpnet		GRCh37	323	0
-NA	GBE_HC1213	TTE psoriatic and enteropathic arthropathies	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1213	NA	snpnet		GRCh37	17	0
+	GBE_HC1213	TTE psoriatic and enteropathic arthropathies	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1213		snpnet		GRCh37	17	0
 PGS001249	GBE_HC1215	TTE gout	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1215	EFO_0004274	snpnet		GRCh37	1796	0
 PGS000967	GBE_HC1221	TTE coxarthrosis [arthrosis of hip]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1221	EFO_1000786	snpnet		GRCh37	634	0
 PGS001192	GBE_HC1222	TTE gonarthrosis [arthrosis of knee]	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC1222	EFO_0004616	snpnet		GRCh37	4525	0
@@ -151,7 +151,7 @@ PGS001051	GBE_HC96	Polymyalgia rheumatica	https://biobankengine.stanford.edu/RIV
 PGS001339	GBE_HC964	TTE atrial fibrillation and flutter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC964	EFO_0000275|EFO_0003911	snpnet		GRCh37	2142	0
 PGS000961	GBE_HC987	TTE phlebitis and thrombophlebitis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC987	EFO_1001395|HP_0004418	snpnet		GRCh37	1143	0
 PGS000938	GBE_HC990	TTE varicose veins of lower extremities	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/HC990	HP_0002619	snpnet		GRCh37	2563	0
-NA	GBE_FH1001	Lung cancer (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1001	NA	snpnet		GRCh37	312	0
+	GBE_FH1001	Lung cancer (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1001		snpnet		GRCh37	312	0
 PGS001337	GBE_FH1002	Breast cancer (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1002	EFO_0005606	snpnet		GRCh37	195	0
 PGS001292	GBE_FH1044	Prostate cancer (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1044	EFO_0009640	snpnet		GRCh37	602	0
 PGS001324	GBE_FH1065	High BP (FH)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/FH1065	EFO_0000493	snpnet		GRCh37	13862	0
@@ -201,7 +201,7 @@ PGS001058	GBE_BIN_FC20001468	Cereal type: Biscuit cereal (e.g. Weetabix)	https:/
 PGS001125	GBE_BIN_FC20001508	Coffee type: Instant coffee	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001508	EFO_0006781	snpnet		GRCh37	432	0
 PGS001245	GBE_BIN_FC20001727	Ease of skin tanning (Get moderately tanned)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001727	EFO_0004279	snpnet		GRCh37	2693	0
 PGS001072	GBE_BIN_FC20001757	Facial ageing (Older than you are)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20001757	EFO_0008006	snpnet		GRCh37	39	0
-NA	GBE_BIN_FC20002267	Use of sun/uv protection (Sometimes)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20002267	NA	snpnet		GRCh37	309	0
+	GBE_BIN_FC20002267	Use of sun/uv protection (Sometimes)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20002267		snpnet		GRCh37	309	0
 PGS001098	GBE_BIN_FC2001747	Hair colour (natural, before greying) red	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC2001747	EFO_0007822	snpnet		GRCh37	1621	0
 PGS001128	GBE_BIN_FC20020116	Previous Smoker	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC20020116	EFO_0006527	snpnet		GRCh37	4348	0
 PGS001064	GBE_BIN_FC30001418	Milk type: Skimmed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN_FC30001418	EFO_0008111	snpnet		GRCh37	116	0
@@ -243,7 +243,7 @@ PGS001022	GBE_BIN2000	Worry too long after embarrassment	https://biobankengine.s
 PGS001017	GBE_BIN2010	Suffer from 'nerves'	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2010	EFO_0009597	snpnet		GRCh37	3348	0
 PGS001091	GBE_BIN2020	Loneliness, isolation	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2020	EFO_0007865	snpnet		GRCh37	660	0
 PGS001049	GBE_BIN2040	Risk taking	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/BIN2040	EFO_0008579	snpnet		GRCh37	4299	0
-NA	GBE_INI12144	Height	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI12144	NA	snpnet		GRCh37	3166	0
+	GBE_INI12144	Height	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI12144		snpnet		GRCh37	3166	0
 PGS000969	GBE_INI20015	Sitting height	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20015	EFO_0011011	snpnet		GRCh37	36345	0
 PGS001228	GBE_INI21001	BMI	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21001	EFO_0004340	snpnet		GRCh37	27126	0
 PGS001230	GBE_INI21002	Weight	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21002	EFO_0004338	snpnet		GRCh37	31222	0
@@ -279,56 +279,56 @@ PGS001160	GBE_INI23130	Trunk pred. mass	https://biobankengine.stanford.edu/RIVAS
 PGS001227	GBE_INI48	Waist circumference	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI48	EFO_0004342	snpnet		GRCh37	25538	0
 PGS001162	GBE_INI49	Hip circumference	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI49	EFO_0005093	snpnet		GRCh37	24605	0
 PGS001229	GBE_INI50	Standing height	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI50	EFO_0004339	snpnet		GRCh37	51209	0
-NA	GBE_INI23002	GE / gI antigen for Varicella Zoster Virus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23002	NA	snpnet		GRCh37	5	0
+	GBE_INI23002	GE / gI antigen for Varicella Zoster Virus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23002		snpnet		GRCh37	5	0
 PGS001036	GBE_INI23004	EBNA-1 antigen for Epstein-Barr Virus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23004	EFO_0009271	snpnet		GRCh37	38	0
-NA	GBE_INI23005	ZEBRA antigen for Epstein-Barr Virus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23005	NA	snpnet		GRCh37	158	0
-NA	GBE_INI23022	HTLV-1 gag antigen for Human T-Lymphotropic Virus 1	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23022	NA	snpnet		GRCh37	66	0
+	GBE_INI23005	ZEBRA antigen for Epstein-Barr Virus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23005		snpnet		GRCh37	158	0
+	GBE_INI23022	HTLV-1 gag antigen for Human T-Lymphotropic Virus 1	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23022		snpnet		GRCh37	66	0
 PGS001081	GBE_INI23027	JC VP1 antigen for Human Polyomavirus JCV	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23027	EFO_0007937	snpnet		GRCh37	9	0
 PGS001082	GBE_INI23028	MC VP1 antigen for Merkel Cell Polyomavirus	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI23028	EFO_0007937	snpnet		GRCh37	143	0
 PGS001239	GBE_INI30000	White blood cell count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30000	EFO_0004308	snpnet		GRCh37	13785	0
 PGS001240	GBE_INI30010	Red blood cell count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30010	EFO_0004305	snpnet		GRCh37	20480	0
-NA	GBE_INI30020	Haemoglobin concentration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30020	NA	snpnet		GRCh37	15602	0
+	GBE_INI30020	Haemoglobin concentration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30020		snpnet		GRCh37	15602	0
 PGS001225	GBE_INI30030	Haematocrit %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30030	EFO_0004348	snpnet		GRCh37	15721	0
 PGS001220	GBE_INI30040	Mean corpuscular volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30040	EFO_0004526	snpnet		GRCh37	17311	0
 PGS001219	GBE_INI30050	Mean corpuscular haemoglobin	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30050	EFO_0004527	snpnet		GRCh37	13003	0
 PGS001218	GBE_INI30060	Mean corpuscular haemoglobin concentration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30060	EFO_0004528	snpnet		GRCh37	2359	0
 PGS001152	GBE_INI30070	Red blood cell distribution width	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30070	EFO_0005192	snpnet		GRCh37	10179	0
 PGS001238	GBE_INI30080	Platelet count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30080	EFO_0004309	snpnet		GRCh37	24893	0
-NA	GBE_INI30090	Platelet crit	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30090	NA	snpnet		GRCh37	20910	0
+	GBE_INI30090	Platelet crit	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30090		snpnet		GRCh37	20910	0
 PGS001200	GBE_INI30100	Mean platelet volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30100	EFO_0004584	snpnet		GRCh37	24114	0
 PGS001079	GBE_INI30110	Platelet distribution width	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30110	EFO_0007984	snpnet		GRCh37	18814	0
 PGS001199	GBE_INI30120	Lymphocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30120	EFO_0004587	snpnet		GRCh37	4212	0
 PGS001163	GBE_INI30130	Monocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30130	EFO_0005091	snpnet		GRCh37	9323	0
 PGS001173	GBE_INI30140	Neutrophill count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30140	EFO_0004833	snpnet		GRCh37	15578	0
 PGS001172	GBE_INI30150	Eosinophill count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30150	EFO_0004842	snpnet		GRCh37	12579	0
-NA	GBE_INI30160	Basophill count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30160	NA	snpnet		GRCh37	3050	0
-NA	GBE_INI30180	Lymphocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30180	NA	snpnet		GRCh37	15143	0
+	GBE_INI30160	Basophill count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30160		snpnet		GRCh37	3050	0
+	GBE_INI30180	Lymphocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30180		snpnet		GRCh37	15143	0
 PGS001078	GBE_INI30190	Monocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30190	EFO_0007989	snpnet		GRCh37	8762	0
 PGS001077	GBE_INI30200	Neutrophill %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30200	EFO_0007990	snpnet		GRCh37	13703	0
 PGS001076	GBE_INI30210	Eosinophill %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30210	EFO_0007991	snpnet		GRCh37	12563	0
-NA	GBE_INI30220	Basophill %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30220	NA	snpnet		GRCh37	3205	0
+	GBE_INI30220	Basophill %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30220		snpnet		GRCh37	3205	0
 PGS000989	GBE_INI30240	Reticulocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30240	EFO_0010700	snpnet		GRCh37	6251	0
-NA	GBE_INI30250	Reticulocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30250	NA	snpnet		GRCh37	6262	0
+	GBE_INI30250	Reticulocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30250		snpnet		GRCh37	6262	0
 PGS000987	GBE_INI30260	Mean reticulocyte volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30260	EFO_0010701	snpnet		GRCh37	13277	0
-NA	GBE_INI30280	Immature reticulocyte fraction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30280	NA	snpnet		GRCh37	10871	0
+	GBE_INI30280	Immature reticulocyte fraction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30280		snpnet		GRCh37	10871	0
 PGS000988	GBE_INI30290	High light scatter reticulocyte %	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30290	EFO_0010700	snpnet		GRCh37	7184	0
-NA	GBE_INI30300	High light scatter reticulocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30300	NA	snpnet		GRCh37	15856	0
+	GBE_INI30300	High light scatter reticulocyte count	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI30300		snpnet		GRCh37	15856	0
 PGS001241	GBE_INI3143	Ankle spacing width	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3143	EFO_0004302	snpnet		GRCh37	21694	0
 PGS000951	GBE_INI3144	Heel Broadband ultrasound attenuation, direct entry	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3144	EFO_0004514	snpnet		GRCh37	13735	0
-NA	GBE_INI3146	Speed of sound through heel	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3146	NA	snpnet		GRCh37	13172	0
+	GBE_INI3146	Speed of sound through heel	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3146		snpnet		GRCh37	13172	0
 PGS000952	GBE_INI3147	Heel quantitative ultrasound index (QUI), direct entry	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3147	EFO_0004514	snpnet		GRCh37	14311	0
-NA	GBE_INI3148	Heel bone mineral density (BMD)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3148	NA	snpnet		GRCh37	14251	0
+	GBE_INI3148	Heel bone mineral density (BMD)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3148		snpnet		GRCh37	14251	0
 PGS001242	GBE_INI4100	Ankle spacing width (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4100	EFO_0004302	snpnet		GRCh37	13416	0
 PGS000953	GBE_INI4101	Heel broadband ultrasound attenuation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4101	EFO_0004514	snpnet		GRCh37	7688	0
-NA	GBE_INI4103	Speed of sound through heel (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4103	NA	snpnet		GRCh37	8419	0
+	GBE_INI4103	Speed of sound through heel (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4103		snpnet		GRCh37	8419	0
 PGS000954	GBE_INI4104	Heel quantitative ultrasound index (QUI), direct entry (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4104	EFO_0004514	snpnet		GRCh37	9272	0
-NA	GBE_INI4105	Heel bone mineral density (BMD) (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4105	NA	snpnet		GRCh37	8285	0
+	GBE_INI4105	Heel bone mineral density (BMD) (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4105		snpnet		GRCh37	8285	0
 PGS001038	GBE_INI4106	Heel bone mineral density (BMD) T-score, automated (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4106	EFO_0009270	snpnet		GRCh37	9275	0
 PGS001243	GBE_INI4119	Ankle spacing width (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4119	EFO_0004302	snpnet		GRCh37	15134	0
 PGS000955	GBE_INI4120	Heel broadband ultrasound attenuation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4120	EFO_0004514	snpnet		GRCh37	7069	0
-NA	GBE_INI4122	Speed of sound through heel (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4122	NA	snpnet		GRCh37	8912	0
+	GBE_INI4122	Speed of sound through heel (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4122		snpnet		GRCh37	8912	0
 PGS000956	GBE_INI4123	Heel quantitative ultrasound index (QUI), direct entry (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4123	EFO_0004514	snpnet		GRCh37	9756	0
-NA	GBE_INI4124	Heel bone mineral density (BMD) (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4124	NA	snpnet		GRCh37	9637	0
+	GBE_INI4124	Heel bone mineral density (BMD) (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4124		snpnet		GRCh37	9637	0
 PGS001039	GBE_INI4125	Heel bone mineral density (BMD) T-score, automated (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4125	EFO_0009270	snpnet		GRCh37	9753	0
 PGS001037	GBE_INI78	Heel bone mineral density (BMD) T-score, automated	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI78	EFO_0009270	snpnet		GRCh37	14310	0
 PGS001052	GBE_INI1050	Time spend outdoors in summer	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1050	EFO_0008360	snpnet		GRCh37	5661	0
@@ -336,7 +336,7 @@ PGS001053	GBE_INI1060	Outdoor time, winter	https://biobankengine.stanford.edu/RI
 PGS001150	GBE_INI1160	Sleep duration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1160	EFO_0005271	snpnet		GRCh37	4106	0
 PGS001061	GBE_INI1289	Cooked vegetable intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1289	EFO_0008111	snpnet		GRCh37	1085	0
 PGS001062	GBE_INI1309	Fresh fruit intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1309	EFO_0008111	snpnet		GRCh37	4257	0
-NA	GBE_INI1319	Dried fruit intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1319	NA	snpnet		GRCh37	989	0
+	GBE_INI1319	Dried fruit intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1319		snpnet		GRCh37	989	0
 PGS000978	GBE_INI1438	Bread intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1438	EFO_0010811	snpnet		GRCh37	3483	0
 PGS001057	GBE_INI1458	Cereal intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1458	EFO_0008111	snpnet		GRCh37	4882	0
 PGS000994	GBE_INI1488	Tea intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1488	EFO_0010091	snpnet		GRCh37	3119	0
@@ -348,14 +348,14 @@ PGS001257	GBE_INI1737	Childhood sunburn	https://biobankengine.stanford.edu/RIVAS
 PGS001007	GBE_INI2139	Age first had sexual intercourse	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2139	EFO_0009749	snpnet		GRCh37	9997	0
 PGS000984	GBE_INI2237	Freq. of playing computer games	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2237	EFO_0010724	snpnet		GRCh37	5774	0
 PGS001130	GBE_INI2887	# of cigarettes previously smoked daily	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2887	EFO_0006525	snpnet		GRCh37	725	0
-NA	GBE_INI2897	Age stopped smoking	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2897	NA	snpnet		GRCh37	663	0
-NA	GBE_INI3456	# of cigarettes currently smoked daily (current cigarette smokers)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3456	NA	snpnet		GRCh37	9	0
+	GBE_INI2897	Age stopped smoking	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2897		snpnet		GRCh37	663	0
+	GBE_INI3456	# of cigarettes currently smoked daily (current cigarette smokers)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3456		snpnet		GRCh37	9	0
 PGS001073	GBE_INI874	Duration of walks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI874	EFO_0008002	snpnet		GRCh37	1323	0
 PGS001075	GBE_INI924	Usual walking pace	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI924	EFO_0008002	snpnet		GRCh37	7535	0
-NA	GBE_INI971	Freq. of walking for pleasure in last 4 weeks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI971	NA	snpnet		GRCh37	1276	0
+	GBE_INI971	Freq. of walking for pleasure in last 4 weeks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI971		snpnet		GRCh37	1276	0
 PGS001034	GBE_QT_FC10001478	Salt added to food	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC10001478	EFO_0008111	snpnet		GRCh37	6651	0
-NA	GBE_QT_FC10003466	Time from waking to first cigarette	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC10003466	NA	snpnet		GRCh37	86	0
-NA	GBE_QT_FC10003476	Difficulty not smoking for 1 day	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC10003476	NA	snpnet		GRCh37	1	0
+	GBE_QT_FC10003466	Time from waking to first cigarette	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC10003466		snpnet		GRCh37	86	0
+	GBE_QT_FC10003476	Difficulty not smoking for 1 day	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC10003476		snpnet		GRCh37	1	0
 PGS001001	GBE_QT_FC1001170	Getting up in morning	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001170	EFO_0009817	snpnet		GRCh37	7743	0
 PGS001055	GBE_QT_FC1001180	Morning/evening person (chronotype)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001180	EFO_0008328	snpnet		GRCh37	11428	0
 PGS001000	GBE_QT_FC1001190	Nap during day	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001190	EFO_0009818	snpnet		GRCh37	10264	0
@@ -366,415 +366,415 @@ PGS001066	GBE_QT_FC1001359	Poultry intake	https://biobankengine.stanford.edu/RIV
 PGS001056	GBE_QT_FC1001369	Beef intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001369	EFO_0008111	snpnet		GRCh37	991	0
 PGS001060	GBE_QT_FC1001408	Cheese intake	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001408	EFO_0008111	snpnet		GRCh37	6678	0
 PGS001087	GBE_QT_FC1001558	Alcohol intake frequency.	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001558	EFO_0007878	snpnet		GRCh37	8353	0
-NA	GBE_INI4194	Pulse rate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4194	NA	snpnet		GRCh37	4117	0
-NA	GBE_INI4198	Position of the pulse wave peak	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4198	NA	snpnet		GRCh37	1358	0
-NA	GBE_INI4199	Position of pulse wave notch	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4199	NA	snpnet		GRCh37	693	0
+	GBE_INI4194	Pulse rate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4194		snpnet		GRCh37	4117	0
+	GBE_INI4198	Position of the pulse wave peak	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4198		snpnet		GRCh37	1358	0
+	GBE_INI4199	Position of pulse wave notch	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4199		snpnet		GRCh37	693	0
 PGS001233	GBE_INI102	Pulse rate (AR)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI102	EFO_0004326	snpnet		GRCh37	14455	0
 PGS001133	GBE_INI4079	Diastolic BP (AR)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4079	EFO_0006336	snpnet		GRCh37	14103	0
 PGS001134	GBE_INI4080	Systolic BP (AR)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI4080	EFO_0006335	snpnet		GRCh37	15481	0
-NA	GBE_INI95	Pulse rate (during blood-pressure measurement)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI95	NA	snpnet		GRCh37	765	0
+	GBE_INI95	Pulse rate (during blood-pressure measurement)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI95		snpnet		GRCh37	765	0
 PGS001232	GBE_INI20016	Fluid intelligence score	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20016	EFO_0004337	snpnet		GRCh37	10055	0
-NA	GBE_INI100010	Portion size	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI100010	NA	snpnet		GRCh37	591	0
-NA	GBE_INI25056	Mean FA in middle cerebellar peduncle on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25056	NA	snpnet		GRCh37	1140	0
-NA	GBE_INI25058	Mean FA in genu of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25058	NA	snpnet		GRCh37	1073	0
-NA	GBE_INI25059	Mean FA in body of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25059	NA	snpnet		GRCh37	754	0
-NA	GBE_INI25060	Mean FA in splenium of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25060	NA	snpnet		GRCh37	598	0
-NA	GBE_INI25061	Mean FA in fornix on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25061	NA	snpnet		GRCh37	836	0
-NA	GBE_INI25062	Mean FA in corticospinal tract on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25062	NA	snpnet		GRCh37	342	0
-NA	GBE_INI25066	Mean FA in inferior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25066	NA	snpnet		GRCh37	946	0
-NA	GBE_INI25068	Mean FA in superior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25068	NA	snpnet		GRCh37	1860	0
-NA	GBE_INI25069	Mean FA in superior cerebellar peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25069	NA	snpnet		GRCh37	1647	0
-NA	GBE_INI25071	Mean FA in cerebral peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25071	NA	snpnet		GRCh37	1295	0
-NA	GBE_INI25072	Mean FA in anterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25072	NA	snpnet		GRCh37	1280	0
-NA	GBE_INI25073	Mean FA in anterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25073	NA	snpnet		GRCh37	731	0
-NA	GBE_INI25074	Mean FA in posterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25074	NA	snpnet		GRCh37	2080	0
-NA	GBE_INI25075	Mean FA in posterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25075	NA	snpnet		GRCh37	1796	0
-NA	GBE_INI25076	Mean FA in retrolenticular part of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25076	NA	snpnet		GRCh37	456	0
-NA	GBE_INI25077	Mean FA in retrolenticular part of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25077	NA	snpnet		GRCh37	1164	0
-NA	GBE_INI25080	Mean FA in superior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25080	NA	snpnet		GRCh37	1238	0
-NA	GBE_INI25081	Mean FA in superior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25081	NA	snpnet		GRCh37	821	0
-NA	GBE_INI25084	Mean FA in posterior thalamic radiation on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25084	NA	snpnet		GRCh37	1877	0
-NA	GBE_INI25085	Mean FA in posterior thalamic radiation on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25085	NA	snpnet		GRCh37	1654	0
-NA	GBE_INI25086	Mean FA in sagittal stratum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25086	NA	snpnet		GRCh37	1445	0
-NA	GBE_INI25087	Mean FA in sagittal stratum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25087	NA	snpnet		GRCh37	1376	0
-NA	GBE_INI25088	Mean FA in external capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25088	NA	snpnet		GRCh37	940	0
-NA	GBE_INI25090	Mean FA in cingulum cingulate gyrus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25090	NA	snpnet		GRCh37	1224	0
-NA	GBE_INI25091	Mean FA in cingulum cingulate gyrus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25091	NA	snpnet		GRCh37	895	0
-NA	GBE_INI25092	Mean FA in cingulum hippocampus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25092	NA	snpnet		GRCh37	879	0
-NA	GBE_INI25093	Mean FA in cingulum hippocampus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25093	NA	snpnet		GRCh37	330	0
-NA	GBE_INI25094	Mean FA in fornix cres+stria terminalis on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25094	NA	snpnet		GRCh37	1174	0
-NA	GBE_INI25096	Mean FA in superior longitudinal fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25096	NA	snpnet		GRCh37	1463	0
-NA	GBE_INI25097	Mean FA in superior longitudinal fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25097	NA	snpnet		GRCh37	3389	0
-NA	GBE_INI25098	Mean FA in superior fronto-occipital fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25098	NA	snpnet		GRCh37	480	0
-NA	GBE_INI25099	Mean FA in superior fronto-occipital fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25099	NA	snpnet		GRCh37	1286	0
-NA	GBE_INI25100	Mean FA in uncinate fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25100	NA	snpnet		GRCh37	727	0
-NA	GBE_INI25102	Mean FA in tapetum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25102	NA	snpnet		GRCh37	1948	0
-NA	GBE_INI25103	Mean FA in tapetum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25103	NA	snpnet		GRCh37	1202	0
-NA	GBE_INI25344	Mean ICVF in middle cerebellar peduncle on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25344	NA	snpnet		GRCh37	1580	0
-NA	GBE_INI25346	Mean ICVF in genu of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25346	NA	snpnet		GRCh37	2530	0
-NA	GBE_INI25347	Mean ICVF in body of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25347	NA	snpnet		GRCh37	2881	0
-NA	GBE_INI25349	Mean ICVF in fornix on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25349	NA	snpnet		GRCh37	188	0
-NA	GBE_INI25352	Mean ICVF in medial lemniscus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25352	NA	snpnet		GRCh37	250	0
-NA	GBE_INI25353	Mean ICVF in medial lemniscus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25353	NA	snpnet		GRCh37	246	0
-NA	GBE_INI25354	Mean ICVF in inferior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25354	NA	snpnet		GRCh37	1262	0
-NA	GBE_INI25355	Mean ICVF in inferior cerebellar peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25355	NA	snpnet		GRCh37	711	0
-NA	GBE_INI25356	Mean ICVF in superior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25356	NA	snpnet		GRCh37	1420	0
-NA	GBE_INI25357	Mean ICVF in superior cerebellar peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25357	NA	snpnet		GRCh37	2068	0
-NA	GBE_INI25358	Mean ICVF in cerebral peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25358	NA	snpnet		GRCh37	1501	0
-NA	GBE_INI25359	Mean ICVF in cerebral peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25359	NA	snpnet		GRCh37	1907	0
-NA	GBE_INI25360	Mean ICVF in anterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25360	NA	snpnet		GRCh37	1308	0
-NA	GBE_INI25361	Mean ICVF in anterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25361	NA	snpnet		GRCh37	870	0
-NA	GBE_INI25362	Mean ICVF in posterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25362	NA	snpnet		GRCh37	1957	0
-NA	GBE_INI25363	Mean ICVF in posterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25363	NA	snpnet		GRCh37	2010	0
-NA	GBE_INI25364	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25364	NA	snpnet		GRCh37	2113	0
-NA	GBE_INI25365	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25365	NA	snpnet		GRCh37	2268	0
-NA	GBE_INI25366	Mean ICVF in anterior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25366	NA	snpnet		GRCh37	2090	0
-NA	GBE_INI25367	Mean ICVF in anterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25367	NA	snpnet		GRCh37	1490	0
-NA	GBE_INI25368	Mean ICVF in superior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25368	NA	snpnet		GRCh37	2299	0
-NA	GBE_INI25369	Mean ICVF in superior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25369	NA	snpnet		GRCh37	2789	0
-NA	GBE_INI25370	Mean ICVF in posterior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25370	NA	snpnet		GRCh37	1934	0
-NA	GBE_INI25371	Mean ICVF in posterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25371	NA	snpnet		GRCh37	2727	0
-NA	GBE_INI25372	Mean ICVF in posterior thalamic radiation on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25372	NA	snpnet		GRCh37	1753	0
-NA	GBE_INI25373	Mean ICVF in posterior thalamic radiation on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25373	NA	snpnet		GRCh37	2073	0
-NA	GBE_INI25374	Mean ICVF in sagittal stratum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25374	NA	snpnet		GRCh37	2195	0
-NA	GBE_INI25375	Mean ICVF in sagittal stratum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25375	NA	snpnet		GRCh37	1651	0
-NA	GBE_INI25376	Mean ICVF in external capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25376	NA	snpnet		GRCh37	1316	0
-NA	GBE_INI25377	Mean ICVF in external capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25377	NA	snpnet		GRCh37	724	0
-NA	GBE_INI25378	Mean ICVF in cingulum cingulate gyrus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25378	NA	snpnet		GRCh37	3061	0
-NA	GBE_INI25379	Mean ICVF in cingulum cingulate gyrus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25379	NA	snpnet		GRCh37	1929	0
-NA	GBE_INI25380	Mean ICVF in cingulum hippocampus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25380	NA	snpnet		GRCh37	2400	0
-NA	GBE_INI25381	Mean ICVF in cingulum hippocampus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25381	NA	snpnet		GRCh37	1153	0
-NA	GBE_INI25382	Mean ICVF in fornix cres+stria terminalis on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25382	NA	snpnet		GRCh37	2387	0
-NA	GBE_INI25383	Mean ICVF in fornix cres+stria terminalis on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25383	NA	snpnet		GRCh37	1353	0
-NA	GBE_INI25384	Mean ICVF in superior longitudinal fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25384	NA	snpnet		GRCh37	1750	0
-NA	GBE_INI25385	Mean ICVF in superior longitudinal fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25385	NA	snpnet		GRCh37	1974	0
-NA	GBE_INI25386	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25386	NA	snpnet		GRCh37	703	0
-NA	GBE_INI25387	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25387	NA	snpnet		GRCh37	402	0
-NA	GBE_INI25388	Mean ICVF in uncinate fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25388	NA	snpnet		GRCh37	641	0
-NA	GBE_INI25389	Mean ICVF in uncinate fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25389	NA	snpnet		GRCh37	962	0
-NA	GBE_INI25391	Mean ICVF in tapetum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25391	NA	snpnet		GRCh37	1117	0
-NA	GBE_INI25443	Mean ISOVF in body of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25443	NA	snpnet		GRCh37	627	0
-NA	GBE_INI25445	Mean ISOVF in fornix on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25445	NA	snpnet		GRCh37	733	0
-NA	GBE_INI25452	Mean ISOVF in superior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25452	NA	snpnet		GRCh37	666	0
-NA	GBE_INI25462	Mean ISOVF in anterior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25462	NA	snpnet		GRCh37	116	0
-NA	GBE_INI25463	Mean ISOVF in anterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25463	NA	snpnet		GRCh37	393	0
-NA	GBE_INI25464	Mean ISOVF in superior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25464	NA	snpnet		GRCh37	392	0
-NA	GBE_INI25465	Mean ISOVF in superior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25465	NA	snpnet		GRCh37	257	0
-NA	GBE_INI25467	Mean ISOVF in posterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25467	NA	snpnet		GRCh37	466	0
-NA	GBE_INI25469	Mean ISOVF in posterior thalamic radiation on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25469	NA	snpnet		GRCh37	554	0
-NA	GBE_INI25470	Mean ISOVF in sagittal stratum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25470	NA	snpnet		GRCh37	709	0
-NA	GBE_INI25471	Mean ISOVF in sagittal stratum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25471	NA	snpnet		GRCh37	400	0
-NA	GBE_INI25473	Mean ISOVF in external capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25473	NA	snpnet		GRCh37	142	0
-NA	GBE_INI25474	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25474	NA	snpnet		GRCh37	157	0
-NA	GBE_INI25475	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25475	NA	snpnet		GRCh37	114	0
-NA	GBE_INI25488	WA FA in tract acoustic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25488	NA	snpnet		GRCh37	1025	0
-NA	GBE_INI25489	WA FA in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25489	NA	snpnet		GRCh37	826	0
-NA	GBE_INI25490	WA FA in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25490	NA	snpnet		GRCh37	379	0
-NA	GBE_INI25491	WA FA in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25491	NA	snpnet		GRCh37	726	0
-NA	GBE_INI25492	WA FA in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25492	NA	snpnet		GRCh37	773	0
-NA	GBE_INI25493	WA FA in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25493	NA	snpnet		GRCh37	702	0
-NA	GBE_INI25497	WA FA in tract corticospinal tract (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25497	NA	snpnet		GRCh37	60	0
-NA	GBE_INI25498	WA FA in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25498	NA	snpnet		GRCh37	1261	0
-NA	GBE_INI25499	WA FA in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25499	NA	snpnet		GRCh37	2017	0
-NA	GBE_INI25500	WA FA in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25500	NA	snpnet		GRCh37	597	0
-NA	GBE_INI25501	WA FA in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25501	NA	snpnet		GRCh37	1371	0
-NA	GBE_INI25502	WA FA in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25502	NA	snpnet		GRCh37	709	0
-NA	GBE_INI25503	WA FA in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25503	NA	snpnet		GRCh37	767	0
-NA	GBE_INI25507	WA FA in tract posterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25507	NA	snpnet		GRCh37	1044	0
-NA	GBE_INI25508	WA FA in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25508	NA	snpnet		GRCh37	1279	0
-NA	GBE_INI25509	WA FA in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25509	NA	snpnet		GRCh37	2671	0
-NA	GBE_INI25513	WA FA in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25513	NA	snpnet		GRCh37	187	0
-NA	GBE_INI25514	WA FA in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25514	NA	snpnet		GRCh37	205	0
-NA	GBE_INI25516	WA MD in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25516	NA	snpnet		GRCh37	315	0
-NA	GBE_INI25517	WA MD in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25517	NA	snpnet		GRCh37	171	0
-NA	GBE_INI25519	WA MD in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25519	NA	snpnet		GRCh37	296	0
-NA	GBE_INI25520	WA MD in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25520	NA	snpnet		GRCh37	767	0
-NA	GBE_INI25525	WA MD in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25525	NA	snpnet		GRCh37	209	0
-NA	GBE_INI25526	WA MD in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25526	NA	snpnet		GRCh37	1164	0
-NA	GBE_INI25527	WA MD in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25527	NA	snpnet		GRCh37	813	0
-NA	GBE_INI25528	WA MD in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25528	NA	snpnet		GRCh37	702	0
-NA	GBE_INI25529	WA MD in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25529	NA	snpnet		GRCh37	572	0
-NA	GBE_INI25530	WA MD in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25530	NA	snpnet		GRCh37	975	0
-NA	GBE_INI25536	WA MD in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25536	NA	snpnet		GRCh37	1809	0
-NA	GBE_INI25538	WA MD in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25538	NA	snpnet		GRCh37	610	0
-NA	GBE_INI25539	WA MD in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25539	NA	snpnet		GRCh37	96	0
-NA	GBE_INI25540	WA MD in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25540	NA	snpnet		GRCh37	872	0
-NA	GBE_INI25541	WA MD in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25541	NA	snpnet		GRCh37	1033	0
-NA	GBE_INI25553	WA MO in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25553	NA	snpnet		GRCh37	1836	0
-NA	GBE_INI25558	WA MO in tract middle cerebellar peduncle	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25558	NA	snpnet		GRCh37	47	0
-NA	GBE_INI25560	WA MO in tract medial lemniscus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25560	NA	snpnet		GRCh37	258	0
-NA	GBE_INI25561	WA MO in tract posterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25561	NA	snpnet		GRCh37	721	0
-NA	GBE_INI25562	WA MO in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25562	NA	snpnet		GRCh37	342	0
-NA	GBE_INI25563	WA MO in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25563	NA	snpnet		GRCh37	961	0
-NA	GBE_INI25566	WA MO in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25566	NA	snpnet		GRCh37	1023	0
-NA	GBE_INI25580	WA L1 in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25580	NA	snpnet		GRCh37	514	0
-NA	GBE_INI25581	WA L1 in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25581	NA	snpnet		GRCh37	547	0
-NA	GBE_INI25582	WA L1 in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25582	NA	snpnet		GRCh37	322	0
-NA	GBE_INI25583	WA L1 in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25583	NA	snpnet		GRCh37	499	0
-NA	GBE_INI25584	WA L1 in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25584	NA	snpnet		GRCh37	316	0
-NA	GBE_INI25590	WA L1 in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25590	NA	snpnet		GRCh37	1382	0
-NA	GBE_INI25591	WA L1 in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25591	NA	snpnet		GRCh37	534	0
-NA	GBE_INI25592	WA L1 in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25592	NA	snpnet		GRCh37	457	0
-NA	GBE_INI25593	WA L1 in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25593	NA	snpnet		GRCh37	358	0
-NA	GBE_INI25594	WA L1 in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25594	NA	snpnet		GRCh37	173	0
-NA	GBE_INI25597	WA L2 in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25597	NA	snpnet		GRCh37	993	0
-NA	GBE_INI25598	WA L2 in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25598	NA	snpnet		GRCh37	170	0
-NA	GBE_INI25599	WA L2 in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25599	NA	snpnet		GRCh37	290	0
-NA	GBE_INI25600	WA L2 in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25600	NA	snpnet		GRCh37	82	0
-NA	GBE_INI25601	WA L2 in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25601	NA	snpnet		GRCh37	305	0
-NA	GBE_INI25606	WA L2 in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25606	NA	snpnet		GRCh37	924	0
-NA	GBE_INI25607	WA L2 in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25607	NA	snpnet		GRCh37	1030	0
-NA	GBE_INI25608	WA L2 in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25608	NA	snpnet		GRCh37	691	0
-NA	GBE_INI25609	WA L2 in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25609	NA	snpnet		GRCh37	814	0
-NA	GBE_INI25610	WA L2 in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25610	NA	snpnet		GRCh37	711	0
-NA	GBE_INI25611	WA L2 in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25611	NA	snpnet		GRCh37	793	0
-NA	GBE_INI25617	WA L2 in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25617	NA	snpnet		GRCh37	1749	0
-NA	GBE_INI25619	WA L2 in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25619	NA	snpnet		GRCh37	683	0
-NA	GBE_INI25621	WA L2 in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25621	NA	snpnet		GRCh37	709	0
-NA	GBE_INI25622	WA L2 in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25622	NA	snpnet		GRCh37	706	0
-NA	GBE_INI25624	WA L3 in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25624	NA	snpnet		GRCh37	794	0
-NA	GBE_INI25625	WA L3 in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25625	NA	snpnet		GRCh37	200	0
-NA	GBE_INI25626	WA L3 in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25626	NA	snpnet		GRCh37	432	0
-NA	GBE_INI25627	WA L3 in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25627	NA	snpnet		GRCh37	1611	0
-NA	GBE_INI25628	WA L3 in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25628	NA	snpnet		GRCh37	1080	0
-NA	GBE_INI25634	WA L3 in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25634	NA	snpnet		GRCh37	1536	0
-NA	GBE_INI25635	WA L3 in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25635	NA	snpnet		GRCh37	945	0
-NA	GBE_INI25636	WA L3 in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25636	NA	snpnet		GRCh37	864	0
-NA	GBE_INI25637	WA L3 in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25637	NA	snpnet		GRCh37	919	0
-NA	GBE_INI25638	WA L3 in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25638	NA	snpnet		GRCh37	825	0
-NA	GBE_INI25644	WA L3 in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25644	NA	snpnet		GRCh37	1884	0
-NA	GBE_INI25646	WA L3 in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25646	NA	snpnet		GRCh37	855	0
-NA	GBE_INI25647	WA L3 in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25647	NA	snpnet		GRCh37	1510	0
-NA	GBE_INI25648	WA L3 in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25648	NA	snpnet		GRCh37	755	0
-NA	GBE_INI25649	WA L3 in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25649	NA	snpnet		GRCh37	1320	0
-NA	GBE_INI25650	WA ICVF in tract acoustic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25650	NA	snpnet		GRCh37	1563	0
-NA	GBE_INI25651	WA ICVF in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25651	NA	snpnet		GRCh37	979	0
-NA	GBE_INI25652	WA ICVF in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25652	NA	snpnet		GRCh37	817	0
-NA	GBE_INI25653	WA ICVF in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25653	NA	snpnet		GRCh37	791	0
-NA	GBE_INI25654	WA ICVF in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25654	NA	snpnet		GRCh37	1095	0
-NA	GBE_INI25655	WA ICVF in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25655	NA	snpnet		GRCh37	998	0
-NA	GBE_INI25656	WA ICVF in tract parahippocampal part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25656	NA	snpnet		GRCh37	449	0
-NA	GBE_INI25657	WA ICVF in tract parahippocampal part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25657	NA	snpnet		GRCh37	955	0
-NA	GBE_INI25658	WA ICVF in tract corticospinal tract (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25658	NA	snpnet		GRCh37	1128	0
-NA	GBE_INI25659	WA ICVF in tract corticospinal tract (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25659	NA	snpnet		GRCh37	310	0
-NA	GBE_INI25660	WA ICVF in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25660	NA	snpnet		GRCh37	1466	0
-NA	GBE_INI25661	WA ICVF in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25661	NA	snpnet		GRCh37	2047	0
-NA	GBE_INI25662	WA ICVF in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25662	NA	snpnet		GRCh37	2008	0
-NA	GBE_INI25663	WA ICVF in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25663	NA	snpnet		GRCh37	1964	0
-NA	GBE_INI25664	WA ICVF in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25664	NA	snpnet		GRCh37	1804	0
-NA	GBE_INI25665	WA ICVF in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25665	NA	snpnet		GRCh37	1872	0
-NA	GBE_INI25666	WA ICVF in tract middle cerebellar peduncle	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25666	NA	snpnet		GRCh37	512	0
-NA	GBE_INI25667	WA ICVF in tract medial lemniscus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25667	NA	snpnet		GRCh37	663	0
-NA	GBE_INI25668	WA ICVF in tract medial lemniscus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25668	NA	snpnet		GRCh37	600	0
-NA	GBE_INI25669	WA ICVF in tract posterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25669	NA	snpnet		GRCh37	1264	0
-NA	GBE_INI25670	WA ICVF in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25670	NA	snpnet		GRCh37	1618	0
-NA	GBE_INI25671	WA ICVF in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25671	NA	snpnet		GRCh37	2131	0
-NA	GBE_INI25672	WA ICVF in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25672	NA	snpnet		GRCh37	1652	0
-NA	GBE_INI25673	WA ICVF in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25673	NA	snpnet		GRCh37	1165	0
-NA	GBE_INI25674	WA ICVF in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25674	NA	snpnet		GRCh37	1474	0
-NA	GBE_INI25675	WA ICVF in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25675	NA	snpnet		GRCh37	136	0
-NA	GBE_INI25676	WA ICVF in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25676	NA	snpnet		GRCh37	837	0
-NA	GBE_INI25685	WA OD in tract corticospinal tract (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25685	NA	snpnet		GRCh37	1	0
-NA	GBE_INI25692	WA OD in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25692	NA	snpnet		GRCh37	378	0
-NA	GBE_INI25694	WA OD in tract medial lemniscus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25694	NA	snpnet		GRCh37	297	0
-NA	GBE_INI25698	WA OD in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25698	NA	snpnet		GRCh37	1298	0
-NA	GBE_INI25699	WA OD in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25699	NA	snpnet		GRCh37	726	0
-NA	GBE_INI25701	WA OD in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25701	NA	snpnet		GRCh37	1352	0
-NA	GBE_INI25704	WA ISOVF in tract acoustic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25704	NA	snpnet		GRCh37	231	0
-NA	GBE_INI25705	WA ISOVF in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25705	NA	snpnet		GRCh37	725	0
-NA	GBE_INI25707	WA ISOVF in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25707	NA	snpnet		GRCh37	130	0
-NA	GBE_INI25708	WA ISOVF in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25708	NA	snpnet		GRCh37	477	0
-NA	GBE_INI25709	WA ISOVF in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25709	NA	snpnet		GRCh37	245	0
-NA	GBE_INI25716	WA ISOVF in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25716	NA	snpnet		GRCh37	1080	0
-NA	GBE_INI25717	WA ISOVF in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25717	NA	snpnet		GRCh37	1146	0
-NA	GBE_INI25718	WA ISOVF in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25718	NA	snpnet		GRCh37	1123	0
-NA	GBE_INI25719	WA ISOVF in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25719	NA	snpnet		GRCh37	1688	0
-NA	GBE_INI25724	WA ISOVF in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25724	NA	snpnet		GRCh37	72	0
-NA	GBE_INI25725	WA ISOVF in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25725	NA	snpnet		GRCh37	695	0
-NA	GBE_INI25726	WA ISOVF in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25726	NA	snpnet		GRCh37	197	0
-NA	GBE_INI25727	WA ISOVF in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25727	NA	snpnet		GRCh37	538	0
-NA	GBE_INI25728	WA ISOVF in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25728	NA	snpnet		GRCh37	174	0
-NA	GBE_INI25729	WA ISOVF in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25729	NA	snpnet		GRCh37	385	0
-NA	GBE_INI25730	WA ISOVF in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25730	NA	snpnet		GRCh37	83	0
-NA	GBE_INI21025	Freq. of discomfort/pain in abdomen in last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21025	NA	snpnet		GRCh37	256	0
-NA	GBE_INI21044	Ave. # of times bowels opened per day	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21044	NA	snpnet		GRCh37	845	0
-NA	GBE_INI21049	Degree bothered by pain in arms/legs/joints in the past 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21049	NA	snpnet		GRCh37	534	0
-NA	GBE_INI21051	Degree bothered by headaches in the last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21051	NA	snpnet		GRCh37	9	0
-NA	GBE_INI21058	Degree bothered by urinary frequency/bladder irritability in the last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21058	NA	snpnet		GRCh37	333	0
-NA	GBE_INI21060	Degree bothered by feeling tired all the time in the last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21060	NA	snpnet		GRCh37	1526	0
+	GBE_INI100010	Portion size	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI100010		snpnet		GRCh37	591	0
+	GBE_INI25056	Mean FA in middle cerebellar peduncle on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25056		snpnet		GRCh37	1140	0
+	GBE_INI25058	Mean FA in genu of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25058		snpnet		GRCh37	1073	0
+	GBE_INI25059	Mean FA in body of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25059		snpnet		GRCh37	754	0
+	GBE_INI25060	Mean FA in splenium of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25060		snpnet		GRCh37	598	0
+	GBE_INI25061	Mean FA in fornix on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25061		snpnet		GRCh37	836	0
+	GBE_INI25062	Mean FA in corticospinal tract on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25062		snpnet		GRCh37	342	0
+	GBE_INI25066	Mean FA in inferior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25066		snpnet		GRCh37	946	0
+	GBE_INI25068	Mean FA in superior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25068		snpnet		GRCh37	1860	0
+	GBE_INI25069	Mean FA in superior cerebellar peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25069		snpnet		GRCh37	1647	0
+	GBE_INI25071	Mean FA in cerebral peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25071		snpnet		GRCh37	1295	0
+	GBE_INI25072	Mean FA in anterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25072		snpnet		GRCh37	1280	0
+	GBE_INI25073	Mean FA in anterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25073		snpnet		GRCh37	731	0
+	GBE_INI25074	Mean FA in posterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25074		snpnet		GRCh37	2080	0
+	GBE_INI25075	Mean FA in posterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25075		snpnet		GRCh37	1796	0
+	GBE_INI25076	Mean FA in retrolenticular part of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25076		snpnet		GRCh37	456	0
+	GBE_INI25077	Mean FA in retrolenticular part of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25077		snpnet		GRCh37	1164	0
+	GBE_INI25080	Mean FA in superior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25080		snpnet		GRCh37	1238	0
+	GBE_INI25081	Mean FA in superior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25081		snpnet		GRCh37	821	0
+	GBE_INI25084	Mean FA in posterior thalamic radiation on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25084		snpnet		GRCh37	1877	0
+	GBE_INI25085	Mean FA in posterior thalamic radiation on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25085		snpnet		GRCh37	1654	0
+	GBE_INI25086	Mean FA in sagittal stratum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25086		snpnet		GRCh37	1445	0
+	GBE_INI25087	Mean FA in sagittal stratum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25087		snpnet		GRCh37	1376	0
+	GBE_INI25088	Mean FA in external capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25088		snpnet		GRCh37	940	0
+	GBE_INI25090	Mean FA in cingulum cingulate gyrus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25090		snpnet		GRCh37	1224	0
+	GBE_INI25091	Mean FA in cingulum cingulate gyrus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25091		snpnet		GRCh37	895	0
+	GBE_INI25092	Mean FA in cingulum hippocampus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25092		snpnet		GRCh37	879	0
+	GBE_INI25093	Mean FA in cingulum hippocampus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25093		snpnet		GRCh37	330	0
+	GBE_INI25094	Mean FA in fornix cres+stria terminalis on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25094		snpnet		GRCh37	1174	0
+	GBE_INI25096	Mean FA in superior longitudinal fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25096		snpnet		GRCh37	1463	0
+	GBE_INI25097	Mean FA in superior longitudinal fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25097		snpnet		GRCh37	3389	0
+	GBE_INI25098	Mean FA in superior fronto-occipital fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25098		snpnet		GRCh37	480	0
+	GBE_INI25099	Mean FA in superior fronto-occipital fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25099		snpnet		GRCh37	1286	0
+	GBE_INI25100	Mean FA in uncinate fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25100		snpnet		GRCh37	727	0
+	GBE_INI25102	Mean FA in tapetum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25102		snpnet		GRCh37	1948	0
+	GBE_INI25103	Mean FA in tapetum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25103		snpnet		GRCh37	1202	0
+	GBE_INI25344	Mean ICVF in middle cerebellar peduncle on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25344		snpnet		GRCh37	1580	0
+	GBE_INI25346	Mean ICVF in genu of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25346		snpnet		GRCh37	2530	0
+	GBE_INI25347	Mean ICVF in body of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25347		snpnet		GRCh37	2881	0
+	GBE_INI25349	Mean ICVF in fornix on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25349		snpnet		GRCh37	188	0
+	GBE_INI25352	Mean ICVF in medial lemniscus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25352		snpnet		GRCh37	250	0
+	GBE_INI25353	Mean ICVF in medial lemniscus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25353		snpnet		GRCh37	246	0
+	GBE_INI25354	Mean ICVF in inferior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25354		snpnet		GRCh37	1262	0
+	GBE_INI25355	Mean ICVF in inferior cerebellar peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25355		snpnet		GRCh37	711	0
+	GBE_INI25356	Mean ICVF in superior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25356		snpnet		GRCh37	1420	0
+	GBE_INI25357	Mean ICVF in superior cerebellar peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25357		snpnet		GRCh37	2068	0
+	GBE_INI25358	Mean ICVF in cerebral peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25358		snpnet		GRCh37	1501	0
+	GBE_INI25359	Mean ICVF in cerebral peduncle on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25359		snpnet		GRCh37	1907	0
+	GBE_INI25360	Mean ICVF in anterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25360		snpnet		GRCh37	1308	0
+	GBE_INI25361	Mean ICVF in anterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25361		snpnet		GRCh37	870	0
+	GBE_INI25362	Mean ICVF in posterior limb of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25362		snpnet		GRCh37	1957	0
+	GBE_INI25363	Mean ICVF in posterior limb of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25363		snpnet		GRCh37	2010	0
+	GBE_INI25364	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25364		snpnet		GRCh37	2113	0
+	GBE_INI25365	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25365		snpnet		GRCh37	2268	0
+	GBE_INI25366	Mean ICVF in anterior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25366		snpnet		GRCh37	2090	0
+	GBE_INI25367	Mean ICVF in anterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25367		snpnet		GRCh37	1490	0
+	GBE_INI25368	Mean ICVF in superior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25368		snpnet		GRCh37	2299	0
+	GBE_INI25369	Mean ICVF in superior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25369		snpnet		GRCh37	2789	0
+	GBE_INI25370	Mean ICVF in posterior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25370		snpnet		GRCh37	1934	0
+	GBE_INI25371	Mean ICVF in posterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25371		snpnet		GRCh37	2727	0
+	GBE_INI25372	Mean ICVF in posterior thalamic radiation on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25372		snpnet		GRCh37	1753	0
+	GBE_INI25373	Mean ICVF in posterior thalamic radiation on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25373		snpnet		GRCh37	2073	0
+	GBE_INI25374	Mean ICVF in sagittal stratum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25374		snpnet		GRCh37	2195	0
+	GBE_INI25375	Mean ICVF in sagittal stratum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25375		snpnet		GRCh37	1651	0
+	GBE_INI25376	Mean ICVF in external capsule on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25376		snpnet		GRCh37	1316	0
+	GBE_INI25377	Mean ICVF in external capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25377		snpnet		GRCh37	724	0
+	GBE_INI25378	Mean ICVF in cingulum cingulate gyrus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25378		snpnet		GRCh37	3061	0
+	GBE_INI25379	Mean ICVF in cingulum cingulate gyrus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25379		snpnet		GRCh37	1929	0
+	GBE_INI25380	Mean ICVF in cingulum hippocampus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25380		snpnet		GRCh37	2400	0
+	GBE_INI25381	Mean ICVF in cingulum hippocampus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25381		snpnet		GRCh37	1153	0
+	GBE_INI25382	Mean ICVF in fornix cres+stria terminalis on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25382		snpnet		GRCh37	2387	0
+	GBE_INI25383	Mean ICVF in fornix cres+stria terminalis on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25383		snpnet		GRCh37	1353	0
+	GBE_INI25384	Mean ICVF in superior longitudinal fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25384		snpnet		GRCh37	1750	0
+	GBE_INI25385	Mean ICVF in superior longitudinal fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25385		snpnet		GRCh37	1974	0
+	GBE_INI25386	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25386		snpnet		GRCh37	703	0
+	GBE_INI25387	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25387		snpnet		GRCh37	402	0
+	GBE_INI25388	Mean ICVF in uncinate fasciculus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25388		snpnet		GRCh37	641	0
+	GBE_INI25389	Mean ICVF in uncinate fasciculus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25389		snpnet		GRCh37	962	0
+	GBE_INI25391	Mean ICVF in tapetum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25391		snpnet		GRCh37	1117	0
+	GBE_INI25443	Mean ISOVF in body of corpus callosum on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25443		snpnet		GRCh37	627	0
+	GBE_INI25445	Mean ISOVF in fornix on FA skeleton	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25445		snpnet		GRCh37	733	0
+	GBE_INI25452	Mean ISOVF in superior cerebellar peduncle on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25452		snpnet		GRCh37	666	0
+	GBE_INI25462	Mean ISOVF in anterior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25462		snpnet		GRCh37	116	0
+	GBE_INI25463	Mean ISOVF in anterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25463		snpnet		GRCh37	393	0
+	GBE_INI25464	Mean ISOVF in superior corona radiata on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25464		snpnet		GRCh37	392	0
+	GBE_INI25465	Mean ISOVF in superior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25465		snpnet		GRCh37	257	0
+	GBE_INI25467	Mean ISOVF in posterior corona radiata on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25467		snpnet		GRCh37	466	0
+	GBE_INI25469	Mean ISOVF in posterior thalamic radiation on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25469		snpnet		GRCh37	554	0
+	GBE_INI25470	Mean ISOVF in sagittal stratum on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25470		snpnet		GRCh37	709	0
+	GBE_INI25471	Mean ISOVF in sagittal stratum on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25471		snpnet		GRCh37	400	0
+	GBE_INI25473	Mean ISOVF in external capsule on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25473		snpnet		GRCh37	142	0
+	GBE_INI25474	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25474		snpnet		GRCh37	157	0
+	GBE_INI25475	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25475		snpnet		GRCh37	114	0
+	GBE_INI25488	WA FA in tract acoustic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25488		snpnet		GRCh37	1025	0
+	GBE_INI25489	WA FA in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25489		snpnet		GRCh37	826	0
+	GBE_INI25490	WA FA in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25490		snpnet		GRCh37	379	0
+	GBE_INI25491	WA FA in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25491		snpnet		GRCh37	726	0
+	GBE_INI25492	WA FA in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25492		snpnet		GRCh37	773	0
+	GBE_INI25493	WA FA in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25493		snpnet		GRCh37	702	0
+	GBE_INI25497	WA FA in tract corticospinal tract (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25497		snpnet		GRCh37	60	0
+	GBE_INI25498	WA FA in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25498		snpnet		GRCh37	1261	0
+	GBE_INI25499	WA FA in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25499		snpnet		GRCh37	2017	0
+	GBE_INI25500	WA FA in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25500		snpnet		GRCh37	597	0
+	GBE_INI25501	WA FA in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25501		snpnet		GRCh37	1371	0
+	GBE_INI25502	WA FA in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25502		snpnet		GRCh37	709	0
+	GBE_INI25503	WA FA in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25503		snpnet		GRCh37	767	0
+	GBE_INI25507	WA FA in tract posterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25507		snpnet		GRCh37	1044	0
+	GBE_INI25508	WA FA in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25508		snpnet		GRCh37	1279	0
+	GBE_INI25509	WA FA in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25509		snpnet		GRCh37	2671	0
+	GBE_INI25513	WA FA in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25513		snpnet		GRCh37	187	0
+	GBE_INI25514	WA FA in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25514		snpnet		GRCh37	205	0
+	GBE_INI25516	WA MD in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25516		snpnet		GRCh37	315	0
+	GBE_INI25517	WA MD in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25517		snpnet		GRCh37	171	0
+	GBE_INI25519	WA MD in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25519		snpnet		GRCh37	296	0
+	GBE_INI25520	WA MD in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25520		snpnet		GRCh37	767	0
+	GBE_INI25525	WA MD in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25525		snpnet		GRCh37	209	0
+	GBE_INI25526	WA MD in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25526		snpnet		GRCh37	1164	0
+	GBE_INI25527	WA MD in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25527		snpnet		GRCh37	813	0
+	GBE_INI25528	WA MD in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25528		snpnet		GRCh37	702	0
+	GBE_INI25529	WA MD in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25529		snpnet		GRCh37	572	0
+	GBE_INI25530	WA MD in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25530		snpnet		GRCh37	975	0
+	GBE_INI25536	WA MD in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25536		snpnet		GRCh37	1809	0
+	GBE_INI25538	WA MD in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25538		snpnet		GRCh37	610	0
+	GBE_INI25539	WA MD in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25539		snpnet		GRCh37	96	0
+	GBE_INI25540	WA MD in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25540		snpnet		GRCh37	872	0
+	GBE_INI25541	WA MD in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25541		snpnet		GRCh37	1033	0
+	GBE_INI25553	WA MO in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25553		snpnet		GRCh37	1836	0
+	GBE_INI25558	WA MO in tract middle cerebellar peduncle	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25558		snpnet		GRCh37	47	0
+	GBE_INI25560	WA MO in tract medial lemniscus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25560		snpnet		GRCh37	258	0
+	GBE_INI25561	WA MO in tract posterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25561		snpnet		GRCh37	721	0
+	GBE_INI25562	WA MO in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25562		snpnet		GRCh37	342	0
+	GBE_INI25563	WA MO in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25563		snpnet		GRCh37	961	0
+	GBE_INI25566	WA MO in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25566		snpnet		GRCh37	1023	0
+	GBE_INI25580	WA L1 in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25580		snpnet		GRCh37	514	0
+	GBE_INI25581	WA L1 in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25581		snpnet		GRCh37	547	0
+	GBE_INI25582	WA L1 in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25582		snpnet		GRCh37	322	0
+	GBE_INI25583	WA L1 in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25583		snpnet		GRCh37	499	0
+	GBE_INI25584	WA L1 in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25584		snpnet		GRCh37	316	0
+	GBE_INI25590	WA L1 in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25590		snpnet		GRCh37	1382	0
+	GBE_INI25591	WA L1 in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25591		snpnet		GRCh37	534	0
+	GBE_INI25592	WA L1 in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25592		snpnet		GRCh37	457	0
+	GBE_INI25593	WA L1 in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25593		snpnet		GRCh37	358	0
+	GBE_INI25594	WA L1 in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25594		snpnet		GRCh37	173	0
+	GBE_INI25597	WA L2 in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25597		snpnet		GRCh37	993	0
+	GBE_INI25598	WA L2 in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25598		snpnet		GRCh37	170	0
+	GBE_INI25599	WA L2 in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25599		snpnet		GRCh37	290	0
+	GBE_INI25600	WA L2 in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25600		snpnet		GRCh37	82	0
+	GBE_INI25601	WA L2 in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25601		snpnet		GRCh37	305	0
+	GBE_INI25606	WA L2 in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25606		snpnet		GRCh37	924	0
+	GBE_INI25607	WA L2 in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25607		snpnet		GRCh37	1030	0
+	GBE_INI25608	WA L2 in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25608		snpnet		GRCh37	691	0
+	GBE_INI25609	WA L2 in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25609		snpnet		GRCh37	814	0
+	GBE_INI25610	WA L2 in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25610		snpnet		GRCh37	711	0
+	GBE_INI25611	WA L2 in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25611		snpnet		GRCh37	793	0
+	GBE_INI25617	WA L2 in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25617		snpnet		GRCh37	1749	0
+	GBE_INI25619	WA L2 in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25619		snpnet		GRCh37	683	0
+	GBE_INI25621	WA L2 in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25621		snpnet		GRCh37	709	0
+	GBE_INI25622	WA L2 in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25622		snpnet		GRCh37	706	0
+	GBE_INI25624	WA L3 in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25624		snpnet		GRCh37	794	0
+	GBE_INI25625	WA L3 in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25625		snpnet		GRCh37	200	0
+	GBE_INI25626	WA L3 in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25626		snpnet		GRCh37	432	0
+	GBE_INI25627	WA L3 in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25627		snpnet		GRCh37	1611	0
+	GBE_INI25628	WA L3 in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25628		snpnet		GRCh37	1080	0
+	GBE_INI25634	WA L3 in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25634		snpnet		GRCh37	1536	0
+	GBE_INI25635	WA L3 in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25635		snpnet		GRCh37	945	0
+	GBE_INI25636	WA L3 in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25636		snpnet		GRCh37	864	0
+	GBE_INI25637	WA L3 in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25637		snpnet		GRCh37	919	0
+	GBE_INI25638	WA L3 in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25638		snpnet		GRCh37	825	0
+	GBE_INI25644	WA L3 in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25644		snpnet		GRCh37	1884	0
+	GBE_INI25646	WA L3 in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25646		snpnet		GRCh37	855	0
+	GBE_INI25647	WA L3 in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25647		snpnet		GRCh37	1510	0
+	GBE_INI25648	WA L3 in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25648		snpnet		GRCh37	755	0
+	GBE_INI25649	WA L3 in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25649		snpnet		GRCh37	1320	0
+	GBE_INI25650	WA ICVF in tract acoustic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25650		snpnet		GRCh37	1563	0
+	GBE_INI25651	WA ICVF in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25651		snpnet		GRCh37	979	0
+	GBE_INI25652	WA ICVF in tract anterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25652		snpnet		GRCh37	817	0
+	GBE_INI25653	WA ICVF in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25653		snpnet		GRCh37	791	0
+	GBE_INI25654	WA ICVF in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25654		snpnet		GRCh37	1095	0
+	GBE_INI25655	WA ICVF in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25655		snpnet		GRCh37	998	0
+	GBE_INI25656	WA ICVF in tract parahippocampal part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25656		snpnet		GRCh37	449	0
+	GBE_INI25657	WA ICVF in tract parahippocampal part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25657		snpnet		GRCh37	955	0
+	GBE_INI25658	WA ICVF in tract corticospinal tract (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25658		snpnet		GRCh37	1128	0
+	GBE_INI25659	WA ICVF in tract corticospinal tract (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25659		snpnet		GRCh37	310	0
+	GBE_INI25660	WA ICVF in tract forceps major	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25660		snpnet		GRCh37	1466	0
+	GBE_INI25661	WA ICVF in tract forceps minor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25661		snpnet		GRCh37	2047	0
+	GBE_INI25662	WA ICVF in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25662		snpnet		GRCh37	2008	0
+	GBE_INI25663	WA ICVF in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25663		snpnet		GRCh37	1964	0
+	GBE_INI25664	WA ICVF in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25664		snpnet		GRCh37	1804	0
+	GBE_INI25665	WA ICVF in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25665		snpnet		GRCh37	1872	0
+	GBE_INI25666	WA ICVF in tract middle cerebellar peduncle	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25666		snpnet		GRCh37	512	0
+	GBE_INI25667	WA ICVF in tract medial lemniscus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25667		snpnet		GRCh37	663	0
+	GBE_INI25668	WA ICVF in tract medial lemniscus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25668		snpnet		GRCh37	600	0
+	GBE_INI25669	WA ICVF in tract posterior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25669		snpnet		GRCh37	1264	0
+	GBE_INI25670	WA ICVF in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25670		snpnet		GRCh37	1618	0
+	GBE_INI25671	WA ICVF in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25671		snpnet		GRCh37	2131	0
+	GBE_INI25672	WA ICVF in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25672		snpnet		GRCh37	1652	0
+	GBE_INI25673	WA ICVF in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25673		snpnet		GRCh37	1165	0
+	GBE_INI25674	WA ICVF in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25674		snpnet		GRCh37	1474	0
+	GBE_INI25675	WA ICVF in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25675		snpnet		GRCh37	136	0
+	GBE_INI25676	WA ICVF in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25676		snpnet		GRCh37	837	0
+	GBE_INI25685	WA OD in tract corticospinal tract (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25685		snpnet		GRCh37	1	0
+	GBE_INI25692	WA OD in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25692		snpnet		GRCh37	378	0
+	GBE_INI25694	WA OD in tract medial lemniscus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25694		snpnet		GRCh37	297	0
+	GBE_INI25698	WA OD in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25698		snpnet		GRCh37	1298	0
+	GBE_INI25699	WA OD in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25699		snpnet		GRCh37	726	0
+	GBE_INI25701	WA OD in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25701		snpnet		GRCh37	1352	0
+	GBE_INI25704	WA ISOVF in tract acoustic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25704		snpnet		GRCh37	231	0
+	GBE_INI25705	WA ISOVF in tract acoustic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25705		snpnet		GRCh37	725	0
+	GBE_INI25707	WA ISOVF in tract anterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25707		snpnet		GRCh37	130	0
+	GBE_INI25708	WA ISOVF in tract cingulate gyrus part of cingulum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25708		snpnet		GRCh37	477	0
+	GBE_INI25709	WA ISOVF in tract cingulate gyrus part of cingulum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25709		snpnet		GRCh37	245	0
+	GBE_INI25716	WA ISOVF in tract inferior fronto-occipital fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25716		snpnet		GRCh37	1080	0
+	GBE_INI25717	WA ISOVF in tract inferior fronto-occipital fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25717		snpnet		GRCh37	1146	0
+	GBE_INI25718	WA ISOVF in tract inferior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25718		snpnet		GRCh37	1123	0
+	GBE_INI25719	WA ISOVF in tract inferior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25719		snpnet		GRCh37	1688	0
+	GBE_INI25724	WA ISOVF in tract posterior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25724		snpnet		GRCh37	72	0
+	GBE_INI25725	WA ISOVF in tract superior longitudinal fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25725		snpnet		GRCh37	695	0
+	GBE_INI25726	WA ISOVF in tract superior longitudinal fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25726		snpnet		GRCh37	197	0
+	GBE_INI25727	WA ISOVF in tract superior thalamic radiation (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25727		snpnet		GRCh37	538	0
+	GBE_INI25728	WA ISOVF in tract superior thalamic radiation (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25728		snpnet		GRCh37	174	0
+	GBE_INI25729	WA ISOVF in tract uncinate fasciculus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25729		snpnet		GRCh37	385	0
+	GBE_INI25730	WA ISOVF in tract uncinate fasciculus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25730		snpnet		GRCh37	83	0
+	GBE_INI21025	Freq. of discomfort/pain in abdomen in last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21025		snpnet		GRCh37	256	0
+	GBE_INI21044	Ave. # of times bowels opened per day	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21044		snpnet		GRCh37	845	0
+	GBE_INI21049	Degree bothered by pain in arms/legs/joints in the past 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21049		snpnet		GRCh37	534	0
+	GBE_INI21051	Degree bothered by headaches in the last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21051		snpnet		GRCh37	9	0
+	GBE_INI21058	Degree bothered by urinary frequency/bladder irritability in the last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21058		snpnet		GRCh37	333	0
+	GBE_INI21060	Degree bothered by feeling tired all the time in the last 3 months	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI21060		snpnet		GRCh37	1526	0
 PGS001226	GBE_INI20022	Birth weight	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20022	EFO_0004344	snpnet		GRCh37	6278	0
 PGS000999	GBE_QT_FC1001687	Comparative body size at age 10	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001687	EFO_0009819	snpnet		GRCh37	13034	0
 PGS000998	GBE_QT_FC1001697	Comparative height size at age 10	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1001697	EFO_0009819	snpnet		GRCh37	24144	0
-NA	GBE_INI12340	QRS duration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI12340	NA	snpnet		GRCh37	401	0
-NA	GBE_INI22330	PQ interval	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22330	NA	snpnet		GRCh37	391	0
-NA	GBE_INI22331	QT interval	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22331	NA	snpnet		GRCh37	609	0
-NA	GBE_INI22332	QTC interval	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22332	NA	snpnet		GRCh37	115	0
+	GBE_INI12340	QRS duration	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI12340		snpnet		GRCh37	401	0
+	GBE_INI22330	PQ interval	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22330		snpnet		GRCh37	391	0
+	GBE_INI22331	QT interval	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22331		snpnet		GRCh37	609	0
+	GBE_INI22332	QTC interval	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22332		snpnet		GRCh37	115	0
 PGS001100	GBE_INI5084	Spherical power (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5084	EFO_0007814	snpnet		GRCh37	7350	0
 PGS001099	GBE_INI5085	Spherical power (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5085	EFO_0007814	snpnet		GRCh37	6639	0
-NA	GBE_INI5096	3mm weak meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5096	NA	snpnet		GRCh37	8600	0
-NA	GBE_INI5097	6mm weak meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5097	NA	snpnet		GRCh37	8580	0
-NA	GBE_INI5098	6mm weak meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5098	NA	snpnet		GRCh37	8730	0
-NA	GBE_INI5099	3mm weak meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5099	NA	snpnet		GRCh37	8983	0
-NA	GBE_INI5104	3mm strong meridian angle (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5104	NA	snpnet		GRCh37	976	0
-NA	GBE_INI5113	6mm cylindrical power angle (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5113	NA	snpnet		GRCh37	319	0
-NA	GBE_INI5116	3mm cylindrical power (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5116	NA	snpnet		GRCh37	148	0
-NA	GBE_INI5132	3mm strong meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5132	NA	snpnet		GRCh37	10082	0
-NA	GBE_INI5133	6mm strong meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5133	NA	snpnet		GRCh37	9219	0
-NA	GBE_INI5134	6mm strong meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5134	NA	snpnet		GRCh37	8504	0
-NA	GBE_INI5135	3mm strong meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5135	NA	snpnet		GRCh37	9497	0
-NA	GBE_INI5254	Intra-ocular pressure, corneal-compensated (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5254	NA	snpnet		GRCh37	1563	0
+	GBE_INI5096	3mm weak meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5096		snpnet		GRCh37	8600	0
+	GBE_INI5097	6mm weak meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5097		snpnet		GRCh37	8580	0
+	GBE_INI5098	6mm weak meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5098		snpnet		GRCh37	8730	0
+	GBE_INI5099	3mm weak meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5099		snpnet		GRCh37	8983	0
+	GBE_INI5104	3mm strong meridian angle (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5104		snpnet		GRCh37	976	0
+	GBE_INI5113	6mm cylindrical power angle (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5113		snpnet		GRCh37	319	0
+	GBE_INI5116	3mm cylindrical power (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5116		snpnet		GRCh37	148	0
+	GBE_INI5132	3mm strong meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5132		snpnet		GRCh37	10082	0
+	GBE_INI5133	6mm strong meridian (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5133		snpnet		GRCh37	9219	0
+	GBE_INI5134	6mm strong meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5134		snpnet		GRCh37	8504	0
+	GBE_INI5135	3mm strong meridian (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5135		snpnet		GRCh37	9497	0
+	GBE_INI5254	Intra-ocular pressure, corneal-compensated (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5254		snpnet		GRCh37	1563	0
 PGS001185	GBE_INI5255	Intra-ocular pressure, Goldmann-correlated (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5255	EFO_0004695	snpnet		GRCh37	3584	0
-NA	GBE_INI5256	Corneal hysteresis (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5256	NA	snpnet		GRCh37	2500	0
-NA	GBE_INI5257	Corneal resistance factor (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5257	NA	snpnet		GRCh37	3941	0
-NA	GBE_INI5262	Intra-ocular pressure, corneal-compensated (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5262	NA	snpnet		GRCh37	1166	0
-NA	GBE_INI5263	Intra-ocular pressure, Goldmann-correlated (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5263	NA	snpnet		GRCh37	3513	0
-NA	GBE_INI5264	Corneal hysteresis (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5264	NA	snpnet		GRCh37	2240	0
-NA	GBE_INI5265	Corneal resistance factor (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5265	NA	snpnet		GRCh37	2390	0
-NA	GBE_INI1807	Father's age at death	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1807	NA	snpnet		GRCh37	398	0
+	GBE_INI5256	Corneal hysteresis (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5256		snpnet		GRCh37	2500	0
+	GBE_INI5257	Corneal resistance factor (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5257		snpnet		GRCh37	3941	0
+	GBE_INI5262	Intra-ocular pressure, corneal-compensated (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5262		snpnet		GRCh37	1166	0
+	GBE_INI5263	Intra-ocular pressure, Goldmann-correlated (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5263		snpnet		GRCh37	3513	0
+	GBE_INI5264	Corneal hysteresis (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5264		snpnet		GRCh37	2240	0
+	GBE_INI5265	Corneal resistance factor (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI5265		snpnet		GRCh37	2390	0
+	GBE_INI1807	Father's age at death	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1807		snpnet		GRCh37	398	0
 PGS001119	GBE_INI46	Hand grip strength (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI46	EFO_0006941	snpnet		GRCh37	13767	0
 PGS001120	GBE_INI47	Hand grip strength (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI47	EFO_0006941	snpnet		GRCh37	12644	0
-NA	GBE_INI2217	Age started wearing glasses or contact lenses	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2217	NA	snpnet		GRCh37	8870	0
+	GBE_INI2217	Age started wearing glasses or contact lenses	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2217		snpnet		GRCh37	8870	0
 PGS000935	GBE_INI2966	Age high BP diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2966	HP_0032263|EFO_0004918	snpnet		GRCh37	370	0
-NA	GBE_INI2976	Age diabetes diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2976	NA	snpnet		GRCh37	26	0
+	GBE_INI2976	Age diabetes diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI2976		snpnet		GRCh37	26	0
 PGS001283	GBE_INI3761	Age hay fever, rhinitis or eczema diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3761	EFO_0003785	snpnet		GRCh37	993	0
-NA	GBE_INI3786	Age asthma diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3786	NA	snpnet		GRCh37	922	0
+	GBE_INI3786	Age asthma diagnosed	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3786		snpnet		GRCh37	922	0
 PGS001008	GBE_QT_FC1002178	Overall health rating	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002178	EFO_0009724	snpnet		GRCh37	10464	0
 PGS001012	GBE_QT_FC1002296	Falls in the last year	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002296	EFO_0009631	snpnet		GRCh37	2103	0
-NA	GBE_QT_FC1004803	Tinnitus severity	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1004803	NA	snpnet		GRCh37	343	0
-NA	GBE_INI22420	LV ejection fraction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22420	NA	snpnet		GRCh37	266	0
-NA	GBE_INI22423	LV stroke volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22423	NA	snpnet		GRCh37	26	0
-NA	GBE_INI22426	Ave. heart rate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22426	NA	snpnet		GRCh37	243	0
-NA	GBE_INI22427	Body surface area	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22427	NA	snpnet		GRCh37	850	0
+	GBE_QT_FC1004803	Tinnitus severity	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1004803		snpnet		GRCh37	343	0
+	GBE_INI22420	LV ejection fraction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22420		snpnet		GRCh37	266	0
+	GBE_INI22423	LV stroke volume	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22423		snpnet		GRCh37	26	0
+	GBE_INI22426	Ave. heart rate	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22426		snpnet		GRCh37	243	0
+	GBE_INI22427	Body surface area	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22427		snpnet		GRCh37	850	0
 PGS001005	GBE_INI134	# of self-reported cancers	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI134	EFO_0009800	snpnet		GRCh37	526	0
 PGS001004	GBE_INI135	# of self-reported non-cancer illnesses	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI135	EFO_0009801	snpnet		GRCh37	5212	0
-NA	GBE_INI87	Non-cancer illness year/age first occurred	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI87	NA	snpnet		GRCh37	273	0
+	GBE_INI87	Non-cancer illness year/age first occurred	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI87		snpnet		GRCh37	273	0
 PGS001003	GBE_INI137	# of medications taken	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI137	EFO_0009803	snpnet		GRCh37	8085	0
-NA	GBE_INI20414	Freq. of drinking alcohol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20414	NA	snpnet		GRCh37	860	0
-NA	GBE_INI20453	Ever taken cannabis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20453	NA	snpnet		GRCh37	819	0
+	GBE_INI20414	Freq. of drinking alcohol	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20414		snpnet		GRCh37	860	0
+	GBE_INI20453	Ever taken cannabis	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI20453		snpnet		GRCh37	819	0
 PGS001180	GBE_INI1003063	FEV FVC ratio	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1003063	EFO_0004713	snpnet		GRCh37	15141	0
 PGS001010	GBE_INI1003064	PEF pred. ratio	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI1003064	EFO_0009718	snpnet		GRCh37	15135	0
-NA	GBE_QT_FC1002060	Freq. of unenthusiasm / disinterest in last 2 weeks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002060	NA	snpnet		GRCh37	2431	0
+	GBE_QT_FC1002060	Freq. of unenthusiasm / disinterest in last 2 weeks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002060		snpnet		GRCh37	2431	0
 PGS001080	GBE_QT_FC1002080	Freq. of tiredness / lethargy in last 2 weeks	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1002080	EFO_0007946	snpnet		GRCh37	5594	0
-NA	GBE_QT_FC1004548	Health satisfaction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1004548	NA	snpnet		GRCh37	1814	0
-NA	GBE_QT_FC1004570	Friendships satisfaction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1004570	NA	snpnet		GRCh37	659	0
+	GBE_QT_FC1004548	Health satisfaction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1004548		snpnet		GRCh37	1814	0
+	GBE_QT_FC1004570	Friendships satisfaction	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/QT_FC1004570		snpnet		GRCh37	659	0
 PGS001237	GBE_INI3062	FVC	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3062	EFO_0004312	snpnet		GRCh37	20921	0
 PGS001236	GBE_INI3063	FEV1	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3063	EFO_0004314	snpnet		GRCh37	17732	0
 PGS001009	GBE_INI3064	PEF	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI3064	EFO_0009718	snpnet		GRCh37	9523	0
-NA	GBE_INI25027	Median T2star in thalamus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25027	NA	snpnet		GRCh37	114	0
-NA	GBE_INI25028	Median T2star in caudate (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25028	NA	snpnet		GRCh37	1009	0
-NA	GBE_INI25029	Median T2star in caudate (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25029	NA	snpnet		GRCh37	930	0
-NA	GBE_INI25030	Median T2star in putamen (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25030	NA	snpnet		GRCh37	1922	0
-NA	GBE_INI25031	Median T2star in putamen (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25031	NA	snpnet		GRCh37	2474	0
-NA	GBE_INI25032	Median T2star in pallidum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25032	NA	snpnet		GRCh37	942	0
-NA	GBE_INI25033	Median T2star in pallidum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25033	NA	snpnet		GRCh37	2164	0
-NA	GBE_INI25000	Volumetric scaling from T1 head image to standard space	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25000	NA	snpnet		GRCh37	1304	0
-NA	GBE_INI25001	Vol. of peripheral cortical grey matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25001	NA	snpnet		GRCh37	1112	0
-NA	GBE_INI25002	Vol. of peripheral cortical grey matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25002	NA	snpnet		GRCh37	1920	0
+	GBE_INI25027	Median T2star in thalamus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25027		snpnet		GRCh37	114	0
+	GBE_INI25028	Median T2star in caudate (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25028		snpnet		GRCh37	1009	0
+	GBE_INI25029	Median T2star in caudate (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25029		snpnet		GRCh37	930	0
+	GBE_INI25030	Median T2star in putamen (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25030		snpnet		GRCh37	1922	0
+	GBE_INI25031	Median T2star in putamen (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25031		snpnet		GRCh37	2474	0
+	GBE_INI25032	Median T2star in pallidum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25032		snpnet		GRCh37	942	0
+	GBE_INI25033	Median T2star in pallidum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25033		snpnet		GRCh37	2164	0
+	GBE_INI25000	Volumetric scaling from T1 head image to standard space	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25000		snpnet		GRCh37	1304	0
+	GBE_INI25001	Vol. of peripheral cortical grey matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25001		snpnet		GRCh37	1112	0
+	GBE_INI25002	Vol. of peripheral cortical grey matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25002		snpnet		GRCh37	1920	0
 PGS001070	GBE_INI25003	Vol. of ventricular cerebrospinal fluid (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25003	EFO_0008080	snpnet		GRCh37	880	0
-NA	GBE_INI25004	Vol. of ventricular cerebrospinal fluid	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25004	NA	snpnet		GRCh37	772	0
-NA	GBE_INI25005	Vol. of grey matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25005	NA	snpnet		GRCh37	1139	0
-NA	GBE_INI25006	Vol. of grey matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25006	NA	snpnet		GRCh37	2061	0
-NA	GBE_INI25007	Vol. of white matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25007	NA	snpnet		GRCh37	1005	0
-NA	GBE_INI25008	Vol. of white matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25008	NA	snpnet		GRCh37	1328	0
-NA	GBE_INI25009	Vol. of brain, grey+white matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25009	NA	snpnet		GRCh37	1999	0
-NA	GBE_INI25010	Vol. of brain, grey+white matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25010	NA	snpnet		GRCh37	1871	0
-NA	GBE_INI25011	Vol. of thalamus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25011	NA	snpnet		GRCh37	1328	0
-NA	GBE_INI25012	Vol. of thalamus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25012	NA	snpnet		GRCh37	1792	0
-NA	GBE_INI25013	Vol. of caudate (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25013	NA	snpnet		GRCh37	1055	0
-NA	GBE_INI25014	Vol. of caudate (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25014	NA	snpnet		GRCh37	1910	0
-NA	GBE_INI25015	Vol. of putamen (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25015	NA	snpnet		GRCh37	747	0
-NA	GBE_INI25016	Vol. of putamen (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25016	NA	snpnet		GRCh37	2048	0
-NA	GBE_INI25017	Vol. of pallidum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25017	NA	snpnet		GRCh37	1405	0
-NA	GBE_INI25018	Vol. of pallidum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25018	NA	snpnet		GRCh37	303	0
-NA	GBE_INI25019	Vol. of hippocampus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25019	NA	snpnet		GRCh37	442	0
-NA	GBE_INI25023	Vol. of accumbens (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25023	NA	snpnet		GRCh37	647	0
-NA	GBE_INI25024	Vol. of accumbens (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25024	NA	snpnet		GRCh37	643	0
-NA	GBE_INI25025	Vol. of brain stem + 4th ventricle	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25025	NA	snpnet		GRCh37	1183	0
-NA	GBE_INI25782	Vol. of grey matter in Frontal Pole (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25782	NA	snpnet		GRCh37	2320	0
-NA	GBE_INI25784	Vol. of grey matter in Insular Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25784	NA	snpnet		GRCh37	1554	0
-NA	GBE_INI25785	Vol. of grey matter in Insular Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25785	NA	snpnet		GRCh37	1365	0
-NA	GBE_INI25786	Vol. of grey matter in Superior Frontal Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25786	NA	snpnet		GRCh37	1049	0
-NA	GBE_INI25787	Vol. of grey matter in Superior Frontal Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25787	NA	snpnet		GRCh37	5	0
-NA	GBE_INI25788	Vol. of grey matter in Middle Frontal Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25788	NA	snpnet		GRCh37	369	0
-NA	GBE_INI25789	Vol. of grey matter in Middle Frontal Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25789	NA	snpnet		GRCh37	489	0
-NA	GBE_INI25791	Vol. of grey matter in Inferior Frontal Gyrus, pars triangularis (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25791	NA	snpnet		GRCh37	697	0
-NA	GBE_INI25794	Vol. of grey matter in Precentral Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25794	NA	snpnet		GRCh37	318	0
-NA	GBE_INI25795	Vol. of grey matter in Precentral Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25795	NA	snpnet		GRCh37	1370	0
-NA	GBE_INI25796	Vol. of grey matter in Temporal Pole (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25796	NA	snpnet		GRCh37	1200	0
-NA	GBE_INI25797	Vol. of grey matter in Temporal Pole (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25797	NA	snpnet		GRCh37	1025	0
-NA	GBE_INI25798	Vol. of grey matter in Superior Temporal Gyrus, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25798	NA	snpnet		GRCh37	728	0
-NA	GBE_INI25800	Vol. of grey matter in Superior Temporal Gyrus, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25800	NA	snpnet		GRCh37	530	0
-NA	GBE_INI25805	Vol. of grey matter in Middle Temporal Gyrus, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25805	NA	snpnet		GRCh37	1076	0
-NA	GBE_INI25810	Vol. of grey matter in Inferior Temporal Gyrus, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25810	NA	snpnet		GRCh37	288	0
-NA	GBE_INI25825	Vol. of grey matter in Lateral Occipital Cortex, superior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25825	NA	snpnet		GRCh37	581	0
-NA	GBE_INI25827	Vol. of grey matter in Lateral Occipital Cortex, inferior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25827	NA	snpnet		GRCh37	1159	0
-NA	GBE_INI25828	Vol. of grey matter in Intracalcarine Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25828	NA	snpnet		GRCh37	2025	0
+	GBE_INI25004	Vol. of ventricular cerebrospinal fluid	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25004		snpnet		GRCh37	772	0
+	GBE_INI25005	Vol. of grey matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25005		snpnet		GRCh37	1139	0
+	GBE_INI25006	Vol. of grey matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25006		snpnet		GRCh37	2061	0
+	GBE_INI25007	Vol. of white matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25007		snpnet		GRCh37	1005	0
+	GBE_INI25008	Vol. of white matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25008		snpnet		GRCh37	1328	0
+	GBE_INI25009	Vol. of brain, grey+white matter (normalised for head size)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25009		snpnet		GRCh37	1999	0
+	GBE_INI25010	Vol. of brain, grey+white matter	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25010		snpnet		GRCh37	1871	0
+	GBE_INI25011	Vol. of thalamus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25011		snpnet		GRCh37	1328	0
+	GBE_INI25012	Vol. of thalamus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25012		snpnet		GRCh37	1792	0
+	GBE_INI25013	Vol. of caudate (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25013		snpnet		GRCh37	1055	0
+	GBE_INI25014	Vol. of caudate (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25014		snpnet		GRCh37	1910	0
+	GBE_INI25015	Vol. of putamen (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25015		snpnet		GRCh37	747	0
+	GBE_INI25016	Vol. of putamen (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25016		snpnet		GRCh37	2048	0
+	GBE_INI25017	Vol. of pallidum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25017		snpnet		GRCh37	1405	0
+	GBE_INI25018	Vol. of pallidum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25018		snpnet		GRCh37	303	0
+	GBE_INI25019	Vol. of hippocampus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25019		snpnet		GRCh37	442	0
+	GBE_INI25023	Vol. of accumbens (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25023		snpnet		GRCh37	647	0
+	GBE_INI25024	Vol. of accumbens (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25024		snpnet		GRCh37	643	0
+	GBE_INI25025	Vol. of brain stem + 4th ventricle	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25025		snpnet		GRCh37	1183	0
+	GBE_INI25782	Vol. of grey matter in Frontal Pole (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25782		snpnet		GRCh37	2320	0
+	GBE_INI25784	Vol. of grey matter in Insular Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25784		snpnet		GRCh37	1554	0
+	GBE_INI25785	Vol. of grey matter in Insular Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25785		snpnet		GRCh37	1365	0
+	GBE_INI25786	Vol. of grey matter in Superior Frontal Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25786		snpnet		GRCh37	1049	0
+	GBE_INI25787	Vol. of grey matter in Superior Frontal Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25787		snpnet		GRCh37	5	0
+	GBE_INI25788	Vol. of grey matter in Middle Frontal Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25788		snpnet		GRCh37	369	0
+	GBE_INI25789	Vol. of grey matter in Middle Frontal Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25789		snpnet		GRCh37	489	0
+	GBE_INI25791	Vol. of grey matter in Inferior Frontal Gyrus, pars triangularis (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25791		snpnet		GRCh37	697	0
+	GBE_INI25794	Vol. of grey matter in Precentral Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25794		snpnet		GRCh37	318	0
+	GBE_INI25795	Vol. of grey matter in Precentral Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25795		snpnet		GRCh37	1370	0
+	GBE_INI25796	Vol. of grey matter in Temporal Pole (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25796		snpnet		GRCh37	1200	0
+	GBE_INI25797	Vol. of grey matter in Temporal Pole (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25797		snpnet		GRCh37	1025	0
+	GBE_INI25798	Vol. of grey matter in Superior Temporal Gyrus, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25798		snpnet		GRCh37	728	0
+	GBE_INI25800	Vol. of grey matter in Superior Temporal Gyrus, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25800		snpnet		GRCh37	530	0
+	GBE_INI25805	Vol. of grey matter in Middle Temporal Gyrus, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25805		snpnet		GRCh37	1076	0
+	GBE_INI25810	Vol. of grey matter in Inferior Temporal Gyrus, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25810		snpnet		GRCh37	288	0
+	GBE_INI25825	Vol. of grey matter in Lateral Occipital Cortex, superior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25825		snpnet		GRCh37	581	0
+	GBE_INI25827	Vol. of grey matter in Lateral Occipital Cortex, inferior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25827		snpnet		GRCh37	1159	0
+	GBE_INI25828	Vol. of grey matter in Intracalcarine Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25828		snpnet		GRCh37	2025	0
 PGS001142	GBE_INI25829	Vol. of grey matter in Intracalcarine Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25829	EFO_0005420	snpnet		GRCh37	2215	0
-NA	GBE_INI25834	Vol. of grey matter in Subcallosal Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25834	NA	snpnet		GRCh37	1978	0
-NA	GBE_INI25835	Vol. of grey matter in Subcallosal Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25835	NA	snpnet		GRCh37	1458	0
-NA	GBE_INI25837	Vol. of grey matter in Paracingulate Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25837	NA	snpnet		GRCh37	145	0
-NA	GBE_INI25838	Vol. of grey matter in Cingulate Gyrus, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25838	NA	snpnet		GRCh37	389	0
-NA	GBE_INI25839	Vol. of grey matter in Cingulate Gyrus, anterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25839	NA	snpnet		GRCh37	244	0
-NA	GBE_INI25841	Vol. of grey matter in Cingulate Gyrus, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25841	NA	snpnet		GRCh37	652	0
-NA	GBE_INI25842	Vol. of grey matter in Precuneous Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25842	NA	snpnet		GRCh37	2184	0
-NA	GBE_INI25845	Vol. of grey matter in Cuneal Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25845	NA	snpnet		GRCh37	930	0
-NA	GBE_INI25846	Vol. of grey matter in Frontal Orbital Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25846	NA	snpnet		GRCh37	826	0
-NA	GBE_INI25847	Vol. of grey matter in Frontal Orbital Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25847	NA	snpnet		GRCh37	592	0
-NA	GBE_INI25848	Vol. of grey matter in Parahippocampal Gyrus, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25848	NA	snpnet		GRCh37	1724	0
-NA	GBE_INI25849	Vol. of grey matter in Parahippocampal Gyrus, anterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25849	NA	snpnet		GRCh37	1250	0
-NA	GBE_INI25850	Vol. of grey matter in Parahippocampal Gyrus, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25850	NA	snpnet		GRCh37	1120	0
-NA	GBE_INI25851	Vol. of grey matter in Parahippocampal Gyrus, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25851	NA	snpnet		GRCh37	1078	0
-NA	GBE_INI25853	Vol. of grey matter in Lingual Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25853	NA	snpnet		GRCh37	781	0
-NA	GBE_INI25854	Vol. of grey matter in Temporal Fusiform Cortex, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25854	NA	snpnet		GRCh37	264	0
-NA	GBE_INI25856	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25856	NA	snpnet		GRCh37	1533	0
-NA	GBE_INI25857	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25857	NA	snpnet		GRCh37	1447	0
-NA	GBE_INI25860	Vol. of grey matter in Occipital Fusiform Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25860	NA	snpnet		GRCh37	235	0
-NA	GBE_INI25862	Vol. of grey matter in Frontal Operculum Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25862	NA	snpnet		GRCh37	804	0
-NA	GBE_INI25864	Vol. of grey matter in Central Opercular Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25864	NA	snpnet		GRCh37	194	0
-NA	GBE_INI25865	Vol. of grey matter in Central Opercular Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25865	NA	snpnet		GRCh37	1123	0
+	GBE_INI25834	Vol. of grey matter in Subcallosal Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25834		snpnet		GRCh37	1978	0
+	GBE_INI25835	Vol. of grey matter in Subcallosal Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25835		snpnet		GRCh37	1458	0
+	GBE_INI25837	Vol. of grey matter in Paracingulate Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25837		snpnet		GRCh37	145	0
+	GBE_INI25838	Vol. of grey matter in Cingulate Gyrus, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25838		snpnet		GRCh37	389	0
+	GBE_INI25839	Vol. of grey matter in Cingulate Gyrus, anterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25839		snpnet		GRCh37	244	0
+	GBE_INI25841	Vol. of grey matter in Cingulate Gyrus, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25841		snpnet		GRCh37	652	0
+	GBE_INI25842	Vol. of grey matter in Precuneous Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25842		snpnet		GRCh37	2184	0
+	GBE_INI25845	Vol. of grey matter in Cuneal Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25845		snpnet		GRCh37	930	0
+	GBE_INI25846	Vol. of grey matter in Frontal Orbital Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25846		snpnet		GRCh37	826	0
+	GBE_INI25847	Vol. of grey matter in Frontal Orbital Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25847		snpnet		GRCh37	592	0
+	GBE_INI25848	Vol. of grey matter in Parahippocampal Gyrus, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25848		snpnet		GRCh37	1724	0
+	GBE_INI25849	Vol. of grey matter in Parahippocampal Gyrus, anterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25849		snpnet		GRCh37	1250	0
+	GBE_INI25850	Vol. of grey matter in Parahippocampal Gyrus, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25850		snpnet		GRCh37	1120	0
+	GBE_INI25851	Vol. of grey matter in Parahippocampal Gyrus, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25851		snpnet		GRCh37	1078	0
+	GBE_INI25853	Vol. of grey matter in Lingual Gyrus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25853		snpnet		GRCh37	781	0
+	GBE_INI25854	Vol. of grey matter in Temporal Fusiform Cortex, anterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25854		snpnet		GRCh37	264	0
+	GBE_INI25856	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25856		snpnet		GRCh37	1533	0
+	GBE_INI25857	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25857		snpnet		GRCh37	1447	0
+	GBE_INI25860	Vol. of grey matter in Occipital Fusiform Gyrus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25860		snpnet		GRCh37	235	0
+	GBE_INI25862	Vol. of grey matter in Frontal Operculum Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25862		snpnet		GRCh37	804	0
+	GBE_INI25864	Vol. of grey matter in Central Opercular Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25864		snpnet		GRCh37	194	0
+	GBE_INI25865	Vol. of grey matter in Central Opercular Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25865		snpnet		GRCh37	1123	0
 PGS001143	GBE_INI25867	Vol. of grey matter in Parietal Operculum Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25867	EFO_0005420	snpnet		GRCh37	699	0
-NA	GBE_INI25868	Vol. of grey matter in Planum Polare (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25868	NA	snpnet		GRCh37	1316	0
-NA	GBE_INI25869	Vol. of grey matter in Planum Polare (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25869	NA	snpnet		GRCh37	989	0
-NA	GBE_INI25870	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25870	NA	snpnet		GRCh37	1604	0
-NA	GBE_INI25871	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25871	NA	snpnet		GRCh37	1524	0
-NA	GBE_INI25872	Vol. of grey matter in Planum Temporale (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25872	NA	snpnet		GRCh37	2019	0
-NA	GBE_INI25874	Vol. of grey matter in Supracalcarine Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25874	NA	snpnet		GRCh37	446	0
-NA	GBE_INI25875	Vol. of grey matter in Supracalcarine Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25875	NA	snpnet		GRCh37	527	0
-NA	GBE_INI25877	Vol. of grey matter in Occipital Pole (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25877	NA	snpnet		GRCh37	1616	0
-NA	GBE_INI25878	Vol. of grey matter in Thalamus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25878	NA	snpnet		GRCh37	2508	0
-NA	GBE_INI25879	Vol. of grey matter in Thalamus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25879	NA	snpnet		GRCh37	885	0
-NA	GBE_INI25882	Vol. of grey matter in Putamen (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25882	NA	snpnet		GRCh37	274	0
-NA	GBE_INI25883	Vol. of grey matter in Putamen (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25883	NA	snpnet		GRCh37	562	0
-NA	GBE_INI25886	Vol. of grey matter in Hippocampus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25886	NA	snpnet		GRCh37	1427	0
-NA	GBE_INI25887	Vol. of grey matter in Hippocampus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25887	NA	snpnet		GRCh37	1336	0
-NA	GBE_INI25888	Vol. of grey matter in Amygdala (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25888	NA	snpnet		GRCh37	115	0
-NA	GBE_INI25890	Vol. of grey matter in Ventral Striatum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25890	NA	snpnet		GRCh37	687	0
-NA	GBE_INI25891	Vol. of grey matter in Ventral Striatum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25891	NA	snpnet		GRCh37	221	0
-NA	GBE_INI25892	Vol. of grey matter in Brain-Stem	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25892	NA	snpnet		GRCh37	632	0
-NA	GBE_INI25893	Vol. of grey matter in I-IV Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25893	NA	snpnet		GRCh37	775	0
-NA	GBE_INI25894	Vol. of grey matter in I-IV Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25894	NA	snpnet		GRCh37	612	0
-NA	GBE_INI25895	Vol. of grey matter in V Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25895	NA	snpnet		GRCh37	1592	0
-NA	GBE_INI25896	Vol. of grey matter in V Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25896	NA	snpnet		GRCh37	184	0
-NA	GBE_INI25897	Vol. of grey matter in VI Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25897	NA	snpnet		GRCh37	902	0
-NA	GBE_INI25898	Vol. of grey matter in Vermis VI Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25898	NA	snpnet		GRCh37	612	0
-NA	GBE_INI25899	Vol. of grey matter in VI Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25899	NA	snpnet		GRCh37	513	0
-NA	GBE_INI25902	Vol. of grey matter in Crus I Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25902	NA	snpnet		GRCh37	2371	0
-NA	GBE_INI25903	Vol. of grey matter in Crus II Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25903	NA	snpnet		GRCh37	1913	0
-NA	GBE_INI25904	Vol. of grey matter in Vermis Crus II Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25904	NA	snpnet		GRCh37	837	0
-NA	GBE_INI25905	Vol. of grey matter in Crus II Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25905	NA	snpnet		GRCh37	2510	0
-NA	GBE_INI25906	Vol. of grey matter in VIIb Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25906	NA	snpnet		GRCh37	649	0
-NA	GBE_INI25907	Vol. of grey matter in Vermis VIIb Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25907	NA	snpnet		GRCh37	718	0
-NA	GBE_INI25908	Vol. of grey matter in VIIb Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25908	NA	snpnet		GRCh37	673	0
-NA	GBE_INI25909	Vol. of grey matter in VIIIa Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25909	NA	snpnet		GRCh37	500	0
-NA	GBE_INI25910	Vol. of grey matter in Vermis VIIIa Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25910	NA	snpnet		GRCh37	776	0
-NA	GBE_INI25911	Vol. of grey matter in VIIIa Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25911	NA	snpnet		GRCh37	694	0
-NA	GBE_INI25912	Vol. of grey matter in VIIIb Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25912	NA	snpnet		GRCh37	819	0
-NA	GBE_INI25913	Vol. of grey matter in Vermis VIIIb Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25913	NA	snpnet		GRCh37	1916	0
-NA	GBE_INI25914	Vol. of grey matter in VIIIb Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25914	NA	snpnet		GRCh37	1539	0
-NA	GBE_INI25915	Vol. of grey matter in IX Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25915	NA	snpnet		GRCh37	1245	0
-NA	GBE_INI25916	Vol. of grey matter in Vermis IX Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25916	NA	snpnet		GRCh37	1369	0
-NA	GBE_INI25917	Vol. of grey matter in IX Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25917	NA	snpnet		GRCh37	1972	0
-NA	GBE_INI25919	Vol. of grey matter in Vermis X Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25919	NA	snpnet		GRCh37	636	0
-NA	GBE_INI25920	Vol. of grey matter in X Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25920	NA	snpnet		GRCh37	950	0
-NA	GBE_INI25781	Total vol. of white matter hyperintensities (from T1 and T2 FLAIR images)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25781	NA	snpnet		GRCh37	355	0
-NA	GBE_INI22146	Age hayfever or allergic rhinitis diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22146	NA	snpnet		GRCh37	255	0
+	GBE_INI25868	Vol. of grey matter in Planum Polare (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25868		snpnet		GRCh37	1316	0
+	GBE_INI25869	Vol. of grey matter in Planum Polare (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25869		snpnet		GRCh37	989	0
+	GBE_INI25870	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25870		snpnet		GRCh37	1604	0
+	GBE_INI25871	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25871		snpnet		GRCh37	1524	0
+	GBE_INI25872	Vol. of grey matter in Planum Temporale (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25872		snpnet		GRCh37	2019	0
+	GBE_INI25874	Vol. of grey matter in Supracalcarine Cortex (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25874		snpnet		GRCh37	446	0
+	GBE_INI25875	Vol. of grey matter in Supracalcarine Cortex (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25875		snpnet		GRCh37	527	0
+	GBE_INI25877	Vol. of grey matter in Occipital Pole (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25877		snpnet		GRCh37	1616	0
+	GBE_INI25878	Vol. of grey matter in Thalamus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25878		snpnet		GRCh37	2508	0
+	GBE_INI25879	Vol. of grey matter in Thalamus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25879		snpnet		GRCh37	885	0
+	GBE_INI25882	Vol. of grey matter in Putamen (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25882		snpnet		GRCh37	274	0
+	GBE_INI25883	Vol. of grey matter in Putamen (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25883		snpnet		GRCh37	562	0
+	GBE_INI25886	Vol. of grey matter in Hippocampus (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25886		snpnet		GRCh37	1427	0
+	GBE_INI25887	Vol. of grey matter in Hippocampus (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25887		snpnet		GRCh37	1336	0
+	GBE_INI25888	Vol. of grey matter in Amygdala (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25888		snpnet		GRCh37	115	0
+	GBE_INI25890	Vol. of grey matter in Ventral Striatum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25890		snpnet		GRCh37	687	0
+	GBE_INI25891	Vol. of grey matter in Ventral Striatum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25891		snpnet		GRCh37	221	0
+	GBE_INI25892	Vol. of grey matter in Brain-Stem	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25892		snpnet		GRCh37	632	0
+	GBE_INI25893	Vol. of grey matter in I-IV Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25893		snpnet		GRCh37	775	0
+	GBE_INI25894	Vol. of grey matter in I-IV Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25894		snpnet		GRCh37	612	0
+	GBE_INI25895	Vol. of grey matter in V Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25895		snpnet		GRCh37	1592	0
+	GBE_INI25896	Vol. of grey matter in V Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25896		snpnet		GRCh37	184	0
+	GBE_INI25897	Vol. of grey matter in VI Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25897		snpnet		GRCh37	902	0
+	GBE_INI25898	Vol. of grey matter in Vermis VI Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25898		snpnet		GRCh37	612	0
+	GBE_INI25899	Vol. of grey matter in VI Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25899		snpnet		GRCh37	513	0
+	GBE_INI25902	Vol. of grey matter in Crus I Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25902		snpnet		GRCh37	2371	0
+	GBE_INI25903	Vol. of grey matter in Crus II Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25903		snpnet		GRCh37	1913	0
+	GBE_INI25904	Vol. of grey matter in Vermis Crus II Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25904		snpnet		GRCh37	837	0
+	GBE_INI25905	Vol. of grey matter in Crus II Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25905		snpnet		GRCh37	2510	0
+	GBE_INI25906	Vol. of grey matter in VIIb Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25906		snpnet		GRCh37	649	0
+	GBE_INI25907	Vol. of grey matter in Vermis VIIb Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25907		snpnet		GRCh37	718	0
+	GBE_INI25908	Vol. of grey matter in VIIb Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25908		snpnet		GRCh37	673	0
+	GBE_INI25909	Vol. of grey matter in VIIIa Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25909		snpnet		GRCh37	500	0
+	GBE_INI25910	Vol. of grey matter in Vermis VIIIa Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25910		snpnet		GRCh37	776	0
+	GBE_INI25911	Vol. of grey matter in VIIIa Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25911		snpnet		GRCh37	694	0
+	GBE_INI25912	Vol. of grey matter in VIIIb Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25912		snpnet		GRCh37	819	0
+	GBE_INI25913	Vol. of grey matter in Vermis VIIIb Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25913		snpnet		GRCh37	1916	0
+	GBE_INI25914	Vol. of grey matter in VIIIb Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25914		snpnet		GRCh37	1539	0
+	GBE_INI25915	Vol. of grey matter in IX Cerebellum (L)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25915		snpnet		GRCh37	1245	0
+	GBE_INI25916	Vol. of grey matter in Vermis IX Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25916		snpnet		GRCh37	1369	0
+	GBE_INI25917	Vol. of grey matter in IX Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25917		snpnet		GRCh37	1972	0
+	GBE_INI25919	Vol. of grey matter in Vermis X Cerebellum	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25919		snpnet		GRCh37	636	0
+	GBE_INI25920	Vol. of grey matter in X Cerebellum (R)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25920		snpnet		GRCh37	950	0
+	GBE_INI25781	Total vol. of white matter hyperintensities (from T1 and T2 FLAIR images)	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI25781		snpnet		GRCh37	355	0
+	GBE_INI22146	Age hayfever or allergic rhinitis diagnosed by doctor	https://biobankengine.stanford.edu/RIVAS_HG19/snpnet/INI22146		snpnet		GRCh37	255	0
