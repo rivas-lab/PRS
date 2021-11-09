@@ -39,7 +39,7 @@ if  [ ! -s "${out_prefix}.eval.log.gz"       ] ||
     ${GBE_ID} \
     ${family} \
     'age,sex,Array,Global_PC1,Global_PC2,Global_PC3,Global_PC4,Global_PC5,Global_PC6,Global_PC7,Global_PC8,Global_PC9,Global_PC10,Global_PC11,Global_PC12,Global_PC13,Global_PC14,Global_PC15,Global_PC16,Global_PC17,Global_PC18' \
-    'white_british:train_val=white_british:train_val,white_british:test=white_british:train_val,non_british_white:train_val=non_british_white:train_val,non_british_white:test=non_british_white:train_val,african:train_val=african:train_val,african:test=african:train_val,s_asian:train_val=s_asian:train_val,s_asian:test=s_asian:train_val,e_asian:train_val=e_asian:train_val,e_asian:test=e_asian:train_val,related:train_val=related:train_val,related:test=related:train_val,others:train_val=others:train_val,others:test=others:train_val' \
+    'white_british=white_british,non_british_white=non_british_white,african=african,s_asian=s_asian,e_asian=e_asian,related=related,others:train_val=others:train_val,others:test=others:train_val' \
     ${PRS_f} > ${out_prefix}.eval.log 2>&1
     gzip -f -9 ${out_prefix}.eval.log
 fi

@@ -88,7 +88,11 @@ mutate(
 select(-split_nonWB) %>%
 update_split_column_for_refit() %>%
 mutate(
-    split = paste(population, split, sep=':')
+    split = if_else(
+        population == 'others',
+        paste(population, split, sep=':'),
+        population
+    )
 ) -> pheno_df
 
 # count the number of individuals
