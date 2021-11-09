@@ -204,19 +204,19 @@
             Trait: a trait in UK Biobank.
           </li>
           <li>
-            Family: it represents whether the PRS model is fit with gaussian model (for continuous response, such as standing height) or binomial model (for binary outcomes, such as disease). We use r2 and AUC as the evaluation metric for gaussian and binomial models, respectively. In this table, we display those evaluation metric computed on the hold-out test set consits of individuals of whiter British ancestry in UK Biobank cohort.
+            Family: it represents whether the PRS model is fit with gaussian model (for continuous response, such as standing height) or binomial model (for binary outcomes, such as disease). We use <i>R</i><sup>2</sup> and AUC as the evaluation metric for gaussian and binomial models, respectively. In this table, we display those evaluation metric computed on the hold-out test set consits of individuals of whiter British ancestry in UK Biobank cohort.
           </li>
           <li>
-            Geno: the predictive performence (R2 or AUC) of the predictive model with genotype features alone. Note that this model does not include genotype PCs.
+            Geno: the predictive performence (<i>R</i><sup>2</sup> or AUC) of the predictive model with genotype features alone. Note that this model does not include genotype PCs.
           </li>
           <li>
-            Covar: the predictive performence (R2 or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.
+            Covar: the predictive performence (<i>R</i><sup>2</sup> or AUC) of the predictive model with covariates (age, sex, and genotype PCs) alone.
           </li>
           <li>
-            Full: the predictive performence (R2 or AUC) of the full model that have both genotypes and covariates alone.
+            Full: the predictive performence (<i>R</i><sup>2</sup> or AUC) of the full model that have both genotypes and covariates alone.
           </li>
           <li>
-            delta: the incremental predictive performence (R2 or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.
+            delta: the incremental predictive performence (<i>R</i><sup>2</sup> or AUC) of the full model against the covariate-only model, i.e. the difference between the values in "Full" and "Covar" columns.
           </li>
           <li>
             # variants: the number of genetic variants included in the model
@@ -256,7 +256,7 @@
   <div class="row">
     <div class="col col-md-12">
       <p>
-        Comparison of the estimated SNP-based heritability and predictive performance across the 813 traits with significant PRSs. The predictive performance (Tjur's pseudo-R2 for 244 binary traits [left] and R2 for 569 quantitative traits [right]) of the PRS models that only consider genetic variants are compared against the estimated SNP-based heritability. The gray solid lines represent y = x line and the gray dashed lines represent a linear regression fit (y = 0.20 x and y = 0.15 x for binary traits and quantitative traits, respectively). The points on the bottom left corners were shown in the inset plots. The error bars represent standard error. BMD: Bone mineral density.
+        Comparison of the estimated SNP-based heritability and predictive performance across the 813 traits with significant PRSs. The predictive performance (Tjur's pseudo-<i>R</i><sup>2</sup> for 244 binary traits [left] and <i>R</i><sup>2</sup> for 569 quantitative traits [right]) of the PRS models that only consider genetic variants are compared against the estimated SNP-based heritability. The gray solid lines represent y = x line and the gray dashed lines represent a linear regression fit (y = 0.20 x and y = 0.15 x for binary traits and quantitative traits, respectively). The points on the bottom left corners were shown in the inset plots. The error bars represent standard error. BMD: Bone mineral density.
       </p>
       <hr/>
     </div>
