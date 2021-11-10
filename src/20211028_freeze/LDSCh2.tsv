@@ -1,0 +1,814 @@
+#trait	trait_name	trait_category	family	h2_obs	h2_obs_se	lambda_GC	mean_chi2	intercept	intercept_se	ratio	ratio_se
+cancer1002	Breast cancer	Cancer	binomial	0.0191	0.0026	1.0496	1.0816	1.0025	0.0067	0.0301	0.0819
+cancer1003	Skin cancer	Cancer	binomial	0.0383	0.0057	1.0926	1.1914	1.0142	0.008	0.0741	0.0416
+cancer1038	Male genital tract cancer	Cancer	binomial	0.0074	0.002	1.0255	1.036	1.0041	0.0068	0.1138	0.1884
+cancer1041	Cervical cancer	Cancer	binomial	0.0083	0.0048	1.0285	1.0488	1.0006	0.0086	0.0118	0.1766
+cancer1044	Prostate cancer	Cancer	binomial	0.0229	0.0027	1.0649	1.1061	1.0019	0.0067	0.0182	0.0634
+cancer1045	Testicular cancer	Cancer	binomial	-6e-04	0.002	1.0315	1.0363	1.039	0.0072	1.0737	0.1974
+cancer1059	Malignant melanoma	Cancer	binomial	0.0069	0.0023	1.0195	1.0318	1.0035	0.0061	0.1104	0.1934
+cancer1060	Non-melanoma skin cancer	Cancer	binomial	0.0401	0.0054	1.1019	1.2	1.0124	0.0077	0.0618	0.0385
+cancer1065	Thyroid cancer	Cancer	binomial	0.009	0.0016	1.0075	1.003	0.966	0.0059	<0	usually_indicates_GC_correction
+HC1020	TTE unspecified acute lower respiratory infection	Disease_outcome	binomial	0.0178	0.0022	1.1238	1.137	1.0569	0.006	0.4154	0.0439
+HC1021	TTE vasomotor and allergic rhinitis	Disease_outcome	binomial	0.0346	0.0048	1.105	1.1854	1.0106	0.0071	0.0571	0.0381
+HC1024	TTE nasal polyp	Disease_outcome	binomial	0.0191	0.0048	1.0527	1.0977	1.0004	0.007	0.0044	0.0713
+HC1035	TTE other chronic obstructive pulmonary disease	Disease_outcome	binomial	0.024	0.0022	1.0957	1.1083	1.0072	0.0067	0.0663	0.0618
+HC1036	TTE asthma	Disease_outcome	binomial	0.0601	0.0097	1.1715	1.396	1.034	0.0086	0.0857	0.0217
+HC1052	TTE other interstitial pulmonary diseases	Disease_outcome	binomial	0.0067	0.0018	1.0046	1.0104	0.9768	0.0059	<0	usually_indicates_GC_correction
+HC1084	TTE duodenal ulcer	Disease_outcome	binomial	0.0087	0.0017	1.0466	1.0493	1.0072	0.0056	0.1468	0.1144
+HC1090	TTE acute appendicitis	Disease_outcome	binomial	0.0026	0.0017	1.0225	1.0162	1.0037	0.0064	0.2298	0.3948
+HC1094	TTE inguinal hernia	Disease_outcome	binomial	0.0288	0.0031	1.0895	1.1545	0.9973	0.0068	<0	usually_indicates_GC_correction
+HC1098	TTE diaphragmatic hernia	Disease_outcome	binomial	0.0296	0.0022	1.1207	1.1533	1.0179	0.0063	0.1166	0.0408
+HC1101	TTE crohn's disease [regional enteritis]	Disease_outcome	binomial	0.0087	0.0022	1.0285	1.0383	0.997	0.0062	<0	usually_indicates_GC_correction
+HC1102	TTE ulcerative colitis	Disease_outcome	binomial	0.0161	0.0037	1.0496	1.0826	0.999	0.0067	<0	usually_indicates_GC_correction
+HC1106	TTE diverticular disease of intestine	Disease_outcome	binomial	0.0412	0.0028	1.1333	1.1838	1.0119	0.0065	0.0649	0.0353
+HC1112	TTE other diseases of intestine	Disease_outcome	binomial	0.009	0.0017	1.0466	1.0481	1.0103	0.0058	0.2148	0.1208
+HC1123	TTE other diseases of liver	Disease_outcome	binomial	0.0059	0.0017	1.0375	1.0385	1.0112	0.006	0.2898	0.1566
+HC1125	TTE cholelithiasis	Disease_outcome	binomial	0.0294	0.004	1.0895	1.1266	1.0091	0.0063	0.0719	0.0498
+HC1126	TTE cholecystitis	Disease_outcome	binomial	0.0045	0.0015	1.0195	1.0148	0.9951	0.0053	<0	usually_indicates_GC_correction
+HC1132	TTE intestinal malabsorption	Disease_outcome	binomial	0.0427	0.0282	1.0588	2.8225	0.9901	0.0106	<0	usually_indicates_GC_correction
+HC1158	TTE other dermatitis	Disease_outcome	binomial	0.0183	0.0057	1.0864	1.135	1.0387	0.0086	0.2867	0.0638
+HC1159	TTE psoriasis	Disease_outcome	binomial	0.0569	0.0303	1.071	1.8907	0.9933	0.0092	<0	usually_indicates_GC_correction
+HC1171	TTE skin changes due to chronic exposure to nonionising radiation	Disease_outcome	binomial	0.0136	0.0026	1.0557	1.0681	1.0066	0.0063	0.0966	0.093
+HC1184	TTE follicular cysts of skin and subcutaneous tissue	Disease_outcome	binomial	0.0105	0.0036	1.0285	1.0464	1.0011	0.0061	0.0229	0.1312
+HC1188	TTE vitiligo	Disease_outcome	binomial	0.0178	0.0038	1.0225	1.0546	0.9607	0.007	<0	usually_indicates_GC_correction
+HC1190	TTE seborrhoeic keratosis	Disease_outcome	binomial	0.0141	0.0023	1.0802	1.0947	1.0307	0.0074	0.3245	0.0778
+HC1209	TTE reactive arthropathies	Disease_outcome	binomial	0.0199	0.0037	0.9839	0.9992	0.9127	0.0079	NA	mean_chi^2<1
+HC1211	TTE seropositive rheumatoid arthritis	Disease_outcome	binomial	0.0205	0.0085	1.0225	1.09	0.963	0.008	<0	usually_indicates_GC_correction
+HC1212	TTE other rheumatoid arthritis	Disease_outcome	binomial	0.0263	0.0136	1.0496	1.178	0.9874	0.0087	<0	usually_indicates_GC_correction
+HC1213	TTE psoriatic and enteropathic arthropathies	Disease_outcome	binomial	0.0172	0.0068	1.0165	1.0607	0.9676	0.0084	<0	usually_indicates_GC_correction
+HC1215	TTE gout	Disease_outcome	binomial	0.0323	0.0057	1.0926	1.1678	1.0119	0.0074	0.071	0.0443
+HC1221	TTE coxarthrosis [arthrosis of hip]	Disease_outcome	binomial	0.0202	0.0026	1.0833	1.0997	1.0107	0.0071	0.1069	0.0708
+HC1222	TTE gonarthrosis [arthrosis of knee]	Disease_outcome	binomial	0.0322	0.0026	1.1113	1.1442	1.0055	0.007	0.038	0.0483
+HC1228	TTE internal derangement of knee	Disease_outcome	binomial	0.0123	0.0021	1.0588	1.0652	1.0092	0.0063	0.1416	0.0971
+HC1236	TTE other systemic involvement of connective tissue	Disease_outcome	binomial	0.0164	0.0095	1.0315	1.0989	0.9846	0.01	<0	usually_indicates_GC_correction
+HC1242	TTE ankylosing spondylitis	Disease_outcome	binomial	0.0389	0.0297	1.0255	1.3213	0.9724	0.0095	<0	usually_indicates_GC_correction
+HC1248	TTE other intervertebral disk disorders	Disease_outcome	binomial	0.0209	0.0027	1.071	1.0921	1.0018	0.0071	0.0193	0.0775
+HC1261	TTE fibroblastic disorders	Disease_outcome	binomial	0.0122	0.0024	1.0679	1.079	1.0285	0.007	0.361	0.0885
+HC1268	TTE osteoporosis without pathological fracture	Disease_outcome	binomial	0.0198	0.0022	1.0741	1.0923	1.0081	0.0065	0.0881	0.0702
+HC1302	TTE chronic renal failure	Disease_outcome	binomial	0.0172	0.0022	1.0772	1.0904	1.0104	0.0065	0.115	0.0722
+HC1304	TTE calculus of kidney and ureter	Disease_outcome	binomial	0.0154	0.0028	1.0649	1.0823	1.0049	0.0072	0.06	0.088
+HC132	Angina	Disease_outcome	binomial	0.033	0.003	1.1207	1.1573	1.024	0.0068	0.1525	0.0433
+HC1322	TTE hyperplasia of prostate	Disease_outcome	binomial	0.0199	0.0037	1.0741	1.1388	1.017	0.0069	0.1222	0.0497
+HC136	Connective tissue disorder	Disease_outcome	binomial	0.0155	0.0058	1.0315	1.0806	0.9805	0.0088	<0	usually_indicates_GC_correction
+HC151	Multiple sclerosis	Disease_outcome	binomial	0.0238	0.0152	1.0375	1.1968	0.9866	0.0098	<0	usually_indicates_GC_correction
+HC156	Nasal polyps	Disease_outcome	binomial	0.0144	0.0048	1.0466	1.0823	1.0042	0.0078	0.0508	0.0942
+HC1574	AD myocardial infarction	Disease_outcome	binomial	0.0238	0.0026	1.0895	1.1229	1.0241	0.0068	0.1961	0.0549
+HC1576	AD NSTEMI	Disease_outcome	binomial	0.0092	0.0017	1.0345	1.0362	0.9979	0.0063	<0	usually_indicates_GC_correction
+HC1581	AD asthma	Disease_outcome	binomial	0.0598	0.0102	1.1779	1.4122	1.0398	0.0091	0.0966	0.0221
+HC1582	AD chronic obstructive pulmonary disease	Disease_outcome	binomial	0.025	0.0023	1.0864	1.1053	1.0022	0.0064	0.0209	0.0612
+HC1583	AD all cause dementia	Disease_outcome	binomial	0.0053	0.0034	1.0046	1.0154	0.9926	0.0058	<0	usually_indicates_GC_correction
+HC1584	AD alzheimer's disease	Disease_outcome	binomial	0.0114	0.0029	1.0016	1.0131	0.9683	0.007	<0	usually_indicates_GC_correction
+HC165	Type 2 diabetes	Disease_outcome	binomial	0.0081	0.0017	1.0375	1.0368	1.0036	0.0059	0.0973	0.1599
+HC166	DVT	Disease_outcome	binomial	0.0156	0.0033	1.0436	1.0629	0.9979	0.0054	<0	usually_indicates_GC_correction
+HC170	Sarcoidosis	Disease_outcome	binomial	0.021	0.0075	1.0345	1.1374	0.9676	0.0083	<0	usually_indicates_GC_correction
+HC176	Prolapsed disc/slipped disc	Disease_outcome	binomial	0.0079	0.0024	1.0375	1.0401	1.0045	0.0067	0.1128	0.1678
+HC177	Dupuytren's contracture	Disease_outcome	binomial	0.0102	0.0016	1.0105	1.0033	0.9627	0.0068	<0	usually_indicates_GC_correction
+HC188	Gallstones	Disease_outcome	binomial	0.0277	0.0038	1.0833	1.1192	1.009	0.0063	0.0753	0.0524
+HC201	Ulcerative colitis	Disease_outcome	binomial	0.0166	0.0039	1.0466	1.0835	0.996	0.0068	<0	usually_indicates_GC_correction
+HC203	PE +/- DVT	Disease_outcome	binomial	0.0138	0.0025	1.0345	1.0515	0.9922	0.0062	<0	usually_indicates_GC_correction
+HC215	Hypertension	Disease_outcome	binomial	0.1233	0.005	1.3546	1.5567	1.0438	0.0081	0.0787	0.0145
+HC219	Hypothyroidism/myxoedema	Disease_outcome	binomial	0.0761	0.0159	1.1555	1.5962	1.0119	0.009	0.0199	0.015
+HC22	Osteoporosis	Disease_outcome	binomial	0.0168	0.0023	1.0618	1.0849	1.0085	0.0066	0.1	0.0772
+HC221	Diabetes	Disease_outcome	binomial	0.0568	0.0044	1.1843	1.2964	1.0277	0.0081	0.0934	0.0272
+HC225	Cholecystitis	Disease_outcome	binomial	0.0205	0.0029	1.071	1.0912	1.0095	0.006	0.1038	0.0663
+HC243	Inguinal hernia	Disease_outcome	binomial	0.026	0.003	1.0802	1.1408	0.9974	0.0065	<0	usually_indicates_GC_correction
+HC25	Cataract	Disease_outcome	binomial	0.0171	0.0022	1.0741	1.098	1.0182	0.0067	0.1855	0.0688
+HC26	Iritis	Disease_outcome	binomial	0.025	0.0064	0.9927	1.0293	0.9124	0.0075	<0	usually_indicates_GC_correction
+HC261	Eczema/dermatitis	Disease_outcome	binomial	0.0165	0.0042	1.0466	1.0783	1.0006	0.0074	0.0075	0.0947
+HC262	Diverticular disease/diverticulitis	Disease_outcome	binomial	0.0121	0.0018	1.0375	1.0455	0.9953	0.0058	<0	usually_indicates_GC_correction
+HC269	High cholesterol	Disease_outcome	binomial	0.0542	0.008	1.1459	1.2821	1.0496	0.0093	0.1757	0.033
+HC273	Essential hypertension	Disease_outcome	binomial	0.083	0.0042	1.2899	1.4102	1.0598	0.0086	0.1458	0.021
+HC276	Glaucoma	Disease_outcome	binomial	0.0214	0.002	1.071	1.0878	0.994	0.0057	<0	usually_indicates_GC_correction
+HC281	Atrial fibrillation	Disease_outcome	binomial	0.0273	0.0038	1.0833	1.1332	1.019	0.0067	0.1428	0.0501
+HC302	Retinal detachment	Disease_outcome	binomial	0.0077	0.002	1.0557	1.0528	1.0154	0.0062	0.2916	0.1171
+HC303	Malabsorption/coeliac disease	Disease_outcome	binomial	0.0518	0.0329	1.0618	3.4101	0.988	0.0108	<0	usually_indicates_GC_correction
+HC31	Uterine fibroids	Disease_outcome	binomial	0.004	0.0019	1.0255	1.0367	1.02	0.006	0.5456	0.1636
+HC310	Hiatus hernia	Disease_outcome	binomial	0.0322	0.0029	1.1207	1.1802	1.0123	0.007	0.0681	0.0389
+HC321	Sjogren's syndrome/sicca syndrome	Disease_outcome	binomial	0.0192	0.004	1.0195	1.0746	0.9524	0.0071	<0	usually_indicates_GC_correction
+HC322	Crohns disease	Disease_outcome	binomial	0.0084	0.002	1.0285	1.0355	0.9967	0.006	<0	usually_indicates_GC_correction
+HC326	Heart attack (MI)	Disease_outcome	binomial	0.024	0.0026	1.0895	1.1247	1.0245	0.0068	0.1964	0.0544
+HC328	Gout	Disease_outcome	binomial	0.0273	0.0046	1.0741	1.1291	1.0009	0.006	0.0072	0.0464
+HC337	Type 1 diabetes	Disease_outcome	binomial	0.0282	0.0082	1.0075	1.0982	0.9248	0.0089	<0	usually_indicates_GC_correction
+HC376	Osteoarthritis	Disease_outcome	binomial	0.0194	0.002	1.0895	1.1082	1.0236	0.0063	0.2179	0.0579
+HC38	Psoriasis	Disease_outcome	binomial	0.0548	0.0295	1.0588	1.778	0.9814	0.0093	<0	usually_indicates_GC_correction
+HC382	Asthma	Disease_outcome	binomial	0.0596	0.0101	1.1779	1.4108	1.0417	0.0089	0.1015	0.0217
+HC401	Varicose veins	Disease_outcome	binomial	0.0277	0.0029	1.1019	1.1525	1.0176	0.0069	0.1152	0.0452
+HC413	Genetic haematological disorder	Disease_outcome	binomial	0.0167	0.0023	0.9957	1.0004	0.9337	0.0065	<0	usually_indicates_GC_correction
+HC422	Ankylosing spondylitis	Disease_outcome	binomial	0.0381	0.0294	1.0255	1.3131	0.9738	0.0099	<0	usually_indicates_GC_correction
+HC430	Rheumatoid arthritis	Disease_outcome	binomial	0.0266	0.0134	1.0496	1.1782	0.9867	0.0083	<0	usually_indicates_GC_correction
+HC431	Emphysema	Disease_outcome	binomial	0.0088	0.0017	1.0195	1.019	0.9836	0.0059	<0	usually_indicates_GC_correction
+HC440	Atrial flutter	Disease_outcome	binomial	0.0264	0.0038	1.0772	1.1286	1.0186	0.0068	0.1449	0.0527
+HC442	Chronic obstructive airways disease/copd	Disease_outcome	binomial	0.0215	0.0021	1.0895	1.1024	1.0104	0.0064	0.1017	0.0627
+HC49	Hayfever/allergic rhinitis	Disease_outcome	binomial	0.0282	0.0044	1.0988	1.1523	1.0132	0.0071	0.087	0.0467
+HC530	TTE zoster [herpes zoster]	Disease_outcome	binomial	0.015	0.0081	1.0496	1.1224	1.0022	0.0096	0.0179	0.0783
+HC534	TTE viral warts	Disease_outcome	binomial	0.0089	0.006	1.0405	1.0668	1.0133	0.0086	0.1992	0.1289
+HC55	Hyperthyroidism/thyrotoxicosis	Disease_outcome	binomial	0.0328	0.0152	1.0496	1.4174	0.9787	0.01	<0	usually_indicates_GC_correction
+HC57	Fracture radius	Disease_outcome	binomial	0.0086	0.0017	1.0285	1.0303	0.9946	0.0062	<0	usually_indicates_GC_correction
+HC608	TTE vitamin b12 deficiency anaemia	Disease_outcome	binomial	0.0135	0.0032	1.0345	1.0551	0.9857	0.0068	<0	usually_indicates_GC_correction
+HC61	Haemorrhoids / piles	Disease_outcome	binomial	0.0176	0.0022	1.0679	1.0759	0.9992	0.0062	<0	usually_indicates_GC_correction
+HC624	TTE other coagulation defects	Disease_outcome	binomial	0.0078	0.0033	1.0105	1.0167	0.9848	0.0051	<0	usually_indicates_GC_correction
+HC639	TTE sarcoidosis	Disease_outcome	binomial	0.0222	0.0099	1.0405	1.192	0.9765	0.0095	<0	usually_indicates_GC_correction
+HC643	TTE other hypothyroidism	Disease_outcome	binomial	0.0782	0.016	1.1523	1.6214	1.0099	0.0091	0.016	0.0147
+HC644	TTE other non-toxic goitre	Disease_outcome	binomial	0.008	0.0021	1.0285	1.0389	1.0022	0.0059	0.0567	0.1527
+HC645	TTE thyrotoxicosis [hyperthyroidism]	Disease_outcome	binomial	0.0348	0.0163	1.0527	1.4841	0.9825	0.0104	<0	usually_indicates_GC_correction
+HC648	TTE insulin-dependent diabetes mellitus	Disease_outcome	binomial	0.0305	0.0187	1.0466	1.2698	0.9825	0.0107	<0	usually_indicates_GC_correction
+HC649	TTE non-insulin-dependent diabetes mellitus	Disease_outcome	binomial	0.0528	0.0037	1.1715	1.2546	1.0262	0.0079	0.1029	0.0312
+HC652	TTE unspecified diabetes mellitus	Disease_outcome	binomial	0.0418	0.0042	1.1333	1.2237	1.0207	0.0076	0.0924	0.034
+HC654	TTE other disorders of pancreatic internal secretion	Disease_outcome	binomial	0.0104	0.0052	1.0255	1.0523	0.9881	0.0078	<0	usually_indicates_GC_correction
+HC689	TTE obesity	Disease_outcome	binomial	0.0326	0.0029	1.1396	1.1678	1.0308	0.0066	0.1837	0.0393
+HC700	TTE disorders of lipoprotein metabolism and other lipidaemias	Disease_outcome	binomial	0.0771	0.01	1.2038	1.3749	1.0556	0.0101	0.1482	0.0271
+HC702	TTE disorders of porphyrin and bilirubin metabolism	Disease_outcome	binomial	0.0166	0.0114	1.0135	1.0502	0.9877	0.0064	<0	usually_indicates_GC_correction
+HC703	TTE disorders of mineral metabolism	Disease_outcome	binomial	0.0204	0.0108	1.0225	1.1243	0.9828	0.0082	<0	usually_indicates_GC_correction
+HC708	TTE other metabolic disorders	Disease_outcome	binomial	0.0082	0.0017	1.0046	0.9997	0.9674	0.0061	NA	mean_chi^2<1
+HC710	TTE dementia in alzheimer's disease	Disease_outcome	binomial	0.0128	0.0023	1.0016	1.0043	0.9544	0.0068	<0	usually_indicates_GC_correction
+HC711	TTE vascular dementia	Disease_outcome	binomial	0.0108	0.0017	1.0016	1.0016	0.9593	0.0068	<0	usually_indicates_GC_correction
+HC713	TTE unspecified dementia	Disease_outcome	binomial	0.0058	0.0023	0.9986	1.0034	0.9799	0.0057	<0	usually_indicates_GC_correction
+HC78	Arthritis (nos)	Disease_outcome	binomial	0.0192	0.004	1.0833	1.1107	1.0177	0.0068	0.1599	0.0616
+HC807	TTE alzheimer's disease	Disease_outcome	binomial	0.0089	0.0032	1.0046	1.0131	0.9777	0.0072	<0	usually_indicates_GC_correction
+HC810	TTE multiple sclerosis	Disease_outcome	binomial	0.0235	0.0152	1.0375	1.1963	0.987	0.0098	<0	usually_indicates_GC_correction
+HC815	TTE migraine	Disease_outcome	binomial	0.0178	0.0022	1.071	1.0881	1.0088	0.0063	0.1003	0.0716
+HC83	Fracture forearm / wrist	Disease_outcome	binomial	0.0094	0.0018	1.0345	1.0347	0.9964	0.006	<0	usually_indicates_GC_correction
+HC84	Pulmonary fibrosis	Disease_outcome	binomial	0.0065	0.0016	1.0075	1.0027	0.9739	0.006	<0	usually_indicates_GC_correction
+HC85	Enlarged prostate	Disease_outcome	binomial	0.0103	0.004	1.0345	1.07	1.0067	0.0079	0.095	0.1134
+HC86	Migraine	Disease_outcome	binomial	0.0141	0.0022	1.0649	1.0747	1.0145	0.0069	0.1935	0.0919
+HC866	TTE other disorders of cornea	Disease_outcome	binomial	0.0057	0.0018	1.0195	1.0133	0.9891	0.0066	<0	usually_indicates_GC_correction
+HC868	TTE iridocyclitis	Disease_outcome	binomial	0.0248	0.0211	1.0255	1.1511	0.9863	0.0096	<0	usually_indicates_GC_correction
+HC872	TTE other cataract	Disease_outcome	binomial	0.0134	0.0019	1.0649	1.0774	1.0163	0.0062	0.21	0.0805
+HC878	TTE retinal detachments and breaks	Disease_outcome	binomial	0.0089	0.0023	1.0436	1.0553	1.0117	0.007	0.2112	0.1256
+HC880	TTE other retinal disorders	Disease_outcome	binomial	0.0028	0.0017	1.0135	1.0162	1.0028	0.0064	0.1716	0.3946
+HC881	TTE retinal disorders in diseases classified elsewhere	Disease_outcome	binomial	0.014	0.005	1.0375	1.0697	0.9925	0.0076	<0	usually_indicates_GC_correction
+HC882	TTE glaucoma	Disease_outcome	binomial	0.0273	0.0022	1.0895	1.1223	1.0002	0.0062	0.0014	0.0509
+HC91	Psoriatic arthropathy	Disease_outcome	binomial	0.0202	0.0115	1.0285	1.1136	0.9786	0.0099	<0	usually_indicates_GC_correction
+HC914	TTE otosclerosis	Disease_outcome	binomial	0.0135	0.0018	1.0225	1.0231	0.9646	0.0059	<0	usually_indicates_GC_correction
+HC932	TTE essential (primary hypertension)	Disease_outcome	binomial	0.0894	0.0043	1.2798	1.4162	1.0379	0.0088	0.091	0.0211
+HC937	TTE angina pectoris	Disease_outcome	binomial	0.0339	0.003	1.1238	1.1557	1.0206	0.0068	0.1326	0.0434
+HC938	TTE acute myocardial infarction	Disease_outcome	binomial	0.0239	0.0025	1.0895	1.1193	1.0204	0.0068	0.1712	0.057
+HC942	TTE chronic ischaemic heart disease	Disease_outcome	binomial	0.0339	0.0035	1.127	1.1791	1.0386	0.0079	0.2157	0.044
+HC943	TTE PE	Disease_outcome	binomial	0.0139	0.0026	1.0405	1.0544	0.9938	0.0061	<0	usually_indicates_GC_correction
+HC95	Inflammatory bowel disease	Disease_outcome	binomial	0.0152	0.0028	1.0496	1.0698	0.9961	0.0065	<0	usually_indicates_GC_correction
+HC951	TTE nonrheumatic aortic valve disorders	Disease_outcome	binomial	0.0087	0.0016	1.0225	1.0248	0.9882	0.0059	<0	usually_indicates_GC_correction
+HC96	Polymyalgia rheumatica	Disease_outcome	binomial	0.0172	0.0079	1.0255	1.0719	0.9728	0.0079	<0	usually_indicates_GC_correction
+HC964	TTE atrial fibrillation and flutter	Disease_outcome	binomial	0.0289	0.0041	1.0864	1.1417	1.0209	0.0065	0.1475	0.0461
+HC987	TTE phlebitis and thrombophlebitis	Disease_outcome	binomial	0.02	0.0041	1.0588	1.0906	1.0067	0.0062	0.0744	0.0682
+HC990	TTE varicose veins of lower extremities	Disease_outcome	binomial	0.0336	0.0033	1.1144	1.185	1.0177	0.0073	0.0955	0.0393
+FH1001	Lung cancer (FH)	Family_history	binomial	0.0101	0.0024	1.0496	1.0587	1.0092	0.0065	0.1568	0.1103
+FH1002	Breast cancer (FH)	Family_history	binomial	0.0133	0.0019	1.0466	1.0636	1.0023	0.006	0.0361	0.0948
+FH1044	Prostate cancer (FH)	Family_history	binomial	0.0148	0.0022	1.0436	1.0679	0.9998	0.0068	<0	usually_indicates_GC_correction
+FH1065	High BP (FH)	Family_history	binomial	0.0706	0.0036	1.2201	1.3253	1.0299	0.007	0.0919	0.0215
+FH1113	Chronic bronchitis/emphysema (FH)	Family_history	binomial	0.0193	0.0022	1.0895	1.0903	1.0128	0.0063	0.1414	0.0698
+FH1220	Diabetes (FH)	Family_history	binomial	0.055	0.0039	1.1587	1.2543	1.0127	0.0071	0.0498	0.0279
+FH1263	Alzheimer's/dementia (FH)	Family_history	binomial	0.0238	0.0131	1.0345	1.0959	1.0053	0.0083	0.0549	0.0867
+BIN_FC10002492	Taking other prescription medications	Health_and_medical_history	binomial	0.0436	0.0041	1.1523	1.2176	1.0126	0.007	0.0578	0.0322
+BIN_FC10002986	Started insulin within one year diagnosis of diabetes	Health_and_medical_history	binomial	0.7124	0.394	1.0466	1.2794	0.968	0.0106	<0	usually_indicates_GC_correction
+BIN_FC10006152	Hayfever allergic rhinitis or eczema	Health_and_medical_history	binomial	0.0751	0.0068	1.207	1.4017	1.0359	0.0093	0.0894	0.0233
+BIN_FC1002247	Hearing difficulty	Health_and_medical_history	binomial	0.0333	0.0026	1.1333	1.1667	1.0269	0.0069	0.1614	0.0412
+BIN_FC1002306	Weight change compared with 1 year ago	Health_and_medical_history	binomial	0.0378	0.0029	1.1333	1.1649	1.0123	0.007	0.0744	0.0427
+BIN_FC1006148	Eye problems/disorders Diabetic eye disease	Health_and_medical_history	binomial	0.0513	0.015	1.0496	1.086	0.9914	0.0074	<0	usually_indicates_GC_correction
+BIN_FC1006149	Mouth ulcers	Health_and_medical_history	binomial	0.0398	0.0055	1.1175	1.2284	1.0016	0.0076	0.0072	0.0334
+BIN_FC1006150	Vascular/heart problems diagnosed by doctor Heart attack	Health_and_medical_history	binomial	0.0349	0.0032	1.1019	1.1278	1.0215	0.0068	0.1686	0.0533
+BIN_FC1006152	DVT diagnosed by doctor	Health_and_medical_history	binomial	0.0243	0.0047	1.0466	1.0691	0.9973	0.0055	<0	usually_indicates_GC_correction
+BIN_FC1006154	Aspirin	Health_and_medical_history	binomial	0.0199	0.0022	1.0833	1.1002	1.0172	0.0065	0.1719	0.0648
+BIN_FC11006152	Blood clot or DVT diagnosed by doctor	Health_and_medical_history	binomial	0.0273	0.005	1.0588	1.0804	1.0003	0.0054	0.004	0.0675
+BIN_FC12006152	Blood clot in the leg (DVT) or lung	Health_and_medical_history	binomial	0.019	0.0035	1.0588	1.077	0.999	0.0054	<0	usually_indicates_GC_correction
+BIN_FC18006155	Folic acid or folate (Vitamin B9)	Health_and_medical_history	binomial	0.0075	0.0037	1.0165	1.0281	0.9918	0.007	<0	usually_indicates_GC_correction
+BIN_FC2006148	Eye problems/disorders Glaucoma	Health_and_medical_history	binomial	0.0516	0.0059	1.0496	1.0671	0.9935	0.0062	<0	usually_indicates_GC_correction
+BIN_FC2006150	Vascular/heart problems diagnosed by doctor Angina	Health_and_medical_history	binomial	0.0468	0.0036	1.1301	1.1592	1.0195	0.0069	0.1227	0.0432
+BIN_FC2006154	Ibuprofen (e.g. Nurofen)	Health_and_medical_history	binomial	0.0228	0.0021	1.0833	1.1008	0.9926	0.0057	<0	usually_indicates_GC_correction
+BIN_FC2006179	Glucosamine	Health_and_medical_history	binomial	0.0176	0.0024	1.0802	1.088	1.016	0.0076	0.1816	0.0868
+BIN_FC3002247	Hearing difficulty and Deafness	Health_and_medical_history	binomial	0.0333	0.0026	1.1333	1.1668	1.0269	0.0069	0.1616	0.0411
+BIN_FC3006152	Blood clot diagnosed by doctor	Health_and_medical_history	binomial	0.0146	0.0029	1.0315	1.0375	0.9944	0.0056	<0	usually_indicates_GC_correction
+BIN_FC4006150	Vascular/heart problems diagnosed by doctor High BP	Health_and_medical_history	binomial	0.1243	0.0053	1.3409	1.5461	1.0429	0.0089	0.0786	0.0164
+BIN_FC4006152	Asthma diagnosed by doctor	Health_and_medical_history	binomial	0.0854	0.0128	1.1908	1.453	1.0425	0.0093	0.0938	0.0204
+BIN_FC5006148	Eye problems/disorders Macular degeneration	Health_and_medical_history	binomial	0.0221	0.0051	1.0165	1.0172	0.9842	0.0058	<0	usually_indicates_GC_correction
+BIN_FC5006152	Hayfever rhinitis or eczema diagnosed by doctor	Health_and_medical_history	binomial	0.0867	0.008	1.2136	1.4284	1.041	0.0099	0.0957	0.0231
+BIN_FC6006149	Dentures	Health_and_medical_history	binomial	0.0541	0.0034	1.2038	1.3136	1.0268	0.0078	0.0856	0.0248
+BIN_FC6006152	Blood clot in the leg (DVT)	Health_and_medical_history	binomial	0.0164	0.0032	1.0466	1.0651	0.9966	0.0054	<0	usually_indicates_GC_correction
+BIN_FC6006155	Vitamin B9 vs no supplement	Health_and_medical_history	binomial	0.0121	0.0053	1.0255	1.0356	0.9923	0.007	<0	usually_indicates_GC_correction
+BIN_FC7006154	Aspirin use self-reported	Health_and_medical_history	binomial	0.0381	0.0034	1.1144	1.1366	1.0166	0.0068	0.1218	0.0499
+BIN_FC8006152	Blood clot in the lung	Health_and_medical_history	binomial	0.0098	0.0019	1.0315	1.0363	0.9944	0.0056	<0	usually_indicates_GC_correction
+BIN_FC8006154	Ibuprofen use self-reported	Health_and_medical_history	binomial	0.0451	0.0034	1.1175	1.1595	0.9976	0.0061	<0	usually_indicates_GC_correction
+BIN_FC9006154	Paracetamol use self-reported	Health_and_medical_history	binomial	0.0639	0.0043	1.1908	1.3047	1.0243	0.0076	0.0799	0.0249
+BIN_FC10001538	Major dietary changes in the last 5 years becuase of illness	Lifestyle_and_environment	binomial	0.0288	0.0025	1.1082	1.1406	1.008	0.0071	0.0566	0.0507
+BIN_FC10001628	Alcohol intake versus 10 years previously (More nowadays)	Lifestyle_and_environment	binomial	0.0184	0.0024	1.0772	1.0861	1.0084	0.0067	0.0971	0.0775
+BIN_FC10001727	Ease of skin tanning (Get very tanned)	Lifestyle_and_environment	binomial	0.1116	0.0362	1.1428	1.4935	1.036	0.0097	0.073	0.0197
+BIN_FC10001757	Facial ageing (Younger than you are)	Lifestyle_and_environment	binomial	0.06	0.004	1.1876	1.2479	1.0206	0.0077	0.083	0.031
+BIN_FC10002267	Use of sun/uv protection (Never/rarely)	Lifestyle_and_environment	binomial	0.0249	0.0032	1.0864	1.1141	1.0123	0.0068	0.1082	0.0592
+BIN_FC10002644	Light smokers, at least 100 smokes in lifetime	Lifestyle_and_environment	binomial	0.0681	0.0073	1.071	1.085	1.0049	0.0062	0.058	0.0724
+BIN_FC1001747	Hair colour (natural, before greying) blonde	Lifestyle_and_environment	binomial	0.1307	0.029	1.1619	1.5345	1.0556	0.0125	0.104	0.0235
+BIN_FC10020116	Never Smoker	Lifestyle_and_environment	binomial	0.0835	0.0039	1.2831	1.3799	1.0275	0.0088	0.0723	0.0231
+BIN_FC20001249	Past tobacco smoking (Smoked occasionally)	Lifestyle_and_environment	binomial	0.0262	0.0029	1.0864	1.1052	1.0069	0.0055	0.0654	0.0524
+BIN_FC20001468	Cereal type: Biscuit cereal (e.g. Weetabix)	Lifestyle_and_environment	binomial	0.0094	0.0024	1.0588	1.0591	1.0256	0.0063	0.4336	0.1062
+BIN_FC20001508	Coffee type: Instant coffee	Lifestyle_and_environment	binomial	0.0295	0.0027	1.1082	1.1181	1.0211	0.0067	0.1784	0.0563
+BIN_FC20001727	Ease of skin tanning (Get moderately tanned)	Lifestyle_and_environment	binomial	0.0394	0.0179	1.0588	1.1786	1.0137	0.0095	0.0765	0.0532
+BIN_FC20001757	Facial ageing (Older than you are)	Lifestyle_and_environment	binomial	0.0151	0.002	1.0466	1.0576	0.9991	0.0063	<0	usually_indicates_GC_correction
+BIN_FC20002267	Use of sun/uv protection (Sometimes)	Lifestyle_and_environment	binomial	0.0225	0.0031	1.0802	1.1059	1.0094	0.0063	0.089	0.0599
+BIN_FC2001747	Hair colour (natural, before greying) red	Lifestyle_and_environment	binomial	0.1097	0.0949	1.0345	1.5121	1.014	0.0111	0.0273	0.0216
+BIN_FC20020116	Previous Smoker	Lifestyle_and_environment	binomial	0.0473	0.0029	1.1715	1.2094	1.0135	0.0074	0.0643	0.0354
+BIN_FC30001418	Milk type: Skimmed	Lifestyle_and_environment	binomial	0.02	0.002	1.0864	1.0934	1.0114	0.0066	0.1221	0.0703
+BIN_FC30001508	Coffee type: Ground coffee (include espresso, filter etc)	Lifestyle_and_environment	binomial	0.0602	0.0036	1.1908	1.2371	1.0333	0.0071	0.1403	0.0301
+BIN_FC30001727	Ease of skin tanning (Get mildly or occasionally tanned)	Lifestyle_and_environment	binomial	0.0413	0.0151	1.071	1.1947	1.0255	0.008	0.1307	0.0409
+BIN_FC30001757	Facial ageing (About your age)	Lifestyle_and_environment	binomial	0.0527	0.0033	1.1587	1.205	1.0084	0.0075	0.0412	0.0364
+BIN_FC30006164	Types of physical activity in last 4 weeks (other exercises)	Lifestyle_and_environment	binomial	0.0569	0.0043	1.1144	1.138	1.0084	0.0069	0.0611	0.0497
+BIN_FC3001747	Hair colour (natural, before greying) light brown	Lifestyle_and_environment	binomial	0.0509	0.0162	1.0741	1.2145	1.0268	0.0082	0.125	0.0383
+BIN_FC3006144	Never eat wheat	Lifestyle_and_environment	binomial	0.0242	0.016	1.0496	1.3762	0.9972	0.0106	<0	usually_indicates_GC_correction
+BIN_FC40001249	Past tobacco smoking (Smoked at least once)	Lifestyle_and_environment	binomial	0.0639	0.0032	1.207	1.25	1.0095	0.0071	0.0379	0.0282
+BIN_FC40001727	Ease of skin tanning (Never tan, only burn)	Lifestyle_and_environment	binomial	0.1135	0.0475	1.1238	1.4995	1.0302	0.0118	0.0604	0.0237
+BIN_FC40002267	Use of sun/uv protection (Always)	Lifestyle_and_environment	binomial	0.0393	0.0046	1.1333	1.1883	1.0158	0.0078	0.0837	0.0413
+BIN_FC4001747	Hair colour (natural, before greying) dark brown	Lifestyle_and_environment	binomial	0.1542	0.044	1.1683	1.6663	1.0538	0.0119	0.0808	0.0179
+BIN_FC4006144	Never eat sugar	Lifestyle_and_environment	binomial	0.0439	0.0027	1.1587	1.182	1.0094	0.0066	0.0517	0.0362
+BIN_FC50001468	Cereal type: Other (e.g. Cornflakes, Frosties)	Lifestyle_and_environment	binomial	0.0344	0.0038	1.1082	1.1878	1.0109	0.0073	0.0582	0.0389
+BIN_FC5001747	Hair colour (natural, before greying) black	Lifestyle_and_environment	binomial	0.0678	0.02	1.0895	1.277	1.0313	0.01	0.1129	0.0363
+BIN_FC6001747	Hair colour (natural, before greying) other	Lifestyle_and_environment	binomial	0.0058	0.0031	1.0165	1.0233	1.0007	0.0062	0.0296	0.2679
+BIN_FC7001747	Hair colour (natural, before greying) brown	Lifestyle_and_environment	binomial	0.088	0.0498	1.0772	1.4133	1.028	0.0099	0.0678	0.0239
+BIN1210	Snoring	Lifestyle_and_environment	binomial	0.0532	0.0035	1.1683	1.2173	1.0134	0.0069	0.0618	0.032
+BIN23066	JCV seropositivity for Human Polyomavirus JCV	Blood_assays	binomial	0.6577	0.3185	1.0195	1.0544	0.9793	0.0081	<0	usually_indicates_GC_correction
+BIN23067	MCV seropositivity for Merkel Cell Polyomavirus	Blood_assays	binomial	0.5266	0.3568	1.0135	1.0489	0.988	0.0081	<0	usually_indicates_GC_correction
+BIN100240	Coffee consumed	Diet_by_24-hour_recall	binomial	0.0366	0.0049	1.0618	1.0695	1.0029	0.0066	0.0411	0.0946
+BIN100580	Alcohol consumed	Diet_by_24-hour_recall	binomial	0.0416	0.0047	1.0618	1.0771	0.9971	0.0061	<0	usually_indicates_GC_correction
+BIN21068	Diagnosed with coeliac disease or gluten sensitivity	Digestive_health	binomial	0.0813	0.0527	1.0405	1.5724	0.9789	0.0113	<0	usually_indicates_GC_correction
+BIN_FC40020489	Often felt loved as a child	Mental_health	binomial	0.0786	0.0078	1.0833	1.0943	1.0116	0.0057	0.1226	0.0601
+BIN10030500	Microalbumin > 40 mg/L	Others	binomial	0.0256	0.0026	1.0864	1.1201	1.0038	0.0067	0.0316	0.0561
+BIN10030800	Oestradiol > 212 pmol/L	Others	binomial	0.0078	0.0021	0.9489	0.9581	0.9235	0.0054	NA	mean_chi^2<1
+BIN10030820	Rheumatoid factor > 16 IU/mL	Others	binomial	0.039	0.0175	1.0649	1.5441	0.9895	0.0103	<0	usually_indicates_GC_correction
+BIN30030510	UACR > 30 mg/g	Others	binomial	0.0177	0.0024	1.0649	1.0817	1.0036	0.0071	0.0442	0.0864
+BIN_FC30022506	Tobacco smoking ever vs no	Work_environment	binomial	0.069	0.0085	1.0864	1.0905	1.0162	0.0066	0.1785	0.0732
+BIN22126	Doctor diagnosed hayfever or allergic rhinitis	Work_environment	binomial	0.1037	0.0131	1.0772	1.1194	0.9942	0.0064	<0	usually_indicates_GC_correction
+BIN22127	Doctor diagnosed asthma	Work_environment	binomial	0.0868	0.0215	1.0557	1.1095	0.9954	0.0088	<0	usually_indicates_GC_correction
+BIN_FC10006160	Leisure/social activities (attend any of the followings in once a week or more often: sports club, gym, pub, social club, religious group, adult edication class, or other group activity)	Psychosocial_factors	binomial	0.0318	0.0023	1.1301	1.1519	1.015	0.0063	0.0991	0.0412
+BIN_FC20006160	Leisure/social activities (attend sports club or gym in once a week or more often)	Psychosocial_factors	binomial	0.0658	0.004	1.1587	1.1866	1.0139	0.0066	0.0746	0.0355
+BIN_FC50006160	Leisure/social activities (attend adult edication class in once a week or more often)	Psychosocial_factors	binomial	0.0645	0.0061	1.105	1.1209	1.0099	0.0065	0.082	0.0539
+BIN1950	Sensitivity / hurt feelings	Psychosocial_factors	binomial	0.0493	0.003	1.1876	1.2557	1.0264	0.0071	0.1031	0.0277
+BIN1980	Worrier / anxious feelings	Psychosocial_factors	binomial	0.0699	0.0038	1.2136	1.3033	0.9958	0.0081	<0	usually_indicates_GC_correction
+BIN2000	Worry too long after embarrassment	Psychosocial_factors	binomial	0.0545	0.003	1.1843	1.2373	1.018	0.0066	0.0757	0.028
+BIN2010	Suffer from 'nerves'	Psychosocial_factors	binomial	0.033	0.0029	1.1333	1.1708	1.0207	0.0068	0.1211	0.0401
+BIN2020	Loneliness, isolation	Psychosocial_factors	binomial	0.0324	0.0024	1.1301	1.1534	1.0159	0.0068	0.1038	0.0444
+BIN2040	Risk taking	Psychosocial_factors	binomial	0.0476	0.0027	1.1715	1.2095	1.0109	0.0069	0.052	0.0329
+INI12144	Height	Anthropometry	gaussian	0.4645	0.0379	1.1364	1.2256	1.0109	0.007	0.0482	0.0311
+INI20015	Sitting height	Anthropometry	gaussian	0.3169	0.0145	1.6869	2.803	1.1593	0.0174	0.0883	0.0097
+INI21001	BMI	Anthropometry	gaussian	0.2221	0.0096	1.6145	1.9812	1.0671	0.0116	0.0684	0.0118
+INI21002	Weight	Anthropometry	gaussian	0.2456	0.0103	1.6334	2.1351	1.0645	0.0131	0.0568	0.0115
+INI23099	Body fat %	Anthropometry	gaussian	0.2046	0.0078	1.5845	1.8966	1.0722	0.01	0.0805	0.0111
+INI23100	Whole body fat mass	Anthropometry	gaussian	0.2159	0.009	1.5883	1.9444	1.0623	0.0106	0.066	0.0112
+INI23101	Whole body fat-free mass	Anthropometry	gaussian	0.2815	0.0116	1.6677	2.3653	1.105	0.0144	0.0769	0.0106
+INI23102	Whole body water mass	Anthropometry	gaussian	0.2816	0.0115	1.6677	2.3615	1.1041	0.0146	0.0764	0.0107
+INI23105	Basal metabolic rate	Anthropometry	gaussian	0.2761	0.0113	1.6677	2.3146	1.0919	0.014	0.0699	0.0107
+INI23106	Impedance of whole body	Anthropometry	gaussian	0.2334	0.0091	1.6108	2.0599	1.0842	0.0124	0.0795	0.0117
+INI23107	Impedance of leg (R)	Anthropometry	gaussian	0.2119	0.009	1.5733	1.9831	1.0936	0.0117	0.0952	0.0119
+INI23108	Impedance of leg (L)	Anthropometry	gaussian	0.2157	0.0089	1.5771	1.9855	1.0819	0.0112	0.0831	0.0114
+INI23109	Impedance of arm (R)	Anthropometry	gaussian	0.2132	0.0085	1.5622	1.9514	1.0804	0.0128	0.0845	0.0134
+INI23110	Impedance of arm (L)	Anthropometry	gaussian	0.2149	0.0085	1.5659	1.9584	1.0803	0.0123	0.0838	0.0128
+INI23111	Leg fat % (R)	Anthropometry	gaussian	0.1997	0.0074	1.5845	1.866	1.0663	0.0106	0.0766	0.0122
+INI23112	Leg fat mass (R)	Anthropometry	gaussian	0.2105	0.0086	1.5771	1.916	1.0575	0.0104	0.0628	0.0113
+INI23113	Leg fat-free mass (R)	Anthropometry	gaussian	0.2592	0.0108	1.6486	2.2653	1.0984	0.0141	0.0778	0.0111
+INI23114	Leg pred. mass (R)	Anthropometry	gaussian	0.2592	0.0108	1.6486	2.2629	1.0976	0.014	0.0773	0.0111
+INI23115	Leg fat % (L)	Anthropometry	gaussian	0.1993	0.0076	1.5845	1.8734	1.0704	0.0107	0.0806	0.0122
+INI23117	Leg fat-free mass (L)	Anthropometry	gaussian	0.2596	0.0107	1.6448	2.2469	1.0892	0.0136	0.0715	0.0109
+INI23118	Leg pred. mass (L)	Anthropometry	gaussian	0.259	0.0107	1.6448	2.2442	1.0894	0.0136	0.0718	0.0109
+INI23119	Arm fat % (R)	Anthropometry	gaussian	0.1988	0.008	1.5696	1.863	1.067	0.0093	0.0776	0.0108
+INI23120	Arm fat mass (R)	Anthropometry	gaussian	0.2108	0.0091	1.5733	1.9159	1.0578	0.0104	0.0631	0.0114
+INI23121	Arm fat-free mass (R)	Anthropometry	gaussian	0.2552	0.0105	1.6259	2.2085	1.0897	0.0135	0.0742	0.0112
+INI23122	Arm pred. mass (R)	Anthropometry	gaussian	0.2561	0.0105	1.6221	2.2024	1.0865	0.0133	0.072	0.011
+INI23123	Arm fat % (L)	Anthropometry	gaussian	0.1995	0.0082	1.5696	1.8693	1.0666	0.0093	0.0766	0.0107
+INI23124	Arm fat mass (L)	Anthropometry	gaussian	0.2108	0.0091	1.5733	1.9151	1.0569	0.0102	0.0621	0.0112
+INI23125	Arm fat-free mass (L)	Anthropometry	gaussian	0.2555	0.0104	1.6296	2.2014	1.0858	0.0132	0.0715	0.011
+INI23126	Arm pred. mass (L)	Anthropometry	gaussian	0.2554	0.0104	1.6259	2.1959	1.0849	0.0136	0.071	0.0114
+INI23127	Trunk fat %	Anthropometry	gaussian	0.1953	0.0073	1.5585	1.8643	1.0719	0.0098	0.0831	0.0113
+INI23128	Trunk fat mass	Anthropometry	gaussian	0.2145	0.0088	1.5883	1.9538	1.0654	0.0105	0.0686	0.011
+INI23129	Trunk fat-free mass	Anthropometry	gaussian	0.2792	0.0117	1.6562	2.3591	1.1118	0.0145	0.0822	0.0107
+INI23130	Trunk pred. mass	Anthropometry	gaussian	0.2775	0.0117	1.6524	2.3525	1.1123	0.0144	0.083	0.0106
+INI48	Waist circumference	Anthropometry	gaussian	0.19	0.0083	1.5254	1.7928	1.0479	0.0101	0.0604	0.0128
+INI49	Hip circumference	Anthropometry	gaussian	0.2062	0.0091	1.5585	1.9495	1.0547	0.0107	0.0576	0.0113
+INI50	Standing height	Anthropometry	gaussian	0.4359	0.0199	1.885	3.3568	1.2484	0.0214	0.1054	0.0091
+INI30030650	AST to ALT ratio	Biomarkers	gaussian	0.1441	0.0104	1.3169	1.7043	1.0467	0.0103	0.0663	0.0147
+INI30030700	eGFR	Biomarkers	gaussian	0.1783	0.011	1.4175	1.8776	1.1063	0.0125	0.1212	0.0142
+INI30030860	Non-albumin protein	Biomarkers	gaussian	0.1901	0.0176	1.3477	2.2908	1.0861	0.0129	0.0667	0.01
+INI30510	Creatinine (enzymatic) in urine	Biomarkers	gaussian	0.0588	0.003	1.207	1.2569	1.0142	0.0066	0.0552	0.0259
+INI30520	Potassium in urine	Biomarkers	gaussian	0.0382	0.0027	1.1428	1.1996	1.0128	0.0068	0.064	0.0342
+INI30530	Sodium in urine	Biomarkers	gaussian	0.0643	0.0032	1.2201	1.2775	1.0229	0.0075	0.0824	0.0269
+INI30600	Albumin	Biomarkers	gaussian	0.1428	0.0098	1.2966	1.5785	1.0419	0.0097	0.0724	0.0168
+INI30610	Alkaline phosphatase	Biomarkers	gaussian	0.2548	0.0475	1.3512	2.1256	1.1015	0.0138	0.0902	0.0122
+INI30620	Alanine aminotransferase	Biomarkers	gaussian	0.1183	0.0079	1.2831	1.5638	1.0563	0.0099	0.0999	0.0175
+INI30630	Apolipoprotein A	Biomarkers	gaussian	0.2382	0.0391	1.365	1.939	1.0775	0.0124	0.0825	0.0132
+INI30640	Apolipoprotein B	Biomarkers	gaussian	0.1825	0.0659	1.1973	1.6969	1.0634	0.0144	0.091	0.0207
+INI30650	Aspartate aminotransferase	Biomarkers	gaussian	0.1278	0.0119	1.2899	1.9855	1.0747	0.0104	0.0758	0.0106
+INI30660	Direct bilirubin	Biomarkers	gaussian	0.1536	0.09	1.1428	1.4835	1.0183	0.0091	0.0378	0.0188
+INI30670	Urea	Biomarkers	gaussian	0.1097	0.0072	1.2631	1.4559	1.0408	0.0088	0.0895	0.0193
+INI30680	Calcium	Biomarkers	gaussian	0.1219	0.011	1.2531	1.4955	1.0436	0.0084	0.088	0.0169
+INI30690	Cholesterol	Biomarkers	gaussian	0.1523	0.0372	1.2103	1.7022	1.0596	0.0121	0.0849	0.0173
+INI30700	Creatinine	Biomarkers	gaussian	0.1832	0.0108	1.4192	1.9054	1.0992	0.0122	0.1095	0.0135
+INI30710	C-reactive protein	Biomarkers	gaussian	0.2125	0.0445	1.3685	1.9257	1.0722	0.0121	0.078	0.0131
+INI30720	Cystatin C	Biomarkers	gaussian	0.2158	0.0307	1.4817	2.0981	1.1021	0.0126	0.093	0.0114
+INI30730	Gamma glutamyltransferase	Biomarkers	gaussian	0.1982	0.02	1.3929	1.8909	1.0901	0.0117	0.1012	0.0131
+INI30740	Glucose	Biomarkers	gaussian	0.0769	0.0108	1.1747	1.3252	1.0436	0.0091	0.1341	0.0281
+INI30750	Glycated haemoglobin (HbA1c)	Biomarkers	gaussian	0.2098	0.0183	1.3999	2.1843	1.1068	0.0134	0.0902	0.0113
+INI30760	HDL cholesterol	Biomarkers	gaussian	0.2702	0.0445	1.4104	2.0348	1.0851	0.0125	0.0822	0.0121
+INI30770	IGF-1	Biomarkers	gaussian	0.2128	0.0127	1.453	2.0543	1.0981	0.0123	0.0931	0.0117
+INI30780	LDL cholesterol	Biomarkers	gaussian	0.1494	0.0468	1.194	1.6178	1.0531	0.0121	0.0859	0.0196
+INI30790	Lipoprotein A	Biomarkers	gaussian	0.1038	0.0964	1.0285	1.2791	1.0151	0.0109	0.0542	0.0391
+INI30810	Phosphate	Biomarkers	gaussian	0.1051	0.0107	1.2431	1.4601	1.0605	0.0086	0.1314	0.0187
+INI30830	SHBG	Biomarkers	gaussian	0.2121	0.0402	1.3409	1.883	1.0851	0.0165	0.0963	0.0187
+INI30840	Total bilirubin	Biomarkers	gaussian	0.1841	0.1006	1.207	1.7372	1.0364	0.0114	0.0493	0.0155
+INI30850	Testosterone	Biomarkers	gaussian	0.077	0.0118	1.1651	1.3243	1.0275	0.0082	0.0848	0.0252
+INI30860	Total protein	Biomarkers	gaussian	0.165	0.0144	1.3443	2.103	1.073	0.0114	0.0662	0.0103
+INI30870	Triglycerides	Biomarkers	gaussian	0.2119	0.0264	1.3754	2.0324	1.062	0.0122	0.06	0.0119
+INI30880	Urate	Biomarkers	gaussian	0.1836	0.029	1.3581	1.9806	1.0532	0.0122	0.0543	0.0124
+INI30890	Vitamin D	Biomarkers	gaussian	0.0867	0.0153	1.2103	1.3662	1.0468	0.0087	0.1278	0.0238
+INI23002	GE / gI antigen for Varicella Zoster Virus	Blood_assays	gaussian	0.5228	0.4302	1.018	1.1216	1.0034	0.0096	0.0281	0.0787
+INI23004	EBNA-1 antigen for Epstein-Barr Virus	Blood_assays	gaussian	0.6469	0.4528	1.0165	1.0685	0.9842	0.0099	<0	usually_indicates_GC_correction
+INI23005	ZEBRA antigen for Epstein-Barr Virus	Blood_assays	gaussian	0.7305	0.4862	1.0225	1.0927	0.9863	0.0098	<0	usually_indicates_GC_correction
+INI23022	HTLV-1 gag antigen for Human T-Lymphotropic Virus 1	Blood_assays	gaussian	0.4052	0.2689	1.0255	1.0528	0.9998	0.0079	<0	usually_indicates_GC_correction
+INI23027	JC VP1 antigen for Human Polyomavirus JCV	Blood_assays	gaussian	0.5696	0.4975	1.0135	1.0757	0.9962	0.0091	<0	usually_indicates_GC_correction
+INI23028	MC VP1 antigen for Merkel Cell Polyomavirus	Blood_assays	gaussian	0.6592	0.5192	1.0195	1.0888	0.9993	0.0092	<0	usually_indicates_GC_correction
+INI30000	White blood cell count	Blood_assays	gaussian	0.1894	0.0158	1.4423	2.7593	1.1028	0.012	0.0584	0.0068
+INI30010	Red blood cell count	Blood_assays	gaussian	0.2191	0.0181	1.4316	2.1589	1.1021	0.0121	0.0881	0.0104
+INI30020	Haemoglobin concentration	Blood_assays	gaussian	0.1672	0.0135	1.3512	2.2206	1.0945	0.0127	0.0774	0.0104
+INI30030	Haematocrit %	Blood_assays	gaussian	0.1564	0.011	1.3477	1.9723	1.0912	0.0121	0.0938	0.0125
+INI30040	Mean corpuscular volume	Blood_assays	gaussian	0.2525	0.029	1.3719	2.516	1.1113	0.0181	0.0734	0.0119
+INI30050	Mean corpuscular haemoglobin	Blood_assays	gaussian	0.2509	0.0327	1.3512	2.6701	1.1024	0.0158	0.0613	0.0094
+INI30060	Mean corpuscular haemoglobin concentration	Blood_assays	gaussian	0.0651	0.0092	1.1683	1.4801	1.0574	0.0094	0.1195	0.0196
+INI30070	Red blood cell distribution width	Blood_assays	gaussian	0.1934	0.0187	1.3169	2.3772	1.1097	0.0147	0.0797	0.0106
+INI30080	Platelet count	Blood_assays	gaussian	0.2781	0.0238	1.4494	2.439	1.1256	0.0144	0.0873	0.01
+INI30090	Platelet crit	Blood_assays	gaussian	0.2445	0.0227	1.4245	2.1395	1.1135	0.0137	0.0996	0.012
+INI30100	Mean platelet volume	Blood_assays	gaussian	0.3458	0.0389	1.3894	2.7714	1.1336	0.015	0.0754	0.0084
+INI30110	Platelet distribution width	Blood_assays	gaussian	0.2282	0.0216	1.3203	2.1045	1.0863	0.0132	0.0781	0.012
+INI30120	Lymphocyte count	Blood_assays	gaussian	0.1912	0.0158	1.4316	2.6359	1.1008	0.0117	0.0616	0.0071
+INI30130	Monocyte count	Blood_assays	gaussian	0.2061	0.0184	1.3615	2.3931	1.1194	0.0134	0.0857	0.0096
+INI30140	Neutrophill count	Blood_assays	gaussian	0.1656	0.0141	1.3894	2.2418	1.0881	0.0114	0.071	0.0092
+INI30150	Eosinophill count	Blood_assays	gaussian	0.1957	0.0169	1.3615	2.4688	1.0967	0.0128	0.0658	0.0087
+INI30160	Basophill count	Blood_assays	gaussian	0.0488	0.0048	1.2136	1.3246	1.0962	0.0078	0.2962	0.024
+INI30180	Lymphocyte %	Blood_assays	gaussian	0.1509	0.0097	1.3409	1.7617	1.0777	0.0113	0.102	0.0148
+INI30190	Monocyte %	Blood_assays	gaussian	0.194	0.0193	1.2966	1.9237	1.0952	0.0111	0.1031	0.012
+INI30200	Neutrophill %	Blood_assays	gaussian	0.142	0.009	1.3238	1.7395	1.0707	0.0114	0.0956	0.0154
+INI30210	Eosinophill %	Blood_assays	gaussian	0.1895	0.0152	1.3409	2.1602	1.0937	0.0123	0.0808	0.0106
+INI30220	Basophill %	Blood_assays	gaussian	0.0512	0.0049	1.1175	1.2242	1.0224	0.0081	0.1001	0.0359
+INI30240	Reticulocyte %	Blood_assays	gaussian	0.1985	0.0171	1.3929	2.1438	1.081	0.0125	0.0708	0.0109
+INI30250	Reticulocyte count	Blood_assays	gaussian	0.2024	0.0166	1.4139	2.2029	1.0809	0.0123	0.0673	0.0102
+INI30260	Mean reticulocyte volume	Blood_assays	gaussian	0.2075	0.0206	1.3135	2.1834	1.0904	0.0125	0.0764	0.0105
+INI30280	Immature reticulocyte fraction	Blood_assays	gaussian	0.1475	0.0139	1.3034	1.6984	1.0646	0.012	0.0925	0.0172
+INI30290	High light scatter reticulocyte %	Blood_assays	gaussian	0.2114	0.0184	1.4175	2.1315	1.0777	0.0126	0.0686	0.0111
+INI30300	High light scatter reticulocyte count	Blood_assays	gaussian	0.2118	0.0179	1.4316	2.1743	1.0802	0.0128	0.0683	0.0109
+INI3143	Ankle spacing width	Bone-densitometry_of_heel	gaussian	0.2828	0.0131	1.4352	1.7723	1.0616	0.0097	0.0798	0.0125
+INI3144	Heel Broadband ultrasound attenuation, direct entry	Bone-densitometry_of_heel	gaussian	0.2387	0.0199	1.3	1.6437	1.0623	0.0094	0.0968	0.0146
+INI3146	Speed of sound through heel	Bone-densitometry_of_heel	gaussian	0.2592	0.0222	1.3169	1.7073	1.0772	0.0091	0.1091	0.0129
+INI3147	Heel quantitative ultrasound index (QUI), direct entry	Bone-densitometry_of_heel	gaussian	0.2625	0.0225	1.3203	1.7131	1.0735	0.0092	0.1031	0.0129
+INI3148	Heel bone mineral density (BMD)	Bone-densitometry_of_heel	gaussian	0.2639	0.0225	1.3203	1.7158	1.074	0.0093	0.1033	0.0129
+INI4100	Ankle spacing width (L)	Bone-densitometry_of_heel	gaussian	0.2921	0.0146	1.3034	1.5012	1.0285	0.0089	0.0569	0.0178
+INI4101	Heel broadband ultrasound attenuation (L)	Bone-densitometry_of_heel	gaussian	0.2361	0.0219	1.2234	1.4225	1.0381	0.0085	0.0901	0.02
+INI4103	Speed of sound through heel (L)	Bone-densitometry_of_heel	gaussian	0.2675	0.0245	1.2431	1.4648	1.0402	0.0089	0.0864	0.0191
+INI4104	Heel quantitative ultrasound index (QUI), direct entry (L)	Bone-densitometry_of_heel	gaussian	0.2661	0.0247	1.2398	1.4679	1.0413	0.0089	0.0884	0.0191
+INI4105	Heel bone mineral density (BMD) (L)	Bone-densitometry_of_heel	gaussian	0.268	0.0248	1.2398	1.4706	1.0406	0.0088	0.0863	0.0186
+INI4106	Heel bone mineral density (BMD) T-score, automated (L)	Bone-densitometry_of_heel	gaussian	0.2661	0.0247	1.2398	1.4679	1.0413	0.0089	0.0884	0.0191
+INI4119	Ankle spacing width (R)	Bone-densitometry_of_heel	gaussian	0.2891	0.0144	1.3068	1.5088	1.031	0.0088	0.0609	0.0173
+INI4120	Heel broadband ultrasound attenuation (R)	Bone-densitometry_of_heel	gaussian	0.2353	0.0231	1.2168	1.4307	1.0404	0.0091	0.0938	0.0212
+INI4122	Speed of sound through heel (R)	Bone-densitometry_of_heel	gaussian	0.2692	0.0251	1.2365	1.475	1.0429	0.0088	0.0903	0.0186
+INI4123	Heel quantitative ultrasound index (QUI), direct entry (R)	Bone-densitometry_of_heel	gaussian	0.2676	0.0255	1.2332	1.4789	1.0436	0.0091	0.091	0.019
+INI4124	Heel bone mineral density (BMD) (R)	Bone-densitometry_of_heel	gaussian	0.2689	0.0257	1.2332	1.4806	1.0436	0.0091	0.0906	0.0188
+INI4125	Heel bone mineral density (BMD) T-score, automated (R)	Bone-densitometry_of_heel	gaussian	0.2676	0.0255	1.2332	1.4789	1.0436	0.0091	0.091	0.019
+INI78	Heel bone mineral density (BMD) T-score, automated	Bone-densitometry_of_heel	gaussian	0.2625	0.0225	1.3203	1.7131	1.0735	0.0092	0.1031	0.0129
+INI1050	Time spend outdoors in summer	Lifestyle_and_environment	gaussian	0.0783	0.0037	1.2498	1.324	1.0296	0.0073	0.0914	0.0225
+INI1060	Outdoor time, winter	Lifestyle_and_environment	gaussian	0.0514	0.0031	1.1587	1.19	1.0184	0.007	0.0968	0.0368
+INI1160	Sleep duration	Lifestyle_and_environment	gaussian	0.064	0.0036	1.2234	1.2965	1.0219	0.008	0.0738	0.0268
+INI1289	Cooked vegetable intake	Lifestyle_and_environment	gaussian	0.0405	0.0026	1.1619	1.1879	1.0158	0.0071	0.0842	0.0376
+INI1309	Fresh fruit intake	Lifestyle_and_environment	gaussian	0.0625	0.0034	1.207	1.2685	1.0203	0.0077	0.0756	0.0287
+INI1319	Dried fruit intake	Lifestyle_and_environment	gaussian	0.0543	0.0032	1.1843	1.2398	1.0247	0.0078	0.1029	0.0325
+INI1438	Bread intake	Lifestyle_and_environment	gaussian	0.0419	0.003	1.1683	1.2122	1.0264	0.0077	0.1242	0.0362
+INI1458	Cereal intake	Lifestyle_and_environment	gaussian	0.0559	0.003	1.1683	1.2153	1.0056	0.0067	0.0258	0.0313
+INI1488	Tea intake	Lifestyle_and_environment	gaussian	0.0504	0.004	1.1908	1.2411	1.0425	0.0073	0.1762	0.0301
+INI1498	Coffee intake	Lifestyle_and_environment	gaussian	0.0526	0.0053	1.1555	1.2256	1.0086	0.007	0.0379	0.0309
+INI1528	Water intake	Lifestyle_and_environment	gaussian	0.0659	0.0036	1.2103	1.2691	1.0139	0.0076	0.0518	0.0282
+INI1548	Variation in diet	Lifestyle_and_environment	gaussian	0.0412	0.0028	1.1396	1.1611	0.9986	0.0075	<0	usually_indicates_GC_correction
+INI1588	Ave. weekly beer plus cider intake	Lifestyle_and_environment	gaussian	0.0586	0.0042	1.207	1.2456	1.0689	0.0078	0.2806	0.0317
+INI1737	Childhood sunburn	Lifestyle_and_environment	gaussian	0.1192	0.0257	1.2136	1.4596	1.0406	0.0112	0.0884	0.0243
+INI2139	Age first had sexual intercourse	Lifestyle_and_environment	gaussian	0.1351	0.0049	1.4034	1.5454	1.0633	0.0077	0.1161	0.0141
+INI2237	Freq. of playing computer games	Lifestyle_and_environment	gaussian	0.0696	0.0035	1.2299	1.2989	1.013	0.0074	0.0436	0.0248
+INI2887	# of cigarettes previously smoked daily	Lifestyle_and_environment	gaussian	0.1197	0.0171	1.0895	1.1143	1.0006	0.0072	0.0054	0.0632
+INI2897	Age stopped smoking	Lifestyle_and_environment	gaussian	0.043	0.0072	1.0405	1.0454	0.9967	0.0061	<0	usually_indicates_GC_correction
+INI3456	# of cigarettes currently smoked daily (current cigarette smokers)	Lifestyle_and_environment	gaussian	0.1102	0.0352	1.0225	1.0293	0.9991	0.0064	<0	usually_indicates_GC_correction
+INI874	Duration of walks	Lifestyle_and_environment	gaussian	0.0379	0.0028	1.1333	1.1486	1.0157	0.0065	0.1056	0.044
+INI924	Usual walking pace	Lifestyle_and_environment	gaussian	0.0695	0.0034	1.2564	1.3233	1.0378	0.0078	0.1169	0.024
+INI971	Freq. of walking for pleasure in last 4 weeks	Lifestyle_and_environment	gaussian	0.0293	0.0027	1.0864	1.0929	1.0043	0.0065	0.0463	0.0702
+QT_FC10001478	Salt added to food	Lifestyle_and_environment	gaussian	0.0659	0.0037	1.2365	1.3116	1.0387	0.0079	0.1242	0.0253
+QT_FC10003466	Time from waking to first cigarette	Lifestyle_and_environment	gaussian	0.0734	0.0269	1.0285	1.0308	1.0099	0.0065	0.3212	0.2114
+QT_FC10003476	Difficulty not smoking for 1 day	Lifestyle_and_environment	gaussian	0.0088	0.0273	1.0165	1.019	1.0164	0.0063	0.8607	0.3308
+QT_FC1001170	Getting up in morning	Lifestyle_and_environment	gaussian	0.0696	0.0034	1.2299	1.3017	1.0139	0.0078	0.0459	0.0259
+QT_FC1001180	Morning/evening person (chronotype)	Lifestyle_and_environment	gaussian	0.101	0.0046	1.2831	1.3889	1.0244	0.0081	0.0628	0.0209
+QT_FC1001190	Nap during day	Lifestyle_and_environment	gaussian	0.0738	0.0036	1.2464	1.3613	1.0209	0.0083	0.0579	0.0231
+QT_FC1001220	Daytime dozing / sleeping (narcolepsy)	Lifestyle_and_environment	gaussian	0.0483	0.0027	1.1555	1.194	0.9969	0.0062	<0	usually_indicates_GC_correction
+QT_FC1001329	Oily fish intake	Lifestyle_and_environment	gaussian	0.0549	0.0032	1.1973	1.2986	1.0183	0.0079	0.0614	0.0266
+QT_FC1001349	Processed meat intake	Lifestyle_and_environment	gaussian	0.0374	0.0028	1.1523	1.178	1.022	0.0069	0.1237	0.0389
+QT_FC1001359	Poultry intake	Lifestyle_and_environment	gaussian	0.0263	0.0022	1.1113	1.126	1.0142	0.0064	0.1126	0.0512
+QT_FC1001369	Beef intake	Lifestyle_and_environment	gaussian	0.0317	0.0028	1.1715	1.2017	1.0687	0.0075	0.3405	0.0372
+QT_FC1001408	Cheese intake	Lifestyle_and_environment	gaussian	0.0618	0.0035	1.2564	1.3152	1.0586	0.0084	0.186	0.0266
+QT_FC1001558	Alcohol intake frequency.	Lifestyle_and_environment	gaussian	0.0752	0.0042	1.2564	1.3379	1.0331	0.0083	0.098	0.0245
+INI4194	Pulse rate	Arterial_stiffness	gaussian	0.1192	0.0098	1.1523	1.2265	1.0316	0.0074	0.1395	0.0327
+INI4198	Position of the pulse wave peak	Arterial_stiffness	gaussian	0.0661	0.0057	1.1082	1.1275	1.0135	0.007	0.106	0.0553
+INI4199	Position of pulse wave notch	Arterial_stiffness	gaussian	0.0684	0.0072	1.1019	1.1346	1.0161	0.0065	0.1193	0.0485
+INI102	Pulse rate (AR)	Blood_pressure	gaussian	0.1399	0.0082	1.3409	1.5848	1.0501	0.0098	0.0856	0.0168
+INI4079	Diastolic BP (AR)	Blood_pressure	gaussian	0.1262	0.0054	1.3685	1.6091	1.0559	0.0093	0.0918	0.0153
+INI4080	Systolic BP (AR)	Blood_pressure	gaussian	0.1289	0.0057	1.3754	1.584	1.0689	0.0101	0.1179	0.0174
+INI95	Pulse rate (during blood-pressure measurement)	Blood_pressure	gaussian	0.1383	0.0187	1.0496	1.0575	1.001	0.0057	0.0177	0.0996
+INI20016	Fluid intelligence score	Cognitive_function	gaussian	0.208	0.0097	1.3169	1.4345	1.0551	0.0086	0.1267	0.0198
+INI100010	Portion size	Diet_by_24-hour_recall	gaussian	0.0507	0.0049	1.0802	1.0916	1	0.0068	<0	usually_indicates_GC_correction
+INI25056	Mean FA in middle cerebellar peduncle on FA skeleton	Diffusion_brain_MRI	gaussian	0.2761	0.026	1.0772	1.101	0.9997	0.0063	<0	usually_indicates_GC_correction
+INI25058	Mean FA in genu of corpus callosum on FA skeleton	Diffusion_brain_MRI	gaussian	0.291	0.0325	1.0864	1.1333	1.0117	0.0061	0.0876	0.0461
+INI25059	Mean FA in body of corpus callosum on FA skeleton	Diffusion_brain_MRI	gaussian	0.3204	0.0321	1.0957	1.1299	1.0064	0.0066	0.0495	0.0507
+INI25060	Mean FA in splenium of corpus callosum on FA skeleton	Diffusion_brain_MRI	gaussian	0.247	0.0322	1.0741	1.1192	1.0138	0.0069	0.1161	0.0576
+INI25061	Mean FA in fornix on FA skeleton	Diffusion_brain_MRI	gaussian	0.2096	0.0269	1.0588	1.0755	1.0058	0.0061	0.0769	0.0802
+INI25062	Mean FA in corticospinal tract on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.1699	0.0241	1.0649	1.0681	1.0084	0.007	0.1234	0.1029
+INI25066	Mean FA in inferior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2631	0.0266	1.0802	1.0974	1.0005	0.0063	0.0048	0.0652
+INI25068	Mean FA in superior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2969	0.0298	1.0864	1.1141	1.0104	0.0067	0.0909	0.0587
+INI25069	Mean FA in superior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2845	0.0303	1.0802	1.1121	1.0106	0.0066	0.0944	0.0588
+INI25071	Mean FA in cerebral peduncle on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2527	0.031	1.0833	1.1028	1.0076	0.0069	0.0736	0.0671
+INI25072	Mean FA in anterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2916	0.0285	1.0895	1.1159	1.0072	0.0064	0.0621	0.0553
+INI25073	Mean FA in anterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2593	0.0296	1.0833	1.1129	1.0149	0.0065	0.1315	0.0579
+INI25074	Mean FA in posterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2618	0.0269	1.0802	1.1003	1.0136	0.006	0.1357	0.0596
+INI25075	Mean FA in posterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2391	0.026	1.0802	1.0981	1.0189	0.0056	0.1927	0.0568
+INI25076	Mean FA in retrolenticular part of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2585	0.026	1.071	1.0939	1.0027	0.0055	0.0291	0.0586
+INI25077	Mean FA in retrolenticular part of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2251	0.0256	1.0679	1.0814	1.0068	0.006	0.0834	0.0731
+INI25080	Mean FA in superior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2738	0.028	1.0802	1.0974	1.0067	0.0059	0.0683	0.061
+INI25081	Mean FA in superior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2676	0.0278	1.0741	1.0976	1.0048	0.0057	0.049	0.0587
+INI25084	Mean FA in posterior thalamic radiation on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.311	0.0311	1.0895	1.1181	1.0013	0.0063	0.0112	0.0534
+INI25085	Mean FA in posterior thalamic radiation on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3169	0.031	1.0864	1.1152	1.0008	0.0067	0.0071	0.0585
+INI25086	Mean FA in sagittal stratum on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2715	0.0301	1.0741	1.0946	1.0066	0.0061	0.0703	0.0647
+INI25087	Mean FA in sagittal stratum on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2672	0.0301	1.0679	1.0863	1.0052	0.0066	0.0601	0.0763
+INI25088	Mean FA in external capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2722	0.0289	1.0802	1.0982	1.0126	0.006	0.1288	0.0615
+INI25090	Mean FA in cingulum cingulate gyrus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2833	0.0293	1.0864	1.1082	1.0105	0.0066	0.0971	0.0606
+INI25091	Mean FA in cingulum cingulate gyrus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2819	0.0303	1.0864	1.1087	1.0152	0.0065	0.1401	0.0595
+INI25092	Mean FA in cingulum hippocampus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2113	0.0263	1.0618	1.0775	1.0077	0.0059	0.0998	0.0763
+INI25093	Mean FA in cingulum hippocampus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2255	0.027	1.0588	1.0698	0.9963	0.0061	<0	usually_indicates_GC_correction
+INI25094	Mean FA in fornix cres+stria terminalis on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2231	0.0284	1.071	1.09	1.0124	0.0063	0.1375	0.0703
+INI25096	Mean FA in superior longitudinal fasciculus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2869	0.0291	1.1019	1.1211	1.0192	0.0061	0.1589	0.05
+INI25097	Mean FA in superior longitudinal fasciculus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2771	0.0302	1.0895	1.1112	1.0185	0.0063	0.1668	0.0571
+INI25098	Mean FA in superior fronto-occipital fasciculus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2924	0.025	1.071	1.0997	0.9956	0.0062	<0	usually_indicates_GC_correction
+INI25099	Mean FA in superior fronto-occipital fasciculus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2871	0.0289	1.0772	1.1132	1.0036	0.0062	0.0316	0.0548
+INI25100	Mean FA in uncinate fasciculus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2475	0.0276	1.0772	1.0949	1.009	0.0066	0.0949	0.0695
+INI25102	Mean FA in tapetum on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2885	0.027	1.0802	1.1038	0.9994	0.0064	<0	usually_indicates_GC_correction
+INI25103	Mean FA in tapetum on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3113	0.028	1.071	1.1053	0.9934	0.006	<0	usually_indicates_GC_correction
+INI25344	Mean ICVF in middle cerebellar peduncle on FA skeleton	Diffusion_brain_MRI	gaussian	0.3163	0.0349	1.0926	1.1213	1.007	0.0073	0.0577	0.0599
+INI25346	Mean ICVF in genu of corpus callosum on FA skeleton	Diffusion_brain_MRI	gaussian	0.4329	0.0401	1.1019	1.1711	1.003	0.0064	0.0173	0.0376
+INI25347	Mean ICVF in body of corpus callosum on FA skeleton	Diffusion_brain_MRI	gaussian	0.425	0.0439	1.1113	1.1807	1.0081	0.0068	0.0446	0.0378
+INI25349	Mean ICVF in fornix on FA skeleton	Diffusion_brain_MRI	gaussian	0.1665	0.023	1.0527	1.0689	1.0079	0.0061	0.1147	0.088
+INI25352	Mean ICVF in medial lemniscus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.144	0.0297	1.0466	1.0703	1.0109	0.0069	0.1557	0.0986
+INI25353	Mean ICVF in medial lemniscus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.1686	0.0284	1.0557	1.0696	1.0012	0.0073	0.0167	0.1047
+INI25354	Mean ICVF in inferior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.233	0.0308	1.0741	1.0888	1.0134	0.0067	0.1506	0.0758
+INI25355	Mean ICVF in inferior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2713	0.0296	1.0772	1.0884	1.0012	0.0066	0.0137	0.0751
+INI25356	Mean ICVF in superior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2836	0.0284	1.0772	1.0986	1.0064	0.0057	0.0648	0.0578
+INI25357	Mean ICVF in superior cerebellar peduncle on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3124	0.0296	1.0802	1.1084	1.0048	0.0059	0.0444	0.0546
+INI25358	Mean ICVF in cerebral peduncle on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2955	0.0357	1.071	1.1146	1.0047	0.0066	0.0406	0.0576
+INI25359	Mean ICVF in cerebral peduncle on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.362	0.0352	1.0772	1.1196	0.9959	0.0073	<0	usually_indicates_GC_correction
+INI25360	Mean ICVF in anterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3122	0.0349	1.0864	1.1412	1.0149	0.0072	0.1057	0.0507
+INI25361	Mean ICVF in anterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2962	0.0333	1.0864	1.1346	1.0153	0.007	0.1141	0.052
+INI25362	Mean ICVF in posterior limb of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.37	0.0372	1.0926	1.1574	1.0025	0.0065	0.0156	0.0415
+INI25363	Mean ICVF in posterior limb of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3643	0.0364	1.0957	1.1538	1.0053	0.0065	0.0346	0.042
+INI25364	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3756	0.0371	1.0988	1.1493	1.0027	0.0068	0.0182	0.0457
+INI25365	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.4073	0.0389	1.1019	1.1638	1.0017	0.0065	0.0106	0.0396
+INI25366	Mean ICVF in anterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.4102	0.038	1.1019	1.1656	1.005	0.0062	0.0299	0.0373
+INI25367	Mean ICVF in anterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.4119	0.0397	1.1082	1.1715	1.0062	0.0064	0.036	0.0373
+INI25368	Mean ICVF in superior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.4208	0.0411	1.105	1.1825	1.0047	0.0066	0.0255	0.0359
+INI25369	Mean ICVF in superior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.425	0.0404	1.1082	1.1796	1.0027	0.0067	0.015	0.0375
+INI25370	Mean ICVF in posterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3645	0.0358	1.0988	1.1508	1.0101	0.0071	0.0672	0.0474
+INI25371	Mean ICVF in posterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.4036	0.0391	1.1082	1.1719	1.0055	0.0072	0.0321	0.0421
+INI25372	Mean ICVF in posterior thalamic radiation on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3707	0.0414	1.0926	1.1599	1.0028	0.0072	0.0178	0.0451
+INI25373	Mean ICVF in posterior thalamic radiation on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3975	0.0378	1.0988	1.1611	1.0008	0.0066	0.0049	0.041
+INI25374	Mean ICVF in sagittal stratum on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.4077	0.0422	1.0957	1.1527	0.9993	0.0066	<0	usually_indicates_GC_correction
+INI25375	Mean ICVF in sagittal stratum on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3994	0.0373	1.0988	1.1474	1.0034	0.0065	0.0232	0.044
+INI25376	Mean ICVF in external capsule on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3095	0.0343	1.0957	1.1414	1.0147	0.0065	0.1037	0.0463
+INI25377	Mean ICVF in external capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3163	0.0316	1.0988	1.134	1.0115	0.0061	0.0856	0.0454
+INI25378	Mean ICVF in cingulum cingulate gyrus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3834	0.0349	1.0988	1.1671	1.0057	0.0059	0.0341	0.0356
+INI25379	Mean ICVF in cingulum cingulate gyrus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3742	0.0358	1.1019	1.1637	1.0098	0.0058	0.0601	0.0356
+INI25380	Mean ICVF in cingulum hippocampus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3068	0.0342	1.0864	1.123	1.0129	0.0071	0.105	0.058
+INI25381	Mean ICVF in cingulum hippocampus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3146	0.0325	1.0895	1.1191	1.0076	0.0067	0.0637	0.0566
+INI25382	Mean ICVF in fornix cres+stria terminalis on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2952	0.0331	1.0741	1.1098	1.0028	0.0068	0.0257	0.0617
+INI25383	Mean ICVF in fornix cres+stria terminalis on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3108	0.0336	1.0833	1.1166	1.0034	0.0069	0.0295	0.0588
+INI25384	Mean ICVF in superior longitudinal fasciculus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.3991	0.0387	1.1019	1.1721	1.0107	0.0061	0.0619	0.0353
+INI25385	Mean ICVF in superior longitudinal fasciculus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.4024	0.0398	1.1082	1.1709	1.012	0.0061	0.0702	0.0354
+INI25386	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2938	0.0327	1.0833	1.1366	1.0023	0.0065	0.0167	0.0476
+INI25387	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2954	0.0376	1.0833	1.1356	1.0035	0.007	0.0258	0.0513
+INI25388	Mean ICVF in uncinate fasciculus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2991	0.0284	1.0895	1.11	1.0046	0.0064	0.0421	0.058
+INI25389	Mean ICVF in uncinate fasciculus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.3012	0.0294	1.0864	1.1097	1.0029	0.0066	0.0264	0.0601
+INI25391	Mean ICVF in tapetum on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2367	0.038	1.0679	1.1041	1.0034	0.0068	0.0328	0.0649
+INI25443	Mean ISOVF in body of corpus callosum on FA skeleton	Diffusion_brain_MRI	gaussian	0.2228	0.0226	1.0649	1.0688	0.9983	0.0055	<0	usually_indicates_GC_correction
+INI25445	Mean ISOVF in fornix on FA skeleton	Diffusion_brain_MRI	gaussian	0.2387	0.0299	1.0618	1.0805	1.0037	0.0068	0.0459	0.0848
+INI25452	Mean ISOVF in superior cerebellar peduncle on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.1882	0.026	1.0557	1.0715	1.0044	0.0062	0.0614	0.0865
+INI25462	Mean ISOVF in anterior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.2141	0.0325	1.0557	1.0791	0.9997	0.0065	<0	usually_indicates_GC_correction
+INI25463	Mean ISOVF in anterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2199	0.0365	1.0557	1.0804	0.9971	0.007	<0	usually_indicates_GC_correction
+INI25464	Mean ISOVF in superior corona radiata on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.1573	0.0305	1.0345	1.0496	0.9944	0.0066	<0	usually_indicates_GC_correction
+INI25465	Mean ISOVF in superior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.1932	0.0337	1.0466	1.0649	0.9951	0.007	<0	usually_indicates_GC_correction
+INI25467	Mean ISOVF in posterior corona radiata on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2235	0.0316	1.0588	1.0776	0.9961	0.0062	<0	usually_indicates_GC_correction
+INI25469	Mean ISOVF in posterior thalamic radiation on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2045	0.0326	1.0618	1.0782	1.0037	0.0067	0.0475	0.0851
+INI25470	Mean ISOVF in sagittal stratum on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.1959	0.0288	1.0588	1.0745	1.0074	0.0066	0.0993	0.0884
+INI25471	Mean ISOVF in sagittal stratum on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.1678	0.0293	1.0527	1.06	1.0015	0.0064	0.0249	0.1068
+INI25473	Mean ISOVF in external capsule on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.2268	0.0269	1.0588	1.0724	0.9986	0.0063	<0	usually_indicates_GC_correction
+INI25474	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (R)	Diffusion_brain_MRI	gaussian	0.1791	0.0274	1.0496	1.0613	0.9991	0.0064	<0	usually_indicates_GC_correction
+INI25475	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (L)	Diffusion_brain_MRI	gaussian	0.1497	0.0276	1.0496	1.0625	1.0067	0.0065	0.1075	0.104
+INI25488	WA FA in tract acoustic radiation (L)	Diffusion_brain_MRI	gaussian	0.174	0.025	1.0649	1.0716	1.0155	0.0062	0.216	0.0863
+INI25489	WA FA in tract acoustic radiation (R)	Diffusion_brain_MRI	gaussian	0.2041	0.0264	1.0588	1.069	1.0049	0.0063	0.0706	0.0907
+INI25490	WA FA in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.243	0.0276	1.0833	1.1105	1.0164	0.0059	0.1489	0.0532
+INI25491	WA FA in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.282	0.0278	1.0833	1.1095	1.0062	0.0063	0.0568	0.0572
+INI25492	WA FA in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.1737	0.0267	1.071	1.0794	1.0196	0.0063	0.247	0.079
+INI25493	WA FA in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.2047	0.0299	1.0649	1.0907	1.0131	0.0065	0.1442	0.0716
+INI25497	WA FA in tract corticospinal tract (R)	Diffusion_brain_MRI	gaussian	0.2302	0.0238	1.0679	1.0824	1.0034	0.0054	0.041	0.066
+INI25498	WA FA in tract forceps major	Diffusion_brain_MRI	gaussian	0.2528	0.0327	1.071	1.1057	1.0069	0.0061	0.0651	0.0579
+INI25499	WA FA in tract forceps minor	Diffusion_brain_MRI	gaussian	0.3323	0.0389	1.0864	1.1476	1.009	0.0071	0.0612	0.0483
+INI25500	WA FA in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2783	0.0306	1.0802	1.1118	1.0114	0.0062	0.1018	0.0557
+INI25501	WA FA in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.3405	0.0304	1.0895	1.1202	1.0016	0.0064	0.0137	0.0534
+INI25502	WA FA in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2802	0.0292	1.0772	1.1091	1.0116	0.0061	0.1062	0.0557
+INI25503	WA FA in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.3075	0.0294	1.0895	1.1179	1.0109	0.0059	0.0927	0.0498
+INI25507	WA FA in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2661	0.0277	1.0772	1.0956	1.0012	0.0057	0.0128	0.0596
+INI25508	WA FA in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.274	0.0335	1.0772	1.1137	1.0018	0.006	0.016	0.0532
+INI25509	WA FA in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.3489	0.0303	1.0988	1.1346	1.0078	0.006	0.0578	0.0444
+INI25513	WA FA in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2451	0.0262	1.0772	1.0842	1.0025	0.0062	0.0296	0.0741
+INI25514	WA FA in tract uncinate fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2503	0.026	1.0802	1.0945	1.0071	0.0061	0.0756	0.0642
+INI25516	WA MD in tract acoustic radiation (R)	Diffusion_brain_MRI	gaussian	0.1582	0.0267	1.0527	1.0668	1.0089	0.0068	0.1325	0.1016
+INI25517	WA MD in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2196	0.0296	1.0649	1.0964	1.0084	0.0059	0.087	0.0615
+INI25519	WA MD in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.2649	0.0278	1.0679	1.0986	0.9946	0.0056	<0	usually_indicates_GC_correction
+INI25520	WA MD in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.2522	0.027	1.0679	1.0951	1.0012	0.0062	0.0126	0.0648
+INI25525	WA MD in tract forceps major	Diffusion_brain_MRI	gaussian	0.1984	0.0253	1.0649	1.0739	1.0083	0.0062	0.1123	0.0841
+INI25526	WA MD in tract forceps minor	Diffusion_brain_MRI	gaussian	0.2401	0.0358	1.0772	1.1098	1.0152	0.0073	0.1386	0.0663
+INI25527	WA MD in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2683	0.0303	1.0772	1.1209	1.0175	0.0063	0.1446	0.0517
+INI25528	WA MD in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2996	0.0344	1.0772	1.1226	1.0048	0.0064	0.0391	0.0524
+INI25529	WA MD in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2527	0.0324	1.0802	1.1127	1.0194	0.0066	0.1717	0.0584
+INI25530	WA MD in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2507	0.0356	1.0772	1.1141	1.0156	0.0068	0.1372	0.0592
+INI25536	WA MD in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.3337	0.039	1.0926	1.1522	1.0156	0.0066	0.1028	0.0432
+INI25538	WA MD in tract superior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2125	0.0358	1.071	1.106	1.0141	0.0067	0.1333	0.0637
+INI25539	WA MD in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2366	0.0315	1.071	1.1042	1.0039	0.0058	0.0375	0.056
+INI25540	WA MD in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.1931	0.0301	1.0618	1.0867	1.0121	0.0066	0.1392	0.0764
+INI25541	WA MD in tract uncinate fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2535	0.0275	1.0741	1.1036	1.0047	0.006	0.0453	0.0578
+INI25553	WA MO in tract forceps minor	Diffusion_brain_MRI	gaussian	0.2667	0.0303	1.0833	1.1018	1.0082	0.0067	0.0804	0.0661
+INI25558	WA MO in tract middle cerebellar peduncle	Diffusion_brain_MRI	gaussian	0.1659	0.0236	1.0466	1.0514	0.9988	0.0059	<0	usually_indicates_GC_correction
+INI25560	WA MO in tract medial lemniscus (R)	Diffusion_brain_MRI	gaussian	0.1968	0.0254	1.0618	1.0687	1.0069	0.0065	0.0998	0.0949
+INI25561	WA MO in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.1149	0.0298	1.0405	1.0478	1.0125	0.0067	0.2604	0.1408
+INI25562	WA MO in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.1416	0.0264	1.0496	1.051	1.0065	0.0061	0.1277	0.1202
+INI25563	WA MO in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.1847	0.0249	1.0527	1.0646	1.003	0.0066	0.047	0.102
+INI25566	WA MO in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2627	0.0271	1.0802	1.1001	1.0109	0.006	0.1089	0.0598
+INI25580	WA L1 in tract forceps minor	Diffusion_brain_MRI	gaussian	0.2231	0.0269	1.071	1.0856	1.0115	0.0067	0.1349	0.0783
+INI25581	WA L1 in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2233	0.0281	1.0772	1.102	1.0193	0.0068	0.1889	0.0662
+INI25582	WA L1 in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2209	0.0303	1.0741	1.0988	1.0113	0.0069	0.1146	0.0696
+INI25583	WA L1 in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2199	0.0296	1.0802	1.0981	1.0178	0.0066	0.1813	0.0672
+INI25584	WA L1 in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.1981	0.0328	1.0741	1.0987	1.0189	0.0068	0.1912	0.0685
+INI25590	WA L1 in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2941	0.0345	1.0833	1.1285	1.0119	0.0067	0.0927	0.0519
+INI25591	WA L1 in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2536	0.031	1.0864	1.1178	1.0162	0.0063	0.1378	0.0535
+INI25592	WA L1 in tract superior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2509	0.0326	1.0802	1.1057	1.0068	0.007	0.0642	0.0662
+INI25593	WA L1 in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2803	0.028	1.0772	1.1098	0.9979	0.006	<0	usually_indicates_GC_correction
+INI25594	WA L1 in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.1641	0.0292	1.0527	1.0735	1.0088	0.0069	0.1191	0.0935
+INI25597	WA L2 in tract acoustic radiation (R)	Diffusion_brain_MRI	gaussian	0.1465	0.0271	1.0527	1.0603	1.0109	0.0069	0.1814	0.115
+INI25598	WA L2 in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.236	0.0304	1.071	1.1059	1.0096	0.006	0.0908	0.0565
+INI25599	WA L2 in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2696	0.0311	1.0679	1.1013	0.9968	0.0063	<0	usually_indicates_GC_correction
+INI25600	WA L2 in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.2424	0.0254	1.071	1.1002	1.01	0.006	0.0998	0.0595
+INI25601	WA L2 in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.2544	0.026	1.0741	1.1026	1.007	0.0061	0.0683	0.0597
+INI25606	WA L2 in tract forceps major	Diffusion_brain_MRI	gaussian	0.2067	0.0268	1.0649	1.0824	1.0097	0.0062	0.1172	0.075
+INI25607	WA L2 in tract forceps minor	Diffusion_brain_MRI	gaussian	0.2648	0.0435	1.0833	1.129	1.0146	0.0079	0.1135	0.0614
+INI25608	WA L2 in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2689	0.0292	1.0833	1.1144	1.0135	0.0059	0.1177	0.052
+INI25609	WA L2 in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.3227	0.0322	1.0802	1.1203	1.0007	0.0062	0.006	0.0515
+INI25610	WA L2 in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2422	0.0295	1.0772	1.103	1.017	0.0065	0.1654	0.0629
+INI25611	WA L2 in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2491	0.0318	1.0802	1.106	1.0143	0.0064	0.135	0.0607
+INI25617	WA L2 in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.3345	0.0365	1.0926	1.149	1.0141	0.0063	0.0948	0.0426
+INI25619	WA L2 in tract superior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2127	0.0292	1.071	1.1	1.0153	0.0063	0.1526	0.0627
+INI25621	WA L2 in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2183	0.0295	1.071	1.0913	1.0097	0.0067	0.1068	0.0735
+INI25622	WA L2 in tract uncinate fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2686	0.029	1.0802	1.1112	1.0049	0.0061	0.0437	0.0549
+INI25624	WA L3 in tract acoustic radiation (R)	Diffusion_brain_MRI	gaussian	0.1799	0.0261	1.0527	1.0676	1.0043	0.0067	0.0634	0.0984
+INI25625	WA L3 in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2203	0.0294	1.0679	1.1	1.0115	0.0059	0.1155	0.0594
+INI25626	WA L3 in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2556	0.031	1.0679	1.0981	1.0004	0.0063	0.0038	0.0641
+INI25627	WA L3 in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.2158	0.027	1.0741	1.0946	1.0119	0.0061	0.1257	0.0644
+INI25628	WA L3 in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.2237	0.0276	1.071	1.0969	1.0109	0.0063	0.1121	0.0646
+INI25634	WA L3 in tract forceps minor	Diffusion_brain_MRI	gaussian	0.2634	0.0386	1.0802	1.1219	1.0145	0.0074	0.1188	0.0607
+INI25635	WA L3 in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.281	0.0296	1.0864	1.1217	1.015	0.006	0.1237	0.0495
+INI25636	WA L3 in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.3291	0.0335	1.0864	1.1285	1.0032	0.0064	0.0248	0.0498
+INI25637	WA L3 in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2708	0.0324	1.0833	1.1185	1.019	0.0064	0.1607	0.0542
+INI25638	WA L3 in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2848	0.0354	1.0833	1.1236	1.0142	0.0066	0.115	0.0535
+INI25644	WA L3 in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.3475	0.0367	1.0957	1.149	1.012	0.0062	0.0804	0.0419
+INI25646	WA L3 in tract superior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.2081	0.0334	1.071	1.1054	1.0189	0.0066	0.1792	0.0628
+INI25647	WA L3 in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2274	0.0285	1.0741	1.1035	1.01	0.0054	0.0967	0.0521
+INI25648	WA L3 in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.1987	0.0274	1.0741	1.085	1.0119	0.0062	0.1405	0.0733
+INI25649	WA L3 in tract uncinate fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2568	0.0253	1.0772	1.1001	1.0053	0.0058	0.053	0.0577
+INI25650	WA ICVF in tract acoustic radiation (L)	Diffusion_brain_MRI	gaussian	0.3446	0.0363	1.1019	1.1528	1.0156	0.0065	0.1019	0.0428
+INI25651	WA ICVF in tract acoustic radiation (R)	Diffusion_brain_MRI	gaussian	0.3235	0.0381	1.0926	1.1455	1.015	0.0069	0.103	0.0472
+INI25652	WA ICVF in tract anterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.3548	0.042	1.0988	1.1595	1.0131	0.0068	0.0822	0.0424
+INI25653	WA ICVF in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.3422	0.0393	1.0926	1.1523	1.0135	0.0067	0.0889	0.0442
+INI25654	WA ICVF in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.3252	0.0328	1.0957	1.1476	1.0152	0.0061	0.1031	0.0413
+INI25655	WA ICVF in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.3094	0.0337	1.0926	1.147	1.0164	0.0065	0.1117	0.0443
+INI25656	WA ICVF in tract parahippocampal part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.2456	0.0297	1.0679	1.0956	1.0098	0.0063	0.103	0.066
+INI25657	WA ICVF in tract parahippocampal part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.2165	0.0309	1.071	1.0892	1.0131	0.007	0.1469	0.0784
+INI25658	WA ICVF in tract corticospinal tract (L)	Diffusion_brain_MRI	gaussian	0.3564	0.0365	1.0988	1.1483	1.0042	0.0064	0.0285	0.043
+INI25659	WA ICVF in tract corticospinal tract (R)	Diffusion_brain_MRI	gaussian	0.3692	0.0397	1.0926	1.1563	1.0009	0.0068	0.0057	0.0436
+INI25660	WA ICVF in tract forceps major	Diffusion_brain_MRI	gaussian	0.3429	0.0452	1.0895	1.1618	1.0096	0.0067	0.0595	0.0415
+INI25661	WA ICVF in tract forceps minor	Diffusion_brain_MRI	gaussian	0.4226	0.0415	1.1019	1.179	1.0077	0.0064	0.0432	0.0357
+INI25662	WA ICVF in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.4113	0.0392	1.1113	1.1666	1.0086	0.006	0.0517	0.0359
+INI25663	WA ICVF in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.4088	0.0423	1.105	1.1676	1.0071	0.0064	0.0426	0.038
+INI25664	WA ICVF in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.4038	0.0377	1.105	1.1615	1.0082	0.006	0.0511	0.0369
+INI25665	WA ICVF in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.3827	0.0407	1.1019	1.1574	1.0093	0.0066	0.059	0.042
+INI25666	WA ICVF in tract middle cerebellar peduncle	Diffusion_brain_MRI	gaussian	0.2492	0.0295	1.0772	1.0907	1.0034	0.0065	0.0371	0.0715
+INI25667	WA ICVF in tract medial lemniscus (L)	Diffusion_brain_MRI	gaussian	0.252	0.0326	1.0772	1.1007	1.0054	0.0072	0.0535	0.0716
+INI25668	WA ICVF in tract medial lemniscus (R)	Diffusion_brain_MRI	gaussian	0.2147	0.0295	1.0679	1.084	1.0085	0.007	0.1014	0.0828
+INI25669	WA ICVF in tract posterior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.3994	0.0386	1.0988	1.1613	1.0032	0.0065	0.0196	0.0403
+INI25670	WA ICVF in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.3839	0.0441	1.1019	1.1656	1.0049	0.0071	0.0294	0.0428
+INI25671	WA ICVF in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.4157	0.0424	1.1113	1.1794	1.0113	0.0063	0.0628	0.0352
+INI25672	WA ICVF in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.4069	0.0414	1.1019	1.1789	1.0108	0.0062	0.0603	0.0347
+INI25673	WA ICVF in tract superior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.3707	0.0394	1.1019	1.1628	1.0085	0.0067	0.0521	0.0409
+INI25674	WA ICVF in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.3753	0.0418	1.105	1.1775	1.011	0.0063	0.0618	0.0357
+INI25675	WA ICVF in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.3414	0.0326	1.1019	1.1364	1.0077	0.0065	0.0564	0.0478
+INI25676	WA ICVF in tract uncinate fasciculus (R)	Diffusion_brain_MRI	gaussian	0.35	0.0322	1.0988	1.1405	1.0067	0.0061	0.048	0.0433
+INI25685	WA OD in tract corticospinal tract (L)	Diffusion_brain_MRI	gaussian	0.2205	0.0268	1.0741	1.0862	1.0117	0.0061	0.1353	0.0706
+INI25692	WA OD in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.1667	0.0276	1.0649	1.073	1.0108	0.0069	0.1482	0.095
+INI25694	WA OD in tract medial lemniscus (L)	Diffusion_brain_MRI	gaussian	0.2217	0.0274	1.0679	1.0839	1.0075	0.0064	0.0889	0.0766
+INI25698	WA OD in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2453	0.0283	1.0741	1.0895	1.0056	0.0074	0.0628	0.083
+INI25699	WA OD in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2462	0.0285	1.0772	1.096	1.0122	0.007	0.1268	0.0732
+INI25701	WA OD in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.3211	0.0303	1.0864	1.1156	1.0038	0.0063	0.0332	0.0547
+INI25704	WA ISOVF in tract acoustic radiation (L)	Diffusion_brain_MRI	gaussian	0.1133	0.0224	1.0345	1.0413	1.0029	0.006	0.0693	0.1446
+INI25705	WA ISOVF in tract acoustic radiation (R)	Diffusion_brain_MRI	gaussian	0.1325	0.0242	1.0466	1.0559	1.0096	0.0061	0.172	0.109
+INI25707	WA ISOVF in tract anterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.2059	0.0266	1.0436	1.0542	0.9859	0.0063	<0	usually_indicates_GC_correction
+INI25708	WA ISOVF in tract cingulate gyrus part of cingulum (L)	Diffusion_brain_MRI	gaussian	0.1602	0.0249	1.0405	1.0562	0.9989	0.006	<0	usually_indicates_GC_correction
+INI25709	WA ISOVF in tract cingulate gyrus part of cingulum (R)	Diffusion_brain_MRI	gaussian	0.1755	0.0239	1.0436	1.0588	0.9985	0.0064	<0	usually_indicates_GC_correction
+INI25716	WA ISOVF in tract inferior fronto-occipital fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2451	0.0327	1.0618	1.086	1.0004	0.0068	0.0042	0.079
+INI25717	WA ISOVF in tract inferior fronto-occipital fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2721	0.0292	1.071	1.0878	0.9966	0.0062	<0	usually_indicates_GC_correction
+INI25718	WA ISOVF in tract inferior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2511	0.0311	1.0679	1.0877	1.0001	0.0064	0.0012	0.0735
+INI25719	WA ISOVF in tract inferior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.27	0.0312	1.0649	1.0948	1.001	0.0063	0.011	0.0667
+INI25724	WA ISOVF in tract posterior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.127	0.0262	1.0496	1.0562	1.0143	0.0068	0.2536	0.1205
+INI25725	WA ISOVF in tract superior longitudinal fasciculus (L)	Diffusion_brain_MRI	gaussian	0.2891	0.0393	1.0741	1.1102	1.0005	0.0075	0.0047	0.0685
+INI25726	WA ISOVF in tract superior longitudinal fasciculus (R)	Diffusion_brain_MRI	gaussian	0.2415	0.0321	1.0679	1.0893	1.0069	0.0069	0.0768	0.0776
+INI25727	WA ISOVF in tract superior thalamic radiation (L)	Diffusion_brain_MRI	gaussian	0.1721	0.0279	1.0557	1.0626	1.0051	0.0065	0.0808	0.1032
+INI25728	WA ISOVF in tract superior thalamic radiation (R)	Diffusion_brain_MRI	gaussian	0.181	0.0283	1.0496	1.0553	0.9953	0.0059	<0	usually_indicates_GC_correction
+INI25729	WA ISOVF in tract uncinate fasciculus (L)	Diffusion_brain_MRI	gaussian	0.1343	0.0264	1.0436	1.0578	1.0089	0.0067	0.1536	0.1165
+INI25730	WA ISOVF in tract uncinate fasciculus (R)	Diffusion_brain_MRI	gaussian	0.1784	0.0254	1.0557	1.0637	1.0025	0.0064	0.039	0.1005
+INI21025	Freq. of discomfort/pain in abdomen in last 3 months	Digestive_health	gaussian	0.0505	0.0057	1.0895	1.0995	1.0182	0.0067	0.1834	0.0673
+INI21044	Ave. # of times bowels opened per day	Digestive_health	gaussian	0.0644	0.0053	1.0957	1.118	1.013	0.0058	0.1103	0.0493
+INI21049	Degree bothered by pain in arms/legs/joints in the past 3 months	Digestive_health	gaussian	0.0555	0.0059	1.0895	1.1003	1.0178	0.0061	0.1773	0.0609
+INI21051	Degree bothered by headaches in the last 3 months	Digestive_health	gaussian	0.0449	0.0056	1.071	1.0898	1.0074	0.0066	0.0827	0.073
+INI21058	Degree bothered by urinary frequency/bladder irritability in the last 3 months	Digestive_health	gaussian	0.0569	0.0066	1.0833	1.1172	1.0049	0.0065	0.0422	0.0555
+INI21060	Degree bothered by feeling tired all the time in the last 3 months	Digestive_health	gaussian	0.0699	0.0054	1.0957	1.1091	1.0016	0.0059	0.0145	0.054
+INI20022	Birth weight	Early_life_factors	gaussian	0.1094	0.0064	1.1908	1.2824	1.029	0.0077	0.1027	0.0274
+QT_FC1001687	Comparative body size at age 10	Early_life_factors	gaussian	0.1253	0.0086	1.3546	1.6085	1.0435	0.0091	0.0714	0.0149
+QT_FC1001697	Comparative height size at age 10	Early_life_factors	gaussian	0.2294	0.0115	1.4998	2.1327	1.099	0.0123	0.0874	0.0109
+INI12340	QRS duration	ECG_at_rest,_12-lead	gaussian	0.1657	0.0258	1.0436	1.0659	1.0049	0.0064	0.075	0.0971
+INI22330	PQ interval	ECG_at_rest,_12-lead	gaussian	0.2337	0.0438	1.0405	1.0492	1.0018	0.0066	0.0359	0.1335
+INI22331	QT interval	ECG_at_rest,_12-lead	gaussian	0.1153	0.0428	1.0195	1.031	1.0067	0.0074	0.2167	0.2378
+INI22332	QTC interval	ECG_at_rest,_12-lead	gaussian	0.1965	0.0384	1.0405	1.0515	1.0019	0.0063	0.0376	0.1231
+INI5084	Spherical power (R)	Eye_measures	gaussian	0.3027	0.0155	1.2234	1.3432	1.0259	0.0068	0.0755	0.0197
+INI5085	Spherical power (L)	Eye_measures	gaussian	0.2987	0.0151	1.2168	1.3413	1.0274	0.0068	0.0802	0.0199
+INI5096	3mm weak meridian (L)	Eye_measures	gaussian	0.3377	0.0197	1.2201	1.3801	1.0384	0.0091	0.1011	0.024
+INI5097	6mm weak meridian (L)	Eye_measures	gaussian	0.3663	0.0203	1.2005	1.3488	1.0319	0.0084	0.0915	0.024
+INI5098	6mm weak meridian (R)	Eye_measures	gaussian	0.3525	0.0207	1.2005	1.3434	1.039	0.0087	0.1136	0.0254
+INI5099	3mm weak meridian (R)	Eye_measures	gaussian	0.3359	0.0202	1.2168	1.3789	1.0413	0.0093	0.109	0.0246
+INI5104	3mm strong meridian angle (L)	Eye_measures	gaussian	0.0553	0.0081	1.0618	1.0668	1.011	0.0063	0.165	0.0945
+INI5113	6mm cylindrical power angle (L)	Eye_measures	gaussian	0.0357	0.008	1.0195	1.0255	0.9955	0.0059	<0	usually_indicates_GC_correction
+INI5116	3mm cylindrical power (R)	Eye_measures	gaussian	0.0742	0.0087	1.0679	1.0792	1.0051	0.0059	0.065	0.074
+INI5132	3mm strong meridian (R)	Eye_measures	gaussian	0.3254	0.02	1.2103	1.3669	1.0413	0.0087	0.1126	0.0237
+INI5133	6mm strong meridian (R)	Eye_measures	gaussian	0.3565	0.0213	1.2005	1.3423	1.0369	0.0088	0.1077	0.0257
+INI5134	6mm strong meridian (L)	Eye_measures	gaussian	0.3629	0.0207	1.1973	1.3442	1.0329	0.0086	0.0955	0.0249
+INI5135	3mm strong meridian (L)	Eye_measures	gaussian	0.3188	0.0198	1.2005	1.361	1.0397	0.0094	0.1101	0.0259
+INI5254	Intra-ocular pressure, corneal-compensated (R)	Eye_measures	gaussian	0.14	0.0108	1.1175	1.1608	1.0158	0.0066	0.0983	0.0408
+INI5255	Intra-ocular pressure, Goldmann-correlated (R)	Eye_measures	gaussian	0.1822	0.0139	1.1523	1.2209	1.0355	0.007	0.1607	0.0319
+INI5256	Corneal hysteresis (R)	Eye_measures	gaussian	0.1746	0.0139	1.1207	1.1924	1.0258	0.0076	0.134	0.0397
+INI5257	Corneal resistance factor (R)	Eye_measures	gaussian	0.2159	0.0181	1.1491	1.2497	1.0444	0.0088	0.178	0.0352
+INI5262	Intra-ocular pressure, corneal-compensated (L)	Eye_measures	gaussian	0.1587	0.0105	1.1238	1.1652	1.001	0.0062	0.0058	0.0374
+INI5263	Intra-ocular pressure, Goldmann-correlated (L)	Eye_measures	gaussian	0.2123	0.014	1.1491	1.2196	1.0102	0.0073	0.0466	0.0335
+INI5264	Corneal hysteresis (L)	Eye_measures	gaussian	0.1827	0.0144	1.1207	1.1954	1.014	0.0069	0.0716	0.0353
+INI5265	Corneal resistance factor (L)	Eye_measures	gaussian	0.2268	0.0177	1.1428	1.2414	1.0248	0.0079	0.1029	0.0328
+INI1807	Father's age at death	Family_history	gaussian	0.027	0.0032	1.1019	1.1145	1.0255	0.0066	0.2227	0.0574
+INI46	Hand grip strength (L)	Hand_grip_strength	gaussian	0.1024	0.0043	1.3581	1.5309	1.0744	0.0088	0.1401	0.0166
+INI47	Hand grip strength (R)	Hand_grip_strength	gaussian	0.1085	0.0046	1.3581	1.5375	1.0634	0.0089	0.1179	0.0165
+INI2217	Age started wearing glasses or contact lenses	Health_and_medical_history	gaussian	0.0659	0.0033	1.2038	1.2712	1.0213	0.0066	0.0783	0.0243
+INI2966	Age high BP diagnosed	Health_and_medical_history	gaussian	0.0517	0.008	1.0618	1.0705	1.0132	0.0066	0.1869	0.0933
+INI2976	Age diabetes diagnosed	Health_and_medical_history	gaussian	0.3104	0.2073	1.0225	1.0909	0.9878	0.0099	<0	usually_indicates_GC_correction
+INI3761	Age hay fever, rhinitis or eczema diagnosed	Health_and_medical_history	gaussian	0.1132	0.0189	1.0864	1.1234	1.0153	0.0078	0.124	0.0636
+INI3786	Age asthma diagnosed	Health_and_medical_history	gaussian	0.1516	0.0394	1.0527	1.0921	1.0161	0.0076	0.1749	0.0823
+QT_FC1002178	Overall health rating	Health_and_medical_history	gaussian	0.0884	0.0035	1.3169	1.4124	1.0515	0.0076	0.125	0.0184
+QT_FC1002296	Falls in the last year	Health_and_medical_history	gaussian	0.0287	0.0023	1.105	1.1162	1.0012	0.0066	0.0102	0.0572
+QT_FC1004803	Tinnitus severity	Health_and_medical_history	gaussian	0.0539	0.0055	1.0988	1.1182	1.0163	0.0066	0.1376	0.056
+INI22420	LV ejection fraction	Heart_MRI	gaussian	0.1666	0.0294	1.0466	1.0614	0.9985	0.0064	<0	usually_indicates_GC_correction
+INI22423	LV stroke volume	Heart_MRI	gaussian	0.1994	0.0243	1.0649	1.0775	1.0052	0.006	0.0672	0.0768
+INI22426	Ave. heart rate	Heart_MRI	gaussian	0.1569	0.0233	1.0527	1.0574	1.0031	0.0065	0.0545	0.1124
+INI22427	Body surface area	Heart_MRI	gaussian	0.3068	0.0305	1.0833	1.1116	1.0031	0.0066	0.0276	0.0591
+INI134	# of self-reported cancers	Medical_conditions	gaussian	0.0097	0.0019	1.0315	1.0446	1.0034	0.0059	0.0754	0.1326
+INI135	# of self-reported non-cancer illnesses	Medical_conditions	gaussian	0.073	0.0038	1.2831	1.371	1.0554	0.0083	0.1494	0.0224
+INI87	Non-cancer illness year/age first occurred	Medical_conditions	gaussian	0.0185	0.0035	1.0649	1.0783	1.0149	0.0065	0.1899	0.0835
+INI137	# of medications taken	Medications	gaussian	0.0825	0.0046	1.2865	1.4178	1.0385	0.0078	0.0921	0.0187
+INI20414	Freq. of drinking alcohol	Mental_health	gaussian	0.0809	0.0076	1.0957	1.1122	1.0001	0.0067	0.0008	0.0601
+INI20453	Ever taken cannabis	Mental_health	gaussian	0.0766	0.0069	1.1019	1.1276	1.0066	0.0063	0.0521	0.0495
+INI1003063	FEV FVC ratio	Others	gaussian	0.2024	0.0085	1.529	2.0272	1.1124	0.0113	0.1094	0.011
+INI1003064	PEF pred. ratio	Others	gaussian	0.0932	0.0051	1.2899	1.5015	1.0538	0.0084	0.1074	0.0167
+QT_FC1002060	Freq. of unenthusiasm / disinterest in last 2 weeks	Psychosocial_factors	gaussian	0.037	0.0025	1.1428	1.1768	1.0131	0.0068	0.074	0.0384
+QT_FC1002080	Freq. of tiredness / lethargy in last 2 weeks	Psychosocial_factors	gaussian	0.054	0.0033	1.1973	1.2562	1.0205	0.0079	0.08	0.031
+QT_FC1004548	Health satisfaction	Psychosocial_factors	gaussian	0.0692	0.0057	1.105	1.124	1.0104	0.0068	0.0839	0.0546
+QT_FC1004570	Friendships satisfaction	Psychosocial_factors	gaussian	0.0593	0.0053	1.0833	1.0989	1.0006	0.0064	0.0058	0.0648
+INI3062	FVC	Spirometry	gaussian	0.2026	0.0085	1.529	2.0274	1.1121	0.0112	0.1091	0.0109
+INI3063	FEV1	Spirometry	gaussian	0.1743	0.0075	1.4673	1.9124	1.0902	0.0111	0.0989	0.0122
+INI3064	PEF	Spirometry	gaussian	0.0932	0.0051	1.2899	1.5013	1.0538	0.0084	0.1073	0.0167
+INI25027	Median T2star in thalamus (R)	Susceptibility_weighted_brain_MRI	gaussian	0.1096	0.0287	1.0315	1.0455	1.0073	0.0057	0.1598	0.1258
+INI25028	Median T2star in caudate (L)	Susceptibility_weighted_brain_MRI	gaussian	0.2519	0.0406	1.0496	1.0836	0.9966	0.0066	<0	usually_indicates_GC_correction
+INI25029	Median T2star in caudate (R)	Susceptibility_weighted_brain_MRI	gaussian	0.2777	0.0418	1.0527	1.0936	0.9967	0.0067	<0	usually_indicates_GC_correction
+INI25030	Median T2star in putamen (L)	Susceptibility_weighted_brain_MRI	gaussian	0.3619	0.0491	1.0772	1.1495	1.0043	0.0064	0.0291	0.0426
+INI25031	Median T2star in putamen (R)	Susceptibility_weighted_brain_MRI	gaussian	0.3954	0.0491	1.0741	1.1473	0.9954	0.0068	<0	usually_indicates_GC_correction
+INI25032	Median T2star in pallidum (L)	Susceptibility_weighted_brain_MRI	gaussian	0.281	0.0429	1.0741	1.1093	1.0128	0.0072	0.117	0.0657
+INI25033	Median T2star in pallidum (R)	Susceptibility_weighted_brain_MRI	gaussian	0.3063	0.0434	1.071	1.1144	1.0075	0.0071	0.0654	0.0618
+INI25000	Volumetric scaling from T1 head image to standard space	T1_structural_brain_MRI	gaussian	0.3568	0.0328	1.1144	1.1684	1.0222	0.0061	0.1318	0.0364
+INI25001	Vol. of peripheral cortical grey matter (normalised for head size)	T1_structural_brain_MRI	gaussian	0.267	0.0281	1.0895	1.1057	1.0123	0.0065	0.1165	0.0612
+INI25002	Vol. of peripheral cortical grey matter	T1_structural_brain_MRI	gaussian	0.3171	0.0341	1.1019	1.1488	1.0194	0.0067	0.1306	0.0451
+INI25003	Vol. of ventricular cerebrospinal fluid (normalised for head size)	T1_structural_brain_MRI	gaussian	0.2543	0.0314	1.0741	1.0986	1.0118	0.0071	0.1193	0.0718
+INI25004	Vol. of ventricular cerebrospinal fluid	T1_structural_brain_MRI	gaussian	0.2613	0.0313	1.0772	1.1037	1.0146	0.007	0.1406	0.0671
+INI25005	Vol. of grey matter (normalised for head size)	T1_structural_brain_MRI	gaussian	0.2558	0.0265	1.0802	1.1022	1.012	0.0061	0.1178	0.0598
+INI25006	Vol. of grey matter	T1_structural_brain_MRI	gaussian	0.3159	0.0345	1.0957	1.153	1.0182	0.0068	0.1189	0.0447
+INI25007	Vol. of white matter (normalised for head size)	T1_structural_brain_MRI	gaussian	0.256	0.0293	1.0895	1.1282	1.0224	0.0068	0.1744	0.0528
+INI25008	Vol. of white matter	T1_structural_brain_MRI	gaussian	0.348	0.032	1.105	1.1777	1.0175	0.0065	0.0982	0.0365
+INI25009	Vol. of brain, grey+white matter (normalised for head size)	T1_structural_brain_MRI	gaussian	0.2397	0.0287	1.0864	1.1152	1.0256	0.0065	0.2226	0.0568
+INI25010	Vol. of brain, grey+white matter	T1_structural_brain_MRI	gaussian	0.3429	0.0341	1.1019	1.1755	1.0202	0.0066	0.1148	0.0376
+INI25011	Vol. of thalamus (L)	T1_structural_brain_MRI	gaussian	0.2531	0.0339	1.0802	1.1319	1.0223	0.0072	0.1695	0.055
+INI25012	Vol. of thalamus (R)	T1_structural_brain_MRI	gaussian	0.2661	0.0334	1.0833	1.1348	1.0204	0.0071	0.1516	0.0526
+INI25013	Vol. of caudate (L)	T1_structural_brain_MRI	gaussian	0.315	0.0338	1.0864	1.1264	1.0143	0.0074	0.1128	0.0582
+INI25014	Vol. of caudate (R)	T1_structural_brain_MRI	gaussian	0.3423	0.0316	1.0895	1.1277	1.0101	0.0065	0.0791	0.0513
+INI25015	Vol. of putamen (L)	T1_structural_brain_MRI	gaussian	0.2541	0.0313	1.0864	1.1069	1.015	0.0067	0.1403	0.0626
+INI25016	Vol. of putamen (R)	T1_structural_brain_MRI	gaussian	0.2888	0.0323	1.0926	1.1202	1.0142	0.0071	0.118	0.059
+INI25017	Vol. of pallidum (L)	T1_structural_brain_MRI	gaussian	0.235	0.0292	1.0679	1.0959	1.0049	0.0064	0.051	0.0669
+INI25018	Vol. of pallidum (R)	T1_structural_brain_MRI	gaussian	0.2582	0.0311	1.071	1.1087	0.9998	0.0068	<0	usually_indicates_GC_correction
+INI25019	Vol. of hippocampus (L)	T1_structural_brain_MRI	gaussian	0.1477	0.0259	1.0496	1.0573	1.0053	0.0068	0.0932	0.1189
+INI25023	Vol. of accumbens (L)	T1_structural_brain_MRI	gaussian	0.1546	0.0269	1.0496	1.0762	1.0109	0.0067	0.1425	0.0885
+INI25024	Vol. of accumbens (R)	T1_structural_brain_MRI	gaussian	0.167	0.0239	1.0527	1.0709	1.0025	0.0063	0.0354	0.0888
+INI25025	Vol. of brain stem + 4th ventricle	T1_structural_brain_MRI	gaussian	0.2862	0.0329	1.0895	1.1414	1.0163	0.0066	0.1152	0.0467
+INI25782	Vol. of grey matter in Frontal Pole (L)	T1_structural_brain_MRI	gaussian	0.2368	0.0296	1.0802	1.107	1.0144	0.007	0.1347	0.0658
+INI25784	Vol. of grey matter in Insular Cortex (L)	T1_structural_brain_MRI	gaussian	0.3122	0.0312	1.1019	1.1226	1.0178	0.0069	0.1451	0.0566
+INI25785	Vol. of grey matter in Insular Cortex (R)	T1_structural_brain_MRI	gaussian	0.2914	0.0307	1.0957	1.1202	1.0203	0.0066	0.1685	0.0546
+INI25786	Vol. of grey matter in Superior Frontal Gyrus (L)	T1_structural_brain_MRI	gaussian	0.1908	0.0235	1.0557	1.0673	1.0026	0.0059	0.0391	0.0876
+INI25787	Vol. of grey matter in Superior Frontal Gyrus (R)	T1_structural_brain_MRI	gaussian	0.1681	0.025	1.0557	1.0628	1.0051	0.0065	0.0813	0.1038
+INI25788	Vol. of grey matter in Middle Frontal Gyrus (L)	T1_structural_brain_MRI	gaussian	0.2297	0.0273	1.0833	1.0988	1.0102	0.0064	0.1033	0.0649
+INI25789	Vol. of grey matter in Middle Frontal Gyrus (R)	T1_structural_brain_MRI	gaussian	0.2216	0.0318	1.0802	1.1024	1.011	0.0067	0.1076	0.065
+INI25791	Vol. of grey matter in Inferior Frontal Gyrus, pars triangularis (R)	T1_structural_brain_MRI	gaussian	0.1001	0.0215	1.0345	1.0379	1.0011	0.0059	0.0291	0.1552
+INI25794	Vol. of grey matter in Precentral Gyrus (L)	T1_structural_brain_MRI	gaussian	0.1869	0.0263	1.071	1.0923	1.0156	0.0062	0.1687	0.0667
+INI25795	Vol. of grey matter in Precentral Gyrus (R)	T1_structural_brain_MRI	gaussian	0.2353	0.0244	1.0679	1.0776	0.9965	0.0064	<0	usually_indicates_GC_correction
+INI25796	Vol. of grey matter in Temporal Pole (L)	T1_structural_brain_MRI	gaussian	0.2066	0.0259	1.0741	1.0882	1.0133	0.0069	0.1505	0.0785
+INI25797	Vol. of grey matter in Temporal Pole (R)	T1_structural_brain_MRI	gaussian	0.1819	0.0242	1.071	1.0843	1.0194	0.0058	0.2307	0.0684
+INI25798	Vol. of grey matter in Superior Temporal Gyrus, anterior division (L)	T1_structural_brain_MRI	gaussian	0.1385	0.0253	1.0527	1.0638	1.0124	0.0058	0.1943	0.0904
+INI25800	Vol. of grey matter in Superior Temporal Gyrus, posterior division (L)	T1_structural_brain_MRI	gaussian	0.1623	0.031	1.0557	1.0695	1.0077	0.0071	0.1114	0.1025
+INI25805	Vol. of grey matter in Middle Temporal Gyrus, posterior division (R)	T1_structural_brain_MRI	gaussian	0.1763	0.0271	1.0679	1.0792	1.0144	0.0062	0.1819	0.0777
+INI25810	Vol. of grey matter in Inferior Temporal Gyrus, posterior division (L)	T1_structural_brain_MRI	gaussian	0.1914	0.0276	1.0679	1.0915	1.0052	0.0072	0.0572	0.0784
+INI25825	Vol. of grey matter in Lateral Occipital Cortex, superior division (R)	T1_structural_brain_MRI	gaussian	0.1809	0.0244	1.0466	1.0699	1	0.0063	0.0006	0.0894
+INI25827	Vol. of grey matter in Lateral Occipital Cortex, inferior division (R)	T1_structural_brain_MRI	gaussian	0.1568	0.0257	1.0557	1.0681	1.0077	0.0067	0.1134	0.0983
+INI25828	Vol. of grey matter in Intracalcarine Cortex (L)	T1_structural_brain_MRI	gaussian	0.3059	0.0254	1.0895	1.126	1.0124	0.006	0.0985	0.0479
+INI25829	Vol. of grey matter in Intracalcarine Cortex (R)	T1_structural_brain_MRI	gaussian	0.2946	0.0275	1.0864	1.1379	1.0187	0.0066	0.1358	0.0478
+INI25834	Vol. of grey matter in Subcallosal Cortex (L)	T1_structural_brain_MRI	gaussian	0.3026	0.0308	1.0957	1.1276	1.0135	0.0067	0.1062	0.0522
+INI25835	Vol. of grey matter in Subcallosal Cortex (R)	T1_structural_brain_MRI	gaussian	0.3025	0.0302	1.0895	1.1213	1.0132	0.0064	0.1089	0.0528
+INI25837	Vol. of grey matter in Paracingulate Gyrus (R)	T1_structural_brain_MRI	gaussian	0.2045	0.0307	1.0679	1.0886	1.0048	0.0068	0.0541	0.0764
+INI25838	Vol. of grey matter in Cingulate Gyrus, anterior division (L)	T1_structural_brain_MRI	gaussian	0.1969	0.0247	1.0649	1.0793	1.0051	0.0061	0.064	0.077
+INI25839	Vol. of grey matter in Cingulate Gyrus, anterior division (R)	T1_structural_brain_MRI	gaussian	0.188	0.0247	1.0588	1.0783	1.0059	0.006	0.0752	0.0771
+INI25841	Vol. of grey matter in Cingulate Gyrus, posterior division (R)	T1_structural_brain_MRI	gaussian	0.2383	0.0283	1.0833	1.1094	1.0153	0.0065	0.1397	0.0594
+INI25842	Vol. of grey matter in Precuneous Cortex (L)	T1_structural_brain_MRI	gaussian	0.2597	0.0274	1.0772	1.1049	1.0085	0.0059	0.0811	0.0563
+INI25845	Vol. of grey matter in Cuneal Cortex (R)	T1_structural_brain_MRI	gaussian	0.1875	0.0252	1.0588	1.0772	1.0086	0.0065	0.1109	0.0841
+INI25846	Vol. of grey matter in Frontal Orbital Cortex (L)	T1_structural_brain_MRI	gaussian	0.1988	0.0269	1.071	1.0897	1.0168	0.0065	0.1869	0.0728
+INI25847	Vol. of grey matter in Frontal Orbital Cortex (R)	T1_structural_brain_MRI	gaussian	0.1979	0.0259	1.0741	1.0865	1.0161	0.0064	0.1865	0.0735
+INI25848	Vol. of grey matter in Parahippocampal Gyrus, anterior division (L)	T1_structural_brain_MRI	gaussian	0.1986	0.025	1.0588	1.0752	1.0057	0.0064	0.0764	0.0852
+INI25849	Vol. of grey matter in Parahippocampal Gyrus, anterior division (R)	T1_structural_brain_MRI	gaussian	0.1796	0.0255	1.0618	1.0791	1.0151	0.0066	0.1906	0.0834
+INI25850	Vol. of grey matter in Parahippocampal Gyrus, posterior division (L)	T1_structural_brain_MRI	gaussian	0.2056	0.029	1.0588	1.0717	1.0054	0.0066	0.075	0.0926
+INI25851	Vol. of grey matter in Parahippocampal Gyrus, posterior division (R)	T1_structural_brain_MRI	gaussian	0.223	0.0268	1.0649	1.0894	1.0076	0.0068	0.0845	0.0762
+INI25853	Vol. of grey matter in Lingual Gyrus (R)	T1_structural_brain_MRI	gaussian	0.2525	0.0286	1.0833	1.1217	1.0078	0.0062	0.064	0.0509
+INI25854	Vol. of grey matter in Temporal Fusiform Cortex, anterior division (L)	T1_structural_brain_MRI	gaussian	0.2031	0.0302	1.0527	1.0854	0.9979	0.0068	<0	usually_indicates_GC_correction
+INI25856	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (L)	T1_structural_brain_MRI	gaussian	0.2836	0.0293	1.0833	1.1204	1.0011	0.007	0.0094	0.058
+INI25857	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (R)	T1_structural_brain_MRI	gaussian	0.2256	0.0276	1.0802	1.1122	1.0127	0.0065	0.1132	0.0579
+INI25860	Vol. of grey matter in Occipital Fusiform Gyrus (L)	T1_structural_brain_MRI	gaussian	0.1821	0.0233	1.0557	1.0749	1.0059	0.0057	0.0794	0.0766
+INI25862	Vol. of grey matter in Frontal Operculum Cortex (L)	T1_structural_brain_MRI	gaussian	0.1607	0.0254	1.0588	1.0689	1.0087	0.0065	0.1258	0.0942
+INI25864	Vol. of grey matter in Central Opercular Cortex (L)	T1_structural_brain_MRI	gaussian	0.2225	0.0281	1.0772	1.1113	1.0115	0.0066	0.1034	0.0595
+INI25865	Vol. of grey matter in Central Opercular Cortex (R)	T1_structural_brain_MRI	gaussian	0.2318	0.025	1.071	1.1027	1.0092	0.0061	0.0899	0.0598
+INI25867	Vol. of grey matter in Parietal Operculum Cortex (R)	T1_structural_brain_MRI	gaussian	0.2075	0.0287	1.0772	1.1018	1.0137	0.0065	0.1344	0.0642
+INI25868	Vol. of grey matter in Planum Polare (L)	T1_structural_brain_MRI	gaussian	0.2069	0.0283	1.0741	1.1081	1.0175	0.0064	0.1623	0.059
+INI25869	Vol. of grey matter in Planum Polare (R)	T1_structural_brain_MRI	gaussian	0.2195	0.0274	1.0802	1.1155	1.0156	0.006	0.1349	0.0519
+INI25870	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (L)	T1_structural_brain_MRI	gaussian	0.2309	0.026	1.0741	1.1167	1.0129	0.0065	0.1106	0.0559
+INI25871	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (R)	T1_structural_brain_MRI	gaussian	0.2589	0.03	1.0741	1.1053	1.0035	0.007	0.0336	0.0665
+INI25872	Vol. of grey matter in Planum Temporale (L)	T1_structural_brain_MRI	gaussian	0.1889	0.0251	1.0588	1.0788	1.0096	0.0061	0.1212	0.0775
+INI25874	Vol. of grey matter in Supracalcarine Cortex (L)	T1_structural_brain_MRI	gaussian	0.2028	0.0251	1.0679	1.0837	1.0098	0.0063	0.1166	0.0756
+INI25875	Vol. of grey matter in Supracalcarine Cortex (R)	T1_structural_brain_MRI	gaussian	0.1766	0.0252	1.0679	1.0889	1.0178	0.0063	0.1998	0.0708
+INI25877	Vol. of grey matter in Occipital Pole (R)	T1_structural_brain_MRI	gaussian	0.2158	0.0243	1.0741	1.0884	1.0121	0.0063	0.1369	0.0709
+INI25878	Vol. of grey matter in Thalamus (L)	T1_structural_brain_MRI	gaussian	0.278	0.0305	1.0926	1.1205	1.0107	0.007	0.0889	0.0581
+INI25879	Vol. of grey matter in Thalamus (R)	T1_structural_brain_MRI	gaussian	0.2796	0.0291	1.0926	1.1114	1.01	0.0073	0.0897	0.0655
+INI25882	Vol. of grey matter in Putamen (L)	T1_structural_brain_MRI	gaussian	0.2966	0.0316	1.0833	1.1106	1.0067	0.0062	0.0603	0.0561
+INI25883	Vol. of grey matter in Putamen (R)	T1_structural_brain_MRI	gaussian	0.2707	0.0338	1.0833	1.1114	1.0144	0.0063	0.1298	0.0567
+INI25886	Vol. of grey matter in Hippocampus (L)	T1_structural_brain_MRI	gaussian	0.3093	0.0288	1.0895	1.1154	1.0035	0.0062	0.0302	0.0537
+INI25887	Vol. of grey matter in Hippocampus (R)	T1_structural_brain_MRI	gaussian	0.2759	0.0312	1.0926	1.1251	1.014	0.0064	0.1122	0.051
+INI25888	Vol. of grey matter in Amygdala (L)	T1_structural_brain_MRI	gaussian	0.1813	0.025	1.071	1.0816	1.0159	0.0059	0.1946	0.0726
+INI25890	Vol. of grey matter in Ventral Striatum (L)	T1_structural_brain_MRI	gaussian	0.2612	0.0342	1.0679	1.1155	1.0107	0.0062	0.0922	0.0538
+INI25891	Vol. of grey matter in Ventral Striatum (R)	T1_structural_brain_MRI	gaussian	0.232	0.0344	1.0679	1.1018	1.0158	0.0064	0.1549	0.0624
+INI25892	Vol. of grey matter in Brain-Stem	T1_structural_brain_MRI	gaussian	0.2268	0.0282	1.0772	1.0965	1.0101	0.0064	0.105	0.0667
+INI25893	Vol. of grey matter in I-IV Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.2238	0.0264	1.071	1.0981	1.0148	0.0061	0.1508	0.0625
+INI25894	Vol. of grey matter in I-IV Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2356	0.028	1.071	1.1008	1.0114	0.0062	0.1133	0.0618
+INI25895	Vol. of grey matter in V Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.2579	0.0257	1.0772	1.1013	1.0108	0.0064	0.1063	0.0631
+INI25896	Vol. of grey matter in V Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2568	0.0259	1.0772	1.1056	1.0112	0.0061	0.1064	0.0579
+INI25897	Vol. of grey matter in VI Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.2346	0.0259	1.0772	1.114	1.0185	0.0064	0.1622	0.0561
+INI25898	Vol. of grey matter in Vermis VI Cerebellum	T1_structural_brain_MRI	gaussian	0.2816	0.0291	1.0802	1.108	1.0015	0.0065	0.0136	0.0604
+INI25899	Vol. of grey matter in VI Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2539	0.0264	1.0772	1.1164	1.0141	0.0063	0.1212	0.0537
+INI25902	Vol. of grey matter in Crus I Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2883	0.0284	1.0926	1.1201	1.0173	0.0061	0.1444	0.0509
+INI25903	Vol. of grey matter in Crus II Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.29	0.0305	1.0895	1.1447	1.0158	0.0058	0.1091	0.0401
+INI25904	Vol. of grey matter in Vermis Crus II Cerebellum	T1_structural_brain_MRI	gaussian	0.2292	0.0271	1.0741	1.097	1.015	0.0067	0.155	0.0695
+INI25905	Vol. of grey matter in Crus II Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.3097	0.033	1.0833	1.1437	1.0115	0.0061	0.0798	0.0426
+INI25906	Vol. of grey matter in VIIb Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.2705	0.0265	1.0802	1.1276	1.0098	0.0058	0.0765	0.0458
+INI25907	Vol. of grey matter in Vermis VIIb Cerebellum	T1_structural_brain_MRI	gaussian	0.2394	0.0277	1.0772	1.1058	1.0104	0.0064	0.0979	0.0608
+INI25908	Vol. of grey matter in VIIb Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2636	0.0287	1.0864	1.1323	1.0167	0.0062	0.1264	0.0472
+INI25909	Vol. of grey matter in VIIIa Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.214	0.0252	1.0679	1.1082	1.0135	0.006	0.1251	0.0559
+INI25910	Vol. of grey matter in Vermis VIIIa Cerebellum	T1_structural_brain_MRI	gaussian	0.2565	0.0275	1.0802	1.1048	1.0101	0.006	0.0964	0.0571
+INI25911	Vol. of grey matter in VIIIa Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2047	0.0263	1.0772	1.1153	1.0184	0.0061	0.1598	0.0532
+INI25912	Vol. of grey matter in VIIIb Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.2236	0.0244	1.0741	1.1041	1.0123	0.0061	0.1178	0.0588
+INI25913	Vol. of grey matter in Vermis VIIIb Cerebellum	T1_structural_brain_MRI	gaussian	0.2745	0.0273	1.0833	1.1076	1.0074	0.0059	0.0691	0.0544
+INI25914	Vol. of grey matter in VIIIb Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2198	0.026	1.0679	1.1079	1.0102	0.006	0.0944	0.0558
+INI25915	Vol. of grey matter in IX Cerebellum (L)	T1_structural_brain_MRI	gaussian	0.2332	0.0278	1.0802	1.1082	1.0214	0.0066	0.198	0.0612
+INI25916	Vol. of grey matter in Vermis IX Cerebellum	T1_structural_brain_MRI	gaussian	0.2344	0.0318	1.071	1.0953	1.0115	0.0066	0.1204	0.0691
+INI25917	Vol. of grey matter in IX Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2311	0.028	1.0833	1.1123	1.0241	0.0067	0.2147	0.0594
+INI25919	Vol. of grey matter in Vermis X Cerebellum	T1_structural_brain_MRI	gaussian	0.2256	0.0287	1.0649	1.0855	1.005	0.0065	0.0586	0.0756
+INI25920	Vol. of grey matter in X Cerebellum (R)	T1_structural_brain_MRI	gaussian	0.2593	0.031	1.0741	1.1057	1.0005	0.0076	0.0045	0.0717
+INI25781	Total vol. of white matter hyperintensities (from T1 and T2 FLAIR images)	T2-weighted_brain_MRI	gaussian	0.2708	0.0284	1.0772	1.1049	1.0016	0.0064	0.0155	0.0607
+INI22146	Age hayfever or allergic rhinitis diagnosed by doctor	Work_environment	gaussian	0.1539	0.0406	1.0315	1.0432	1.0017	0.0059	0.0398	0.1357
