@@ -11,6 +11,7 @@ suppressWarnings(suppressPackageStartupMessages({
 
 ####################################################################
 source(file.path(dirname(script.name), 'paths.sh'))
+devtools::load_all(dirname(dirname(snpnet_helper)))
 source(snpnet_helper)
 source(fPRS_helper)
 ####################################################################

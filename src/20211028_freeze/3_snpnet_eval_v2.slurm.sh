@@ -6,7 +6,7 @@ SRCDIR=$(dirname ${SRCNAME})
 
 slurm_log_d=${SRCDIR}/slurm_logs
 slurm_job_name=$(basename ${SRCNAME%.slurm.sh})
-job_list_sh=${slurm_log_d}/${slurm_job_name}.jobs.sh
+job_list_sh=${slurm_log_d}/${slurm_job_name}.jobs.$(date +%Y%m%d-%H%M%S).sh
 batch_size=1 # the number of jobs executed in an array task in SLURM.
 sbatch_resources_str='-p mrivas --qos=high_p --nodes=1 --mem=12000 --cores=1 --time=2:00:00'
 
