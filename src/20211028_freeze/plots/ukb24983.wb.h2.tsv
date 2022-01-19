@@ -1,0 +1,9 @@
+#trait	trait_name	h2_obs	h2_obs_se	intercept	intercept_se
+HC702	TTE disorders of porphyrin and bilirubin metabolism	0.0166	0.0114	0.9877	0.0064
+BIN_FC1001747	Hair colour (natural, before greying) blonde	0.1307	0.029	1.0556	0.0125
+BIN_FC2001747	Hair colour (natural, before greying) red	0.1097	0.0949	1.014	0.0111
+BIN_FC4001747	Hair colour (natural, before greying) dark brown	0.1542	0.044	1.0538	0.0119
+BIN_FC5001747	Hair colour (natural, before greying) black	0.0678	0.02	1.0313	0.01
+INI21001	BMI	0.2221	0.0096	1.0671	0.0116
+INI30790	Lipoprotein A	0.1038	0.0964	1.0151	0.0109
+INI30840	Total bilirubin	0.1841	0.1006	1.0364	0.0114

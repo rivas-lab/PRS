@@ -22,6 +22,12 @@ GBE_category_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-
 # icdinfo file
 icdinfo_f='/oak/stanford/groups/mrivas/users/ytanigaw/repos/rivas-lab/ukbb-tools/05_gbe/array-combined/icdinfo.white_british.txt'
 
+# variant annotation
+ukb24983_var_annot_f="/oak/stanford/groups/mrivas/ukbb24983/array-combined/annotation/annotation_20201012/ukb24983_cal_hla_cnv.annot_compact_20201023.tsv.gz"
+
+# GWAS
+ukb24983_cal_gwas_d="/oak/stanford/groups/mrivas/ukbb24983/array-combined/gwas/current"
+
 # GWAS h2 file (heritability)
 GWAS_h2_f='/oak/stanford/groups/mrivas/ukbb24983/array-combined/ldsc/h2.white_british.20211101.tsv'
 
