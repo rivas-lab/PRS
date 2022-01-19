@@ -809,13 +809,13 @@ def snpnet_page_v2(namespace, icd_str):
         # order of the predictive performance metric
         metric_order_df = pandas.DataFrame({
             'metric': [
-                'r2', 'auc', 'TjurR2', 'NagelkerkeR2'
+                'r2', 'NagelkerkeR2', 'TjurR2', 'auc'
             ],
             'metric_plot': [
                 '<i>R</i><sup>2</sup>',
-                'ROC-AUC',
+                "Nagelkerke's pseudo-<i>R</i><sup>2</sup>",
                 "Tjur's pseudo-<i>R</i><sup>2</sup>",
-                "Cragg and Uhler's pseudo-<i>R</i><sup>2</sup>"
+                'ROC-AUC'
             ],
             'metric_order': range(4)
         })
@@ -1126,14 +1126,14 @@ def prs_page_v2():
             if col in df.columns:
                 # format to scientific notation
                 df[col] = df[col].map(lambda x: '{:0.1e}'.format(x))
-        for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
+        for col in ['pred_PRS', 'pred_covar', 'pred_full', 'pred_delta']:
             if col in df.columns:
                 # format digits
                 df[col] = df[col].map(lambda x: '{:0.3f}'.format(x))
 
         df = df[[
             'trait_category', 'trait_name', 'family',
-            'pred_geno', 'pred_covar', 'pred_full', 'pred_delta',
+            'pred_PRS', 'pred_covar', 'pred_full', 'pred_delta',
             'n_variables', 'WBtest_P', 'WBtest_is_significant'
         ]]
 
