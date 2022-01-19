@@ -4,6 +4,7 @@
 trait_list_f='traits.tsv'
 biomarkers_mapping_f='traits.biomarkers.tsv'
 eval_full_f='PRSmap.eval.tsv.gz'
+eval_fullwDelta_f='PRSmap.eval.wDelta.tsv.gz'
 traits_w_metrics_f='traits_w_metrics.tsv'
 
 # helper functions

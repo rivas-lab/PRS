@@ -1,0 +1,1566 @@
+trait_category	trait	trait_name	PGScatalog_ID	EFO_ID	EFO_label
+Cancer	cancer1001	Lung cancer			
+Cancer	cancer1002	Breast cancer	PGS001336	EFO_0000305	breast carcinoma
+Cancer	cancer1003	Skin cancer	PGS001041	EFO_0009259	skin carcinoma
+Cancer	cancer1005	Salivary gland cancer			
+Cancer	cancer1018	Stomach cancer			
+Cancer	cancer1024	Liver/hepatocellular cancer			
+Cancer	cancer1025	Gallbladder/bile duct cancer			
+Cancer	cancer1035	Bladder cancer			
+Cancer	cancer1037	Female genital tract cancer			
+Cancer	cancer1038	Male genital tract cancer	PGS001111	EFO_0007355	male reproductive organ cancer
+Cancer	cancer1041	Cervical cancer	PGS001299	EFO_0001061	cervical carcinoma
+Cancer	cancer1043	Vulval cancer			
+Cancer	cancer1044	Prostate cancer	PGS001291	EFO_0001663	prostate carcinoma
+Cancer	cancer1045	Testicular cancer	PGS001164	EFO_0005088	testicular carcinoma
+Cancer	cancer1059	Malignant melanoma	PGS001304	EFO_0000756	melanoma
+Cancer	cancer1060	Non-melanoma skin cancer	PGS001040	EFO_0009260	non-melanoma skin carcinoma
+Cancer	cancer1065	Thyroid cancer	PGS001289	EFO_0002892	thyroid carcinoma
+Cancer	cancer1068	Sarcoma/fibrosarcoma			
+Cancer	cancer1074	Acute myeloid leukaemia			
+Disease_outcome	HC1001	TTE acute nasopharyngitis [common cold]			
+Disease_outcome	HC1005	TTE acute laryngitis and tracheitis			
+Disease_outcome	HC1007	TTE acute upper respiratory infections of multiple and unspecified sites			
+Disease_outcome	HC1012	TTE pneumonia due to streptococcus pneumoniae			
+Disease_outcome	HC1013	TTE pneumonia due to haemophilus influenzae			
+Disease_outcome	HC1014	TTE bacterial pneumonia, not elsewhere classified			
+Disease_outcome	HC1017	TTE pneumonia, organism unspecified			
+Disease_outcome	HC102	Vertigo			
+Disease_outcome	HC1020	TTE unspecified acute lower respiratory infection	PGS000925	MONDO_0024355	respiratory tract infectious disease
+Disease_outcome	HC1021	TTE vasomotor and allergic rhinitis	PGS001109	EFO_0007533|EFO_0005854	vasomotor rhinitis|allergic rhinitis
+Disease_outcome	HC1023	TTE chronic sinusitis			
+Disease_outcome	HC1024	TTE nasal polyp	PGS000933	HP_0100582	Nasal polyposis
+Disease_outcome	HC1027	TTE peritonsillar abscess			
+Disease_outcome	HC1028	TTE chronic laryngitis and laryngotracheitis			
+Disease_outcome	HC1029	TTE diseases of vocal cords and larynx, not elsewhere classified			
+Disease_outcome	HC103	Thyroid goitre			
+Disease_outcome	HC1031	TTE bronchitis, not specified as acute or chronic			
+Disease_outcome	HC1033	TTE unspecified chronic bronchitis			
+Disease_outcome	HC1034	TTE emphysema			
+Disease_outcome	HC1035	TTE other chronic obstructive pulmonary disease	PGS001334	EFO_0000341	chronic obstructive pulmonary disease
+Disease_outcome	HC1036	TTE asthma	PGS001346	EFO_0000270	asthma
+Disease_outcome	HC1038	TTE bronchiectasis			
+Disease_outcome	HC1040	TTE pneumoconiosis due to asbestos and other mineral fibres			
+Disease_outcome	HC1047	TTE pneumonitis due to solids and liquids			
+Disease_outcome	HC1049	TTE adult respiratory distress syndrome			
+Disease_outcome	HC1050	TTE pulmonary oedema			
+Disease_outcome	HC1052	TTE other interstitial pulmonary diseases	PGS001251	EFO_0004244	interstitial lung disease
+Disease_outcome	HC1054	TTE pyothorax			
+Disease_outcome	HC1056	TTE pleural effusion in conditions classified elsewhere			
+Disease_outcome	HC106	Emphysema/chronic bronchitis			
+Disease_outcome	HC1063	TTE respiratory disorders in diseases classified elsewhere			
+Disease_outcome	HC1064	TTE disorders of tooth development and eruption			
+Disease_outcome	HC1069	TTE gingivitis and periodontal diseases			
+Disease_outcome	HC1070	TTE other disorders of gingiva and edentulous alveolar ridge			
+Disease_outcome	HC1071	TTE dentofacial anomalies [including malocclusion]			
+Disease_outcome	HC1072	TTE other disorders of teeth and supporting structures			
+Disease_outcome	HC1073	TTE cysts of oral region, not elsewhere classified			
+Disease_outcome	HC1084	TTE duodenal ulcer	PGS001390	EFO_0004607	duodenal ulcer
+Disease_outcome	HC1090	TTE acute appendicitis	PGS001369	EFO_0007149	appendicitis
+Disease_outcome	HC1094	TTE inguinal hernia	PGS000949	HP_0000023	Inguinal hernia
+Disease_outcome	HC1095	TTE femoral hernia			
+Disease_outcome	HC1096	TTE umbilical hernia			
+Disease_outcome	HC1098	TTE diaphragmatic hernia	PGS001050	EFO_0008561	diaphragmatic hernia
+Disease_outcome	HC110	Stroke			
+Disease_outcome	HC1101	TTE crohn's disease [regional enteritis]	PGS001330	EFO_0000384	Crohn's disease
+Disease_outcome	HC1102	TTE ulcerative colitis	PGS001307	EFO_0000729	ulcerative colitis
+Disease_outcome	HC1103	TTE other non-infective gastro-enteritis and colitis			
+Disease_outcome	HC1104	TTE vascular disorders of intestine			
+Disease_outcome	HC1106	TTE diverticular disease of intestine	PGS000997	EFO_0009959	diverticular disease
+Disease_outcome	HC1111	TTE other diseases of anus and rectum			
+Disease_outcome	HC1112	TTE other diseases of intestine	PGS001516	EFO_0009431	intestinal disease
+Disease_outcome	HC1117	TTE alcoholic liver disease			
+Disease_outcome	HC1119	TTE hepatic failure, not elsewhere classified			
+Disease_outcome	HC1120	TTE chronic hepatitis, not elsewhere classified			
+Disease_outcome	HC1121	TTE fibrosis and cirrhosis of liver			
+Disease_outcome	HC1122	TTE other inflammatory liver diseases			
+Disease_outcome	HC1123	TTE other diseases of liver	PGS001293	EFO_0001421	liver disease
+Disease_outcome	HC1125	TTE cholelithiasis	PGS001174	EFO_0004799	cholelithiasis
+Disease_outcome	HC1126	TTE cholecystitis	PGS000943	HP_0001082	Cholecystitis
+Disease_outcome	HC113	Irregular heart beat			
+Disease_outcome	HC1132	TTE intestinal malabsorption	PGS000940	HP_0002024	Malabsorption
+Disease_outcome	HC1139	TTE cellulitis			
+Disease_outcome	HC1141	TTE pilonidal cyst			
+Disease_outcome	HC1142	TTE other local infections of skin and subcutaneous tissue			
+Disease_outcome	HC1148	TTE atopic dermatitis			
+Disease_outcome	HC1149	TTE seborrhoeic dermatitis			
+Disease_outcome	HC1152	TTE irritant contact dermatitis			
+Disease_outcome	HC1157	TTE pruritus			
+Disease_outcome	HC1158	TTE other dermatitis	PGS000927	MONDO_0002406	dermatitis
+Disease_outcome	HC1159	TTE psoriasis	PGS001313	EFO_0000676	psoriasis
+Disease_outcome	HC1161	TTE pityriasis rosea			
+Disease_outcome	HC1162	TTE lichen planus			
+Disease_outcome	HC1167	TTE other erythematous conditions			
+Disease_outcome	HC1169	TTE sunburn			
+Disease_outcome	HC117	Abdominal hernia			
+Disease_outcome	HC1171	TTE skin changes due to chronic exposure to nonionising radiation	PGS000950	GO_0009314	response to radiation
+Disease_outcome	HC1176	TTE alopecia areata			
+Disease_outcome	HC1184	TTE follicular cysts of skin and subcutaneous tissue	PGS000963	EFO_1001329	Follicular Cyst
+Disease_outcome	HC1185	TTE other follicular disorders			
+Disease_outcome	HC1188	TTE vitiligo	PGS001536	EFO_0004208	Vitiligo
+Disease_outcome	HC1190	TTE seborrhoeic keratosis	PGS001140	EFO_0005584	seborrheic keratosis
+Disease_outcome	HC1197	TTE decubitus ulcer			
+Disease_outcome	HC12	Testicular problems (not cancer)			
+Disease_outcome	HC1200	TTE granulomatous disorders of skin and subcutaneous tissue			
+Disease_outcome	HC1207	TTE pyogenic arthritis			
+Disease_outcome	HC1209	TTE reactive arthropathies	PGS001110	EFO_0007460	reactive arthritis
+Disease_outcome	HC121	Peritonitis			
+Disease_outcome	HC1211	TTE seropositive rheumatoid arthritis	PGS001311	EFO_0000685	rheumatoid arthritis
+Disease_outcome	HC1212	TTE other rheumatoid arthritis	PGS001309	EFO_0000685	rheumatoid arthritis
+Disease_outcome	HC1213	TTE psoriatic and enteropathic arthropathies	PGS001522	HP_0003040	Arthropathy
+Disease_outcome	HC1215	TTE gout	PGS001249	EFO_0004274	gout
+Disease_outcome	HC1218	TTE other arthritis			
+Disease_outcome	HC122	Disorder or pituitary gland			
+Disease_outcome	HC1220	TTE polyarthrosis			
+Disease_outcome	HC1221	TTE coxarthrosis [arthrosis of hip]	PGS000967	EFO_1000786	osteoarthritis, hip
+Disease_outcome	HC1222	TTE gonarthrosis [arthrosis of knee]	PGS001192	EFO_0004616	osteoarthritis, knee
+Disease_outcome	HC1228	TTE internal derangement of knee	PGS001027	EFO_0009507	knee injury
+Disease_outcome	HC123	Muscle/soft tissue problem			
+Disease_outcome	HC1235	TTE systemic sclerosis			
+Disease_outcome	HC1236	TTE other systemic involvement of connective tissue	PGS000960	EFO_1001986	connective tissue disease
+Disease_outcome	HC124	Undescended testicle			
+Disease_outcome	HC1240	TTE spinal osteochondrosis			
+Disease_outcome	HC1242	TTE ankylosing spondylitis	PGS001268	EFO_0003898	ankylosing spondylitis
+Disease_outcome	HC1248	TTE other intervertebral disk disorders	PGS000932	MONDO_0000812	vertebral column disease
+Disease_outcome	HC125	Anaemia			
+Disease_outcome	HC1253	TTE other disorders of muscle			
+Disease_outcome	HC1257	TTE other disorders of synovium and tendon			
+Disease_outcome	HC1261	TTE fibroblastic disorders	PGS001031	EFO_0009432	fibroblastic disorder
+Disease_outcome	HC1268	TTE osteoporosis without pathological fracture	PGS001274	EFO_0003882	osteoporosis
+Disease_outcome	HC1271	TTE disorders of continuity of bone			
+Disease_outcome	HC1278	TTE juvenile osteochondrosis of hip and pelvis			
+Disease_outcome	HC128	Peripheral nerve disorder			
+Disease_outcome	HC1282	TTE other acquired deformities of musculoskeletal system and connective tissue			
+Disease_outcome	HC1289	TTE nephrotic syndrome			
+Disease_outcome	HC129	Muscle or soft tissue injuries			
+Disease_outcome	HC1295	TTE chronic tubulo-interstitial nephritis			
+Disease_outcome	HC1297	TTE obstructive and reflux uropathy			
+Disease_outcome	HC13	Lichen sclerosis			
+Disease_outcome	HC130	Housemaid's knee (prepatellar bursitis)			
+Disease_outcome	HC1302	TTE chronic renal failure	PGS001272	EFO_0003884	chronic kidney disease
+Disease_outcome	HC1304	TTE calculus of kidney and ureter	PGS001250	EFO_0004253|EFO_1001228	nephrolithiasis|ureterolithiasis
+Disease_outcome	HC1305	TTE calculus of lower urinary tract			
+Disease_outcome	HC1307	TTE unspecified renal colic			
+Disease_outcome	HC1313	TTE cystitis			
+Disease_outcome	HC132	Angina	PGS001260	EFO_0003913	angina pectoris
+Disease_outcome	HC1322	TTE hyperplasia of prostate	PGS001338	EFO_0000284	benign prostatic hyperplasia
+Disease_outcome	HC1324	TTE other disorders of prostate			
+Disease_outcome	HC1329	TTE redundant prepuce, phimosis and paraphimosis			
+Disease_outcome	HC133	Anal fissure			
+Disease_outcome	HC1334	TTE benign mammary dysplasia			
+Disease_outcome	HC134	Bone disorder			
+Disease_outcome	HC1341	TTE inflammatory disease of cervix uteri			
+Disease_outcome	HC1346	TTE vulvovaginal ulceration and inflammation in diseases classified elsewhere			
+Disease_outcome	HC135	Anxiety/panic attacks			
+Disease_outcome	HC1350	TTE noninflammatory disorders of ovary, fallopian tube and broad ligament			
+Disease_outcome	HC136	Connective tissue disorder	PGS000959	EFO_1001986	connective tissue disease
+Disease_outcome	HC1389	TTE maternal care for other conditions predominantly related to pregnancy			
+Disease_outcome	HC1398	TTE maternal care for other known or suspected foetal problems			
+Disease_outcome	HC1406	TTE false labour			
+Disease_outcome	HC1407	TTE prolonged pregnancy			
+Disease_outcome	HC1408	TTE preterm delivery			
+Disease_outcome	HC1410	TTE abnormalities of forces of labour			
+Disease_outcome	HC1417	TTE labour and delivery complicated by umbilical cord complications			
+Disease_outcome	HC142	Synovitis			
+Disease_outcome	HC143	Retinal problem			
+Disease_outcome	HC144	Chickenpox			
+Disease_outcome	HC146	Pleural effusion			
+Disease_outcome	HC151	Multiple sclerosis	PGS001270	EFO_0003885	multiple sclerosis
+Disease_outcome	HC1521	TTE other congenital malformations of tongue, mouth and pharynx			
+Disease_outcome	HC1522	TTE congenital malformations of oesophagus			
+Disease_outcome	HC153	Joint pain			
+Disease_outcome	HC1532	TTE undescended testicle			
+Disease_outcome	HC1540	TTE other congenital malformations of urinary system			
+Disease_outcome	HC1541	TTE congenital deformities of hip			
+Disease_outcome	HC155	Joint disorder			
+Disease_outcome	HC1550	TTE other congenital malformations of limb(s)			
+Disease_outcome	HC1552	TTE congenital malformations of spine and bony thorax			
+Disease_outcome	HC1558	TTE other congenital malformations of skin			
+Disease_outcome	HC156	Nasal polyps	PGS000934	HP_0100582	Nasal polyposis
+Disease_outcome	HC1563	TTE other specified congenital malformation syndromes affecting multiple systems			
+Disease_outcome	HC157	Jaundice (unknown cause)			
+Disease_outcome	HC1574	AD myocardial infarction	PGS001316	EFO_0000612	myocardial infarction
+Disease_outcome	HC1575	AD STEMI			
+Disease_outcome	HC1576	AD NSTEMI	PGS001048	EFO_0008586	Non-ST Elevation Myocardial Infarction
+Disease_outcome	HC158	Spine arthritis/spondylitis			
+Disease_outcome	HC1581	AD asthma	PGS001343	EFO_0000270	asthma
+Disease_outcome	HC1582	AD chronic obstructive pulmonary disease	PGS001333	EFO_0000341	chronic obstructive pulmonary disease
+Disease_outcome	HC1583	AD all cause dementia	PGS000929	MONDO_0001627	dementia (disease)
+Disease_outcome	HC1584	AD alzheimer's disease	PGS001348	EFO_0000249	Alzheimer's disease
+Disease_outcome	HC1585	AD vascular dementia			
+Disease_outcome	HC16	Rectal or colon adenoma/polyps			
+Disease_outcome	HC161	Prostatitis			
+Disease_outcome	HC163	Scleroderma/systemic sclerosis			
+Disease_outcome	HC165	Type 2 diabetes	PGS001295	EFO_0001360	type II diabetes mellitus
+Disease_outcome	HC166	DVT	PGS001264	EFO_0003907	deep vein thrombosis
+Disease_outcome	HC167	Raynaud's phenomenon/disease			
+Disease_outcome	HC169	Pernicious anaemia			
+Disease_outcome	HC17	Diabetic eye disease			
+Disease_outcome	HC170	Sarcoidosis	PGS000922	Orphanet_797	Sarcoidosis
+Disease_outcome	HC176	Prolapsed disc/slipped disc	PGS000964	EFO_1001317	Epiphyses, Slipped
+Disease_outcome	HC177	Dupuytren's contracture	PGS001254	EFO_0004229	Dupuytren Contracture
+Disease_outcome	HC178	Stress			
+Disease_outcome	HC182	Osteopenia			
+Disease_outcome	HC184	Aortic aneurysm rupture			
+Disease_outcome	HC188	Gallstones	PGS001256	EFO_0004210	gallstones
+Disease_outcome	HC195	Ureteric obstruction/hydronephrosis			
+Disease_outcome	HC197	Clotting disorder/excessive bleeding			
+Disease_outcome	HC198	Hyperparathyroidism			
+Disease_outcome	HC201	Ulcerative colitis	PGS001306	EFO_0000729	ulcerative colitis
+Disease_outcome	HC203	PE +/- DVT	PGS001277	EFO_0003827|EFO_0003907	pulmonary embolism|deep vein thrombosis
+Disease_outcome	HC205	Endometriosis			
+Disease_outcome	HC207	Soft tissue inflammation			
+Disease_outcome	HC210	Non-infective hepatitis			
+Disease_outcome	HC212	Oesophageal disorder			
+Disease_outcome	HC215	Hypertension	PGS001320	EFO_0000537	hypertension
+Disease_outcome	HC218	Motor neurone disease			
+Disease_outcome	HC219	Hypothyroidism/myxoedema	PGS000965	EFO_1001055|EFO_0004705	myxedema|hypothyroidism
+Disease_outcome	HC22	Osteoporosis	PGS001273	EFO_0003882	osteoporosis
+Disease_outcome	HC221	Diabetes	PGS001327	EFO_0000400	diabetes mellitus
+Disease_outcome	HC222	Arterial embolism			
+Disease_outcome	HC223	Fracture pelvis			
+Disease_outcome	HC225	Cholecystitis	PGS000942	HP_0001082	Cholecystitis
+Disease_outcome	HC231	Heart valve problem/heart murmur			
+Disease_outcome	HC232	Abnormal smear (cervix)			
+Disease_outcome	HC233	Mania/bipolar disorder/manic depression			
+Disease_outcome	HC237	Back problem			
+Disease_outcome	HC243	Inguinal hernia	PGS000948	HP_0000023	Inguinal hernia
+Disease_outcome	HC248	Allergy to house dust mite			
+Disease_outcome	HC25	Cataract	PGS001302	EFO_0001059	cataract
+Disease_outcome	HC250	Acute infective polyneuritis/guillain-barre syndrome			
+Disease_outcome	HC254	Uterine polyps			
+Disease_outcome	HC255	Subarachnoid haemorrhage			
+Disease_outcome	HC256	Fracture toe			
+Disease_outcome	HC257	Femoral hernia			
+Disease_outcome	HC259	Aortic stenosis			
+Disease_outcome	HC26	Iritis	PGS000966	EFO_1000997	iritis
+Disease_outcome	HC261	Eczema/dermatitis	PGS000944	HP_0000964|MONDO_0002406	Eczema|dermatitis
+Disease_outcome	HC262	Diverticular disease/diverticulitis	PGS000996	EFO_0009959|EFO_1001460	diverticular disease|diverticulitis
+Disease_outcome	HC267	Tennis elbow / lateral epicondylitis			
+Disease_outcome	HC268	Varicose ulcer			
+Disease_outcome	HC269	High cholesterol	PGS000936	HP_0003124	Hypercholesterolemia
+Disease_outcome	HC270	Encephalitis			
+Disease_outcome	HC271	Epicondylitis			
+Disease_outcome	HC273	Essential hypertension	PGS000958	EFO_1002032	primary hypertension
+Disease_outcome	HC274	Umbilical hernia			
+Disease_outcome	HC276	Glaucoma	PGS001322	EFO_0000516	glaucoma
+Disease_outcome	HC277	Menopausal symptoms / menopause			
+Disease_outcome	HC28	Bronchiectasis			
+Disease_outcome	HC281	Atrial fibrillation	PGS001340	EFO_0000275	atrial fibrillation
+Disease_outcome	HC284	Fracture nose			
+Disease_outcome	HC285	Other joint disorder			
+Disease_outcome	HC286	Plantar fascitis			
+Disease_outcome	HC288	Alopecia / hair loss			
+Disease_outcome	HC290	Fracture upper arm / humerus / elbow			
+Disease_outcome	HC294	Renal/kidney failure			
+Disease_outcome	HC298	Chronic sinusitis			
+Disease_outcome	HC299	Heart failure/pulmonary odema			
+Disease_outcome	HC3	Ectopic pregnancy			
+Disease_outcome	HC302	Retinal detachment	PGS001137	EFO_0005773	retinal detachment
+Disease_outcome	HC303	Malabsorption/coeliac disease	PGS001301	EFO_0001060	celiac disease
+Disease_outcome	HC307	Colitis/not crohns or ulcerative colitis			
+Disease_outcome	HC31	Uterine fibroids	PGS001032	EFO_0009410	uterine fibroid measurement
+Disease_outcome	HC310	Hiatus hernia	PGS000939	HP_0002036	Hiatus hernia
+Disease_outcome	HC312	Wegners granulmatosis			
+Disease_outcome	HC314	Fracture hand			
+Disease_outcome	HC316	Dyspepsia / indigestion			
+Disease_outcome	HC321	Sjogren's syndrome/sicca syndrome	PGS001308	EFO_0000699	Sjogren syndrome
+Disease_outcome	HC322	Crohns disease	PGS001331	EFO_0000384	Crohn's disease
+Disease_outcome	HC323	Head injury			
+Disease_outcome	HC324	Obsessive compulsive disorder (ocd)			
+Disease_outcome	HC326	Heart attack (MI)	PGS001315	EFO_0000612	myocardial infarction
+Disease_outcome	HC328	Gout	PGS001248	EFO_0004274	gout
+Disease_outcome	HC33	Spinal cord disorder			
+Disease_outcome	HC332	Post-traumatic stress disorder			
+Disease_outcome	HC337	Type 1 diabetes	PGS001297	EFO_0001359	type I diabetes mellitus
+Disease_outcome	HC338	Giant cell/temporal arteritis			
+Disease_outcome	HC340	Menorrhagia (unknown cause)			
+Disease_outcome	HC341	Fracture face / orbit / eye socket			
+Disease_outcome	HC346	Fibromyalgia			
+Disease_outcome	HC347	Blistering/desquamating skin disorder			
+Disease_outcome	HC348	Bell's palsy/facial nerve palsy			
+Disease_outcome	HC35	Sick sinus syndrome			
+Disease_outcome	HC352	Systemic lupus erythematosis/sle			
+Disease_outcome	HC355	Rectal prolapse			
+Disease_outcome	HC357	Duodenal ulcer			
+Disease_outcome	HC358	Optic neuritis			
+Disease_outcome	HC359	Adrenocortical insufficiency/addison's disease			
+Disease_outcome	HC36	Pneumonia			
+Disease_outcome	HC361	Anorexia/bulimia/other eating disorder			
+Disease_outcome	HC362	Respiratory infection			
+Disease_outcome	HC364	Sleep apnoea			
+Disease_outcome	HC366	Allergy/hypersensitivity/anaphylaxis			
+Disease_outcome	HC369	Gestational diabetes			
+Disease_outcome	HC371	Bronchitis			
+Disease_outcome	HC376	Osteoarthritis	PGS001290	EFO_0002506	osteoarthritis
+Disease_outcome	HC38	Psoriasis	PGS001312	EFO_0000676	psoriasis
+Disease_outcome	HC380	Fracture ulna			
+Disease_outcome	HC382	Asthma	PGS001341	EFO_0000270	asthma
+Disease_outcome	HC384	Throat or larynx disorder			
+Disease_outcome	HC385	Peripheral vascular disease			
+Disease_outcome	HC388	Diabetic neuropathy/ulcers			
+Disease_outcome	HC39	Lichen planus			
+Disease_outcome	HC390	Trigemminal neuralgia			
+Disease_outcome	HC392	Pancreatitis			
+Disease_outcome	HC395	Bladder problem (not cancer)			
+Disease_outcome	HC396	Fracture shoulder / scapula			
+Disease_outcome	HC40	Nervous breakdown			
+Disease_outcome	HC400	Transient ischaemic attack (tia)			
+Disease_outcome	HC401	Varicose veins	PGS000937	HP_0002619	Varicose veins
+Disease_outcome	HC402	Spinal stenosis			
+Disease_outcome	HC405	Vaginal prolapse/uterine prolapse			
+Disease_outcome	HC406	Fracture neck of femur / hip			
+Disease_outcome	HC408	Polio / poliomyelitis			
+Disease_outcome	HC410	Cervical intra-epithelial neoplasia (cin) / precancerous cells cervix			
+Disease_outcome	HC413	Genetic haematological disorder	PGS001136	EFO_0005803	hematologic disease
+Disease_outcome	HC417	Sclerosing cholangitis			
+Disease_outcome	HC418	Cervical spondylosis			
+Disease_outcome	HC419	Otosclerosis			
+Disease_outcome	HC420	Psychological/psychiatric problem			
+Disease_outcome	HC421	Other abdominal problem			
+Disease_outcome	HC422	Ankylosing spondylitis	PGS001267	EFO_0003898	ankylosing spondylitis
+Disease_outcome	HC423	Respiratory failure			
+Disease_outcome	HC427	Ovarian cyst or cysts			
+Disease_outcome	HC430	Rheumatoid arthritis	PGS001310	EFO_0000685	rheumatoid arthritis
+Disease_outcome	HC431	Emphysema	PGS001326	EFO_0000464	emphysema
+Disease_outcome	HC432	Mitral valve prolapse			
+Disease_outcome	HC433	Lymphoedema			
+Disease_outcome	HC434	Macular degeneration			
+Disease_outcome	HC436	Acne/acne vulgaris			
+Disease_outcome	HC44	Bile duct obstruction/ascending cholangitis			
+Disease_outcome	HC440	Atrial flutter	PGS001263	EFO_0003911	atrial flutter
+Disease_outcome	HC441	Hypopituitarism			
+Disease_outcome	HC442	Chronic obstructive airways disease/copd	PGS001332	EFO_0000341	chronic obstructive pulmonary disease
+Disease_outcome	HC445	Oesophageal varicies			
+Disease_outcome	HC449	TTE other salmonella infections			
+Disease_outcome	HC45	Mumps / epidemic parotitis			
+Disease_outcome	HC451	TTE other bacterial intestinal infections			
+Disease_outcome	HC452	TTE other bacterial foodborne intoxications			
+Disease_outcome	HC457	TTE respiratory tuberculosis, bacteriologically and histologically confirmed			
+Disease_outcome	HC481	TTE actinomycosis			
+Disease_outcome	HC49	Hayfever/allergic rhinitis	PGS001259	EFO_0003956	seasonal allergic rhinitis
+Disease_outcome	HC496	TTE anogenital herpesviral [herpes simplex] infections			
+Disease_outcome	HC497	TTE other predominantly sexually transmitted diseases, not elsewhere classified			
+Disease_outcome	HC5	Myositis/myopathy			
+Disease_outcome	HC502	TTE other spirochaetal infections			
+Disease_outcome	HC517	TTE viral meningitis			
+Disease_outcome	HC528	TTE herpesviral [herpes simplex] infections			
+Disease_outcome	HC529	TTE varicella [chickenpox]			
+Disease_outcome	HC530	TTE zoster [herpes zoster]	PGS001131	EFO_0006510	Herpes Zoster
+Disease_outcome	HC534	TTE viral warts	PGS001011	EFO_0009662	common wart
+Disease_outcome	HC537	TTE acute hepatitis a			
+Disease_outcome	HC540	TTE chronic viral hepatitis			
+Disease_outcome	HC547	TTE cytomegaloviral disease			
+Disease_outcome	HC548	TTE mumps			
+Disease_outcome	HC55	Hyperthyroidism/thyrotoxicosis	PGS001043	EFO_0009189|EFO_0009190	Hyperthyroidism|Thyrotoxicosis
+Disease_outcome	HC550	TTE viral conjunctivitis			
+Disease_outcome	HC553	TTE dermatophytosis			
+Disease_outcome	HC561	TTE aspergillosis			
+Disease_outcome	HC57	Fracture radius	PGS001258	EFO_0003957	radius fracture
+Disease_outcome	HC571	TTE unspecified malaria			
+Disease_outcome	HC59	Thyroiditis			
+Disease_outcome	HC590	TTE enterobiasis			
+Disease_outcome	HC594	TTE pediculosis and phthiriasis			
+Disease_outcome	HC595	TTE scabies			
+Disease_outcome	HC6	Eye/eyelid problem			
+Disease_outcome	HC60	Oesophagitis/barretts oesophagus			
+Disease_outcome	HC604	TTE viral agents as the cause of diseases classified to other chapters			
+Disease_outcome	HC606	TTE other and unspecified infectious diseases			
+Disease_outcome	HC608	TTE vitamin b12 deficiency anaemia	PGS001305	EFO_0000734|MONDO_0002280	vitamin B12 deficiency|anemia (disease)
+Disease_outcome	HC61	Haemorrhoids / piles	PGS001024	EFO_0009552	hemorrhoid
+Disease_outcome	HC615	TTE acquired haemolytic anaemia			
+Disease_outcome	HC617	TTE other aplastic anaemias			
+Disease_outcome	HC619	TTE anaemia in chronic diseases classified elsewhere			
+Disease_outcome	HC62	Tuberculosis (tb)			
+Disease_outcome	HC620	TTE other anaemias			
+Disease_outcome	HC624	TTE other coagulation defects	PGS001033	EFO_0009314	blood coagulation disease
+Disease_outcome	HC63	Pituitary adenoma/tumour			
+Disease_outcome	HC639	TTE sarcoidosis	PGS000923	Orphanet_797	Sarcoidosis
+Disease_outcome	HC643	TTE other hypothyroidism	PGS001181	EFO_0004705	hypothyroidism
+Disease_outcome	HC644	TTE other non-toxic goitre	PGS000928	MONDO_0001658	nontoxic goiter
+Disease_outcome	HC645	TTE thyrotoxicosis [hyperthyroidism]	PGS001042	EFO_0009190	Thyrotoxicosis
+Disease_outcome	HC646	TTE thyroiditis			
+Disease_outcome	HC648	TTE insulin-dependent diabetes mellitus	PGS001296	EFO_0001359	type I diabetes mellitus
+Disease_outcome	HC649	TTE non-insulin-dependent diabetes mellitus	PGS001294	EFO_0001360	type II diabetes mellitus
+Disease_outcome	HC652	TTE unspecified diabetes mellitus	PGS001329	EFO_0000400	diabetes mellitus
+Disease_outcome	HC654	TTE other disorders of pancreatic internal secretion	PGS001014	EFO_0009605	pancreas disease
+Disease_outcome	HC656	TTE hyperparathyroidism and other disorders of parathyroid gland			
+Disease_outcome	HC68	Disorder of adrenal gland			
+Disease_outcome	HC685	TTE deficiency of other nutrient elements			
+Disease_outcome	HC689	TTE obesity	PGS001298	EFO_0001073	obesity
+Disease_outcome	HC700	TTE disorders of lipoprotein metabolism and other lipidaemias	PGS001318	EFO_0000589	metabolic disease
+Disease_outcome	HC702	TTE disorders of porphyrin and bilirubin metabolism	PGS000924	MONDO_0037821|MONDO_0024431	porphyrin metabolism disease|bilirubin metabolism disease
+Disease_outcome	HC703	TTE disorders of mineral metabolism	PGS001023	EFO_0009556	mineral metabolism disease
+Disease_outcome	HC707	TTE other disorders of fluid, electrolyte and acid-base balance			
+Disease_outcome	HC708	TTE other metabolic disorders	PGS001319	EFO_0000589	metabolic disease
+Disease_outcome	HC709	TTE postprocedural endocrine and metabolic disorders, not elsewhere classified			
+Disease_outcome	HC710	TTE dementia in alzheimer's disease	PGS000945	HP_0000726|EFO_0000249	Dementia|Alzheimer's disease
+Disease_outcome	HC711	TTE vascular dementia	PGS001179	EFO_0004718	vascular dementia
+Disease_outcome	HC712	TTE dementia in other diseases classified elsewhere			
+Disease_outcome	HC713	TTE unspecified dementia	PGS000946	HP_0000726	Dementia
+Disease_outcome	HC715	TTE delirium, not induced by alcohol and other psychoactive substances			
+Disease_outcome	HC720	TTE mental and behavioural disorders due to use of opioids			
+Disease_outcome	HC734	TTE schizoaffective disorders			
+Disease_outcome	HC74	Female infertility			
+Disease_outcome	HC746	TTE obsessive-compulsive disorder			
+Disease_outcome	HC747	TTE reaction to severe stress, and adjustment disorders			
+Disease_outcome	HC78	Arthritis (nos)	PGS001135	EFO_0005856	arthritis
+Disease_outcome	HC784	TTE other behavioural and emotional disorders with onset usually occurring in childhood an			
+Disease_outcome	HC792	TTE intracranial and intraspinal abscess and granuloma			
+Disease_outcome	HC8	Gall bladder disease			
+Disease_outcome	HC807	TTE alzheimer's disease	PGS001349	EFO_0000249	Alzheimer's disease
+Disease_outcome	HC808	TTE other degenerative diseases of nervous system, not elsewhere classified			
+Disease_outcome	HC810	TTE multiple sclerosis	PGS001271	EFO_0003885	multiple sclerosis
+Disease_outcome	HC812	TTE other demyelinating diseases of central nervous system			
+Disease_outcome	HC815	TTE migraine	PGS001282	EFO_0003821	migraine disorder
+Disease_outcome	HC818	TTE vascular syndromes of brain in cerebrovascular diseases			
+Disease_outcome	HC824	TTE nerve root and plexus disorders			
+Disease_outcome	HC83	Fracture forearm / wrist	PGS001026	EFO_0009514	upper extremity fracture
+Disease_outcome	HC830	TTE hereditary and idiopathic neuropathy			
+Disease_outcome	HC831	TTE inflammatory polyneuropathy			
+Disease_outcome	HC84	Pulmonary fibrosis	PGS001030	EFO_0009448	pulmonary fibrosis
+Disease_outcome	HC840	TTE hemiplegia			
+Disease_outcome	HC842	TTE other paralytic syndromes			
+Disease_outcome	HC846	TTE other disorders of brain			
+Disease_outcome	HC85	Enlarged prostate	PGS001015	EFO_0009602	prostate disease
+Disease_outcome	HC857	TTE disorders of lachrymal system			
+Disease_outcome	HC859	TTE disorders of lachrymal system and orbit in diseases classified elsewhere			
+Disease_outcome	HC86	Migraine	PGS001281	EFO_0003821	migraine disorder
+Disease_outcome	HC861	TTE other disorders of conjunctiva			
+Disease_outcome	HC865	TTE corneal scars and opacities			
+Disease_outcome	HC866	TTE other disorders of cornea	PGS001029	EFO_0009464	corneal disease
+Disease_outcome	HC868	TTE iridocyclitis	PGS000941	HP_0001094	Iridocyclitis
+Disease_outcome	HC87	Spina bifida			
+Disease_outcome	HC872	TTE other cataract	PGS001303	EFO_0001059	cataract
+Disease_outcome	HC878	TTE retinal detachments and breaks	PGS000990	EFO_0010698|EFO_0005773	retinal break|retinal detachment
+Disease_outcome	HC88	Heart/cardiac problem			
+Disease_outcome	HC880	TTE other retinal disorders	PGS001275	EFO_0003839	retinopathy
+Disease_outcome	HC881	TTE retinal disorders in diseases classified elsewhere	PGS001276	EFO_0003839	retinopathy
+Disease_outcome	HC882	TTE glaucoma	PGS001323	EFO_0000516	glaucoma
+Disease_outcome	HC885	TTE disorders of globe			
+Disease_outcome	HC887	TTE optic neuritis			
+Disease_outcome	HC895	TTE blindness and low vision			
+Disease_outcome	HC9	Renal failure not requiring dialysis			
+Disease_outcome	HC900	TTE otitis externa			
+Disease_outcome	HC906	TTE eustachian salpingitis and obstruction			
+Disease_outcome	HC909	TTE cholesteatoma of middle ear			
+Disease_outcome	HC91	Psoriatic arthropathy	PGS001287	EFO_0003778	psoriatic arthritis
+Disease_outcome	HC911	TTE other disorders of tympanic membrane			
+Disease_outcome	HC914	TTE otosclerosis	PGS001255	EFO_0004213	otosclerosis
+Disease_outcome	HC915	TTE disorders of vestibular function			
+Disease_outcome	HC918	TTE conductive and sensorineural hearing loss			
+Disease_outcome	HC92	Allergy to elastoplast			
+Disease_outcome	HC93	Dry eyes			
+Disease_outcome	HC932	TTE essential (primary hypertension)	PGS000957	EFO_1002032	primary hypertension
+Disease_outcome	HC937	TTE angina pectoris	PGS001261	EFO_0003913	angina pectoris
+Disease_outcome	HC938	TTE acute myocardial infarction	PGS001314	EFO_0000612	myocardial infarction
+Disease_outcome	HC941	TTE other acute ischaemic heart diseases			
+Disease_outcome	HC942	TTE chronic ischaemic heart disease	PGS000962	EFO_1001375	Myocardial Ischemia
+Disease_outcome	HC943	TTE PE	PGS001280	EFO_0003827	pulmonary embolism
+Disease_outcome	HC95	Inflammatory bowel disease	PGS001288	EFO_0003767	inflammatory bowel disease
+Disease_outcome	HC951	TTE nonrheumatic aortic valve disorders	PGS001025	EFO_0009531	aortic valve disease
+Disease_outcome	HC96	Polymyalgia rheumatica	PGS001051	EFO_0008518	polymyalgia rheumatica
+Disease_outcome	HC964	TTE atrial fibrillation and flutter	PGS001339	EFO_0000275|EFO_0003911	atrial fibrillation|atrial flutter
+Disease_outcome	HC965	TTE other cardiac arrhythmias			
+Disease_outcome	HC966	TTE heart failure			
+Disease_outcome	HC967	TTE complications and ill-defined descriptions of heart disease			
+Disease_outcome	HC972	TTE cerebral infarction			
+Disease_outcome	HC980	TTE aortic aneurysm and dissection			
+Disease_outcome	HC981	TTE other aneurysm			
+Disease_outcome	HC982	TTE other peripheral vascular diseases			
+Disease_outcome	HC983	TTE arterial embolism and thrombosis			
+Disease_outcome	HC984	TTE other disorders of arteries and arterioles			
+Disease_outcome	HC987	TTE phlebitis and thrombophlebitis	PGS000961	EFO_1001395|HP_0004418	Phlebitis|Thrombophlebitis
+Disease_outcome	HC990	TTE varicose veins of lower extremities	PGS000938	HP_0002619	Varicose veins
+Disease_outcome	HC992	TTE oesophageal varices			
+Disease_outcome	HC998	TTE postprocedural disorders of circulatory system, not elsewhere classified			
+Disease_outcome	HC999	TTE other disorders of circulatory system in diseases classified elsewhere			
+Family_history	BIN_FC10001797	Father still alive			
+Family_history	BIN_FC10001835	Mother still alive			
+Family_history	FH1001	Lung cancer (FH)	PGS001392	EFO_0006953	family history of lung cancer
+Family_history	FH1002	Breast cancer (FH)	PGS001337	EFO_0005606	family history of breast cancer
+Family_history	FH1019	Bowel cancer (FH)			
+Family_history	FH1044	Prostate cancer (FH)	PGS001292	EFO_0009640	family history of cancer
+Family_history	FH1065	High BP (FH)	PGS001324	EFO_0000493	family history
+Family_history	FH1113	Chronic bronchitis/emphysema (FH)	PGS001132	EFO_0000493	family history
+Family_history	FH1220	Diabetes (FH)	PGS001328	EFO_0000493	family history
+Family_history	FH1263	Alzheimer's/dementia (FH)	PGS001347	EFO_0009268	family history of Alzheimer’s disease
+Family_history	FH1286	Severe depression (FH)			
+Health_and_medical_history	BIN_FC10002492	Taking other prescription medications	PGS001118	EFO_0007010	drug use measurement
+Health_and_medical_history	BIN_FC10002986	Started insulin within one year diagnosis of diabetes	PGS001117	EFO_0007010	drug use measurement
+Health_and_medical_history	BIN_FC10005518	Leg pain on walking : effect of standing still (Pain usually continues for more than 10 minutes)			
+Health_and_medical_history	BIN_FC10005855	Which eye(s) affected by astigmatism (Right eye)			
+Health_and_medical_history	BIN_FC10005934	Which eye(s) affected by other serious eye condition (Right eye)			
+Health_and_medical_history	BIN_FC10006151	Fractured bone site(s) (Ankle)			
+Health_and_medical_history	BIN_FC10006152	Hayfever allergic rhinitis or eczema	PGS001284	EFO_0003785	allergy
+Health_and_medical_history	BIN_FC10006179	Zinc supplements			
+Health_and_medical_history	BIN_FC1002247	Hearing difficulty	PGS001253	EFO_0004238	hearing loss
+Health_and_medical_history	BIN_FC1002306	Weight change compared with 1 year ago	PGS001006	EFO_0009799|EFO_0004338	self-reported trait|body weight
+Health_and_medical_history	BIN_FC1006148	Eye problems/disorders Diabetic eye disease	PGS001028	EFO_0009486	diabetic eye disease
+Health_and_medical_history	BIN_FC1006149	Mouth ulcers	PGS000947	HP_0000155	Oral ulcer
+Health_and_medical_history	BIN_FC1006150	Vascular/heart problems diagnosed by doctor Heart attack	PGS001317	EFO_0000612	myocardial infarction
+Health_and_medical_history	BIN_FC1006152	DVT diagnosed by doctor	PGS001266	EFO_0003907	deep vein thrombosis
+Health_and_medical_history	BIN_FC1006154	Aspirin	PGS001112	EFO_0007013	aspirin use measurement
+Health_and_medical_history	BIN_FC11006152	Blood clot or DVT diagnosed by doctor	PGS000931	MONDO_0000831|EFO_0003907	thrombotic disease|deep vein thrombosis
+Health_and_medical_history	BIN_FC11006179	Iron supplements			
+Health_and_medical_history	BIN_FC12006152	Blood clot in the leg (DVT) or lung	PGS001278	EFO_0003827|EFO_0003907	pulmonary embolism|deep vein thrombosis
+Health_and_medical_history	BIN_FC12006155	Vitamin B9 vs multivitamin			
+Health_and_medical_history	BIN_FC15006155	Vitamin C			
+Health_and_medical_history	BIN_FC18006155	Folic acid or folate (Vitamin B9)	PGS001153	EFO_0005111	folic acid measurement
+Health_and_medical_history	BIN_FC20005441	Which eye(s) are affected by cataract (Left eye)			
+Health_and_medical_history	BIN_FC20005507	Leg pain on walking : action taken (Slow down)			
+Health_and_medical_history	BIN_FC20005518	Leg pain on walking : effect of standing still (Pain usually disappears in less than 10 minutes)			
+Health_and_medical_history	BIN_FC20005843	Which eye(s) affected by myopia (short sight) (Left eye)			
+Health_and_medical_history	BIN_FC20006119	Which eye(s) affected by glaucoma (Left eye)			
+Health_and_medical_history	BIN_FC2006148	Eye problems/disorders Glaucoma	PGS001321	EFO_0000516	glaucoma
+Health_and_medical_history	BIN_FC2006150	Vascular/heart problems diagnosed by doctor Angina	PGS001262	EFO_0003913	angina pectoris
+Health_and_medical_history	BIN_FC2006154	Ibuprofen (e.g. Nurofen)	PGS001116	EFO_0007012	NSAID use measurement
+Health_and_medical_history	BIN_FC2006155	Vitamin B vs no supplement			
+Health_and_medical_history	BIN_FC2006179	Glucosamine	PGS001044	EFO_0009116	vitamin supplement exposure measurement
+Health_and_medical_history	BIN_FC30005507	Leg pain on walking : action taken (Continue at same pace)			
+Health_and_medical_history	BIN_FC3002247	Hearing difficulty and Deafness	PGS001252	EFO_0004238|EFO_0001063	hearing loss|deafness
+Health_and_medical_history	BIN_FC3006152	Blood clot diagnosed by doctor	PGS000930	MONDO_0000831	thrombotic disease
+Health_and_medical_history	BIN_FC3006155	Vitamin C vs no supplement			
+Health_and_medical_history	BIN_FC40006151	Fractured bone site(s) (Spine)			
+Health_and_medical_history	BIN_FC4006148	Eye problems/disorders Cataract			
+Health_and_medical_history	BIN_FC4006149	Loose teeth			
+Health_and_medical_history	BIN_FC4006150	Vascular/heart problems diagnosed by doctor High BP	PGS001335	EFO_0000319	cardiovascular disease
+Health_and_medical_history	BIN_FC4006152	Asthma diagnosed by doctor	PGS001344	EFO_0000270	asthma
+Health_and_medical_history	BIN_FC5006148	Eye problems/disorders Macular degeneration	PGS001013	EFO_0009606	macular degeneration
+Health_and_medical_history	BIN_FC5006149	Toothache			
+Health_and_medical_history	BIN_FC5006152	Hayfever rhinitis or eczema diagnosed by doctor	PGS001285	EFO_0003785	allergy
+Health_and_medical_history	BIN_FC6006149	Dentures	PGS000995	EFO_0010078	dentures
+Health_and_medical_history	BIN_FC6006152	Blood clot in the leg (DVT)	PGS001265	EFO_0003907	deep vein thrombosis
+Health_and_medical_history	BIN_FC6006155	Vitamin B9 vs no supplement	PGS001045	EFO_0009116	vitamin supplement exposure measurement
+Health_and_medical_history	BIN_FC7006152	Emphysema or chronic bronchitis			
+Health_and_medical_history	BIN_FC7006154	Aspirin use self-reported	PGS001113	EFO_0007013	aspirin use measurement
+Health_and_medical_history	BIN_FC7006155	Vitamin A vs multivitamin			
+Health_and_medical_history	BIN_FC8006152	Blood clot in the lung	PGS001279	EFO_0003827|EFO_0003907	pulmonary embolism|deep vein thrombosis
+Health_and_medical_history	BIN_FC8006154	Ibuprofen use self-reported	PGS001114	EFO_0007012|EFO_0009799	NSAID use measurement|self-reported trait
+Health_and_medical_history	BIN_FC8006179	Glucosamine supplements			
+Health_and_medical_history	BIN_FC9006154	Paracetamol use self-reported	PGS001115	EFO_0007012|EFO_0009799	NSAID use measurement|self-reported trait
+Health_and_medical_history	BIN_FC9006179	Calcium supplements			
+Health_and_medical_history	BIN3606	Chest pain or discomfort walking normally			
+Health_and_medical_history	BIN3616	Chest pain due to walking ceases when standing still			
+Health_and_medical_history	BIN3751	Chest pain or discomfort when walking uphill or hurrying			
+Health_and_medical_history	BIN5452	Leg pain when standing still or sitting			
+Health_and_medical_history	BIN5474	Leg pain when walking uphill or hurrying			
+Health_and_medical_history	BIN5485	Leg pain when walking normally			
+Lifestyle_and_environment	BIN_FC10001538	Major dietary changes in the last 5 years becuase of illness	PGS001063	EFO_0008111	diet measurement
+Lifestyle_and_environment	BIN_FC10001628	Alcohol intake versus 10 years previously (More nowadays)	PGS001085	EFO_0007878|EFO_0007645	alcohol consumption measurement|longitudinal alcohol consumption measurement
+Lifestyle_and_environment	BIN_FC10001727	Ease of skin tanning (Get very tanned)	PGS001246	EFO_0004279	suntan
+Lifestyle_and_environment	BIN_FC10001757	Facial ageing (Younger than you are)	PGS001141	EFO_0005422	skin aging
+Lifestyle_and_environment	BIN_FC10002267	Use of sun/uv protection (Never/rarely)	PGS000982	EFO_0010729	sun exposure measurement
+Lifestyle_and_environment	BIN_FC10002644	Light smokers, at least 100 smokes in lifetime	PGS001139	EFO_0005671	smoking behaviour measurement
+Lifestyle_and_environment	BIN_FC1001747	Hair colour (natural, before greying) blonde	PGS001093	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN_FC10020116	Never Smoker	PGS001127	EFO_0006527	smoking status measurement
+Lifestyle_and_environment	BIN_FC1006144	Never eat eggs			
+Lifestyle_and_environment	BIN_FC20001249	Past tobacco smoking (Smoked occasionally)	PGS001047	EFO_0009115	tobacco smoke exposure measurement
+Lifestyle_and_environment	BIN_FC20001428	Spread type: Butter/spreadable butter			
+Lifestyle_and_environment	BIN_FC20001448	Bread type: Brown			
+Lifestyle_and_environment	BIN_FC20001468	Cereal type: Biscuit cereal (e.g. Weetabix)	PGS001058	EFO_0008111	diet measurement
+Lifestyle_and_environment	BIN_FC20001508	Coffee type: Instant coffee	PGS001125	EFO_0006781	coffee consumption measurement
+Lifestyle_and_environment	BIN_FC20001727	Ease of skin tanning (Get moderately tanned)	PGS001245	EFO_0004279	suntan
+Lifestyle_and_environment	BIN_FC20001757	Facial ageing (Older than you are)	PGS001072	EFO_0008006	skin aging measurement
+Lifestyle_and_environment	BIN_FC20002267	Use of sun/uv protection (Sometimes)	PGS001535	EFO_0010729	sun exposure measurement
+Lifestyle_and_environment	BIN_FC20006157	Why stopped smoking doctor advice			
+Lifestyle_and_environment	BIN_FC2001747	Hair colour (natural, before greying) red	PGS001098	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN_FC20020116	Previous Smoker	PGS001128	EFO_0006527	smoking status measurement
+Lifestyle_and_environment	BIN_FC30001418	Milk type: Skimmed	PGS001064	EFO_0008111	diet measurement
+Lifestyle_and_environment	BIN_FC30001508	Coffee type: Ground coffee (include espresso, filter etc)	PGS001124	EFO_0006781	coffee consumption measurement
+Lifestyle_and_environment	BIN_FC30001727	Ease of skin tanning (Get mildly or occasionally tanned)	PGS001244	EFO_0004279	suntan
+Lifestyle_and_environment	BIN_FC30001757	Facial ageing (About your age)	PGS001071	EFO_0008006	skin aging measurement
+Lifestyle_and_environment	BIN_FC30002267	Use of sun/uv protection (Most of the time)			
+Lifestyle_and_environment	BIN_FC30002654	Non-butter spread type: Olive oil based spread (eg: Bertolli)			
+Lifestyle_and_environment	BIN_FC30003446	Type of tobacco currently smoked (cigars or pipes)			
+Lifestyle_and_environment	BIN_FC30003486	Ever tried to stop smoking succeeded vs no			
+Lifestyle_and_environment	BIN_FC30006164	Types of physical activity in last 4 weeks (other exercises)	PGS001074	EFO_0008002	physical activity measurement
+Lifestyle_and_environment	BIN_FC3001747	Hair colour (natural, before greying) light brown	PGS001096	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN_FC3006144	Never eat wheat	PGS001065	EFO_0008111	diet measurement
+Lifestyle_and_environment	BIN_FC40001249	Past tobacco smoking (Smoked at least once)	PGS001046	EFO_0009115	tobacco smoke exposure measurement
+Lifestyle_and_environment	BIN_FC40001448	Bread type: Other type of bread			
+Lifestyle_and_environment	BIN_FC40001468	Cereal type: Muesli			
+Lifestyle_and_environment	BIN_FC40001508	Coffee type: Other type of coffee			
+Lifestyle_and_environment	BIN_FC40001727	Ease of skin tanning (Never tan, only burn)	PGS001247	EFO_0004279	suntan
+Lifestyle_and_environment	BIN_FC40002267	Use of sun/uv protection (Always)	PGS000980	EFO_0010729	sun exposure measurement
+Lifestyle_and_environment	BIN_FC40002654	Non-butter spread type: Polyunsaturated/sunflower oil based spread (eg: Flora)			
+Lifestyle_and_environment	BIN_FC4001747	Hair colour (natural, before greying) dark brown	PGS001095	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN_FC4006144	Never eat sugar	PGS000991	EFO_0010158	sugar consumption measurement
+Lifestyle_and_environment	BIN_FC50001468	Cereal type: Other (e.g. Cornflakes, Frosties)	PGS001059	EFO_0008111	diet measurement
+Lifestyle_and_environment	BIN_FC50002267	Use of sun/uv protection (Do not go out in sunshine)			
+Lifestyle_and_environment	BIN_FC5001747	Hair colour (natural, before greying) black	PGS001092	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN_FC6001747	Hair colour (natural, before greying) other	PGS001097	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN_FC7001747	Hair colour (natural, before greying) brown	PGS001094	EFO_0007822	hair colour measurement
+Lifestyle_and_environment	BIN1210	Snoring	PGS001054	EFO_0008341	snoring measurement
+Blood_assays	BIN23051	HSV-2 seropositivity for Herpes Simplex virus-2			
+Blood_assays	BIN23054	CMV seropositivity for Human Cytomegalovirus			
+Blood_assays	BIN23055	HHV-6 overall seropositivity for Human Herpesvirus-6			
+Blood_assays	BIN23056	HHV-6A seropositivity for Human Herpesvirus-6			
+Blood_assays	BIN23059	KSHV seropositivity for Kaposi's Sarcoma-Associated Herpesvirus			
+Blood_assays	BIN23063	HTLV-1 seropositivity for Human T-Lymphotropic Virus 1			
+Blood_assays	BIN23065	BKV seropositivity for Human Polyomavirus BKV			
+Blood_assays	BIN23066	JCV seropositivity for Human Polyomavirus JCV	PGS000976	EFO_0010907	polyomavirus 2 seropositivity
+Blood_assays	BIN23067	MCV seropositivity for Merkel Cell Polyomavirus	PGS000977	EFO_0010906	merkel cell virus seropositivity
+Blood_assays	BIN23068	HPV 16 Definition I seropositivity for Human Papillomavirus type-16			
+Blood_assays	BIN23069	HPV 18 seropositivity for Human Papillomavirus type-18			
+Blood_assays	BIN23070	C. trachomatis Definition I seropositivity for Chlamydia trachomatis			
+Blood_assays	BIN23073	H. pylori Definition I seropositivity for Helicobacter pylori			
+Blood_assays	BIN23075	HPV 16 Definition II seropositivity for Human Papillomavirus type-16			
+Bone-densitometry_of_heel	BIN4093	Fractured heel (L)			
+Brain_MRI	BIN12139	Believed safe to perform brain MRI scan			
+Brain_MRI	BIN12188	Brain MRI measurement completed			
+Diet_by_24-hour_recall	BIN100240	Coffee consumed	PGS001123	EFO_0006781	coffee consumption measurement
+Diet_by_24-hour_recall	BIN100580	Alcohol consumed	PGS001086	EFO_0007878	alcohol consumption measurement
+Diet_by_24-hour_recall	BIN102080	Yogurt/ice-cream consumers			
+Diet_by_24-hour_recall	BIN102800	Cheese consumers			
+Diet_by_24-hour_recall	BIN102930	Egg consumers			
+Diet_by_24-hour_recall	BIN104400	Fruit consumers			
+Digestive_health	BIN21027	Abdominal discomfort/pain for 6 months or longer			
+Digestive_health	BIN21035	Currently (in last 3 months) suffer from abdominal pain			
+Digestive_health	BIN21038	Currently suffer from abdominal distension			
+Digestive_health	BIN21068	Diagnosed with coeliac disease or gluten sensitivity	PGS001300	EFO_0001060	celiac disease
+Digestive_health	BIN21071	Infectious illness diagnosis status when IBS symptoms first began			
+Digestive_health	BIN21073	Fever when IBS symptoms first began			
+Digestive_health	BIN21075	Bloody diarrhoea when IBS symptoms first began			
+Early_life_factors	BIN_FC10001707	Handedness (chirality/laterality) (Right-handed)			
+Eye_measures	BIN_FC1005164	3mm regularity index for irregular astigmatism level (R)			
+Eye_measures	BIN_FC20006074	Glasses worn elsewhere (right eye) besides during visual acuity test			
+Eye_measures	BIN5181	Ever had eye surgery			
+Eye_measures	BIN5324	Ever had cataract surgery			
+Eye_measures	BIN5326	Ever had surgery for glaucoma or high eye pressure			
+Eye_measures	BIN5328	Ever had corneal graft surgery			
+Hospital_inpatient	BIN41215	Detention categories			
+Mental_health	BIN_FC100020544	Bulimia nervosa diagnosed by a professional			
+Mental_health	BIN_FC10020487	Never felt hated by family member as a child			
+Mental_health	BIN_FC10020488	Never Physically abused by family as a child			
+Mental_health	BIN_FC10020490	Never Sexually molested as a child			
+Mental_health	BIN_FC10020523	Never Physical violence by partner or ex-partner as an adult			
+Mental_health	BIN_FC10020536	Weight changed during worst episode of depression			
+Mental_health	BIN_FC10020552	Other non-behavioral addiction			
+Mental_health	BIN_FC20020487	Rarely Felt hated by family member as a child			
+Mental_health	BIN_FC20020492	Longest period of mania or irritability at least a day but less than a week			
+Mental_health	BIN_FC20020522	Rarely Been in a confiding relationship as an adult			
+Mental_health	BIN_FC20020526	Been in a serious accident believed to be life-threatening not within the last 12 months			
+Mental_health	BIN_FC20020537	Sometimes has difficulty controlling worry during worst period of anxiety			
+Mental_health	BIN_FC20020548	Manifestations of mania or irritability More restless vs any			
+Mental_health	BIN_FC30020487	Sometimes Felt hated by family member as a child			
+Mental_health	BIN_FC30020492	Longest period of mania or irritability a week or more			
+Mental_health	BIN_FC30020523	Sometimes Physical violence by partner or ex-partner as an adult			
+Mental_health	BIN_FC30020537	Often has difficulty controlling worry during worst period of anxiety			
+Mental_health	BIN_FC30020539	Often has inability to stop worry during worst period of anxiety			
+Mental_health	BIN_FC40020489	Often felt loved as a child	PGS001090	EFO_0007869	wellbeing measurement
+Mental_health	BIN_FC40020525	Often Able to pay rent/mortgage as an adult			
+Mental_health	BIN_FC40020537	Never has difficulty controlling worry during worst period of anxiety			
+Mental_health	BIN_FC40020539	Never has inability to stop worry during worst period of anxiety			
+Mental_health	BIN_FC40020544	Other personality disorder diagnosed by a professional			
+Mental_health	BIN_FC50020488	Very Often Physically abused by family as a child			
+Mental_health	BIN_FC50020544	Phobia diagnosed by a professional			
+Mental_health	BIN_FC80020548	Manifestations of mania or irritability More active vs any			
+Mental_health	BIN1020483	Ever attempted suicide missing is control			
+Mental_health	BIN20406	Ever addicted to alcohol			
+Mental_health	BIN20417	Tense, sore, or aching muscles during worst period of anxiety			
+Mental_health	BIN20419	Difficulty concentrating during worst period of anxiety			
+Mental_health	BIN20428	Professional informed about anxiety			
+Mental_health	BIN20431	Ever addicted to a behaviour or miscellanous			
+Mental_health	BIN20437	Thoughts of death during worst depression			
+Mental_health	BIN20496	Mania needed treatment or caused problems with work, relationships, finances, the law, or other aspects of life			
+Mental_health	BIN20500	Ever suffered mental distress preventing usual activities			
+Mental_health	BIN20532	Did your sleep change?			
+Mental_health	BIN20534	Sleeping too much			
+Mental_health	BIN20538	Worried most days during period of worst anxiety			
+Mental_health	BIN20540	Multiple worries during worst period of anxiety			
+Others	BIN10030500	Microalbumin > 40 mg/L	PGS000972	EFO_0010967	urinary microalbumin measurement
+Others	BIN10030800	Oestradiol > 212 pmol/L	PGS001182	EFO_0004697	estradiol measurement
+Others	BIN10030820	Rheumatoid factor > 16 IU/mL	PGS001138	EFO_0005767	rheumatoid factor measurement
+Others	BIN30030510	UACR > 30 mg/g	PGS001107	EFO_0007778	urinary albumin to creatinine ratio
+Work_environment	BIN_FC10022506	Tobacco smoking current vs non			
+Work_environment	BIN_FC20022506	Tobacco smoking current vs past			
+Work_environment	BIN_FC30022506	Tobacco smoking ever vs no	PGS001129	EFO_0006527	smoking status measurement
+Work_environment	BIN22126	Doctor diagnosed hayfever or allergic rhinitis	PGS001286	EFO_0003785	allergy
+Work_environment	BIN22127	Doctor diagnosed asthma	PGS001345	EFO_0000270	asthma
+Work_environment	BIN22133	Doctor diagnosed sarcoidosis			
+Work_environment	BIN22502	Cough on most days			
+Work_environment	BIN22504	Bring up phlegm/sputum/mucus on most days			
+Psychosocial_factors	BIN_FC10006160	Leisure/social activities (attend any of the followings in once a week or more often: sports club, gym, pub, social club, religious group, adult edication class, or other group activity)	PGS001018	EFO_0009592	social interaction measurement
+Psychosocial_factors	BIN_FC20006156	Manic/hyper symptoms (I was more talkative than usual)			
+Psychosocial_factors	BIN_FC20006160	Leisure/social activities (attend sports club or gym in once a week or more often)	PGS001019	EFO_0009592	social interaction measurement
+Psychosocial_factors	BIN_FC30006156	Manic/hyper symptoms (I needed less sleep than usual)			
+Psychosocial_factors	BIN_FC50006160	Leisure/social activities (attend adult edication class in once a week or more often)	PGS001020	EFO_0009592	social interaction measurement
+Psychosocial_factors	BIN_FC50020126	Bipolar and major depression status probable depression (moderate)			
+Psychosocial_factors	BIN1950	Sensitivity / hurt feelings	PGS001016	EFO_0009599	feeling emotionally hurt measurement
+Psychosocial_factors	BIN1980	Worrier / anxious feelings	PGS001021	EFO_0009589|EFO_0009863	worry measurement|anxiety measurement
+Psychosocial_factors	BIN2000	Worry too long after embarrassment	PGS001022	EFO_0009589	worry measurement
+Psychosocial_factors	BIN2010	Suffer from 'nerves'	PGS001017	EFO_0009597	feeling nervous measurement
+Psychosocial_factors	BIN2020	Loneliness, isolation	PGS001091	EFO_0007865	loneliness measurement
+Psychosocial_factors	BIN2040	Risk taking	PGS001049	EFO_0008579	risk-taking behaviour
+Anthropometry	INI12144	Height	PGS001405	EFO_0004339	body height
+Anthropometry	INI20015	Sitting height	PGS000969	EFO_0011011	sitting height measurement
+Anthropometry	INI21001	BMI	PGS001228	EFO_0004340	body mass index
+Anthropometry	INI21002	Weight	PGS001230	EFO_0004338	body weight
+Anthropometry	INI23099	Body fat %	PGS001101	EFO_0007800	body fat percentage
+Anthropometry	INI23100	Whole body fat mass	PGS001149	EFO_0005409	fat body mass
+Anthropometry	INI23101	Whole body fat-free mass	PGS001169	EFO_0004995	lean body mass
+Anthropometry	INI23102	Whole body water mass	PGS001002	EFO_0009805	whole body water mass
+Anthropometry	INI23105	Basal metabolic rate	PGS001108	EFO_0007777	base metabolic rate measurement
+Anthropometry	INI23106	Impedance of whole body	PGS001161	EFO_0005106	body composition measurement
+Anthropometry	INI23107	Impedance of leg (R)	PGS001157	EFO_0005106	body composition measurement
+Anthropometry	INI23108	Impedance of leg (L)	PGS001155	EFO_0005106	body composition measurement
+Anthropometry	INI23109	Impedance of arm (R)	PGS001156	EFO_0005106	body composition measurement
+Anthropometry	INI23110	Impedance of arm (L)	PGS001154	EFO_0005106	body composition measurement
+Anthropometry	INI23111	Leg fat % (R)	PGS001104	EFO_0007800	body fat percentage
+Anthropometry	INI23112	Leg fat mass (R)	PGS001147	EFO_0005409	fat body mass
+Anthropometry	INI23113	Leg fat-free mass (R)	PGS001167	EFO_0004995	lean body mass
+Anthropometry	INI23114	Leg pred. mass (R)	PGS001159	EFO_0005106	body composition measurement
+Anthropometry	INI23115	Leg fat % (L)	PGS001103	EFO_0007800	body fat percentage
+Anthropometry	INI23117	Leg fat-free mass (L)	PGS001166	EFO_0004995	lean body mass
+Anthropometry	INI23118	Leg pred. mass (L)	PGS001158	EFO_0005106	body composition measurement
+Anthropometry	INI23119	Arm fat % (R)	PGS001106	EFO_0007800	body fat percentage
+Anthropometry	INI23120	Arm fat mass (R)	PGS001145	EFO_0005409	fat body mass
+Anthropometry	INI23121	Arm fat-free mass (R)	PGS001146	EFO_0005409	fat body mass
+Anthropometry	INI23122	Arm pred. mass (R)	PGS001235	EFO_0004324	body weights and measures
+Anthropometry	INI23123	Arm fat % (L)	PGS001102	EFO_0007800	body fat percentage
+Anthropometry	INI23124	Arm fat mass (L)	PGS001144	EFO_0005409	fat body mass
+Anthropometry	INI23125	Arm fat-free mass (L)	PGS001165	EFO_0004995	lean body mass
+Anthropometry	INI23126	Arm pred. mass (L)	PGS001234	EFO_0004324	body weights and measures
+Anthropometry	INI23127	Trunk fat %	PGS001105	EFO_0007800	body fat percentage
+Anthropometry	INI23128	Trunk fat mass	PGS001148	EFO_0005409	fat body mass
+Anthropometry	INI23129	Trunk fat-free mass	PGS001168	EFO_0004995	lean body mass
+Anthropometry	INI23130	Trunk pred. mass	PGS001160	EFO_0005106	body composition measurement
+Anthropometry	INI48	Waist circumference	PGS001227	EFO_0004342	waist circumference
+Anthropometry	INI49	Hip circumference	PGS001162	EFO_0005093	hip circumference
+Anthropometry	INI50	Standing height	PGS001229	EFO_0004339	body height
+Biomarkers	INI30030650	AST to ALT ratio	PGS000674	EFO_0010934	aspartate aminotransferase to alanine aminotransferase ratio
+Biomarkers	INI30030700	eGFR	PGS000682	EFO_0005208	glomerular filtration rate
+Biomarkers	INI30030860	Non-albumin protein	PGS000691	EFO_0004568	serum non-albumin protein measurement
+Biomarkers	INI30500	Microalbumin in urine	PGS000690	EFO_0010967	urinary microalbumin measurement
+Biomarkers	INI30510	Creatinine (enzymatic) in urine	PGS000679	EFO_0007934	creatinine clearance measurement
+Biomarkers	INI30520	Potassium in urine	PGS000693	EFO_0010952	urinary potassium measurement
+Biomarkers	INI30530	Sodium in urine	PGS000695	EFO_0009282|EFO_0005116	sodium measurement|urinary metabolite measurement
+Biomarkers	INI30600	Albumin	PGS000669	EFO_0004535	serum albumin measurement
+Biomarkers	INI30610	Alkaline phosphatase	PGS000670	EFO_0004533	alkaline phosphatase measurement
+Biomarkers	INI30620	Alanine aminotransferase	PGS000668	EFO_0004735	serum alanine aminotransferase measurement
+Biomarkers	INI30630	Apolipoprotein A	PGS000671	EFO_0004614	apolipoprotein A 1 measurement
+Biomarkers	INI30640	Apolipoprotein B	PGS000672	EFO_0004615	apolipoprotein B measurement
+Biomarkers	INI30650	Aspartate aminotransferase	PGS000673	EFO_0004736	aspartate aminotransferase measurement
+Biomarkers	INI30660	Direct bilirubin	PGS000681	EFO_0004570	bilirubin measurement
+Biomarkers	INI30670	Urea	PGS000701	EFO_0009795	serum urea measurement
+Biomarkers	INI30680	Calcium	PGS000676	EFO_0004838	calcium measurement
+Biomarkers	INI30690	Cholesterol	PGS000677	EFO_0004574	total cholesterol measurement
+Biomarkers	INI30700	Creatinine	PGS000678	EFO_0004518	creatinine measurement
+Biomarkers	INI30710	C-reactive protein	PGS000675	EFO_0004458	C-reactive protein measurement
+Biomarkers	INI30720	Cystatin C	PGS000680	EFO_0004617	cystatin C measurement
+Biomarkers	INI30730	Gamma glutamyltransferase	PGS000683	EFO_0004532	serum gamma-glutamyl transferase measurement
+Biomarkers	INI30740	Glucose	PGS000684	EFO_0004468	glucose measurement
+Biomarkers	INI30750	Glycated haemoglobin (HbA1c)	PGS000685	EFO_0004541	HbA1c measurement
+Biomarkers	INI30760	HDL cholesterol	PGS000686	EFO_0004612	high density lipoprotein cholesterol measurement
+Biomarkers	INI30770	IGF-1	PGS000687	EFO_0004627	IGF-1 measurement
+Biomarkers	INI30780	LDL cholesterol	PGS000688	EFO_0004611	low density lipoprotein cholesterol measurement
+Biomarkers	INI30790	Lipoprotein A	PGS000689	EFO_0006925	lipoprotein A measurement
+Biomarkers	INI30810	Phosphate	PGS000692	EFO_0010968	phosphate measurement
+Biomarkers	INI30830	SHBG	PGS000694	EFO_0004696	sex hormone-binding globulin measurement
+Biomarkers	INI30840	Total bilirubin	PGS000697	EFO_0004570	bilirubin measurement
+Biomarkers	INI30850	Testosterone	PGS000696	EFO_0004908	testosterone measurement
+Biomarkers	INI30860	Total protein	PGS000698	EFO_0004536	total blood protein measurement
+Biomarkers	INI30870	Triglycerides	PGS000699	EFO_0004530	triglyceride measurement
+Biomarkers	INI30880	Urate	PGS000700	EFO_0004531	urate measurement
+Biomarkers	INI30890	Vitamin D	PGS000702	EFO_0004631	vitamin D measurement
+Blood_assays	INI23002	GE / gI antigen for Varicella Zoster Virus	PGS001399	EFO_0009340	Varicella zoster virus seropositivity
+Blood_assays	INI23003	VCA p18 antigen for Epstein-Barr Virus			
+Blood_assays	INI23004	EBNA-1 antigen for Epstein-Barr Virus	PGS001036	EFO_0009271	Epstein Barr virus nuclear antigen-1 seropositivity
+Blood_assays	INI23005	ZEBRA antigen for Epstein-Barr Virus	PGS001772	EFO_0009273	anti-Epstein Barr virus antibody measurement
+Blood_assays	INI23006	EA-D antigen for Epstein-Barr Virus			
+Blood_assays	INI23008	Pp 52 antigen for Human Cytomegalovirus			
+Blood_assays	INI23009	Pp 28 antigen for Human Cytomegalovirus			
+Blood_assays	INI23010	IE1A antigen for Human Herpesvirus-6			
+Blood_assays	INI23011	IE1B antigen for Human Herpesvirus-6			
+Blood_assays	INI23013	U14 antigen for Human Herpesvirus-7			
+Blood_assays	INI23019	NS3 antigen for Hepatitis C Virus			
+Blood_assays	INI23020	P22 antigen for Toxoplasma gondii			
+Blood_assays	INI23022	HTLV-1 gag antigen for Human T-Lymphotropic Virus 1	PGS001407	EFO_0007937	blood protein measurement
+Blood_assays	INI23023	HTLV-1 env antigen for Human T-Lymphotropic Virus 1			
+Blood_assays	INI23025	HIV-1 env antigen for Human Immunodeficiency Virus			
+Blood_assays	INI23026	BK VP1 antigen for Human Polyomavirus BKV			
+Blood_assays	INI23027	JC VP1 antigen for Human Polyomavirus JCV	PGS001081	EFO_0007937	blood protein measurement
+Blood_assays	INI23028	MC VP1 antigen for Merkel Cell Polyomavirus	PGS001082	EFO_0007937	blood protein measurement
+Blood_assays	INI23030	E6 antigen for Human Papillomavirus type-16			
+Blood_assays	INI23032	L1 antigen for Human Papillomavirus type-18			
+Blood_assays	INI23034	Momp A antigen for Chlamydia trachomatis			
+Blood_assays	INI23035	Tarp-D F1 antigen for Chlamydia trachomatis			
+Blood_assays	INI23036	Tarp-D F2 antigen for Chlamydia trachomatis			
+Blood_assays	INI23037	PorB antigen for Chlamydia trachomatis			
+Blood_assays	INI23040	VacA antigen for Helicobacter pylori			
+Blood_assays	INI23041	OMP antigen for Helicobacter pylori			
+Blood_assays	INI30000	White blood cell count	PGS001239	EFO_0004308	leukocyte count
+Blood_assays	INI30010	Red blood cell count	PGS001240	EFO_0004305	erythrocyte count
+Blood_assays	INI30020	Haemoglobin concentration	PGS001400	EFO_0004509	hemoglobin measurement
+Blood_assays	INI30030	Haematocrit %	PGS001225	EFO_0004348	hematocrit
+Blood_assays	INI30040	Mean corpuscular volume	PGS001220	EFO_0004526	mean corpuscular volume
+Blood_assays	INI30050	Mean corpuscular haemoglobin	PGS001219	EFO_0004527	mean corpuscular hemoglobin
+Blood_assays	INI30060	Mean corpuscular haemoglobin concentration	PGS001218	EFO_0004528	mean corpuscular hemoglobin concentration
+Blood_assays	INI30070	Red blood cell distribution width	PGS001152	EFO_0005192	red blood cell distribution width
+Blood_assays	INI30080	Platelet count	PGS001238	EFO_0004309	platelet count
+Blood_assays	INI30090	Platelet crit	PGS001517	EFO_0007985	platelet crit
+Blood_assays	INI30100	Mean platelet volume	PGS001200	EFO_0004584	mean platelet volume
+Blood_assays	INI30110	Platelet distribution width	PGS001079	EFO_0007984	platelet component distribution width
+Blood_assays	INI30120	Lymphocyte count	PGS001199	EFO_0004587	lymphocyte count
+Blood_assays	INI30130	Monocyte count	PGS001163	EFO_0005091	monocyte count
+Blood_assays	INI30140	Neutrophill count	PGS001173	EFO_0004833	neutrophil count
+Blood_assays	INI30150	Eosinophill count	PGS001172	EFO_0004842	eosinophil count
+Blood_assays	INI30160	Basophill count	PGS001378	EFO_0005090	basophil count
+Blood_assays	INI30180	Lymphocyte %	PGS001414	EFO_0007993	lymphocyte percentage of leukocytes
+Blood_assays	INI30190	Monocyte %	PGS001078	EFO_0007989	monocyte percentage of leukocytes
+Blood_assays	INI30200	Neutrophill %	PGS001077	EFO_0007990	neutrophil percentage of leukocytes
+Blood_assays	INI30210	Eosinophill %	PGS001076	EFO_0007991	eosinophil percentage of leukocytes
+Blood_assays	INI30220	Basophill %	PGS001377	EFO_0007992	basophil percentage of leukocytes
+Blood_assays	INI30240	Reticulocyte %	PGS000989	EFO_0010700	reticulocyte measurement
+Blood_assays	INI30250	Reticulocyte count	PGS001528	EFO_0007986	reticulocyte count
+Blood_assays	INI30260	Mean reticulocyte volume	PGS000987	EFO_0010701	mean reticulocyte volume
+Blood_assays	INI30280	Immature reticulocyte fraction	PGS001408	EFO_0009253	Immature Reticulocyte Fraction Measurement
+Blood_assays	INI30290	High light scatter reticulocyte %	PGS000988	EFO_0010700	reticulocyte measurement
+Blood_assays	INI30300	High light scatter reticulocyte count	PGS001406	EFO_0010700	reticulocyte measurement
+Blood_assays	INI30820	Rheumatoid factor			
+Bone-densitometry_of_heel	INI3143	Ankle spacing width	PGS001241	EFO_0004302	anthropometric measurement
+Bone-densitometry_of_heel	INI3144	Heel Broadband ultrasound attenuation, direct entry	PGS000951	EFO_0004514	bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI3146	Speed of sound through heel	PGS001529	EFO_0007772	calcaneal bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI3147	Heel quantitative ultrasound index (QUI), direct entry	PGS000952	EFO_0004514	bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI3148	Heel bone mineral density (BMD)	PGS001402	EFO_0009270	heel bone mineral density
+Bone-densitometry_of_heel	INI4100	Ankle spacing width (L)	PGS001242	EFO_0004302	anthropometric measurement
+Bone-densitometry_of_heel	INI4101	Heel broadband ultrasound attenuation (L)	PGS000953	EFO_0004514	bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI4103	Speed of sound through heel (L)	PGS001530	EFO_0007772	calcaneal bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI4104	Heel quantitative ultrasound index (QUI), direct entry (L)	PGS000954	EFO_0004514	bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI4105	Heel bone mineral density (BMD) (L)	PGS001403	EFO_0009270	heel bone mineral density
+Bone-densitometry_of_heel	INI4106	Heel bone mineral density (BMD) T-score, automated (L)	PGS001038	EFO_0009270	heel bone mineral density
+Bone-densitometry_of_heel	INI4119	Ankle spacing width (R)	PGS001243	EFO_0004302	anthropometric measurement
+Bone-densitometry_of_heel	INI4120	Heel broadband ultrasound attenuation (R)	PGS000955	EFO_0004514	bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI4122	Speed of sound through heel (R)	PGS001531	EFO_0007772	calcaneal bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI4123	Heel quantitative ultrasound index (QUI), direct entry (R)	PGS000956	EFO_0004514	bone quantitative ultrasound measurement
+Bone-densitometry_of_heel	INI4124	Heel bone mineral density (BMD) (R)	PGS001404	EFO_0009270	heel bone mineral density
+Bone-densitometry_of_heel	INI4125	Heel bone mineral density (BMD) T-score, automated (R)	PGS001039	EFO_0009270	heel bone mineral density
+Bone-densitometry_of_heel	INI78	Heel bone mineral density (BMD) T-score, automated	PGS001037	EFO_0009270	heel bone mineral density
+Lifestyle_and_environment	INI1050	Time spend outdoors in summer	PGS001052	EFO_0008360	environmental exposure measurement
+Lifestyle_and_environment	INI1060	Outdoor time, winter	PGS001053	EFO_0008360	environmental exposure measurement
+Lifestyle_and_environment	INI1160	Sleep duration	PGS001150	EFO_0005271	sleep duration
+Lifestyle_and_environment	INI1289	Cooked vegetable intake	PGS001061	EFO_0008111	diet measurement
+Lifestyle_and_environment	INI1299	Salad / raw vegetable intake			
+Lifestyle_and_environment	INI1309	Fresh fruit intake	PGS001062	EFO_0008111	diet measurement
+Lifestyle_and_environment	INI1319	Dried fruit intake	PGS001389	EFO_0008111	diet measurement
+Lifestyle_and_environment	INI1438	Bread intake	PGS000978	EFO_0010811	carbohydrate intake measurement
+Lifestyle_and_environment	INI1458	Cereal intake	PGS001057	EFO_0008111	diet measurement
+Lifestyle_and_environment	INI1488	Tea intake	PGS000994	EFO_0010091	tea consumption measurement
+Lifestyle_and_environment	INI1498	Coffee intake	PGS001126	EFO_0006781	coffee consumption measurement
+Lifestyle_and_environment	INI1528	Water intake	PGS001069	EFO_0008111	diet measurement
+Lifestyle_and_environment	INI1548	Variation in diet	PGS001068	EFO_0008111	diet measurement
+Lifestyle_and_environment	INI1578	Ave. weekly champagne plus white wine intake			
+Lifestyle_and_environment	INI1588	Ave. weekly beer plus cider intake	PGS001088	EFO_0007878	alcohol consumption measurement
+Lifestyle_and_environment	INI1598	Ave. weekly spirits intake			
+Lifestyle_and_environment	INI1608	Ave. weekly fortified wine intake			
+Lifestyle_and_environment	INI1737	Childhood sunburn	PGS001257	EFO_0003958	sunburn
+Lifestyle_and_environment	INI2139	Age first had sexual intercourse	PGS001007	EFO_0009749	age at first sexual intercourse measurement
+Lifestyle_and_environment	INI2149	Lifetime # of sexual partners			
+Lifestyle_and_environment	INI2237	Freq. of playing computer games	PGS000984	EFO_0010724	lifestyle measurement
+Lifestyle_and_environment	INI2624	Freq. of heavy DIY in last 4 weeks			
+Lifestyle_and_environment	INI2867	Age started smoking in former smokers			
+Lifestyle_and_environment	INI2887	# of cigarettes previously smoked daily	PGS001130	EFO_0006525	cigarettes per day measurement
+Lifestyle_and_environment	INI2897	Age stopped smoking	PGS001374	EFO_0004319	smoking cessation
+Lifestyle_and_environment	INI2926	# of unsuccessful stop-smoking attempts			
+Lifestyle_and_environment	INI3436	Age started smoking in current smokers			
+Lifestyle_and_environment	INI3456	# of cigarettes currently smoked daily (current cigarette smokers)	PGS001515	EFO_0006525	cigarettes per day measurement
+Lifestyle_and_environment	INI3637	Freq. of other exercises in last 4 weeks			
+Lifestyle_and_environment	INI3680	Age when last ate meat			
+Lifestyle_and_environment	INI4440	Ave. monthly spirits intake			
+Lifestyle_and_environment	INI4451	Ave. monthly fortified wine intake			
+Lifestyle_and_environment	INI874	Duration of walks	PGS001073	EFO_0008002	physical activity measurement
+Lifestyle_and_environment	INI924	Usual walking pace	PGS001075	EFO_0008002	physical activity measurement
+Lifestyle_and_environment	INI971	Freq. of walking for pleasure in last 4 weeks	PGS001397	EFO_0008002	physical activity measurement
+Lifestyle_and_environment	INI981	Duration walking for pleasure			
+Lifestyle_and_environment	INI991	Freq. of strenuous sports in last 4 weeks			
+Lifestyle_and_environment	QT_FC10001478	Salt added to food	PGS001034	EFO_0008111	diet measurement
+Lifestyle_and_environment	QT_FC10003466	Time from waking to first cigarette	PGS001532	EFO_0005671	smoking behaviour measurement
+Lifestyle_and_environment	QT_FC10003476	Difficulty not smoking for 1 day	PGS001388	EFO_0005671	smoking behaviour measurement
+Lifestyle_and_environment	QT_FC10003506	Smoking compared to 10 years previous			
+Lifestyle_and_environment	QT_FC1001170	Getting up in morning	PGS001001	EFO_0009817	ease of getting up in the morning, self-reported
+Lifestyle_and_environment	QT_FC1001180	Morning/evening person (chronotype)	PGS001055	EFO_0008328	chronotype measurement
+Lifestyle_and_environment	QT_FC1001190	Nap during day	PGS001000	EFO_0009818	nap during day, self-reported
+Lifestyle_and_environment	QT_FC1001220	Daytime dozing / sleeping (narcolepsy)	PGS000926	MONDO_0021107	narcolepsy
+Lifestyle_and_environment	QT_FC1001329	Oily fish intake	PGS000993	EFO_0010139	fish consumption measurement
+Lifestyle_and_environment	QT_FC1001349	Processed meat intake	PGS001067	EFO_0008111	diet measurement
+Lifestyle_and_environment	QT_FC1001359	Poultry intake	PGS001066	EFO_0008111	diet measurement
+Lifestyle_and_environment	QT_FC1001369	Beef intake	PGS001056	EFO_0008111	diet measurement
+Lifestyle_and_environment	QT_FC1001408	Cheese intake	PGS001060	EFO_0008111	diet measurement
+Lifestyle_and_environment	QT_FC1001558	Alcohol intake frequency.	PGS001087	EFO_0007878	alcohol consumption measurement
+Abdominal_MRI	INI22405	Anterior thigh lean muscle volume (L)			
+Abdominal_MRI	INI22407	Visceral adipose tissue volume (VAT)			
+Arterial_stiffness	INI4194	Pulse rate	PGS001523	EFO_0004326	heart rate
+Arterial_stiffness	INI4198	Position of the pulse wave peak	PGS001520	EFO_0004517	arterial stiffness measurement
+Arterial_stiffness	INI4199	Position of pulse wave notch	PGS001519	EFO_0004517	arterial stiffness measurement
+Blood_pressure	INI102	Pulse rate (AR)	PGS001233	EFO_0004326	heart rate
+Blood_pressure	INI4079	Diastolic BP (AR)	PGS001133	EFO_0006336	diastolic blood pressure
+Blood_pressure	INI4080	Systolic BP (AR)	PGS001134	EFO_0006335	systolic blood pressure
+Blood_pressure	INI95	Pulse rate (during blood-pressure measurement)	PGS001524	EFO_0004326	heart rate
+Cancer_register	INI40008	Age at cancer diagnosis			
+Carotid_ultrasound	INI22670	Minimum carotid IMT (intima-medial thickness) at 120 degrees			
+Carotid_ultrasound	INI22671	Mean carotid IMT (intima-medial thickness) at 120 degrees			
+Carotid_ultrasound	INI22672	Maximum carotid IMT (intima-medial thickness) at 120 degrees			
+Carotid_ultrasound	INI22673	Minimum carotid IMT (intima-medial thickness) at 150 degrees			
+Carotid_ultrasound	INI22674	Mean carotid IMT (intima-medial thickness) at 150 degrees			
+Cognitive_function	INI20016	Fluid intelligence score	PGS001232	EFO_0004337	intelligence
+Death_register	INI40007	Age at death			
+Diet_by_24-hour_recall	INI100010	Portion size	PGS001518	EFO_0008111	diet measurement
+Diet_by_24-hour_recall	INI104900	Time spent doing vigorous physical activity			
+Diet_by_24-hour_recall	INI104920	Time spent doing light physical activity			
+Diffusion_brain_MRI	INI25056	Mean FA in middle cerebellar peduncle on FA skeleton	PGS001429	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25057	Mean FA in pontine crossing tract on FA skeleton			
+Diffusion_brain_MRI	INI25058	Mean FA in genu of corpus callosum on FA skeleton	PGS001427	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25059	Mean FA in body of corpus callosum on FA skeleton	PGS001417	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25060	Mean FA in splenium of corpus callosum on FA skeleton	PGS001438	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25061	Mean FA in fornix on FA skeleton	PGS001426	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25062	Mean FA in corticospinal tract on FA skeleton (R)	PGS001423	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25063	Mean FA in corticospinal tract on FA skeleton (L)			
+Diffusion_brain_MRI	INI25064	Mean FA in medial lemniscus on FA skeleton (R)			
+Diffusion_brain_MRI	INI25066	Mean FA in inferior cerebellar peduncle on FA skeleton (R)	PGS001428	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25067	Mean FA in inferior cerebellar peduncle on FA skeleton (L)			
+Diffusion_brain_MRI	INI25068	Mean FA in superior cerebellar peduncle on FA skeleton (R)	PGS001440	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25069	Mean FA in superior cerebellar peduncle on FA skeleton (L)	PGS001439	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25071	Mean FA in cerebral peduncle on FA skeleton (L)	PGS001418	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25072	Mean FA in anterior limb of internal capsule on FA skeleton (R)	PGS001416	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25073	Mean FA in anterior limb of internal capsule on FA skeleton (L)	PGS001415	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25074	Mean FA in posterior limb of internal capsule on FA skeleton (R)	PGS001431	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25075	Mean FA in posterior limb of internal capsule on FA skeleton (L)	PGS001430	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25076	Mean FA in retrolenticular part of internal capsule on FA skeleton (R)	PGS001435	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25077	Mean FA in retrolenticular part of internal capsule on FA skeleton (L)	PGS001434	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25078	Mean FA in anterior corona radiata on FA skeleton (R)			
+Diffusion_brain_MRI	INI25079	Mean FA in anterior corona radiata on FA skeleton (L)			
+Diffusion_brain_MRI	INI25080	Mean FA in superior corona radiata on FA skeleton (R)	PGS001442	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25081	Mean FA in superior corona radiata on FA skeleton (L)	PGS001441	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25083	Mean FA in posterior corona radiata on FA skeleton (L)			
+Diffusion_brain_MRI	INI25084	Mean FA in posterior thalamic radiation on FA skeleton (R)	PGS001433	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25085	Mean FA in posterior thalamic radiation on FA skeleton (L)	PGS001432	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25086	Mean FA in sagittal stratum on FA skeleton (R)	PGS001437	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25087	Mean FA in sagittal stratum on FA skeleton (L)	PGS001436	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25088	Mean FA in external capsule on FA skeleton (R)	PGS001424	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25089	Mean FA in external capsule on FA skeleton (L)			
+Diffusion_brain_MRI	INI25090	Mean FA in cingulum cingulate gyrus on FA skeleton (R)	PGS001420	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25091	Mean FA in cingulum cingulate gyrus on FA skeleton (L)	PGS001419	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25092	Mean FA in cingulum hippocampus on FA skeleton (R)	PGS001422	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25093	Mean FA in cingulum hippocampus on FA skeleton (L)	PGS001421	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25094	Mean FA in fornix cres+stria terminalis on FA skeleton (R)	PGS001425	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25096	Mean FA in superior longitudinal fasciculus on FA skeleton (R)	PGS001446	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25097	Mean FA in superior longitudinal fasciculus on FA skeleton (L)	PGS001445	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25098	Mean FA in superior fronto-occipital fasciculus on FA skeleton (R)	PGS001444	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25099	Mean FA in superior fronto-occipital fasciculus on FA skeleton (L)	PGS001443	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25100	Mean FA in uncinate fasciculus on FA skeleton (R)	PGS001449	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25101	Mean FA in uncinate fasciculus on FA skeleton (L)			
+Diffusion_brain_MRI	INI25102	Mean FA in tapetum on FA skeleton (R)	PGS001448	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25103	Mean FA in tapetum on FA skeleton (L)	PGS001447	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25344	Mean ICVF in middle cerebellar peduncle on FA skeleton	PGS001471	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25345	Mean ICVF in pontine crossing tract on FA skeleton			
+Diffusion_brain_MRI	INI25346	Mean ICVF in genu of corpus callosum on FA skeleton	PGS001466	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25347	Mean ICVF in body of corpus callosum on FA skeleton	PGS001454	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25349	Mean ICVF in fornix on FA skeleton	PGS001465	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25350	Mean ICVF in corticospinal tract on FA skeleton (R)			
+Diffusion_brain_MRI	INI25351	Mean ICVF in corticospinal tract on FA skeleton (L)			
+Diffusion_brain_MRI	INI25352	Mean ICVF in medial lemniscus on FA skeleton (R)	PGS001470	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25353	Mean ICVF in medial lemniscus on FA skeleton (L)	PGS001469	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25354	Mean ICVF in inferior cerebellar peduncle on FA skeleton (R)	PGS001468	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25355	Mean ICVF in inferior cerebellar peduncle on FA skeleton (L)	PGS001467	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25356	Mean ICVF in superior cerebellar peduncle on FA skeleton (R)	PGS001483	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25357	Mean ICVF in superior cerebellar peduncle on FA skeleton (L)	PGS001482	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25358	Mean ICVF in cerebral peduncle on FA skeleton (R)	PGS001456	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25359	Mean ICVF in cerebral peduncle on FA skeleton (L)	PGS001455	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25360	Mean ICVF in anterior limb of internal capsule on FA skeleton (R)	PGS001453	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25361	Mean ICVF in anterior limb of internal capsule on FA skeleton (L)	PGS001452	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25362	Mean ICVF in posterior limb of internal capsule on FA skeleton (R)	PGS001475	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25363	Mean ICVF in posterior limb of internal capsule on FA skeleton (L)	PGS001474	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25364	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (R)	PGS001479	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25365	Mean ICVF in retrolenticular part of internal capsule on FA skeleton (L)	PGS001478	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25366	Mean ICVF in anterior corona radiata on FA skeleton (R)	PGS001451	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25367	Mean ICVF in anterior corona radiata on FA skeleton (L)	PGS001450	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25368	Mean ICVF in superior corona radiata on FA skeleton (R)	PGS001485	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25369	Mean ICVF in superior corona radiata on FA skeleton (L)	PGS001484	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25370	Mean ICVF in posterior corona radiata on FA skeleton (R)	PGS001473	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25371	Mean ICVF in posterior corona radiata on FA skeleton (L)	PGS001472	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25372	Mean ICVF in posterior thalamic radiation on FA skeleton (R)	PGS001477	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25373	Mean ICVF in posterior thalamic radiation on FA skeleton (L)	PGS001476	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25374	Mean ICVF in sagittal stratum on FA skeleton (R)	PGS001481	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25375	Mean ICVF in sagittal stratum on FA skeleton (L)	PGS001480	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25376	Mean ICVF in external capsule on FA skeleton (R)	PGS001462	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25377	Mean ICVF in external capsule on FA skeleton (L)	PGS001461	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25378	Mean ICVF in cingulum cingulate gyrus on FA skeleton (R)	PGS001458	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25379	Mean ICVF in cingulum cingulate gyrus on FA skeleton (L)	PGS001457	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25380	Mean ICVF in cingulum hippocampus on FA skeleton (R)	PGS001460	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25381	Mean ICVF in cingulum hippocampus on FA skeleton (L)	PGS001459	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25382	Mean ICVF in fornix cres+stria terminalis on FA skeleton (R)	PGS001464	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25383	Mean ICVF in fornix cres+stria terminalis on FA skeleton (L)	PGS001463	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25384	Mean ICVF in superior longitudinal fasciculus on FA skeleton (R)	PGS001489	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25385	Mean ICVF in superior longitudinal fasciculus on FA skeleton (L)	PGS001488	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25386	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (R)	PGS001487	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25387	Mean ICVF in superior fronto-occipital fasciculus on FA skeleton (L)	PGS001486	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25388	Mean ICVF in uncinate fasciculus on FA skeleton (R)	PGS001492	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25389	Mean ICVF in uncinate fasciculus on FA skeleton (L)	PGS001491	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25391	Mean ICVF in tapetum on FA skeleton (L)	PGS001490	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25440	Mean ISOVF in middle cerebellar peduncle on FA skeleton			
+Diffusion_brain_MRI	INI25441	Mean ISOVF in pontine crossing tract on FA skeleton			
+Diffusion_brain_MRI	INI25443	Mean ISOVF in body of corpus callosum on FA skeleton	PGS001495	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25445	Mean ISOVF in fornix on FA skeleton	PGS001499	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25446	Mean ISOVF in corticospinal tract on FA skeleton (R)			
+Diffusion_brain_MRI	INI25447	Mean ISOVF in corticospinal tract on FA skeleton (L)			
+Diffusion_brain_MRI	INI25451	Mean ISOVF in inferior cerebellar peduncle on FA skeleton (L)			
+Diffusion_brain_MRI	INI25452	Mean ISOVF in superior cerebellar peduncle on FA skeleton (R)	PGS001504	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25453	Mean ISOVF in superior cerebellar peduncle on FA skeleton (L)			
+Diffusion_brain_MRI	INI25457	Mean ISOVF in anterior limb of internal capsule on FA skeleton (L)			
+Diffusion_brain_MRI	INI25458	Mean ISOVF in posterior limb of internal capsule on FA skeleton (R)			
+Diffusion_brain_MRI	INI25460	Mean ISOVF in retrolenticular part of internal capsule on FA skeleton (R)			
+Diffusion_brain_MRI	INI25461	Mean ISOVF in retrolenticular part of internal capsule on FA skeleton (L)			
+Diffusion_brain_MRI	INI25462	Mean ISOVF in anterior corona radiata on FA skeleton (R)	PGS001494	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25463	Mean ISOVF in anterior corona radiata on FA skeleton (L)	PGS001493	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25464	Mean ISOVF in superior corona radiata on FA skeleton (R)	PGS001506	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25465	Mean ISOVF in superior corona radiata on FA skeleton (L)	PGS001505	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25467	Mean ISOVF in posterior corona radiata on FA skeleton (L)	PGS001500	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25469	Mean ISOVF in posterior thalamic radiation on FA skeleton (L)	PGS001501	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25470	Mean ISOVF in sagittal stratum on FA skeleton (R)	PGS001503	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25471	Mean ISOVF in sagittal stratum on FA skeleton (L)	PGS001502	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25473	Mean ISOVF in external capsule on FA skeleton (L)	PGS001498	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25474	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (R)	PGS001497	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25475	Mean ISOVF in cingulum cingulate gyrus on FA skeleton (L)	PGS001496	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25482	Mean ISOVF in superior fronto-occipital fasciculus on FA skeleton (R)			
+Diffusion_brain_MRI	INI25483	Mean ISOVF in superior fronto-occipital fasciculus on FA skeleton (L)			
+Diffusion_brain_MRI	INI25488	WA FA in tract acoustic radiation (L)	PGS001643	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25489	WA FA in tract acoustic radiation (R)	PGS001644	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25490	WA FA in tract anterior thalamic radiation (L)	PGS001645	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25491	WA FA in tract anterior thalamic radiation (R)	PGS001646	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25492	WA FA in tract cingulate gyrus part of cingulum (L)	PGS001647	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25493	WA FA in tract cingulate gyrus part of cingulum (R)	PGS001648	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25495	WA FA in tract parahippocampal part of cingulum (R)			
+Diffusion_brain_MRI	INI25497	WA FA in tract corticospinal tract (R)	PGS001649	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25498	WA FA in tract forceps major	PGS001650	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25499	WA FA in tract forceps minor	PGS001651	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25500	WA FA in tract inferior fronto-occipital fasciculus (L)	PGS001652	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25501	WA FA in tract inferior fronto-occipital fasciculus (R)	PGS001653	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25502	WA FA in tract inferior longitudinal fasciculus (L)	PGS001654	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25503	WA FA in tract inferior longitudinal fasciculus (R)	PGS001655	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25506	WA FA in tract medial lemniscus (R)			
+Diffusion_brain_MRI	INI25507	WA FA in tract posterior thalamic radiation (L)	PGS001656	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25508	WA FA in tract posterior thalamic radiation (R)	PGS001657	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25509	WA FA in tract superior longitudinal fasciculus (L)	PGS001658	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25511	WA FA in tract superior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25512	WA FA in tract superior thalamic radiation (R)			
+Diffusion_brain_MRI	INI25513	WA FA in tract uncinate fasciculus (L)	PGS001659	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25514	WA FA in tract uncinate fasciculus (R)	PGS001660	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25515	WA MD in tract acoustic radiation (L)			
+Diffusion_brain_MRI	INI25516	WA MD in tract acoustic radiation (R)	PGS001744	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25517	WA MD in tract anterior thalamic radiation (L)	PGS001745	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25519	WA MD in tract cingulate gyrus part of cingulum (L)	PGS001746	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25520	WA MD in tract cingulate gyrus part of cingulum (R)	PGS001747	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25521	WA MD in tract parahippocampal part of cingulum (L)			
+Diffusion_brain_MRI	INI25523	WA MD in tract corticospinal tract (L)			
+Diffusion_brain_MRI	INI25524	WA MD in tract corticospinal tract (R)			
+Diffusion_brain_MRI	INI25525	WA MD in tract forceps major	PGS001748	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25526	WA MD in tract forceps minor	PGS001749	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25527	WA MD in tract inferior fronto-occipital fasciculus (L)	PGS001750	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25528	WA MD in tract inferior fronto-occipital fasciculus (R)	PGS001751	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25529	WA MD in tract inferior longitudinal fasciculus (L)	PGS001752	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25530	WA MD in tract inferior longitudinal fasciculus (R)	PGS001753	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25531	WA MD in tract middle cerebellar peduncle			
+Diffusion_brain_MRI	INI25533	WA MD in tract medial lemniscus (R)			
+Diffusion_brain_MRI	INI25536	WA MD in tract superior longitudinal fasciculus (L)	PGS001754	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25538	WA MD in tract superior thalamic radiation (L)	PGS001755	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25539	WA MD in tract superior thalamic radiation (R)	PGS001756	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25540	WA MD in tract uncinate fasciculus (L)	PGS001757	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25541	WA MD in tract uncinate fasciculus (R)	PGS001758	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25542	WA MO in tract acoustic radiation (L)			
+Diffusion_brain_MRI	INI25543	WA MO in tract acoustic radiation (R)			
+Diffusion_brain_MRI	INI25544	WA MO in tract anterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25545	WA MO in tract anterior thalamic radiation (R)			
+Diffusion_brain_MRI	INI25548	WA MO in tract parahippocampal part of cingulum (L)			
+Diffusion_brain_MRI	INI25549	WA MO in tract parahippocampal part of cingulum (R)			
+Diffusion_brain_MRI	INI25551	WA MO in tract corticospinal tract (R)			
+Diffusion_brain_MRI	INI25553	WA MO in tract forceps minor	PGS001759	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25555	WA MO in tract inferior fronto-occipital fasciculus (R)			
+Diffusion_brain_MRI	INI25558	WA MO in tract middle cerebellar peduncle	PGS001761	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25560	WA MO in tract medial lemniscus (R)	PGS001760	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25561	WA MO in tract posterior thalamic radiation (L)	PGS001762	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25562	WA MO in tract posterior thalamic radiation (R)	PGS001763	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25563	WA MO in tract superior longitudinal fasciculus (L)	PGS001764	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25564	WA MO in tract superior longitudinal fasciculus (R)			
+Diffusion_brain_MRI	INI25566	WA MO in tract superior thalamic radiation (R)	PGS001765	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25570	WA L1 in tract acoustic radiation (R)			
+Diffusion_brain_MRI	INI25571	WA L1 in tract anterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25572	WA L1 in tract anterior thalamic radiation (R)			
+Diffusion_brain_MRI	INI25578	WA L1 in tract corticospinal tract (R)			
+Diffusion_brain_MRI	INI25579	WA L1 in tract forceps major			
+Diffusion_brain_MRI	INI25580	WA L1 in tract forceps minor	PGS001704	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25581	WA L1 in tract inferior fronto-occipital fasciculus (L)	PGS001705	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25582	WA L1 in tract inferior fronto-occipital fasciculus (R)	PGS001706	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25583	WA L1 in tract inferior longitudinal fasciculus (L)	PGS001707	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25584	WA L1 in tract inferior longitudinal fasciculus (R)	PGS001708	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25585	WA L1 in tract middle cerebellar peduncle			
+Diffusion_brain_MRI	INI25589	WA L1 in tract posterior thalamic radiation (R)			
+Diffusion_brain_MRI	INI25590	WA L1 in tract superior longitudinal fasciculus (L)	PGS001709	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25591	WA L1 in tract superior longitudinal fasciculus (R)	PGS001710	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25592	WA L1 in tract superior thalamic radiation (L)	PGS001711	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25593	WA L1 in tract superior thalamic radiation (R)	PGS001712	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25594	WA L1 in tract uncinate fasciculus (L)	PGS001713	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25597	WA L2 in tract acoustic radiation (R)	PGS001714	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25598	WA L2 in tract anterior thalamic radiation (L)	PGS001715	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25599	WA L2 in tract anterior thalamic radiation (R)	PGS001716	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25600	WA L2 in tract cingulate gyrus part of cingulum (L)	PGS001717	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25601	WA L2 in tract cingulate gyrus part of cingulum (R)	PGS001718	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25602	WA L2 in tract parahippocampal part of cingulum (L)			
+Diffusion_brain_MRI	INI25604	WA L2 in tract corticospinal tract (L)			
+Diffusion_brain_MRI	INI25605	WA L2 in tract corticospinal tract (R)			
+Diffusion_brain_MRI	INI25606	WA L2 in tract forceps major	PGS001719	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25607	WA L2 in tract forceps minor	PGS001720	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25608	WA L2 in tract inferior fronto-occipital fasciculus (L)	PGS001721	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25609	WA L2 in tract inferior fronto-occipital fasciculus (R)	PGS001722	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25610	WA L2 in tract inferior longitudinal fasciculus (L)	PGS001723	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25611	WA L2 in tract inferior longitudinal fasciculus (R)	PGS001724	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25614	WA L2 in tract medial lemniscus (R)			
+Diffusion_brain_MRI	INI25615	WA L2 in tract posterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25617	WA L2 in tract superior longitudinal fasciculus (L)	PGS001725	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25618	WA L2 in tract superior longitudinal fasciculus (R)			
+Diffusion_brain_MRI	INI25619	WA L2 in tract superior thalamic radiation (L)	PGS001726	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25621	WA L2 in tract uncinate fasciculus (L)	PGS001727	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25622	WA L2 in tract uncinate fasciculus (R)	PGS001728	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25624	WA L3 in tract acoustic radiation (R)	PGS001729	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25625	WA L3 in tract anterior thalamic radiation (L)	PGS001730	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25626	WA L3 in tract anterior thalamic radiation (R)	PGS001731	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25627	WA L3 in tract cingulate gyrus part of cingulum (L)	PGS001732	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25628	WA L3 in tract cingulate gyrus part of cingulum (R)	PGS001733	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25633	WA L3 in tract forceps major			
+Diffusion_brain_MRI	INI25634	WA L3 in tract forceps minor	PGS001734	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25635	WA L3 in tract inferior fronto-occipital fasciculus (L)	PGS001735	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25636	WA L3 in tract inferior fronto-occipital fasciculus (R)	PGS001736	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25637	WA L3 in tract inferior longitudinal fasciculus (L)	PGS001737	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25638	WA L3 in tract inferior longitudinal fasciculus (R)	PGS001738	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25639	WA L3 in tract middle cerebellar peduncle			
+Diffusion_brain_MRI	INI25640	WA L3 in tract medial lemniscus (L)			
+Diffusion_brain_MRI	INI25641	WA L3 in tract medial lemniscus (R)			
+Diffusion_brain_MRI	INI25642	WA L3 in tract posterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25644	WA L3 in tract superior longitudinal fasciculus (L)	PGS001739	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25646	WA L3 in tract superior thalamic radiation (L)	PGS001740	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25647	WA L3 in tract superior thalamic radiation (R)	PGS001741	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25648	WA L3 in tract uncinate fasciculus (L)	PGS001742	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25649	WA L3 in tract uncinate fasciculus (R)	PGS001743	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25650	WA ICVF in tract acoustic radiation (L)	PGS001661	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25651	WA ICVF in tract acoustic radiation (R)	PGS001662	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25652	WA ICVF in tract anterior thalamic radiation (L)	PGS001663	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25653	WA ICVF in tract anterior thalamic radiation (R)	PGS001664	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25654	WA ICVF in tract cingulate gyrus part of cingulum (L)	PGS001665	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25655	WA ICVF in tract cingulate gyrus part of cingulum (R)	PGS001666	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25656	WA ICVF in tract parahippocampal part of cingulum (L)	PGS001678	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25657	WA ICVF in tract parahippocampal part of cingulum (R)	PGS001679	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25658	WA ICVF in tract corticospinal tract (L)	PGS001667	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25659	WA ICVF in tract corticospinal tract (R)	PGS001668	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25660	WA ICVF in tract forceps major	PGS001669	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25661	WA ICVF in tract forceps minor	PGS001670	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25662	WA ICVF in tract inferior fronto-occipital fasciculus (L)	PGS001671	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25663	WA ICVF in tract inferior fronto-occipital fasciculus (R)	PGS001672	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25664	WA ICVF in tract inferior longitudinal fasciculus (L)	PGS001673	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25665	WA ICVF in tract inferior longitudinal fasciculus (R)	PGS001674	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25666	WA ICVF in tract middle cerebellar peduncle	PGS001677	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25667	WA ICVF in tract medial lemniscus (L)	PGS001675	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25668	WA ICVF in tract medial lemniscus (R)	PGS001676	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25669	WA ICVF in tract posterior thalamic radiation (L)	PGS001680	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25670	WA ICVF in tract posterior thalamic radiation (R)	PGS001681	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25671	WA ICVF in tract superior longitudinal fasciculus (L)	PGS001682	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25672	WA ICVF in tract superior longitudinal fasciculus (R)	PGS001683	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25673	WA ICVF in tract superior thalamic radiation (L)	PGS001684	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25674	WA ICVF in tract superior thalamic radiation (R)	PGS001685	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25675	WA ICVF in tract uncinate fasciculus (L)	PGS001686	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25676	WA ICVF in tract uncinate fasciculus (R)	PGS001687	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25679	WA OD in tract anterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25680	WA OD in tract anterior thalamic radiation (R)			
+Diffusion_brain_MRI	INI25681	WA OD in tract cingulate gyrus part of cingulum (L)			
+Diffusion_brain_MRI	INI25682	WA OD in tract cingulate gyrus part of cingulum (R)			
+Diffusion_brain_MRI	INI25684	WA OD in tract parahippocampal part of cingulum (R)			
+Diffusion_brain_MRI	INI25685	WA OD in tract corticospinal tract (L)	PGS001766	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25687	WA OD in tract forceps major			
+Diffusion_brain_MRI	INI25689	WA OD in tract inferior fronto-occipital fasciculus (L)			
+Diffusion_brain_MRI	INI25690	WA OD in tract inferior fronto-occipital fasciculus (R)			
+Diffusion_brain_MRI	INI25691	WA OD in tract inferior longitudinal fasciculus (L)			
+Diffusion_brain_MRI	INI25692	WA OD in tract inferior longitudinal fasciculus (R)	PGS001767	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25694	WA OD in tract medial lemniscus (L)	PGS001768	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25695	WA OD in tract medial lemniscus (R)			
+Diffusion_brain_MRI	INI25696	WA OD in tract posterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25697	WA OD in tract posterior thalamic radiation (R)			
+Diffusion_brain_MRI	INI25698	WA OD in tract superior longitudinal fasciculus (L)	PGS001769	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25699	WA OD in tract superior longitudinal fasciculus (R)	PGS001770	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25700	WA OD in tract superior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25701	WA OD in tract superior thalamic radiation (R)	PGS001771	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25702	WA OD in tract uncinate fasciculus (L)			
+Diffusion_brain_MRI	INI25703	WA OD in tract uncinate fasciculus (R)			
+Diffusion_brain_MRI	INI25704	WA ISOVF in tract acoustic radiation (L)	PGS001688	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25705	WA ISOVF in tract acoustic radiation (R)	PGS001689	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25707	WA ISOVF in tract anterior thalamic radiation (R)	PGS001690	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25708	WA ISOVF in tract cingulate gyrus part of cingulum (L)	PGS001691	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25709	WA ISOVF in tract cingulate gyrus part of cingulum (R)	PGS001692	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25712	WA ISOVF in tract corticospinal tract (L)			
+Diffusion_brain_MRI	INI25713	WA ISOVF in tract corticospinal tract (R)			
+Diffusion_brain_MRI	INI25716	WA ISOVF in tract inferior fronto-occipital fasciculus (L)	PGS001693	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25717	WA ISOVF in tract inferior fronto-occipital fasciculus (R)	PGS001694	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25718	WA ISOVF in tract inferior longitudinal fasciculus (L)	PGS001695	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25719	WA ISOVF in tract inferior longitudinal fasciculus (R)	PGS001696	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25723	WA ISOVF in tract posterior thalamic radiation (L)			
+Diffusion_brain_MRI	INI25724	WA ISOVF in tract posterior thalamic radiation (R)	PGS001697	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25725	WA ISOVF in tract superior longitudinal fasciculus (L)	PGS001698	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25726	WA ISOVF in tract superior longitudinal fasciculus (R)	PGS001699	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25727	WA ISOVF in tract superior thalamic radiation (L)	PGS001700	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25728	WA ISOVF in tract superior thalamic radiation (R)	PGS001701	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25729	WA ISOVF in tract uncinate fasciculus (L)	PGS001702	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Diffusion_brain_MRI	INI25730	WA ISOVF in tract uncinate fasciculus (R)	PGS001703	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+Digestive_health	INI21025	Freq. of discomfort/pain in abdomen in last 3 months	PGS001395	EFO_0003766	pain in abdomen
+Digestive_health	INI21028	Freq. of discomfort/pain getting better or stopping after a bowel movement			
+Digestive_health	INI21029	More frequent bowel movements when abdominal discomfort/pain started			
+Digestive_health	INI21033	Freq. of hard/lumpy stools in the last 3 months			
+Digestive_health	INI21034	Freq. of loose/mushy/watery stools in the last 3 months			
+Digestive_health	INI21039	Severity of current abdominal distension/tightness			
+Digestive_health	INI21040	Satisfaction with bowel habits			
+Digestive_health	INI21042	Greatest # of times bowels opened per day			
+Digestive_health	INI21043	Least # of times bowels opened per week			
+Digestive_health	INI21044	Ave. # of times bowels opened per day	PGS001376	EFO_0008460	colorectal health
+Digestive_health	INI21045	# of weeks absent from work due to IBS, in the last year			
+Digestive_health	INI21047	# of weeks (in the last year) at work suffering because of IBS			
+Digestive_health	INI21049	Degree bothered by pain in arms/legs/joints in the past 3 months	PGS001386	EFO_0011014	health-related quality of life measurement
+Digestive_health	INI21051	Degree bothered by headaches in the last 3 months	PGS001385	EFO_0011014	health-related quality of life measurement
+Digestive_health	INI21052	Degree bothered by chest pain in the last 3 months			
+Digestive_health	INI21053	Degree bothered by dizziness in the last 3 months			
+Digestive_health	INI21058	Degree bothered by urinary frequency/bladder irritability in the last 3 months	PGS001387	EFO_0011014	health-related quality of life measurement
+Digestive_health	INI21059	Degree bothered by nausea in the last 3 months			
+Digestive_health	INI21060	Degree bothered by feeling tired all the time in the last 3 months	PGS001384	EFO_0011014	health-related quality of life measurement
+Digestive_health	INI21061	Degree bothered by trouble sleeping in the last 3 months			
+DXA_assessment	INI23201	L1-L4 ave. height			
+DXA_assessment	INI23209	Femur neck BMD (bone mineral density) T-score (R)			
+DXA_assessment	INI23210	Femur shaft BMD (bone mineral density) (R)			
+DXA_assessment	INI23212	Femur total BMD (bone mineral density) (R)			
+DXA_assessment	INI23213	Femur total BMD (bone mineral density) T-score (R)			
+DXA_assessment	INI23220	Arm BMC (bone mineral content) (L)			
+DXA_assessment	INI23222	Arm BMC (bone mineral content) (R)			
+DXA_assessment	INI23223	Arm BMD (bone mineral density) (R)			
+DXA_assessment	INI23224	Arms BMC (bone mineral content)			
+DXA_assessment	INI23244	Android bone mass			
+DXA_assessment	INI23252	Arm total mass (L)			
+DXA_assessment	INI23254	Arm lean mass (R)			
+DXA_assessment	INI23255	Arm tissue fat % (R)			
+DXA_assessment	INI23256	Arm total mass (R)			
+DXA_assessment	INI23257	Arms fat mass			
+DXA_assessment	INI23260	Arms total mass			
+DXA_assessment	INI23262	Gynoid fat mass			
+DXA_assessment	INI23263	Gynoid lean mass			
+DXA_assessment	INI23265	Gynoid total mass			
+DXA_assessment	INI23267	Leg lean mass (L)			
+DXA_assessment	INI23269	Leg total mass (L)			
+DXA_assessment	INI23271	Leg lean mass (R)			
+DXA_assessment	INI23272	Leg tissue fat % (R)			
+DXA_assessment	INI23273	Leg total mass (R)			
+DXA_assessment	INI23275	Legs lean mass			
+DXA_assessment	INI23277	Legs total mass			
+DXA_assessment	INI23279	Total fat-free mass			
+DXA_assessment	INI23280	Total lean mass			
+DXA_assessment	INI23285	Trunk lean mass			
+DXA_assessment	INI23290	Femur shaft BMD (bone mineral density) (L)			
+DXA_assessment	INI23298	Femur troch BMD (bone mineral density) T-score (L)			
+DXA_assessment	INI23299	Femur neck BMD (bone mineral density) (L)			
+DXA_assessment	INI23305	Head bone area			
+DXA_assessment	INI23307	Pelvis bone area			
+DXA_assessment	INI23311	Spine bone area			
+DXA_assessment	INI23313	Arm bone area (L)			
+DXA_assessment	INI23314	Arm bone area (R)			
+DXA_assessment	INI23315	Leg bone area (L)			
+DXA_assessment	INI23316	Leg bone area (R)			
+DXA_assessment	INI23317	Arms combined bone area			
+DXA_assessment	INI23318	Legs combined bone area			
+Early_life_factors	INI20022	Birth weight	PGS001226	EFO_0004344	birth weight
+Early_life_factors	QT_FC1001687	Comparative body size at age 10	PGS000999	EFO_0009819	comparative body size at age 10, self-reported
+Early_life_factors	QT_FC1001697	Comparative height size at age 10	PGS000998	EFO_0009819	comparative body size at age 10, self-reported
+ECG_at_rest,_12-lead	INI12336	Ventricular rate			
+ECG_at_rest,_12-lead	INI12338	P duration			
+ECG_at_rest,_12-lead	INI12340	QRS duration	PGS001525	EFO_0005055	QRS duration
+ECG_at_rest,_12-lead	INI22330	PQ interval	PGS001521	EFO_0004462	PR interval
+ECG_at_rest,_12-lead	INI22331	QT interval	PGS001526	EFO_0004682	QT interval
+ECG_at_rest,_12-lead	INI22332	QTC interval	PGS001527	EFO_0004682	QT interval
+ECG_at_rest,_12-lead	INI22333	RR interval			
+ECG_at_rest,_12-lead	INI22334	PP interval			
+ECG_at_rest,_12-lead	INI22335	P axis			
+ECG_at_rest,_12-lead	INI22337	T axis			
+ECG_at_rest,_12-lead	INI22338	QRS num			
+Employment	INI20121	Cascot confidence score			
+Eye_measures	INI5078	LogMAR in round (L)			
+Eye_measures	INI5079	LogMAR in round (R)			
+Eye_measures	INI5084	Spherical power (R)	PGS001100	EFO_0007814	refractive error measurement
+Eye_measures	INI5085	Spherical power (L)	PGS001099	EFO_0007814	refractive error measurement
+Eye_measures	INI5089	Astigmatism angle (L)			
+Eye_measures	INI5096	3mm weak meridian (L)	PGS001362	EFO_0004731	eye measurement
+Eye_measures	INI5097	6mm weak meridian (L)	PGS001367	EFO_0004731	eye measurement
+Eye_measures	INI5098	6mm weak meridian (R)	PGS001368	EFO_0004731	eye measurement
+Eye_measures	INI5099	3mm weak meridian (R)	PGS001363	EFO_0004731	eye measurement
+Eye_measures	INI5101	6mm weak meridian angle (R)			
+Eye_measures	INI5103	3mm weak meridian angle (L)			
+Eye_measures	INI5104	3mm strong meridian angle (L)	PGS001361	EFO_0004731	eye measurement
+Eye_measures	INI5105	6mm strong meridian angle (L)			
+Eye_measures	INI5107	3mm strong meridian angle (R)			
+Eye_measures	INI5109	6mm asymmetry angle (R)			
+Eye_measures	INI5111	3mm asymmetry angle (L)			
+Eye_measures	INI5112	3mm cylindrical power angle (L)			
+Eye_measures	INI5113	6mm cylindrical power angle (L)	PGS001364	EFO_0004731	eye measurement
+Eye_measures	INI5114	6mm cylindrical power angle (R)			
+Eye_measures	INI5116	3mm cylindrical power (R)	PGS001358	EFO_0004731	eye measurement
+Eye_measures	INI5117	6mm cylindrical power (R)			
+Eye_measures	INI5118	6mm cylindrical power (L)			
+Eye_measures	INI5119	3mm cylindrical power (L)			
+Eye_measures	INI5132	3mm strong meridian (R)	PGS001360	EFO_0004731	eye measurement
+Eye_measures	INI5133	6mm strong meridian (R)	PGS001366	EFO_0004731	eye measurement
+Eye_measures	INI5134	6mm strong meridian (L)	PGS001365	EFO_0004731	eye measurement
+Eye_measures	INI5135	3mm strong meridian (L)	PGS001359	EFO_0004731	eye measurement
+Eye_measures	INI5157	6mm asymmetry index (L)			
+Eye_measures	INI5158	6mm asymmetry index (R)			
+Eye_measures	INI5160	3mm regularity index (R)			
+Eye_measures	INI5199	LogMAR, initial (R)			
+Eye_measures	INI5201	LogMAR, final (R)			
+Eye_measures	INI5206	LogMAR, initial (L)			
+Eye_measures	INI5208	LogMAR, final (L)			
+Eye_measures	INI5237	3mm index of best keratometry results (R)			
+Eye_measures	INI5254	Intra-ocular pressure, corneal-compensated (R)	PGS001410	EFO_0004695	intraocular pressure measurement
+Eye_measures	INI5255	Intra-ocular pressure, Goldmann-correlated (R)	PGS001185	EFO_0004695	intraocular pressure measurement
+Eye_measures	INI5256	Corneal hysteresis (R)	PGS001381	EFO_0010066	corneal hysteresis
+Eye_measures	INI5257	Corneal resistance factor (R)	PGS001383	EFO_0010067	corneal resistance factor
+Eye_measures	INI5262	Intra-ocular pressure, corneal-compensated (L)	PGS001409	EFO_0004695	intraocular pressure measurement
+Eye_measures	INI5263	Intra-ocular pressure, Goldmann-correlated (L)	PGS001411	EFO_0004695	intraocular pressure measurement
+Eye_measures	INI5264	Corneal hysteresis (L)	PGS001380	EFO_0010066	corneal hysteresis
+Eye_measures	INI5265	Corneal resistance factor (L)	PGS001382	EFO_0010067	corneal resistance factor
+Eye_measures	INI5292	3mm index of best keratometry results (L)			
+Family_history	INI1807	Father's age at death	PGS001393	EFO_0009712	father's age at death
+Family_history	INI1845	Mother's age			
+Family_history	INI3982	# of adopted sisters			
+Family_history	INI5057	# of older siblings			
+Hand_grip_strength	INI46	Hand grip strength (L)	PGS001119	EFO_0006941	grip strength measurement
+Hand_grip_strength	INI47	Hand grip strength (R)	PGS001120	EFO_0006941	grip strength measurement
+Health_and_medical_history	INI2217	Age started wearing glasses or contact lenses	PGS001373	EFO_0004731	eye measurement
+Health_and_medical_history	INI2966	Age high BP diagnosed	PGS000935	HP_0032263|EFO_0004918	Increased blood pressure|age at diagnosis
+Health_and_medical_history	INI2976	Age diabetes diagnosed	PGS001371	EFO_0004918|EFO_0000400	age at diagnosis|diabetes mellitus
+Health_and_medical_history	INI3627	Age angina diagnosed			
+Health_and_medical_history	INI3761	Age hay fever, rhinitis or eczema diagnosed	PGS001283	EFO_0003785	allergy
+Health_and_medical_history	INI3786	Age asthma diagnosed	PGS001370	EFO_0000270	asthma
+Health_and_medical_history	INI4700	Age cataract diagnosed			
+Health_and_medical_history	INI4814	Tinnitus severity/nuisance			
+Health_and_medical_history	QT_FC1002178	Overall health rating	PGS001008	EFO_0009724	health satisfaction measurement
+Health_and_medical_history	QT_FC1002296	Falls in the last year	PGS001012	EFO_0009631	fall
+Health_and_medical_history	QT_FC1004803	Tinnitus severity	PGS001533	HP_0000360	Tinnitus
+Hearing_test	INI20021	Speech-reception-threshold (SRT) estimate (R)			
+Hearing_test	INI4233	Mean signal-to-noise ratio (SNR), (L)			
+Hearing_test	INI4244	Mean signal-to-noise ratio (SNR), (R)			
+Hearing_test	INI4277	Volume level set by participant (R)			
+Heart_MRI	INI22420	LV ejection fraction	PGS001412	EFO_0008373	left ventricular ejection fraction measurement
+Heart_MRI	INI22422	LV end systolic volume			
+Heart_MRI	INI22423	LV stroke volume	PGS001413	EFO_0010555	left ventricular stroke volume measurement
+Heart_MRI	INI22425	Cardiac index			
+Heart_MRI	INI22426	Ave. heart rate	PGS001375	EFO_0004326	heart rate
+Heart_MRI	INI22427	Body surface area	PGS001379	EFO_0004302	anthropometric measurement
+Medical_conditions	INI134	# of self-reported cancers	PGS001005	EFO_0009800	number of cancers, self-reported
+Medical_conditions	INI135	# of self-reported non-cancer illnesses	PGS001004	EFO_0009801	number of non-cancer illnesses, self-reported
+Medical_conditions	INI87	Non-cancer illness year/age first occurred	PGS001514	EFO_0000408	disease
+Medications	INI137	# of medications taken	PGS001003	EFO_0009803	number of treatments or medications taken, self-reported
+Mental_health	INI20405	Ever had known person concerned about, or recommend reduction of, alcohol consumption			
+Mental_health	INI20413	Freq. of inability to cease drinking in last year			
+Mental_health	INI20414	Freq. of drinking alcohol	PGS001394	EFO_0007878	alcohol consumption measurement
+Mental_health	INI20416	Freq. of consuming six or more units of alcohol			
+Mental_health	INI20434	Age at last episode of depression			
+Mental_health	INI20440	Impact on normal roles during worst period of depression			
+Mental_health	INI20442	Lifetime # of depressed periods			
+Mental_health	INI20453	Ever taken cannabis	PGS001391	EFO_0007585	Cannabis use
+Mental_health	INI20454	Maximum frequency of taking cannabis			
+Mental_health	INI20460	Belief that own life is meaningful			
+Mental_health	INI20479	Ever thought that life not worth living			
+Mental_health	INI20495	Avoided activities or situations because of previous stressful experience in past month			
+Mental_health	INI20496	Felt distant from other people in past month			
+Mental_health	INI20498	Felt very upset when reminded of stressful experience in past month			
+Mental_health	INI20506	Recent feelings or nervousness or anxiety			
+Mental_health	INI20509	Recent inability to stop or control worrying			
+Mental_health	INI20510	Recent feelings of depression			
+Mental_health	INI20514	Recent lack of interest or pleasure in doing things			
+Mental_health	INI20515	Recent trouble relaxing			
+Mental_health	INI20517	Trouble falling or staying asleep, or sleeping too much			
+Mental_health	INI20519	Recent feelings of tiredness or low energy			
+Mental_health	INI20520	Recent worrying too much about different things			
+Mental_health	QT_FC10020458	General happiness			
+Mental_health	QT_FC10020536	Weight gain during worst episode of depression			
+Others	INI1003063	FEV FVC ratio	PGS001180	EFO_0004713	FEV/FEC ratio
+Others	INI1003064	PEF pred. ratio	PGS001010	EFO_0009718	peak expiratory flow
+Population_characteristics	INI26421	Education score (Wales)			
+Population_characteristics	INI26424	Physical environment score (Wales)			
+Population_characteristics	INI26426	Index of Multiple Deprivation (Wales)			
+Population_characteristics	INI26428	Income score (Scotland)			
+Psychosocial_factors	INI5386	# of unenthusiastic/disinterested episodes			
+Psychosocial_factors	QT_FC1002060	Freq. of unenthusiasm / disinterest in last 2 weeks	PGS001396	EFO_0007803	emotional symptom measurement
+Psychosocial_factors	QT_FC1002080	Freq. of tiredness / lethargy in last 2 weeks	PGS001080	EFO_0007946	tiredness measurement
+Psychosocial_factors	QT_FC1004548	Health satisfaction	PGS001401	EFO_0009724	health satisfaction measurement
+Psychosocial_factors	QT_FC1004570	Friendships satisfaction	PGS001398	EFO_0009725	friendship satisfaction measurement
+Psychosocial_factors	QT_FC1004581	Financial situation satisfaction			
+Resting_functional_brain_MRI	INI25741	Mean rfMRI head motion, ave.d across space and time points			
+Resting_functional_brain_MRI	INI25744	Inverted temporal signal-to-noise ratio in artefact-cleaned pre-processed rfMRI			
+Spirometry	INI3062	FVC	PGS001237	EFO_0004312	vital capacity
+Spirometry	INI3063	FEV1	PGS001236	EFO_0004314	forced expiratory volume
+Spirometry	INI3064	PEF	PGS001009	EFO_0009718	peak expiratory flow
+Susceptibility_weighted_brain_MRI	INI25026	Median T2star in thalamus (L)			
+Susceptibility_weighted_brain_MRI	INI25027	Median T2star in thalamus (R)	PGS001513	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25028	Median T2star in caudate (L)	PGS001507	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25029	Median T2star in caudate (R)	PGS001508	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25030	Median T2star in putamen (L)	PGS001511	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25031	Median T2star in putamen (R)	PGS001512	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25032	Median T2star in pallidum (L)	PGS001509	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25033	Median T2star in pallidum (R)	PGS001510	EFO_0004346	neuroimaging measurement
+Susceptibility_weighted_brain_MRI	INI25034	Median T2star in hippocampus (L)			
+Susceptibility_weighted_brain_MRI	INI25036	Median T2star in amygdala (L)			
+Susceptibility_weighted_brain_MRI	INI25037	Median T2star in amygdala (R)			
+Susceptibility_weighted_brain_MRI	INI25039	Median T2star in accumbens (R)			
+T1_structural_brain_MRI	INI25000	Volumetric scaling from T1 head image to standard space	PGS001642	EFO_0006930|EFO_0004346	brain volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25001	Vol. of peripheral cortical grey matter (normalised for head size)	PGS001634	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25002	Vol. of peripheral cortical grey matter	PGS001633	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25003	Vol. of ventricular cerebrospinal fluid (normalised for head size)	PGS001070	EFO_0008080	cerebrospinal fluid volume measurement
+T1_structural_brain_MRI	INI25004	Vol. of ventricular cerebrospinal fluid	PGS001639	EFO_0008080|EFO_0004346	cerebrospinal fluid volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25005	Vol. of grey matter (normalised for head size)	PGS001545	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25006	Vol. of grey matter	PGS001544	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25007	Vol. of white matter (normalised for head size)	PGS001641	EFO_0008320|EFO_0004346	white matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25008	Vol. of white matter	PGS001640	EFO_0008320|EFO_0004346	white matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25009	Vol. of brain, grey+white matter (normalised for head size)	PGS001541	EFO_0008320|EFO_0005420|EFO_0004346	white matter volume measurement|grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25010	Vol. of brain, grey+white matter	PGS001540	EFO_0008320|EFO_0005420|EFO_0004346	white matter volume measurement|grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25011	Vol. of thalamus (L)	PGS001637	EFO_0006935|EFO_0004346	thalamus volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25012	Vol. of thalamus (R)	PGS001638	EFO_0006935|EFO_0004346	thalamus volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25013	Vol. of caudate (L)	PGS001542	EFO_0004830|EFO_0004346	caudate nucleus volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25014	Vol. of caudate (R)	PGS001543	EFO_0004830|EFO_0004346	caudate nucleus volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25015	Vol. of putamen (L)	PGS001635	EFO_0006932|EFO_0004346	putamen volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25016	Vol. of putamen (R)	PGS001636	EFO_0006932|EFO_0004346	putamen volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25017	Vol. of pallidum (L)	PGS001631	EFO_0006933|EFO_0004346	pallidum volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25018	Vol. of pallidum (R)	PGS001632	EFO_0006933|EFO_0004346	pallidum volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25019	Vol. of hippocampus (L)	PGS001630	EFO_0005035|EFO_0004346	hippocampal volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25021	Vol. of amygdala (L)			
+T1_structural_brain_MRI	INI25022	Vol. of amygdala (R)			
+T1_structural_brain_MRI	INI25023	Vol. of accumbens (L)	PGS001537	EFO_0006931|EFO_0004346	nucleus accumbens volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25024	Vol. of accumbens (R)	PGS001538	EFO_0006931|EFO_0004346	nucleus accumbens volume|neuroimaging measurement
+T1_structural_brain_MRI	INI25025	Vol. of brain stem + 4th ventricle	PGS001539	EFO_0010303|EFO_0010605|EFO_0004346	fourth ventricle volume measurement|brain stem volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25734	Inverted signal-to-noise ratio in T1			
+T1_structural_brain_MRI	INI25782	Vol. of grey matter in Frontal Pole (L)	PGS001560	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25784	Vol. of grey matter in Insular Cortex (L)	PGS001569	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25785	Vol. of grey matter in Insular Cortex (R)	PGS001570	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25786	Vol. of grey matter in Superior Frontal Gyrus (L)	PGS001597	EFO_0006516|EFO_0004346	superior frontal gyrus grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25787	Vol. of grey matter in Superior Frontal Gyrus (R)	PGS001598	EFO_0006516|EFO_0004346	superior frontal gyrus grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25788	Vol. of grey matter in Middle Frontal Gyrus (L)	PGS001577	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25789	Vol. of grey matter in Middle Frontal Gyrus (R)	PGS001578	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25791	Vol. of grey matter in Inferior Frontal Gyrus, pars triangularis (R)	PGS001567	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25793	Vol. of grey matter in Inferior Frontal Gyrus, pars opercularis (R)			
+T1_structural_brain_MRI	INI25794	Vol. of grey matter in Precentral Gyrus (L)	PGS001590	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25795	Vol. of grey matter in Precentral Gyrus (R)	PGS001591	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25796	Vol. of grey matter in Temporal Pole (L)	PGS001606	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25797	Vol. of grey matter in Temporal Pole (R)	PGS001607	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25798	Vol. of grey matter in Superior Temporal Gyrus, anterior division (L)	PGS001599	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25799	Vol. of grey matter in Superior Temporal Gyrus, anterior division (R)			
+T1_structural_brain_MRI	INI25800	Vol. of grey matter in Superior Temporal Gyrus, posterior division (L)	PGS001600	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25801	Vol. of grey matter in Superior Temporal Gyrus, posterior division (R)			
+T1_structural_brain_MRI	INI25803	Vol. of grey matter in Middle Temporal Gyrus, anterior division (R)			
+T1_structural_brain_MRI	INI25805	Vol. of grey matter in Middle Temporal Gyrus, posterior division (R)	PGS001579	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25806	Vol. of grey matter in Middle Temporal Gyrus, temporooccipital part (L)			
+T1_structural_brain_MRI	INI25807	Vol. of grey matter in Middle Temporal Gyrus, temporooccipital part (R)			
+T1_structural_brain_MRI	INI25808	Vol. of grey matter in Inferior Temporal Gyrus, anterior division (L)			
+T1_structural_brain_MRI	INI25809	Vol. of grey matter in Inferior Temporal Gyrus, anterior division (R)			
+T1_structural_brain_MRI	INI25810	Vol. of grey matter in Inferior Temporal Gyrus, posterior division (L)	PGS001568	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25812	Vol. of grey matter in Inferior Temporal Gyrus, temporooccipital part (L)			
+T1_structural_brain_MRI	INI25813	Vol. of grey matter in Inferior Temporal Gyrus, temporooccipital part (R)			
+T1_structural_brain_MRI	INI25815	Vol. of grey matter in Postcentral Gyrus (R)			
+T1_structural_brain_MRI	INI25817	Vol. of grey matter in Superior Parietal Lobule (R)			
+T1_structural_brain_MRI	INI25818	Vol. of grey matter in Supramarginal Gyrus, anterior division (L)			
+T1_structural_brain_MRI	INI25820	Vol. of grey matter in Supramarginal Gyrus, posterior division (L)			
+T1_structural_brain_MRI	INI25822	Vol. of grey matter in Angular Gyrus (L)			
+T1_structural_brain_MRI	INI25825	Vol. of grey matter in Lateral Occipital Cortex, superior division (R)	PGS001575	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25827	Vol. of grey matter in Lateral Occipital Cortex, inferior division (R)	PGS001574	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25828	Vol. of grey matter in Intracalcarine Cortex (L)	PGS001571	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25829	Vol. of grey matter in Intracalcarine Cortex (R)	PGS001142	EFO_0005420	grey matter volume measurement
+T1_structural_brain_MRI	INI25830	Vol. of grey matter in Frontal Medial Cortex (L)			
+T1_structural_brain_MRI	INI25833	Vol. of grey matter in Juxtapositional Lobule Cortex (formerly Supplementary Motor Cortex) (R)			
+T1_structural_brain_MRI	INI25834	Vol. of grey matter in Subcallosal Cortex (L)	PGS001595	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25835	Vol. of grey matter in Subcallosal Cortex (R)	PGS001596	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25837	Vol. of grey matter in Paracingulate Gyrus (R)	PGS001582	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25838	Vol. of grey matter in Cingulate Gyrus, anterior division (L)	PGS001550	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25839	Vol. of grey matter in Cingulate Gyrus, anterior division (R)	PGS001551	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25840	Vol. of grey matter in Cingulate Gyrus, posterior division (L)			
+T1_structural_brain_MRI	INI25841	Vol. of grey matter in Cingulate Gyrus, posterior division (R)	PGS001552	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25842	Vol. of grey matter in Precuneous Cortex (L)	PGS001592	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25845	Vol. of grey matter in Cuneal Cortex (R)	PGS001556	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25846	Vol. of grey matter in Frontal Orbital Cortex (L)	PGS001558	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25847	Vol. of grey matter in Frontal Orbital Cortex (R)	PGS001559	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25848	Vol. of grey matter in Parahippocampal Gyrus, anterior division (L)	PGS001583	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25849	Vol. of grey matter in Parahippocampal Gyrus, anterior division (R)	PGS001584	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25850	Vol. of grey matter in Parahippocampal Gyrus, posterior division (L)	PGS001585	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25851	Vol. of grey matter in Parahippocampal Gyrus, posterior division (R)	PGS001586	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25853	Vol. of grey matter in Lingual Gyrus (R)	PGS001576	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25854	Vol. of grey matter in Temporal Fusiform Cortex, anterior division (L)	PGS001603	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25856	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (L)	PGS001604	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25857	Vol. of grey matter in Temporal Fusiform Cortex, posterior division (R)	PGS001605	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25859	Vol. of grey matter in Temporal Occipital Fusiform Cortex (R)			
+T1_structural_brain_MRI	INI25860	Vol. of grey matter in Occipital Fusiform Gyrus (L)	PGS001580	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25861	Vol. of grey matter in Occipital Fusiform Gyrus (R)			
+T1_structural_brain_MRI	INI25862	Vol. of grey matter in Frontal Operculum Cortex (L)	PGS001557	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25864	Vol. of grey matter in Central Opercular Cortex (L)	PGS001548	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25865	Vol. of grey matter in Central Opercular Cortex (R)	PGS001549	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25866	Vol. of grey matter in Parietal Operculum Cortex (L)			
+T1_structural_brain_MRI	INI25867	Vol. of grey matter in Parietal Operculum Cortex (R)	PGS001143	EFO_0005420	grey matter volume measurement
+T1_structural_brain_MRI	INI25868	Vol. of grey matter in Planum Polare (L)	PGS001587	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25869	Vol. of grey matter in Planum Polare (R)	PGS001588	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25870	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (L)	PGS001561	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25871	Vol. of grey matter in Heschl's Gyrus (includes H1 and H2) (R)	PGS001562	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25872	Vol. of grey matter in Planum Temporale (L)	PGS001589	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25873	Vol. of grey matter in Planum Temporale (R)			
+T1_structural_brain_MRI	INI25874	Vol. of grey matter in Supracalcarine Cortex (L)	PGS001601	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25875	Vol. of grey matter in Supracalcarine Cortex (R)	PGS001602	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25877	Vol. of grey matter in Occipital Pole (R)	PGS001581	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25878	Vol. of grey matter in Thalamus (L)	PGS001608	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25879	Vol. of grey matter in Thalamus (R)	PGS001609	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25880	Vol. of grey matter in Caudate (L)			
+T1_structural_brain_MRI	INI25881	Vol. of grey matter in Caudate (R)			
+T1_structural_brain_MRI	INI25882	Vol. of grey matter in Putamen (L)	PGS001593	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25883	Vol. of grey matter in Putamen (R)	PGS001594	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25886	Vol. of grey matter in Hippocampus (L)	PGS001563	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25887	Vol. of grey matter in Hippocampus (R)	PGS001564	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25888	Vol. of grey matter in Amygdala (L)	PGS001546	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25890	Vol. of grey matter in Ventral Striatum (L)	PGS001612	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25891	Vol. of grey matter in Ventral Striatum (R)	PGS001613	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25892	Vol. of grey matter in Brain-Stem	PGS001547	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25893	Vol. of grey matter in I-IV Cerebellum (L)	PGS001565	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25894	Vol. of grey matter in I-IV Cerebellum (R)	PGS001566	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25895	Vol. of grey matter in V Cerebellum (L)	PGS001610	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25896	Vol. of grey matter in V Cerebellum (R)	PGS001611	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25897	Vol. of grey matter in VI Cerebellum (L)	PGS001621	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25898	Vol. of grey matter in Vermis VI Cerebellum	PGS001616	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25899	Vol. of grey matter in VI Cerebellum (R)	PGS001622	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25902	Vol. of grey matter in Crus I Cerebellum (R)	PGS001553	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25903	Vol. of grey matter in Crus II Cerebellum (L)	PGS001554	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25904	Vol. of grey matter in Vermis Crus II Cerebellum	PGS001614	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25905	Vol. of grey matter in Crus II Cerebellum (R)	PGS001555	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25906	Vol. of grey matter in VIIb Cerebellum (L)	PGS001623	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25907	Vol. of grey matter in Vermis VIIb Cerebellum	PGS001617	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25908	Vol. of grey matter in VIIb Cerebellum (R)	PGS001624	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25909	Vol. of grey matter in VIIIa Cerebellum (L)	PGS001625	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25910	Vol. of grey matter in Vermis VIIIa Cerebellum	PGS001618	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25911	Vol. of grey matter in VIIIa Cerebellum (R)	PGS001626	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25912	Vol. of grey matter in VIIIb Cerebellum (L)	PGS001627	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25913	Vol. of grey matter in Vermis VIIIb Cerebellum	PGS001619	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25914	Vol. of grey matter in VIIIb Cerebellum (R)	PGS001628	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25915	Vol. of grey matter in IX Cerebellum (L)	PGS001572	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25916	Vol. of grey matter in Vermis IX Cerebellum	PGS001615	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25917	Vol. of grey matter in IX Cerebellum (R)	PGS001573	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25919	Vol. of grey matter in Vermis X Cerebellum	PGS001620	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T1_structural_brain_MRI	INI25920	Vol. of grey matter in X Cerebellum (R)	PGS001629	EFO_0005420|EFO_0004346	grey matter volume measurement|neuroimaging measurement
+T2-weighted_brain_MRI	INI25781	Total vol. of white matter hyperintensities (from T1 and T2 FLAIR images)	PGS001534	EFO_0005665|EFO_0004346	white matter hyperintensity measurement|neuroimaging measurement
+Task_functional_brain_MRI	INI25040	Median BOLD effect (in group-defined mask) for shapes activation			
+Task_functional_brain_MRI	INI25042	Median z-stat. (in group-defined mask) for shapes activation			
+Task_functional_brain_MRI	INI25046	Median z-stat. (in group-defined mask) for faces activation			
+Task_functional_brain_MRI	INI25048	Median BOLD effect (in group-defined mask) for faces-shapes contrast			
+Task_functional_brain_MRI	INI25050	Median z-stat. (in group-defined mask) for faces-shapes contrast			
+Task_functional_brain_MRI	INI25054	Median z-stat. (in group-defined amygdala activation mask) for faces-shapes contrast			
+Task_functional_brain_MRI	INI25742	Mean tfMRI head motion, ave.d across space and time points			
+Task_functional_brain_MRI	INI25761	90%ile of BOLD effect (in group-defined mask) for shapes activation			
+Task_functional_brain_MRI	INI25763	90%ile of BOLD effect (in group-defined mask) for faces activation			
+Task_functional_brain_MRI	INI25765	90%ile of BOLD effect (in group-defined mask) for faces-shapes contrast			
+Task_functional_brain_MRI	INI25766	90%ile of z-stat. (in group-defined mask) for faces-shapes contrast			
+Task_functional_brain_MRI	INI25767	90%ile of BOLD effect (in group-defined amygdala activation mask) for faces-shapes contrast			
+Work_environment	INI22146	Age hayfever or allergic rhinitis diagnosed by doctor	PGS001372	EFO_0003785	allergy
+Work_environment	INI22147	Age asthma diagnosed by doctor			
+Work_environment	INI22503	Years of cough on most days			
