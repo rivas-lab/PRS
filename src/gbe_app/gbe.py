@@ -84,7 +84,7 @@ EXON_PADDING = 50
 app.config.update(dict(
     ## Set SCIDB_URL='http://localhost:8080' environment variable
     # SCIDB_URL='http://localhost:8080',
-    DEBUG=True,
+    DEBUG=False,
     SECRET_KEY='development key',
     LOAD_DB_PARALLEL_PROCESSES = 8,  # contigs assigned to threads, so good to make this a factor of 24 (eg. 2,3,4,6,8)
     SITES_VCFS=glob.glob(os.path.join(os.path.dirname(__file__), GBE_FILES_DIRECTORY, 'icd10ukbb.ukbiobank.combined.vcf.gz')),
@@ -338,7 +338,8 @@ def variant_icd_page(namespace, variant_str):
                 indexes.append(idx)
             else:
                 sqz = str(phef[phef['title'] == icd10]['notes'].squeeze()).split(';')
-                #print(sqz)
+                print(phef[phef['title'] == icd10])
+                print(str(phef[phef['title'] == icd10]['notes'].squeeze()))
                 item['Name'] = sqz[1].split('=')[1]
                 item['Case'] = sqz[0].split('=')[1]
                 item['Group'] = sqz[-1].split('=')[1]
@@ -375,6 +376,10 @@ def variant_icd_page(namespace, variant_str):
         for index in sorted(indexes, reverse=True):
             del icdstats[index]
         print('Rendering variant: %s' % variant_str)
+        print(variant)
+        print(icdstats)
+        print(consequences)
+        print(namespace)
         return render_template(
             'variant.html',
             variant=variant,
@@ -756,8 +761,12 @@ def biomarkers_page():
         print('Failed on cgauge Error=', traceback.format_exc())
         abort(404)
 
+
 @app.route('/<namespace>/snpnet/<icd_str>')
-def snpnet_page(namespace, icd_str):
+@app.route('/<namespace>/snpnet_v2/<icd_str>')
+def snpnet_page_v2(namespace, icd_str):
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     namespace = 'RIVAS_HG19'
     db = get_db(namespace)
     try:
@@ -773,18 +782,157 @@ def snpnet_page(namespace, icd_str):
             pvalthr = max(5e-7, pvalthr)
             cuttoff = pvalthr
         icd = [{'Case': casecnt, 'Name': shortname, 'icd': icd_str}]
-            
-	return render_template(
-            'snpnet.html',
+
+        # read the evaluation metric
+        eval_f = '/biobankengine/app/static/PRSmap/PRSmap_v2/PRSmap.eval.tsv.gz'
+
+        df = pandas.read_csv(eval_f, sep='\t').rename(
+            columns={'#trait':'trait'}
+        )
+        # filter to the specified traits
+        df = df[df['trait'] == icd_str]
+
+        # order of the ancestry groups
+        split_order_df = pandas.DataFrame({
+            'split': [
+                'train_val', 'test',
+                'non_british_white', 's_asian', 'e_asian', 'african'
+            ],
+            'split_plot': [
+                'white British (model development)',
+                'white British (hold-out test set)',
+                'Non-British white', 'South Asian', 'East Asian', 'African'
+            ],
+            'split_order': range(6)
+        })
+
+        # order of the predictive performance metric
+        metric_order_df = pandas.DataFrame({
+            'metric': [
+                'r2', 'auc', 'TjurR2', 'NagelkerkeR2'
+            ],
+            'metric_plot': [
+                '<i>R</i><sup>2</sup>',
+                'ROC-AUC',
+                "Tjur's pseudo-<i>R</i><sup>2</sup>",
+                "Cragg and Uhler's pseudo-<i>R</i><sup>2</sup>"
+            ],
+            'metric_order': range(4)
+        })
+
+        # decide whether it's a binary or quantitative traits
+        icd_prefix = re.sub(r'[0-9]+', '', icd_str)
+        if (icd_prefix == 'INI' or icd_prefix == 'QT_FC'):
+            n_cols = ['n']
+        else:
+            n_cols = ['n', 'case_n', 'control_n']
+
+        wide_df = df.pivot_table(
+            values='eval',
+            index=['metric', 'split'],
+            columns='model',
+            aggfunc=numpy.sum
+        ).reset_index(
+        ).rename(
+            columns={
+                'PRS':   'pred_geno',
+                'covar': 'pred_covar',
+                'full':  'pred_full'
+            }
+        ).merge(
+            split_order_df
+        ).merge(
+            metric_order_df
+        ).merge(
+            df[['split'] + n_cols].drop_duplicates()
+        ).sort_values(by=['metric_order', 'split_order'])
+
+        wide_df['pred_delta'] = wide_df['pred_full'] - wide_df['pred_covar']
+
+        for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
+            # format digits
+            if col in wide_df.columns:
+                wide_df[col] = wide_df[col].map(lambda x: '{:0.3f}'.format(x))
+
+        for col in ['case_n', 'control_n']:
+            if col in wide_df.columns:
+                wide_df[col] = wide_df[col].map(lambda x: int(x))
+
+
+        wide_df = wide_df[
+            [
+                'metric_plot', 'split_plot',
+                'pred_geno', 'pred_covar', 'pred_full', 'pred_delta'
+            ] + n_cols
+        ].rename(
+            columns={
+                'metric_plot': 'Metric',
+                'split_plot' : 'Ancestry group',
+                'pred_geno'  : 'Geno',
+                'pred_covar' : 'Covars',
+                'pred_full'  : 'Full',
+                'pred_delta' : 'delta'
+            }
+        )
+
+        # generate HTML string
+        table_eval_tbody_str=''.join(
+            ['<tr>{}</tr>'.format(
+                ''.join([
+                    '<td>{}</td>'.format(x)
+                    for x in wide_df.iloc[row]
+                ]
+            )
+        ) for row in range(wide_df.shape[0])])
+
+        return render_template(
+            'snpnet_v2.html',
             namespace=namespace,
             icd=icd,
             icd_str=icd_str,
-            snpnet_plot='/static/PRS_map/{}.plot.png'.format(icd_str),
-            snpnet_eval='/static/PRS_map/{}.eval.tsv'.format(icd_str)
+            snpnet_BETAs_tsv='/static/PRSmap/PRSmap_v2/per_trait/{}.snpnetBETAs.tsv'.format(icd_str),
+            snpnet_plot_png='/static/PRSmap/PRSmap_v2/per_trait/{}.plot.png'.format(icd_str),
+            snpnet_plot_pdf='/static/PRSmap/PRSmap_v2/per_trait/{}.plot.pdf'.format(icd_str),
+            table_eval_n_cols = n_cols,
+            table_eval_tbody_str = table_eval_tbody_str
         )
     except Exception as e:
         print('Failed on snpnet.html  Error=', traceback.format_exc())
         abort(404)
+
+
+@app.route('/<namespace>/snpnet_v1/<icd_str>')
+def snpnet_page_v1(namespace, icd_str):
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
+    namespace = 'RIVAS_HG19'
+    db = get_db(namespace)
+    try:
+        cutoff = None
+        icd = None
+        for p in [.001]:
+            assocset = str(db.list_association_sets()['name'][0])
+            df = db.get_phenotype_fields(association_set=assocset, include_pvalue_threshold=True)
+            field_identifier = int(df[df['title'] == icd_str]['field_id'])
+            pvalthr = float(df[df['title'] == icd_str]['pvalue_threshold'])
+            shortname = str(df[df['title'] == icd_str]['notes'].squeeze().split(';')[1].split('=')[1])
+            casecnt = str(df[df['title'] == icd_str]['notes'].squeeze().split(';')[0].split('=')[1])
+            pvalthr = max(5e-7, pvalthr)
+            cuttoff = pvalthr
+        icd = [{'Case': casecnt, 'Name': shortname, 'icd': icd_str}]
+
+	return render_template(
+            'snpnet_v1.html',
+            namespace=namespace,
+            icd=icd,
+            icd_str=icd_str,
+            snpnet_plot='/static/PRSmap/PRSmap_v1/{}.plot.png'.format(icd_str),
+            snpnet_eval='/static/PRSmap/PRSmap_v1/{}.eval.tsv'.format(icd_str)
+        )
+    except Exception as e:
+        print('Failed on snpnet.html  Error=', traceback.format_exc())
+        abort(404)
+
 
 @app.route('/<namespace>/coding_breakdown/<icd_str>')
 def coding_breakdown_page(namespace, icd_str):
@@ -941,35 +1089,191 @@ def hla_assoc_page():
         print('Unknown Error=', traceback.format_exc())
         abort(404)
 
+
 @app.route('/prs')
-def prs_page():
+@app.route('/prs_v2')
+def prs_page_v2():
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
     try:
         namespace = 'RIVAS_HG19'
         if request.method == 'POST':
             namespace = request.form['functionassocset']
 
-	# read trait  list table
-	trait_list_f='/biobankengine/app/static/PRS_map/traits.tsv'
-	df = pandas.read_csv(trait_list_f, sep='\t')
-	df['trait'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
-	df = df.drop('trait_name',axis=1)
-	for col in ['#trait_category']:
-	    df[col] = df[col].map(lambda x: x.replace('_', ' '))
-	for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
-	    df[col] = df[col].map(lambda x: str(round(x, 2)))
-	table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
-    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
-	) for row in range(df.shape[0])])
+        # read trait  list table
+        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v2/traits_w_metrics.tsv'
+        table_cols=['Trait category', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
+        table_cols_select=['Trait group', 'Family', 'Significant?']
 
-	table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants']
-        table_cols_select=['Trait group', 'Family']
+        df = pandas.read_csv(trait_list_f, sep='\t').rename(
+            columns={'#trait':'trait'}
+        ).sort_values(
+            by=['family', 'WBtest_P', 'n_variables'],
+            ascending=[False, True, False]
+        )
+
+        df['trait_name'] = ['<a href="/RIVAS_HG19/snpnet/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
+
+        for col in ['family']:
+            if col in df.columns:
+                # format string
+                df[col] = df[col].map(lambda x: str(x).title())
+        for col in ['trait_category']:
+            if col in df.columns:
+                # format string
+                df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
+        for col in ['WBtest_P']:
+            if col in df.columns:
+                # format to scientific notation
+                df[col] = df[col].map(lambda x: '{:0.1e}'.format(x))
+        for col in ['pred_geno', 'pred_covar', 'pred_full', 'pred_delta']:
+            if col in df.columns:
+                # format digits
+                df[col] = df[col].map(lambda x: '{:0.3f}'.format(x))
+
+        df = df[[
+            'trait_category', 'trait_name', 'family',
+            'pred_geno', 'pred_covar', 'pred_full', 'pred_delta',
+            'n_variables', 'WBtest_P', 'WBtest_is_significant'
+        ]]
+
+        # generate HTML string
+        table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+                ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+        ) for row in range(df.shape[0])])
 
         return render_template(
-		'prs.html',
-		namespace = namespace, 
-            	table_prs_trait_list_cols        = table_cols,
-		table_prs_trait_list_cols_select = table_cols_select,
-		table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
+            'prs_v2.html',
+            namespace = namespace,
+            table_prs_trait_list_cols        = table_cols,
+            table_prs_trait_list_col_len     = len(table_cols),
+            table_prs_trait_list_cols_select = table_cols_select,
+            table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
+	    )
+
+    except Exception as e:
+        print('Unknown Error=', traceback.format_exc())
+        abort(404)
+
+
+@app.route('/prs_v1')
+def prs_page_v1():
+    # Please look at the documentation at PRS the repository
+    # https://github.com/rivas-lab/PRS/tree/master/notebook/20210115_GBE_data_prep/GBE_page_src
+    try:
+        namespace = 'RIVAS_HG19'
+        if request.method == 'POST':
+            namespace = request.form['functionassocset']
+
+        # read trait  list table
+        trait_list_f='/biobankengine/app/static/PRSmap/PRSmap_v1/traits.tsv'
+        table_cols=['Trait group', 'Trait', 'Family', 'Geno', 'Covars', 'Full', 'delta', '# variants', 'p (WB)', 'significant?']
+        table_cols_select=['Trait group', 'Family', 'significant?']
+
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['trait'] = ['<a href="/RIVAS_HG19/snpnet_v1/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['trait'], df['trait_name'])]
+        df = df.drop('trait_name',axis=1)
+        for col in ['#trait_category']:
+                # format string
+            df[col] = df[col].map(lambda x: str(x).replace('_', ' '))
+        for col in ['WB_test_P']:
+                # format to scientific notation
+            df[col] = df[col].map(lambda x: '{:0.2e}'.format(x))
+        for col in ['geno', 'covar', 'geno_covar', 'geno_delta']:
+                # format digits
+            df[col] = df[col].map(lambda x: str(round(x, 2)))
+
+        # generate HTML string
+        table_prs_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+                ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+        ) for row in range(df.shape[0])])
+
+        return render_template(
+            'prs_v1.html',
+            namespace = namespace,
+            table_prs_trait_list_cols        = table_cols,
+            table_prs_trait_list_col_len     = len(table_cols),
+            table_prs_trait_list_cols_select = table_cols_select,
+            table_prs_trait_list_tbody_str   = table_prs_trait_list_tbody_str
+	    )
+
+    except Exception as e:
+        print('Unknown Error=', traceback.format_exc())
+        abort(404)
+
+
+@app.route('/<namespace>/mrpgene/<freq>')
+def mrp_page(namespace,freq):
+    try:
+	# read trait  list table
+        if freq == "rare":
+	    trait_list_f='/biobankengine/app/static/mrpgene/' + namespace + '/' + namespace + '_ultrarare_gene_results.tsv'
+        else:
+            trait_list_f='/biobankengine/app/static/mrpgene/' + namespace + '/' + namespace + '_gene_results.tsv'
+	table_cols=['GBE_ID','GBE_short_name','pops','num_pops','gene','n_pav','n_ptv','l10BF_IEM_pav','l10BF_SEM_pav','l10BF_SEM_ptv','GBE_link','MRPMM_pav','MRPMM_ptv']
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['gene2'] = df['gene']
+        df['gene'] = ['<a href="/' + namespace + '/gene/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['gene2'], df['gene2'])]
+	df['trait'] = ['<a href="/' + namespace + '/coding/{}">{}</a>'.format(x[0], x[1]) for x in zip(df['GBE_ID'], df['GBE_short_name'])]
+        df['mrpmm_pav'] = ['<a href="/' + namespace + '/mrpmm_pav/{}/{}">{}</a>'.format(x[0],x[1], x[2]) for x in zip(df['gene2'], df['GBE_ID'], df['GBE_short_name'])]
+        df['mrpmm_ptv'] = ['<a href="/' + namespace + '/mrpmm_ptv/{}/{}">{}</a>'.format(x[0],x[1], x[2]) for x in zip(df['gene2'], df['GBE_ID'], df['GBE_short_name'])]
+        del df['gene2']
+	# generate HTML string
+	table_mrp_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+	) for row in range(df.shape[0])])
+        if namespace == "RIVAS_HG38":
+            return render_template(
+                'mrp200k.html',
+		namespace = namespace,
+        table_mrp_trait_list_cols        = table_cols,
+		table_mrp_trait_list_col_len     = len(table_cols),
+#		table_mrp_trait_list_cols_select = table_cols_select,
+		table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
+	    )
+        else:
+            return render_template(
+                'mrparray.html',
+		namespace = namespace,
+        table_mrp_trait_list_cols        = table_cols,
+		table_mrp_trait_list_col_len     = len(table_cols),
+#		table_mrp_trait_list_cols_select = table_cols_select,
+		table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
+	    )
+
+
+    except Exception as e:
+        print('Unknown Error=', traceback.format_exc())
+        abort(404)
+
+
+
+@app.route('/<namespace>/hla-allelotypes')
+def hla_page(namespace):
+    try:
+        trait_list_f='/biobankengine/app/static/hla_sup_2.tsv'
+        table_cols=['allelotype','locus','GBE_ID','GBE_NAME','N_GBE','BMA_posterior_mean','BMA_posterior_sd','BMA_CI', 'gen_1_P', 'gen_1_BY_ADJ_P',  'gen_1_Z_STAT',    'gen_2_BY_ADJ_P',  'add_BY_ADJ_P']
+        df = pandas.read_csv(trait_list_f, sep='\t')
+        df['BMA_posterior_mean'] = df['BMA_posterior_mean'].round(3)
+        df['BMA_posterior_sd'] = df['BMA_posterior_sd'].round(3)
+        df['gen_1_P'] = df['gen_1_P'].map('{:.2E}'.format)
+        df['gen_1_BY_ADJ_P'] = df['gen_1_BY_ADJ_P'].map('{:.2E}'.format)
+        df['gen_2_BY_ADJ_P'] = df['gen_2_BY_ADJ_P'].map('{:.2E}'.format)
+        df['add_BY_ADJ_P'] = df['add_BY_ADJ_P'].map('{:.2E}'.format)
+        df['gen_1_Z_STAT'] = df['gen_1_Z_STAT'].round(3)
+
+
+        # generate HTML string
+	table_mrp_trait_list_tbody_str=''.join(['<tr>{}</tr>'.format(
+    	    ''.join(['<td>{}</td>'.format(x) for x in df.iloc[row]])
+	) for row in range(df.shape[0])])
+        return render_template(
+            'hla2021.html',
+	    namespace = namespace,
+            table_mrp_trait_list_cols        = table_cols,
+	    table_mrp_trait_list_col_len     = len(table_cols),
+            #		table_mrp_trait_list_cols_select = table_cols_select,
+	    table_mrp_trait_list_tbody_str   = table_mrp_trait_list_tbody_str
 	)
 
     except Exception as e:
@@ -1093,10 +1397,10 @@ def gene_page(namespace, gene_id):
 
 
 
-@app.route('/<namespace>/mrpmm/<gene_id>/<icd_str>')
-def mrpmm(namespace, gene_id, icd_str):
+@app.route('/<namespace>/mrpmm_pav/<gene_id>/<icd_str>')
+def mrpmm_pav(namespace, gene_id, icd_str):
     l10bfarr = []
-    with open("/biobankengine/app/static/mrpmm/" + gene_id + "_" + icd_str + ".mcmc.bic.aic","r") as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/" + gene_id + "_" + icd_str + "*pav*.mcmc.bic.aic")[0],"r") as inFile:
         finr = inFile.readlines()
        # l10bf = {}
         for line in finr[1:]:
@@ -1104,10 +1408,20 @@ def mrpmm(namespace, gene_id, icd_str):
             line = line.split()
             #            l10bf[line[0]] = "{0:.3g}".format(float(line[1]))
             l10bf = "{0:.3g}".format(float(line[len(line) - 1]))
-            l10bfarr.append(l10bf)
-            idxmax = l10bfarr.index(max(l10bfarr)) + 1
-    l10bf = max(l10bfarr)
-    with open("/biobankengine/app/static/mrpmm/"+ gene_id + "_" + icd_str + "_" + str(idxmax) + ".mcmc.posteriors", "r") as inFile:
+            l10bfarr.append(float(l10bf))
+    print(l10bfarr)
+    idxmax = 1
+    l10bfarrtmp = 0
+    for i in range(0, len(l10bfarr)):
+        if l10bfarr[i] >= 2.5 and l10bfarr[i] > l10bfarrtmp + 2:
+            idxmax = i + 1
+            l10bfarrtmp = l10bfarr[i]
+        else:
+            pass
+#    idxmax = l10bfarr.index(max(l10bfarr)) + 1
+    #l10bf = max(l10bfarr)
+    l10bf = l10bfarrtmp
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/"+ gene_id + "_" + icd_str + "_*pav*" + str(idxmax) + ".mcmc.posteriors")[0], "r") as inFile:
         probabilities = []
         admixture_data = []
         variants = []
@@ -1132,7 +1446,7 @@ def mrpmm(namespace, gene_id, icd_str):
         idxnewarr = [b[0] for b in sorted(enumerate(nullmembership),key=lambda i:i[1], reverse = True)]
         variants = [variants[idxnewarr[i]] for i in range(0,len(idxnewarr))]
         admixture_data.append(variants)
-    with open("/biobankengine/app/static/mrpmm/"+ gene_id + "_"  + icd_str + "_" + str(idxmax) + ".mcmc.gene.posteriors", "r") as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_"  + icd_str + "_*pav*" + str(idxmax) + ".mcmc.gene.posteriors")[0], "r") as inFile:
         admixture_datagene = []
         genes = []
         finr = inFile.readlines()
@@ -1148,7 +1462,7 @@ def mrpmm(namespace, gene_id, icd_str):
         admixture_datagene.append(genes)
     scalefactor = 1
     scales = []
-    with open("/biobankengine/app/static/mrpmm/" + gene_id + "_" + icd_str + "_" + str(idxmax) + ".mcmc.scale", 'r') as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/" + gene_id + "_" + icd_str + "_*pav*" + str(idxmax) + ".mcmc.scale")[0], 'r') as inFile:
         finr = inFile.readlines()
         for line in finr[1:]:
             line = line.rstrip()
@@ -1156,7 +1470,7 @@ def mrpmm(namespace, gene_id, icd_str):
             scaled = float(line[2])
             scales.append(scaled)
     scalefactor = numpy.median(scales)
-    with open("/biobankengine/app/static/mrpmm/"+ gene_id + "_" + icd_str + "_" + str(idxmax) + ".mcmc.bc", "r") as inFile:
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/"+ gene_id + "_" + icd_str + "_*pav*" + str(idxmax) + ".mcmc.bc")[0], "r") as inFile:
         cluster_data = []
         headerarr = []
         inFiler = inFile.readlines()
@@ -1187,7 +1501,7 @@ def mrpmm(namespace, gene_id, icd_str):
                     tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
                     cluster.append(tmp)
             cluster_data.append([cluster_num, cluster])
-    fdrf = open("/biobankengine/app/static/mrpmm/"+ gene_id + "_" + icd_str +"_" + str(idxmax) + ".fdr", "r").readlines()
+    fdrf = open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace + "_mrpmm/"+ gene_id + "_" + icd_str +"_*pav*" + str(idxmax) + ".fdr")[0], "r").readlines()
     fdrnum = fdrf[0].rstrip().split()[0]
     fdr_data2 = []
     for line in fdrf[1:]:
@@ -1195,9 +1509,6 @@ def mrpmm(namespace, gene_id, icd_str):
         line = line.split()
         fdr_data2.append(line[0])
     try:
-        print("FDR DATA\n")
-        print(fdr_data2)
-        print("FINISH\n")
         t = render_template(
             'mrp.html',
             namespace=namespace,
@@ -1210,7 +1521,127 @@ def mrpmm(namespace, gene_id, icd_str):
             fdr_data=fdr_data2
    #         phenid_arr=headerarr
             )
-        print("HERE MRPMM")
+        return t
+    except Exception as e:
+        print('Failed: %s' % e)
+        abort(404)
+
+
+@app.route('/<namespace>/mrpmm_ptv/<gene_id>/<icd_str>')
+def mrpmm_ptv(namespace, gene_id, icd_str):
+    l10bfarr = []
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/" + gene_id + "_" + icd_str + "*ptv*.mcmc.bic.aic")[0],"r") as inFile:
+        finr = inFile.readlines()
+       # l10bf = {}
+        for line in finr[1:]:
+            line = line.rstrip()
+            line = line.split()
+            #            l10bf[line[0]] = "{0:.3g}".format(float(line[1]))
+            l10bf = "{0:.3g}".format(float(line[len(line) - 1]))
+            l10bfarr.append(float(l10bf))
+    print(l10bfarr)
+    idxmax = l10bfarr.index(max(l10bfarr)) + 1
+    l10bf = max(l10bfarr)
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_" + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.posteriors")[0], "r") as inFile:
+        probabilities = []
+        admixture_data = []
+        variants = []
+        nullmembership = []
+        finr = inFile.readlines()
+        for line in finr[1:]:
+            line = line.rstrip()
+            var_info = line.split("\t")
+            varid = var_info[0]
+            var = var_info[4]
+            variant = {}
+            varids = varid.split(':')
+            varidpage = varids[0] + ":" + varids[1] + "-" + varids[2] + "-" + varids[3]
+            variant["variant"] = varidpage
+            variant["varid"] = var
+            for j in range(5, len(var_info)):
+                variant["%s" % (j-4)] = var_info[j]
+            if float(var_info[5]) >= .2:
+                        continue
+            nullmembership.append(float(var_info[5]))
+            variants.append(variant)
+        idxnewarr = [b[0] for b in sorted(enumerate(nullmembership),key=lambda i:i[1], reverse = True)]
+        variants = [variants[idxnewarr[i]] for i in range(0,len(idxnewarr))]
+        admixture_data.append(variants)
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_"  + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.gene.posteriors")[0], "r") as inFile:
+        admixture_datagene = []
+        genes = []
+        finr = inFile.readlines()
+        for line in finr[1:]:
+            line = line.rstrip()
+            gene_info = line.split("\t")
+            geneid = gene_info[0]
+            gene = {}
+            gene["gene"] = geneid
+            for j in range(1, int((len(gene_info)-1)/3)+1):
+                gene["%s" % (j-1)] = gene_info[j]
+            genes.append(gene)
+        admixture_datagene.append(genes)
+    scalefactor = 1
+    scales = []
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/" + gene_id + "_" + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.scale")[0], 'r') as inFile:
+        finr = inFile.readlines()
+        for line in finr[1:]:
+            line = line.rstrip()
+            line = line.split()
+            scaled = float(line[2])
+            scales.append(scaled)
+    scalefactor = numpy.median(scales)
+    with open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_" + icd_str + "_*ptv*" + str(idxmax) + ".mcmc.bc")[0], "r") as inFile:
+        cluster_data = []
+        headerarr = []
+        inFiler = inFile.readlines()
+        header = inFiler[0]
+        header = header.split('\t')
+        for j in range(1,len(header)):
+            if j % 3 == 1:
+                headeritem = header[j].decode('utf8').replace(" ","")
+                headeritem = headeritem.rstrip(header[j][-3:])
+                headerarr.append(headeritem)
+        for line in inFiler[1:]:
+            line = line.rstrip()
+            cluster = []
+            clusterl95 = []
+            clusteru95 = []
+            clust_info = line.split("\t")
+            cluster_num = clust_info[0]
+            for j in range(1, len(clust_info)):
+                if j % 3 == 1:
+                    tmp = []
+                    headeritem = header[j].decode('utf8').replace(" ","")
+                    headeritem = headeritem.rstrip(header[j][-3:])
+                    tmp.append(headeritem.encode("ascii"))
+                    tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
+                if j % 3 == 2:
+                    tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
+                if j % 3 == 0:
+                    tmp.append(min(float(clust_info[j]),scalefactor*float(clust_info[j])))
+                    cluster.append(tmp)
+            cluster_data.append([cluster_num, cluster])
+    fdrf = open(glob.glob("/biobankengine/app/static/mrpmm/" + namespace +"_mrpmm/"+ gene_id + "_" + icd_str +"_*ptv*" + str(idxmax) + ".fdr")[0], "r").readlines()
+    fdrnum = fdrf[0].rstrip().split()[0]
+    fdr_data2 = []
+    for line in fdrf[1:]:
+        line = line.rstrip()
+        line = line.split()
+        fdr_data2.append(line[0])
+    try:
+        t = render_template(
+            'mrp.html',
+            namespace=namespace,
+            plot_data=admixture_data,
+            gene_data=admixture_datagene,
+            num_figs=cluster_data,
+            log10_bf=l10bf,
+            cluster_num=str(int(cluster_num)+1),
+            fdr=fdrnum,
+            fdr_data=fdr_data2
+   #         phenid_arr=headerarr
+            )
         return t
     except Exception as e:
         print('Failed: %s' % e)
@@ -1244,7 +1675,7 @@ def get_gene_page_content_all(namespace, gene_id, phens):
            #     transcript['xstart'] - EXON_PADDING,
            #     transcript['xstop'] + EXON_PADDING)
             if 'ALL' in phens:
-                df = db.get_association_data(association_set=assocset, gene_name=gene_id, pad=500, pvalue_max=.000001)
+                df = db.get_association_data(association_set=assocset, gene_name=gene_id, pad=500, pvalue_max=.00005)
                 sefilter = .2
                 columns = ['pvalue','title','beta','all_filters','se']
                 ndf = dfv.apply(lambda row: pandas.Series([1,"NA",0,0,"NA"], index = columns) if df[df['variant_identity'] == row['variant_identity']]['pvalue'].empty else (pandas.Series([numpy.log(x) if i == 2 else x for i, x in enumerate(df.iloc[df[df['variant_identity'] == row['variant_identity']]['pvalue'].idxmin(),:][['pvalue','title','odds_ratio', 'all_filters','se']])], index = columns) if numpy.isnan(df.iloc[df[df['variant_identity'] == row['variant_identity']]['pvalue'].idxmin(),:]['beta']) and df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].empty else (df.iloc[df[df['variant_identity'] == row['variant_identity']]['pvalue'].idxmin(),:][['pvalue','title','beta', 'all_filters','se']] if df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].empty else (pandas.Series([numpy.log(x) if i == 2 else x for i, x in enumerate(df.iloc[df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].idxmin(),:][['pvalue','title','odds_ratio', 'all_filters','se']])], index = columns) if numpy.isnan(df.iloc[df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].idxmin(),:]['beta']) else ( df.iloc[df[df['variant_identity'] == row['variant_identity']].query('se <= .2')['pvalue'].idxmin(),:][['pvalue','title','beta', 'all_filters','se']])))), axis = 1)
@@ -2020,4 +2451,4 @@ def apply_caching(response):
 
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0", port = 6000, debug=True, use_debugger=True, use_reloader=True, threaded=True)
+    app.run(host = "0.0.0.0", port = 6000, debug=False, use_debugger=False, use_reloader=True, threaded=True)

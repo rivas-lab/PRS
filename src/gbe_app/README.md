@@ -4,6 +4,8 @@ We deploy the Jinja template to the following directory in GBE: `/opt/biobankeng
 
 Our data location is: `/opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/static/PRSmap`
 
+## How to deploy the changes?
+
 ```{bash}
 # as a regular user
 cp prs.html /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates/
@@ -17,3 +19,11 @@ sudo su
 cd /opt/biobankengine/GlobalBioBankEngineRepo/gbe_browser/templates
 docker-compose restart gbbe
 ```
+## Files
+### Symlinks to the main branch
+
+Those files points to the files under the GBE repo.
+
+- `main_gbe.py`
+- `main_prs_v2.html`
+- `main_snpnet_v2.html`
